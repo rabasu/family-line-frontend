@@ -1,11 +1,12 @@
 import { Horse } from "@/types/Horse";
+import { HorseData } from "@/types/HorseData";
 import roll_your_own from "./RollYourOwn";
 import florries_cup from "./FlorriesCup";
 import pedigreeList from ".";
 
-const horseLinkMap: Map<string, { name: string; link: string; family: string }> = new Map();
+const horseLinkMap: Map<string, HorseData> = new Map();
 
-const createHorseLinkMap = (horse: Horse, family: string): Map<string, { name: string; link: string; family: string }> => {
+const createHorseLinkMap = (horse: Horse, family: string, dam: Horse): Map<string, { name: string; link: string; family: string }> => {
   // HorseLink生成用のMap
   // key: リンク生成用の馬名（一意）
   // value.name: リンク文字列として表示する馬名
@@ -15,21 +16,27 @@ const createHorseLinkMap = (horse: Horse, family: string): Map<string, { name: s
 
   // key=name, および pedigree_name
   // id_name がある場合は name=key, link=id_name, なければ link=name
-  if (horse.id_name) {
-    horseLinkMap.set(horse.id_name, { name: horse.name, link: horse.id_name, family: family });
+  const has_article: boolean = horse.details !== null;
+  const data: HorseData = { name: '', link: horse.id, family: family, horse: horse, dam: dam, article: has_article };
+  if (horse.link_name) {
+    data.name = horse.name;
+    horseLinkMap.set(horse.link_name, data);
     if (horse.pedigree_name) {
-      horseLinkMap.set(horse.pedigree_name, { name: horse.pedigree_name, link: horse.id_name, family: family });
+      data.name = horse.pedigree_name;
+      horseLinkMap.set(horse.pedigree_name, data);
     }
   } else {
-    horseLinkMap.set(horse.name, { name: horse.name, link: horse.name, family });
+    data.name = horse.name;
+    horseLinkMap.set(horse.name, data);
     if (horse.pedigree_name) {
-      horseLinkMap.set(horse.pedigree_name, { name: horse.pedigree_name, link: horse.name, family: family });
+      data.name = horse.pedigree_name;
+      horseLinkMap.set(horse.pedigree_name, data);
     }
   }
   // 再帰的にchildrenも追加
   if (horse.children) {
     horse.children.forEach((child) => {
-      createHorseLinkMap(child, family);
+      createHorseLinkMap(child, family, horse);
     })
   }
   console.log(horseLinkMap)
@@ -42,16 +49,13 @@ const mergeHorseLinkMapByPedigree = (pedigreeList: Map<string, Horse>): Map<stri
 
   // pedigreeList をループして createHorseLinkMap を呼び出し、それぞれの結果をマージ
   pedigreeList.forEach((horse, family) => {
-    console.log(horse)
-    console.log(family)
-    const horseLinkMap = createHorseLinkMap(horse, family);
+    const horseLinkMap = createHorseLinkMap(horse, family, horse);
 
     // 統合: 既存のキーがあれば上書きされる
     horseLinkMap.forEach((value, key) => {
       mergedMap.set(key, value);
     });
   });
-  console.log(mergedMap)
   return mergedMap; // 統合された Map を返す
 }
 
