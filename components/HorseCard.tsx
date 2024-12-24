@@ -70,7 +70,7 @@ const filterRecords = (records: RaceRecord[], number: number) => {
 const BaseInfo = (horse: Horse): JSX.Element => {
   return (
     <>
-      <span className="font-bold">{displayHorseName(horse)}</span> <span className='text-sm'>（{yearOf(horse.foaled)} by<HorseLink name={horse.sire} />）</span> {horse.result_sum} {horse.earnings}
+      <span className="font-bold">{displayHorseName(horse)}</span> <span className='text-sm'>（{horse.foaled.year} by<HorseLink name={horse.sire} />）</span> {horse.result_sum} {horse.earnings}
     </>
   )
 }

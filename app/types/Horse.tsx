@@ -1,5 +1,6 @@
 import RaceRecord from './RaceRecord';
 import { Award } from './Award';
+import { Foaled } from './Foaled';
 
 // 現役中に去勢した場合のみセン
 // const Sex = {
@@ -26,8 +27,9 @@ interface Horse {
   former_name?: string, // 改名前の競走名など
   local_name?: string, // 地方転出後の馬名
   former_pedigree_name?: string, // 出生時の血統名など（繁殖入り時に使われなかったもの）
-  id_name?: string, // 同名馬を一意に識別するための名前
-  foaled: string | Date, // 生年月日
+  link_name?: string, // 同名馬を識別して自動リンクするための名前
+  id: string,
+  foaled: Foaled, // 生年月日
   sex: Sex, // 性別
   breed?: string, // 品種
   breeder?: string, // 生産者
@@ -35,6 +37,7 @@ interface Horse {
   children?: Horse[], // 産駒
   link?: string, // リンク 使うかは微妙
   color?: string, // 毛色
+  has_article?: boolean,
   summary?: string, // 見出し
   details?: JSX.Element | string, // 詳細記事
   result_sum?: string, // 通算成績

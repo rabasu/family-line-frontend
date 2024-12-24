@@ -1,6 +1,7 @@
 import { Horse } from '@/types/Horse'
 import { newDate } from 'app/lib/utils';
 import dynamic from 'next/dynamic';
+import { Foaled } from '@/types/Foaled';
 import RaceRecord from '@/types/RaceRecord';
 
 const HL = dynamic(() => import('@/components/HorseLink'), { ssr: false });
@@ -8,7 +9,8 @@ const HL = dynamic(() => import('@/components/HorseLink'), { ssr: false });
 const FLORRIES_CUP: Horse = {
   name: 'フロリースカツプ',
   pedigree_name: 'Florries Cup',
-  foaled: '1907',
+  id: 'florries-cup',
+  foaled: new Foaled('1907'),
   sex: 'female',
   sire: 'Florizel',
   breeder: 'W. C. Whitney',
@@ -16,7 +18,8 @@ const FLORRIES_CUP: Horse = {
   children: [
     {
       name: '第二フロリースカツプ',
-      foaled: newDate(1909, 3, 24),
+      id: 'dai2-florries-cup',
+      foaled: new Foaled(newDate(1909, 3, 24)),
       sex: 'female',
       sire: 'インタグリオー(GB)',
       breeder: '小岩井農場（岩手県岩手郡雫石村）',
@@ -25,7 +28,8 @@ const FLORRIES_CUP: Horse = {
         {
           name: 'プロデアー',
           pedigree_name: 'フロリカルチユアー',
-          foaled: newDate(1918, 3, 20),
+          id: 'florrie-culture',
+          foaled: new Foaled(newDate(1918, 3, 20)),
           sex: 'female',
           sire: 'ルーヂゲーア(GB)',
           breeder: '小岩井農場（岩手県岩手郡雫石村）',
@@ -34,7 +38,8 @@ const FLORRIES_CUP: Horse = {
             {
               name: 'レパード',
               pedigree_name: 'ナスノー',
-              foaled: newDate(1929, 5, 4),
+              id: 'nasunoo',
+              foaled: new Foaled(newDate(1929, 5, 4)),
               died: '1952.08.24 死亡', // 血統書データサービス
               sex: 'female',
               sire: 'ロイヂユール(GB)',
@@ -44,7 +49,8 @@ const FLORRIES_CUP: Horse = {
               children: [
                 {
                   name: 'ナスノタケ',
-                  foaled: '1946',
+                  id: 'nasunotake',
+                  foaled: new Foaled('1946'),
                   retired: '1951.03.22 地方競馬',
                   sex: 'male',
                   sire: 'マルタケ',
@@ -54,17 +60,18 @@ const FLORRIES_CUP: Horse = {
                   result: '中央平地36戦14勝 障害4戦1勝', // 『国営競馬統計 昭和26年』p.151,179, 『国営競馬成績書 昭和25年 秋季』p.300
                   earnings: '3,387,600円（中央）', // 『国営競馬統計 昭和28年』p.209
                   record: [
-                    { date: newDate(1949, 11, 3), race: '菊花賞', grade: 'jrs_big8', result: 5 },
-                    { date: newDate(1950, 4, 16), race: '京都記念（春）', grade: 'jrs_grade', result: 3 },
-                    { date: newDate(1950, 5, 7), race: '阪神記念（春）', grade: 'jrs_grade', result: 1 },
-                    { date: newDate(1950, 6, 4), race: '天皇賞（春）', grade: 'jrs_big8', result: 2 },
-                    { date: newDate(1950, 11, 3), race: '天皇賞（秋）', grade: 'jrs_big8', result: 7 },
-                    { date: newDate(1950, 11, 26), race: 'チャレンジC', grade: 'jrs_grade', result: 5 },
+                    { date: newDate(1949, 11, 3), racecourse: '京都', race: '菊花賞', distance: '3000', grade: 'jrs_big8', entry: '6', result: 5 },
+                    { date: newDate(1950, 4, 16), racecourse: '京都', race: '京都記念（春）', distance: '3000', grade: 'jrs_grade', entry: '7', result: 3 },
+                    { date: newDate(1950, 5, 7), racecourse: '阪神', race: '阪神記念（春）', distance: '2600', grade: 'jrs_grade', entry: '?', result: 1 },
+                    { date: newDate(1950, 6, 4), racecourse: '京都', race: '天皇賞（春）', distance: '3200', grade: 'jrs_big8', entry: '9', result: 2 },
+                    { date: newDate(1950, 10, 1), racecourse: '阪神', race: '阪神記念（秋）', distance: '2600', grade: 'jrs_grade', entry: '7', result: 3 },
+                    { date: newDate(1950, 11, 3), racecourse: '東京', race: '天皇賞（秋）', distance: '3200', grade: 'jrs_big8', entry: '10', result: 7 },
+                    { date: newDate(1950, 11, 26), racecourse: '阪神', race: 'チヤレンジカツプ（ハンデ）', distance: '2400', grade: 'jrs_grade', entry: '9', result: 5 },
                   ],
                   summary: '泡と消えた「父子4代・帝室御賞典馬」の夢',
                   details:
                     `
-父**マルタケ**の馬主が運営するマルタケ牧場で1946年に生まれる。1949年2回小倉で初出走。菊花賞こそ6頭立て5着に沈んだものの、年間で8勝を挙げる活躍を見せた。さらに翌1950年には京都記念（春）を3着とし、続く阪神記念（春）で1着。1段飛ばしで着順を上げて重賞勝利をつかみ取った。
+父**マルタケ**の馬主が運営するマルタケ牧場で1946年に生まれる。1949年2回小倉で初出走。菊花賞こそ6頭立て5着に沈んだものの、年間で8勝を挙げる活躍を見せた。翌1950年には京都記念（春）で3着。阪神では特ハンと阪神記念（春）で1着。1段飛ばしで着順を上げて重賞勝利をつかみ取った。
 
 余勢を駆って天皇賞（春）へ向かうナスノタケにはある大記録が懸かっていた。曾祖父**ラシカツター**、祖父**ハクリユウ**、父**マルタケ**による父子3代帝室御賞典（天皇賞）制覇、それを「父子4代」に更新する挑戦である。ラシカツターとハクリユウが勝ったのは統一前の「帝室御賞典」ではあるものの、それを除いても**マルタケ**との「史上初の父子制覇」となる。3000mの京都記念（春）での好走、上がり調子、血統背景、そして往年のファンの夢が託されたのだろうか、ナスノタケは1番人気に推された。
 
@@ -83,7 +90,8 @@ const FLORRIES_CUP: Horse = {
         {
           name: 'キングフロラー',
           pedigree_name: '第十一コイワヰ',
-          foaled: newDate(1923, 4, 8), // 『馬匹血統登録書 第1巻』p.90
+          id: 'king-flora',
+          foaled: new Foaled(newDate(1923, 4, 8)), // 『馬匹血統登録書 第1巻』p.90
           retired: '1932年秋季 年齢超過', // 『競馬成績書 昭和7年秋季』p.337
           sex: 'male',
           sire: 'コイワヰ',
@@ -105,6 +113,7 @@ const FLORRIES_CUP: Horse = {
 
 10歳という高齢まで現役であったが、引退後には河西郡帯広町の六郎田武次の所有で「第十一コイワヰ」の名で種牡馬入り。のちに根室郡根室町・枳殻光次郎に購買され少なくとも1935年までは民間種牡馬を務め、いくらかの産駒を残したようである。
 
+
 （戦績にある優勝戦の日付は「開催最終日」と仮定したものであり、不確実）`
         },
       ]
@@ -112,7 +121,8 @@ const FLORRIES_CUP: Horse = {
     {
       name: 'フロリスカツプ',
       pedigree_name: '第三フロリースカツプ',
-      foaled: newDate(1911, 4, 19),
+      id: 'dai3-florries-cup',
+      foaled: new Foaled(newDate(1911, 4, 19)),
       retired: '1915.05.06. 調教中に後蹄を前管下端にぶつけて管に罅裂が発生', // 「噫フロリスカツプ」
       died: '1933.08.18 斃死', // 『サラブレッド血統書 第1巻』p.441
       sex: 'female',
@@ -147,7 +157,8 @@ const FLORRIES_CUP: Horse = {
         {
           name: 'マークイス',
           pedigree_name: 'フロリス', // 『サラブレッド血統書 第1巻』p.442
-          foaled: '1933',
+          id: 'marquis',
+          foaled: new Foaled('1933'),
           retired: '1939.02 乗用', // 『登録馬名簿 昭和14年2月』p.141
           sex: 'male',
           sire: 'ヒラデエナモールド',
@@ -178,7 +189,8 @@ const FLORRIES_CUP: Horse = {
     },
     {
       name: '第四フロリースカツプ',
-      foaled: newDate(1912, 4, 4),
+      id: 'dai4-florries-cup',
+      foaled: new Foaled(newDate(1912, 4, 4)),
       died: '1939.10.06. 斃死', // 『サラブレッド血統書 第1巻』p.442, 『サラブレッド系種牡馬名簿 第1巻』p.33
       sex: 'female',
       sire: 'インタグリオー(GB)',
@@ -188,7 +200,8 @@ const FLORRIES_CUP: Horse = {
         {
           name: 'フロラーカツプ',
           pedigree_name: 'フロリスト',
-          foaled: newDate(1919, 4, 27), // 『サラブレッド血統書 第1巻』p.438
+          id: 'florist',
+          foaled: new Foaled(newDate(1919, 4, 27)), // 『サラブレッド血統書 第1巻』p.438
           died: '1943.05.05. 死亡', // 血統書データサービス
           sex: 'female',
           sire: 'ガロン(GB)',
@@ -212,7 +225,8 @@ const FLORRIES_CUP: Horse = {
             {
               name: 'タマロツク',
               pedigree_name: '第貮フロリスト',
-              foaled: newDate(1927, 4, 10),
+              id: 'dai2-florist',
+              foaled: new Foaled(newDate(1927, 4, 10)),
               sex: 'female',
               sire: 'ラシカツター(GB)',
               breeder: '小岩井農場（岩手県岩手郡雫石村）',
@@ -222,7 +236,8 @@ const FLORRIES_CUP: Horse = {
                 {
                   name: 'フロリストモア',
                   pedigree_name: 'フロラヴアース',
-                  foaled: newDate(1936, 3, 1),
+                  id: 'floraverse',
+                  foaled: new Foaled(newDate(1936, 3, 1)),
                   sex: 'female',
                   sire: 'シアンモア(GB)',
                   breeder: '小岩井農場（岩手県岩手郡雫石村）',
@@ -235,7 +250,8 @@ const FLORRIES_CUP: Horse = {
             {
               name: 'ハクリユウ',
               former_pedigree_name: '第貮ラシデヤー',
-              foaled: newDate(1928, 4, 24),
+              id: 'hakuryu',
+              foaled: new Foaled(newDate(1928, 4, 24)),
               sex: 'male',
               sire: 'ラシデヤー',
               breeder: '小岩井農場（岩手県岩手郡雫石村）',
@@ -260,9 +276,10 @@ const FLORRIES_CUP: Horse = {
             },
             {
               name: 'ハクセツ',
-              id_name: 'ハクセツ_1929',
+              link_name: 'ハクセツ_1929',
+              id: 'hakusetsu-1929',
               former_pedigree_name: '第四シアンモア', // 『馬匹血統登録書 第11巻』p.450
-              foaled: newDate(1929, 4, 1), // 『サラブレッド系種牡馬名簿 第1巻』p.33
+              foaled: new Foaled(newDate(1929, 4, 1)), // 『サラブレッド系種牡馬名簿 第1巻』p.33
               retired: '1934年春季 繁殖',
               sex: 'male',
               sire: 'シアンモア(GB)',
@@ -310,7 +327,8 @@ const FLORRIES_CUP: Horse = {
             },
             {
               name: 'スターカツプ',
-              foaled: newDate(1930, 3, 30),
+              id: 'star-cup',
+              foaled: new Foaled(newDate(1930, 3, 30)),
               sex: 'female',
               sire: 'シアンモア(GB)',
               breeder: '小岩井農場（岩手県岩手郡雫石村）',
@@ -336,8 +354,9 @@ const FLORRIES_CUP: Horse = {
             },
             {
               name: 'アカイシダケ',
+              id: 'akaishidake',
               former_pedigree_name: '第拾五シアンモア',
-              foaled: newDate(1932, 2, 17),
+              foaled: new Foaled(newDate(1932, 2, 17)),
               sex: 'male',
               sire: 'シアンモア(GB)',
               breeder: '小岩井農場（岩手県岩手郡雫石村）',
@@ -346,26 +365,26 @@ const FLORRIES_CUP: Horse = {
               result: '中央平地',
               earnings: '64,742.5円', // 『サラブレッド系種牡馬名簿 第1巻』p.148
               record: [
-                { date: newDate(1935, 4, 29), race: '東京優駿大競走', grade: 'empire_derby', result: 2 },
-                { date: newDate(1935, 5, 5), race: '新呼馬優勝（東京・春）', grade: 'empire_cs', result: 1 },
-                { date: newDate(1935, 5, 12), race: '帝室御賞典（横浜・春）', grade: 'empire_cup', result: 2 },
-                { date: newDate(1935, 10, 12), race: '古呼馬特ハン', grade: 'empire_cs', result: 2 },
-                { date: newDate(1935, 10, 17), race: '中山四歳馬特別', grade: 'empire_grade', result: 2 },
-                { date: newDate(1935, 10, 27), race: '呼馬優勝（中山・秋）', grade: 'empire_cs', result: 1 },
-                { date: newDate(1935, 11, 2), race: 'オールカマーハンデ（秋）', grade: 'empire_grade', result: 5 },
-                { date: newDate(1935, 11, 3), race: '帝室御賞典（横浜・秋）', grade: 'empire_cup', result: 1 },
-                { date: newDate(1935, 11, 17), race: '呼馬優勝（横浜・秋）', grade: 'empire_cs', result: 1 },
-                { date: newDate(1935, 11, 25), race: '目黒記念（秋）', grade: 'empire_grade', result: 1 },
-                { date: newDate(1935, 12, 6), race: '農林省賞典（東京・秋）', grade: 'empire_2mile', result: 1 },
-                { date: newDate(1936, 4, 3), race: '中山四千米', grade: 'empire_grade', result: 1 },
-                { date: newDate(1936, 4, 18), race: '各古馬特ハン', grade: 'empire_cs', result: 2 },
-                { date: newDate(1936, 4, 25), race: '目黒記念（春）', grade: 'empire_grade', result: 3 },
-                { date: newDate(1936, 5, 9), race: 'オールカマーハンデ（春）', grade: 'empire_grade', result: 6 },
-                { date: newDate(1936, 5, 17), race: '横浜特別（春）', grade: 'empire_grade', result: 2 },
-                { date: newDate(1936, 10, 10), race: '古呼馬特ハン', grade: 'empire_cs', result: 4 },
-                { date: newDate(1936, 11, 8), race: '横浜特別（秋）', grade: 'empire_grade', result: 4 },
-                { date: newDate(1936, 11, 23), race: '目黒記念（秋）', grade: 'empire_grade', result: 4 },
-                { date: newDate(1936, 11, 29), race: '五歳馬特別（秋）', grade: 'empire_grade', result: 8 },
+                { date: newDate(1935, 4, 29), racecourse: '東京', race: '東京優駿大競走', distance: '2400', grade: 'empire_derby', entry: '11', result: 2 },
+                { date: newDate(1935, 5, 5), racecourse: '東京', race: '新呼馬優勝', distance: '2300', grade: 'empire_cs', entry: '6', result: 1 },
+                { date: newDate(1935, 5, 12), racecourse: '横浜', race: '帝室御賞典', distance: '2000', grade: 'empire_cup', entry: '4', result: 2 },
+                { date: newDate(1935, 10, 12), racecourse: '中山', race: '古呼馬特ハン', distance: '2200', grade: 'empire_cs', entry: '9', result: 2 },
+                { date: newDate(1935, 10, 17), racecourse: '中山', race: '中山四歳馬特別', distance: '2400', grade: 'empire_grade', entry: '11', result: 2 },
+                { date: newDate(1935, 10, 27), racecourse: '中山', race: '呼馬優勝', distance: '2600', grade: 'empire_cs', entry: '6', result: 1 },
+                { date: newDate(1935, 11, 2), racecourse: '横浜', race: 'オールカマーハンデキャップ', distance: '2200', grade: 'empire_grade', entry: '7', result: 5 },
+                { date: newDate(1935, 11, 3), racecourse: '横浜', race: '帝室御賞典', distance: '2000', grade: 'empire_cup', entry: '4', result: 1 },
+                { date: newDate(1935, 11, 17), racecourse: '横浜', race: '呼馬優勝', distance: '2600', grade: 'empire_cs', entry: '6', result: 1 },
+                { date: newDate(1935, 11, 25), racecourse: '東京', race: '目黒記念', distance: '3400', grade: 'empire_grade', entry: '5', result: 1 },
+                { date: newDate(1935, 12, 6), racecourse: '東京', race: '農林省賞典', distance: '3200', grade: 'empire_2mile', entry: '6', result: 1 },
+                { date: newDate(1936, 4, 3), racecourse: '中山', race: '中山四千米', distance: '4000', grade: 'empire_grade', entry: '3', result: 1 },
+                { date: newDate(1936, 4, 18), racecourse: '東京', race: '各古馬特ハン', distance: '2300', grade: 'empire_cs', entry: '10', result: 2 },
+                { date: newDate(1936, 4, 25), racecourse: '東京', race: '目黒記念', distance: '3400', grade: 'empire_grade', entry: '3', result: 3 },
+                { date: newDate(1936, 5, 9), racecourse: '横浜', race: 'オールカマーハンデキャップ', distance: '2200', grade: 'empire_grade', entry: '11', result: 6 },
+                { date: newDate(1936, 5, 17), racecourse: '横浜', race: '横浜特別', distance: '3200', grade: 'empire_grade', entry: '8', result: 2 },
+                { date: newDate(1936, 10, 10), racecourse: '中山', race: '古呼馬特ハン', distance: '2200', grade: 'empire_cs', entry: '14', result: 4 },
+                { date: newDate(1936, 11, 8), racecourse: '横浜', race: '横浜特別', distance: '3200', grade: 'empire_grade', entry: '7', result: 4 },
+                { date: newDate(1936, 11, 23), racecourse: '東京', race: '目黒記念', distance: '3400', grade: 'empire_grade', entry: '7', result: 4 },
+                { date: newDate(1936, 11, 29), racecourse: '東京', race: '五歳馬特別', distance: '2400', grade: 'empire_grade', entry: '8', result: 8 },
               ],
             },
           ]
