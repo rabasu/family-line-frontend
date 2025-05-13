@@ -1,14 +1,14 @@
-import { tv } from 'tailwind-variants';
+import { tv } from 'tailwind-variants'
 import { Horse } from '@/types/Horse'
-import { sex as sexes } from '@/types/Horse';
+import { sex as sexes } from '@/types/Horse'
 import { Grade, GradeCode, grades } from '@/types/Grade'
-import RaceRecord from '@/types/RaceRecord';
-import { yearOf, compareDate } from 'app/lib/utils';
-import ReactMarkdown from 'react-markdown';
-import remarkBreaks from "remark-breaks"
-import HorseLink from './HorseLink';
-import remarkGfm from 'remark-gfm';
-import remarkHorseLink from 'plugins/remarkHorseLink/plugin.mjs';
+import { AggregatedRaceStats } from '@/types/AggregatedRaceStats'
+import RaceRecord from '@/types/RaceResult'
+import { yearOf, compareDate } from 'app/lib/utils'
+import ReactMarkdown from 'react-markdown'
+import remarkBreaks from 'remark-breaks'
+import HorseLink from './HorseLink'
+import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 
 const summary = tv({
@@ -19,21 +19,23 @@ const summary = tv({
       female: 'bg-red-50',
       gelding: 'bg-green-100',
     },
-  }
-});
+  },
+})
 
 type RecordsProp = {
   records: RaceRecord[]
 }
 
 // 詳細非表示時に表示するレース項目を抽出する
-// recordsからnumber兼のレースを抽出
+// recordsからnumber件のレースを抽出
 const filterRecords = (records: RaceRecord[], number: number) => {
   if (records.length == 0) {
     return records
   }
-  // 重賞勝利を抽出 重賞はrank=4以下
-  const won_grade_races = records.filter((record) => record.result == 1 && grades[record.grade].rank <= 4)
+  // 重賞勝利を抽出
+  const won_grade_races = records.filter(
+    (record) => record.result === '1' && grades[record.grade].isJusho
+  )
   // 重賞勝利数が{number}以上の場合、グレード→日付 の条件でソートし、重賞勝利のみを返す
   if (won_grade_races.length >= number) {
     return won_grade_races.sort((a, b) => {
@@ -45,22 +47,28 @@ const filterRecords = (records: RaceRecord[], number: number) => {
     })
   }
 
-  // 重賞勝利数が{number}未満の場合、重賞成績を抽出 重賞はrank=4以下
+  // 重賞勝利数が{number}未満の場合、重賞成績を抽出 重賞はrank=6以下
   // 着順→グレード→日付 の条件でソートし、上位{number}レースを抽出
-  const all_grade_races: RaceRecord[] = records.filter((record) => grades[record.grade].rank <= 4).sort((a, b) => {
-    if (a.result != b.result) {
-      return a.result - b.result
-    } else if (a.grade != b.grade) {
-      return grades[a.grade].rank - grades[b.grade].rank
-    } else {
-      return compareDate(a.date, b.date)
-    }
-  }).slice(0, number)
+  const all_grade_races: RaceRecord[] = records
+    .filter((record) => grades[record.grade].rank <= 6)
+    .filter((record) => !Number.isNaN(record.result))
+    .sort((a, b) => {
+      if (Number(a.result) != Number(b.result)) {
+        return Number(a.result) - Number(b.result)
+      } else if (a.grade != b.grade) {
+        return grades[a.grade].rank - grades[b.grade].rank
+      } else {
+        return compareDate(a.date, b.date)
+      }
+    })
+    .slice(0, number)
 
   // 重賞成績が{number}未満の場合、{number}件になるまで重賞以外の勝利も追加する
   if (all_grade_races.length < number) {
     const rest = number - all_grade_races.length
-    const rest_races = records.filter((record) => record.result == 1 && grades[record.grade].rank > 4)
+    const rest_races = records.filter(
+      (record) => record.result === '1' && grades[record.grade].rank > 6
+    )
     return [...all_grade_races, ...rest_races.slice(0, rest)]
   } else {
     return all_grade_races
@@ -70,21 +78,35 @@ const filterRecords = (records: RaceRecord[], number: number) => {
 const BaseInfo = (horse: Horse): JSX.Element => {
   return (
     <>
-      <span className="font-bold">{displayHorseName(horse)}</span> <span className='text-sm'>（{horse.foaled.year} by<HorseLink name={horse.sire} />）</span> {horse.result_sum} {horse.earnings}
+      <span className="font-bold">{displayHorseName(horse)}</span>{' '}
+      <span className="text-sm">
+        （{horse.foaled.year} by
+        <HorseLink name={horse.sire} />）
+      </span>{' '}
+      {raceStatsSummary(horse.raceStats)} {horse.earnings}
     </>
   )
 }
 
+function raceStatsSummary(raceStats: AggregatedRaceStats | undefined) {
+  const summary = raceStats ? `${raceStats.total.runs}戦${raceStats.total.wins}勝` : ''
+  return summary
+}
+
 function HorseCard(horse: Horse) {
-  const won_races: RaceRecord[] | undefined = horse.record?.filter((record) => record.result == 1)
+  const won_races: RaceRecord[] | undefined = horse.raceResults?.filter(
+    (record) => record.result === '1'
+  )
   // 勝ち鞍の最高格付け 重賞勝ち鞍がない場合は0
-  const horse_rank = won_races ? Math.max(...won_races.map((record) => grades[record.grade].rank)) : 0
+  const horse_rank = won_races
+    ? Math.max(...won_races.map((record) => grades[record.grade].rank))
+    : 0
   return (
     <div className="horse-card">
-      <div className="pt-3 -ml-2 ">
-        <div className="card bg-base-100 shadow-xl rounded-none before:content-[''] before:w-4 before:h-4 before:bg-white before:opacity-50 before:mt-2 before:absolute before:display-block before:z-10">
+      <div className="-ml-2 pt-3 ">
+        <div className="before:display-block card rounded-none bg-base-100 shadow-xl before:absolute before:z-10 before:mt-2 before:h-4 before:w-4 before:bg-white before:opacity-50 before:content-['']">
           <HorseDetails {...horse} />
-        </div >
+        </div>
       </div>
     </div>
   )
@@ -92,16 +114,15 @@ function HorseCard(horse: Horse) {
 
 export default HorseCard
 
-
 const HorseDetails = (horse: Horse) => {
-  const summarized = filterRecords(horse.record || [], 3)
+  const summarized = filterRecords(horse.raceResults || [], 3)
   if (horse.details) {
     return (
       <div className="">
         <details className="collapse collapse-arrow rounded-none ">
           <summary className={`collapse-title ${summary({ sex: horse.sex })} `}>
             <BaseInfo {...horse} />
-            {summarized && (<br />)}
+            {summarized && <br />}
             {summarized && <RecordsSummary records={summarized} />}
           </summary>
           <div className="collapse-content rounded-none">
@@ -110,12 +131,16 @@ const HorseDetails = (horse: Horse) => {
                 remarkPlugins={[remarkBreaks, remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
                 components={{
-                  p: ({ children }) => <p className="indent-4" style={{ marginBottom: "1em" }}>{children}</p>,
+                  p: ({ children }) => (
+                    <p className="indent-4" style={{ marginBottom: '1em' }}>
+                      {children}
+                    </p>
+                  ),
                   strong: ({ node, ...props }) => {
                     if (typeof props.children === 'string' && props.children.length > 0) {
-                      return <HorseLink name={props.children} />;
+                      return <HorseLink name={props.children} />
                     }
-                    return <strong {...props} />;
+                    return <strong {...props} />
                   },
                 }}
               >
@@ -130,7 +155,7 @@ const HorseDetails = (horse: Horse) => {
     return (
       <div className={`${summary({ sex: horse.sex })}`}>
         <BaseInfo {...horse} />
-        {summarized && (<br />)}
+        {summarized && <br />}
         {summarized && <RecordsSummary records={summarized} />}
       </div>
     )
@@ -138,7 +163,7 @@ const HorseDetails = (horse: Horse) => {
 }
 
 const HorseDetailsStub = (horse: Horse) => {
-  const summarized = filterRecords(horse.record || [], 3)
+  const summarized = filterRecords(horse.raceResults || [], 3)
   return (
     <div className={`${summary({ sex: horse.sex })}`}>
       <BaseInfo {...horse} />
@@ -149,75 +174,90 @@ const HorseDetailsStub = (horse: Horse) => {
 // 馬名を整形する
 // 競走名 / 血統名 (旧名 or 地方名)
 function displayHorseName(horse: Horse): string {
-  const base = horse.pedigree_name ? `${horse.name} / ${horse.pedigree_name}` : `${horse.name}`
-  const display_name = horse.former_name ? `${base} (${horse.former_name})`
-    : horse.local_name ? `${base} (${horse.local_name})` : base
+  const base = horse.pedigreeName ? `${horse.name} / ${horse.pedigreeName}` : `${horse.name}`
+  const display_name = horse.formerName
+    ? `${base} (${horse.formerName})`
+    : horse.localName
+      ? `${base} (${horse.localName})`
+      : base
   return display_name
 }
 
-const raceName = tv({
-  variants: {
-    rank: {
-      1: 'text-red-700',
-      2: 'text-blue-500',
-      3: 'text-green-600',
-      4: '',
-      5: '',
-    },
-    win: {
-      true: 'font-bold',
-    }
-  }
-});
-
 const groupByYear = (records: RaceRecord[]) => {
   if (!Array.isArray(records)) {
-    console.error("records is not an array:", records);
-    return;
+    console.error('records is not an array:', records)
+    return
   }
-  return records.reduce((acc, record) => {
-    const year = record.date.getFullYear();
-    if (!acc[year]) {
-      acc[year] = [];
-    }
-    acc[year].push(record);
-    return acc;
-  }, {} as Record<number, RaceRecord[]>);
-};
+  return records.reduce(
+    (acc, record) => {
+      const year = record.date.getFullYear()
+      if (!acc[year]) {
+        acc[year] = []
+      }
+      acc[year].push(record)
+      return acc
+    },
+    {} as Record<number, RaceRecord[]>
+  )
+}
+
+const getRaceStyle = (rank: number) => {
+  switch (rank) {
+    case 1:
+      return 'text-red-700'
+    case 2:
+      return 'text-blue-500'
+    case 3:
+      return 'text-green-600'
+    case 4:
+      return ''
+    case 5:
+      return 'text-violet-600'
+    case 6:
+      return ''
+    case 7:
+      return ''
+    default:
+      return ''
+  }
+}
 
 const RecordFormatter = (record: RaceRecord): JSX.Element => {
   return (
     <>
-      {record.result != 1 && <span>（{record.result}着）</span>}
-      <span className={`mr-1 ${raceName({ rank: grades[record.grade].rank, win: record.result == 1 })}`}>{record.race}</span>
+      {record.result !== '1' && <span>（{record.result}着）</span>}
+      <span
+        className={`mr-1 ${getRaceStyle(grades[record.grade].rank)} ${record.result === '1' ? 'font-bold' : ''}`}
+      >
+        {record.displayRace}
+      </span>
     </>
   )
 }
 
-const RecordsFormatter = (props: RecordsProp): JSX.Element => {
-  const grouped = groupByYear(props.records)
-  return (
-    <>
-      {grouped && Object.entries(grouped).map(([year, records]) => (
-        <div>
-          <span className="mr-1">
-            {year}
-          </span>
-          {records.map((record) => RecordFormatter(record))}
-        </div>
-      ))}
-    </>
-  )
-}
+// const RecordsFormatter = (props: RecordsProp): JSX.Element => {
+//   const grouped = groupByYear(props.records)
+//   return (
+//     <>
+//       {grouped &&
+//         Object.entries(grouped).map(([year, records]) => (
+//           <div>
+//             <span className="mr-1">{year}</span>
+//             {records.map((record) => RecordFormatter(record))}
+//           </div>
+//         ))}
+//     </>
+//   )
+// }
 
 const RecordsSummary = (props: RecordsProp): JSX.Element => {
   const records: RaceRecord[] = props.records
   return (
     <>
       {records.map((record) => (
-        <span className='ml-3'>
-          < RecordFormatter {...record} />
-          <span className='text-sm'>（{yearOf(record.date)}）</span>
+        <span key={`${record.date}-${record.displayRace}`} className="ml-3">
+          <RecordFormatter {...record} />
+          <span className="text-sm">（{yearOf(record.date)}）</span>
         </span>
       ))}
     </>
