@@ -1,9 +1,9 @@
-import HorseList from "@/pedigree/HorseList";
-import { HorseData } from "@/types/HorseData";
+import HorseList from '@/pedigree/HorseList'
+import { HorseData } from '@/types/HorseData'
 
 const HorseProfile = ({ name }) => {
-  const data: HorseData = HorseList[name];
-  const horse = data.horse;
+  const data: HorseData = HorseList[name]
+  const horse = data.horse
   return (
     <div className="w-2/5 overflow-x-auto">
       <table className="table-fixed">
@@ -12,10 +12,10 @@ const HorseProfile = ({ name }) => {
             <th>馬名</th>
             <td>{horse.name}</td>
           </tr>
-          {horse.pedigree_name && (
+          {horse.pedigreeName && (
             <tr>
               <th>血統名</th>
-              <td>{horse.pedigree_name}</td>
+              <td>{horse.pedigreeName}</td>
             </tr>
           )}
           <tr>
