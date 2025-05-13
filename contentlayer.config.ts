@@ -224,7 +224,7 @@ export default makeSource({
       remarkCodeTitles,
       remarkMath,
       remarkImgToJsx,
-      remarkBreaks
+      remarkBreaks,
     ],
     rehypePlugins: [
       rehypeSlug,

@@ -16,6 +16,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'next',
     'next/core-web-vitals',
+    'prettier',
   ],
   parserOptions: {
     project: true,
