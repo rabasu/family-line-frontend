@@ -3,7 +3,6 @@ import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import { allFamilies } from 'contentlayer/generated'
 import { genPageMetadata } from 'app/seo'
 
-
 const POSTS_PER_PAGE = 5
 
 export const metadata = genPageMetadata({ title: '牝系一覧' })

@@ -1,4 +1,14 @@
-const ProfileTable = ({ name, pedigree_name = "-", en_name, sex, number, foaled, country, imported, owner }) => {
+const ProfileTable = ({
+  name,
+  pedigree_name = '-',
+  en_name,
+  sex,
+  number,
+  foaled,
+  country,
+  imported,
+  owner,
+}) => {
   return (
     <div className="w-2/5 overflow-x-auto">
       <table className="table-fixed">

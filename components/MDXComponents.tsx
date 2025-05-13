@@ -11,7 +11,6 @@ import ProfileTable from './ProfileTable'
 import FamilyTree from './FamilyTree'
 import HL from './HorseLink'
 
-
 export const components: MDXComponents = {
   Image,
   TOCInline,
