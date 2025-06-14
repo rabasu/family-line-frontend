@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
+  title: '日本在来牝系大鑑',
   author: 'Rabasu',
   headerTitle: '日本在来牝系大鑑',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: '戦前から日本に根付く競走馬の牝系をまとめています。',
   language: 'ja-jp',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
@@ -20,7 +20,7 @@ const siteMetadata = {
   // linkedin: 'https://www.linkedin.com',
   // threads: 'https://www.threads.net',
   // instagram: 'https://www.instagram.com',
-  locale: 'en-US',
+  locale: 'ja-JP',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
