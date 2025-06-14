@@ -77,19 +77,26 @@ const filterRecords = (records: RaceRecord[], number: number) => {
 
 const BaseInfo = (horse: Horse): JSX.Element => {
   return (
-    <>
-      <span className="font-bold">{displayHorseName(horse)}</span>{' '}
+    <div className="flex flex-nowrap items-baseline gap-x-1 whitespace-nowrap">
+      <span className="font-bold">{displayHorseName(horse)}</span>
       <span className="text-sm">
-        （{horse.foaled.year} by
-        <HorseLink name={horse.sire} />）
-      </span>{' '}
-      {raceStatsSummary(horse.raceStats)} {horse.earnings}
-    </>
+        （{horse.foaled.year}） by <HorseLink name={horse.sire} />
+      </span>
+      <span>
+        {raceStatsSummary(horse.raceStats)} {horse.prizeMoney?.total ?? ''}
+      </span>
+    </div>
   )
 }
 
 function raceStatsSummary(raceStats: AggregatedRaceStats | undefined) {
-  const summary = raceStats ? `${raceStats.total.runs}戦${raceStats.total.wins}勝` : ''
+  if (!raceStats) {
+    return ''
+  }
+  const summary = `${raceStats.total.runs ?? '?'}戦${raceStats.total.wins ?? '?'}勝`
+  if (summary === '0戦0勝') {
+    return '不出走'
+  }
   return summary
 }
 
@@ -102,9 +109,9 @@ function HorseCard(horse: Horse) {
     ? Math.max(...won_races.map((record) => grades[record.grade].rank))
     : 0
   return (
-    <div className="horse-card">
+    <div className="horse-card w-[40rem] text-sm md:text-base">
       <div className="-ml-2 pt-3 ">
-        <div className="before:display-block card rounded-none bg-base-100 shadow-xl before:absolute before:z-10 before:mt-2 before:h-4 before:w-4 before:bg-white before:opacity-50 before:content-['']">
+        <div className="before:display-block card rounded-none bg-base-100 shadow-xl before:absolute before:z-10 before:mt-2 before:h-3 before:w-3 before:bg-black before:opacity-50 before:content-['']">
           <HorseDetails {...horse} />
         </div>
       </div>
@@ -119,10 +126,9 @@ const HorseDetails = (horse: Horse) => {
   if (horse.details) {
     return (
       <div className="">
-        <details className="collapse collapse-arrow rounded-none ">
-          <summary className={`collapse-title ${summary({ sex: horse.sex })} `}>
+        <details className="collapse collapse-arrow rounded-none">
+          <summary className={`collapse-title  min-h-0 ${summary({ sex: horse.sex })} `}>
             <BaseInfo {...horse} />
-            {summarized && <br />}
             {summarized && <RecordsSummary records={summarized} />}
           </summary>
           <div className="collapse-content rounded-none">
@@ -155,30 +161,24 @@ const HorseDetails = (horse: Horse) => {
     return (
       <div className={`${summary({ sex: horse.sex })}`}>
         <BaseInfo {...horse} />
-        {summarized && <br />}
+        {/* {summarized && <br />} */}
         {summarized && <RecordsSummary records={summarized} />}
       </div>
     )
   }
 }
 
-const HorseDetailsStub = (horse: Horse) => {
-  const summarized = filterRecords(horse.raceResults || [], 3)
-  return (
-    <div className={`${summary({ sex: horse.sex })}`}>
-      <BaseInfo {...horse} />
-    </div>
-  )
-}
-
 // 馬名を整形する
 // 競走名 / 血統名 (旧名 or 地方名)
 function displayHorseName(horse: Horse): string {
-  const base = horse.pedigreeName ? `${horse.name} / ${horse.pedigreeName}` : `${horse.name}`
+  const base =
+    horse.name && horse.pedigreeName
+      ? `${horse.name} / ${horse.pedigreeName}`
+      : `${horse.name ?? horse.pedigreeName}`
   const display_name = horse.formerName
-    ? `${base} (${horse.formerName})`
+    ? `${base} ［${horse.formerName}］`
     : horse.localName
-      ? `${base} (${horse.localName})`
+      ? `${base} ［${horse.localName}］`
       : base
   return display_name
 }
@@ -253,13 +253,13 @@ const RecordFormatter = (record: RaceRecord): JSX.Element => {
 const RecordsSummary = (props: RecordsProp): JSX.Element => {
   const records: RaceRecord[] = props.records
   return (
-    <>
+    <div className="flex flex-wrap gap-x-2">
       {records.map((record) => (
-        <span key={`${record.date}-${record.displayRace}`} className="ml-3">
+        <span key={`${record.date}-${record.displayRace}`} className="inline-flex items-baseline">
           <RecordFormatter {...record} />
           <span className="text-sm">（{yearOf(record.date)}）</span>
         </span>
       ))}
-    </>
+    </div>
   )
 }

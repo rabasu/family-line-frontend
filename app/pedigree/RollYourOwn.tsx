@@ -379,7 +379,9 @@ const ROLL_YOUR_OWN: Horse = {
                   },
                 ],
               },
-              earnings: '226.1万円',
+              prizeMoney: {
+                total: '226.1万円',
+              },
               children: [
                 {
                   name: 'アイユウ',
@@ -420,7 +422,9 @@ const ROLL_YOUR_OWN: Horse = {
                           },
                         ],
                       },
-                      earnings: '269.0万円', // JBIS
+                      prizeMoney: {
+                        total: '269.0万円', // JBIS
+                      },
                       children: [
                         {
                           name: 'ショウフウグリーン',
@@ -781,7 +785,9 @@ const ROLL_YOUR_OWN: Horse = {
                       },
                     ],
                   },
-                  earnings: '390.0万円',
+                  prizeMoney: {
+                    total: '390.0万円',
+                  },
                   children: [
                     {
                       name: 'ジーガーニジコ',
@@ -806,7 +812,9 @@ const ROLL_YOUR_OWN: Horse = {
                           },
                         ],
                       },
-                      earnings: '116.0万円',
+                      prizeMoney: {
+                        total: '116.0万円',
+                      },
                       children: [
                         {
                           name: 'ジーガーギヤラント',
@@ -831,7 +839,9 @@ const ROLL_YOUR_OWN: Horse = {
                               },
                             ],
                           },
-                          earnings: '216.0万円',
+                          prizeMoney: {
+                            total: '216.0万円',
+                          },
                           children: [
                             {
                               name: 'ジーガーターセル',
@@ -862,7 +872,9 @@ const ROLL_YOUR_OWN: Horse = {
                                   },
                                 ],
                               },
-                              earnings: '2631.0万円',
+                              prizeMoney: {
+                                total: '2631.0万円',
+                              },
                               children: [
                                 {
                                   name: 'ジーガートップラン',
@@ -893,7 +905,9 @@ const ROLL_YOUR_OWN: Horse = {
                                       },
                                     ],
                                   },
-                                  earnings: '710.0万円',
+                                  prizeMoney: {
+                                    total: '710.0万円',
+                                  },
                                   children: [
                                     {
                                       name: 'キャッスルトップ',
@@ -1129,7 +1143,9 @@ const ROLL_YOUR_OWN: Horse = {
                                       },
                                     ],
                                   },
-                                  earnings: '214.8万円',
+                                  prizeMoney: {
+                                    total: '214.8万円',
+                                  },
                                   children: [
                                     {
                                       name: 'ジーガーローレンス',
@@ -1160,7 +1176,9 @@ const ROLL_YOUR_OWN: Horse = {
                                           },
                                         ],
                                       },
-                                      earnings: '500.0万円',
+                                      prizeMoney: {
+                                        total: '500.0万円',
+                                      },
                                     },
                                   ],
                                 },

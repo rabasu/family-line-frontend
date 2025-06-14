@@ -29,6 +29,10 @@ const FLORRIES_CUP: Horse = {
       dam: 'フロリースカツプ',
       breeder: '小岩井農場（岩手県岩手郡雫石村）',
       color: '黒鹿毛',
+      raceStats: {
+        total: { runs: 0, wins: 0 },
+        divisions: [],
+      },
       children: [
         {
           name: 'プロデアー',
@@ -843,7 +847,9 @@ const FLORRIES_CUP: Horse = {
                       },
                     ],
                   },
-                  earnings: '10,770円', // 『登録馬名簿 昭和16年』p.62
+                  prizeMoney: {
+                    total: '10,770円', // 『登録馬名簿 昭和16年』p.62
+                  },
                 },
               ],
             },

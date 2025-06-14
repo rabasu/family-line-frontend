@@ -46,7 +46,6 @@ interface Horse {
   summary?: string // 見出し
   details?: JSX.Element | string // 詳細記事
   raceStats?: AggregatedRaceStats // 競走成績
-  earnings?: string // 獲得賞金
   prizeMoney?: PrizeMoney // 賞金
   awards?: ReceivedAward[] // 受賞
   raceResults?: RaceResult[] // 重賞成績
