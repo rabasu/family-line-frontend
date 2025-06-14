@@ -10,8 +10,10 @@ const FamilyTree = ({ name }): JSX.Element => {
   if (!horse) return <div>pedigreeが存在しません; ${name}</div>
 
   return (
-    <div className="root">
-      <Branch key="root" id="root" border={'root'} horse={horse} />
+    <div className="w-full overflow-x-auto md:overflow-x-visible">
+      <div className="root min-w-max">
+        <Branch key="root" id="root" border={'root'} horse={horse} />
+      </div>
     </div>
   )
 }

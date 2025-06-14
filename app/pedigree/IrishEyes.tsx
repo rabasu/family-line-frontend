@@ -306,7 +306,7 @@ const IRISH_EYES: Horse = {
                         ],
                       },
                       prizeMoney: {
-                        total: '4365.3万円',
+                        total: '43,652,600円',
                       },
                       raceResults: [
                         {
@@ -1103,11 +1103,11 @@ const IRISH_EYES: Horse = {
                           owner: '（有）ユートピア牧場', // JBIS
                           trainer: '阿部新生（美浦）',
                           raceStats: {
-                            total: { runs: 7, wins: 0 },
+                            total: { runs: 7, wins: 1 },
                             divisions: [
                               {
                                 type: 'central',
-                                stats: { flat: { runs: 7, wins: 0 }, jump: { runs: 0, wins: 0 } },
+                                stats: { flat: { runs: 7, wins: 1 }, jump: { runs: 0, wins: 0 } },
                               },
                               {
                                 type: 'local',
