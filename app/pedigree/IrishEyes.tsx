@@ -16,6 +16,7 @@ const IRISH_EYES: Horse = {
   sire: 'Treclare',
   dam: 'Liena',
   color: '鹿毛',
+  netkeibaId: '000a0024c0',
   children: [
     {
       name: 'オホヒカリ',
@@ -81,6 +82,7 @@ const IRISH_EYES: Horse = {
           result: '5',
         },
       ],
+      netkeibaId: '000a002645',
       children: [
         {
           name: 'クリノハナ',
@@ -154,6 +156,7 @@ const IRISH_EYES: Horse = {
               result: '7',
             },
           ],
+          netkeibaId: '000a0008d8',
         },
         {
           name: 'クリノホシ',
@@ -173,6 +176,7 @@ const IRISH_EYES: Horse = {
             total: { runs: 0, wins: 0 },
             divisions: [],
           },
+          netkeibaId: '000a002a5e',
           children: [
             {
               name: 'クリカツラ',
@@ -204,6 +208,7 @@ const IRISH_EYES: Horse = {
               prizeMoney: {
                 total: '22,790,000円',
               },
+              netkeibaId: '1955100312',
               children: [
                 {
                   name: 'ライラックポイント',
@@ -277,6 +282,7 @@ const IRISH_EYES: Horse = {
                       result: '10',
                     },
                   ],
+                  netkeibaId: '1979101622',
                   children: [
                     {
                       name: 'クリダリア',
@@ -390,6 +396,7 @@ const IRISH_EYES: Horse = {
                           result: '11',
                         },
                       ],
+                      netkeibaId: '1986104818',
                     },
                     {
                       name: 'ライスシャワー',
@@ -654,6 +661,7 @@ const IRISH_EYES: Horse = {
                           result: '中',
                         },
                       ],
+                      netkeibaId: '1989107699',
                     },
                   ],
                 },
@@ -685,6 +693,7 @@ const IRISH_EYES: Horse = {
                   prizeMoney: {
                     total: '9,240,000円', // JBIS
                   },
+                  netkeibaId: '1980102115',
                   children: [
                     {
                       name: 'クリバロン',
@@ -768,6 +777,7 @@ const IRISH_EYES: Horse = {
                           result: '中',
                         },
                       ],
+                      netkeibaId: '1985103631',
                     },
                   ],
                 },
@@ -844,6 +854,7 @@ const IRISH_EYES: Horse = {
                   result: '6',
                 },
               ],
+              netkeibaId: '1968z00180',
             },
             {
               name: 'クリホツト',
@@ -870,6 +881,7 @@ const IRISH_EYES: Horse = {
                   },
                 ],
               },
+              netkeibaId: '1955102326',
               children: [
                 {
                   name: 'クリアミー',
@@ -899,6 +911,7 @@ const IRISH_EYES: Horse = {
                   prizeMoney: {
                     total: '3,070,000円', // JBIS
                   },
+                  netkeibaId: '1955106006',
                   children: [
                     {
                       name: 'ブリージーラッド',
@@ -1005,6 +1018,7 @@ const IRISH_EYES: Horse = {
                           result: '8',
                         },
                       ],
+                      netkeibaId: '1981100780',
                     },
                     {
                       name: 'クリヤング',
@@ -1034,6 +1048,7 @@ const IRISH_EYES: Horse = {
                       prizeMoney: {
                         total: '660,000円', // JBIS
                       },
+                      netkeibaId: '1982102140',
                       children: [
                         {
                           name: 'クリトライ',
@@ -1087,6 +1102,7 @@ const IRISH_EYES: Horse = {
                               result: '15',
                             },
                           ],
+                          netkeibaId: '1989107691',
                         },
                         {
                           name: 'クリアモン',
@@ -1118,6 +1134,7 @@ const IRISH_EYES: Horse = {
                           prizeMoney: {
                             total: '7,750,000円', // JRA競走馬情報
                           },
+                          netkeibaId: '1992109307',
                           children: [],
                         },
                       ],

@@ -16,6 +16,7 @@ const ROLL_YOUR_OWN: Horse = {
   sire: 'Horron',
   dam: 'Negligee',
   color: '鹿毛',
+  netkeibaId: '000a002408',
   children: [
     {
       name: 'エスパリオン',
@@ -180,6 +181,7 @@ const ROLL_YOUR_OWN: Horse = {
         total: '11,180円',
       },
       raceResults: [],
+      netkeibaId: '000a00262a',
       children: [
         {
           name: 'ロールフレイ',
@@ -220,6 +222,7 @@ const ROLL_YOUR_OWN: Horse = {
               result: '4',
             },
           ],
+          netkeibaId: '000a00293b',
           children: [
             {
               name: 'ロールメリー',
@@ -334,6 +337,7 @@ const ROLL_YOUR_OWN: Horse = {
 翌1961年も現役を続行、中山大障害にも出走したが春3着・秋4着に終わった。この年を最後に引退、繁殖入りした記録がある[^CKN1961_108]が産駒は残っていない。
 [^CKN1961_108]:『中央競馬年鑑 昭和36年』p.108
 `,
+              netkeibaId: '1955z00316',
             },
           ],
         },
@@ -352,6 +356,7 @@ const ROLL_YOUR_OWN: Horse = {
             total: { runs: 0, wins: 0 },
             divisions: [],
           },
+          netkeibaId: '000a00285d',
           children: [
             {
               name: 'シラフジヒメ',
@@ -382,6 +387,7 @@ const ROLL_YOUR_OWN: Horse = {
               prizeMoney: {
                 total: '226.1万円',
               },
+              netkeibaId: '000a002cf6',
               children: [
                 {
                   name: 'アイユウ',
@@ -397,6 +403,7 @@ const ROLL_YOUR_OWN: Horse = {
                     total: { runs: 0, wins: 0 },
                     divisions: [],
                   },
+                  netkeibaId: '000a003a47',
                   children: [
                     {
                       name: 'シリユース',
@@ -425,6 +432,7 @@ const ROLL_YOUR_OWN: Horse = {
                       prizeMoney: {
                         total: '269.0万円', // JBIS
                       },
+                      netkeibaId: '1955101548',
                       children: [
                         {
                           name: 'ショウフウグリーン',
@@ -521,6 +529,7 @@ const ROLL_YOUR_OWN: Horse = {
 
 なお最盛期を共にした山内研二は後に調教師として大成。**イシノサンデー**や**ダンツフレーム**を管理し、G1級8勝を含む重賞57勝を挙げることになる。そんな名伯楽が13年間の騎手人生で唯一掴んだ重賞勝利として、ショウフウグリーンはその名を残している。
 `,
+                          netkeibaId: '000a0101e7',
                         },
                         {
                           name: 'キングシリユース',
@@ -596,6 +605,7 @@ const ROLL_YOUR_OWN: Horse = {
                               result: '13',
                             },
                           ],
+                          netkeibaId: '1980102790',
                         },
                       ],
                     },
@@ -703,6 +713,7 @@ const ROLL_YOUR_OWN: Horse = {
 
 それでも11月に復帰し、その復帰戦となるオープン戦で11カ月ぶりの勝利を挙げる。さらに連闘で臨んだ京都記念（秋）も勝利して重賞2勝目を挙げた。しかしケガもあってか翌年上期の出走は1度のみ。秋に再度復帰するもかつての強さは戻らず、この年いっぱいでターフを去った。
 `,
+              netkeibaId: '1955z00137',
             },
           ],
         },
@@ -746,6 +757,7 @@ const ROLL_YOUR_OWN: Horse = {
               result: '2',
             },
           ],
+          netkeibaId: '000a002a93',
           children: [
             {
               name: 'ライトニアン',
@@ -761,6 +773,7 @@ const ROLL_YOUR_OWN: Horse = {
                 total: { runs: 0, wins: 0 },
                 divisions: [],
               },
+              netkeibaId: '000a003322',
               children: [
                 {
                   name: 'ジーガークイン',
@@ -788,6 +801,7 @@ const ROLL_YOUR_OWN: Horse = {
                   prizeMoney: {
                     total: '390.0万円',
                   },
+                  netkeibaId: '1955101913',
                   children: [
                     {
                       name: 'ジーガーニジコ',
@@ -815,6 +829,7 @@ const ROLL_YOUR_OWN: Horse = {
                       prizeMoney: {
                         total: '116.0万円',
                       },
+                      netkeibaId: '1955106960',
                       children: [
                         {
                           name: 'ジーガーギヤラント',
@@ -842,6 +857,7 @@ const ROLL_YOUR_OWN: Horse = {
                           prizeMoney: {
                             total: '216.0万円',
                           },
+                          netkeibaId: '1983101051',
                           children: [
                             {
                               name: 'ジーガーターセル',
@@ -875,6 +891,7 @@ const ROLL_YOUR_OWN: Horse = {
                               prizeMoney: {
                                 total: '2631.0万円',
                               },
+                              netkeibaId: '1990102992',
                               children: [
                                 {
                                   name: 'ジーガートップラン',
@@ -908,6 +925,7 @@ const ROLL_YOUR_OWN: Horse = {
                                   prizeMoney: {
                                     total: '710.0万円',
                                   },
+                                  netkeibaId: '1999103929',
                                   children: [
                                     {
                                       name: 'キャッスルトップ',
@@ -1111,6 +1129,7 @@ const ROLL_YOUR_OWN: Horse = {
 次走の戸塚記念では1番人気に支持されるも6着。ジャパンダートダービーの激走で燃え尽きてしまったのか、以降は20戦以上出走して馬券圏内は1度のみとなっている。
 （2024年8月現在）
 `,
+                                      netkeibaId: '2018103898',
                                     },
                                   ],
                                 },
@@ -1146,6 +1165,7 @@ const ROLL_YOUR_OWN: Horse = {
                                   prizeMoney: {
                                     total: '214.8万円',
                                   },
+                                  netkeibaId: '2004100380',
                                   children: [
                                     {
                                       name: 'ジーガーローレンス',
@@ -1179,6 +1199,7 @@ const ROLL_YOUR_OWN: Horse = {
                                       prizeMoney: {
                                         total: '500.0万円',
                                       },
+                                      netkeibaId: '2016100322',
                                     },
                                   ],
                                 },
