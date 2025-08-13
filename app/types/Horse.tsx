@@ -26,12 +26,12 @@ export const sex: { [key in Sex]: string } = {
 
 interface Horse {
   name?: string // 競走名 競走出走のない馬は血統名
-  pedigreeName?: string // 血統名
+  pedigreeName?: string // 血統名 書籍資料等から取得する
   formerName?: string // 改名前の競走名など
   localName?: string // 地方転出後の馬名
   formerPedigreeName?: string // 出生時の血統名など（繁殖入り時に使われなかったもの）
-  linkName?: string // 競走名が重複する場合に使用 一意の名前を設定する
-  linkPedigreeName?: string // 血統名が重複する場合に使用 一意の名前を設定する
+  linkName?: string // 競走名が重複する場合、馬名({生年YYYY})の形式で一意の値を設定する
+  linkPedigreeName?: string // 血統名が重複する場合、血統名({生年YYYY})の形式で一意の値を設定する
   id: string
   foaled: Foaled // 生年月日
   sex: Sex // 性別
@@ -40,7 +40,6 @@ interface Horse {
   sire: string // 父
   dam: string // 母
   children?: Horse[] // 産駒
-  link?: string // リンク 使うかは微妙
   color?: string // 毛色
   hasArticle?: boolean
   summary?: string // 見出し
@@ -57,6 +56,7 @@ interface Horse {
   owner?: string // 馬主
   trainer?: string // 調教師
   jockey?: string // 騎手
+  netkeibaId?: string // Netkeiba ID
 }
 
 export type { Horse }

@@ -17,6 +17,7 @@ const FLORRIES_CUP: Horse = {
   dam: 'Stirrup Cup',
   breeder: 'W. C. Whitney',
   color: '黒鹿毛',
+  netkeibaId: '000a002337',
   children: [
     {
       pedigreeName: '第二フロリースカツプ',
@@ -29,6 +30,7 @@ const FLORRIES_CUP: Horse = {
       dam: 'フロリースカツプ',
       breeder: '小岩井農場（岩手県岩手郡雫石村）',
       color: '黒鹿毛',
+      netkeibaId: '000a01b7c4',
       raceStats: {
         total: { runs: 0, wins: 0 },
         divisions: [],
@@ -46,6 +48,7 @@ const FLORRIES_CUP: Horse = {
           dam: '第二フロリースカツプ',
           breeder: '小岩井農場（岩手県岩手郡雫石村）',
           color: '黒鹿毛',
+          netkeibaId: '000a0023f3',
           children: [
             {
               name: 'レパード',
@@ -90,6 +93,7 @@ const FLORRIES_CUP: Horse = {
                   result: '8',
                 },
               ],
+              netkeibaId: '000a002604',
               children: [
                 {
                   name: 'ナスノタケ',
@@ -501,6 +505,7 @@ const FLORRIES_CUP: Horse = {
         '「ヒラデエナモールド」『サラブレツド系統種牡馬名簿 第1巻』p.51',
         '「主禁」http://shukin.starfree.jp/BBS_LOG.htm',
       ],
+      netkeibaId: '000a01b605',
       children: [
         {
           name: 'マークイス',
@@ -653,6 +658,7 @@ const FLORRIES_CUP: Horse = {
       dam: 'フロリースカツプ',
       breeder: '小岩井農場（岩手県岩手郡雫石村）',
       color: '黒鹿毛',
+      netkeibaId: '000a002371',
       children: [
         {
           name: 'フロラーカツプ',
@@ -804,6 +810,7 @@ const FLORRIES_CUP: Horse = {
               result: '1',
             },
           ],
+          netkeibaId: '000a002370',
           children: [
             {
               name: 'タマロツク',
@@ -821,6 +828,7 @@ const FLORRIES_CUP: Horse = {
                 total: { runs: 0, wins: 0 }, // 『競馬必勝の基礎 種馬と競走馬篇』
                 divisions: [],
               },
+              netkeibaId: '000a00243c',
               children: [
                 {
                   name: 'フロリストモア',
@@ -850,6 +858,7 @@ const FLORRIES_CUP: Horse = {
                   prizeMoney: {
                     total: '10,770円', // 『登録馬名簿 昭和16年』p.62
                   },
+                  netkeibaId: '000a0026af',
                 },
               ],
             },
@@ -1017,6 +1026,7 @@ const FLORRIES_CUP: Horse = {
                   result: '3',
                 },
               ],
+              netkeibaId: '000a0008b1',
             },
             {
               name: 'ハクセツ',
@@ -1447,6 +1457,7 @@ const FLORRIES_CUP: Horse = {
                   result: '5',
                 },
               ],
+              netkeibaId: '000a00251f',
             },
             {
               name: 'アカイシダケ',
@@ -1682,6 +1693,7 @@ const FLORRIES_CUP: Horse = {
                   result: '8',
                 },
               ],
+              netkeibaId: '000a000874',
             },
           ],
         },
