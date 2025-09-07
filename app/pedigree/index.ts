@@ -1,6 +1,12 @@
 import { Horse } from '@/types/Horse'
+import { loadPedigreeFromJson, convertJsonToHorse, PedigreeJsonData } from '../lib/pedigree-loader'
 
-import ROLL_YOUR_OWN from './RollYourOwn'
+// JSON形式の牝系データを直接インポート
+import SCARLET_INK_JSON from './ScarletInk.json'
+import ROLL_YOUR_OWN_JSON from './RollYourOwn.json'
+
+// 既存のTSXファイル（後方互換性のため）
+// import ROLL_YOUR_OWN from './RollYourOwn'  // JSON形式に移行済み
 import FLORRIES_CUP from './FlorriesCup'
 import IRISH_EYES from './IrishEyes'
 import ASTERIA from './Asteria'
@@ -91,12 +97,61 @@ import HOSHIHATA from './Hoshihata'
 import HOSHIHAMA from './Hoshihama'
 import HOSHIWAKA from './Hoshiwaka'
 
+// 新しいJSONファイル（動的インポート）
+let SCARLET_INK: Horse | null = null
+let ROLL_YOUR_OWN: Horse | null = null
+
+// JSON形式の牝系データをHorse型に変換
+const SCARLET_INK_SYNC = convertJsonToHorse(SCARLET_INK_JSON as PedigreeJsonData)
+const ROLL_YOUR_OWN_SYNC = convertJsonToHorse(ROLL_YOUR_OWN_JSON as PedigreeJsonData)
+
 type PedigreeList = {
   [key: string]: Horse
 }
 
+/**
+ * 牝系データを取得する（TSXファイルとJSONファイルの両方に対応）
+ */
+async function getPedigreeData(key: string): Promise<Horse | null> {
+  try {
+    // まずJSONファイルを試す
+    if (key === 'scarlet_ink') {
+      if (!SCARLET_INK) {
+        SCARLET_INK = await loadPedigreeFromJson('./ScarletInk.json')
+      }
+      return SCARLET_INK
+    }
+
+    if (key === 'roll_your_own') {
+      if (!ROLL_YOUR_OWN) {
+        ROLL_YOUR_OWN = await loadPedigreeFromJson('./RollYourOwn.json')
+      }
+      return ROLL_YOUR_OWN
+    }
+
+    // その他のJSONファイルもここに追加
+    // if (key === 'other_pedigree') {
+    //   if (!OTHER_PEDIGREE) {
+    //     OTHER_PEDIGREE = await loadPedigreeFromJson('./OtherPedigree.json')
+    //   }
+    //   return OTHER_PEDIGREE
+    // }
+
+    return null
+  } catch (error) {
+    console.error(`JSON牝系データの読み込みに失敗: ${key}`, error)
+    return null
+  }
+}
+
+/**
+ * 牝系データのMap（既存のTSXファイル）
+ */
 const pedigreeList = new Map<string, Horse>([
-  ['roll_your_own', ROLL_YOUR_OWN],
+  // JSON形式の牝系データを追加
+  ...(ROLL_YOUR_OWN_SYNC ? [['roll_your_own', ROLL_YOUR_OWN_SYNC] as [string, Horse]] : []),
+  ...(SCARLET_INK_SYNC ? [['scarlet_ink', SCARLET_INK_SYNC] as [string, Horse]] : []),
+  // 既存のTSXファイル
   ['florries_cup', FLORRIES_CUP],
   ['irish_eyes', IRISH_EYES],
   ['asteria', ASTERIA],
@@ -187,5 +242,25 @@ const pedigreeList = new Map<string, Horse>([
   ['hoshihama', HOSHIHAMA],
   ['hoshiwaka', HOSHIWAKA],
 ])
+
+/**
+ * 牝系データを取得する（TSXファイルとJSONファイルの両方に対応）
+ */
+export async function getPedigree(key: string): Promise<Horse | null> {
+  // まず既存のTSXファイルをチェック
+  if (pedigreeList.has(key)) {
+    return pedigreeList.get(key)!
+  }
+
+  // JSONファイルを試す
+  return await getPedigreeData(key)
+}
+
+/**
+ * 利用可能な牝系のキー一覧を取得
+ */
+export function getAvailablePedigreeKeys(): string[] {
+  return Array.from(pedigreeList.keys())
+}
 
 export default pedigreeList
