@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "アステリヤ",
     "rootHorseId": "asteria",
-    "lastUpdated": "2025-09-07T14:36:10.941Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-22T04:49:41.648810Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -20,6 +20,409 @@
       "netkeibaId": "000a002576",
       "source": "tsx_conversion",
       "owner": "土田農場"
+    },
+    {
+      "id": "shoryu-ken",
+      "name": "ショウリュウケン",
+      "foaled": "{'year': 2005, 'month': 6, 'day': 1}",
+      "foaledArray": ["2005", "06", "01"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ブラックホーク",
+      "dam": "スキャニングジョイ",
+      "color": "鹿毛",
+      "breeder": "岡田牧場（静内町）",
+      "netkeibaId": "2005100151",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2010,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "京都ジャンプS(JGIII)",
+          "displayRace": "京都ジャンプS",
+          "distance": "障3170",
+          "grade": "jra_jg3",
+          "entry": "12",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2010,
+            "month": 10,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "東京ハイジャンプ(JGII)",
+          "displayRace": "東京ハイジャンプ",
+          "distance": "障3300",
+          "grade": "jra_jg2",
+          "entry": "14",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2010,
+            "month": 4,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "中山グランドジャンプ(JGI)",
+          "displayRace": "中山グランドジャンプ",
+          "distance": "障4250",
+          "grade": "jra_jg1",
+          "entry": "14",
+          "result": "11",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2010,
+            "month": 3,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "阪神スプリングJ(JGII)",
+          "displayRace": "阪神スプリングジャンプ",
+          "distance": "障3900",
+          "grade": "jra_jg2",
+          "entry": "14",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2009,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "京都ハイジャンプ(JGII)",
+          "displayRace": "京都ハイジャンプ",
+          "distance": "障3930",
+          "grade": "jra_jg2",
+          "entry": "14",
+          "result": "10",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Shoryu Ken",
+      "prizeMoney": {
+        "total": "9,610万円",
+        "central": "9,610万円",
+        "local": "0万円"
+      },
+      "damId": "scanning-joy"
+    },
+    {
+      "id": "scanning-joy",
+      "name": "スキャニングジョイ",
+      "foaled": "{'year': 1998, 'month': 3, 'day': 30}",
+      "foaledArray": ["1998", "03", "30"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "スキャン(US)",
+      "dam": "ミスマルシゲ",
+      "color": "鹿毛",
+      "breeder": "岡田牧場（静内町）",
+      "netkeibaId": "1998104038",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Scanning Joy",
+      "prizeMoney": {
+        "total": "2,337万円",
+        "central": "2,310万円",
+        "local": "27万円"
+      },
+      "damId": "miss-marushige"
+    },
+    {
+      "id": "miss-marushige",
+      "name": "ミスマルシゲ",
+      "foaled": "{'year': 1981, 'month': 5, 'day': 14}",
+      "foaledArray": ["1981", "05", "14"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダンサーズイメージ",
+      "dam": "マルシゲ",
+      "color": "芦毛",
+      "breeder": "岡田牧場（静内町）",
+      "netkeibaId": "1981104570",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Miss Marushige",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "marushige"
+    },
+    {
+      "id": "marushige",
+      "name": "マルシゲ",
+      "foaled": "{'year': 1965}",
+      "foaledArray": ["1965"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ティエポロ(ITA)",
+      "dam": "ライジングモア",
+      "color": "黒鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955100852",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 2,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "5",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "12",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 10,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "クイーンS(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 8,
+            "day": 25
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(OP)",
+          "displayRace": "札幌記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "17",
+          "result": "3",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "4歳牝馬特別(OP)",
+          "displayRace": "4歳牝馬特別（東）",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 4,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "24",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 3,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "阪神4歳牝馬特別(OP)",
+          "displayRace": "阪神4歳牝馬特別",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "4",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 3,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "クイーンC(OP)",
+          "displayRace": "クイーンC",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Marushige",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "raijingu-moa"
+    },
+    {
+      "id": "raijingu-moa",
+      "name": "ライジングモア",
+      "foaled": "{'year': 1958}",
+      "foaledArray": ["1958"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ライジングフレーム(IRE)",
+      "dam": "シラヨシ",
+      "color": "黒鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002deb",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Raijingu Moa",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shirayoshi"
+    },
+    {
+      "id": "shirayoshi",
+      "name": "シラヨシ",
+      "foaled": "{'year': 1947}",
+      "foaledArray": ["1947"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダイオライト",
+      "dam": "アステリモア",
+      "color": "黒鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a002865",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "asuterimoa"
+    },
+    {
+      "id": "asuterimoa",
+      "name": "アステリモア",
+      "foaled": "{'year': 1935}",
+      "foaledArray": ["1935"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シアンモア(GB)",
+      "dam": "アステリヤAsteria",
+      "color": "黒鹿毛",
+      "breeder": "秋田県",
+      "netkeibaId": "000a002673",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "asteria"
     }
   ]
 }

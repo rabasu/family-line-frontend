@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "pedigreeName": "Case",
+    "rootHorseId": "case",
+    "lastUpdated": "2025-09-22T14:55:25.780709Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "case",
+      "name": "ケース",
+      "foaled": "{'year': 1984}",
+      "foaledArray": ["1984"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Fappiano(US)",
+      "dam": "Granny Sack",
+      "color": "鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a00623d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Case"
+    },
+    {
+      "id": "tempest-case",
+      "name": "テンペストケース",
+      "foaled": "{'year': 1994, 'month': 3, 'day': 14}",
+      "foaledArray": ["1994", "03", "14"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "サンデーサイレンス(US)",
+      "dam": "ケース",
+      "color": "栗毛",
+      "breeder": "ノーザンファーム（早来町）",
+      "netkeibaId": "1994108642",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tempest Case",
+      "prizeMoney": {
+        "total": "775万円",
+        "central": "775万円",
+        "local": "0万円"
+      },
+      "damId": "case"
+    },
+    {
+      "id": "iron-duke",
+      "name": "アイアンデューク",
+      "foaled": "{'year': 2006, 'month': 3, 'day': 17}",
+      "foaledArray": ["2006", "03", "17"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "スウェプトオーヴァーボード(US)",
+      "dam": "テンペストケース",
+      "color": "芦毛",
+      "breeder": "上水牧場（鵡川町）",
+      "netkeibaId": "2006102453",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2009,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "ニュージーランドT(GII)",
+          "displayRace": "ニュージーランドT",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "5",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "京王杯2歳S(GII)",
+          "displayRace": "京王杯2歳S",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "8",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 8,
+            "day": 10
+          },
+          "racecourse": "函館",
+          "race": "函館2歳S(GIII)",
+          "displayRace": "函館2歳S",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "3",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Iron Duke",
+      "prizeMoney": {
+        "total": "5,862万円",
+        "central": "5,862万円",
+        "local": "0万円"
+      },
+      "damId": "tempest-case"
+    }
+  ]
+}

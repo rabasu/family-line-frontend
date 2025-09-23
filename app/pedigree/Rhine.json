@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ライン",
     "rootHorseId": "rhine",
-    "lastUpdated": "2025-09-07T14:36:11.239Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-24T01:09:44.102183Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -20,6 +20,380 @@
       "netkeibaId": "000a018482",
       "source": "tsx_conversion",
       "owner": "小岩井農場"
+    },
+    {
+      "id": "double-happiness",
+      "name": "ダブルハピネス",
+      "foaled": "{'year': 1997, 'month': 3, 'day': 14}",
+      "foaledArray": ["1997", "03", "14"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ロイヤルアカデミーII(US)",
+      "dam": "エンジェルクロス",
+      "color": "芦毛",
+      "breeder": "豊洋牧場（門別町）",
+      "netkeibaId": "1997106977",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2003,
+            "month": 8,
+            "day": 18
+          },
+          "racecourse": "佐賀",
+          "race": "サマーチャンピオン(JpnIII)",
+          "displayRace": "サマーチャンピオン〔佐賀〕",
+          "distance": "ダ1400",
+          "grade": "nar_jpn3",
+          "entry": "11",
+          "result": "9",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "プロキオンS(GIII)",
+          "displayRace": "プロキオンS",
+          "distance": "ダ1400",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "14",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "ジャパンカップダート(GI)",
+          "displayRace": "ジャパンカップダート",
+          "distance": "ダ1800",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "13",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "東京中日S杯武蔵野S(GIII)",
+          "displayRace": "武蔵野S",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 9,
+            "day": 29
+          },
+          "racecourse": "阪神",
+          "race": "シリウスS(GIII)",
+          "displayRace": "シリウスS",
+          "distance": "ダ1400",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Double Happiness",
+      "prizeMoney": {
+        "total": "1億3,196万円",
+        "central": "1億3,196万円",
+        "local": "0万円"
+      },
+      "damId": "angel-cross"
+    },
+    {
+      "id": "angel-cross",
+      "name": "エンジェルクロス",
+      "foaled": "{'year': 1988, 'month': 4, 'day': 16}",
+      "foaledArray": ["1988", "04", "16"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シービークロス",
+      "dam": "ホウヨウギフト",
+      "color": "芦毛",
+      "breeder": "豊洋牧場（門別町）",
+      "netkeibaId": "1988103126",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Angel Cross",
+      "prizeMoney": {
+        "total": "3,684万円",
+        "central": "3,684万円",
+        "local": "0万円"
+      },
+      "damId": "hoyo-gift"
+    },
+    {
+      "id": "hoyo-gift",
+      "name": "ホウヨウギフト",
+      "foaled": "{'year': 1983, 'month': 3, 'day': 6}",
+      "foaledArray": ["1983", "03", "06"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ファバージ(FR)",
+      "dam": "トヨイデ",
+      "color": "鹿毛",
+      "breeder": "豊洋牧場（門別町）",
+      "netkeibaId": "1983107106",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Hoyo Gift",
+      "prizeMoney": {
+        "total": "617万円",
+        "central": "617万円",
+        "local": "0万円"
+      },
+      "damId": "toyoide"
+    },
+    {
+      "id": "toyoide",
+      "name": "トヨイデ",
+      "foaled": "{'year': 1970}",
+      "foaledArray": ["1970"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "レアリーリーガル(US)",
+      "dam": "スイートパール",
+      "color": "栗毛",
+      "breeder": "新冠町",
+      "netkeibaId": "1955102542",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Toyoide",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "suihto-pahru"
+    },
+    {
+      "id": "suihto-pahru",
+      "name": "スイートパール",
+      "foaled": "{'year': 1961}",
+      "foaledArray": ["1961"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "パールダイヴァー",
+      "dam": "スヰートハート",
+      "color": "栗毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a0035b0",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Suihto Pahru",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "suiitohaato"
+    },
+    {
+      "id": "suiitohaato",
+      "name": "スヰートハート",
+      "foaled": "{'year': 1950}",
+      "foaledArray": ["1950"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セフト(GB)",
+      "dam": "武兆",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002b47",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "pedigreeName": "スイートハート",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "takeshichou"
+    },
+    {
+      "id": "takeshichou",
+      "name": "武兆",
+      "foaled": "{'year': 1938}",
+      "foaledArray": ["1938"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "月友",
+      "dam": "光風",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002589",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "koufuu"
+    },
+    {
+      "id": "koufuu",
+      "name": "光風",
+      "foaled": "{'year': 1933}",
+      "foaledArray": ["1933"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ブラツクスミス(GB)",
+      "dam": "華栄",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a0023ab",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kaei"
+    },
+    {
+      "id": "kaei",
+      "name": "華栄",
+      "foaled": "{'year': 1924}",
+      "foaledArray": ["1924"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "チヤペルブラムプトン(GB)",
+      "dam": "リツツルフエーム",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a0194b9",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ritsutsurufueemu"
+    },
+    {
+      "id": "ritsutsurufueemu",
+      "name": "リツツルフエーム",
+      "foaled": "{'year': 1915}",
+      "foaledArray": ["1915"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ルーヂゲーア(GB)",
+      "dam": "第二ライン",
+      "color": "黒鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a018484",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dainirain"
+    },
+    {
+      "id": "dainirain",
+      "name": "第二ライン",
+      "foaled": "{'year': 1910}",
+      "foaledArray": ["1910"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "インタグリオー(GB)",
+      "dam": "ライン",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a018483",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rhine"
     }
   ]
 }

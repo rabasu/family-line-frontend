@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "pedigreeName": "Diagonale",
+    "rootHorseId": "diagonale",
+    "lastUpdated": "2025-09-18T17:17:28.094601Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "diagonale",
+      "name": "ダイアゴネル",
+      "foaled": "{'year': 2000}",
+      "foaledArray": ["2000"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Darshaan",
+      "dam": "Dance of Leaves",
+      "color": "鹿毛",
+      "breeder": "愛",
+      "netkeibaId": "000a010ce5",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Diagonale"
+    },
+    {
+      "id": "quercus",
+      "name": "クエルクス",
+      "foaled": "{'year': 2008, 'month': 3, 'day': 20}",
+      "foaledArray": ["2008", "03", "20"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フジキセキ",
+      "dam": "ダイアゴネル",
+      "color": "黒鹿毛",
+      "breeder": "ダーレー・ジャパン・ファーム（日高町）",
+      "netkeibaId": "2008105773",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Quercus",
+      "prizeMoney": {
+        "total": "700万円",
+        "central": "700万円",
+        "local": "0万円"
+      },
+      "damId": "diagonale"
+    },
+    {
+      "id": "rosen-krieger",
+      "name": "ローゼンクリーガー",
+      "foaled": "{'year': 2016, 'month': 3, 'day': 21}",
+      "foaledArray": ["2016", "03", "21"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノヴェリスト(IRE)",
+      "dam": "クエルクス",
+      "color": "青毛",
+      "breeder": "矢野牧場（新ひだか町）",
+      "netkeibaId": "2016106363",
+      "raceStats": {
+        "total": {
+          "runs": 16,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2019,
+            "month": 3,
+            "day": 16
+          },
+          "racecourse": "中京",
+          "race": "中スポ賞ファルコンS(GIII)",
+          "displayRace": "ファルコンS",
+          "distance": "芝1400",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2018,
+            "month": 12,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "阪神ジュベナイルF(GI)",
+          "displayRace": "阪神ジュベナイルF",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "12",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Rosen Krieger",
+      "prizeMoney": {
+        "total": "4,231万円",
+        "central": "4,231万円",
+        "local": "0万円"
+      },
+      "damId": "quercus"
+    }
+  ]
+}

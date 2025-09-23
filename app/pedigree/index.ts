@@ -1,13 +1,539 @@
 import { Horse } from '@/types/Horse'
 import { loadPedigreeFromJson, convertJsonToHorse, PedigreeJsonData } from '../lib/pedigree-loader'
 
-// JSON形式の牝系データを直接インポート
-import SCARLET_INK_JSON from './ScarletInk.json'
-import ROLL_YOUR_OWN_JSON from './RollYourOwn.json'
+// 動的JSONファイル読み込み用の型定義
+type JsonFileData = {
+  fileName: string
+  variableName: string
+  keyName: string
+  data: PedigreeJsonData | null
+  horse: Horse | null
+}
+
+/**
+ * ファイル名から変数名を生成する関数
+ * 例: "ScarletInk.json" -> "SCARLET_INK"
+ */
+function generateVariableName(fileName: string): string {
+  return fileName
+    .replace('.json', '')
+    .replace(/([A-Z])/g, '_$1')
+    .toUpperCase()
+    .replace(/^_/, '')
+}
+
+/**
+ * ファイル名からキー名を生成する関数
+ * 例: "ScarletInk.json" -> "scarlet_ink"
+ */
+function generateKeyName(fileName: string): string {
+  return fileName
+    .replace('.json', '')
+    .replace(/([A-Z])/g, '_$1')
+    .toLowerCase()
+    .replace(/^_/, '')
+}
+
+/**
+ * 利用可能なJSONファイルの一覧を取得する
+ * 注意: Next.jsではfsモジュールが使用できないため、静的に定義
+ */
+function getAvailableJsonFiles(): string[] {
+  return [
+    'AbbeyBridge.json',
+    'Abi.json',
+    'ABNoodle.json',
+    'Abyla.json',
+    'Aconite.json',
+    'Addicted.json',
+    'AdmireLapis.json',
+    'AdmireMonroe.json',
+    'AdmireYell.json',
+    'Admise.json',
+    'AdventureOn.json',
+    'Afaff.json',
+    'Afdhaad.json',
+    'AfterTheSun.json',
+    'Aghsan.json',
+    'AirPassion.json',
+    'Alabaster2.json',
+    'Albiano.json',
+    'Alderney.json',
+    'Alizetta.json',
+    'AlKhazaama.json',
+    'AllForLondon.json',
+    'AllHallows.json',
+    'AllicansayisWow.json',
+    'AllTheChat.json',
+    'Allthewaybaby.json',
+    'AlpineRose.json',
+    'AlpineSwift.json',
+    'Alps.json',
+    'AlsAnnie.json',
+    'Alvena.json',
+    'AlwaysLoyal.json',
+    'Alyreina.json',
+    'AlysDelight.json',
+    'Alywin.json',
+    'Amaritude.json',
+    'AmazonWarrior.json',
+    'Ambulea.json',
+    'Amelia.json',
+    'AnaMarie.json',
+    'Ancaria.json',
+    'Ancho.json',
+    'Angelinthemorning.json',
+    'AngelOfTheGwaun.json',
+    'AngelSeed.json',
+    'Annalina.json',
+    'AnnaMonda.json',
+    'AnnaPalariva.json',
+    'AnnaPerenna.json',
+    'AnnaSterz.json',
+    'Anniegetyourgun.json',
+    'AnnStuart.json',
+    'Antiquary.json',
+    'AntiqueValue.json',
+    'Appeal2.json',
+    'AppealingLass.json',
+    'AprilSonnett.json',
+    'Aquarist.json',
+    'Aranthera.json',
+    'Archeology.json',
+    'Ariade.json',
+    'AriaPura.json',
+    'Artisia.json',
+    'Arvada.json',
+    'Arvola.json',
+    'AsakaFuji.json',
+    'AsakaHime.json',
+    'AsakaMambo.json',
+    'AscotStrike.json',
+    'AseltinesAngels.json',
+    'AShinEpona.json',
+    'AShinHarbor.json',
+    'AsianMeteor.json',
+    'Assertaine.json',
+    'Assertion.json',
+    'AssertivePrincess.json',
+    'Asteria.json',
+    'Astonishment.json',
+    'Astrea2.json',
+    'Atab.json',
+    'Atoll.json',
+    'Attract.json',
+    'AubeIndienne.json',
+    'AussieCompany.json',
+    'AutumnMelody.json',
+    'AutumnMoon.json',
+    'Ave.json',
+    'AvenirCertain.json',
+    'AvenuesLady.json',
+    'AwesomeFeather.json',
+    'Azeri.json',
+    'Azhaar.json',
+    'AztecHill.json',
+    'Azwah.json',
+    'Badeelah.json',
+    'Bagalollies.json',
+    'Bagatelle.json',
+    'Bala.json',
+    'BaladaSale.json',
+    'Baldwina.json',
+    'BalletDancing.json',
+    'BalletQueen.json',
+    'Banovina.json',
+    'Banri.json',
+    'Barada.json',
+    'Barancella.json',
+    'Barbicat.json',
+    'BarbsBold.json',
+    'Bardonecchia.json',
+    'BarefootLady.json',
+    'Basha.json',
+    'Basimah.json',
+    'Baverstock.json',
+    'BeaconTarn.json',
+    'Beatrice.json',
+    'BeatrixKiddo.json',
+    'BeauDanzig.json',
+    'BeautifulBasic.json',
+    'BeautifulDreamer.json',
+    'BeautifulGem.json',
+    'BeautifulGold.json',
+    'BeautifulMoment.json',
+    'BeautyContest.json',
+    'Beechmast.json',
+    'Beesandbirds.json',
+    'BeFair.json',
+    'BeHappy.json',
+    'BelieveSally.json',
+    'Belladora.json',
+    'BelleAllure.json',
+    'BelleAnglaise.json',
+    'BelleCherie.json',
+    'BelleParole.json',
+    'Belpiano.json',
+    'Bemol.json',
+    'BeMyFire.json',
+    'Berliani.json',
+    'BerryRose.json',
+    'Bersid.json',
+    'BestBoot.json',
+    'BestTasseled.json',
+    'BetterThanHonour.json',
+    'Bettolle.json',
+    'BetweenTime.json',
+    'BiddyScaliger.json',
+    'BijouxMiss.json',
+    'BillericayBelle.json',
+    'BirdCat.json',
+    'Birjand.json',
+    'BitofFaith.json',
+    'BlancheReine.json',
+    'Blastina.json',
+    'BlazingBliss.json',
+    'Blixen.json',
+    'BlossomingBeauty.json',
+    'BlueAvenue.json',
+    'BlueJeanBaby.json',
+    'BlueLustre.json',
+    'Bluette.json',
+    'BlushingBride.json',
+    'BlushingDebutante.json',
+    'BlushingPrincess.json',
+    'BobsDilemma.json',
+    'Boldogsag.json',
+    'BonnyNancy.json',
+    'BornFamous.json',
+    'Boudeuse.json',
+    'BoundToDance.json',
+    'Bradamante.json',
+    'BreedersFlight.json',
+    'BridalDinner.json',
+    'BroadAppeal.json',
+    'BroughtToMind.json',
+    'BrushWithTequila.json',
+    'BubbleCompany.json',
+    'BuffedOrange.json',
+    'Bugwiser.json',
+    'BuperDance.json',
+    'Burningwood.json',
+    'Buxom.json',
+    'BuyTheCat.json',
+    'BuyTheSport.json',
+    'ByeMyLove.json',
+    'Cadenza2.json',
+    'Caerna.json',
+    'CafeLaLaLu.json',
+    'CairoRose.json',
+    'Cajole.json',
+    'CaliforniaNectar.json',
+    'CallenderMaid.json',
+    'Calpoppy.json',
+    'Cambina.json',
+    'CameronGirl.json',
+    'Campana.json',
+    'CanadianApproval.json',
+    'CanadianGirl.json',
+    'Canopus.json',
+    'CapeVerdi.json',
+    'Capricciosa.json',
+    'Carambola.json',
+    'Cariad.json',
+    'Caricatura.json',
+    'CarlaPower.json',
+    'Carling.json',
+    'Carniola.json',
+    'CaroGal.json',
+    'Case.json',
+    'Casey.json',
+    'CastleBrown.json',
+    'CatAli.json',
+    'Catalina.json',
+    'Catalyst.json',
+    'Cataract.json',
+    'Catequil.json',
+    'CatherineParr.json',
+    'Celeris.json',
+    'CertainSecret.json',
+    'Chalna.json',
+    'ChanceySquaw.json',
+    'Chanrossa.json',
+    'Chansonnette.json',
+    'ChariotdOr.json',
+    'Charitable.json',
+    'CharityQuest.json',
+    'CharlestonHarbor.json',
+    'CharmantCoeur.json',
+    'CharmingFappiano.json',
+    'Charon.json',
+    'Chatterbox.json',
+    'Cheetah.json',
+    'CheriesSmile.json',
+    'CherokeeMaiden.json',
+    'ChesaPlana.json',
+    'ChesutokeRose.json',
+    'ChezLaFemme.json',
+    'ChickiesDisco.json',
+    'ChiefNell.json',
+    'ChinaBreeze.json',
+    'ChristianName.json',
+    'Christiecat.json',
+    'CityWells.json',
+    'CjsSecret.json',
+    'ClaraMcgeary.json',
+    'ClareBridge.json',
+    'Clarinet.json',
+    'ClassicCrown.json',
+    'ClearAmber.json',
+    'ClearPath.json',
+    'Clonfert.json',
+    'Cluster.json',
+    'Coasted.json',
+    'Colchica.json',
+    'CollineDeBruyere.json',
+    'ColonialBeauty.json',
+    'Comfortable.json',
+    'Commercante.json',
+    'Concaro.json',
+    'CondoCommando.json',
+    'ConquistadorBlue.json',
+    'Conquistadoress.json',
+    'Conservatoire.json',
+    'Contested.json',
+    'CoodenBeach.json',
+    'Coppa.json',
+    'CopperButterfly.json',
+    'Coquerelle.json',
+    'Corandia.json',
+    'CosmicWish.json',
+    'CosmoBell.json',
+    'CosmoCielo.json',
+    'CouldBeQueen.json',
+    'CountessSteffi.json',
+    'CountOnAChange.json',
+    'CourtneysDay.json',
+    'CraftyWife.json',
+    'Craigdarroch.json',
+    'CreamnCrimson.json',
+    'CreamOnly.json',
+    'Creed.json',
+    'CrepeDeChine.json',
+    'CrimsonRattler.json',
+    'CroupierLady.json',
+    'CrownLavender.json',
+    'CrystalGarden.json',
+    'CrystalRail.json',
+    'Cubata.json',
+    'Cursora.json',
+    'Cyclas.json',
+    'Daabarii.json',
+    'Dahlia.json',
+    'DaisyDukes.json',
+    'Dalama.json',
+    'Dalicia.json',
+    'Dalinda.json',
+    'DamascusQueenJ.json',
+    'DameDeCompagnie.json',
+    'DamSpectacular.json',
+    'DanceCountry.json',
+    'DanceGinny.json',
+    'DanceInTime.json',
+    'DanceLively.json',
+    'DancerDestination.json',
+    'DancersCup.json',
+    'DanceTime.json',
+    'DanceWithKitten.json',
+    'DancingAuntie.json',
+    'DancingGoddess.json',
+    'DancingKey.json',
+    'Danedream.json',
+    'Daneskaya.json',
+    'DanseurFabuleux.json',
+    'DanseusedEtoile.json',
+    'DantsuSure.json',
+    'DanuskasMyGirl.json',
+    'DaringDanzig.json',
+    'DaringVerse.json',
+    'DarkestStar.json',
+    'DawnRansom.json',
+    'DearMimi.json',
+    'Deck.json',
+    'Deepdene.json',
+    'Definite.json',
+    'DeLaroche.json',
+    'DelicateIce.json',
+    'Delphinia.json',
+    'Depth.json',
+    'Desaucered.json',
+    'DesmondsHoliday.json',
+    'DevilsBride.json',
+    'DevilsCorner.json',
+    'Devonia.json',
+    'Diagonale.json',
+    'Diamantina.json',
+    'DiamondCity.json',
+    'DiamondDiva.json',
+    'DiamondSnow.json',
+    'Diana.json',
+    'DianneK.json',
+    'Dicing.json',
+    'Diferente.json',
+    'Difficult.json',
+    'Dilga.json',
+    'DinnerTime.json',
+    'Dionisia.json',
+    'DiscOfGold.json',
+    'Dissipating.json',
+    'DivorceTestimony.json',
+    'DixielandGem.json',
+    'DixieSplash.json',
+    'Doff.json',
+    'DollyTalbo.json',
+    'Dolsk.json',
+    'DonaLucia.json',
+    'DonnaBlini.json',
+    'DreamMoment.json',
+    'DreamOfGenie.json',
+    'DreamScheme.json',
+    'Dresden.json',
+    'DrivenSnow.json',
+    'DubaiMajesty.json',
+    'DubawiHeights.json',
+    'Dumka.json',
+    'Dunira.json',
+    'Duplicit.json',
+    'DuPre.json',
+    'Durango.json',
+    'DustAndDiamonds.json',
+    'DynasClub.json',
+    'EarthGreen.json',
+    'Ecology.json',
+    'Egeria.json',
+    'EishinGeorgia.json',
+    'EishinLaramie.json',
+    'EishinMarianna.json',
+    'EishinMcallen.json',
+    'EishinTennessee.json',
+    'Elatis.json',
+    'Eleuthera.json',
+    'Ella.json',
+    'ElusiveWave.json',
+    'Elzevir.json',
+    'Embla.json',
+    'EmbrasserMoi.json',
+    'Emile.json',
+    'Enamoured.json',
+    'Encantado.json',
+    'EndItDarling.json',
+    'EnglishHumour.json',
+    'Enigma.json',
+    'Enora.json',
+    'EnthrallingLady.json',
+    'Enticed.json',
+    'Entresol.json',
+    'EpicLove.json',
+    'EriduBabylon.json',
+    'ErimoFantasy.json',
+    'ErimoShirayuri.json',
+    'ErimoSymphony.json',
+    'ErinBird.json',
+    'Erzsi.json',
+    'EstherDee.json',
+    'Estrechada.json',
+    'Esyoueffcee.json',
+    'EternalBeat.json',
+    'EtesVousPrets.json',
+    'Etiquette.json',
+    'ExcellentGift.json',
+    'ExceptForWanda.json',
+    'ExhibitOne.json',
+    'Exodus.json',
+    'FabulousLaFouine.json',
+    'FagersProspect.json',
+    'FairEllen.json',
+    'FairestCape.json',
+    'FairestComet.json',
+    'FairPeggy.json',
+    'FairShirley.json',
+    'FairyBallade.json',
+    'FairyDoll.json',
+    'FairyFootsteps.json',
+    'FairyLights.json',
+    'FairyTailTime.json',
+    'FairyTale.json',
+    'FairyWaltz.json',
+    'Falkar.json',
+    'Fancimine.json',
+    'FancyJet.json',
+    'FancyKitten.json',
+    'Fanjica.json',
+    'FantasySuzuka.json',
+    'FarmCat.json',
+    'FashionMaid.json',
+    'Fasta.json',
+    'Felicitous.json',
+  ]
+}
+
+/**
+ * 指定されたJSONファイルを動的に読み込む
+ */
+async function loadJsonFile(fileName: string): Promise<JsonFileData> {
+  const variableName = generateVariableName(fileName)
+  const keyName = generateKeyName(fileName)
+
+  try {
+    // pedigree-loader.tsのloadPedigreeFromJsonを使用
+    const horse = await loadPedigreeFromJson(`./${fileName}`)
+
+    return {
+      fileName,
+      variableName,
+      keyName,
+      data: null, // 元のJSONデータは不要
+      horse,
+    }
+  } catch (error) {
+    console.error(`JSONファイルの読み込みに失敗: ${fileName}`, error)
+    return {
+      fileName,
+      variableName,
+      keyName,
+      data: null,
+      horse: null,
+    }
+  }
+}
+
+/**
+ * すべてのJSONファイルを読み込んでJsonFileDataの配列を作成する
+ */
+async function loadAllJsonFiles(): Promise<JsonFileData[]> {
+  const jsonFiles = getAvailableJsonFiles()
+  const results: JsonFileData[] = []
+
+  for (const fileName of jsonFiles) {
+    try {
+      const jsonFileData = await loadJsonFile(fileName)
+      results.push(jsonFileData)
+    } catch (error) {
+      console.error(`JSONファイルの読み込みに失敗: ${fileName}`, error)
+    }
+  }
+
+  return results
+}
+
+// 動的にJSONファイルを読み込み（初期化時は空配列、必要時に読み込み）
+let jsonFilesData: JsonFileData[] = []
 
 // 既存のTSXファイル（後方互換性のため）
 // import ROLL_YOUR_OWN from './RollYourOwn'  // JSON形式に移行済み
 import FLORRIES_CUP from './FlorriesCup'
+// JSONファイルを静的インポート
+import FLORRIES_CUP_JSON from './FlorriesCup.json'
 import IRISH_EYES from './IrishEyes'
 import ASTERIA from './Asteria'
 import ASTONISHMENT from './Astonishment'
@@ -71,7 +597,7 @@ import FINOLA from './Finola'
 import FAIR_PEGGY from './FairPeggy'
 import FRIARS_MAIDEN from './FriarsMaiden'
 import FRUSTRATE from './Frustrate'
-import FRIGIDITY from './Frigidity'
+// import FRIGIDITY from './Frigidity'
 import FLITTERSAN from './Flittersan'
 import FLIPPANCY from './Flippancy'
 import BLUETTE from './Bluette'
@@ -97,13 +623,8 @@ import HOSHIHATA from './Hoshihata'
 import HOSHIHAMA from './Hoshihama'
 import HOSHIWAKA from './Hoshiwaka'
 
-// 新しいJSONファイル（動的インポート）
-let SCARLET_INK: Horse | null = null
-let ROLL_YOUR_OWN: Horse | null = null
-
-// JSON形式の牝系データをHorse型に変換
-const SCARLET_INK_SYNC = convertJsonToHorse(SCARLET_INK_JSON as PedigreeJsonData)
-const ROLL_YOUR_OWN_SYNC = convertJsonToHorse(ROLL_YOUR_OWN_JSON as PedigreeJsonData)
+// 動的読み込みされたJSONファイルのキャッシュ
+const jsonHorseCache = new Map<string, Horse | null>()
 
 type PedigreeList = {
   [key: string]: Horse
@@ -114,28 +635,30 @@ type PedigreeList = {
  */
 async function getPedigreeData(key: string): Promise<Horse | null> {
   try {
-    // まずJSONファイルを試す
-    if (key === 'scarlet_ink') {
-      if (!SCARLET_INK) {
-        SCARLET_INK = await loadPedigreeFromJson('./ScarletInk.json')
-      }
-      return SCARLET_INK
+    // キャッシュをチェック
+    if (jsonHorseCache.has(key)) {
+      return jsonHorseCache.get(key)!
     }
 
-    if (key === 'roll_your_own') {
-      if (!ROLL_YOUR_OWN) {
-        ROLL_YOUR_OWN = await loadPedigreeFromJson('./RollYourOwn.json')
-      }
-      return ROLL_YOUR_OWN
+    // jsonFilesDataが空の場合は初期化
+    if (jsonFilesData.length === 0) {
+      jsonFilesData = await loadAllJsonFiles()
     }
 
-    // その他のJSONファイルもここに追加
-    // if (key === 'other_pedigree') {
-    //   if (!OTHER_PEDIGREE) {
-    //     OTHER_PEDIGREE = await loadPedigreeFromJson('./OtherPedigree.json')
-    //   }
-    //   return OTHER_PEDIGREE
-    // }
+    // 動的に読み込まれたJSONファイルから検索
+    const jsonFileData = jsonFilesData.find((data) => data.keyName === key)
+    if (jsonFileData && jsonFileData.horse) {
+      jsonHorseCache.set(key, jsonFileData.horse)
+      return jsonFileData.horse
+    }
+
+    // ファイルが存在しない場合は動的に読み込みを試行
+    const fileName = jsonFilesData.find((data) => data.keyName === key)?.fileName
+    if (fileName) {
+      const horse = await loadPedigreeFromJson(`./${fileName}`)
+      jsonHorseCache.set(key, horse)
+      return horse
+    }
 
     return null
   } catch (error) {
@@ -145,103 +668,118 @@ async function getPedigreeData(key: string): Promise<Horse | null> {
 }
 
 /**
- * 牝系データのMap（既存のTSXファイル）
+ * 牝系データのMap（動的生成）
  */
-const pedigreeList = new Map<string, Horse>([
-  // JSON形式の牝系データを追加
-  ...(ROLL_YOUR_OWN_SYNC ? [['roll_your_own', ROLL_YOUR_OWN_SYNC] as [string, Horse]] : []),
-  ...(SCARLET_INK_SYNC ? [['scarlet_ink', SCARLET_INK_SYNC] as [string, Horse]] : []),
-  // 既存のTSXファイル
-  ['florries_cup', FLORRIES_CUP],
-  ['irish_eyes', IRISH_EYES],
-  ['asteria', ASTERIA],
-  ['astonishment', ASTONISHMENT],
-  ['ariade', ARIADE],
-  ['alps', ALPS],
-  ['entresol', ENTRESOL],
-  ['wet_sail', WET_SAIL],
-  ['umeharu', UMEHARU],
-  ['esther_dee', ESTHER_DEE],
-  ['enamoured', ENAMOURED],
-  ['emile', EMILE],
-  ['ella', ELLA],
-  ['oh_yeah', OH_YEAH],
-  ['o_dearest', O_DEAREST],
-  ['orlinda_2', ORLINDA_2],
-  ['oshima', OSHIMA],
-  ['cajole', CAJOLE],
-  ['canadian_girl', CANADIAN_GIRL],
-  ['comfortable', COMFORTABLE],
-  ['keendragh', KEENDRAGH],
-  ['queen', QUEEN],
-  ['clara_mcgeary', CLARA_MCGEARY],
-  ['craigdarroch', CRAIGDARROCH],
-  ['clonfert', CLONFERT],
-  ['quick_lunch', QUICK_LUNCH],
-  ['sunderby', SUNDERBY],
-  ['shiuichi', SHIUICHI],
-  ['jardiniere', JARDINIERE],
-  ['shrilly', SHRILLY],
-  ['silver_fort', SILVER_FORT],
-  ['silver_button', SILVER_BUTTON],
-  ['school_bell', SCHOOL_BELL],
-  ['stardust', STARDUST],
-  ['step_sister', STEP_SISTER],
-  ['stephania', STEPHANIA],
-  ['thrilling', THRILLING],
-  ['sevigne', SEVIGNE],
-  ['sereta', SERETA],
-  ['thonella', THONELLA],
-  ['diana', DIANA],
-  ['dicing', DICING],
-  ['tyrants_queen', TYRANTS_QUEEN],
-  ['tip_top', TIP_TOP],
-  ['chatterbox', CHATTERBOX],
-  ['devonia', DEVONIA],
-  ['desmonds_holiday', DESMONDS_HOLIDAY],
-  ['durango', DURANGO],
-  ['true_spear', TRUE_SPEAR],
-  ['nineve', NINEVE],
-  ['baverstock', BAVERSTOCK],
-  ['buxom', BUXOM],
-  ['papoose', PAPOOSE],
-  ['banri', BANRI],
-  ['biddy_scaliger', BIDDY_SCALIGER],
-  ['beautiful_dreamer', BEAUTIFUL_DREAMER],
-  ['billericay_belle', BILLERICAY_BELLE],
-  ['believe_sally', BELIEVE_SALLY],
-  ['first_stop', FIRST_STOP],
-  ['fashion_maid', FASHION_MAID],
-  ['finola', FINOLA],
-  ['fair_peggy', FAIR_PEGGY],
-  ['friars_maiden', FRIARS_MAIDEN],
-  ['frustrate', FRUSTRATE],
-  ['frigidity', FRIGIDITY],
-  ['flittersan', FLITTERSAN],
-  ['flippancy', FLIPPANCY],
-  ['bluette', BLUETTE],
-  ['propontis', PROPONTIS],
-  ['helen_surf', HELEN_SURF],
-  ['bonny_nancy', BONNY_NANCY],
-  ['meralbi', MERALBI],
-  ['mira', MIRA],
-  ['mintenza', MINTENZA],
-  ['rhine', RHINE],
-  ['la_gracia', LA_GRACIA],
-  ['leslie_carter', LESLIE_CARTER],
-  ['lady_allon', LADY_ALLON],
-  ['lady_limond', LADY_LIMOND],
-  ['lepida', LEPIDA],
-  ['rose_hawkins', ROSE_HAWKINS],
-  ['tanemasa', TANEMASA],
-  ['tanemichi', TANEMICHI],
-  ['hoshitani', HOSHITANI],
-  ['hoshitomi', HOSHITOMI],
-  ['hoshitomo', HOSHITOMO],
-  ['hoshihata', HOSHIHATA],
-  ['hoshihama', HOSHIHAMA],
-  ['hoshiwaka', HOSHIWAKA],
-])
+function createPedigreeList(): Map<string, Horse> {
+  const pedigreeMap = new Map<string, Horse>()
+
+  // JSONファイルを静的インポートで追加
+  try {
+    const florriesCupHorse = convertJsonToHorse(FLORRIES_CUP_JSON as PedigreeJsonData)
+    pedigreeMap.set('florries_cup', florriesCupHorse)
+  } catch (error) {
+    console.error('FlorriesCup.jsonの変換に失敗:', error)
+  }
+
+  // 既存のTSXファイルを追加
+  const tsxPedigrees: [string, Horse][] = [
+    ['irish_eyes', IRISH_EYES],
+    ['asteria', ASTERIA],
+    ['astonishment', ASTONISHMENT],
+    ['ariade', ARIADE],
+    ['alps', ALPS],
+    ['entresol', ENTRESOL],
+    ['wet_sail', WET_SAIL],
+    ['umeharu', UMEHARU],
+    ['esther_dee', ESTHER_DEE],
+    ['enamoured', ENAMOURED],
+    ['emile', EMILE],
+    ['ella', ELLA],
+    ['oh_yeah', OH_YEAH],
+    ['o_dearest', O_DEAREST],
+    ['orlinda_2', ORLINDA_2],
+    ['oshima', OSHIMA],
+    ['cajole', CAJOLE],
+    ['canadian_girl', CANADIAN_GIRL],
+    ['comfortable', COMFORTABLE],
+    ['keendragh', KEENDRAGH],
+    ['queen', QUEEN],
+    ['clara_mcgeary', CLARA_MCGEARY],
+    ['craigdarroch', CRAIGDARROCH],
+    ['clonfert', CLONFERT],
+    ['quick_lunch', QUICK_LUNCH],
+    ['sunderby', SUNDERBY],
+    ['shiuichi', SHIUICHI],
+    ['jardiniere', JARDINIERE],
+    ['shrilly', SHRILLY],
+    ['silver_fort', SILVER_FORT],
+    ['silver_button', SILVER_BUTTON],
+    ['school_bell', SCHOOL_BELL],
+    ['stardust', STARDUST],
+    ['step_sister', STEP_SISTER],
+    ['stephania', STEPHANIA],
+    ['thrilling', THRILLING],
+    ['sevigne', SEVIGNE],
+    ['sereta', SERETA],
+    ['thonella', THONELLA],
+    ['diana', DIANA],
+    ['dicing', DICING],
+    ['tyrants_queen', TYRANTS_QUEEN],
+    ['tip_top', TIP_TOP],
+    ['chatterbox', CHATTERBOX],
+    ['devonia', DEVONIA],
+    ['desmonds_holiday', DESMONDS_HOLIDAY],
+    ['durango', DURANGO],
+    ['true_spear', TRUE_SPEAR],
+    ['nineve', NINEVE],
+    ['baverstock', BAVERSTOCK],
+    ['buxom', BUXOM],
+    ['papoose', PAPOOSE],
+    ['banri', BANRI],
+    ['biddy_scaliger', BIDDY_SCALIGER],
+    ['beautiful_dreamer', BEAUTIFUL_DREAMER],
+    ['billericay_belle', BILLERICAY_BELLE],
+    ['believe_sally', BELIEVE_SALLY],
+    ['first_stop', FIRST_STOP],
+    ['fashion_maid', FASHION_MAID],
+    ['finola', FINOLA],
+    ['fair_peggy', FAIR_PEGGY],
+    ['friars_maiden', FRIARS_MAIDEN],
+    ['frustrate', FRUSTRATE],
+    ['flittersan', FLITTERSAN],
+    ['flippancy', FLIPPANCY],
+    ['bluette', BLUETTE],
+    ['propontis', PROPONTIS],
+    ['helen_surf', HELEN_SURF],
+    ['bonny_nancy', BONNY_NANCY],
+    ['meralbi', MERALBI],
+    ['mira', MIRA],
+    ['mintenza', MINTENZA],
+    ['rhine', RHINE],
+    ['la_gracia', LA_GRACIA],
+    ['leslie_carter', LESLIE_CARTER],
+    ['lady_allon', LADY_ALLON],
+    ['lady_limond', LADY_LIMOND],
+    ['lepida', LEPIDA],
+    ['rose_hawkins', ROSE_HAWKINS],
+    ['tanemasa', TANEMASA],
+    ['tanemichi', TANEMICHI],
+    ['hoshitani', HOSHITANI],
+    ['hoshitomi', HOSHITOMI],
+    ['hoshitomo', HOSHITOMO],
+    ['hoshihata', HOSHIHATA],
+    ['hoshihama', HOSHIHAMA],
+    ['hoshiwaka', HOSHIWAKA],
+  ]
+
+  tsxPedigrees.forEach(([key, horse]) => {
+    pedigreeMap.set(key, horse)
+  })
+
+  return pedigreeMap
+}
+
+const pedigreeList = createPedigreeList()
 
 /**
  * 牝系データを取得する（TSXファイルとJSONファイルの両方に対応）
@@ -257,10 +795,113 @@ export async function getPedigree(key: string): Promise<Horse | null> {
 }
 
 /**
- * 利用可能な牝系のキー一覧を取得
+ * 利用可能な牝系のキー一覧を取得（動的生成）
  */
 export function getAvailablePedigreeKeys(): string[] {
-  return Array.from(pedigreeList.keys())
+  const keys: string[] = []
+
+  // JSONファイルから生成されたキーを追加
+  const jsonFiles = getAvailableJsonFiles()
+  jsonFiles.forEach((fileName) => {
+    const keyName = generateKeyName(fileName)
+    keys.push(keyName)
+  })
+
+  // TSXファイルのキーを追加
+  const tsxKeys = [
+    'florries_cup',
+    'irish_eyes',
+    'asteria',
+    'astonishment',
+    'ariade',
+    'alps',
+    'entresol',
+    'wet_sail',
+    'umeharu',
+    'esther_dee',
+    'enamoured',
+    'emile',
+    'ella',
+    'oh_yeah',
+    'o_dearest',
+    'orlinda_2',
+    'oshima',
+    'cajole',
+    'canadian_girl',
+    'comfortable',
+    'keendragh',
+    'queen',
+    'clara_mcgeary',
+    'craigdarroch',
+    'clonfert',
+    'quick_lunch',
+    'sunderby',
+    'shiuichi',
+    'jardiniere',
+    'shrilly',
+    'silver_fort',
+    'silver_button',
+    'school_bell',
+    'stardust',
+    'step_sister',
+    'stephania',
+    'thrilling',
+    'sevigne',
+    'sereta',
+    'thonella',
+    'diana',
+    'dicing',
+    'tyrants_queen',
+    'tip_top',
+    'chatterbox',
+    'devonia',
+    'desmonds_holiday',
+    'durango',
+    'true_spear',
+    'nineve',
+    'baverstock',
+    'buxom',
+    'papoose',
+    'banri',
+    'biddy_scaliger',
+    'beautiful_dreamer',
+    'billericay_belle',
+    'believe_sally',
+    'first_stop',
+    'fashion_maid',
+    'finola',
+    'fair_peggy',
+    'friars_maiden',
+    'frustrate',
+    'flittersan',
+    'flippancy',
+    'bluette',
+    'propontis',
+    'helen_surf',
+    'bonny_nancy',
+    'meralbi',
+    'mira',
+    'mintenza',
+    'rhine',
+    'la_gracia',
+    'leslie_carter',
+    'lady_allon',
+    'lady_limond',
+    'lepida',
+    'rose_hawkins',
+    'tanemasa',
+    'tanemichi',
+    'hoshitani',
+    'hoshitomi',
+    'hoshitomo',
+    'hoshihata',
+    'hoshihama',
+    'hoshiwaka',
+  ]
+
+  keys.push(...tsxKeys)
+
+  return keys
 }
 
 export default pedigreeList

@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "pedigreeName": "Parfait",
+    "rootHorseId": "parfait",
+    "lastUpdated": "2025-09-23T04:17:25.073269Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "parfait",
+      "name": "パルフエ",
+      "foaled": "{'year': 1972}",
+      "foaledArray": ["1972"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ゼダーン(GB)",
+      "dam": "Patte Blanche",
+      "color": "芦毛",
+      "breeder": "仏",
+      "netkeibaId": "000a000701",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Parfait"
+    },
+    {
+      "id": "onward-nancy",
+      "name": "オンワードナンシー",
+      "foaled": "{'year': 1985, 'month': 3, 'day': 24}",
+      "foaledArray": ["1985", "03", "24"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハードツービート",
+      "dam": "パルフエ",
+      "color": "芦毛",
+      "breeder": "オンワード牧場（浦河町）",
+      "netkeibaId": "1985103790",
+      "raceStats": {
+        "total": {
+          "runs": 4,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1987,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(GIII)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "12",
+          "result": "10",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Onward Nancy",
+      "prizeMoney": {
+        "total": "1,311万円",
+        "central": "1,311万円",
+        "local": "0万円"
+      },
+      "damId": "parfait"
+    },
+    {
+      "id": "onward-rose",
+      "name": "オンワードロゼ",
+      "foaled": "{'year': 1989, 'month': 4, 'day': 27}",
+      "foaledArray": ["1989", "04", "27"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "オンワードカメルン",
+      "dam": "オンワードナンシー",
+      "color": "黒鹿毛",
+      "breeder": "オンワード牧場（浦河町）",
+      "netkeibaId": "1989100632",
+      "raceStats": {
+        "total": {
+          "runs": 26,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Onward Rose",
+      "prizeMoney": {
+        "total": "5,405万円",
+        "central": "5,405万円",
+        "local": "0万円"
+      },
+      "damId": "onward-nancy"
+    },
+    {
+      "id": "onward-rattle",
+      "name": "オンワードラトゥル",
+      "foaled": "{'year': 2002, 'month': 4, 'day': 4}",
+      "foaledArray": ["2002", "04", "04"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ストローズクリーク(US)",
+      "dam": "オンワードロゼ",
+      "color": "黒鹿毛",
+      "breeder": "オンワード牧場（浦河町）",
+      "netkeibaId": "2002103781",
+      "raceStats": {
+        "total": {
+          "runs": 7,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2005,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "京都ハイジャンプ(JGII)",
+          "displayRace": "京都ハイジャンプ",
+          "distance": "障3930",
+          "grade": "jra_jg2",
+          "entry": "8",
+          "result": "3",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Onward Rattle",
+      "prizeMoney": {
+        "total": "2,229万円",
+        "central": "2,229万円",
+        "local": "0万円"
+      },
+      "damId": "onward-rose"
+    }
+  ]
+}

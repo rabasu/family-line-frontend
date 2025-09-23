@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "pedigreeName": "Showcase",
+    "rootHorseId": "showcase",
+    "lastUpdated": "2025-09-16T06:41:50.731705Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "showcase",
+      "name": "シヨーケース",
+      "foaled": "{'year': 1965}",
+      "foaledArray": ["1965"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Amerigo",
+      "dam": "Hattie's Girl",
+      "color": "鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a000781",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Showcase"
+    },
+    {
+      "id": "ichigaya-hime",
+      "name": "イチガヤヒメ",
+      "foaled": "{'year': 1974}",
+      "foaledArray": ["1974"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "MacArthur Park",
+      "dam": "シヨーケース",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955105761",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Ichigaya Hime",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "showcase"
+    },
+    {
+      "id": "marusan-homare",
+      "name": "マルサンホマレ",
+      "foaled": "{'year': 1986, 'month': 4, 'day': 10}",
+      "foaledArray": ["1986", "04", "10"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "サティンゴ",
+      "dam": "イチガヤヒメ",
+      "color": "栗毛",
+      "breeder": "飛野牧場（静内町）",
+      "netkeibaId": "1986106291",
+      "raceStats": {
+        "total": {
+          "runs": 52,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Marusan Homare",
+      "prizeMoney": {
+        "total": "7,491万円",
+        "central": "7,491万円",
+        "local": "0万円"
+      },
+      "damId": "ichigaya-hime"
+    },
+    {
+      "id": "takamitsu-queen",
+      "name": "タカミツクイーン",
+      "foaled": "{'year': 1999, 'month': 4, 'day': 22}",
+      "foaledArray": ["1999", "04", "22"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ジョリーズヘイロー(US)",
+      "dam": "マルサンホマレ",
+      "color": "鹿毛",
+      "breeder": "石川新一（静内町）",
+      "netkeibaId": "1999100040",
+      "raceStats": {
+        "total": {
+          "runs": 4,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Takamitsu Queen",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "marusan-homare"
+    },
+    {
+      "id": "pisces-queen",
+      "name": "ピシーズクイーン",
+      "foaled": "{'year': 2007, 'month': 3, 'day': 19}",
+      "foaledArray": ["2007", "03", "19"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アグネスデジタル",
+      "dam": "タカミツクイーン",
+      "color": "鹿毛",
+      "breeder": "石川新一（新ひだか町）",
+      "netkeibaId": "2007100030",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2013,
+            "month": 1,
+            "day": 3
+          },
+          "racecourse": "園田",
+          "race": "新春賞(重賞)",
+          "displayRace": "新春賞〔園田〕",
+          "distance": "ダ1870",
+          "grade": "local_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Pisces Queen",
+      "prizeMoney": {
+        "total": "1,155万円",
+        "central": "740万円",
+        "local": "415万円"
+      },
+      "damId": "takamitsu-queen"
+    },
+    {
+      "id": "gemini-king",
+      "name": "ジェミニキング",
+      "foaled": "{'year': 2016, 'month': 5, 'day': 28}",
+      "foaledArray": ["2016", "05", "28"],
+      "sex": "gelding",
+      "breed": "サラブレッド種",
+      "sire": "トランセンド",
+      "dam": "ピシーズクイーン",
+      "color": "鹿毛",
+      "breeder": "高山牧場（日高町）",
+      "netkeibaId": "2016103252",
+      "raceStats": {
+        "total": {
+          "runs": 36,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2024,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "東京ハイジャンプ(JGII)",
+          "displayRace": "東京ハイジャンプ",
+          "distance": "障3110",
+          "grade": "jra_jg2",
+          "entry": "9",
+          "result": "9",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "阪神スプリングJ(JGII)",
+          "displayRace": "阪神スプリングジャンプ",
+          "distance": "障3900",
+          "grade": "jra_jg2",
+          "entry": "10",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 3,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "阪神スプリングJ(JGII)",
+          "displayRace": "阪神スプリングジャンプ",
+          "distance": "障3900",
+          "grade": "jra_jg2",
+          "entry": "12",
+          "result": "1",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "阪神",
+          "race": "京都ジャンプS(JGIII)",
+          "displayRace": "京都ジャンプS",
+          "distance": "障3140",
+          "grade": "jra_jg3",
+          "entry": "13",
+          "result": "中",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Gemini King",
+      "prizeMoney": {
+        "total": "8,242万円",
+        "central": "8,064万円",
+        "local": "178万円"
+      },
+      "damId": "pisces-queen"
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "metadata": {
+    "pedigreeName": "コウラク",
+    "rootHorseId": "kouraku",
+    "lastUpdated": "2025-09-23T20:36:30.102613Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "kouraku",
+      "name": "コウラク",
+      "foaled": "{'year': 1952}",
+      "foaledArray": ["1952"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Paper Boy",
+      "dam": "Dolly Bian",
+      "color": "",
+      "breeder": "新",
+      "netkeibaId": "000a002a8a",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "hully",
+      "name": "ハリー",
+      "foaled": "{'year': 1958}",
+      "foaledArray": ["1958"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミナミホマレ",
+      "dam": "コウラク",
+      "color": "青毛",
+      "breeder": "三石町",
+      "netkeibaId": "1958100495",
+      "raceStats": {
+        "total": {
+          "runs": 44,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1963,
+            "month": 2,
+            "day": 17
+          },
+          "racecourse": "中京",
+          "race": "中京記念競走(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "11",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 1,
+            "day": 20
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春盃競走(OP)",
+          "displayRace": "日本経済新春盃",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 11,
+            "day": 4
+          },
+          "racecourse": "阪神",
+          "race": "朝日チャレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都記念競走(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hully",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kouraku"
+    },
+    {
+      "id": "millet",
+      "name": "ミレー",
+      "foaled": "{'year': 1966}",
+      "foaledArray": ["1966"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "チャイナロック(GB)",
+      "dam": "ハリー",
+      "color": "栗毛",
+      "breeder": "三石町",
+      "netkeibaId": "1955100820",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Millet",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hully"
+    },
+    {
+      "id": "mars-crown",
+      "name": "マルスクラウン",
+      "foaled": "{'year': 1985, 'month': 5, 'day': 20}",
+      "foaledArray": ["1985", "05", "20"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クラウンドプリンス",
+      "dam": "ミレー",
+      "color": "栗毛",
+      "breeder": "土田昭司（三石町）",
+      "netkeibaId": "1985102376",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Mars Crown",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "millet"
+    },
+    {
+      "id": "royal-bio",
+      "name": "ロイヤルバイオ",
+      "foaled": "{'year': 1991, 'month': 3, 'day': 7}",
+      "foaledArray": ["1991", "03", "07"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シンボリルドルフ",
+      "dam": "マルスクラウン",
+      "color": "栃栗毛",
+      "breeder": "土田勇司（三石町）",
+      "netkeibaId": "1991102472",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Royal Bio",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "mars-crown"
+    },
+    {
+      "id": "active-bio",
+      "name": "アクティブバイオ",
+      "foaled": "{'year': 1997, 'month': 5, 'day': 24}",
+      "foaledArray": ["1997", "05", "24"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "オペラハウス(GB)",
+      "dam": "ロイヤルバイオ",
+      "color": "鹿毛",
+      "breeder": "荒井牧場（門別町）",
+      "netkeibaId": "1997105942",
+      "raceStats": {
+        "total": {
+          "runs": 50,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2005,
+            "month": 5,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "7",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 2005,
+            "month": 5,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)(GI)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "17",
+          "favorite": "18"
+        },
+        {
+          "date": {
+            "year": 2005,
+            "month": 3,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "日経賞(GII)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "8",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2005,
+            "month": 2,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "京都記念(GII)",
+          "displayRace": "京都記念",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "12",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2005,
+            "month": 1,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーC(GII)",
+          "displayRace": "アメリカジョッキーC",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2004,
+            "month": 5,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "10",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2004,
+            "month": 3,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "日経賞(GII)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "10",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(GI)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_g1",
+          "entry": "12",
+          "result": "12",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "ジャパンC(GI)",
+          "displayRace": "ジャパンC",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "5",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチン共和国杯(GII)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "1",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "京都大賞典(GII)",
+          "displayRace": "京都大賞典",
+          "distance": "芝2400",
+          "grade": "jra_g2",
+          "entry": "9",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "産経賞オールカマー(GII)",
+          "displayRace": "オールカマー",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "10",
+          "result": "8",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "17",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)(GI)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "11",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 3,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(GII)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "9",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 2,
+            "day": 16
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドS(GIII)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(GI)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_g1",
+          "entry": "14",
+          "result": "12",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズS(GII)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "アルゼンチン共和国杯(GII)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "7",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 10,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "毎日王冠(GII)",
+          "displayRace": "毎日王冠",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "9",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(GI)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "12",
+          "result": "6",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 5,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 4,
+            "day": 28
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)(GI)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_g1",
+          "entry": "11",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2002,
+            "month": 3,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "日経賞(GII)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "8",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2001,
+            "month": 8,
+            "day": 19
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(GII)",
+          "displayRace": "札幌記念",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "9",
+          "result": "6",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2001,
+            "month": 7,
+            "day": 22
+          },
+          "racecourse": "函館",
+          "race": "函館記念(GIII)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2001,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "エプソムC(GIII)",
+          "displayRace": "エプソムC",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "7",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 2001,
+            "month": 5,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "9",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2000,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズS(GII)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "7",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2000,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(GIII)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "14",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Active Bio",
+      "prizeMoney": {
+        "total": "2億9,730万円",
+        "central": "2億9,730万円",
+        "local": "0万円"
+      },
+      "damId": "royal-bio"
+    }
+  ]
+}

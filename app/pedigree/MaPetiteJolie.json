@@ -1,0 +1,168 @@
+{
+  "metadata": {
+    "pedigreeName": "Ma Petite Jolie",
+    "rootHorseId": "ma-petite-jolie",
+    "lastUpdated": "2025-09-20T08:49:03.570214Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "ma-petite-jolie",
+      "name": "マプティットジョリィ",
+      "foaled": "{'year': 1982}",
+      "foaledArray": ["1982"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Northern Dancer(CAN)",
+      "dam": "Ballade",
+      "dam_netkeiba_id": "",
+      "color": "鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a0001f8",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Ma Petite Jolie"
+    },
+    {
+      "id": "glorious-ballade",
+      "name": "グロリアスバラッド",
+      "foaled": "{'year': 1998, 'month': 3, 'day': 24}",
+      "foaledArray": ["1998", "03", "24"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Kingmambo(US)",
+      "dam": "マプティットジョリィ",
+      "dam_netkeiba_id": "000a0001f8",
+      "color": "鹿毛",
+      "breeder": "藤原牧場（静内町）",
+      "netkeibaId": "1998104867",
+      "raceStats": {
+        "total": {
+          "runs": 1,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Glorious Ballade",
+      "prizeMoney": {
+        "total": "150万円",
+        "central": "150万円",
+        "local": "0万円"
+      },
+      "damId": "ma-petite-jolie"
+    },
+    {
+      "id": "global-song",
+      "name": "グローバルソング",
+      "foaled": "{'year': 2004, 'month': 2, 'day': 27}",
+      "foaledArray": ["2004", "02", "27"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ブライアンズタイム(US)",
+      "dam": "グロリアスバラッド",
+      "dam_netkeiba_id": "1998104867",
+      "color": "栗毛",
+      "breeder": "藤原牧場（静内町）",
+      "netkeibaId": "2004105019",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Global Song",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "glorious-ballade"
+    },
+    {
+      "id": "buster-type",
+      "name": "バスタータイプ",
+      "foaled": "{'year': 2012, 'month': 4, 'day': 29}",
+      "foaledArray": ["2012", "04", "29"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ホワイトマズル(GB)",
+      "dam": "グローバルソング",
+      "dam_netkeiba_id": "2004105019",
+      "color": "鹿毛",
+      "breeder": "藤原牧場（新ひだか町）",
+      "netkeibaId": "2012103502",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2019,
+            "month": 5,
+            "day": 21
+          },
+          "racecourse": "門別",
+          "race": "赤レンガ記念〔H3〕(重賞)",
+          "displayRace": "赤レンガ記念〔H3〕〔門別〕",
+          "distance": "ダ2000",
+          "grade": "local_grade",
+          "entry": "6",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2017,
+            "month": 2,
+            "day": 1
+          },
+          "racecourse": "川崎",
+          "race": "川崎記念【指定交流】(JpnI)",
+          "displayRace": "川崎記念〔川崎〕",
+          "distance": "ダ2100",
+          "grade": "nar_jpn1",
+          "entry": "12",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2016,
+            "month": 3,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "マーチS(GIII)",
+          "displayRace": "マーチS",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "2",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Buster Type",
+      "prizeMoney": {
+        "total": "1億184万円",
+        "central": "1億164万円",
+        "local": "20万円"
+      },
+      "damId": "global-song"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "pedigreeName": "Goodia",
+    "rootHorseId": "goodia",
+    "lastUpdated": "2025-09-23T19:08:20.962199Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "goodia",
+      "name": "グッディア",
+      "foaled": "{'year': 1970}",
+      "foaledArray": ["1970"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Gala Performance",
+      "dam": "Viranga",
+      "color": "栗毛",
+      "breeder": "愛",
+      "netkeibaId": "000a000611",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Goodia"
+    },
+    {
+      "id": "riversky",
+      "name": "リバースキー",
+      "foaled": "{'year': 1981, 'month': 5, 'day': 9}",
+      "foaledArray": ["1981", "05", "09"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ラッキーソブリン",
+      "dam": "グッディア",
+      "color": "鹿毛",
+      "breeder": "中島亘（浦河町）",
+      "netkeibaId": "1981102950",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Riversky",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "goodia"
+    },
+    {
+      "id": "k-g-sky",
+      "name": "ケージースキー",
+      "foaled": "{'year': 1991, 'month': 4, 'day': 28}",
+      "foaledArray": ["1991", "04", "28"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シェイディハイツ(GB)",
+      "dam": "リバースキー",
+      "color": "鹿毛",
+      "breeder": "工藤繁男（新冠町）",
+      "netkeibaId": "1991101988",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "K.G.Sky",
+      "prizeMoney": {
+        "total": "2,038万円",
+        "central": "0万円",
+        "local": "2,038万円"
+      },
+      "damId": "riversky"
+    },
+    {
+      "id": "k-g-adjudi",
+      "name": "ケージーアジュデ",
+      "foaled": "{'year': 2001, 'month': 4, 'day': 6}",
+      "foaledArray": ["2001", "04", "06"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アジュディケーティング(US)",
+      "dam": "ケージースキー",
+      "color": "鹿毛",
+      "breeder": "岩見牧場（新冠町）",
+      "netkeibaId": "2001101548",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2008,
+            "month": 8,
+            "day": 20
+          },
+          "racecourse": "川崎",
+          "race": "スパーキングサマーカ(重賞)",
+          "displayRace": "スパーキングサマーC〔川崎〕",
+          "distance": "ダ1600",
+          "grade": "local_grade",
+          "entry": "14",
+          "result": "14",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 1,
+            "day": 9
+          },
+          "racecourse": "船橋",
+          "race": "船橋記念(重賞)",
+          "displayRace": "船橋記念〔船橋〕",
+          "distance": "ダ1000",
+          "grade": "local_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2004,
+            "month": 3,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "夕刊フジクリスタルC(GIII)",
+          "displayRace": "クリスタルC",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "3",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2003,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": "川崎",
+          "race": "全日本2歳優駿(JpnI)",
+          "displayRace": "全日本2歳優駿〔川崎〕",
+          "distance": "ダ1600",
+          "grade": "nar_jpn1",
+          "entry": "14",
+          "result": "5",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "K G Adjudi",
+      "prizeMoney": {
+        "total": "9,309万円",
+        "central": "9,134万円",
+        "local": "175万円"
+      },
+      "damId": "k-g-sky"
+    }
+  ]
+}

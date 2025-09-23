@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "pedigreeName": "Olgaola",
+    "rootHorseId": "olgaola",
+    "lastUpdated": "2025-09-23T10:04:54.927228Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "olgaola",
+      "name": "テツノヒビキ",
+      "foaled": "{'year': 1950}",
+      "foaledArray": ["1950"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Gladiolo",
+      "dam": "Dark Olga",
+      "color": "鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a002935",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Olgaola"
+    },
+    {
+      "id": "tetsuno-hohpu",
+      "name": "テツノホープ",
+      "foaled": "{'year': 1959}",
+      "foaledArray": ["1959"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トサミドリ",
+      "dam": "テツノヒビキ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955100024",
+      "raceStats": {
+        "total": {
+          "runs": 7,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tetsuno Hohpu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "olgaola"
+    },
+    {
+      "id": "tetsuno-home",
+      "name": "テツノホーム",
+      "foaled": "{'year': 1963}",
+      "foaledArray": ["1963"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "エイトラックス(FR)",
+      "dam": "テツノホープ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955100141",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tetsuno Home",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tetsuno-hohpu"
+    },
+    {
+      "id": "kishu-beat",
+      "name": "キシュウビート",
+      "foaled": "{'year': 1979, 'month': 3, 'day': 24}",
+      "foaledArray": ["1979", "03", "24"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "サンシー",
+      "dam": "テツノホーム",
+      "color": "栗毛",
+      "breeder": "荻伏牧場（浦河町）",
+      "netkeibaId": "1979100932",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kishu Beat",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tetsuno-home"
+    },
+    {
+      "id": "tanagain",
+      "name": "ターナゲイン",
+      "foaled": "{'year': 1988, 'month': 4, 'day': 20}",
+      "foaledArray": ["1988", "04", "20"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トウショウボーイ",
+      "dam": "キシュウビート",
+      "color": "鹿毛",
+      "breeder": "浦新徳司（門別町）",
+      "netkeibaId": "1988102436",
+      "raceStats": {
+        "total": {
+          "runs": 23,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tanagain",
+      "prizeMoney": {
+        "total": "1,651万円",
+        "central": "1,651万円",
+        "local": "0万円"
+      },
+      "damId": "kishu-beat"
+    },
+    {
+      "id": "tosen-rocky",
+      "name": "トーセンロッキー",
+      "foaled": "{'year': 2002, 'month': 5, 'day': 23}",
+      "foaledArray": ["2002", "05", "23"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "チーフベアハート(CAN)",
+      "dam": "ターナゲイン",
+      "color": "栃栗毛",
+      "breeder": "今井保（門別町）",
+      "netkeibaId": "2002105633",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2005,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": "福島",
+          "race": "ラジオたんぱ賞(GIII)",
+          "displayRace": "ラジオたんぱ賞",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "2",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tosen Rocky",
+      "prizeMoney": {
+        "total": "2,947万円",
+        "central": "2,947万円",
+        "local": "0万円"
+      },
+      "damId": "tanagain"
+    }
+  ]
+}

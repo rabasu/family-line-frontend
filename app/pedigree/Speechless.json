@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "pedigreeName": "Speechless",
+    "rootHorseId": "speechless",
+    "lastUpdated": "2025-09-22T16:54:29.101441Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "speechless",
+      "name": "スピーチレス",
+      "foaled": "{'year': 1962}",
+      "foaledArray": ["1962"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Whistler",
+      "dam": "Say Less",
+      "color": "",
+      "breeder": "愛",
+      "netkeibaId": "000a003799",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Speechless"
+    },
+    {
+      "id": "hidaka-reach",
+      "name": "ヒダカリーチ",
+      "foaled": "{'year': 1972}",
+      "foaledArray": ["1972"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ファラモンド",
+      "dam": "スピーチレス",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1972101047",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Hidaka Reach",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "speechless"
+    },
+    {
+      "id": "ayajo",
+      "name": "アヤジョウ",
+      "foaled": "{'year': 1980, 'month': 6, 'day': 11}",
+      "foaledArray": ["1980", "06", "11"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヴァイスリーガル",
+      "dam": "ヒダカリーチ",
+      "color": "鹿毛",
+      "breeder": "辻牧場（浦河町）",
+      "netkeibaId": "1980104891",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 10,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "13",
+          "favorite": "15"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Ayajo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hidaka-reach"
+    },
+    {
+      "id": "gorgeous-heart",
+      "name": "ゴージャスハート",
+      "foaled": "{'year': 1988, 'month': 5, 'day': 19}",
+      "foaledArray": ["1988", "05", "19"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ニホンピロウイナー",
+      "dam": "アヤジョウ",
+      "color": "鹿毛",
+      "breeder": "辻牧場（浦河町）",
+      "netkeibaId": "1988104511",
+      "raceStats": {
+        "total": {
+          "runs": 1,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Gorgeous Heart",
+      "prizeMoney": {
+        "total": "190万円",
+        "central": "190万円",
+        "local": "0万円"
+      },
+      "damId": "ayajo"
+    },
+    {
+      "id": "wild-fire",
+      "name": "ワイルドファイアー",
+      "foaled": "{'year': 1999, 'month': 5, 'day': 31}",
+      "foaledArray": ["1999", "05", "31"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "メジロライアン",
+      "dam": "ゴージャスハート",
+      "color": "鹿毛",
+      "breeder": "辻牧場（浦河町）",
+      "netkeibaId": "1999101718",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2008,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "中京",
+          "race": "トヨタ賞中京記念(GIII)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "3",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2006,
+            "month": 12,
+            "day": 3
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(GIII)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "12",
+          "favorite": "12"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Wild Fire",
+      "prizeMoney": {
+        "total": "1億2,241万円",
+        "central": "1億2,241万円",
+        "local": "0万円"
+      },
+      "damId": "gorgeous-heart"
+    }
+  ]
+}
