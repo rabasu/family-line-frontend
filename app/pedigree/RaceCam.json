@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "pedigreeName": "Race Cam",
+    "rootHorseId": "race-cam",
+    "lastUpdated": "2025-09-19T02:02:47.862746Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "race-cam",
+      "name": "レースカム",
+      "foaled": "{'year': 1992}",
+      "foaledArray": ["1992"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Mr. Prospector",
+      "dam": "Video",
+      "color": "鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a006624",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Race Cam"
+    },
+    {
+      "id": "erimo-today",
+      "name": "エリモトゥデイ",
+      "foaled": "{'year': 2006, 'month': 3, 'day': 4}",
+      "foaledArray": ["2006", "03", "04"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ワイルドラッシュ(US)",
+      "dam": "レースカム",
+      "color": "青鹿毛",
+      "breeder": "エクセルマネジメント（えりも町）",
+      "netkeibaId": "2006100031",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Erimo Today",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "race-cam"
+    },
+    {
+      "id": "dios-corrida",
+      "name": "ディオスコリダー",
+      "foaled": "{'year': 2014, 'month': 3, 'day': 28}",
+      "foaledArray": ["2014", "03", "28"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "カネヒキリ",
+      "dam": "エリモトゥデイ",
+      "color": "黒鹿毛",
+      "breeder": "前谷武志（新ひだか町）",
+      "netkeibaId": "2014105108",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2018,
+            "month": 8,
+            "day": 15
+          },
+          "racecourse": "盛岡",
+          "race": "クラスターC(JpnIII)",
+          "displayRace": "クラスターC〔盛岡〕",
+          "distance": "ダ1200",
+          "grade": "nar_jpn3",
+          "entry": "14",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2017,
+            "month": 12,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "カペラS(GIII)",
+          "displayRace": "カペラS",
+          "distance": "ダ1200",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "1",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Dios Corrida",
+      "prizeMoney": {
+        "total": "1億148万円",
+        "central": "9,941万円",
+        "local": "207万円"
+      },
+      "damId": "erimo-today"
+    }
+  ]
+}

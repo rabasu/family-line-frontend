@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "pedigreeName": "フリソデ",
+    "rootHorseId": "furisode",
+    "lastUpdated": "2025-09-22T13:55:03.692466Z",
+    "source": "python_scraping_updated"
+  },
+  "horses": [
+    {
+      "id": "furisode",
+      "name": "フリソデ",
+      "foaled": "{'year': 1972}",
+      "foaledArray": ["1972"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Noholme",
+      "dam": "Mr. B's Sister",
+      "color": "栗毛",
+      "breeder": "米",
+      "netkeibaId": "000a005af2",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "dyna-serenade",
+      "name": "ダイナセレナード",
+      "foaled": "{'year': 1979, 'month': 3, 'day': 1}",
+      "foaledArray": ["1979", "03", "01"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "エルセンタウロ",
+      "dam": "フリソデ",
+      "color": "黒鹿毛",
+      "breeder": "社台ファーム（早来町）",
+      "netkeibaId": "1979101787",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Dyna Serenade",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "furisode"
+    },
+    {
+      "id": "maximum-denier",
+      "name": "マキシマムデニール",
+      "foaled": "{'year': 1991, 'month': 5, 'day': 26}",
+      "foaledArray": ["1991", "05", "26"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンテースト(CAN)",
+      "dam": "ダイナセレナード",
+      "color": "黒鹿毛",
+      "breeder": "社台ファーム（白老町）",
+      "netkeibaId": "1991106961",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Maximum Denier",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dyna-serenade"
+    },
+    {
+      "id": "epaulette",
+      "name": "エポレット",
+      "foaled": "{'year': 2000, 'month': 3, 'day': 23}",
+      "foaledArray": ["2000", "03", "23"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "リアルシャダイ(US)",
+      "dam": "マキシマムデニール",
+      "color": "青鹿毛",
+      "breeder": "白老ファーム（白老町）",
+      "netkeibaId": "2000101505",
+      "raceStats": {
+        "total": {
+          "runs": 1,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Epaulette",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "maximum-denier"
+    },
+    {
+      "id": "silk-schneider",
+      "name": "シルクシュナイダー",
+      "foaled": "{'year': 2008, 'month': 1, 'day': 27}",
+      "foaledArray": ["2008", "01", "27"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アグネスデジタル",
+      "dam": "エポレット",
+      "color": "黒鹿毛",
+      "breeder": "社台コーポレーション白老ファーム（白老町）",
+      "netkeibaId": "2008102635",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2012,
+            "month": 4,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "アンタレスS(GIII)",
+          "displayRace": "アンタレスS",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2012,
+            "month": 3,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "マーチS(GIII)",
+          "displayRace": "マーチS",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "6",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2012,
+            "month": 1,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "平安S(GIII)",
+          "displayRace": "平安S",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Silk Schneider",
+      "prizeMoney": {
+        "total": "9,454万円",
+        "central": "9,454万円",
+        "local": "0万円"
+      },
+      "damId": "epaulette"
+    },
+    {
+      "id": "kings-regalia",
+      "name": "キングスレガリア",
+      "foaled": "{'year': 2006, 'month': 2, 'day': 24}",
+      "foaledArray": ["2006", "02", "24"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "キングカメハメハ",
+      "dam": "リキセレナード",
+      "color": "鹿毛",
+      "breeder": "レキシントンファーム（静内町）",
+      "netkeibaId": "2006101703",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2009,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": "中京",
+          "race": "中スポ賞ファルコンS(GIII)",
+          "displayRace": "ファルコンS",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "中",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 2009,
+            "month": 2,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "アーリントンC(GIII)",
+          "displayRace": "アーリントンC",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "11",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2009,
+            "month": 1,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "日刊スポシンザン記念(GIII)",
+          "displayRace": "シンザン記念",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "9",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 10,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "デイリー杯2歳S(GII)",
+          "displayRace": "デイリー杯2歳S",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "12",
+          "result": "3",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "King's Regalia",
+      "prizeMoney": {
+        "total": "2,877万円",
+        "central": "2,877万円",
+        "local": "0万円"
+      },
+      "damId": "riki-serenade"
+    },
+    {
+      "id": "riki-serenade",
+      "name": "リキセレナード",
+      "foaled": "{'year': 1998, 'month': 3, 'day': 29}",
+      "foaledArray": ["1998", "03", "29"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ジェイドロバリー(US)",
+      "dam": "ムーンセレナード",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（千歳市）",
+      "netkeibaId": "1998107256",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2001,
+            "month": 5,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(GI)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "17",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 2001,
+            "month": 4,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(GI)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "10",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2001,
+            "month": 3,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "フィリーズレビュー(GII)",
+          "displayRace": "フィリーズレビュー",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2000,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "フェアリーS(GIII)",
+          "displayRace": "フェアリーS",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "16",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2000,
+            "month": 12,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳牝馬S(GI)",
+          "displayRace": "阪神3歳牝馬S",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "16",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2000,
+            "month": 9,
+            "day": 3
+          },
+          "racecourse": "小倉",
+          "race": "小倉3歳S(GIII)",
+          "displayRace": "小倉3歳S",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "17",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Riki Serenade",
+      "prizeMoney": {
+        "total": "6,114万円",
+        "central": "6,114万円",
+        "local": "0万円"
+      },
+      "damId": "moon-serenade"
+    },
+    {
+      "id": "moon-serenade",
+      "name": "ムーンセレナード",
+      "foaled": "{'year': 1987, 'month': 4, 'day': 9}",
+      "foaledArray": ["1987", "04", "09"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミスターシービー",
+      "dam": "ダイナセレナード",
+      "color": "黒鹿毛",
+      "breeder": "社台ファーム（白老町）",
+      "netkeibaId": "1987105618",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1991,
+            "month": 2,
+            "day": 17
+          },
+          "racecourse": "小倉",
+          "race": "小倉大賞典(GIII)",
+          "displayRace": "小倉大賞典",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "9",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1991,
+            "month": 1,
+            "day": 27
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬特別(GIII)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "13",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1990,
+            "month": 4,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(GI)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "6",
+          "favorite": "15"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Moon Serenade",
+      "prizeMoney": {
+        "total": "5,670万円",
+        "central": "5,670万円",
+        "local": "0万円"
+      },
+      "damId": "dyna-serenade"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "pedigreeName": "Gay Poulette",
+    "rootHorseId": "gay-poulette",
+    "lastUpdated": "2025-09-23T02:46:19.014010Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "gay-poulette",
+      "name": "ゲイプレテェ",
+      "foaled": "{'year': 1961}",
+      "foaledArray": ["1961"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Sunny Boy",
+      "dam": "Tresa",
+      "color": "栗毛",
+      "breeder": "英",
+      "netkeibaId": "1961100107",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Gay Poulette"
+    },
+    {
+      "id": "kiyoboshi",
+      "name": "キヨボシ",
+      "foaled": "{'year': 1966}",
+      "foaledArray": ["1966"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セダン(FR)",
+      "dam": "ゲイプレテェ",
+      "color": "黒鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "1955100452",
+      "raceStats": {
+        "total": {
+          "runs": 4,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kiyoboshi",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gay-poulette"
+    },
+    {
+      "id": "kiyo-best",
+      "name": "キヨベスト",
+      "foaled": "{'year': 1975}",
+      "foaledArray": ["1975"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ドン",
+      "dam": "キヨボシ",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955107186",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kiyo Best",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kiyoboshi"
+    },
+    {
+      "id": "moriyu-eru",
+      "name": "モリユウエル",
+      "foaled": "{'year': 1982, 'month': 5, 'day': 31}",
+      "foaledArray": ["1982", "05", "31"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カウアイキング",
+      "dam": "キヨベスト",
+      "color": "鹿毛",
+      "breeder": "日胆上水牧場（鵡川町）",
+      "netkeibaId": "1982101606",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1985,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "クイーンS(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "12",
+          "favorite": "14"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Moriyu Eru",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kiyo-best"
+    },
+    {
+      "id": "balt-fountain",
+      "name": "バルトフォンテン",
+      "foaled": "{'year': 2001, 'month': 4, 'day': 17}",
+      "foaledArray": ["2001", "04", "17"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ダンツシアトル",
+      "dam": "モリユウエル",
+      "color": "鹿毛",
+      "breeder": "登別上水牧場（登別市）",
+      "netkeibaId": "2001102914",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2006,
+            "month": 4,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "中山グランドジャンプ(JGI)",
+          "displayRace": "中山グランドジャンプ",
+          "distance": "障4250",
+          "grade": "jra_jg1",
+          "entry": "15",
+          "result": "中",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2006,
+            "month": 3,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "阪神スプリングJ(JGII)",
+          "displayRace": "阪神スプリングジャンプ",
+          "distance": "障3900",
+          "grade": "jra_jg2",
+          "entry": "14",
+          "result": "3",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Balt Fountain",
+      "prizeMoney": {
+        "total": "7,490万円",
+        "central": "7,490万円",
+        "local": "0万円"
+      },
+      "damId": "moriyu-eru"
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "metadata": {
+    "pedigreeName": "So Whats New",
+    "rootHorseId": "so-whats-new",
+    "lastUpdated": "2025-09-20T11:18:23.125560Z",
+    "source": "python_scraping_updated"
+  },
+  "horses": [
+    {
+      "id": "so-whats-new",
+      "name": "ソーホワツツニュー",
+      "foaled": "{'year': 1960}",
+      "foaledArray": ["1960"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Stymie",
+      "dam": "Spoony",
+      "color": "鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a00378e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "So Whats New"
+    },
+    {
+      "id": "shadai-land",
+      "name": "シヤダイランド",
+      "foaled": "{'year': 1967}",
+      "foaledArray": ["1967"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Promised Land",
+      "dam": "ソーホワツツニュー",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "1955102112",
+      "raceStats": {
+        "total": {
+          "runs": 48,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 4,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "4歳牝馬特別(OP)",
+          "displayRace": "4歳牝馬特別（東）",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "14",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "クイーンC(OP)",
+          "displayRace": "クイーンC",
+          "distance": "ダ1400",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "11",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Shadai Land",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "so-whats-new"
+    },
+    {
+      "id": "dyna-land",
+      "name": "ダイナランド",
+      "foaled": "{'year': 1978, 'month': 5, 'day': 26}",
+      "foaledArray": ["1978", "05", "26"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンテースト(CAN)",
+      "dam": "シヤダイランド",
+      "color": "栗毛",
+      "breeder": "社台ファーム（早来町）",
+      "netkeibaId": "1978106834",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Dyna Land",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shadai-land"
+    },
+    {
+      "id": "plain",
+      "name": "プレイン",
+      "foaled": "{'year': 1992, 'month': 4, 'day': 26}",
+      "foaledArray": ["1992", "04", "26"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ジェイドロバリー(US)",
+      "dam": "ダイナランド",
+      "color": "栗毛",
+      "breeder": "社台ファーム（早来町）",
+      "netkeibaId": "1992109544",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Plain",
+      "prizeMoney": {
+        "total": "413万円",
+        "central": "413万円",
+        "local": "0万円"
+      },
+      "damId": "dyna-land"
+    },
+    {
+      "id": "promised-spark",
+      "name": "プロミストスパーク",
+      "foaled": "{'year': 1999, 'month': 5, 'day': 6}",
+      "foaledArray": ["1999", "05", "06"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フジキセキ",
+      "dam": "プレイン",
+      "color": "鹿毛",
+      "breeder": "ノーザンファーム（早来町）",
+      "netkeibaId": "1999107050",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Promised Spark",
+      "prizeMoney": {
+        "total": "7,888万円",
+        "central": "7,888万円",
+        "local": "0万円"
+      },
+      "damId": "plain"
+    },
+    {
+      "id": "promised-warrior",
+      "name": "プロミストウォリア",
+      "foaled": "{'year': 2017, 'month': 3, 'day': 26}",
+      "foaledArray": ["2017", "03", "26"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "マジェスティックウォリアー(US)",
+      "dam": "プロミストスパーク",
+      "color": "鹿毛",
+      "breeder": "坂東牧場（平取町）",
+      "netkeibaId": "2017101184",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2024,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "みやこS(GIII)",
+          "displayRace": "みやこS",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "15",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "札幌",
+          "race": "エルムS(GIII)",
+          "displayRace": "エルムS",
+          "distance": "ダ1700",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 6,
+            "day": 28
+          },
+          "racecourse": "大井",
+          "race": "帝王賞競走(JpnI)",
+          "displayRace": "帝王賞〔大井〕",
+          "distance": "ダ2000",
+          "grade": "nar_jpn1",
+          "entry": "12",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 4,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "アンタレスS(GIII)",
+          "displayRace": "アンタレスS",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 22
+          },
+          "racecourse": "中京",
+          "race": "東海テレビ杯東海S(GII)",
+          "displayRace": "東海S",
+          "distance": "ダ1800",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Promised Warrior",
+      "prizeMoney": {
+        "total": "1億4,533万円",
+        "central": "1億4,133万円",
+        "local": "400万円"
+      },
+      "damId": "promised-spark"
+    },
+    {
+      "id": "comfy",
+      "name": "カムフィー",
+      "foaled": "{'year': 2009, 'month': 3, 'day': 26}",
+      "foaledArray": ["2009", "03", "26"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ダンスインザダーク",
+      "dam": "ナイトクルーズ",
+      "dam_netkeiba_id": "1994108748",
+      "color": "黒鹿毛",
+      "breeder": "新田牧場（池田町）",
+      "netkeibaId": "2009104380",
+      "raceStats": {
+        "total": {
+          "runs": 45,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2017,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズS(GII)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_g2",
+          "entry": "10",
+          "result": "8",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2017,
+            "month": 11,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチン共和国杯(GII)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "13",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 2017,
+            "month": 7,
+            "day": 16
+          },
+          "racecourse": "函館",
+          "race": "函館記念(GIII)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "12",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 2017,
+            "month": 6,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "エプソムC(GIII)",
+          "displayRace": "エプソムC",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "13",
+          "favorite": "18"
+        },
+        {
+          "date": {
+            "year": 2017,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "日刊スポ賞中山金杯(GIII)",
+          "displayRace": "中山金杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "5",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2016,
+            "month": 12,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズS(GII)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2016,
+            "month": 10,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(秋)(GI)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "13",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 2016,
+            "month": 3,
+            "day": 20
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(GII)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "8",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2016,
+            "month": 2,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "ダイヤモンドS(GIII)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3400",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "11",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2015,
+            "month": 12,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズS(GII)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2015,
+            "month": 2,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "ダイヤモンドS(GIII)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3400",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Comfy",
+      "prizeMoney": {
+        "total": "1億4,077万円",
+        "central": "1億4,077万円",
+        "local": "0万円"
+      },
+      "damId": "night-cruise"
+    },
+    {
+      "id": "night-cruise",
+      "name": "ナイトクルーズ",
+      "foaled": "{'year': 1994, 'month': 5, 'day': 17}",
+      "foaledArray": ["1994", "05", "17"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンテースト(CAN)",
+      "dam": "ナイトスパーク",
+      "dam_netkeiba_id": "1985103466",
+      "color": "鹿毛",
+      "breeder": "白老ファーム（白老町）",
+      "netkeibaId": "1994108748",
+      "raceStats": {
+        "total": {
+          "runs": 26,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1997,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "秋華賞(GI)",
+          "displayRace": "秋華賞",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "11",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1997,
+            "month": 9,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "関西TVローズS(GII)",
+          "displayRace": "ローズS",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1997,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "マーメイドS(GIII)",
+          "displayRace": "マーメイドS",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "12",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1997,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(GI)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "7",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1996,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳牝馬S(GI)",
+          "displayRace": "阪神3歳牝馬S",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "10",
+          "result": "5",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Night Cruise",
+      "prizeMoney": {
+        "total": "7,321万円",
+        "central": "7,321万円",
+        "local": "0万円"
+      },
+      "damId": "night-spark"
+    },
+    {
+      "id": "night-spark",
+      "name": "ナイトスパーク",
+      "foaled": "{'year': 1985, 'month': 6, 'day': 6}",
+      "foaledArray": ["1985", "06", "06"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "リアルシャダイ(US)",
+      "dam": "オーロラターフ",
+      "dam_netkeiba_id": "1977103848",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（早来町）",
+      "netkeibaId": "1985103466",
+      "raceStats": {
+        "total": {
+          "runs": 23,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Night Spark",
+      "prizeMoney": {
+        "total": "4,546万円",
+        "central": "4,546万円",
+        "local": "0万円"
+      },
+      "damId": "aurora-turf"
+    },
+    {
+      "id": "aurora-turf",
+      "name": "オーロラターフ",
+      "foaled": "{'year': 1977, 'month': 5, 'day': 1}",
+      "foaledArray": ["1977", "05", "01"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "エルセンタウロ",
+      "dam": "シヤダイランド",
+      "dam_netkeiba_id": "1955102112",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（早来町）",
+      "netkeibaId": "1977103848",
+      "raceStats": {
+        "total": {
+          "runs": 26,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Aurora Turf",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shadai-land"
+    }
+  ]
+}

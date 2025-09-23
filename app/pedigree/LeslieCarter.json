@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "レスリーカーター",
     "rootHorseId": "leslie_carter",
-    "lastUpdated": "2025-09-07T14:36:11.208Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-22T13:32:09.991997Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -20,6 +20,299 @@
       "netkeibaId": "000a01800b",
       "source": "tsx_conversion",
       "owner": "奥羽種馬牧場→十勝種馬牧場→野村治三郎"
+    },
+    {
+      "id": "ubiquitous",
+      "name": "ユビキタス",
+      "foaled": "{'year': 2005, 'month': 3, 'day': 19}",
+      "foaledArray": ["2005", "03", "19"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アグネスデジタル",
+      "dam": "パローニアクレスト",
+      "color": "鹿毛",
+      "breeder": "村上牧場（三石町）",
+      "netkeibaId": "2005104631",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2008,
+            "month": 11,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "東京中日S杯武蔵野S(GIII)",
+          "displayRace": "武蔵野S",
+          "distance": "ダ1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "ユニコーンS(GIII)",
+          "displayRace": "ユニコーンS",
+          "distance": "ダ1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Ubiquitous",
+      "prizeMoney": {
+        "total": "1億1,410万円",
+        "central": "1億1,410万円",
+        "local": "0万円"
+      },
+      "damId": "paronia-crest"
+    },
+    {
+      "id": "paronia-crest",
+      "name": "パローニアクレスト",
+      "foaled": "{'year': 1994, 'month': 4, 'day': 5}",
+      "foaledArray": ["1994", "04", "05"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "キンググローリアス(US)",
+      "dam": "ハッピーガーランド",
+      "color": "鹿毛",
+      "breeder": "村上牧場（三石町）",
+      "netkeibaId": "1994107768",
+      "raceStats": {
+        "total": {
+          "runs": 35,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1996,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "盛岡",
+          "race": "南部駒賞(重賞)",
+          "displayRace": "南部駒賞〔盛岡〕",
+          "distance": "ダ1600",
+          "grade": "local_old_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Paronia Crest",
+      "prizeMoney": {
+        "total": "2,609万円",
+        "central": "0万円",
+        "local": "2,609万円"
+      },
+      "damId": "happy-garland"
+    },
+    {
+      "id": "happy-garland",
+      "name": "ハッピーガーランド",
+      "foaled": "{'year': 1984, 'month': 4, 'day': 8}",
+      "foaledArray": ["1984", "04", "08"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フリートウイング(US)",
+      "dam": "シングルワン",
+      "color": "鹿毛",
+      "breeder": "村上牧場（三石町）",
+      "netkeibaId": "1984103559",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Happy Garland",
+      "prizeMoney": {
+        "total": "907万円",
+        "central": "907万円",
+        "local": "0万円"
+      },
+      "damId": "single-one"
+    },
+    {
+      "id": "single-one",
+      "name": "シングルワン",
+      "foaled": "{'year': 1974}",
+      "foaledArray": ["1974"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヴィエナ",
+      "dam": "レスリーカリム",
+      "color": "栗毛",
+      "breeder": "三石町",
+      "netkeibaId": "1955104844",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Single One",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "leslie-karim"
+    },
+    {
+      "id": "leslie-karim",
+      "name": "レスリーカリム",
+      "foaled": "{'year': 1962}",
+      "foaledArray": ["1962"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カリム(IRE)",
+      "dam": "ハツカゼ",
+      "color": "栗毛",
+      "breeder": "三石町",
+      "netkeibaId": "000a003971",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Leslie Karim",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hatsukaze"
+    },
+    {
+      "id": "hatsukaze",
+      "name": "ハツカゼ",
+      "foaled": "{'year': 1954}",
+      "foaledArray": ["1954"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "タカクラヤマ",
+      "dam": "マツカゼ",
+      "color": "栗毛",
+      "breeder": "早来町",
+      "netkeibaId": "000a002aba",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "matsukaze"
+    },
+    {
+      "id": "matsukaze",
+      "name": "マツカゼ",
+      "foaled": "{'year': 1950}",
+      "foaledArray": ["1950"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヒロサクラ",
+      "dam": "典風",
+      "color": "栗毛",
+      "breeder": "早来町",
+      "netkeibaId": "000a002817",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Matsukaze",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tenkaze"
+    },
+    {
+      "id": "tenkaze",
+      "name": "典風",
+      "foaled": "{'year': 1935}",
+      "foaledArray": ["1935"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アデージ(GB)",
+      "dam": "追風",
+      "color": "栗毛",
+      "breeder": "早来町",
+      "netkeibaId": "000a0025c9",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "oikaze"
+    },
+    {
+      "id": "oikaze",
+      "name": "追風",
+      "foaled": "{'year': 1920}",
+      "foaledArray": ["1920"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "パーナムビユコー(GB)",
+      "dam": "レスリーカーター",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a0023d8",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "leslie_carter"
     }
   ]
 }

@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "pedigreeName": "Pell-Mell",
+    "rootHorseId": "pell-mell",
+    "lastUpdated": "2025-09-23T10:02:22.413901Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "pell-mell",
+      "name": "ペルメル",
+      "foaled": "{'year': 1961}",
+      "foaledArray": ["1961"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Pall Mall",
+      "dam": "Novice",
+      "color": "栗毛",
+      "breeder": "愛",
+      "netkeibaId": "000a00376a",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Pell-Mell"
+    },
+    {
+      "id": "katsura-asahi",
+      "name": "カツラアサヒ",
+      "foaled": "{'year': 1972}",
+      "foaledArray": ["1972"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "レベルコ(GB)",
+      "dam": "ペルメル",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "1972102333",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Katsura Asahi",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "pell-mell"
+    },
+    {
+      "id": "asahi-marine",
+      "name": "アサヒマリン",
+      "foaled": "{'year': 1992, 'month': 5, 'day': 8}",
+      "foaledArray": ["1992", "05", "08"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "スティールハート",
+      "dam": "カツラアサヒ",
+      "color": "鹿毛",
+      "breeder": "パシフィック牧場（三石町）",
+      "netkeibaId": "1992106609",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Asahi Marine",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "katsura-asahi"
+    },
+    {
+      "id": "light-pacific",
+      "name": "ライトパシフィック",
+      "foaled": "{'year': 1999, 'month': 3, 'day': 22}",
+      "foaledArray": ["1999", "03", "22"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "サクラバクシンオー",
+      "dam": "アサヒマリン",
+      "color": "鹿毛",
+      "breeder": "パシフィック牧場（三石町）",
+      "netkeibaId": "1999105097",
+      "raceStats": {
+        "total": {
+          "runs": 38,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2005,
+            "month": 8,
+            "day": 20
+          },
+          "racecourse": "新潟",
+          "race": "新潟ジャンプS(JGIII)",
+          "displayRace": "新潟ジャンプS",
+          "distance": "障3250",
+          "grade": "jra_jg3",
+          "entry": "14",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 2005,
+            "month": 4,
+            "day": 16
+          },
+          "racecourse": "中山",
+          "race": "中山グランドジャンプ(JGI)",
+          "displayRace": "中山グランドジャンプ",
+          "distance": "障4250",
+          "grade": "jra_jg1",
+          "entry": "14",
+          "result": "11",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2004,
+            "month": 8,
+            "day": 21
+          },
+          "racecourse": "新潟",
+          "race": "新潟ジャンプS(JGIII)",
+          "displayRace": "新潟ジャンプS",
+          "distance": "障3250",
+          "grade": "jra_jg3",
+          "entry": "14",
+          "result": "2",
+          "favorite": "12"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Light Pacific",
+      "prizeMoney": {
+        "total": "6,685万円",
+        "central": "6,621万円",
+        "local": "64万円"
+      },
+      "damId": "asahi-marine"
+    }
+  ]
+}

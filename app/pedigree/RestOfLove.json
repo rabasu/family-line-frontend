@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "pedigreeName": "Rest of Love",
+    "rootHorseId": "rest-of-love",
+    "lastUpdated": "2025-09-21T23:37:24.154386Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "rest-of-love",
+      "name": "レストオブラブ",
+      "foaled": "{'year': 1987}",
+      "foaledArray": ["1987"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Mr. Prospector",
+      "dam": "Ignore",
+      "color": "栗毛",
+      "breeder": "米",
+      "netkeibaId": "000a0064a6",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Rest of Love"
+    },
+    {
+      "id": "remain-love",
+      "name": "リメインラブ",
+      "foaled": "{'year': 1995, 'month': 2, 'day': 23}",
+      "foaledArray": ["1995", "02", "23"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Nabeel Dancer",
+      "dam": "レストオブラブ",
+      "color": "鹿毛",
+      "breeder": "飛野牧場（静内町）",
+      "netkeibaId": "1995100775",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Remain Love",
+      "prizeMoney": {
+        "total": "571万円",
+        "central": "571万円",
+        "local": "0万円"
+      },
+      "damId": "rest-of-love"
+    },
+    {
+      "id": "sangre-azul",
+      "name": "サングレアズール",
+      "foaled": "{'year': 2007, 'month': 4, 'day': 24}",
+      "foaledArray": ["2007", "04", "24"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クロフネ",
+      "dam": "リメインラブ",
+      "color": "鹿毛",
+      "breeder": "石川栄一（新ひだか町）",
+      "netkeibaId": "2007100029",
+      "raceStats": {
+        "total": {
+          "runs": 16,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2011,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "サンスポ杯阪神牝馬S(GII)",
+          "displayRace": "阪神牝馬S",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "12",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2011,
+            "month": 1,
+            "day": 30
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬S(GIII)",
+          "displayRace": "京都牝馬S",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Sangre Azul",
+      "prizeMoney": {
+        "total": "5,543万円",
+        "central": "5,543万円",
+        "local": "0万円"
+      },
+      "damId": "remain-love"
+    }
+  ]
+}

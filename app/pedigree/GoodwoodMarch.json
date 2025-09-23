@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "pedigreeName": "Goodwood March",
+    "rootHorseId": "goodwood-march",
+    "lastUpdated": "2025-09-15T09:39:28.469660Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "goodwood-march",
+      "name": "グッドウッドマーチ",
+      "foaled": "{'year': 2003}",
+      "foaledArray": ["2003"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Foxhound",
+      "dam": "Military Tune",
+      "color": "鹿毛",
+      "breeder": "英",
+      "netkeibaId": "000a01251b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Goodwood March"
+    },
+    {
+      "id": "favola",
+      "name": "ファヴォーラ",
+      "foaled": "{'year': 2014, 'month': 3, 'day': 18}",
+      "foaledArray": ["2014", "03", "18"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Frankel",
+      "dam": "グッドウッドマーチ",
+      "color": "栗毛",
+      "breeder": "三嶋牧場（浦河町）",
+      "netkeibaId": "2014103537",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Favola",
+      "prizeMoney": {
+        "total": "275万円",
+        "central": "275万円",
+        "local": "0万円"
+      },
+      "damId": "goodwood-march"
+    },
+    {
+      "id": "west-now",
+      "name": "ウエストナウ",
+      "foaled": "{'year': 2021, 'month': 5, 'day': 2}",
+      "foaledArray": ["2021", "05", "02"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "キズナ",
+      "dam": "ファヴォーラ",
+      "color": "鹿毛",
+      "breeder": "ノースヒルズ（新冠町）",
+      "netkeibaId": "2021106645",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2024,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(GI)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "11",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 9,
+            "day": 22
+          },
+          "racecourse": "中京",
+          "race": "神戸新聞杯(GII)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "11",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(GII)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "West Now",
+      "prizeMoney": {
+        "total": "4,641万円",
+        "central": "4,641万円",
+        "local": "0万円"
+      },
+      "damId": "favola"
+    }
+  ]
+}

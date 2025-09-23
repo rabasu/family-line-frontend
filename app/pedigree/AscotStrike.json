@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "pedigreeName": "Ascot Strike",
+    "rootHorseId": "ascot-strike",
+    "lastUpdated": "2025-09-22T04:50:56.393898Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "ascot-strike",
+      "name": "アスコットストライク",
+      "foaled": "{'year': 1981}",
+      "foaledArray": ["1981"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Mr. Prospector",
+      "dam": "Queen's Turf",
+      "color": "黒鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a00623b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Ascot Strike"
+    },
+    {
+      "id": "tropical-bamboo",
+      "name": "トロピカルバンブー",
+      "foaled": "{'year': 1990, 'month': 3, 'day': 28}",
+      "foaledArray": ["1990", "03", "28"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Bustino",
+      "dam": "アスコットストライク",
+      "color": "鹿毛",
+      "breeder": "バンブー牧場（浦河町）",
+      "netkeibaId": "1990101075",
+      "raceStats": {
+        "total": {
+          "runs": 18,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tropical Bamboo",
+      "prizeMoney": {
+        "total": "2,420万円",
+        "central": "2,420万円",
+        "local": "0万円"
+      },
+      "damId": "ascot-strike"
+    },
+    {
+      "id": "la-golondrina",
+      "name": "ラゴロンドリーナ",
+      "foaled": "{'year': 1999, 'month': 2, 'day': 23}",
+      "foaledArray": ["1999", "02", "23"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "バンブーアトラス",
+      "dam": "トロピカルバンブー",
+      "color": "栗毛",
+      "breeder": "バンブー牧場（浦河町）",
+      "netkeibaId": "1999105794",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "La Golondrina",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tropical-bamboo"
+    },
+    {
+      "id": "bell-wood-lhotse",
+      "name": "ベルウッドローツェ",
+      "foaled": "{'year': 2006, 'month': 4, 'day': 14}",
+      "foaledArray": ["2006", "04", "14"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ダイタクリーヴァ",
+      "dam": "ラゴロンドリーナ",
+      "color": "栗毛",
+      "breeder": "浦河土肥牧場（浦河町）",
+      "netkeibaId": "2006101762",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2010,
+            "month": 5,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)(GI)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "15",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 2010,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(GII)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "10",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2010,
+            "month": 2,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "ダイヤモンドS(GIII)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3400",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "2",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Bell Wood Lhotse",
+      "prizeMoney": {
+        "total": "4,743万円",
+        "central": "4,743万円",
+        "local": "0万円"
+      },
+      "damId": "la-golondrina"
+    }
+  ]
+}

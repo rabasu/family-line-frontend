@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "pedigreeName": "Very Top",
+    "rootHorseId": "very-top",
+    "lastUpdated": "2025-09-23T10:33:39.382626Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "very-top",
+      "name": "ベリートップ",
+      "foaled": "{'year': 1965}",
+      "foaledArray": ["1965"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トンピオン",
+      "dam": "Navira",
+      "color": "黒鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a00038b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Very Top"
+    },
+    {
+      "id": "erimo-screen",
+      "name": "エリモスクリーン",
+      "foaled": "{'year': 1972}",
+      "foaledArray": ["1972"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Silent Screen",
+      "dam": "ベリートップ",
+      "color": "黒鹿毛",
+      "breeder": "米",
+      "netkeibaId": "1955103513",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Erimo Screen",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "very-top"
+    },
+    {
+      "id": "top-screen",
+      "name": "トップスクリーン",
+      "foaled": "{'year': 1980, 'month': 5, 'day': 29}",
+      "foaledArray": ["1980", "05", "29"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "パーソナリティ(US)",
+      "dam": "エリモスクリーン",
+      "color": "黒鹿毛",
+      "breeder": "えりも牧場（えりも町）",
+      "netkeibaId": "1980105221",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Top Screen",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "erimo-screen"
+    },
+    {
+      "id": "chokai-ruby",
+      "name": "チョウカイルビー",
+      "foaled": "{'year': 1993, 'month': 4, 'day': 25}",
+      "foaledArray": ["1993", "04", "25"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "リヴリア(US)",
+      "dam": "トップスクリーン",
+      "color": "黒鹿毛",
+      "breeder": "上島牧場（えりも町）",
+      "netkeibaId": "1993109311",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Chokai Ruby",
+      "prizeMoney": {
+        "total": "75万円",
+        "central": "75万円",
+        "local": "0万円"
+      },
+      "damId": "top-screen"
+    },
+    {
+      "id": "erimo-country",
+      "name": "エリモカントリー",
+      "foaled": "{'year': 2000, 'month': 5, 'day': 30}",
+      "foaledArray": ["2000", "05", "30"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ティンバーカントリー(US)",
+      "dam": "チョウカイルビー",
+      "color": "黒鹿毛",
+      "breeder": "えりも農場（えりも町）",
+      "netkeibaId": "2000100033",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2005,
+            "month": 6,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "東京ハイジャンプ(JGII)",
+          "displayRace": "東京ハイジャンプ",
+          "distance": "障3300",
+          "grade": "jra_jg2",
+          "entry": "14",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2005,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "京都ジャンプS(JGIII)",
+          "displayRace": "京都ジャンプS",
+          "distance": "障3170",
+          "grade": "jra_jg3",
+          "entry": "11",
+          "result": "1",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Erimo Country",
+      "prizeMoney": {
+        "total": "1億1,285万円",
+        "central": "1億1,285万円",
+        "local": "0万円"
+      },
+      "damId": "chokai-ruby"
+    }
+  ]
+}

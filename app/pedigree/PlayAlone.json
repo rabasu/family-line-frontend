@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "pedigreeName": "Play Alone",
+    "rootHorseId": "play-alone",
+    "lastUpdated": "2025-09-15T20:27:24.802772Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "play-alone",
+      "name": "プレイアローン",
+      "foaled": "{'year': 1992, 'month': 5, 'day': 19}",
+      "foaledArray": ["1992", "05", "19"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Lyphard",
+      "dam": "Cutlasee",
+      "color": "鹿毛",
+      "breeder": "Shadai Farm（米）",
+      "netkeibaId": "1992110093",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Play Alone"
+    },
+    {
+      "id": "two-of-heart",
+      "name": "ツーオブハート",
+      "foaled": "{'year': 1999, 'month': 5, 'day': 10}",
+      "foaledArray": ["1999", "05", "10"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "メジロマックイーン",
+      "dam": "プレイアローン",
+      "color": "芦毛",
+      "breeder": "社台ファーム（千歳市）",
+      "netkeibaId": "1999106836",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Two of Heart",
+      "prizeMoney": {
+        "total": "4,746万円",
+        "central": "4,746万円",
+        "local": "0万円"
+      },
+      "damId": "play-alone"
+    },
+    {
+      "id": "moani-keala",
+      "name": "モアニケアラ",
+      "foaled": "{'year': 2012, 'month': 3, 'day': 27}",
+      "foaledArray": ["2012", "03", "27"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "マンハッタンカフェ",
+      "dam": "ツーオブハート",
+      "color": "芦毛",
+      "breeder": "社台ファーム（千歳市）",
+      "netkeibaId": "2012104298",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Moani Ke'ala",
+      "prizeMoney": {
+        "total": "6,842万円",
+        "central": "6,842万円",
+        "local": "0万円"
+      },
+      "damId": "two-of-heart"
+    },
+    {
+      "id": "hawaiian-tiare",
+      "name": "ハワイアンティアレ",
+      "foaled": "{'year': 2021, 'month': 2, 'day': 4}",
+      "foaledArray": ["2021", "02", "04"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ロードカナロア",
+      "dam": "モアニケアラ",
+      "color": "芦毛",
+      "breeder": "社台ファーム（千歳市）",
+      "netkeibaId": "2021105255",
+      "raceStats": {
+        "total": {
+          "runs": 12,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2024,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "中京",
+          "race": "関西TVローズS(GII)",
+          "displayRace": "ローズS",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "12",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 4,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(GI)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "10",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "阪神",
+          "race": "チューリップ賞(GII)",
+          "displayRace": "チューリップ賞",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "3",
+          "favorite": "15"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hawaiian Tiare",
+      "prizeMoney": {
+        "total": "5,392万円",
+        "central": "5,392万円",
+        "local": "0万円"
+      },
+      "damId": "moani-keala"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "pedigreeName": "テイプトン",
+    "rootHorseId": "teiputon",
+    "lastUpdated": "2025-09-22T14:27:08.155564Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "teiputon",
+      "name": "テイプトン",
+      "foaled": "{'year': 1950}",
+      "foaledArray": ["1950"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Sabu",
+      "dam": "Shadows Fall",
+      "color": "栗毛",
+      "breeder": "米",
+      "netkeibaId": "000a002937",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "khyber-pass",
+      "name": "カイバーパス",
+      "foaled": "{'year': 1966}",
+      "foaledArray": ["1966"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "グローリーホワイト(US)",
+      "dam": "テイプトン",
+      "color": "青毛",
+      "breeder": "苫小牧市",
+      "netkeibaId": "000a004095",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Khyber Pass",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "teiputon"
+    },
+    {
+      "id": "kuresonhaado",
+      "name": "クレソンハード",
+      "foaled": "{'year': 1977, 'month': 4, 'day': 12}",
+      "foaledArray": ["1977", "04", "12"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "カイバーパス",
+      "color": "栗毛",
+      "breeder": "上井義太郎（新冠町）",
+      "netkeibaId": "1977106758",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "khyber-pass"
+    },
+    {
+      "id": "kleson-c-b",
+      "name": "クレソンシービー",
+      "foaled": "{'year': 1993, 'month': 4, 'day': 8}",
+      "foaledArray": ["1993", "04", "08"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミスターシービー",
+      "dam": "クレソンハード",
+      "color": "鹿毛",
+      "breeder": "上井武志郎（新冠町）",
+      "netkeibaId": "1993104492",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kleson C.B.",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kuresonhaado"
+    },
+    {
+      "id": "black-lady",
+      "name": "ブラックレディ",
+      "foaled": "{'year': 2004, 'month': 4, 'day': 21}",
+      "foaledArray": ["2004", "04", "21"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "キングヘイロー",
+      "dam": "クレソンシービー",
+      "color": "青鹿毛",
+      "breeder": "カミイスタット（新冠町）",
+      "netkeibaId": "2004100141",
+      "raceStats": {
+        "total": {
+          "runs": 25,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2008,
+            "month": 10,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "東京オータムジャンプ(JGIII)",
+          "displayRace": "東京オータムジャンプ",
+          "distance": "障3300",
+          "grade": "jra_jg3",
+          "entry": "14",
+          "result": "6",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 9,
+            "day": 20
+          },
+          "racecourse": "阪神",
+          "race": "阪神ジャンプS(JGIII)",
+          "displayRace": "阪神ジャンプS",
+          "distance": "障3140",
+          "grade": "jra_jg3",
+          "entry": "14",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 8,
+            "day": 23
+          },
+          "racecourse": "新潟",
+          "race": "新潟ジャンプS(JGIII)",
+          "displayRace": "新潟ジャンプS",
+          "distance": "障3250",
+          "grade": "jra_jg3",
+          "entry": "14",
+          "result": "2",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Black Lady",
+      "prizeMoney": {
+        "total": "3,058万円",
+        "central": "3,058万円",
+        "local": "0万円"
+      },
+      "damId": "kleson-c-b"
+    }
+  ]
+}

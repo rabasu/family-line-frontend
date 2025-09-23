@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "pedigreeName": "Metamorphose",
+    "rootHorseId": "metamorphose",
+    "lastUpdated": "2025-09-23T00:25:53.614487Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "metamorphose",
+      "name": "メタモルフォース",
+      "foaled": "{'year': 1988, 'month': 2, 'day': 27}",
+      "foaledArray": ["1988", "02", "27"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Lord Avie",
+      "dam": "Normia",
+      "color": "栗毛",
+      "breeder": "米",
+      "netkeibaId": "000a00658e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Metamorphose"
+    },
+    {
+      "id": "grand-green",
+      "name": "グランドグリーン",
+      "foaled": "{'year': 1998, 'month': 4, 'day': 30}",
+      "foaledArray": ["1998", "04", "30"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ナリタブライアン",
+      "dam": "メタモルフォース",
+      "color": "鹿毛",
+      "breeder": "太陽牧場（浦河町）",
+      "netkeibaId": "1998102870",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Grand Green",
+      "prizeMoney": {
+        "total": "570万円",
+        "central": "570万円",
+        "local": "0万円"
+      },
+      "damId": "metamorphose"
+    },
+    {
+      "id": "susan-rider",
+      "name": "スーサンライダー",
+      "foaled": "{'year': 2004, 'month': 4, 'day': 12}",
+      "foaledArray": ["2004", "04", "12"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アグネスタキオン",
+      "dam": "グランドグリーン",
+      "color": "栗毛",
+      "breeder": "宮内牧場（浦河町）",
+      "netkeibaId": "2004102297",
+      "raceStats": {
+        "total": {
+          "runs": 40,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2006,
+            "month": 9,
+            "day": 3
+          },
+          "racecourse": "小倉",
+          "race": "小倉2歳S(GIII)",
+          "displayRace": "小倉2歳S",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "3",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Susan Rider",
+      "prizeMoney": {
+        "total": "1億1,354万円",
+        "central": "1億1,354万円",
+        "local": "0万円"
+      },
+      "damId": "grand-green"
+    }
+  ]
+}
