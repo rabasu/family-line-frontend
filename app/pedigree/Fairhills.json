@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "pedigreeName": "Fairhills",
+    "rootHorseId": "fairhills",
+    "lastUpdated": "2025-09-26T07:34:54.046137Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "fairhills",
+      "name": "フェアヒルズ",
+      "foaled": "{'year': 1951}",
+      "foaledArray": ["1951"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Fairwell",
+      "dam": "Song of the Hills",
+      "color": "黒鹿毛",
+      "breeder": "愛",
+      "netkeibaId": "000a002df6",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Fairhills"
+    },
+    {
+      "id": "kinuko",
+      "name": "キヌコ",
+      "foaled": "{'year': 1962}",
+      "foaledArray": ["1962"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ケリー",
+      "dam": "フェアヒルズ",
+      "color": "黒鹿毛",
+      "breeder": "平取町",
+      "netkeibaId": "1955100261",
+      "raceStats": {
+        "total": {
+          "runs": 18,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 4,
+            "day": 4
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "22",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kinuko",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fairhills"
+    },
+    {
+      "id": "fumino-ocean",
+      "name": "フミノオーシャン",
+      "foaled": "{'year': 1970}",
+      "foaledArray": ["1970"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "パーシア",
+      "dam": "キヌコ",
+      "color": "黒鹿毛",
+      "breeder": "平取町",
+      "netkeibaId": "1955103179",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Fumino Ocean",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kinuko"
+    },
+    {
+      "id": "fumino-heart",
+      "name": "フミノハート",
+      "foaled": "{'year': 1980, 'month': 4, 'day': 14}",
+      "foaledArray": ["1980", "04", "14"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "スティールハート",
+      "dam": "フミノオーシャン",
+      "color": "鹿毛",
+      "breeder": "山岡辰次郎（新冠町）",
+      "netkeibaId": "1980103708",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Fumino Heart",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fumino-ocean"
+    },
+    {
+      "id": "fumino-achieve",
+      "name": "フミノアチーブ",
+      "foaled": "{'year': 1985, 'month': 5, 'day': 14}",
+      "foaledArray": ["1985", "05", "14"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ミルジョージ",
+      "dam": "フミノハート",
+      "color": "鹿毛",
+      "breeder": "山岡辰次郎（新冠町）",
+      "netkeibaId": "1985106128",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1988,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": "中京",
+          "race": "中日スポーツ賞4歳S(GIII)",
+          "displayRace": "中日スポーツ賞4歳S",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "7",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1988,
+            "month": 5,
+            "day": 8
+          },
+          "racecourse": "京都",
+          "race": "毎日放送京都4歳特別(GIII)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "3",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fumino Achieve",
+      "prizeMoney": {
+        "total": "7,403万円",
+        "central": "7,403万円",
+        "local": "0万円"
+      },
+      "damId": "fumino-heart"
+    }
+  ]
+}

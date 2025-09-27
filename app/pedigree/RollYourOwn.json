@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "Roll Your Own",
     "rootHorseId": "roll-your-own",
-    "lastUpdated": "2025-09-07T10:17:51.043Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-26T00:32:01.601832Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -2169,6 +2169,151 @@
       "trainer": "上田武司→望月与一郎→久保田彦之",
       "jockey": "上田三千夫",
       "damId": "dai6-roll-your-own"
+    },
+    {
+      "id": "mon-enfant",
+      "name": "モナンファン",
+      "foaled": "{'year': 1985, 'month': 5, 'day': 21}",
+      "foaledArray": ["1985", "05", "21"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "サンシャインボーイ",
+      "dam": "モンソレイユ",
+      "color": "鹿毛",
+      "breeder": "久井勉（三石町）",
+      "netkeibaId": "1985106292",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1990,
+            "month": 3,
+            "day": 4
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(GIII)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Mon Enfant",
+      "prizeMoney": {
+        "total": "8,822万円",
+        "central": "8,822万円",
+        "local": "0万円"
+      },
+      "damId": "mon-soleil"
+    },
+    {
+      "id": "mon-soleil",
+      "name": "モンソレイユ",
+      "foaled": "{'year': 1973}",
+      "foaledArray": ["1973"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミンシオ",
+      "dam": "ホームラン",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955107128",
+      "raceStats": {
+        "total": {
+          "runs": 52,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 31
+          },
+          "racecourse": "阪神",
+          "race": "京都牝馬特別(OP)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "9",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 29
+          },
+          "racecourse": "中山",
+          "race": "デイリー杯クイーンカ(OP)",
+          "displayRace": "クイーンC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "12"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Mon Soleil",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hohmuran"
+    },
+    {
+      "id": "hohmuran",
+      "name": "ホームラン",
+      "foaled": "{'year': 1960}",
+      "foaledArray": ["1960"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ボストニアン",
+      "dam": "ロールフレイ",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a0033bc",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Hohmuran",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "roll-hurray"
     }
   ]
 }

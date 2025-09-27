@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ダイアナ",
     "rootHorseId": "diana",
-    "lastUpdated": "2025-09-07T14:36:11.048Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-27T07:36:58.948526Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -20,6 +20,453 @@
       "netkeibaId": "000a0024ca",
       "source": "tsx_conversion",
       "owner": "菅井農場（S5）遠山村・中谷博治（S6〜10）→中川要次郎/米田弥平管理（S11〜14）→武岡敏夫（S15〜）"
+    },
+    {
+      "id": "sugahara-tenjin",
+      "name": "スガハラテンジン",
+      "foaled": "{'year': 1985, 'month': 3, 'day': 14}",
+      "foaledArray": ["1985", "03", "14"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハシコトブキ",
+      "dam": "ゴールデンアーム",
+      "color": "黒鹿毛",
+      "breeder": "優駿牧場（門別町）",
+      "netkeibaId": "1985105176",
+      "raceStats": {
+        "total": {
+          "runs": 41,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1994,
+            "month": 2,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(春)(重賞)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "中",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1993,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(秋)(重賞)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1991,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "中京",
+          "race": "中京障害S(重賞)",
+          "displayRace": "中京障害S(春)",
+          "distance": "障3600",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1989,
+            "month": 11,
+            "day": 26
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(秋)(重賞)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Sugahara Tenjin",
+      "prizeMoney": {
+        "total": "1億8,360万円",
+        "central": "1億8,360万円",
+        "local": "0万円"
+      },
+      "damId": "golden-arm"
+    },
+    {
+      "id": "golden-arm",
+      "name": "ゴールデンアーム",
+      "foaled": "{'year': 1973}",
+      "foaledArray": ["1973"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ゴールデンプルーム(GB)",
+      "dam": "ケイユー",
+      "color": "鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "1955106182",
+      "raceStats": {
+        "total": {
+          "runs": 40,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Golden Arm",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "keiyu"
+    },
+    {
+      "id": "keiyu",
+      "name": "ケイユー",
+      "foaled": "{'year': 1968}",
+      "foaledArray": ["1968"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダラノーア(FR)",
+      "dam": "カシム",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955101050",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 8,
+            "day": 16
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "7",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Keiyu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kashim"
+    },
+    {
+      "id": "kashim",
+      "name": "カシム",
+      "foaled": "{'year': 1960}",
+      "foaledArray": ["1960"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カリム(IRE)",
+      "dam": "オールモンド",
+      "color": "黒鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a00366d",
+      "raceStats": {
+        "total": {
+          "runs": 61,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kashim",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "all-monde"
+    },
+    {
+      "id": "all-monde",
+      "name": "オールモンド",
+      "foaled": "{'year': 1952}",
+      "foaledArray": ["1952"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "オールトヨシマ",
+      "dam": "山昭",
+      "color": "黒鹿毛",
+      "breeder": "宮城県",
+      "netkeibaId": "000a002a7d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "All Monde",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yamaakira"
+    },
+    {
+      "id": "yamaakira",
+      "name": "山昭",
+      "foaled": "{'year': 1944}",
+      "foaledArray": ["1944"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "プリメロ(GB)",
+      "dam": "ピースモンド",
+      "color": "鹿毛",
+      "breeder": "福島県",
+      "netkeibaId": "000a0025b2",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "peace-monde"
+    },
+    {
+      "id": "peace-monde",
+      "name": "ピースモンド",
+      "foaled": "{'year': 1934}",
+      "foaledArray": ["1934"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トウルヌソル(GB)",
+      "dam": "ダイアナ",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a0023ce",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Peace Monde",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "diana"
+    },
+    {
+      "id": "ibuki-rider",
+      "name": "イブキライダー",
+      "foaled": "{'year': 1982, 'month': 3, 'day': 25}",
+      "foaledArray": ["1982", "03", "25"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ネプテューヌス(FR)",
+      "dam": "ケイユー",
+      "color": "鹿毛",
+      "breeder": "優駿牧場（門別町）",
+      "netkeibaId": "1982106920",
+      "raceStats": {
+        "total": {
+          "runs": 40,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1988,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(秋)(重賞)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "11",
+          "result": "中",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1988,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(秋)(重賞)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1988,
+            "month": 10,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(秋)(重賞)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "13",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1988,
+            "month": 9,
+            "day": 17
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(秋)(重賞)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "12",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1987,
+            "month": 12,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(秋)(重賞)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "9",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1987,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(秋)(重賞)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "13",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1987,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(秋)(重賞)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1987,
+            "month": 9,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(秋)(重賞)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1986,
+            "month": 9,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(秋)(重賞)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "8",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Ibuki Rider",
+      "prizeMoney": {
+        "total": "1億2,505万円",
+        "central": "1億2,505万円",
+        "local": "0万円"
+      },
+      "damId": "keiyu"
     }
   ]
 }

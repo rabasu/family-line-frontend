@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ミスパロー",
     "rootHorseId": "misuparoo",
-    "lastUpdated": "2025-09-24T00:08:31.747373Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-09-27T15:39:47.041877Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -556,6 +556,135 @@
         "local": "159万円"
       },
       "damId": "solo-singer"
+    },
+    {
+      "id": "kyowa-blast",
+      "name": "キョウワブラスト",
+      "foaled": "{'year': 1980, 'month': 3, 'day': 28}",
+      "foaledArray": ["1980", "03", "28"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "タイテエム",
+      "dam": "キヨウワゲラン",
+      "color": "青鹿毛",
+      "breeder": "協和牧場（新冠町）",
+      "netkeibaId": "1980103055",
+      "raceStats": {
+        "total": {
+          "runs": 56,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1984,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "愛知杯(OP)",
+          "displayRace": "愛知杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "朝日チャレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "12",
+          "result": "9",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 7,
+            "day": 8
+          },
+          "racecourse": "中京",
+          "race": "東海テレビ杯金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "2",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kyowa Blast",
+      "prizeMoney": {
+        "total": "4,361万円",
+        "central": "4,361万円",
+        "local": "0万円"
+      },
+      "damId": "kyowa-guerlain"
+    },
+    {
+      "id": "kyowa-guerlain",
+      "name": "キヨウワゲラン",
+      "foaled": "{'year': 1974}",
+      "foaledArray": ["1974"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アローエクスプレス",
+      "dam": "ダイニトモコ",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955105565",
+      "raceStats": {
+        "total": {
+          "runs": 22,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kyowa Guerlain",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daini-tomoko"
+    },
+    {
+      "id": "daini-tomoko",
+      "name": "ダイニトモコ",
+      "foaled": "{'year': 1966}",
+      "foaledArray": ["1966"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シプリアニ(ITA)",
+      "dam": "ギンヒデ",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955101261",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Daini Tomoko",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ginhide"
     }
   ]
 }

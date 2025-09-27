@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "pedigreeName": "ラッキーベビー",
+    "rootHorseId": "rakkiibebii",
+    "lastUpdated": "2025-09-25T13:57:55.920640Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "rakkiibebii",
+      "name": "ラッキーベビー",
+      "foaled": "{'year': 1952}",
+      "foaledArray": ["1952"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "My Babu(FR)",
+      "dam": "Fortunata",
+      "color": "鹿毛",
+      "breeder": "愛",
+      "netkeibaId": "000a002e42",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "lucky-way",
+      "name": "ラッキーウエー",
+      "foaled": "{'year': 1963}",
+      "foaledArray": ["1963"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ソロナウェー",
+      "dam": "ラッキーベビー",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955100269",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Lucky Way",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rakkiibebii"
+    },
+    {
+      "id": "eiteru-2",
+      "name": "エイテルII",
+      "foaled": "{'year': 1969}",
+      "foaledArray": ["1969"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "エイトラックス(FR)",
+      "dam": "ラッキーウエー",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955101608",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Eiteru 2",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "lucky-way"
+    },
+    {
+      "id": "grand-merci",
+      "name": "グランメルシー",
+      "foaled": "{'year': 1982, 'month': 5, 'day': 30}",
+      "foaledArray": ["1982", "05", "30"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トウショウボーイ",
+      "dam": "エイテルII",
+      "color": "栗毛",
+      "breeder": "小島牧場（浦河町）",
+      "netkeibaId": "1982100355",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Grand Merci",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "eiteru-2"
+    },
+    {
+      "id": "kyoei-swat",
+      "name": "キョウエイスワット",
+      "foaled": "{'year': 1986, 'month': 5, 'day': 30}",
+      "foaledArray": ["1986", "05", "30"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "クラウンドプリンス",
+      "dam": "グランメルシー",
+      "color": "栗毛",
+      "breeder": "ヤマオカ牧場（新冠町）",
+      "netkeibaId": "1986101729",
+      "raceStats": {
+        "total": {
+          "runs": 33,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1993,
+            "month": 2,
+            "day": 21
+          },
+          "racecourse": "小倉",
+          "race": "小倉大賞典(GIII)",
+          "displayRace": "小倉大賞典",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "13",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1992,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "中京",
+          "race": "ウインターS(GIII)",
+          "displayRace": "ウインターS",
+          "distance": "ダ2300",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "2",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1992,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "フェブラリーH(GIII)",
+          "displayRace": "フェブラリーH",
+          "distance": "ダ1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "13",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kyoei Swat",
+      "prizeMoney": {
+        "total": "2億2,340万円",
+        "central": "2億2,340万円",
+        "local": "0万円"
+      },
+      "damId": "grand-merci"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "pedigreeName": "Shiando",
+    "rootHorseId": "shiando",
+    "lastUpdated": "2025-09-24T23:25:33.707926Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "shiando",
+      "name": "シアンド",
+      "foaled": "{'year': 1970}",
+      "foaledArray": ["1970"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Damascus(US)",
+      "dam": "Scorn",
+      "color": "黒鹿毛",
+      "breeder": "米",
+      "netkeibaId": "000a005af4",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Shiando"
+    },
+    {
+      "id": "native-star",
+      "name": "ネイティブスター",
+      "foaled": "{'year': 1977, 'month': 3, 'day': 30}",
+      "foaledArray": ["1977", "03", "30"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Native Charger",
+      "dam": "シアンド",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（千葉県）",
+      "netkeibaId": "1977103837",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Native Star",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shiando"
+    },
+    {
+      "id": "bronze-star",
+      "name": "ブロンズスター",
+      "foaled": "{'year': 1986, 'month': 5, 'day': 12}",
+      "foaledArray": ["1986", "05", "12"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンテースト(CAN)",
+      "dam": "ネイティブスター",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（千歳市）",
+      "netkeibaId": "1986105008",
+      "raceStats": {
+        "total": {
+          "runs": 25,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Bronze Star",
+      "prizeMoney": {
+        "total": "3,415万円",
+        "central": "3,415万円",
+        "local": "0万円"
+      },
+      "damId": "native-star"
+    },
+    {
+      "id": "tamamo-promoter",
+      "name": "タマモプロモーター",
+      "foaled": "{'year': 1994, 'month': 5, 'day': 30}",
+      "foaledArray": ["1994", "05", "30"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヘクタープロテクター(US)",
+      "dam": "ブロンズスター",
+      "color": "栗毛",
+      "breeder": "社台ファーム（千歳市）",
+      "netkeibaId": "1994108604",
+      "raceStats": {
+        "total": {
+          "runs": 18,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1997,
+            "month": 3,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(GIII)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1997,
+            "month": 2,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "きさらぎ賞(GIII)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "10",
+          "result": "3",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tamamo Promoter",
+      "prizeMoney": {
+        "total": "6,762万円",
+        "central": "6,762万円",
+        "local": "0万円"
+      },
+      "damId": "bronze-star"
+    }
+  ]
+}

@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "Irish Eyes",
     "rootHorseId": "irish-eyes",
-    "lastUpdated": "2025-09-07T14:36:11.186Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-27T08:38:29.263469Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -1759,6 +1759,138 @@
       "owner": "（有）ユートピア牧場",
       "trainer": "阿部新生（美浦）",
       "damId": "kuri-young"
+    },
+    {
+      "id": "clear",
+      "name": "クリア",
+      "foaled": "{'year': 1981, 'month': 5, 'day': 24}",
+      "foaledArray": ["1981", "05", "24"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンネイティヴ(CAN)",
+      "dam": "クリワカサ",
+      "color": "黒鹿毛",
+      "breeder": "ユートピア牧場（室蘭市）",
+      "netkeibaId": "1981100798",
+      "raceStats": {
+        "total": {
+          "runs": 34,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1987,
+            "month": 2,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(春)(重賞)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "13",
+          "result": "3",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1986,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(秋)(重賞)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "11",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1986,
+            "month": 10,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(秋)(重賞)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1986,
+            "month": 4,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(春)(重賞)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "9",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "8",
+          "result": "中",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Clear",
+      "prizeMoney": {
+        "total": "2,690万円",
+        "central": "2,690万円",
+        "local": "0万円"
+      },
+      "damId": "kuri-wakasa"
+    },
+    {
+      "id": "kuri-wakasa",
+      "name": "クリワカサ",
+      "foaled": "{'year': 1975}",
+      "foaledArray": ["1975"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ビービービー(US)",
+      "dam": "クリホット",
+      "color": "黒鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "1955106719",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kuri Wakasa",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kuri-hot"
     }
   ]
 }
