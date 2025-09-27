@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "pedigreeName": "クインメリー",
+    "rootHorseId": "kuinmerii",
+    "lastUpdated": "2025-09-24T17:50:08.053653Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "kuinmerii",
+      "name": "クインメリー",
+      "foaled": "{'year': 1950}",
+      "foaledArray": ["1950"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Swen",
+      "dam": "Mira Maid",
+      "color": "栃栗毛",
+      "breeder": "米",
+      "netkeibaId": "000a002c08",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "royal-cherry",
+      "name": "ローヤルチェリー",
+      "foaled": "{'year': 1962}",
+      "foaledArray": ["1962"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ロイヤルウツド(NZ)",
+      "dam": "クインメリー",
+      "color": "黒鹿毛",
+      "breeder": "宮崎県",
+      "netkeibaId": "000a003a83",
+      "raceStats": {
+        "total": {
+          "runs": 43,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Royal Cherry",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kuinmerii"
+    },
+    {
+      "id": "guddoredei",
+      "name": "グッドレデイ",
+      "foaled": "{'year': 1977, 'month': 5, 'day': 1}",
+      "foaledArray": ["1977", "05", "01"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "グッドリー(FR)",
+      "dam": "ローヤルチェリー",
+      "color": "栗毛",
+      "breeder": "服部文男（鹿児島県）",
+      "netkeibaId": "1977100135",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "royal-cherry"
+    },
+    {
+      "id": "royal-grundy",
+      "name": "ロイヤルグランデイ",
+      "foaled": "{'year': 1986, 'month': 4, 'day': 21}",
+      "foaledArray": ["1986", "04", "21"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "グランディ",
+      "dam": "グッドレデイ",
+      "color": "栗毛",
+      "breeder": "服部文男（鹿児島県）",
+      "netkeibaId": "1986100040",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Royal Grundy",
+      "prizeMoney": {
+        "total": "1,179万円",
+        "central": "1,179万円",
+        "local": "0万円"
+      },
+      "damId": "guddoredei"
+    },
+    {
+      "id": "mark-king-o",
+      "name": "マークキングオー",
+      "foaled": "{'year': 1996, 'month': 2, 'day': 25}",
+      "foaledArray": ["1996", "02", "25"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "マークオブディスティンクション(GB)",
+      "dam": "ロイヤルグランデイ",
+      "color": "鹿毛",
+      "breeder": "服部文男（鹿児島県）",
+      "netkeibaId": "1996109070",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2000,
+            "month": 8,
+            "day": 14
+          },
+          "racecourse": "中津",
+          "race": "霧島賞(重賞)",
+          "displayRace": "霧島賞〔中津〕",
+          "distance": "ダ1760",
+          "grade": "local_grade",
+          "entry": "9",
+          "result": "8",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1999,
+            "month": 7,
+            "day": 25
+          },
+          "racecourse": "小倉",
+          "race": "TV西日本北九州記念(GIII)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "14",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1998,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "札幌",
+          "race": "札幌3歳S(GIII)",
+          "displayRace": "札幌3歳S",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "3",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Mark King O",
+      "prizeMoney": {
+        "total": "3,299万円",
+        "central": "3,278万円",
+        "local": "21万円"
+      },
+      "damId": "royal-grundy"
+    }
+  ]
+}

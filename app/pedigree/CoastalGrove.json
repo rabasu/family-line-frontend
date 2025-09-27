@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "pedigreeName": "Coastal Grove",
+    "rootHorseId": "coastal-grove",
+    "lastUpdated": "2025-09-27T08:06:53.336313Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "coastal-grove",
+      "name": "コスタルグローブ",
+      "foaled": "{'year': 1970}",
+      "foaledArray": ["1970"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Never Say Die",
+      "dam": "Diamantine",
+      "color": "栗毛",
+      "breeder": "愛",
+      "netkeibaId": "000a00058f",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Coastal Grove"
+    },
+    {
+      "id": "inter-cecil",
+      "name": "インターセシル",
+      "foaled": "{'year': 1977, 'month': 3, 'day': 6}",
+      "foaledArray": ["1977", "03", "06"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "タカウォーク(US)",
+      "dam": "コスタルグローブ",
+      "color": "青鹿毛",
+      "breeder": "ヤマオカ牧場（新冠町）",
+      "netkeibaId": "1977102758",
+      "raceStats": {
+        "total": {
+          "runs": 18,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Inter Cecil",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "coastal-grove"
+    },
+    {
+      "id": "inter-shadow",
+      "name": "インターシャドー",
+      "foaled": "{'year': 1982, 'month': 4, 'day': 16}",
+      "foaledArray": ["1982", "04", "16"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "サチモシロー",
+      "dam": "インターセシル",
+      "color": "栗毛",
+      "breeder": "松田牧場（様似町）",
+      "netkeibaId": "1982102373",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1987,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(秋)(重賞)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "13",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1987,
+            "month": 9,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(秋)(重賞)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "4",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Inter Shadow",
+      "prizeMoney": {
+        "total": "3,490万円",
+        "central": "3,490万円",
+        "local": "0万円"
+      },
+      "damId": "inter-cecil"
+    }
+  ]
+}

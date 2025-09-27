@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "pedigreeName": "Ayesha",
+    "rootHorseId": "ayesha",
+    "lastUpdated": "2025-09-26T14:11:52.129187Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "ayesha",
+      "name": "アーイシヤ",
+      "foaled": "{'year': 1955}",
+      "foaledArray": ["1955"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Black Tarquin(US)",
+      "dam": "Discipliner",
+      "color": "黒鹿毛",
+      "breeder": "愛",
+      "netkeibaId": "000a002e3c",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Ayesha"
+    },
+    {
+      "id": "gift-yashima",
+      "name": "ギフトヤシマ",
+      "foaled": "{'year': 1962}",
+      "foaledArray": ["1962"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Princely Gift",
+      "dam": "アーイシヤ",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a003694",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Gift Yashima",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ayesha"
+    },
+    {
+      "id": "rabbit-yashima",
+      "name": "ラビットヤシマ",
+      "foaled": "{'year': 1968}",
+      "foaledArray": ["1968"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "キノー(US)",
+      "dam": "ギフトヤシマ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955101145",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Rabbit Yashima",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gift-yashima"
+    },
+    {
+      "id": "daishin-fubuki",
+      "name": "ダイシンフブキ",
+      "foaled": "{'year': 1983, 'month': 2, 'day': 18}",
+      "foaledArray": ["1983", "02", "18"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ドン",
+      "dam": "ラビットヤシマ",
+      "color": "芦毛",
+      "breeder": "鎌田牧場（浦河町）",
+      "netkeibaId": "1983106211",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1986,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(GI)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "21",
+          "result": "7",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1986,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "報知杯弥生賞(GIII)",
+          "displayRace": "弥生賞",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 12,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "朝日杯3歳S(GI)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "12",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "京成杯3歳S(GIII)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "5",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Daishin Fubuki",
+      "prizeMoney": {
+        "total": "8,400万円",
+        "central": "8,400万円",
+        "local": "0万円"
+      },
+      "damId": "rabbit-yashima"
+    }
+  ]
+}

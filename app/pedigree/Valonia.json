@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "pedigreeName": "Valonia",
+    "rootHorseId": "valonia",
+    "lastUpdated": "2025-09-27T11:35:00.643512Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "valonia",
+      "name": "バロニア",
+      "foaled": "{'year': 1968}",
+      "foaledArray": ["1968"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Val de Loir",
+      "dam": "Fraxinelle",
+      "color": "鹿毛",
+      "breeder": "仏",
+      "netkeibaId": "000a0007e0",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Valonia"
+    },
+    {
+      "id": "tenri-okan",
+      "name": "テンリオーカン",
+      "foaled": "{'year': 1974}",
+      "foaledArray": ["1974"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Jefferson",
+      "dam": "バロニア",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955104918",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tenri Okan",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "valonia"
+    },
+    {
+      "id": "tenri-answer",
+      "name": "テンリアンサー",
+      "foaled": "{'year': 1983, 'month': 3, 'day': 30}",
+      "foaledArray": ["1983", "03", "30"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンアンサー(CAN)",
+      "dam": "テンリオーカン",
+      "color": "鹿毛",
+      "breeder": "近藤牧場（浦河町）",
+      "netkeibaId": "1983106304",
+      "raceStats": {
+        "total": {
+          "runs": 7,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1985,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "デイリー杯3歳ステー(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "12",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 7,
+            "day": 28
+          },
+          "racecourse": "札幌",
+          "race": "札幌3歳S(OP)",
+          "displayRace": "札幌3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tenri Answer",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tenri-okan"
+    }
+  ]
+}

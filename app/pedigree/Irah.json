@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "pedigreeName": "Irah",
+    "rootHorseId": "irah",
+    "lastUpdated": "2025-09-27T12:51:41.030601Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "irah",
+      "name": "イラー",
+      "foaled": "{'year': 1960}",
+      "foaledArray": ["1960"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アイアンリージ",
+      "dam": "Windorah",
+      "color": "鹿毛",
+      "breeder": "仏",
+      "netkeibaId": "000a003500",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Irah"
+    },
+    {
+      "id": "zariba-kuihn",
+      "name": "ザリバクイーン",
+      "foaled": "{'year': 1969}",
+      "foaledArray": ["1969"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "キングスベンチ",
+      "dam": "イラー",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a00486f",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Zariba Kuihn",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "irah"
+    },
+    {
+      "id": "quadrille",
+      "name": "カドリール",
+      "foaled": "{'year': 1974}",
+      "foaledArray": ["1974"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ファバージ(FR)",
+      "dam": "ザリバクイーン",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955105506",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Quadrille",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "zariba-kuihn"
+    },
+    {
+      "id": "leotingo",
+      "name": "レオティンゴ",
+      "foaled": "{'year': 1982, 'month': 3, 'day': 4}",
+      "foaledArray": ["1982", "03", "04"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "サティンゴ",
+      "dam": "カドリール",
+      "color": "黒鹿毛",
+      "breeder": "大滝晴一（静内町）",
+      "netkeibaId": "1982100853",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1985,
+            "month": 5,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(GI)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "26",
+          "result": "12",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "ＮＨＫ杯",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "3",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Leotingo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "quadrille"
+    }
+  ]
+}

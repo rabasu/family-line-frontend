@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "レデイアロン",
     "rootHorseId": "lady_allon",
-    "lastUpdated": "2025-09-07T14:36:11.197Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-27T15:26:07.342600Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -20,6 +20,146 @@
       "netkeibaId": "000a002414",
       "source": "tsx_conversion",
       "owner": "大平牧場"
+    },
+    {
+      "id": "ogon-takeru",
+      "name": "オーゴンタケル",
+      "foaled": "{'year': 1978, 'month': 3, 'day': 21}",
+      "foaledArray": ["1978", "03", "21"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "インターメゾ(GB)",
+      "dam": "フジトモエ",
+      "color": "鹿毛",
+      "breeder": "荻野牧場（静内町）",
+      "netkeibaId": "1978104143",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1984,
+            "month": 8,
+            "day": 26
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "12",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Ogon Takeru",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fuji-tomoe"
+    },
+    {
+      "id": "fuji-tomoe",
+      "name": "フジトモエ",
+      "foaled": "{'year': 1966}",
+      "foaledArray": ["1966"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ゼモングース(GB)",
+      "dam": "トキノハルコマ",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955100853",
+      "raceStats": {
+        "total": {
+          "runs": 34,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Fuji Tomoe",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tokino-harukoma"
+    },
+    {
+      "id": "tokino-harukoma",
+      "name": "トキノハルコマ",
+      "foaled": "{'year': 1957}",
+      "foaledArray": ["1957"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヒンドスタン",
+      "dam": "シンニホン",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a002dfe",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1960,
+            "month": 3,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞競走(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "20",
+          "result": "20",
+          "favorite": "20"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tokino Harukoma",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shin-nihon"
+    },
+    {
+      "id": "shin-nihon",
+      "name": "シンニホン",
+      "foaled": "{'year': 1944}",
+      "foaledArray": ["1944"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミナミホマレ",
+      "dam": "レデイアロン",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a00284f",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Shin Nihon",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "lady_allon"
     }
   ]
 }

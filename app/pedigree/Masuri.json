@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "pedigreeName": "Masuri",
+    "rootHorseId": "masuri",
+    "lastUpdated": "2025-09-25T16:59:10.337042Z",
+    "source": "python_scraping"
+  },
+  "horses": [
+    {
+      "id": "masuri",
+      "name": "マスリ",
+      "foaled": "{'year': 1959}",
+      "foaledArray": ["1959"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "King of the Tudors",
+      "dam": "Sweet Pickle",
+      "color": "栗毛",
+      "breeder": "英",
+      "netkeibaId": "1959100885",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Masuri"
+    },
+    {
+      "id": "hida-win",
+      "name": "ヒダウイン",
+      "foaled": "{'year': 1969}",
+      "foaledArray": ["1969"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハードウイン",
+      "dam": "マスリ",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a004d46",
+      "raceStats": {
+        "total": {
+          "runs": 2,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Hida Win",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "masuri"
+    },
+    {
+      "id": "win-ribot",
+      "name": "ウインリボー",
+      "foaled": "{'year': 1974}",
+      "foaledArray": ["1974"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ルイスデール(GB)",
+      "dam": "ヒダウイン",
+      "color": "青毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955106460",
+      "raceStats": {
+        "total": {
+          "runs": 23,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Win Ribot",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hida-win"
+    },
+    {
+      "id": "win-express",
+      "name": "ウインエキスプレス",
+      "foaled": "{'year': 1980, 'month': 3, 'day': 3}",
+      "foaledArray": ["1980", "03", "03"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アローエクスプレス",
+      "dam": "ウインリボー",
+      "color": "黒鹿毛",
+      "breeder": "稗田牧場（静内町）",
+      "netkeibaId": "1980101043",
+      "raceStats": {
+        "total": {
+          "runs": 2,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Win Express",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "win-ribot"
+    },
+    {
+      "id": "asaka-regent",
+      "name": "アサカリジェント",
+      "foaled": "{'year': 1989, 'month': 3, 'day': 17}",
+      "foaledArray": ["1989", "03", "17"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "パークリージェント(CAN)",
+      "dam": "ウインエキスプレス",
+      "color": "鹿毛",
+      "breeder": "木田牧場（三石町）",
+      "netkeibaId": "1989105343",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1992,
+            "month": 4,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(GI)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1992,
+            "month": 3,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "報知杯弥生賞(GII)",
+          "displayRace": "弥生賞",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "9",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1992,
+            "month": 1,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "京成杯(GIII)",
+          "displayRace": "京成杯",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "9",
+          "result": "4",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Asaka Regent",
+      "prizeMoney": {
+        "total": "1億500万円",
+        "central": "1億500万円",
+        "local": "0万円"
+      },
+      "damId": "win-express"
+    }
+  ]
+}

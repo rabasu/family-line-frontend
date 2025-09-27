@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "オーデヤレスト",
     "rootHorseId": "o_dearest",
-    "lastUpdated": "2025-09-07T14:36:11.221Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-25T14:27:52.731513Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -20,6 +20,251 @@
       "netkeibaId": "000a0024c5",
       "source": "tsx_conversion",
       "owner": "奥羽種馬牧場"
+    },
+    {
+      "id": "meiner-castle",
+      "name": "マイネルキャッスル",
+      "foaled": "{'year': 1990, 'month': 4, 'day': 9}",
+      "foaledArray": ["1990", "04", "09"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "カブラヤオー",
+      "dam": "シロヤマハヤテ",
+      "color": "鹿毛",
+      "breeder": "高橋一三（静内町）",
+      "netkeibaId": "1990101805",
+      "raceStats": {
+        "total": {
+          "runs": 4,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1992,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "京成杯3歳S(GII)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "10",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1992,
+            "month": 8,
+            "day": 2
+          },
+          "racecourse": "札幌",
+          "race": "札幌3歳S(GIII)",
+          "displayRace": "札幌3歳S",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "2",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Meiner Castle",
+      "prizeMoney": {
+        "total": "6,070万円",
+        "central": "6,070万円",
+        "local": "0万円"
+      },
+      "damId": "shiroyama-hayate"
+    },
+    {
+      "id": "shiroyama-hayate",
+      "name": "シロヤマハヤテ",
+      "foaled": "{'year': 1973}",
+      "foaledArray": ["1973"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ロムルス",
+      "dam": "キヤンベラ",
+      "color": "栗毛",
+      "breeder": "新冠町",
+      "netkeibaId": "1955106289",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Shiroyama Hayate",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kiyanbera"
+    },
+    {
+      "id": "kiyanbera",
+      "name": "キヤンベラ",
+      "foaled": "{'year': 1962, 'month': 4, 'day': 17}",
+      "foaledArray": ["1962", "04", "17"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダブルマーク(AUS)",
+      "dam": "スワンジー",
+      "color": "黒鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a014929",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "swan-g"
+    },
+    {
+      "id": "swan-g",
+      "name": "スワンジー",
+      "foaled": "{'year': 1956}",
+      "foaledArray": ["1956"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シマタカ",
+      "dam": "ヤワタヤマ",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002dba",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Swan G.",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yawata-yama"
+    },
+    {
+      "id": "yawata-yama",
+      "name": "ヤワタヤマ",
+      "foaled": "{'year': 1949}",
+      "foaledArray": ["1949"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "崇優",
+      "dam": "守昭",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a0029d7",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Yawata Yama",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "moriaki"
+    },
+    {
+      "id": "moriaki",
+      "name": "守昭",
+      "foaled": "{'year': 1935}",
+      "foaledArray": ["1935"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シアンモア(GB)",
+      "dam": "テキシヨウ",
+      "color": "黒鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a0026c1",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tekishiyou"
+    },
+    {
+      "id": "tekishiyou",
+      "name": "テキシヨウ",
+      "foaled": "{'year': 1927}",
+      "foaledArray": ["1927"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ガロン(GB)",
+      "dam": "第五オーデヤレスト",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a002446",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daigooodeyaresuto"
+    },
+    {
+      "id": "daigooodeyaresuto",
+      "name": "第五オーデヤレスト",
+      "foaled": "{'year': 1919}",
+      "foaledArray": ["1919"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ラシカツター(GB)",
+      "dam": "オーデヤレスト",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a01b5c3",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "o_dearest"
     }
   ]
 }

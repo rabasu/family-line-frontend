@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ウエツトセール",
     "rootHorseId": "wet_sail",
-    "lastUpdated": "2025-09-07T14:36:11.290Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-09-27T19:23:00.001960Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -20,6 +20,883 @@
       "netkeibaId": "000a0198f6",
       "source": "tsx_conversion",
       "owner": "小岩井農場"
+    },
+    {
+      "id": "bamboo-begin",
+      "name": "バンブービギン",
+      "foaled": "{'year': 1986, 'month': 4, 'day': 19}",
+      "foaledArray": ["1986", "04", "19"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "バンブーアトラス",
+      "dam": "フォローバンブー",
+      "color": "鹿毛",
+      "breeder": "バンブー牧場（浦河町）",
+      "netkeibaId": "1986100672",
+      "raceStats": {
+        "total": {
+          "runs": 12,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1989,
+            "month": 11,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(GI)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1989,
+            "month": 10,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(GII)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1989,
+            "month": 9,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(GII)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "2",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Bamboo Begin",
+      "prizeMoney": {
+        "total": "1億8,310万円",
+        "central": "1億8,310万円",
+        "local": "0万円"
+      },
+      "damId": "follow-bamboo"
+    },
+    {
+      "id": "follow-bamboo",
+      "name": "フォローバンブー",
+      "foaled": "{'year': 1979, 'month': 2, 'day': 21}",
+      "foaledArray": ["1979", "02", "21"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンテースト(CAN)",
+      "dam": "フィールドフブキ",
+      "color": "栗毛",
+      "breeder": "バンブー牧場（浦河町）",
+      "netkeibaId": "1979101252",
+      "raceStats": {
+        "total": {
+          "runs": 26,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Follow Bamboo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "field-fubuki"
+    },
+    {
+      "id": "field-fubuki",
+      "name": "フィールドフブキ",
+      "foaled": "{'year': 1972}",
+      "foaledArray": ["1972"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "トヨハタグモ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955105492",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 4,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "10",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Field Fubuki",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "toyohata-gumo"
+    },
+    {
+      "id": "toyohata-gumo",
+      "name": "トヨハタグモ",
+      "foaled": "{'year': 1963}",
+      "foaledArray": ["1963"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クレイマント(GB)",
+      "dam": "アトランタ",
+      "color": "栗毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a003abc",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1967,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "阪神牝馬特別(OP)",
+          "displayRace": "阪神牝馬特別",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "9",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 10,
+            "day": 15
+          },
+          "racecourse": "小倉",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 11,
+            "day": 20
+          },
+          "racecourse": "小倉",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Toyohata Gumo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "atoranta"
+    },
+    {
+      "id": "atoranta-1955",
+      "name": "アトランタ",
+      "foaled": "{'year': 1955}",
+      "foaledArray": ["1955"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シマタカ",
+      "dam": "ナンゲツ",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002ca0",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1958,
+            "month": 3,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞競走(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "8",
+          "favorite": "16"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nangetsu",
+      "linkName": "アトランタ(1955)"
+    },
+    {
+      "id": "nangetsu",
+      "name": "ナンゲツ",
+      "foaled": "{'year': 1948}",
+      "foaledArray": ["1948"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "月友",
+      "dam": "アスコツト",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a0028ae",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Nangetsu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ascot"
+    },
+    {
+      "id": "ascot",
+      "name": "アスコツト",
+      "foaled": "{'year': 1930}",
+      "foaledArray": ["1930"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シアンモア(GB)",
+      "dam": "第六ウエツトセール",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a002668",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Ascot",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dairokuuetsutoseeru"
+    },
+    {
+      "id": "dairokuuetsutoseeru",
+      "name": "第六ウエツトセール",
+      "foaled": "{'year': 1919}",
+      "foaledArray": ["1919"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "インタグリオー(GB)",
+      "dam": "ウエツトセール",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a002334",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "wet_sail"
+    },
+    {
+      "id": "tomamu",
+      "name": "トマム",
+      "foaled": "{'year': 1985, 'month': 4, 'day': 21}",
+      "foaledArray": ["1985", "04", "21"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "インターグシケン",
+      "dam": "スイフトゲイル",
+      "color": "鹿毛",
+      "breeder": "関兵牧場（宮城県）",
+      "netkeibaId": "1985102623",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1988,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": "福島",
+          "race": "ラジオたんぱ賞(GIII)",
+          "displayRace": "ラジオたんぱ賞",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "9",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1988,
+            "month": 6,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "NZT4歳S(GII)",
+          "displayRace": "NZT4歳S",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tomamu",
+      "prizeMoney": {
+        "total": "2,750万円",
+        "central": "2,750万円",
+        "local": "0万円"
+      },
+      "damId": "swift-gale"
+    },
+    {
+      "id": "swift-gale",
+      "name": "スイフトゲイル",
+      "foaled": "{'year': 1974, 'month': 4, 'day': 26}",
+      "foaledArray": ["1974", "04", "26"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "オンワードヒル",
+      "dam": "カツノチェリー",
+      "color": "鹿毛",
+      "breeder": "沼田秀治（宮城県）",
+      "netkeibaId": "1974100299",
+      "raceStats": {
+        "total": {
+          "runs": 45,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Swift Gale",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "katsuno-cherry"
+    },
+    {
+      "id": "katsuno-cherry",
+      "name": "カツノチェリー",
+      "foaled": "{'year': 1970}",
+      "foaledArray": ["1970"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ブツシヤン",
+      "dam": "トキノセタカラ",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a004d8e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Katsuno Cherry",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tokinosetakara"
+    },
+    {
+      "id": "tokinosetakara",
+      "name": "トキノセタカラ",
+      "foaled": "{'year': 1957}",
+      "foaledArray": ["1957"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ボストニアン",
+      "dam": "ウエツトモアー",
+      "color": "栗毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a00303d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "uetsutomoaa"
+    },
+    {
+      "id": "uetsutomoaa",
+      "name": "ウエツトモアー",
+      "foaled": "{'year': 1943}",
+      "foaledArray": ["1943"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ブラオンジヤツク",
+      "dam": "ウエツトチヤペル",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002700",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "uetsutochiyaperu"
+    },
+    {
+      "id": "uetsutochiyaperu",
+      "name": "ウエツトチヤペル",
+      "foaled": "{'year': 1925}",
+      "foaledArray": ["1925"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "チヤペルブラムプトン(GB)",
+      "dam": "第二ウエツトセール",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a0023ba",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "pedigreeName": "ウェットチャペル",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dainiuetsutoseeru"
+    },
+    {
+      "id": "dainiuetsutoseeru",
+      "name": "第二ウエツトセール",
+      "foaled": "{'year': 1913}",
+      "foaledArray": ["1913"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "インタグリオー(GB)",
+      "dam": "ウエツトセール",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a0198f9",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "wet_sail"
+    },
+    {
+      "id": "agnes-great",
+      "name": "アグネスグレイト",
+      "foaled": "{'year': 1982, 'month': 5, 'day': 25}",
+      "foaledArray": ["1982", "05", "25"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アグネスプレス",
+      "dam": "アラビアングリーン",
+      "color": "芦毛",
+      "breeder": "ヒダカファーム（浦河町）",
+      "netkeibaId": "1982100618",
+      "raceStats": {
+        "total": {
+          "runs": 25,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1987,
+            "month": 3,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(春)(重賞)",
+          "displayRace": "阪神障害S(春)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "14",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1986,
+            "month": 2,
+            "day": 16
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(GIII)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "10",
+          "favorite": "14"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Agnes Great",
+      "prizeMoney": {
+        "total": "3,880万円",
+        "central": "3,880万円",
+        "local": "0万円"
+      },
+      "damId": "arabian-green"
+    },
+    {
+      "id": "arabian-green",
+      "name": "アラビアングリーン",
+      "foaled": "{'year': 1974}",
+      "foaledArray": ["1974"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "グスタフ(GB)",
+      "dam": "アトランタ",
+      "color": "芦毛",
+      "breeder": "新冠町",
+      "netkeibaId": "1955105737",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Arabian Green",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "atoranta-1955"
+    },
+    {
+      "id": "ogon-hardly",
+      "name": "オーゴンハードリイ",
+      "foaled": "{'year': 1981, 'month': 5, 'day': 31}",
+      "foaledArray": ["1981", "05", "31"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ジョンティオンブル(GB)",
+      "dam": "ハードリトヨハタ",
+      "color": "鹿毛",
+      "breeder": "バンブー牧場（浦河町）",
+      "netkeibaId": "1981103658",
+      "raceStats": {
+        "total": {
+          "runs": 43,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1986,
+            "month": 8,
+            "day": 24
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(GIII)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "小倉",
+          "race": "テレビ西日本賞北九州(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "10",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "サンケイスポーツ杯阪(OP)",
+          "displayRace": "サンスポ阪神牝馬特別",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "17",
+          "result": "4",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 11,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(GI)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "21",
+          "result": "8",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Ogon Hardly",
+      "prizeMoney": {
+        "total": "2,894万円",
+        "central": "2,894万円",
+        "local": "0万円"
+      },
+      "damId": "hardly-toyohata"
+    },
+    {
+      "id": "hardly-toyohata",
+      "name": "ハードリトヨハタ",
+      "foaled": "{'year': 1971}",
+      "foaledArray": ["1971"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハードリドン(GB)",
+      "dam": "トヨハタグモ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955103574",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Hardly Toyohata",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "toyohata-gumo"
+    },
+    {
+      "id": "mitomo-suisei",
+      "name": "ミトモスイセイ",
+      "foaled": "{'year': 1982, 'month': 5, 'day': 9}",
+      "foaledArray": ["1982", "05", "09"],
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "スイセイガバナー",
+      "dam": "コサージ",
+      "color": "鹿毛",
+      "breeder": "三輪武昭（門別町）",
+      "netkeibaId": "1982503021",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 14
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1986,
+            "month": 7,
+            "day": 13
+          },
+          "racecourse": "札幌",
+          "race": "セイユウ記念(重賞)",
+          "displayRace": "セイユウ記念",
+          "distance": "ダ1800",
+          "grade": "jra_ungraded",
+          "entry": "14",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 7,
+            "day": 21
+          },
+          "racecourse": "新潟",
+          "race": "セイユウ記念(OP)",
+          "displayRace": "セイユウ記念",
+          "distance": "芝1600",
+          "grade": "jra_ungraded",
+          "entry": "15",
+          "result": "9",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Mitomo Suisei",
+      "prizeMoney": {
+        "total": "4,650万円",
+        "central": "4,650万円",
+        "local": "0万円"
+      },
+      "damId": "kosaji"
+    },
+    {
+      "id": "kosaji",
+      "name": "コサージ",
+      "foaled": "{'year': 1966}",
+      "foaledArray": ["1966"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "チカラガネ",
+      "dam": "ウエタケ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00e6b5",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kosaji",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "uetake"
+    },
+    {
+      "id": "uetake",
+      "name": "ウエタケ",
+      "foaled": "{'year': 1951}",
+      "foaledArray": ["1951"],
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハヤタケ",
+      "dam": "ウエツトモアー",
+      "color": "鹿毛",
+      "breeder": "群馬県",
+      "netkeibaId": "000a0029a6",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "uetsutomoaa"
     }
   ]
 }
