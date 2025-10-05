@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Flower Arch",
     "rootHorseId": "flower-arch",
-    "lastUpdated": "2025-09-22T16:26:57.725115Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "flower-arch",
       "name": "フラワーアーチ",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 27}",
-      "foaledArray": ["1994", "04", "27"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nashwan",
@@ -32,8 +35,11 @@
     {
       "id": "best-of-me",
       "name": "ベストオブミー",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 1}",
-      "foaledArray": ["2005", "02", "01"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",

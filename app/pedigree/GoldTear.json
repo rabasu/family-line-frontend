@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gold Tear",
     "rootHorseId": "gold-tear",
-    "lastUpdated": "2025-09-24T12:45:17.095008Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gold-tear",
       "name": "ゴールドティアー",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tejano",
@@ -32,8 +33,11 @@
     {
       "id": "matikaneharesugata",
       "name": "マチカネハレスガタ",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 16}",
-      "foaledArray": ["1995", "02", "16"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",

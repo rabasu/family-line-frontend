@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Gleaming Smile",
     "rootHorseId": "gleaming-smile",
-    "lastUpdated": "2025-09-20T10:47:58.286930Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gleaming-smile",
       "name": "グリーミングスマイル",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gleaming",
       "dam": "Sweet Tooth",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a00014f",
@@ -28,18 +28,19 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Gleaming Smile"
+      "englishName": "Gleaming Smile",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "joyous-pirouette",
       "name": "ジョイアスピルエット",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
       "dam": "グリーミングスマイル",
-      "dam_netkeiba_id": "000a00014f",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a006397",
@@ -56,18 +57,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gleaming-smile"
+      "damId": "gleaming-smile",
+      "dam_netkeiba_id": "000a00014f"
     },
     {
       "id": "air-liberty",
       "name": "エアリバティー",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 18}",
-      "foaledArray": ["1994", "02", "18"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
       "dam": "ジョイアスピルエット",
-      "dam_netkeiba_id": "000a006397",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "1994108563",
@@ -207,18 +211,21 @@
         "central": "7,325万円",
         "local": "400万円"
       },
-      "damId": "joyous-pirouette"
+      "damId": "joyous-pirouette",
+      "dam_netkeiba_id": "000a006397"
     },
     {
       "id": "liberty-print",
       "name": "リバティープリント",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 7}",
-      "foaledArray": ["2005", "03", "07"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スウェプトオーヴァーボード(US)",
       "dam": "エアリバティー",
-      "dam_netkeiba_id": "1994108563",
       "color": "青鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2005102220",
@@ -237,18 +244,21 @@
         "central": "1,738万円",
         "local": "0万円"
       },
-      "damId": "air-liberty"
+      "damId": "air-liberty",
+      "dam_netkeiba_id": "1994108563"
     },
     {
       "id": "daiwa-dresser",
       "name": "ダイワドレッサー",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 14}",
-      "foaledArray": ["2013", "04", "14"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
       "dam": "リバティープリント",
-      "dam_netkeiba_id": "2005102220",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2013105715",
@@ -388,7 +398,8 @@
         "central": "5,723万円",
         "local": "0万円"
       },
-      "damId": "liberty-print"
+      "damId": "liberty-print",
+      "dam_netkeiba_id": "2005102220"
     }
   ]
 }

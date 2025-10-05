@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Goodbye Halo",
     "rootHorseId": "goodbye-halo",
-    "lastUpdated": "2025-09-24T10:40:45.659648Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "goodbye-halo",
       "name": "グッバイヘイロー",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Halo",
@@ -32,8 +33,11 @@
     {
       "id": "king-halo",
       "name": "キングヘイロー",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 28}",
-      "foaledArray": ["1995", "04", "28"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンシングブレーヴ(US)",

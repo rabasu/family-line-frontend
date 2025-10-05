@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Golden Tasso",
     "rootHorseId": "golden-tasso",
-    "lastUpdated": "2025-09-18T19:25:43.706575Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "golden-tasso",
       "name": "ゴールデンタッソー",
-      "foaled": "{'year': 1990, 'month': 2, 'day': 6}",
-      "foaledArray": ["1990", "02", "06"],
+      "foaled": {
+        "year": 1990,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tasso",
@@ -32,8 +35,11 @@
     {
       "id": "meine-foxy",
       "name": "マイネフォクシー",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 10}",
-      "foaledArray": ["2001", "05", "10"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロライアン",
@@ -302,8 +308,11 @@
     {
       "id": "nine-tails",
       "name": "ナインテイルズ",
-      "foaled": "{'year': 2011, 'month': 5, 'day': 7}",
-      "foaledArray": ["2011", "05", "07"],
+      "foaled": {
+        "year": 2011,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ローエングリン",

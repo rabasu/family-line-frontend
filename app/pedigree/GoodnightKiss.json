@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Goodnight Kiss",
     "rootHorseId": "goodnight-kiss",
-    "lastUpdated": "2025-09-24T19:20:46.388423Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "goodnight-kiss",
       "name": "Goodnight Kiss",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Night Shift",
@@ -31,8 +32,11 @@
     {
       "id": "dublin-lion",
       "name": "ダブリンライオン",
-      "foaled": "{'year': 1995, 'month': 1, 'day': 26}",
-      "foaledArray": ["1995", "01", "26"],
+      "foaled": {
+        "year": 1995,
+        "month": 1,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Lion Cavern",

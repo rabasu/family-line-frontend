@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Fantasy Suzuka",
     "rootHorseId": "fantasy-suzuka",
-    "lastUpdated": "2025-09-22T21:57:36.669216Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fantasy-suzuka",
       "name": "ファンタジースズカ",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 28}",
-      "foaledArray": ["1989", "04", "28"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +35,11 @@
     {
       "id": "phantom-suzuka",
       "name": "ファントムスズカ",
-      "foaled": "{'year': 2001, 'month': 1, 'day': 31}",
-      "foaledArray": ["2001", "01", "31"],
+      "foaled": {
+        "year": 2001,
+        "month": 1,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Benny the Dip(US)",

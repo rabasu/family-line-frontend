@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "First Violin",
     "rootHorseId": "first-violin",
-    "lastUpdated": "2025-09-20T09:17:24.924303Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "first-violin",
       "name": "ファーストバイオリン",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dixieland Band",
       "dam": "Sunrise Symphony",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a011521",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "First Violin"
+      "englishName": "First Violin",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "sounds-of-earth",
       "name": "サウンズオブアース",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 12}",
-      "foaledArray": ["2011", "04", "12"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
       "dam": "ファーストバイオリン",
-      "dam_netkeiba_id": "000a011521",
       "color": "黒鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2011104377",
@@ -419,7 +422,8 @@
         "central": "4億6,744万円",
         "local": "0万円"
       },
-      "damId": "first-violin"
+      "damId": "first-violin",
+      "dam_netkeiba_id": "000a011521"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fursa",
     "rootHorseId": "fursa",
-    "lastUpdated": "2025-09-21T21:12:19.638106Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fursa",
       "name": "ファーザ",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,14 +33,17 @@
     {
       "id": "fratte-rosa",
       "name": "フラッテローザ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 1}",
-      "foaledArray": ["2007", "03", "01"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "ファーザ",
-      "color": "栗毛",
-      "breeder": "ハシモトファーム（新冠町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2007104808",
       "raceStats": {
         "total": {
@@ -61,14 +65,17 @@
     {
       "id": "",
       "name": "クイーンズターフ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 11}",
-      "foaledArray": ["2012", "02", "11"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "フラッテローザ",
-      "color": "鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2012104793",
       "raceStats": {
         "total": {
@@ -121,14 +128,17 @@
     {
       "id": "in-your-palace",
       "name": "インユアパレス",
-      "foaled": "{'year': 2021, 'month': 5, 'day': 1}",
-      "foaledArray": ["2021", "05", "01"],
+      "foaled": {
+        "year": 2021,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パレスマリス",
       "dam": "クイーンズターフ",
-      "color": "黒鹿毛",
-      "breeder": "Winchester Farm（米）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2021110126",
       "raceStats": {
         "total": {
@@ -180,8 +190,11 @@
     {
       "id": "furioso",
       "name": "フリオーソ",
-      "foaled": "{'year': 2004, 'month': 5, 'day': 1}",
-      "foaledArray": ["2004", "05", "01"],
+      "foaled": {
+        "year": 2004,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",

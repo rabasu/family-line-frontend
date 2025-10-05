@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Doff the Derby",
     "rootHorseId": "doff-the-derby",
-    "lastUpdated": "2025-09-24T18:22:09.226248Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "doff-the-derby",
       "name": "Doff the Derby",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Master Derby(US)",
@@ -31,8 +32,11 @@
     {
       "id": "osumi-tycoon",
       "name": "オースミタイクーン",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 23}",
-      "foaledArray": ["1991", "03", "23"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラストタイクーン(IRE)",

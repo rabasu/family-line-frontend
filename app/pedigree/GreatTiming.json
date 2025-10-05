@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Great Timing",
     "rootHorseId": "great-timing",
-    "lastUpdated": "2025-09-18T02:49:26.518491Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "great-timing",
       "name": "グレイトタイミング",
-      "foaled": "{'year': 2010}",
-      "foaledArray": ["2010"],
+      "foaled": {
+        "year": 2010
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Raven's Pass",
@@ -32,8 +33,11 @@
     {
       "id": "right-on-cue",
       "name": "ライトオンキュー",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 22}",
-      "foaledArray": ["2015", "04", "22"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Shamardal(US)",

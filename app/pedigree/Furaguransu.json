@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "フラグランス",
     "rootHorseId": "furaguransu",
-    "lastUpdated": "2025-09-27T11:03:52.420172Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "furaguransu",
       "name": "フラグランス",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プリメラ",
@@ -31,8 +32,9 @@
     {
       "id": "akane-fuyo",
       "name": "アカネフヨウ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "インディアナ",
@@ -89,8 +91,11 @@
     {
       "id": "akane-daimon",
       "name": "アカネダイモン",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 6}",
-      "foaledArray": ["1981", "05", "06"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホーント",
@@ -157,6 +162,174 @@
       "prizeMoney": {
         "total": "1,330万円",
         "central": "1,330万円",
+        "local": "0万円"
+      },
+      "damId": "akane-fuyo"
+    },
+    {
+      "id": "akane-jiromaru",
+      "name": "アカネジローマル",
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 14
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ノーザンテースト(CAN)",
+      "dam": "アカネフヨウ",
+      "color": "鹿毛",
+      "breeder": "三浦牧場（青森県）",
+      "netkeibaId": "1979102091",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 4,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 4,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "アルゼンチン共和国杯(OP)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 12,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "14",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "5",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "11",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 4,
+            "day": 18
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "20",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 3,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Akane Jiromaru",
+      "prizeMoney": {
+        "total": "2,100万円",
+        "central": "2,100万円",
         "local": "0万円"
       },
       "damId": "akane-fuyo"

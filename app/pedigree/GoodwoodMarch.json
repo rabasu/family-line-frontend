@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Goodwood March",
     "rootHorseId": "goodwood-march",
-    "lastUpdated": "2025-09-15T09:39:28.469660Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "goodwood-march",
       "name": "グッドウッドマーチ",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Foxhound",
@@ -32,8 +33,11 @@
     {
       "id": "favola",
       "name": "ファヴォーラ",
-      "foaled": "{'year': 2014, 'month': 3, 'day': 18}",
-      "foaledArray": ["2014", "03", "18"],
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Frankel",
@@ -61,8 +65,11 @@
     {
       "id": "west-now",
       "name": "ウエストナウ",
-      "foaled": "{'year': 2021, 'month': 5, 'day': 2}",
-      "foaledArray": ["2021", "05", "02"],
+      "foaled": {
+        "year": 2021,
+        "month": 5,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",

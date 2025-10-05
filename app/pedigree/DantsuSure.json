@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Dantsu Sure",
     "rootHorseId": "dantsu-sure",
-    "lastUpdated": "2025-09-18T15:47:34.879324Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dantsu-sure",
       "name": "ダンツシュアー",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 28}",
-      "foaledArray": ["1992", "04", "28"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +35,11 @@
     {
       "id": "dantsu-queen-bee",
       "name": "ダンツクインビー",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 21}",
-      "foaledArray": ["2002", "04", "21"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -92,8 +98,11 @@
     {
       "id": "dantsu-castle",
       "name": "ダンツキャッスル",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 2}",
-      "foaledArray": ["2016", "04", "02"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",

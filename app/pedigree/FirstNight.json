@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "First Night",
     "rootHorseId": "first-night",
-    "lastUpdated": "2025-09-18T04:49:44.459347Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "first-night",
       "name": "ファーストナイト",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "rose-adagio",
       "name": "ローズアダージョ",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 13}",
-      "foaledArray": ["2008", "02", "13"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -61,8 +65,11 @@
     {
       "id": "musica",
       "name": "ムジカ",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 2}",
-      "foaledArray": ["2017", "04", "02"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",

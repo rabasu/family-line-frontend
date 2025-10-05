@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Erzsi",
     "rootHorseId": "erzsi",
-    "lastUpdated": "2025-09-23T03:45:30.034421Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "erzsi",
       "name": "アージ",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,9 @@
     {
       "id": "broadmara",
       "name": "ブロードマラ",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Thatching",
@@ -59,8 +61,11 @@
     {
       "id": "tagano-guernica",
       "name": "タガノゲルニカ",
-      "foaled": "{'year': 2002, 'month': 6, 'day': 3}",
-      "foaledArray": ["2002", "06", "03"],
+      "foaled": {
+        "year": 2002,
+        "month": 6,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",

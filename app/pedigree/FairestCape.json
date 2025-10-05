@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fairest Cape",
     "rootHorseId": "fairest-cape",
-    "lastUpdated": "2025-09-18T17:17:13.332661Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fairest-cape",
       "name": "フェアレストケープ",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "success-silhouette",
       "name": "サクセスシルエット",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 19}",
-      "foaledArray": ["2008", "03", "19"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -61,8 +65,11 @@
     {
       "id": "happy-hour",
       "name": "ハッピーアワー",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 18}",
-      "foaledArray": ["2016", "03", "18"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハービンジャー(GB)",

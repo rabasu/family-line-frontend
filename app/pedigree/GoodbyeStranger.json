@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Goodbye Stranger",
     "rootHorseId": "goodbye-stranger",
-    "lastUpdated": "2025-09-17T05:03:05.083051Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "goodbye-stranger",
       "name": "Goodbye Stranger",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Broad Brush",
@@ -31,8 +32,11 @@
     {
       "id": "jean-gros",
       "name": "ジャングロ",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 2}",
-      "foaledArray": ["2019", "03", "02"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "More Than Ready",

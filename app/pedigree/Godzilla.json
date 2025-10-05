@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Godzilla",
     "rootHorseId": "godzilla",
-    "lastUpdated": "2025-09-24T13:42:08.462302Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "godzilla",
       "name": "Godzilla",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gyr",
@@ -31,8 +32,11 @@
     {
       "id": "royal-suzuka",
       "name": "ロイヤルスズカ",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 13}",
-      "foaledArray": ["1993", "05", "13"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロイヤルアカデミーII(US)",

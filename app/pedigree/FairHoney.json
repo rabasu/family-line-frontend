@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fair Honey",
     "rootHorseId": "fair-honey",
-    "lastUpdated": "2025-09-26T13:13:01.529217Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fair-honey",
       "name": "フエアハネー",
-      "foaled": "{'year': 1943}",
-      "foaledArray": ["1943"],
+      "foaled": {
+        "year": 1943
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fairway",
@@ -32,8 +33,9 @@
     {
       "id": "haneh-ueh",
       "name": "ハネーウエー",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オーブリオン(FR)",
@@ -59,8 +61,9 @@
     {
       "id": "tesso-way",
       "name": "テッソウエー",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テッソ(GB)",
@@ -86,8 +89,9 @@
     {
       "id": "rovel-ruby",
       "name": "ローベルルビー",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タカウォーク(US)",
@@ -113,8 +117,11 @@
     {
       "id": "diamond-run",
       "name": "ダイヤモンドラーン",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 20}",
-      "foaledArray": ["1982", "03", "20"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",
@@ -244,6 +251,140 @@
         "local": "0万円"
       },
       "damId": "rovel-ruby"
+    },
+    {
+      "id": "feaauin-1959",
+      "name": "フェアーウイン",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ゲイタイム(GB)",
+      "dam": "フエアハネー",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a0009f4",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞競走(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 5,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチンジョッキ(OP)",
+          "displayRace": "アルゼンチンJCC",
+          "distance": "芝2300",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 1,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "有馬記念競走(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2600",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "10",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 11,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "菊花賞競走(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "17",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 5,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "32",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "皐月賞競走(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "11",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fair-honey",
+      "linkName": "フェアーウイン(1959)"
     }
   ]
 }

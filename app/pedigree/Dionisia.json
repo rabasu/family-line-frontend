@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Dionisia",
     "rootHorseId": "dionisia",
-    "lastUpdated": "2025-09-17T12:17:31.081002Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dionisia",
       "name": "ディオニージア",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 4}",
-      "foaledArray": ["2003", "02", "04"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tejano Run",
@@ -32,8 +35,11 @@
     {
       "id": "monte-dio",
       "name": "モンテディオ",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 1}",
-      "foaledArray": ["2018", "03", "01"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャスタウェイ",

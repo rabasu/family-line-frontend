@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dubian",
     "rootHorseId": "dubian",
-    "lastUpdated": "2025-09-25T08:52:02.616066Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dubian",
       "name": "Dubian",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "High Line",
@@ -31,8 +32,11 @@
     {
       "id": "sayyedati",
       "name": "サイエダティ",
-      "foaled": "{'year': 1990, 'month': 1, 'day': 26}",
-      "foaledArray": ["1990", "01", "26"],
+      "foaled": {
+        "year": 1990,
+        "month": 1,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Shadeed(US)",

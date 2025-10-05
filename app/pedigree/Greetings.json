@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Greetings",
     "rootHorseId": "greetings",
-    "lastUpdated": "2025-09-23T12:04:57.693594Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "greetings",
       "name": "グリーティングス",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rainbow Quest(US)",
@@ -32,8 +33,11 @@
     {
       "id": "stormy-cafe",
       "name": "ストーミーカフェ",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 24}",
-      "foaledArray": ["2002", "03", "24"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 24
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "アドマイヤベガ",

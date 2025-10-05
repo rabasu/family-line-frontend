@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Danzig Joy",
     "rootHorseId": "danzig-joy",
-    "lastUpdated": "2025-09-23T20:06:26.146139Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "danzig-joy",
       "name": "ダンジグジョイ",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "hoshino-pierce",
       "name": "ホシノピアス",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 15}",
-      "foaledArray": ["2001", "02", "15"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",

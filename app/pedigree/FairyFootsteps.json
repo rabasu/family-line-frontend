@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fairy Footsteps",
     "rootHorseId": "fairy-footsteps",
-    "lastUpdated": "2025-09-23T03:46:19.244575Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fairy-footsteps",
       "name": "フェアリーフットステップス",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mill Reef(US)",
@@ -32,8 +33,9 @@
     {
       "id": "swan-princess",
       "name": "スワンプリンセス",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -59,8 +61,11 @@
     {
       "id": "arided",
       "name": "アリデッド",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 2}",
-      "foaledArray": ["2006", "05", "02"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -88,8 +93,11 @@
     {
       "id": "varuna",
       "name": "ヴァルナ",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 31}",
-      "foaledArray": ["2017", "03", "31"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 31
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
@@ -163,8 +171,11 @@
     {
       "id": "albireo",
       "name": "アルビレオ",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 7}",
-      "foaledArray": ["2000", "04", "07"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

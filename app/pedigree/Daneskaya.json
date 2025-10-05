@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Daneskaya",
     "rootHorseId": "daneskaya",
-    "lastUpdated": "2025-09-23T02:48:05.717399Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "daneskaya",
       "name": "デインスカヤ",
-      "foaled": "{'year': 1993, 'month': 1, 'day': 10}",
-      "foaledArray": ["1993", "01", "10"],
+      "foaled": {
+        "year": 1993,
+        "month": 1,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -32,8 +35,11 @@
     {
       "id": "delphoi",
       "name": "デルフォイ",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 4}",
-      "foaledArray": ["2006", "05", "04"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -137,8 +143,11 @@
     {
       "id": "six-sense",
       "name": "シックスセンス",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 5}",
-      "foaledArray": ["2002", "03", "05"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Definition",
     "rootHorseId": "definition",
-    "lastUpdated": "2025-09-23T17:38:43.804690Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "definition",
       "name": "Definition",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Relaunch",
@@ -31,8 +32,11 @@
     {
       "id": "seiun-vivace",
       "name": "セイウンビバーチェ",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 11}",
-      "foaledArray": ["2002", "02", "11"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "プリサイスエンド(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Electric Society",
     "rootHorseId": "electric-society",
-    "lastUpdated": "2025-09-24T04:38:33.742803Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "electric-society",
       "name": "Electric Society",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Law Society",
@@ -31,8 +32,11 @@
     {
       "id": "star-el-dorado",
       "name": "スターエルドラード",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 15}",
-      "foaledArray": ["1999", "03", "15"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Danzig",

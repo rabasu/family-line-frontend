@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "De Laroche",
     "rootHorseId": "de-laroche",
-    "lastUpdated": "2025-09-20T23:30:28.971296Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "de-laroche",
       "name": "ディラローシェ",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -32,8 +33,11 @@
     {
       "id": "fenomeno",
       "name": "フェノーメノ",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 20}",
-      "foaledArray": ["2009", "04", "20"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

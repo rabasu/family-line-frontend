@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Danlu",
     "rootHorseId": "danlu",
-    "lastUpdated": "2025-09-25T00:25:08.818276Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "danlu",
       "name": "Danlu",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -31,8 +32,11 @@
     {
       "id": "strategic-choice",
       "name": "ストラテジックチョイス",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 4}",
-      "foaledArray": ["1991", "03", "04"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Alleged(US)",

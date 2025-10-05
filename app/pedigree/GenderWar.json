@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gender War",
     "rootHorseId": "gender-war",
-    "lastUpdated": "2025-09-23T03:18:14.653225Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gender-war",
       "name": "Gender War",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Dancer",
@@ -31,8 +32,11 @@
     {
       "id": "fusaichi-auster",
       "name": "フサイチアウステル",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 15}",
-      "foaledArray": ["2002", "03", "15"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Stormin Fever",

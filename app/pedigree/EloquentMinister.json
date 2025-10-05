@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Eloquent Minister",
     "rootHorseId": "eloquent-minister",
-    "lastUpdated": "2025-09-24T23:25:09.841100Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "eloquent-minister",
       "name": "Eloquent Minister",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",
@@ -31,8 +32,11 @@
     {
       "id": "maruka-diesis",
       "name": "マルカダイシス",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 13}",
-      "foaledArray": ["1993", "03", "13"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Diesis",

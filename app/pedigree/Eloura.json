@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Eloura",
     "rootHorseId": "eloura",
-    "lastUpdated": "2025-09-24T13:12:54.573431Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "eloura",
       "name": "Eloura",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Top Ville",
@@ -31,8 +32,11 @@
     {
       "id": "mariage-damour",
       "name": "マリアジュダムール",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 25}",
-      "foaledArray": ["1994", "04", "25"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "グルームダンサー(US)",

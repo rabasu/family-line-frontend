@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dancing Mirage",
     "rootHorseId": "dancing-mirage",
-    "lastUpdated": "2025-09-24T02:02:48.972693Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dancing-mirage",
       "name": "Dancing Mirage",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alleged(US)",
@@ -31,8 +32,11 @@
     {
       "id": "true-surpass",
       "name": "トゥルーサーパス",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 21}",
-      "foaledArray": ["1999", "03", "21"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",

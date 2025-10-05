@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Fairy Ballade",
     "rootHorseId": "fairy-ballade",
-    "lastUpdated": "2025-09-20T13:39:43.581967Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fairy-ballade",
       "name": "フェアリーバラード",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 16}",
-      "foaledArray": ["1999", "04", "16"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
       "dam": "Angelic Song",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "Orpendale（愛）",
       "netkeibaId": "1999110279",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Fairy Ballade"
+      "englishName": "Fairy Ballade",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "super-moon",
       "name": "スーパームーン",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 28}",
-      "foaledArray": ["2009", "04", "28"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "フェアリーバラード",
-      "dam_netkeiba_id": "1999110279",
       "color": "青鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2009105928",
@@ -164,18 +169,21 @@
         "central": "1億5,820万円",
         "local": "0万円"
       },
-      "damId": "fairy-ballade"
+      "damId": "fairy-ballade",
+      "dam_netkeiba_id": "1999110279"
     },
     {
       "id": "grazia",
       "name": "グラッツィア",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 21}",
-      "foaledArray": ["2008", "04", "21"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
       "dam": "フェアリーバラード",
-      "dam_netkeiba_id": "1999110279",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2008102958",
@@ -420,7 +428,8 @@
         "central": "1億3,770万円",
         "local": "2,092万円"
       },
-      "damId": "fairy-ballade"
+      "damId": "fairy-ballade",
+      "dam_netkeiba_id": "1999110279"
     }
   ]
 }

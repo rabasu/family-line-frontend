@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Elusive Wave",
     "rootHorseId": "elusive-wave",
-    "lastUpdated": "2025-09-18T16:16:54.669294Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "elusive-wave",
       "name": "イルーシヴウェーヴ",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Elusive City",
@@ -32,8 +33,11 @@
     {
       "id": "satono-solomon",
       "name": "サトノソロモン",
-      "foaled": "{'year': 2016, 'month': 1, 'day': 18}",
-      "foaledArray": ["2016", "01", "18"],
+      "foaled": {
+        "year": 2016,
+        "month": 1,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

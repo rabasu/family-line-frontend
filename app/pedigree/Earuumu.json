@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "エアルーム",
     "rootHorseId": "earuumu",
-    "lastUpdated": "2025-09-26T10:08:30.286016Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "earuumu",
       "name": "エアルーム",
-      "foaled": "{'year': 1948}",
-      "foaledArray": ["1948"],
+      "foaled": {
+        "year": 1948
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingstone",
@@ -31,8 +32,9 @@
     {
       "id": "yutakaakatsuki",
       "name": "豊暁",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハクリョウ",
@@ -57,8 +59,9 @@
     {
       "id": "houboh",
       "name": "ホウボー",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リンボー(US)",
@@ -84,8 +87,9 @@
     {
       "id": "kashima-moon",
       "name": "カシマムーン",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -111,8 +115,11 @@
     {
       "id": "kashima-king",
       "name": "カシマキング",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 10}",
-      "foaledArray": ["1980", "04", "10"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダストコマンダー(US)",
@@ -302,6 +309,458 @@
         "local": "0万円"
       },
       "damId": "kashima-moon"
+    },
+    {
+      "id": "kyouwajanbo",
+      "name": "キョウワジャンボ",
+      "foaled": {
+        "year": 1972
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "シァイボーイ(GB)",
+      "dam": "トヨミネ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1972z00913",
+      "raceStats": {
+        "total": {
+          "runs": 12,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 2,
+            "day": 9
+          },
+          "racecourse": "中京",
+          "race": "きさらぎ賞(NHK賞(OP)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 1,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "日刊スポーツ賞シンザ(OP)",
+          "displayRace": "シンザン記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "toyomine"
+    },
+    {
+      "id": "toyomine",
+      "name": "トヨミネ",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "エイトラックス(FR)",
+      "dam": "カズサホマレ",
+      "color": "鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a0041a9",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Toyomine",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kazusa-homare"
+    },
+    {
+      "id": "kazusa-homare",
+      "name": "カズサホマレ",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フェリオール(FR)",
+      "dam": "エアルーム",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a003457",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kazusa Homare",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "earuumu"
+    },
+    {
+      "id": "shintetsuoo",
+      "name": "シンテツオー",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ネヴァービート(GB)",
+      "dam": "ジヨー",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1968z00261",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 1,
+            "day": 30
+          },
+          "racecourse": "京都",
+          "race": "スワンS(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "19",
+          "result": "14",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 10,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "8",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "神戸杯(OP)",
+          "displayRace": "神戸杯",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 6,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "28",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 5,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "jiyoh"
+    },
+    {
+      "id": "jiyoh",
+      "name": "ジヨー",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "リンボー(US)",
+      "dam": "アキズキ",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a003230",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Jiyoh",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "akizuki"
+    },
+    {
+      "id": "akizuki",
+      "name": "アキズキ",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フランクリー(US)",
+      "dam": "エアルーム",
+      "color": "鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a002bf6",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Akizuki",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "earuumu"
+    },
+    {
+      "id": "kokusempu",
+      "name": "コクセンプウ",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハロウエー(GB)",
+      "dam": "豊暁",
+      "color": "黒鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a000acc",
+      "raceStats": {
+        "total": {
+          "runs": 76,
+          "wins": 17
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "4",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 12,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "15",
+          "result": "10",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 11,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 5,
+            "day": 7
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "5(再)",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kokusempu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yutakaakatsuki"
     }
   ]
 }

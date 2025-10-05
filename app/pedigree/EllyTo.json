@@ -1,16 +1,17 @@
 {
   "metadata": {
-    "pedigreeName": "Ellie-to",
-    "rootHorseId": "ellie-to",
-    "lastUpdated": "2025-09-26T05:06:19.140334Z",
-    "source": "python_scraping"
+    "pedigreeName": "elly-to",
+    "rootHorseId": "elly-to",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
-      "id": "ellie-to",
+      "id": "elly-to",
       "name": "エリーツー",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Flit-to",
@@ -26,14 +27,17 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
-      "englishName": "Ellie-to"
+      "source": "python_scraping, JBIS(英語名)",
+      "englishName": "Elly to"
     },
     {
       "id": "toa-falcon",
       "name": "トーアファルコン",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 13}",
-      "foaledArray": ["1981", "04", "13"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ファルコン(GB)",
@@ -282,7 +286,7 @@
         "central": "1億4,164万円",
         "local": "0万円"
       },
-      "damId": "ellie-to"
+      "damId": "elly-to"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gaelic Tune",
     "rootHorseId": "gaelic-tune",
-    "lastUpdated": "2025-09-24T09:39:12.125846Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gaelic-tune",
       "name": "ゲーリックチューン",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "sweet-thrilling",
       "name": "スイートスリリング",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 26}",
-      "foaledArray": ["1997", "03", "26"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンダーガルチ(US)",
@@ -61,8 +65,11 @@
     {
       "id": "bangalore",
       "name": "バンガロール",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 5}",
-      "foaledArray": ["2006", "04", "05"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -106,8 +113,11 @@
     {
       "id": "symboli-indy",
       "name": "シンボリインディ",
-      "foaled": "{'year': 1996, 'month': 1, 'day': 20}",
-      "foaledArray": ["1996", "01", "20"],
+      "foaled": {
+        "year": 1996,
+        "month": 1,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",

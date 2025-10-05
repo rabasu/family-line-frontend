@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Difficult",
     "rootHorseId": "difficult",
-    "lastUpdated": "2025-09-21T16:24:18.244354Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "difficult",
       "name": "ディフィカルト",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Concern",
@@ -32,8 +33,9 @@
     {
       "id": "shes-impossible",
       "name": "シーズインポッシブル",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Yankee Victor(US)",
@@ -59,8 +61,11 @@
     {
       "id": "ladybird",
       "name": "レディバード",
-      "foaled": "{'year': 2015, 'month': 5, 'day': 6}",
-      "foaledArray": ["2015", "05", "06"],
+      "foaled": {
+        "year": 2015,
+        "month": 5,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スマートファルコン",
@@ -88,8 +93,11 @@
     {
       "id": "steelblue",
       "name": "スティールブルー",
-      "foaled": "{'year': 2021, 'month': 2, 'day': 12}",
-      "foaledArray": ["2021", "02", "12"],
+      "foaled": {
+        "year": 2021,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",
@@ -163,8 +171,11 @@
     {
       "id": "all-possible",
       "name": "オールポッシブル",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 6}",
-      "foaledArray": ["2014", "04", "06"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -268,8 +279,11 @@
     {
       "id": "testa-matta",
       "name": "テスタマッタ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 19}",
-      "foaledArray": ["2006", "03", "19"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Tapit(US)",

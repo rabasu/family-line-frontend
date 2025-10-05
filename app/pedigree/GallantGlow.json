@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gallant Glow",
     "rootHorseId": "gallant-glow",
-    "lastUpdated": "2025-09-27T14:10:18.523780Z",
+    "lastUpdated": "2025-10-05T11:22:50.767871Z",
     "source": "python_scraping_updated"
   },
   "horses": [
     {
       "id": "gallant-glow",
       "name": "ギャラントグロウ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Turn to Reason",
@@ -32,8 +33,11 @@
     {
       "id": "hokuto-hisho",
       "name": "ホクトヒシヨウ",
-      "foaled": "{'year': 1976, 'month': 3, 'day': 28}",
-      "foaledArray": ["1976", "03", "28"],
+      "foaled": {
+        "year": 1976,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボールドリック(US)",
@@ -59,8 +63,11 @@
     {
       "id": "hokuto-venus",
       "name": "ホクトビーナス",
-      "foaled": "{'year': 1986, 'month': 3, 'day': 14}",
-      "foaledArray": ["1986", "03", "14"],
+      "foaled": {
+        "year": 1986,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
@@ -104,8 +111,11 @@
     {
       "id": "hokuto-pendant",
       "name": "ホクトペンダント",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 23}",
-      "foaledArray": ["1993", "03", "23"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パークリージェント(CAN)",
@@ -179,8 +189,11 @@
     {
       "id": "chokai-fight",
       "name": "チョウカイファイト",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 11}",
-      "foaledArray": ["2003", "03", "11"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -299,8 +312,11 @@
     {
       "id": "venus-line",
       "name": "ビーナスライン",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 12}",
-      "foaledArray": ["2001", "03", "12"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -479,8 +495,11 @@
     {
       "id": "yumeno-ora",
       "name": "ユメノオーラ",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 24}",
-      "foaledArray": ["2003", "04", "24"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マイネルラヴ",
@@ -569,8 +588,11 @@
     {
       "id": "red-and-gold",
       "name": "レッダンゴールド",
-      "foaled": "{'year': 1997, 'month': 6, 'day': 30}",
-      "foaledArray": ["1997", "06", "30"],
+      "foaled": {
+        "year": 1997,
+        "month": 6,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -598,8 +620,11 @@
     {
       "id": "hokuto-fill",
       "name": "ホクトフィル",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 23}",
-      "foaledArray": ["1990", "03", "23"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クリスタルグリッターズ(US)",
@@ -718,8 +743,11 @@
     {
       "id": "hokuto-helios",
       "name": "ホクトヘリオス",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 3}",
-      "foaledArray": ["1984", "04", "03"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パーソナリティ(US)",
@@ -1183,8 +1211,11 @@
     {
       "id": "long-royal",
       "name": "ロングロイヤル",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 16}",
-      "foaledArray": ["1981", "04", "16"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルスキー",
@@ -1266,6 +1297,66 @@
       "prizeMoney": {
         "total": "890万円",
         "central": "890万円",
+        "local": "0万円"
+      },
+      "damId": "gallant-glow"
+    },
+    {
+      "id": "daifukuju",
+      "name": "ダイフクジュ",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハイハット",
+      "dam": "ギャラントグロウ",
+      "color": "栃栗毛",
+      "breeder": "",
+      "netkeibaId": "000a0101ce",
+      "raceStats": {
+        "total": {
+          "runs": 12,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(600万下)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "4",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "710万円",
+        "central": "710万円",
         "local": "0万円"
       },
       "damId": "gallant-glow"

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Flipling",
     "rootHorseId": "flipling",
-    "lastUpdated": "2025-09-25T04:18:50.614272Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "flipling",
       "name": "ヤハギガワ",
-      "foaled": "{'year': 1919}",
-      "foaledArray": ["1919"],
+      "foaled": {
+        "year": 1919
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Flippant",
@@ -32,8 +33,9 @@
     {
       "id": "omaha",
       "name": "オマハ",
-      "foaled": "{'year': 1932}",
-      "foaledArray": ["1932"],
+      "foaled": {
+        "year": 1932
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プライオリーパーク(GB)",
@@ -58,8 +60,9 @@
     {
       "id": "modesuto",
       "name": "モデスト",
-      "foaled": "{'year': 1940}",
-      "foaledArray": ["1940"],
+      "foaled": {
+        "year": 1940
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セフト(GB)",
@@ -84,8 +87,9 @@
     {
       "id": "raitosutehtsu",
       "name": "ライトステーツ",
-      "foaled": "{'year': 1951}",
-      "foaledArray": ["1951"],
+      "foaled": {
+        "year": 1951
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミハルオー",
@@ -111,8 +115,9 @@
     {
       "id": "tai-midori",
       "name": "タイミドリ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トサミドリ",
@@ -138,8 +143,9 @@
     {
       "id": "tai-clover",
       "name": "タイクローバ",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロムルス",
@@ -165,8 +171,11 @@
     {
       "id": "tai-blossom",
       "name": "タイブラッサム",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 15}",
-      "foaledArray": ["1978", "04", "15"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードリージ(US)",
@@ -192,8 +201,11 @@
     {
       "id": "tai-blues",
       "name": "タイブルース",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 5}",
-      "foaledArray": ["1992", "05", "05"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",
@@ -327,8 +339,11 @@
     {
       "id": "three-course",
       "name": "スリーコース",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 14}",
-      "foaledArray": ["1991", "04", "14"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キンググローリアス(US)",
@@ -537,8 +552,11 @@
     {
       "id": "three-lyon",
       "name": "スリーリオン",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 27}",
-      "foaledArray": ["1978", "03", "27"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レイズアボーイ",
@@ -564,8 +582,9 @@
     {
       "id": "mid-course",
       "name": "ミツドコース",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パールダイヴァー",
@@ -591,8 +610,9 @@
     {
       "id": "mieuxce",
       "name": "ミユツセ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フェリオール(FR)",
@@ -618,8 +638,9 @@
     {
       "id": "miruuookii",
       "name": "ミルウオーキー",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トシシロ",
@@ -640,6 +661,137 @@
         "total": "0万円"
       },
       "damId": "modesuto"
+    },
+    {
+      "id": "tosakingu",
+      "name": "トサキング",
+      "foaled": {
+        "year": 1957
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "トサミドリ",
+      "dam": "ライトステーツ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1957z00316",
+      "raceStats": {
+        "total": {
+          "runs": 25,
+          "wins": 12
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1961,
+            "month": 10,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "中山大障害競走(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "芝4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 10,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "中山大障害競走(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "芝4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 5,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "京都大障害競走(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "芝3100",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "raitosutehtsu"
+    },
+    {
+      "id": "buzensoushiyun",
+      "name": "ブゼンソウシユン",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "トシシロ",
+      "dam": "ライトステーツ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1956z00123",
+      "raceStats": {
+        "total": {
+          "runs": 56,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1961,
+            "month": 5,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "京都大障害競走(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "芝3100",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1960,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都大障害競走(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "芝3100",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "5",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "raitosutehtsu"
     }
   ]
 }

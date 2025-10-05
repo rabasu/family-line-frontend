@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gallant Missy",
     "rootHorseId": "gallant-missy",
-    "lastUpdated": "2025-09-22T02:07:59.762764Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gallant-missy",
       "name": "ギャラントミシー",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Raja Baba",
@@ -32,8 +33,11 @@
     {
       "id": "ample-cut",
       "name": "アンプルカット",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 26}",
-      "foaledArray": ["1997", "03", "26"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ナリタハヤブサ",
@@ -61,8 +65,11 @@
     {
       "id": "domonarazu",
       "name": "ドモナラズ",
-      "foaled": "{'year': 2005, 'month': 1, 'day': 9}",
-      "foaledArray": ["2005", "01", "09"],
+      "foaled": {
+        "year": 2005,
+        "month": 1,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",

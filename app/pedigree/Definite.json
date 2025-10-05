@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Definite",
     "rootHorseId": "definite",
-    "lastUpdated": "2025-09-22T14:25:29.048371Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "definite",
       "name": "デフィニット",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 18}",
-      "foaledArray": ["1997", "04", "18"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デヒア(US)",
       "dam": "Hiroo Garden",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "Hiroyoshi Usuda（米）",
       "netkeibaId": "1997110033",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Definite"
+      "englishName": "Definite",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "ball-lightning",
       "name": "ボールライトニング",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 21}",
-      "foaledArray": ["2013", "04", "21"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
       "dam": "デフィニット",
-      "dam_netkeiba_id": "1997110033",
       "color": "栗毛",
       "breeder": "恵比寿興業株式会社那須野牧場（栃木県）",
       "netkeibaId": "2013109022",
@@ -119,13 +124,17 @@
         "central": "9,053万円",
         "local": "0万円"
       },
-      "damId": "definite"
+      "damId": "definite",
+      "dam_netkeiba_id": "1997110033"
     },
     {
       "id": "de-gratia",
       "name": "デグラーティア",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 4}",
-      "foaledArray": ["2006", "04", "04"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

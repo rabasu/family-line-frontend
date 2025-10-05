@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ever So Lightly",
     "rootHorseId": "ever-so-lightly",
-    "lastUpdated": "2025-09-24T11:41:30.518034Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ever-so-lightly",
       "name": "エヴァソーライトリー",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "mayano-maybe",
       "name": "マヤノメイビー",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 27}",
-      "foaledArray": ["1997", "04", "27"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",

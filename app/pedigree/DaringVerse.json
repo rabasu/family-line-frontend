@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Daring Verse",
     "rootHorseId": "daring-verse",
-    "lastUpdated": "2025-09-22T23:56:44.419924Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "daring-verse",
       "name": "デアリングヴァース",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Opening Verse",
@@ -32,8 +33,11 @@
     {
       "id": "gene-crisis",
       "name": "ジンクライシス",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 27}",
-      "foaledArray": ["2001", "04", "27"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Subordination",

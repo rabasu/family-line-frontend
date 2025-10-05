@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Global Beauty",
     "rootHorseId": "global-beauty",
-    "lastUpdated": "2025-09-16T06:11:26.234255Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "global-beauty",
       "name": "グローバルビューティ",
-      "foaled": "{'year': 2014, 'month': 10, 'day': 29}",
-      "foaledArray": ["2014", "10", "29"],
+      "foaled": {
+        "year": 2014,
+        "month": 10,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Global Hunter",
@@ -32,8 +35,11 @@
     {
       "id": "pulchritude",
       "name": "パルクリチュード",
-      "foaled": "{'year': 2020, 'month': 5, 'day': 21}",
-      "foaledArray": ["2020", "05", "21"],
+      "foaled": {
+        "year": 2020,
+        "month": 5,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gun Runner(US)",

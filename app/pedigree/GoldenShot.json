@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Golden Shot",
     "rootHorseId": "golden-shot",
-    "lastUpdated": "2025-09-24T02:34:34.716450Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "golden-shot",
       "name": "ゴールデンショット",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Golden Act",
@@ -32,8 +33,11 @@
     {
       "id": "sogon",
       "name": "ソウゴン",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 30}",
-      "foaledArray": ["1999", "03", "30"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "テンビー(GB)",

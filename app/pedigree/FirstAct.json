@@ -2,21 +2,22 @@
   "metadata": {
     "pedigreeName": "First Act",
     "rootHorseId": "first-act",
-    "lastUpdated": "2025-09-20T08:46:40.470450Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "first-act",
       "name": "ファーストアクト",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
       "dam": "Arkadina",
-      "color": "鹿毛",
-      "breeder": "愛",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a000123",
       "raceStats": {
         "total": {
@@ -32,8 +33,11 @@
     {
       "id": "heavenly-romance",
       "name": "ヘヴンリーロマンス",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 5}",
-      "foaledArray": ["2000", "03", "05"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -287,14 +291,17 @@
     {
       "id": "amour-briller",
       "name": "アムールブリエ",
-      "foaled": "{'year': 2011, 'month': 5, 'day': 21}",
-      "foaledArray": ["2011", "05", "21"],
+      "foaled": {
+        "year": 2011,
+        "month": 5,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Smart Strike(CAN)",
       "dam": "ヘヴンリーロマンス",
-      "color": "鹿毛",
-      "breeder": "North Hills Co. Ltd.（米）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2011110023",
       "raceStats": {
         "total": {
@@ -527,14 +534,17 @@
     {
       "id": "del-avar",
       "name": "デルアヴァー",
-      "foaled": "{'year': 2022, 'month': 3, 'day': 6}",
-      "foaledArray": ["2022", "03", "06"],
+      "foaled": {
+        "year": 2022,
+        "month": 3,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Frankel",
       "dam": "アムールブリエ",
-      "color": "鹿毛",
-      "breeder": "North Hills Co.（米）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022110054",
       "raceStats": {
         "total": {
@@ -602,13 +612,15 @@
     {
       "id": "awardee",
       "name": "アウォーディー",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 10}",
-      "foaledArray": ["2010", "05", "10"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",
       "dam": "ヘヴンリーロマンス",
-      "dam_netkeiba_id": "2000105086",
       "color": "鹿毛",
       "breeder": "North Hills Management（米）",
       "netkeibaId": "2010110078",
@@ -883,7 +895,8 @@
         "central": "2億4,210万円",
         "local": "1億9,300万円"
       },
-      "damId": "heavenly-romance"
+      "damId": "heavenly-romance",
+      "dam_netkeiba_id": "2000105086"
     }
   ]
 }

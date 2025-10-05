@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Green Pola",
     "rootHorseId": "green-pola",
-    "lastUpdated": "2025-09-21T08:17:26.114189Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "green-pola",
       "name": "グリーンポーラ",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 8}",
-      "foaledArray": ["1988", "03", "08"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",
       "dam": "Irish Valley",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a0064a0",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Green Pola"
+      "englishName": "Green Pola",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "jadeite",
       "name": "ジェダイト",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 5}",
-      "foaledArray": ["2002", "02", "05"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
       "dam": "グリーンポーラ",
-      "dam_netkeiba_id": "000a0064a0",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "2002100849",
@@ -179,18 +184,21 @@
         "central": "6,243万円",
         "local": "0万円"
       },
-      "damId": "green-pola"
+      "damId": "green-pola",
+      "dam_netkeiba_id": "000a0064a0"
     },
     {
       "id": "sanacion",
       "name": "サナシオン",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 4}",
-      "foaledArray": ["2009", "02", "04"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
       "dam": "ジェダイト",
-      "dam_netkeiba_id": "2002100849",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2009106184",
@@ -270,13 +278,17 @@
         "central": "2億3,323万円",
         "local": "0万円"
       },
-      "damId": "jadeite"
+      "damId": "jadeite",
+      "dam_netkeiba_id": "2002100849"
     },
     {
       "id": "geyersworth",
       "name": "ガイヤースヴェルト",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 17}",
-      "foaledArray": ["2010", "05", "17"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -350,8 +362,11 @@
     {
       "id": "reine-verte",
       "name": "レーヌヴェルト",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 20}",
-      "foaledArray": ["2003", "02", "20"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",

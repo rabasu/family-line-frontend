@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Desaucered",
     "rootHorseId": "desaucered",
-    "lastUpdated": "2025-09-20T14:54:47.083274Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "desaucered",
       "name": "ディソサード",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dixieland Band",
@@ -32,8 +33,11 @@
     {
       "id": "red-reveur",
       "name": "レッドリヴェール",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 19}",
-      "foaledArray": ["2011", "02", "19"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gulfian",
     "rootHorseId": "gulfian",
-    "lastUpdated": "2025-09-24T02:04:17.976586Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gulfian",
       "name": "ガルフィアン",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Dancer",
@@ -32,8 +33,11 @@
     {
       "id": "gulfin-dream",
       "name": "ガルフィンドリーム",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 25}",
-      "foaledArray": ["1997", "04", "25"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロアルダン",

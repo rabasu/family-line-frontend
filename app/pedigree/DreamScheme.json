@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dream Scheme",
     "rootHorseId": "dream-scheme",
-    "lastUpdated": "2025-09-17T02:31:42.997170Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dream-scheme",
       "name": "ドリームスキーム",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",
@@ -32,8 +33,11 @@
     {
       "id": "daydreamer",
       "name": "デイドリーマー",
-      "foaled": "{'year': 2010, 'month': 1, 'day': 25}",
-      "foaledArray": ["2010", "01", "25"],
+      "foaled": {
+        "year": 2010,
+        "month": 1,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
@@ -61,8 +65,11 @@
     {
       "id": "believer",
       "name": "ビリーバー",
-      "foaled": "{'year': 2015, 'month': 1, 'day': 26}",
-      "foaledArray": ["2015", "01", "26"],
+      "foaled": {
+        "year": 2015,
+        "month": 1,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モンテロッソ(GB)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dramatic Lady",
     "rootHorseId": "dramatic-lady",
-    "lastUpdated": "2025-09-24T06:37:04.964654Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dramatic-lady",
       "name": "ドラマチツクレディ",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "lady-robbery",
       "name": "レディロバリー",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 18}",
-      "foaledArray": ["1992", "03", "18"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",
@@ -59,8 +63,11 @@
     {
       "id": "long-running",
       "name": "ロングランニング",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 30}",
-      "foaledArray": ["1996", "05", "30"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アロングオール(GB)",

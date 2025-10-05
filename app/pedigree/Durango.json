@@ -2,24 +2,287 @@
   "metadata": {
     "pedigreeName": "デユランゴ",
     "rootHorseId": "durango",
-    "lastUpdated": "2025-09-07T14:36:11.056Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "durango",
       "name": "デユランゴ",
-      "foaled": "1928",
-      "foaledArray": ["1928"],
+      "foaled": {
+        "year": 1928
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Violoncello",
+      "dam": "Voucher",
+      "color": "栗毛",
       "breeder": "",
       "netkeibaId": "000a000509",
       "source": "tsx_conversion",
+      "importedYear": "1929",
+      "familyNumber": "F23-a",
+      "registration": "7巻749号",
       "owner": "山内亮（S8〜S11）→S.アイザックス（中倉保）（S12〜）"
+    },
+    {
+      "id": "kotokatsu",
+      "name": "コトカツ",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "マルキシオー",
+      "dam": "ミスカツホマレ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955500384",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 7,
+            "day": 4
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(秋)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 4,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 2,
+            "day": 28
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(春)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kotokatsu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "misukatsuhomare"
+    },
+    {
+      "id": "misukatsuhomare",
+      "name": "ミスカツホマレ",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トシヒロ",
+      "dam": "ロツクホマレ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00d18d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Misukatsuhomare",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rotsukuhomare"
+    },
+    {
+      "id": "rotsukuhomare",
+      "name": "ロツクホマレ",
+      "foaled": {
+        "year": 1945
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミナミホマレ",
+      "dam": "沖風",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a0028ee",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "okikaze"
+    },
+    {
+      "id": "okikaze",
+      "name": "沖風",
+      "foaled": {
+        "year": 1936
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "レイモンド(IRE)",
+      "dam": "デユランゴ",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a0026fc",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "durango"
+    },
+    {
+      "id": "kuroshio",
+      "name": "クロシオ",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "クモノハナ",
+      "dam": "沖風",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1953z00035",
+      "raceStats": {
+        "total": {
+          "runs": 41,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1957,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "東京障害特別競走(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3550",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "中山大障害競走(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "6(9)",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 6,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "農林省賞典中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "8",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 6,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別競走(OP)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "3",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "okikaze"
     }
   ]
 }

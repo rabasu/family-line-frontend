@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Daunserly",
     "rootHorseId": "daunserly",
-    "lastUpdated": "2025-09-24T20:54:07.631997Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "daunserly",
       "name": "Daunserly",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Oh Say",
@@ -31,8 +32,11 @@
     {
       "id": "i-am-the-prince",
       "name": "アイアムザプリンス",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 20}",
-      "foaledArray": ["1995", "03", "20"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Summer Squall(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gay Poulette",
     "rootHorseId": "gay-poulette",
-    "lastUpdated": "2025-09-27T07:05:48.384355Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gay-poulette",
       "name": "ゲイプレテェ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sunny Boy",
@@ -32,8 +33,9 @@
     {
       "id": "kiyoboshi",
       "name": "キヨボシ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セダン(FR)",
@@ -59,8 +61,9 @@
     {
       "id": "kiyo-best",
       "name": "キヨベスト",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドン",
@@ -86,8 +89,11 @@
     {
       "id": "moriyu-eru",
       "name": "モリユウエル",
-      "foaled": "{'year': 1982, 'month': 5, 'day': 31}",
-      "foaledArray": ["1982", "05", "31"],
+      "foaled": {
+        "year": 1982,
+        "month": 5,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "カウアイキング",
@@ -129,8 +135,11 @@
     {
       "id": "balt-fountain",
       "name": "バルトフォンテン",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 17}",
-      "foaledArray": ["2001", "04", "17"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンツシアトル",
@@ -189,8 +198,11 @@
     {
       "id": "mr-brandy",
       "name": "ミスターブランディ",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 9}",
-      "foaledArray": ["1982", "04", "09"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディクタス(FR)",
@@ -414,8 +426,9 @@
     {
       "id": "shadai-poulette",
       "name": "シヤダイプレテェ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガーサント",
@@ -441,8 +454,11 @@
     {
       "id": "dyna-stylist",
       "name": "ダイナスタイリスト",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 11}",
-      "foaledArray": ["1984", "04", "11"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディクタス(FR)",
@@ -576,8 +592,11 @@
     {
       "id": "dyna-tresa",
       "name": "ダイナトレサ",
-      "foaled": "{'year': 1979, 'month': 2, 'day': 27}",
-      "foaledArray": ["1979", "02", "27"],
+      "foaled": {
+        "year": 1979,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -599,6 +618,140 @@
         "total": "0万円"
       },
       "damId": "shadai-poulette"
+    },
+    {
+      "id": "please-turf",
+      "name": "プリーズターフ",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ガーサント",
+      "dam": "ゲイプレテェ",
+      "color": "栗毛",
+      "breeder": "白老町",
+      "netkeibaId": "000a00490b",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 12,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 11,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "11",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 9,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "クイーンS(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 5,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 4,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "4歳牝馬特別(OP)",
+          "displayRace": "4歳牝馬特別（東）",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "クイーンC(OP)",
+          "displayRace": "クイーンC",
+          "distance": "ダ1400",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "12"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Please Turf",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gay-poulette"
     }
   ]
 }

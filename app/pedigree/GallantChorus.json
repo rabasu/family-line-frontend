@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gallant Chorus",
     "rootHorseId": "gallant-chorus",
-    "lastUpdated": "2025-09-23T12:32:45.241435Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gallant-chorus",
       "name": "ギャラントコーラス",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gallant Man",
@@ -32,8 +33,11 @@
     {
       "id": "chorus-jo-o",
       "name": "コーラスジョオー",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 25}",
-      "foaledArray": ["1988", "03", "25"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロングリート(US)",
@@ -61,8 +65,11 @@
     {
       "id": "gallant-arrow",
       "name": "ギャラントアロー",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 29}",
-      "foaledArray": ["2000", "04", "29"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リンドシェーバー a",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Daring Danzig",
     "rootHorseId": "daring-danzig",
-    "lastUpdated": "2025-09-23T11:04:24.860129Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "daring-danzig",
       "name": "デアリングダンジグ",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "daring-heart",
       "name": "デアリングハート",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 9}",
-      "foaledArray": ["2002", "03", "09"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -392,8 +396,11 @@
     {
       "id": "daring-bird",
       "name": "デアリングバード",
-      "foaled": "{'year': 2011, 'month': 5, 'day': 9}",
-      "foaledArray": ["2011", "05", "09"],
+      "foaled": {
+        "year": 2011,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -419,8 +426,11 @@
     {
       "id": "daring-tact",
       "name": "デアリングタクト",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 15}",
-      "foaledArray": ["2017", "04", "15"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
@@ -614,8 +624,11 @@
     {
       "id": "pit-fighter",
       "name": "ピットファイター",
-      "foaled": "{'year': 1999, 'month': 2, 'day': 26}",
-      "foaledArray": ["1999", "02", "26"],
+      "foaled": {
+        "year": 1999,
+        "month": 2,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Pulpit",

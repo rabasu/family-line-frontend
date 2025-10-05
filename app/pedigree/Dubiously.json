@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dubiously",
     "rootHorseId": "dubiously",
-    "lastUpdated": "2025-09-24T15:47:04.274996Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dubiously",
       "name": "Dubiously",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Jolie Jo",
@@ -31,8 +32,11 @@
     {
       "id": "five-pointer",
       "name": "ファイブポインター",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 14}",
-      "foaledArray": ["1995", "02", "14"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Fly So Free",

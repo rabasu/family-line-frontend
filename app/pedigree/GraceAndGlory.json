@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Grace And Glory",
     "rootHorseId": "grace-and-glory",
-    "lastUpdated": "2025-09-21T18:41:49.296686Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "grace-and-glory",
       "name": "グレースアンドグローリー",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "great-sunrise",
       "name": "グレイトサンライズ",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 19}",
-      "foaledArray": ["1998", "04", "19"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -77,8 +81,11 @@
     {
       "id": "red-desire",
       "name": "レッドディザイア",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 19}",
-      "foaledArray": ["2006", "04", "19"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

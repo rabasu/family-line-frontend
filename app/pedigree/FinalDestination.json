@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Final Destination",
     "rootHorseId": "final-destination",
-    "lastUpdated": "2025-09-21T09:18:38.504593Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "final-destination",
       "name": "ファイナルデスティネーション",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "O'Reilly",
@@ -32,8 +33,11 @@
     {
       "id": "final-form",
       "name": "ファイナルフォーム",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 11}",
-      "foaledArray": ["2009", "03", "11"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

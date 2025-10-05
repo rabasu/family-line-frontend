@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dolly Dear",
     "rootHorseId": "dolly-dear",
-    "lastUpdated": "2025-09-25T11:54:12.929703Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dolly-dear",
       "name": "ドリーデイア",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dual",
@@ -32,8 +33,9 @@
     {
       "id": "michinoku-prompt",
       "name": "ミチノクプロント",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プロント(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "northern-prompt",
       "name": "ノーザンプロント",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 12}",
-      "foaledArray": ["1982", "04", "12"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
@@ -86,8 +91,11 @@
     {
       "id": "kashino-dignity",
       "name": "カシノディグニティ",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 18}",
-      "foaledArray": ["1991", "03", "18"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プライマリーII(CAN)",

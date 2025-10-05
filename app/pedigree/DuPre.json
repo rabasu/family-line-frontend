@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Du Pre",
     "rootHorseId": "du-pre",
-    "lastUpdated": "2025-09-21T02:18:17.945209Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "du-pre",
       "name": "デュプレ",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "cosmo-nemo-shin",
       "name": "コスモネモシン",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 11}",
-      "foaledArray": ["2007", "03", "11"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゼンノロブロイ",

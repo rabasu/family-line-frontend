@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fit and Fancy",
     "rootHorseId": "fit-and-fancy",
-    "lastUpdated": "2025-09-20T19:13:30.398002Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fit-and-fancy",
       "name": "フィットアンドファンシー",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Vaguely Noble(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "real-fancy",
       "name": "リアルファンシー",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 24}",
-      "foaledArray": ["1995", "02", "24"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",
@@ -61,8 +65,11 @@
     {
       "id": "round-dance",
       "name": "ラウンドダンス",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 26}",
-      "foaledArray": ["2004", "02", "26"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
@@ -90,8 +97,11 @@
     {
       "id": "runway-waltz",
       "name": "ランウェイワルツ",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 4}",
-      "foaledArray": ["2011", "03", "04"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゴールドアリュール",

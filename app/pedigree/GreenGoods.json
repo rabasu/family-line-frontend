@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Green Goods",
     "rootHorseId": "green-goods",
-    "lastUpdated": "2025-09-24T02:03:56.180402Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "green-goods",
       "name": "グリーングッズ",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Clever Trick",
@@ -32,8 +33,11 @@
     {
       "id": "towa-treasure",
       "name": "トーワトレジャー",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 28}",
-      "foaledArray": ["1997", "04", "28"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",

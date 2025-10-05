@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dazzel'n Deception",
     "rootHorseId": "dazzeln-deception",
-    "lastUpdated": "2025-09-23T23:07:31.206966Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dazzeln-deception",
       "name": "ダズリンデセプション",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "shinko-ruby",
       "name": "シンコールビー",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 19}",
-      "foaledArray": ["2000", "03", "19"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラローレル",

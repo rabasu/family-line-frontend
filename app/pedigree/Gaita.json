@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gaita",
     "rootHorseId": "gaita",
-    "lastUpdated": "2025-09-26T06:06:11.823999Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gaita",
       "name": "ガイタ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フィリュース",
@@ -32,8 +33,9 @@
     {
       "id": "ambitious-1967",
       "name": "アンビシャス",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トサミドリ",
@@ -60,8 +62,11 @@
     {
       "id": "hida-cross",
       "name": "ヒダクロス",
-      "foaled": "{'year': 1976, 'month': 1, 'day': 24}",
-      "foaledArray": ["1976", "01", "24"],
+      "foaled": {
+        "year": 1976,
+        "month": 1,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -133,8 +138,11 @@
     {
       "id": "headship",
       "name": "ヘッドシップ",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 18}",
-      "foaledArray": ["1994", "04", "18"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -253,8 +261,11 @@
     {
       "id": "jim-queen",
       "name": "ジムクイン",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 27}",
-      "foaledArray": ["1985", "04", "27"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウショウルチェー",
@@ -433,8 +444,11 @@
     {
       "id": "jim-dash",
       "name": "ジムダッシュ",
-      "foaled": "{'year': 1979, 'month': 3, 'day': 21}",
-      "foaledArray": ["1979", "03", "21"],
+      "foaled": {
+        "year": 1979,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジムフレンチ",
@@ -460,8 +474,9 @@
     {
       "id": "cheldash",
       "name": "チエルダツシユ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンシングキャップ(US)",
@@ -487,8 +502,9 @@
     {
       "id": "hidaohkan",
       "name": "ヒダオーカン",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ムーティエ(FR)",
@@ -514,8 +530,11 @@
     {
       "id": "bold-northman",
       "name": "ボールドノースマン",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 19}",
-      "foaledArray": ["1984", "04", "19"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーアテンション(FR)",
@@ -589,8 +608,11 @@
     {
       "id": "tenzan-takane",
       "name": "テンザンタカネ",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 5}",
-      "foaledArray": ["1985", "04", "05"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノノアルコ",
@@ -675,6 +697,65 @@
         "local": "0万円"
       },
       "damId": "hida-cross"
+    },
+    {
+      "id": "saint-marchs",
+      "name": "セントマーチス",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ソロナウェー",
+      "dam": "ガイタ",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a000b47",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "19",
+          "result": "16",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Saint Marchs",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gaita"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Daiya Narubih",
     "rootHorseId": "daiya-narubih",
-    "lastUpdated": "2025-09-27T04:35:06.370886Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "daiya-narubih",
       "name": "ダイヤナルビー",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Precipitation",
@@ -32,8 +33,9 @@
     {
       "id": "hogetsu-hime",
       "name": "ホウゲツヒメ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モンタヴァル(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "tsuki-ruby",
       "name": "ツキルビー",
-      "foaled": "{'year': 1981, 'month': 2, 'day': 3}",
-      "foaledArray": ["1981", "02", "03"],
+      "foaled": {
+        "year": 1981,
+        "month": 2,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リィフォー(GB)",
@@ -86,8 +91,11 @@
     {
       "id": "t-m-missile",
       "name": "テイエムミサイル",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 2}",
-      "foaledArray": ["1991", "03", "02"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "テリオス(GB)",
@@ -202,6 +210,750 @@
         "local": "0万円"
       },
       "damId": "tsuki-ruby"
+    },
+    {
+      "id": "iisutoribaa",
+      "name": "イーストリバー",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "インディアナ",
+      "dam": "イサオクイン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1970z00782",
+      "raceStats": {
+        "total": {
+          "runs": 23,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 2,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "農林省賞典京都記念(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 1,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春杯(OP)",
+          "displayRace": "日本経済新春杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 7,
+            "day": 28
+          },
+          "racecourse": "小倉",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "中京",
+          "race": "高松宮杯(OP)",
+          "displayRace": "高松宮杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "8",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "11",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3100",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 11,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "7",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 10,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 3,
+            "day": 4
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(OP)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "8",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "isao-queen"
+    },
+    {
+      "id": "isao-queen",
+      "name": "イサオクイン",
+      "foaled": {
+        "year": 1963
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ソロナウェー",
+      "dam": "ダイヤナルビー",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a003d26",
+      "raceStats": {
+        "total": {
+          "runs": 18,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1967,
+            "month": 2,
+            "day": 12
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "4",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Isao Queen",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daiya-narubih"
+    },
+    {
+      "id": "korai-o",
+      "name": "コウライオー",
+      "foaled": {
+        "year": 1960
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "リンボー(US)",
+      "dam": "ダイヤナルビー",
+      "color": "黒鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a000a59",
+      "raceStats": {
+        "total": {
+          "runs": 33,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 1,
+            "day": 17
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春盃(OP)",
+          "displayRace": "日本経済新春盃",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 1,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "迎春賞(OP)",
+          "displayRace": "迎春賞",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 11,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 10,
+            "day": 18
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "阪急盃(OP)",
+          "displayRace": "阪急盃",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "9",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 4,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "スワンS(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 3,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪盃(OP)",
+          "displayRace": "サンケイ大阪盃",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 1,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春盃(OP)",
+          "displayRace": "日本経済新春盃",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 1,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "迎春賞(OP)",
+          "displayRace": "迎春賞",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "6",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 12,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典競走(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 11,
+            "day": 17
+          },
+          "racecourse": "京都",
+          "race": "菊花賞競走(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "10",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都盃競走(OP)",
+          "displayRace": "京都盃",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "神戸盃競走(OP)",
+          "displayRace": "神戸盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 9,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "京阪盃競走(OP)",
+          "displayRace": "京阪盃",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 30
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念競走(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "毎日盃競走(OP)",
+          "displayRace": "毎日盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 5,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 5,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "皐月賞競走(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "5",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Korai O",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daiya-narubih"
+    },
+    {
+      "id": "yamaninrubii",
+      "name": "ヤマニンルビー",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "タカクラヤマ",
+      "dam": "ダイヤナルビー",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a003707",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪盃(OP)",
+          "displayRace": "サンケイ大阪盃",
+          "distance": "芝1850",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "9",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "京都",
+          "race": "京阪盃(OP)",
+          "displayRace": "京阪盃",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 6,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "毎日盃(OP)",
+          "displayRace": "毎日盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "20",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "3",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daiya-narubih"
     }
   ]
 }

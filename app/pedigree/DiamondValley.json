@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Diamond Valley",
     "rootHorseId": "diamond-valley",
-    "lastUpdated": "2025-09-23T21:33:04.564285Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "diamond-valley",
       "name": "ダイアモンドバレー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Saint Cyrien",
@@ -32,8 +33,11 @@
     {
       "id": "himalayan-blue",
       "name": "ヒマラヤンブルー",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 9}",
-      "foaledArray": ["1998", "03", "09"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ネーハイシーザー",

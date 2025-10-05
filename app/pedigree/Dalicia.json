@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dalicia",
     "rootHorseId": "dalicia",
-    "lastUpdated": "2025-09-18T09:56:29.347786Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dalicia",
       "name": "ダリシア",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Acatenango",
@@ -32,8 +33,11 @@
     {
       "id": "satono-damsel",
       "name": "サトノダムゼル",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 6}",
-      "foaledArray": ["2016", "04", "06"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -152,8 +156,11 @@
     {
       "id": "deep-king",
       "name": "ディープキング",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 21}",
-      "foaledArray": ["2017", "03", "21"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dame's Rocket",
     "rootHorseId": "dames-rocket",
-    "lastUpdated": "2025-09-24T06:40:03.388891Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dames-rocket",
       "name": "Dame's Rocket",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Timeless Native",
@@ -31,8 +32,11 @@
     {
       "id": "rocky-appeal",
       "name": "ロッキーアピール",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 4}",
-      "foaledArray": ["1998", "03", "04"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Valid Appeal",

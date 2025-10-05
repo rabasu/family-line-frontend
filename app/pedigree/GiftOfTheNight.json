@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gift of the Night",
     "rootHorseId": "gift-of-the-night",
-    "lastUpdated": "2025-09-24T00:39:43.885944Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gift-of-the-night",
       "name": "Gift of the Night",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Slewpy",
@@ -31,8 +32,11 @@
     {
       "id": "falbrav",
       "name": "ファルブラヴ",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 28}",
-      "foaledArray": ["1998", "02", "28"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Fairy King",
