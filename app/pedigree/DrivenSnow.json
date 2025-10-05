@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Driven Snow",
     "rootHorseId": "driven-snow",
-    "lastUpdated": "2025-09-16T02:28:17.603069Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "driven-snow",
       "name": "ドライヴンスノー",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 13}",
-      "foaledArray": ["2006", "02", "13"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +35,11 @@
     {
       "id": "rouge-stiria",
       "name": "ルージュスティリア",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 19}",
-      "foaledArray": ["2019", "03", "19"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

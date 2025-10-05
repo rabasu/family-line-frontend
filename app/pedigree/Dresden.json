@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dresden",
     "rootHorseId": "dresden",
-    "lastUpdated": "2025-09-22T11:31:49.690833Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dresden",
       "name": "ドレスデン",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lomond",
@@ -32,8 +33,11 @@
     {
       "id": "petra",
       "name": "ペトラ",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 31}",
-      "foaledArray": ["1994", "05", "31"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヘクタープロテクター(US)",
@@ -61,8 +65,11 @@
     {
       "id": "mikki-petra",
       "name": "ミッキーペトラ",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 7}",
-      "foaledArray": ["2006", "02", "07"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",

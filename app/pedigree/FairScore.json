@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fair Score",
     "rootHorseId": "fair-score",
-    "lastUpdated": "2025-09-25T23:03:22.825435Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fair-score",
       "name": "フェアスコア",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Final Score",
@@ -32,8 +33,9 @@
     {
       "id": "nadeshiko",
       "name": "ナデシコ",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Arctic Time",
@@ -58,8 +60,11 @@
     {
       "id": "jurakujou",
       "name": "ジュラクジョウ",
-      "foaled": "{'year': 1975, 'month': 5, 'day': 24}",
-      "foaledArray": ["1975", "05", "24"],
+      "foaled": {
+        "year": 1975,
+        "month": 5,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シルバーシャーク",
@@ -107,17 +112,20 @@
         }
       ],
       "source": "python_scraping",
-      "pedigreeName": "ジユラクジョウ",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nadeshiko"
+      "damId": "nadeshiko",
+      "pedigreeName": "ジユラクジョウ"
     },
     {
       "id": "kelly-bag",
       "name": "ケリーバッグ",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 28}",
-      "foaledArray": ["1987", "04", "28"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハイセイコー",
@@ -187,6 +195,184 @@
         "local": "0万円"
       },
       "damId": "jurakujou"
+    },
+    {
+      "id": "hoshibaaji",
+      "name": "ホシバージ",
+      "foaled": {
+        "year": 1972,
+        "month": 4,
+        "day": 16
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ファバージ(FR)",
+      "dam": "ホシハート",
+      "color": "鹿毛",
+      "breeder": "幌村春太郎（三石町）",
+      "netkeibaId": "1972100590",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "14",
+          "result": "10",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 3,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 2,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "19",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "16",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 12,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳S(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 1
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "11",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hoshi-heart"
+    },
+    {
+      "id": "hoshi-heart",
+      "name": "ホシハート",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "フェアスコア",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955101253",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Hoshi Heart",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fair-score"
     }
   ]
 }

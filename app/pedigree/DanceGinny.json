@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dance Ginny",
     "rootHorseId": "dance-ginny",
-    "lastUpdated": "2025-09-22T20:51:21.934464Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dance-ginny",
       "name": "ダンスジニー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "The Minstrel(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "reward-present",
       "name": "リワードプレザン",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 16}",
-      "foaledArray": ["2003", "03", "16"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マチカネフクキタル",

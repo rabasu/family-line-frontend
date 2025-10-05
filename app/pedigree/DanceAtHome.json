@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dance At Home",
     "rootHorseId": "dance-at-home",
-    "lastUpdated": "2025-09-25T18:29:29.352231Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dance-at-home",
       "name": "ダンスアトホーム",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "zinc-tamon-o",
       "name": "ジンクタモンオー",
-      "foaled": "{'year': 1989, 'month': 2, 'day': 18}",
-      "foaledArray": ["1989", "02", "18"],
+      "foaled": {
+        "year": 1989,
+        "month": 2,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Cormorant",

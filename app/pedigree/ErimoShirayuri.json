@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Erimo Shirayuri",
     "rootHorseId": "erimo-shirayuri",
-    "lastUpdated": "2025-09-23T03:47:06.095974Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "erimo-shirayuri",
       "name": "エリモシラユリ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pall Mall",
@@ -32,8 +33,11 @@
     {
       "id": "tofuku-yamayuri",
       "name": "トウフクヤマユリ",
-      "foaled": "{'year': 1976, 'month': 4, 'day': 17}",
-      "foaledArray": ["1976", "04", "17"],
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イースタンフリート",
@@ -59,8 +63,11 @@
     {
       "id": "amber-fellow",
       "name": "アンバーフェロー",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 9}",
-      "foaledArray": ["1989", "03", "09"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -88,8 +95,11 @@
     {
       "id": "winning-fellow",
       "name": "ウイニングフェロー",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 13}",
-      "foaledArray": ["1998", "04", "13"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タマモクロス",
@@ -117,8 +127,11 @@
     {
       "id": "victory-run",
       "name": "ヴィクトリーラン",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 2}",
-      "foaledArray": ["2003", "04", "02"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヴィクトリースピーチ(US)",
@@ -203,6 +216,81 @@
         "local": "0万円"
       },
       "damId": "winning-fellow"
+    },
+    {
+      "id": "toufukumonsutaa",
+      "name": "トウフクモンスター",
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 30
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "イースタンフリート",
+      "dam": "エリモシラユリ",
+      "color": "栗毛",
+      "breeder": "えりも牧場（えりも町）",
+      "netkeibaId": "1975z00418",
+      "raceStats": {
+        "total": {
+          "runs": 22,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 2,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "東京4歳S(OP)",
+          "displayRace": "東京4歳S",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 9,
+            "day": 4
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 8,
+            "day": 7
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "erimo-shirayuri"
     }
   ]
 }

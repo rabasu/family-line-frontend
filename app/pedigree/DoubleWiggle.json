@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Double Wiggle",
     "rootHorseId": "double-wiggle",
-    "lastUpdated": "2025-09-24T19:19:29.343177Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "double-wiggle",
       "name": "Double Wiggle",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sir Wiggle",
@@ -31,8 +32,11 @@
     {
       "id": "toyo-rainbow",
       "name": "トーヨーレインボー",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 30}",
-      "foaledArray": ["1994", "05", "30"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",

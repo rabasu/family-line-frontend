@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Eishin McAllen",
     "rootHorseId": "eishin-mcallen",
-    "lastUpdated": "2025-09-22T15:24:06.547521Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "eishin-mcallen",
       "name": "エイシンマッカレン",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 8}",
-      "foaledArray": ["1995", "03", "08"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Woodman",
@@ -32,8 +35,11 @@
     {
       "id": "eishin-deputy",
       "name": "エイシンデピュティ",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 9}",
-      "foaledArray": ["2002", "04", "09"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",

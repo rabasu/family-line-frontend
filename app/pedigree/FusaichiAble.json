@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fusaichi Able",
     "rootHorseId": "fusaichi-able",
-    "lastUpdated": "2025-09-22T12:01:41.539778Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fusaichi-able",
       "name": "フサイチエイブル",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",
@@ -32,8 +33,11 @@
     {
       "id": "able-in-race",
       "name": "エイブルインレース",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 9}",
-      "foaledArray": ["2006", "05", "09"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

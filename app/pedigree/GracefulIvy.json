@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Graceful Ivy",
     "rootHorseId": "graceful-ivy",
-    "lastUpdated": "2025-09-27T16:55:43.908211Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "graceful-ivy",
       "name": "グレースフルアイヴイ",
-      "foaled": "{'year': 1947}",
-      "foaledArray": ["1947"],
+      "foaled": {
+        "year": 1947
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Khosro",
@@ -32,8 +33,9 @@
     {
       "id": "miyono-yuki",
       "name": "ミヨノユキ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソロナウェー",
@@ -59,8 +61,11 @@
     {
       "id": "gura-third",
       "name": "グラサード",
-      "foaled": "{'year': 1977, 'month': 3, 'day': 30}",
-      "foaledArray": ["1977", "03", "30"],
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハクホオショウ",
@@ -86,8 +91,11 @@
     {
       "id": "super-gura-third",
       "name": "スーパーグラサード",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 23}",
-      "foaledArray": ["1982", "04", "23"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -296,8 +304,11 @@
     {
       "id": "wonderful-one",
       "name": "ワンダフルワン",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 28}",
-      "foaledArray": ["1982", "03", "28"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -339,8 +350,9 @@
     {
       "id": "national-yoruka",
       "name": "ナショナルヨルカ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サウンドトラック(IRE)",
@@ -366,8 +378,9 @@
     {
       "id": "hamanasuyoruka",
       "name": "ハマナスヨルカ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ビツグヨルカ(GB)",
@@ -392,8 +405,9 @@
     {
       "id": "peteshiyonariyoruka",
       "name": "ペテシヨナリヨルカ",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Petition",
@@ -419,8 +433,11 @@
     {
       "id": "jo-kyzylkum",
       "name": "ジョーキジルクム",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 7}",
-      "foaledArray": ["1980", "04", "07"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アローエクスプレス",
@@ -539,8 +556,9 @@
     {
       "id": "yukino-katsura",
       "name": "ユキノカツラ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アステック",
@@ -562,6 +580,288 @@
         "total": "0万円"
       },
       "damId": "miyono-yuki"
+    },
+    {
+      "id": "hakueihou",
+      "name": "ハクエイホウ",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "セダン(FR)",
+      "dam": "ミヨノユキ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1966z00757",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 5,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "中",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "ダ2100",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "11",
+          "result": "8",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "12",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 10,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "8",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 1,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "金盃(OP)",
+          "displayRace": "金盃（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "9",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "英国フェア開催記念(OP)",
+          "displayRace": "英国フェア開催記念",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "3",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "miyono-yuki"
+    },
+    {
+      "id": "hakusho",
+      "name": "ハクシヨウ",
+      "foaled": {
+        "year": 1958
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヒンドスタン",
+      "dam": "グレースフルアイヴイ",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a0009e3",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1961,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "32",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 5,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "NHK盃競走(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 4,
+            "day": 16
+          },
+          "racecourse": "中山",
+          "race": "皐月賞競走(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "17",
+          "result": "11",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hakusho",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "graceful-ivy"
     }
   ]
 }

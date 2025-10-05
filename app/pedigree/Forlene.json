@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Forlene",
     "rootHorseId": "forlene",
-    "lastUpdated": "2025-09-24T20:52:34.305857Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "forlene",
       "name": "Forlene",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Forli",
@@ -31,8 +32,11 @@
     {
       "id": "sage-wells",
       "name": "サージュウェルズ",
-      "foaled": "{'year': 1991, 'month': 2, 'day': 22}",
-      "foaledArray": ["1991", "02", "22"],
+      "foaled": {
+        "year": 1991,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Sadler's Wells(US)",

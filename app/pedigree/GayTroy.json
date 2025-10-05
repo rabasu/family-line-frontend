@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gay Troy",
     "rootHorseId": "gay-troy",
-    "lastUpdated": "2025-09-23T23:38:37.260793Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gay-troy",
       "name": "ゲイトロイ",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Troy",
@@ -32,8 +33,11 @@
     {
       "id": "mideon-lady",
       "name": "ミデオンレディー",
-      "foaled": "{'year': 1991, 'month': 6, 'day': 6}",
-      "foaledArray": ["1991", "06", "06"],
+      "foaled": {
+        "year": 1991,
+        "month": 6,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アンフィールド(IRE)",
@@ -59,8 +63,11 @@
     {
       "id": "tosen-lily",
       "name": "トーセンリリー",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 4}",
-      "foaledArray": ["2000", "04", "04"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",

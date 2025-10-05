@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Granuaile O'Malley",
     "rootHorseId": "granuaile-omalley",
-    "lastUpdated": "2025-09-15T21:58:09.871198Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "granuaile-omalley",
       "name": "グラニュールオマリー",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mark of Esteem(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "karedoniaredi",
       "name": "カレドニアレディ",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 26}",
-      "foaledArray": ["2009", "04", "26"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Firebreak(GB)",
@@ -58,8 +62,11 @@
     {
       "id": "love-squall",
       "name": "ラヴスコール",
-      "foaled": "{'year': 2021, 'month': 1, 'day': 19}",
-      "foaledArray": ["2021", "01", "19"],
+      "foaled": {
+        "year": 2021,
+        "month": 1,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドゥラメンテ",

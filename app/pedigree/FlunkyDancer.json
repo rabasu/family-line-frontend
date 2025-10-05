@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Flunky Dancer",
     "rootHorseId": "flunky-dancer",
-    "lastUpdated": "2025-09-24T19:21:58.592442Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "flunky-dancer",
       "name": "Flunky Dancer",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fire Dancer",
@@ -31,8 +32,11 @@
     {
       "id": "keiai-my-wolf",
       "name": "ケイアイマイウルフ",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 23}",
-      "foaledArray": ["1995", "02", "23"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Rubiano",

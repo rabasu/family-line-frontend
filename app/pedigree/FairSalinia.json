@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fair Salinia",
     "rootHorseId": "fair-salinia",
-    "lastUpdated": "2025-09-23T11:04:07.258048Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fair-salinia",
       "name": "フェアサリニア",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Petingo",
@@ -32,8 +33,9 @@
     {
       "id": "perfect-circle",
       "name": "パーフェクトサークル",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -59,8 +61,11 @@
     {
       "id": "starry-heaven",
       "name": "スターリーヘヴン",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 9}",
-      "foaledArray": ["2000", "05", "09"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Goodia",
     "rootHorseId": "goodia",
-    "lastUpdated": "2025-09-23T19:08:20.962199Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "goodia",
       "name": "グッディア",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gala Performance",
@@ -32,8 +33,11 @@
     {
       "id": "riversky",
       "name": "リバースキー",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 9}",
-      "foaledArray": ["1981", "05", "09"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラッキーソブリン",
@@ -59,8 +63,11 @@
     {
       "id": "k-g-sky",
       "name": "ケージースキー",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 28}",
-      "foaledArray": ["1991", "04", "28"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シェイディハイツ(GB)",
@@ -88,8 +95,11 @@
     {
       "id": "k-g-adjudi",
       "name": "ケージーアジュデ",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 6}",
-      "foaledArray": ["2001", "04", "06"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アジュディケーティング(US)",

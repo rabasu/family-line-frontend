@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "グリーンフラッシュ",
     "rootHorseId": "guriinfurasshu",
-    "lastUpdated": "2025-09-27T16:40:09.740931Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "guriinfurasshu",
       "name": "グリーンフラッシュ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Aureole",
@@ -31,8 +32,9 @@
     {
       "id": "aino-izumi",
       "name": "アイノイズミ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スティンティノ(GB)",
@@ -58,8 +60,11 @@
     {
       "id": "aino-lady",
       "name": "アイノレディー",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 4}",
-      "foaledArray": ["1980", "05", "04"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フリートウイング(US)",
@@ -131,8 +136,11 @@
     {
       "id": "aino-feather",
       "name": "アイノフェザー",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 8}",
-      "foaledArray": ["1981", "05", "08"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デュール",

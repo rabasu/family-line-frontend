@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dyna's Club",
     "rootHorseId": "dynas-club",
-    "lastUpdated": "2025-09-20T22:29:58.780776Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dynas-club",
       "name": "ダイナズクラブ",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dynaformer",
@@ -32,8 +33,11 @@
     {
       "id": "new-dynasty",
       "name": "ニューダイナスティ",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 16}",
-      "foaledArray": ["2009", "02", "16"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

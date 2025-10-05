@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Diamond City",
     "rootHorseId": "diamond-city",
-    "lastUpdated": "2025-09-20T22:01:20.798128Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "diamond-city",
       "name": "ダイアモンドシティ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "summer-night-city",
       "name": "サマーナイトシティ",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 14}",
-      "foaledArray": ["1999", "03", "14"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エリシオ(FR)",
@@ -61,8 +65,11 @@
     {
       "id": "jour-polaire",
       "name": "ジュールポレール",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 2}",
-      "foaledArray": ["2013", "05", "02"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -211,8 +218,11 @@
     {
       "id": "sadamu-patek",
       "name": "サダムパテック",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 30}",
-      "foaledArray": ["2008", "03", "30"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

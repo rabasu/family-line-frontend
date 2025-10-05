@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Diamond Diva",
     "rootHorseId": "diamond-diva",
-    "lastUpdated": "2025-09-17T11:47:22.768402Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "diamond-diva",
       "name": "ダイヤモンドディーバ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 20}",
-      "foaledArray": ["2004", "03", "20"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dansili",
@@ -32,8 +35,11 @@
     {
       "id": "shadow-diva",
       "name": "シャドウディーヴァ",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 29}",
-      "foaledArray": ["2016", "02", "29"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

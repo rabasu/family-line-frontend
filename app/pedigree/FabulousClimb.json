@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fabulous Climb",
     "rootHorseId": "fabulous-climb",
-    "lastUpdated": "2025-09-24T19:22:59.566111Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fabulous-climb",
       "name": "ファビュラスクライム",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cox's Ridge(US)",
@@ -32,8 +33,11 @@
     {
       "id": "tagano-fabulous",
       "name": "タガノファビュラス",
-      "foaled": "{'year': 1994, 'month': 6, 'day': 9}",
-      "foaledArray": ["1994", "06", "09"],
+      "foaled": {
+        "year": 1994,
+        "month": 6,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クリスタルグリッターズ(US)",

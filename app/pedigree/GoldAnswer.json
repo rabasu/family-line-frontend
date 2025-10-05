@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gold Answer",
     "rootHorseId": "gold-answer",
-    "lastUpdated": "2025-09-20T15:56:14.553278Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gold-answer",
       "name": "ゴールドアンサー",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gold Alert",
@@ -32,8 +33,11 @@
     {
       "id": "mayano-starlight",
       "name": "マヤノスターライト",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 31}",
-      "foaledArray": ["2000", "03", "31"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",
@@ -61,8 +65,11 @@
     {
       "id": "kurino-star-o",
       "name": "クリノスターオー",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 11}",
-      "foaledArray": ["2010", "05", "11"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤボス",

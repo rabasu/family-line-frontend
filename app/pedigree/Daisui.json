@@ -2,15 +2,14 @@
   "metadata": {
     "pedigreeName": "ダイスイ",
     "rootHorseId": "daisui",
-    "lastUpdated": "2025-09-25T19:31:06.525832Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "daisui",
       "name": "ダイスイ",
-      "foaled": "None",
-      "foaledArray": [],
+      "foaled": {},
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "",
@@ -31,8 +30,9 @@
     {
       "id": "koosui",
       "name": "コースイ",
-      "foaled": "{'year': 1909}",
-      "foaledArray": ["1909"],
+      "foaled": {
+        "year": 1909
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "第二アドミラル",
@@ -57,8 +57,9 @@
     {
       "id": "joun",
       "name": "如雲",
-      "foaled": "{'year': 1915}",
-      "foaledArray": ["1915"],
+      "foaled": {
+        "year": 1915
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラスバアン",
@@ -83,8 +84,9 @@
     {
       "id": "kamoike",
       "name": "カモイケ",
-      "foaled": "{'year': 1927}",
-      "foaledArray": ["1927"],
+      "foaled": {
+        "year": 1927
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スプレンドール",
@@ -109,8 +111,9 @@
     {
       "id": "yandour",
       "name": "ヤンドール",
-      "foaled": "{'year': 1939}",
-      "foaledArray": ["1939"],
+      "foaled": {
+        "year": 1939
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゼヤンク(GB)",
@@ -136,8 +139,9 @@
     {
       "id": "young-fuji",
       "name": "ヤングフジ",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アサフジ",
@@ -163,8 +167,9 @@
     {
       "id": "silver-young",
       "name": "シルバーヤング",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テツノチカラ(US)",
@@ -206,8 +211,9 @@
     {
       "id": "young-emperor",
       "name": "ヤングエンペラー",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "グスタフ(GB)",
@@ -264,8 +270,11 @@
     {
       "id": "young-shigeo",
       "name": "ヤングシゲオー",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 22}",
-      "foaledArray": ["1988", "04", "22"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バンブーアトラス",

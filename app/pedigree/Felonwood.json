@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Felonwood",
     "rootHorseId": "felonwood",
-    "lastUpdated": "2025-09-25T15:26:07.713067Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "felonwood",
       "name": "フエロンウッド",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nearula(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "silver-win",
       "name": "シルバーウイン",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガーサント",
@@ -59,8 +61,9 @@
     {
       "id": "fuji-win",
       "name": "フジウイン",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ムーティエ(FR)",
@@ -117,8 +120,11 @@
     {
       "id": "inter-madonna",
       "name": "インターマドンナ",
-      "foaled": "{'year': 1979, 'month': 5, 'day': 1}",
-      "foaledArray": ["1979", "05", "01"],
+      "foaled": {
+        "year": 1979,
+        "month": 5,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -144,8 +150,11 @@
     {
       "id": "kyoei-bowgun",
       "name": "キョウエイボーガン",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 27}",
-      "foaledArray": ["1989", "04", "27"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "テュデナム(IRE)",
@@ -245,6 +254,110 @@
         "local": "0万円"
       },
       "damId": "inter-madonna"
+    },
+    {
+      "id": "daini-tenran",
+      "name": "ダイニテンラン",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "Zimone",
+      "dam": "フエロンウッド",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000a45",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1966,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "16",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 3,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 3,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "ダ2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 2,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 2,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "東京新聞盃(OP)",
+          "displayRace": "東京新聞盃",
+          "distance": "ダ2400",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Daini Tenran",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "felonwood"
     }
   ]
 }

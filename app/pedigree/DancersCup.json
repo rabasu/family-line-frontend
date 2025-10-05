@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dancer's Cup",
     "rootHorseId": "dancers-cup",
-    "lastUpdated": "2025-09-22T00:09:05.248634Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dancers-cup",
       "name": "ダンサーズカップ",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Dancer",
@@ -32,8 +33,11 @@
     {
       "id": "super-rivlia",
       "name": "スーパーリヴリア",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 26}",
-      "foaledArray": ["1990", "04", "26"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リヴリア(US)",
@@ -59,8 +63,11 @@
     {
       "id": "dance-in-the-more",
       "name": "ダンスインザモア",
-      "foaled": "{'year': 2002, 'month': 5, 'day': 3}",
-      "foaledArray": ["2002", "05", "03"],
+      "foaled": {
+        "year": 2002,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

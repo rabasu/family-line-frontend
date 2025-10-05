@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fasta",
     "rootHorseId": "fasta",
-    "lastUpdated": "2025-09-20T15:56:00.111778Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fasta",
       "name": "ファスタ",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Song",
@@ -32,8 +33,11 @@
     {
       "id": "omega-fastar",
       "name": "オメガファスター",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 31}",
-      "foaledArray": ["2001", "03", "31"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Theatrical",
@@ -61,8 +65,11 @@
     {
       "id": "apollo-maverick",
       "name": "アポロマーベリック",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 15}",
-      "foaledArray": ["2009", "04", "15"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アポロキングダム",

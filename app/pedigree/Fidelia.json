@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fidelia",
     "rootHorseId": "fidelia",
-    "lastUpdated": "2025-09-23T21:35:03.757838Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fidelia",
       "name": "フィデリア",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "king-fidelia",
       "name": "キングフィデリア",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 12}",
-      "foaledArray": ["1998", "04", "12"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",

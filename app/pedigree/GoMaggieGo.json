@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Go Maggie Go",
     "rootHorseId": "go-maggie-go",
-    "lastUpdated": "2025-09-16T07:41:31.197578Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "go-maggie-go",
       "name": "ゴーマギーゴー",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 24}",
-      "foaledArray": ["2013", "04", "24"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ghostzapper",
@@ -32,14 +35,17 @@
     {
       "id": "go-so-far",
       "name": "ゴーソーファー",
-      "foaled": "{'year': 2022, 'month': 4, 'day': 2}",
-      "foaledArray": ["2022", "04", "02"],
+      "foaled": {
+        "year": 2022,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キズナ",
       "dam": "ゴーマギーゴー",
-      "color": "鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022104781",
       "raceStats": {
         "total": {
@@ -107,8 +113,11 @@
     {
       "id": "open-fire",
       "name": "オープンファイア",
-      "foaled": "{'year': 2020, 'month': 1, 'day': 25}",
-      "foaledArray": ["2020", "01", "25"],
+      "foaled": {
+        "year": 2020,
+        "month": 1,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gabby",
     "rootHorseId": "gabby",
-    "lastUpdated": "2025-09-23T23:10:12.226068Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gabby",
       "name": "Gabby",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "In the Purple",
@@ -31,8 +32,11 @@
     {
       "id": "st-steven",
       "name": "セントスティーヴン",
-      "foaled": "{'year': 1994, 'month': 10, 'day': 27}",
-      "foaledArray": ["1994", "10", "27"],
+      "foaled": {
+        "year": 1994,
+        "month": 10,
+        "day": 27
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Hula Town",

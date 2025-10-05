@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Derby Kingdom",
     "rootHorseId": "derby-kingdom",
-    "lastUpdated": "2025-09-23T18:38:29.943757Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "derby-kingdom",
       "name": "ダービーキングダム",
-      "foaled": "{'year': 1992, 'month': 2, 'day': 19}",
-      "foaledArray": ["1992", "02", "19"],
+      "foaled": {
+        "year": 1992,
+        "month": 2,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルアカデミーII(US)",
@@ -32,8 +35,11 @@
     {
       "id": "derby-regno",
       "name": "ダービーレグノ",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 7}",
-      "foaledArray": ["1998", "04", "07"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",

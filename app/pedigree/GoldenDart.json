@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "ゴールデンダート",
     "rootHorseId": "golden-dart",
-    "lastUpdated": "2025-09-22T03:08:37.272902Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "golden-dart",
       "name": "ゴールデンダート",
-      "foaled": "{'year': 1926}",
-      "foaledArray": ["1926"],
+      "foaled": {
+        "year": 1926
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Baydrop",
@@ -26,13 +27,18 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping",
+      "importedYear": "1929",
+      "familyNumber": "F2-b",
+      "registration": "5巻619号",
+      "owner": "小林国威（ユートピア牧場）"
     },
     {
       "id": "rigaayuutopia",
       "name": "リガーユートピア",
-      "foaled": "{'year': 1938}",
-      "foaledArray": ["1938"],
+      "foaled": {
+        "year": 1938
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミラクルユートピア",
@@ -57,8 +63,9 @@
     {
       "id": "misukooteru",
       "name": "ミスコーテル",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トシシロ",
@@ -174,8 +181,9 @@
     {
       "id": "teru-queen",
       "name": "テルクイン",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フェリオール(FR)",
@@ -307,8 +315,9 @@
     {
       "id": "ishino-hana",
       "name": "イシノハナ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラティフィケイション",
@@ -334,8 +343,11 @@
     {
       "id": "heian-pearl",
       "name": "ヘイアンパール",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 14}",
-      "foaledArray": ["1983", "04", "14"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",
@@ -363,8 +375,11 @@
     {
       "id": "wedding-honey",
       "name": "ウェディングハニー",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 4}",
-      "foaledArray": ["1993", "05", "04"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -423,8 +438,11 @@
     {
       "id": "wedding-fujiko",
       "name": "ウェディングフジコ",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 8}",
-      "foaledArray": ["2004", "04", "08"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -689,6 +707,396 @@
         "local": "2,095万円"
       },
       "damId": "wedding-honey"
+    },
+    {
+      "id": "hospitality",
+      "name": "ホスピタリテイ",
+      "foaled": {
+        "year": 1979,
+        "month": 5,
+        "day": 16
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "テュデナム(IRE)",
+      "dam": "トウコウポポ",
+      "color": "黒鹿毛",
+      "breeder": "ラッキー牧場（新冠町）",
+      "netkeibaId": "1979105216",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hospitality",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "toko-popo"
+    },
+    {
+      "id": "toko-popo",
+      "name": "トウコウポポ",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アイアンリージ",
+      "dam": "フジチヨ",
+      "color": "黒鹿毛",
+      "breeder": "福島県",
+      "netkeibaId": "000a004e49",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Toko Popo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fujichiyo-1964"
+    },
+    {
+      "id": "fujichiyo-1964",
+      "name": "フジチヨ",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "スコット(FR)",
+      "dam": "フヂチヨ",
+      "color": "黒鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a003b5e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Fujichiyo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fujichiyo-1964"
+    },
+    {
+      "id": "fujichiyo-1956",
+      "name": "フヂチヨ",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トシシロ",
+      "dam": "エルジン",
+      "color": "鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a002dd3",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "elgin"
+    },
+    {
+      "id": "elgin",
+      "name": "エルジン",
+      "foaled": {
+        "year": 1949
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セフト(GB)",
+      "dam": "マアシイーユートピア",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a00288d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Elgin",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "marcy-utopia"
+    },
+    {
+      "id": "marcy-utopia",
+      "name": "マアシイーユートピア",
+      "foaled": {
+        "year": 1933
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クイツケロ(GB)",
+      "dam": "ゴールデンダート",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a0026a4",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Marcy Utopia",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "golden-dart"
+    },
+    {
+      "id": "guddokyattsuai",
+      "name": "グッドキャッツアイ",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ロムルス",
+      "dam": "アサヒユートピア",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1971z00146",
+      "raceStats": {
+        "total": {
+          "runs": 46,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "15",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 3,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(OP)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 8,
+            "day": 19
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "asahi-yuhtopia"
+    },
+    {
+      "id": "asahi-yuhtopia",
+      "name": "アサヒユートピア",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "リンボー(US)",
+      "dam": "エルジン",
+      "color": "鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a00397b",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Asahi Yuhtopia",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "elgin"
+    },
+    {
+      "id": "royal-ace",
+      "name": "ローヤルエース",
+      "foaled": {
+        "year": 1960
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "リンボー(US)",
+      "dam": "エルジン",
+      "color": "黒鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a000aad",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1963,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "京都記念競走(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 10,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "朝日チヤレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "神戸盃競走(OP)",
+          "displayRace": "神戸盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "毎日盃競走(OP)",
+          "displayRace": "毎日盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Royal Ace",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "elgin"
     }
   ]
 }

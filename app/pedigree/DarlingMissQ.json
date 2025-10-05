@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Darling Miss Q.",
     "rootHorseId": "darling-miss-q",
-    "lastUpdated": "2025-09-24T18:49:29.363989Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "darling-miss-q",
       "name": "ダーリングミスキュー",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar",
@@ -32,8 +33,11 @@
     {
       "id": "wild-bluster",
       "name": "ワイルドブラスター",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 13}",
-      "foaledArray": ["1992", "04", "13"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Wild Again",

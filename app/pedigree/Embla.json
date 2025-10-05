@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Embla",
     "rootHorseId": "embla",
-    "lastUpdated": "2025-09-24T05:06:40.033934Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "embla",
       "name": "エンブラ",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dominion",
@@ -32,8 +33,9 @@
     {
       "id": "catria",
       "name": "カトリア",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -59,8 +61,11 @@
     {
       "id": "apollo-phoenix",
       "name": "アポロフェニックス",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 5}",
-      "foaledArray": ["2005", "03", "05"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
@@ -359,8 +364,11 @@
     {
       "id": "zenno-el-cid",
       "name": "ゼンノエルシド",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 26}",
-      "foaledArray": ["1997", "03", "26"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",

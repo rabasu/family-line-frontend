@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Exhibit One",
     "rootHorseId": "exhibit-one",
-    "lastUpdated": "2025-09-18T18:26:09.830950Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "exhibit-one",
       "name": "イグジビットワン",
-      "foaled": "{'year': 2002, 'month': 1, 'day': 21}",
-      "foaledArray": ["2002", "01", "21"],
+      "foaled": {
+        "year": 2002,
+        "month": 1,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",
@@ -32,8 +35,11 @@
     {
       "id": "art-brut",
       "name": "アールブリュット",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 28}",
-      "foaledArray": ["2012", "02", "28"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マクフィ(GB)",
@@ -92,8 +98,11 @@
     {
       "id": "parallel-vision",
       "name": "パラレルヴィジョン",
-      "foaled": "{'year': 2019, 'month': 2, 'day': 4}",
-      "foaledArray": ["2019", "02", "04"],
+      "foaled": {
+        "year": 2019,
+        "month": 2,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",
@@ -257,8 +266,11 @@
     {
       "id": "maitres-dart",
       "name": "メートルダール",
-      "foaled": "{'year': 2013, 'month': 2, 'day': 22}",
-      "foaledArray": ["2013", "02", "22"],
+      "foaled": {
+        "year": 2013,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゼンノロブロイ",

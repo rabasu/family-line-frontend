@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Donitas Victory",
     "rootHorseId": "donitas-victory",
-    "lastUpdated": "2025-09-27T03:32:01.350201Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "donitas-victory",
       "name": "ドニタスヴィクトリー",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "War Admiral",
@@ -32,8 +33,9 @@
     {
       "id": "mejiro-osaka",
       "name": "メジロオーサカ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロサンマン",
@@ -135,8 +137,11 @@
     {
       "id": "mejiro-antares",
       "name": "メジロアンタレス",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 4}",
-      "foaledArray": ["1979", "04", "04"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "メジロゲッコウ",

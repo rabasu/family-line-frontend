@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Fair Ellen",
     "rootHorseId": "fair-ellen",
-    "lastUpdated": "2025-09-18T12:26:51.415735Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fair-ellen",
       "name": "フェアエレン",
-      "foaled": "{'year': 2009, 'month': 1, 'day': 23}",
-      "foaledArray": ["2009", "01", "23"],
+      "foaled": {
+        "year": 2009,
+        "month": 1,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Street Cry(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "turbo",
       "name": "トゥルボー",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 6}",
-      "foaledArray": ["2016", "04", "06"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オルフェーヴル",
@@ -137,8 +143,11 @@
     {
       "id": "chain-of-love",
       "name": "チェーンオブラブ",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 15}",
-      "foaledArray": ["2017", "04", "15"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

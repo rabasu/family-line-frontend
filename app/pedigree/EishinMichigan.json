@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Eishin Michigan",
     "rootHorseId": "eishin-michigan",
-    "lastUpdated": "2025-09-23T12:33:56.609273Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "eishin-michigan",
       "name": "エイシンミシガン",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 5}",
-      "foaledArray": ["1989", "03", "05"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Manila",
@@ -32,8 +35,11 @@
     {
       "id": "eishin-champ",
       "name": "エイシンチャンプ",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 23}",
-      "foaledArray": ["2000", "03", "23"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ミシエロ(US)",

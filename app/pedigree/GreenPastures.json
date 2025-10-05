@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Green Pastures",
     "rootHorseId": "green-pastures",
-    "lastUpdated": "2025-09-25T03:48:35.297063Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "green-pastures",
       "name": "グリーンパスチヤーズ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Palestine(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "kyoei-share",
       "name": "キョウエイシェアー",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 28}",
-      "foaledArray": ["1978", "04", "28"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フォルティノ",
@@ -59,8 +63,11 @@
     {
       "id": "charme-majeur",
       "name": "シャルムマイヤー",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 4}",
-      "foaledArray": ["1990", "04", "04"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",
@@ -88,8 +95,11 @@
     {
       "id": "opera-city",
       "name": "オペラシチー",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 16}",
-      "foaledArray": ["2001", "04", "16"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",
@@ -253,8 +263,11 @@
     {
       "id": "osumi-leopard",
       "name": "オースミレパード",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 26}",
-      "foaledArray": ["1991", "04", "26"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",

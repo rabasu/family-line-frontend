@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Frances Anne",
     "rootHorseId": "frances-anne",
-    "lastUpdated": "2025-09-27T08:06:03.725005Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "frances-anne",
       "name": "フランスアンヌ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マタドア",
@@ -32,8 +33,9 @@
     {
       "id": "franches-ciro",
       "name": "フランチェスシロー",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sayajirao(GB)",
@@ -59,8 +61,9 @@
     {
       "id": "burumen-ciro",
       "name": "ブルメンシロー",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タンディ(GB)",
@@ -86,8 +89,11 @@
     {
       "id": "karl-ciro",
       "name": "カールシロー",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 4}",
-      "foaledArray": ["1983", "04", "04"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "レッドアラート",
@@ -202,6 +208,157 @@
         "local": "0万円"
       },
       "damId": "burumen-ciro"
+    },
+    {
+      "id": "fair-sport",
+      "name": "フェアスポート",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "タンディ(GB)",
+      "dam": "フランチェスシロー",
+      "color": "黒鹿毛",
+      "breeder": "鵡川町",
+      "netkeibaId": "000a000c0c",
+      "raceStats": {
+        "total": {
+          "runs": 23,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 6,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "12",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 5,
+            "day": 15
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "17",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 6,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "朝日杯3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "京成杯3歳S(OP)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fair Sport",
+      "prizeMoney": {
+        "total": "750万円",
+        "central": "750万円",
+        "local": "0万円"
+      },
+      "damId": "franches-ciro"
     }
   ]
 }

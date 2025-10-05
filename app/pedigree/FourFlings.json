@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Four Flings",
     "rootHorseId": "four-flings",
-    "lastUpdated": "2025-09-23T09:34:41.446076Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "four-flings",
       "name": "フォーフリングス",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Quadratic",
@@ -32,8 +33,11 @@
     {
       "id": "full-flings",
       "name": "フルフリングス",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 20}",
-      "foaledArray": ["1994", "05", "20"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -61,8 +65,11 @@
     {
       "id": "t-m-churasan",
       "name": "テイエムチュラサン",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 15}",
-      "foaledArray": ["2002", "04", "15"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",

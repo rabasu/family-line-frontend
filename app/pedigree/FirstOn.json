@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "pedigreeName": "First On",
+    "rootHorseId": "first-on",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
+  },
+  "horses": [
+    {
+      "id": "first-on",
+      "name": "ファーストオン",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "On-And-On",
+      "dam": "Hot Patootie",
+      "color": "栗毛",
+      "breeder": "米",
+      "netkeibaId": "000a0005e7",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "First On"
+    },
+    {
+      "id": "shinzan-hiryu",
+      "name": "シンザンヒリウ",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シンザン",
+      "dam": "ファーストオン",
+      "color": "鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "1955105124",
+      "raceStats": {
+        "total": {
+          "runs": 2,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Shinzan Hiryu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "first-on"
+    },
+    {
+      "id": "super-fast",
+      "name": "スーパーファスト",
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 15
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セントクレスピン(GB)",
+      "dam": "シンザンヒリウ",
+      "color": "栗毛",
+      "breeder": "小笠原牧場（静内町）",
+      "netkeibaId": "1978104133",
+      "raceStats": {
+        "total": {
+          "runs": 12,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "日経賞(OP)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 9,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "クイーンS(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Super Fast",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shinzan-hiryu"
+    }
+  ]
+}

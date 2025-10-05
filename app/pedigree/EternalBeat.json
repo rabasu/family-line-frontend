@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Eternal Beat",
     "rootHorseId": "eternal-beat",
-    "lastUpdated": "2025-09-23T12:32:23.847727Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "eternal-beat",
       "name": "エターナルビート",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 10}",
-      "foaledArray": ["1996", "05", "10"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pentelicus",
@@ -32,8 +35,11 @@
     {
       "id": "forevermore",
       "name": "フォーエバーモア",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 6}",
-      "foaledArray": ["2011", "02", "06"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
@@ -182,8 +188,11 @@
     {
       "id": "maruka-sieg",
       "name": "マルカジーク",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 25}",
-      "foaledArray": ["2002", "03", "25"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

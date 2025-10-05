@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Daisy Dukes",
     "rootHorseId": "daisy-dukes",
-    "lastUpdated": "2025-09-22T19:52:01.613747Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "daisy-dukes",
       "name": "Daisy Dukes",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ghazi",
@@ -31,8 +32,11 @@
     {
       "id": "surplus-singer",
       "name": "サープラスシンガー",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 8}",
-      "foaledArray": ["2004", "04", "08"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Songandaprayer",

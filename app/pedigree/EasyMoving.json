@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Easy Moving",
     "rootHorseId": "easy-moving",
-    "lastUpdated": "2025-09-24T04:06:57.047241Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "easy-moving",
       "name": "イージームービング",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,11 @@
     {
       "id": "trust-fire",
       "name": "トラストファイヤー",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 21}",
-      "foaledArray": ["1998", "03", "21"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

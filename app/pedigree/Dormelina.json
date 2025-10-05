@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dormelina",
     "rootHorseId": "dormelina",
-    "lastUpdated": "2025-09-27T08:06:19.096399Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dormelina",
       "name": "ドルメリーナ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Edellic",
@@ -32,8 +33,9 @@
     {
       "id": "belle-dard",
       "name": "ベルダード",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Worden",
@@ -59,8 +61,9 @@
     {
       "id": "cutie-cherry",
       "name": "キューティチエリー",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファラモンド",
@@ -86,8 +89,11 @@
     {
       "id": "happy-lewis",
       "name": "ハッピールイス",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 24}",
-      "foaledArray": ["1982", "03", "24"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キャタオラ(US)",

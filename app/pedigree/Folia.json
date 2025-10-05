@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Folia",
     "rootHorseId": "folia",
-    "lastUpdated": "2025-09-15T09:18:57.541498Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "folia",
       "name": "フォーリア",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "folia-queen",
       "name": "フォーリアクイーン",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 16}",
-      "foaledArray": ["1997", "02", "16"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "sinister-queen",
       "name": "シニスタークイーン",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 22}",
-      "foaledArray": ["2009", "03", "22"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シニスターミニスター(US)",
@@ -90,8 +97,11 @@
     {
       "id": "meisho-funjin",
       "name": "メイショウフンジン",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 27}",
-      "foaledArray": ["2018", "04", "27"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホッコータルマエ",

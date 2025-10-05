@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fairy Tale",
     "rootHorseId": "fairy-tale",
-    "lastUpdated": "2025-09-25T13:26:01.183675Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fairy-tale",
       "name": "フェアリーテイル",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sicambre",
@@ -32,8 +33,11 @@
     {
       "id": "meishosky",
       "name": "メイショウスキー",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 26}",
-      "foaledArray": ["1981", "05", "26"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
@@ -59,8 +63,11 @@
     {
       "id": "green-olive",
       "name": "グリーンオリーヴ",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 3}",
-      "foaledArray": ["1997", "05", "03"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -88,8 +95,11 @@
     {
       "id": "kitano-vision",
       "name": "キタノヴィジョン",
-      "foaled": "{'year': 2017, 'month': 5, 'day': 11}",
-      "foaledArray": ["2017", "05", "11"],
+      "foaled": {
+        "year": 2017,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "メイショウボーラー",
@@ -223,13 +233,15 @@
     {
       "id": "meisho-suzanna",
       "name": "メイショウスザンナ",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 27}",
-      "foaledArray": ["2009", "04", "27"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスデジタル",
       "dam": "グリーンオリーヴ",
-      "dam_netkeiba_id": "1997105297",
       "color": "鹿毛",
       "breeder": "北星村田牧場（新冠町）",
       "netkeibaId": "2009105230",
@@ -504,13 +516,17 @@
         "central": "1億3,736万円",
         "local": "0万円"
       },
-      "damId": "green-olive"
+      "damId": "green-olive",
+      "dam_netkeiba_id": "1997105297"
     },
     {
       "id": "ein-bride",
       "name": "アインブライド",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 14}",
-      "foaledArray": ["1995", "04", "14"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コマンダーインチーフ(GB)",
@@ -674,8 +690,11 @@
     {
       "id": "seven-leto",
       "name": "セブンレットウ",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 9}",
-      "foaledArray": ["1984", "05", "09"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -703,8 +722,11 @@
     {
       "id": "hokusei-midori",
       "name": "ホクセーミドリ",
-      "foaled": "{'year': 1976, 'month': 3, 'day': 24}",
-      "foaledArray": ["1976", "03", "24"],
+      "foaled": {
+        "year": 1976,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -778,8 +800,11 @@
     {
       "id": "meisho-homura",
       "name": "メイショウホムラ",
-      "foaled": "{'year': 1988, 'month': 2, 'day': 17}",
-      "foaledArray": ["1988", "02", "17"],
+      "foaled": {
+        "year": 1988,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",

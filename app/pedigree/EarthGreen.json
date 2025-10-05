@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Earth Green",
     "rootHorseId": "earth-green",
-    "lastUpdated": "2025-09-20T11:46:12.164003Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "earth-green",
       "name": "アースグリーン",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 24}",
-      "foaledArray": ["2008", "02", "24"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Street Cry(IRE)",
       "dam": "Sauveteur",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "Fares Farm LLC（米）",
       "netkeibaId": "2008110076",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Earth Green"
+      "englishName": "Earth Green",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "respect-earth",
       "name": "リスペクトアース",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 17}",
-      "foaledArray": ["2013", "03", "17"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
       "dam": "アースグリーン",
-      "dam_netkeiba_id": "2008110076",
       "color": "黒鹿毛",
       "breeder": "恵比寿興業株式会社那須野牧場（栃木県）",
       "netkeibaId": "2013109018",
@@ -104,7 +109,8 @@
         "central": "4,522万円",
         "local": "0万円"
       },
-      "damId": "earth-green"
+      "damId": "earth-green",
+      "dam_netkeiba_id": "2008110076"
     }
   ]
 }

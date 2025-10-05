@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fuenji",
     "rootHorseId": "fuenji",
-    "lastUpdated": "2025-09-20T14:07:43.222199Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fuenji",
       "name": "フェンジー",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Saumarez(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "french-bikini",
       "name": "フレンチビキニ",
-      "foaled": "{'year': 2002, 'month': 5, 'day': 28}",
-      "foaledArray": ["2002", "05", "28"],
+      "foaled": {
+        "year": 2002,
+        "month": 5,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -77,8 +81,11 @@
     {
       "id": "belles-soeurs",
       "name": "ベルスール",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 22}",
-      "foaledArray": ["2016", "03", "22"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スウェプトオーヴァーボード(US)",
@@ -137,13 +144,15 @@
     {
       "id": "belle-lumiere",
       "name": "ベルルミエール",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 14}",
-      "foaledArray": ["2011", "04", "14"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スウェプトオーヴァーボード(US)",
       "dam": "フレンチビキニ",
-      "dam_netkeiba_id": "2002100626",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2011104391",
@@ -388,7 +397,8 @@
         "central": "1億2,121万円",
         "local": "0万円"
       },
-      "damId": "french-bikini"
+      "damId": "french-bikini",
+      "dam_netkeiba_id": "2002100626"
     }
   ]
 }

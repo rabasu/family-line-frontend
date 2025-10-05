@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Franca",
     "rootHorseId": "franca",
-    "lastUpdated": "2025-09-22T21:56:43.322744Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "franca",
       "name": "フランカ",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
@@ -32,8 +33,11 @@
     {
       "id": "hagino-felice",
       "name": "ハギノフェリーチェ",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 25}",
-      "foaledArray": ["2002", "02", "25"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -59,8 +63,11 @@
     {
       "id": "hagino-comment",
       "name": "ハギノコメント",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 21}",
-      "foaledArray": ["2009", "03", "21"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ファルブラヴ(IRE)",
@@ -104,8 +111,11 @@
     {
       "id": "hagino-lucere",
       "name": "ハギノルチェーレ",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 18}",
-      "foaledArray": ["2004", "04", "18"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

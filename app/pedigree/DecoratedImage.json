@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Decorated Image",
     "rootHorseId": "decorated-image",
-    "lastUpdated": "2025-09-25T00:24:51.457619Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "decorated-image",
       "name": "Decorated Image",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Well Decorated",
@@ -31,8 +32,11 @@
     {
       "id": "super-dress",
       "name": "スーパードレス",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 1}",
-      "foaledArray": ["1994", "04", "01"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",

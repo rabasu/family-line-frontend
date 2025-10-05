@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gaily Grecian",
     "rootHorseId": "gaily-grecian",
-    "lastUpdated": "2025-09-23T20:04:28.454523Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gaily-grecian",
       "name": "Gaily Grecian",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ela-Mana-Mou",
@@ -31,8 +32,11 @@
     {
       "id": "hyuma",
       "name": "ヒューマ",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 20}",
-      "foaledArray": ["2000", "03", "20"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Polish Precedent(US)",

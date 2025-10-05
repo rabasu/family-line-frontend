@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dixieland Gem",
     "rootHorseId": "dixieland-gem",
-    "lastUpdated": "2025-09-17T04:32:15.123977Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dixieland-gem",
       "name": "ディキシーランドジェム",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dixieland Band",
@@ -32,8 +33,11 @@
     {
       "id": "barbara",
       "name": "バーバラ",
-      "foaled": "{'year': 2009, 'month': 6, 'day': 5}",
-      "foaledArray": ["2009", "06", "05"],
+      "foaled": {
+        "year": 2009,
+        "month": 6,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -197,8 +201,11 @@
     {
       "id": "eternal-victory",
       "name": "エターナルビクトリ",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 28}",
-      "foaledArray": ["2019", "03", "28"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",

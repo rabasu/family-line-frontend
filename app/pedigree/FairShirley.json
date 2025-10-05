@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Fair Shirley",
     "rootHorseId": "fair-shirley",
-    "lastUpdated": "2025-09-22T11:01:29.670195Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "fair-shirley",
       "name": "フェアシャーリー",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Shirley Heights(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "aladeya",
       "name": "アラデヤ",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",
@@ -59,8 +61,11 @@
     {
       "id": "meiner-scherzi",
       "name": "マイネルスケルツィ",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 17}",
-      "foaledArray": ["2003", "02", "17"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "グラスワンダー",
@@ -389,8 +394,11 @@
     {
       "id": "t-up-gold",
       "name": "ティアップゴールド",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 7}",
-      "foaledArray": ["2006", "03", "07"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クロフネ",

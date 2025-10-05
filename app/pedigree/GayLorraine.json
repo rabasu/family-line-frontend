@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Gay Lorraine",
     "rootHorseId": "gay-lorraine",
-    "lastUpdated": "2025-09-20T11:47:52.460582Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "gay-lorraine",
       "name": "ゲイロレンヌ",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fabulous Dancer",
@@ -32,8 +33,11 @@
     {
       "id": "tayasu-bloom",
       "name": "タヤスブルーム",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 4}",
-      "foaledArray": ["1996", "04", "04"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -182,8 +186,11 @@
     {
       "id": "bloomin-bar",
       "name": "ブルーミンバー",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 22}",
-      "foaledArray": ["2005", "03", "22"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファルブラヴ(IRE)",
@@ -257,8 +264,11 @@
     {
       "id": "tosen-bless",
       "name": "トーセンブレス",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 5}",
-      "foaledArray": ["2015", "03", "05"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -407,8 +417,11 @@
     {
       "id": "tsuzumimon",
       "name": "ツヅミモン",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 23}",
-      "foaledArray": ["2015", "02", "23"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ストロングリターン",
@@ -497,8 +510,11 @@
     {
       "id": "katamachi-botan",
       "name": "カタマチボタン",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 6}",
-      "foaledArray": ["2004", "04", "06"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -617,13 +633,15 @@
     {
       "id": "niji-bloom",
       "name": "ニジブルーム",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 26}",
-      "foaledArray": ["2008", "04", "26"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
       "dam": "タヤスブルーム",
-      "dam_netkeiba_id": "1996101607",
       "color": "芦毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2008102897",
@@ -733,7 +751,8 @@
         "central": "1億1,225万円",
         "local": "0万円"
       },
-      "damId": "tayasu-bloom"
+      "damId": "tayasu-bloom",
+      "dam_netkeiba_id": "1996101607"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dinner Time",
     "rootHorseId": "dinner-time",
-    "lastUpdated": "2025-09-22T02:06:29.479007Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dinner-time",
       "name": "ディナータイム",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bering",
@@ -32,8 +33,11 @@
     {
       "id": "reserve-card",
       "name": "リザーブカード",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 17}",
-      "foaledArray": ["2003", "02", "17"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

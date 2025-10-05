@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Dolsk",
     "rootHorseId": "dolsk",
-    "lastUpdated": "2025-09-23T21:03:13.260349Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dolsk",
       "name": "ドルスク",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,9 @@
     {
       "id": "drum-melody",
       "name": "ドラムメロディー",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
@@ -59,8 +61,11 @@
     {
       "id": "marubutsu-top",
       "name": "マルブツトップ",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 13}",
-      "foaledArray": ["2000", "03", "13"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -329,8 +334,11 @@
     {
       "id": "millennium-bio",
       "name": "ミレニアムバイオ",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 6}",
-      "foaledArray": ["1998", "02", "06"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

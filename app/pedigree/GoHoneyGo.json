@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Go Honey Go",
     "rootHorseId": "go-honey-go",
-    "lastUpdated": "2025-09-24T04:08:51.750766Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "go-honey-go",
       "name": "Go Honey Go",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "General Assembly",
@@ -31,8 +32,11 @@
     {
       "id": "gaily-flash",
       "name": "ゲイリーフラッシュ",
-      "foaled": "{'year': 1993, 'month': 2, 'day': 28}",
-      "foaledArray": ["1993", "02", "28"],
+      "foaled": {
+        "year": 1993,
+        "month": 2,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Dancer Destination",
     "rootHorseId": "dancer-destination",
-    "lastUpdated": "2025-09-15T19:27:34.398747Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "dancer-destination",
       "name": "ダンサーデスティネイション",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 2}",
-      "foaledArray": ["2010", "02", "02"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dubai Destination",
@@ -32,8 +35,11 @@
     {
       "id": "bellagio-bond",
       "name": "ベラジオボンド",
-      "foaled": "{'year': 2021, 'month': 2, 'day': 15}",
-      "foaledArray": ["2021", "02", "15"],
+      "foaled": {
+        "year": 2021,
+        "month": 2,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",

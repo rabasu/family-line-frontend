@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Egeria",
     "rootHorseId": "egeria",
-    "lastUpdated": "2025-09-18T20:54:10.797492Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "egeria",
       "name": "エーゲリア",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 6}",
-      "foaledArray": ["2002", "02", "06"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Giant(US)",
@@ -32,8 +35,11 @@
     {
       "id": "shuri",
       "name": "シュリ",
-      "foaled": "{'year': 2016, 'month': 5, 'day': 1}",
-      "foaledArray": ["2016", "05", "01"],
+      "foaled": {
+        "year": 2016,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -197,8 +203,11 @@
     {
       "id": "great-charter",
       "name": "グレイトチャーター",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 31}",
-      "foaledArray": ["2012", "03", "31"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

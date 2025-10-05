@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "For Evva Silca",
     "rootHorseId": "for-evva-silca",
-    "lastUpdated": "2025-09-21T09:50:20.109986Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "for-evva-silca",
       "name": "For Evva Silca",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Piccolo",
@@ -31,8 +32,11 @@
     {
       "id": "meiner-eternel",
       "name": "マイネルエテルネル",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 5}",
-      "foaledArray": ["2010", "04", "05"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Tamayuz",

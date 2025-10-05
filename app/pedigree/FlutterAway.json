@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Flutter Away",
     "rootHorseId": "flutter-away",
-    "lastUpdated": "2025-09-25T12:53:02.863099Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "flutter-away",
       "name": "フラッターアウエイ",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lomond",
@@ -32,8 +33,11 @@
     {
       "id": "takano-prima",
       "name": "タカノプリマ",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 14}",
-      "foaledArray": ["1990", "04", "14"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バンブーアトラス",

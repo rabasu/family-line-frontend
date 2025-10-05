@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Ferdeen",
     "rootHorseId": "ferdeen",
-    "lastUpdated": "2025-09-20T15:56:41.294136Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ferdeen",
       "name": "ファーディーン",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 27}",
-      "foaledArray": ["1995", "02", "27"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファーディナンド(US)",
@@ -32,8 +35,11 @@
     {
       "id": "noisette",
       "name": "ノワゼット",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 14}",
-      "foaledArray": ["2001", "04", "14"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ウォーニング(GB)",
@@ -59,8 +65,11 @@
     {
       "id": "minaret",
       "name": "ミナレット",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 12}",
-      "foaledArray": ["2010", "04", "12"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スズカマンボ",
