@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hook Line",
     "rootHorseId": "hook-line",
-    "lastUpdated": "2025-09-18T16:18:34.783605Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hook-line",
       "name": "フックライン",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シャーディー(US)",
@@ -32,8 +33,11 @@
     {
       "id": "blanche-neige",
       "name": "ブランシュネージュ",
-      "foaled": "{'year': 2002, 'month': 5, 'day': 5}",
-      "foaledArray": ["2002", "05", "05"],
+      "foaled": {
+        "year": 2002,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
@@ -61,8 +65,11 @@
     {
       "id": "grimm",
       "name": "グリム",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 28}",
-      "foaledArray": ["2015", "04", "28"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゼンノロブロイ",

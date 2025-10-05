@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "ヒジョラマ",
     "rootHorseId": "hijorama",
-    "lastUpdated": "2025-09-25T21:29:46.076538Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hijorama",
       "name": "ヒジョラマ",
-      "foaled": "{'year': 1947}",
-      "foaledArray": ["1947"],
+      "foaled": {
+        "year": 1947
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Panorama",
@@ -31,8 +32,9 @@
     {
       "id": "sentoririi",
       "name": "セントリリー",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リンボー(US)",
@@ -57,8 +59,9 @@
     {
       "id": "bannah-mariya",
       "name": "バンナーマリヤ",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガルカドール",
@@ -84,8 +87,11 @@
     {
       "id": "banner-mikuni",
       "name": "バンナーミクニ",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 1}",
-      "foaledArray": ["1978", "05", "01"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アレツ",
@@ -111,8 +117,11 @@
     {
       "id": "racketball",
       "name": "ラケットボール",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 17}",
-      "foaledArray": ["1985", "04", "17"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リュウファーロス",
@@ -377,6 +386,376 @@
         "local": "119万円"
       },
       "damId": "banner-mikuni"
+    },
+    {
+      "id": "akane-hachiman",
+      "name": "アカネハチマン",
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 16
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ホーント",
+      "dam": "シャレード",
+      "color": "鹿毛",
+      "breeder": "三浦牧場（青森県）",
+      "netkeibaId": "1978102246",
+      "raceStats": {
+        "total": {
+          "runs": 23,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "10",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "16",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "中山",
+          "race": "ダービー卿チヤレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 3,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "9",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "弥生賞(OP)",
+          "displayRace": "弥生賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "京成杯(OP)",
+          "displayRace": "京成杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Akane Hachiman",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "shareedo",
+      "name": "シャレード",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ニンバス",
+      "dam": "ヒジョラマ",
+      "color": "黒鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "1955100267",
+      "raceStats": {
+        "total": {
+          "runs": 1,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hijorama"
+    },
+    {
+      "id": "homareriyuu",
+      "name": "ホマレリユウ",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ゲイタイム(GB)",
+      "dam": "ヒジョラマ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1955z00306",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "宝塚盃競走(OP)",
+          "displayRace": "宝塚盃",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "鳴尾記念競走(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 3,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "大阪盃競走(OP)",
+          "displayRace": "大阪盃",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 2,
+            "day": 8
+          },
+          "racecourse": "中京",
+          "race": "中京記念競走(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "5",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春盃競走(OP)",
+          "displayRace": "日本経済新春盃",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "朝日チヤレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "菊花賞競走(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "9",
+          "result": "6",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典競走(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "神戸盃競走(OP)",
+          "displayRace": "神戸盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都特別競走(OP)",
+          "displayRace": "京都特別",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 9,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "京都盃競走(OP)",
+          "displayRace": "京都盃",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 6,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "毎日盃競走(OP)",
+          "displayRace": "毎日盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "10",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hijorama"
     }
   ]
 }

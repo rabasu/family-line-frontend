@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Heavenly Mist",
     "rootHorseId": "heavenly-mist",
-    "lastUpdated": "2025-09-24T12:14:31.494188Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "heavenly-mist",
       "name": "ヘヴンリーミスト",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Top Command",
@@ -32,8 +33,11 @@
     {
       "id": "king-of-j",
       "name": "キングオブジェイ",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 13}",
-      "foaledArray": ["1995", "04", "13"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キンググローリアス(US)",

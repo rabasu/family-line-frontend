@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hempens Syn",
     "rootHorseId": "hempens-syn",
-    "lastUpdated": "2025-09-25T20:30:30.523222Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hempens-syn",
       "name": "Hempens Syn",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Symmetric",
@@ -31,8 +32,11 @@
     {
       "id": "prince-syn",
       "name": "プリンスシン",
-      "foaled": "{'year': 1987, 'month': 1, 'day': 29}",
-      "foaledArray": ["1987", "01", "29"],
+      "foaled": {
+        "year": 1987,
+        "month": 1,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Sham",

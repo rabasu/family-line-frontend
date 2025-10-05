@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Heart On Wave",
     "rootHorseId": "heart-on-wave",
-    "lastUpdated": "2025-09-20T08:47:37.636485Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "heart-on-wave",
       "name": "ハートオンウェーブ",
-      "foaled": "{'year': 2000, 'month': 1, 'day': 20}",
-      "foaledArray": ["2000", "01", "20"],
+      "foaled": {
+        "year": 2000,
+        "month": 1,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
       "dam": "Fairy Heights",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "Brushwood Stable（米）",
       "netkeibaId": "2000110031",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Heart On Wave"
+      "englishName": "Heart On Wave",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "strong-leda",
       "name": "ストロングレダ",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 19}",
-      "foaledArray": ["2006", "04", "19"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
       "dam": "ハートオンウェーブ",
-      "dam_netkeiba_id": "2000110031",
       "color": "鹿毛",
       "breeder": "千代田牧場（新ひだか町）",
       "netkeibaId": "2006101237",
@@ -58,18 +63,21 @@
         "central": "410万円",
         "local": "0万円"
       },
-      "damId": "heart-on-wave"
+      "damId": "heart-on-wave",
+      "dam_netkeiba_id": "2000110031"
     },
     {
       "id": "dantsu-prius",
       "name": "ダンツプリウス",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 1}",
-      "foaledArray": ["2013", "03", "01"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "ストロングレダ",
-      "dam_netkeiba_id": "2006101237",
       "color": "鹿毛",
       "breeder": "千代田牧場（新ひだか町）",
       "netkeibaId": "2013104475",
@@ -209,7 +217,8 @@
         "central": "1億3,748万円",
         "local": "0万円"
       },
-      "damId": "strong-leda"
+      "damId": "strong-leda",
+      "dam_netkeiba_id": "2006101237"
     }
   ]
 }

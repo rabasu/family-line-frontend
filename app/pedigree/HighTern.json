@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "High Tern",
     "rootHorseId": "high-tern",
-    "lastUpdated": "2025-09-24T12:44:29.444321Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "high-tern",
       "name": "High Tern",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "High Line",
@@ -31,8 +32,11 @@
     {
       "id": "high-rise",
       "name": "ハイライズ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 3}",
-      "foaledArray": ["1995", "05", "03"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハイエステイト(IRE)",

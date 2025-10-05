@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hula Colony",
     "rootHorseId": "hula-colony",
-    "lastUpdated": "2025-09-24T11:09:31.300940Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hula-colony",
       "name": "Hula Colony",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cherokee Colony",
@@ -31,8 +32,11 @@
     {
       "id": "machikane-hokushin",
       "name": "マチカネホクシン",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 13}",
-      "foaledArray": ["1997", "03", "13"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Runaway Groom",

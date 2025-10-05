@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hidden Dance",
     "rootHorseId": "hidden-dance",
-    "lastUpdated": "2025-09-22T06:51:06.198184Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hidden-dance",
       "name": "ヒドゥンダンス",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -32,8 +33,11 @@
     {
       "id": "toho-alan",
       "name": "トーホウアラン",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 16}",
-      "foaledArray": ["2003", "04", "16"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

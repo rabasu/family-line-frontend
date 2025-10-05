@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Heart of Joy",
     "rootHorseId": "heart-of-joy",
-    "lastUpdated": "2025-09-24T15:16:48.804078Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "heart-of-joy",
       "name": "Heart of Joy",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リィフォー(GB)",
@@ -31,8 +32,11 @@
     {
       "id": "meiner-love",
       "name": "マイネルラヴ",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 8}",
-      "foaledArray": ["1995", "03", "08"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",

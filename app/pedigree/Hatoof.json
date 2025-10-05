@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hatoof",
     "rootHorseId": "hatoof",
-    "lastUpdated": "2025-09-19T12:18:54.941366Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hatoof",
       "name": "ハトゥーフ",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Irish River(FR)",
@@ -32,8 +33,9 @@
     {
       "id": "bochinche",
       "name": "ボシンシェ",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -59,8 +61,11 @@
     {
       "id": "glanzend",
       "name": "グレンツェント",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 8}",
-      "foaledArray": ["2013", "04", "08"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",

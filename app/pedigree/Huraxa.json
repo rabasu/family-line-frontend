@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Huraxa",
     "rootHorseId": "huraxa",
-    "lastUpdated": "2025-09-19T02:30:59.694088Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "huraxa",
       "name": "フーラクサ",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Linamix(FR)",
@@ -32,8 +33,11 @@
     {
       "id": "puresutouikku",
       "name": "プレストウィック",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 24}",
-      "foaledArray": ["2011", "04", "24"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

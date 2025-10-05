@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Henry's Bell",
     "rootHorseId": "henrys-bell",
-    "lastUpdated": "2025-09-25T16:27:57.016475Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "henrys-bell",
       "name": "ヘンリーズベル",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Henry the Seventh",
@@ -32,8 +33,9 @@
     {
       "id": "flower-bell",
       "name": "フラワーベル",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フロリバンダ",
@@ -59,8 +61,11 @@
     {
       "id": "bracelet",
       "name": "ブレスレット",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 15}",
-      "foaledArray": ["1988", "04", "15"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ナグルスキー(CAN)",

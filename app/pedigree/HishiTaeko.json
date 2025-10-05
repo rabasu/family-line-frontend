@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Hishi Taeko",
     "rootHorseId": "hishi-taeko",
-    "lastUpdated": "2025-09-22T12:30:28.490556Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hishi-taeko",
       "name": "ヒシタエコ",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 11}",
-      "foaledArray": ["1994", "03", "11"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Chief's Crown",
@@ -32,8 +35,11 @@
     {
       "id": "hishikatsu-leader",
       "name": "ヒシカツリーダー",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 27}",
-      "foaledArray": ["2004", "02", "27"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フサイチコンコルド",

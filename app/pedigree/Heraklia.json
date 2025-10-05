@@ -2,19 +2,20 @@
   "metadata": {
     "pedigreeName": "Heraklia",
     "rootHorseId": "heraklia",
-    "lastUpdated": "2025-09-22T15:54:42.968753Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "heraklia",
       "name": "Heraklia",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Irish River(FR)",
-      "dam": "ハイドロカリドHydro Calido",
+      "dam": "ハイドロカリド",
       "color": "黒鹿毛",
       "breeder": "米",
       "netkeibaId": "000a00fd1f",
@@ -31,8 +32,11 @@
     {
       "id": "fifty-oner",
       "name": "フィフティーワナー",
-      "foaled": "{'year': 2002, 'month': 5, 'day': 10}",
-      "foaledArray": ["2002", "05", "10"],
+      "foaled": {
+        "year": 2002,
+        "month": 5,
+        "day": 10
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Fusaichi Pegasus",

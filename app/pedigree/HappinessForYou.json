@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Happiness for You",
     "rootHorseId": "happiness-for-you",
-    "lastUpdated": "2025-09-18T14:47:08.605571Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "happiness-for-you",
       "name": "ハピネスフォーユー",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 27}",
-      "foaledArray": ["2005", "02", "27"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",
@@ -32,8 +35,11 @@
     {
       "id": "mieno-succeed",
       "name": "ミエノサクシード",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 10}",
-      "foaledArray": ["2013", "03", "10"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

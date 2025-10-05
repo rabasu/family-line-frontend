@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Happy Sunshine",
     "rootHorseId": "happy-sunshine",
-    "lastUpdated": "2025-09-24T17:15:56.766374Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "happy-sunshine",
       "name": "Happy Sunshine",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セクレト(US)",
@@ -31,8 +32,11 @@
     {
       "id": "machikane-teruteru",
       "name": "マチカネテルテル",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 5}",
-      "foaledArray": ["1996", "04", "05"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",

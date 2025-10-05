@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Honestly Darling",
     "rootHorseId": "honestly-darling",
-    "lastUpdated": "2025-09-20T16:25:39.341837Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "honestly-darling",
       "name": "オネストリーダーリン",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -32,8 +33,11 @@
     {
       "id": "dear-my-darling",
       "name": "ディアマイダーリン",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 22}",
-      "foaledArray": ["2012", "02", "22"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

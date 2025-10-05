@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Hit the Spot",
     "rootHorseId": "hit-the-spot",
-    "lastUpdated": "2025-09-22T20:22:51.855170Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hit-the-spot",
       "name": "ヒットザスポット",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 15}",
-      "foaledArray": ["1995", "05", "15"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",
@@ -32,8 +35,11 @@
     {
       "id": "minty-air",
       "name": "ミンティエアー",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 12}",
-      "foaledArray": ["2004", "02", "12"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",

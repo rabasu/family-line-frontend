@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Heavenly Song",
     "rootHorseId": "heavenly-song",
-    "lastUpdated": "2025-09-20T13:38:50.770734Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "heavenly-song",
       "name": "ヘヴンリーソング",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",
       "dam": "Heavenly Music",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "仏",
       "netkeibaId": "000a010b6e",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Heavenly Song"
+      "englishName": "Heavenly Song",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "red-lauda",
       "name": "レッドラウダ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 26}",
-      "foaledArray": ["2013", "03", "26"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
       "dam": "ヘヴンリーソング",
-      "dam_netkeiba_id": "000a010b6e",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2013105631",
@@ -179,7 +182,8 @@
         "central": "1億1,358万円",
         "local": "0万円"
       },
-      "damId": "heavenly-song"
+      "damId": "heavenly-song",
+      "dam_netkeiba_id": "000a010b6e"
     }
   ]
 }

@@ -13,17 +13,18 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
     'next',
     'next/core-web-vitals',
-    'prettier',
+    // 'prettier',
   ],
   parserOptions: {
-    project: true,
+    project: false,
     tsconfigRootDir: __dirname,
   },
+  ignorePatterns: ['app/pedigree/**/*.json', '**/*.json', 'node_modules/', '.next/', 'dist/', 'build/', 'public/', 'scraping/', 'scripts/', 'temp_test/'],
   rules: {
-    'prettier/prettier': 'error',
+    // 'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',

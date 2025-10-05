@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "High Pasture",
     "rootHorseId": "high-pasture",
-    "lastUpdated": "2025-09-23T02:46:42.811320Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "high-pasture",
       "name": "ハイパスチャー",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "El Gran Senor",
@@ -32,8 +33,11 @@
     {
       "id": "sea-jo",
       "name": "シージョー",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 31}",
-      "foaledArray": ["2005", "03", "31"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -59,8 +63,11 @@
     {
       "id": "city-rainbow",
       "name": "シティレインボー",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 29}",
-      "foaledArray": ["2018", "03", "29"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
@@ -134,8 +141,11 @@
     {
       "id": "deep-air",
       "name": "ディープエアー",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 12}",
-      "foaledArray": ["2003", "02", "12"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",

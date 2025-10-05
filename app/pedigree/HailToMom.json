@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hail to Mom",
     "rootHorseId": "hail-to-mom",
-    "lastUpdated": "2025-09-25T08:52:35.298282Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hail-to-mom",
       "name": "Hail to Mom",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -31,8 +32,11 @@
     {
       "id": "field-bomber",
       "name": "フィールドボンバー",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 26}",
-      "foaledArray": ["1991", "03", "26"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "セクレト(US)",

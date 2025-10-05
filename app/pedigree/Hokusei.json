@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "pedigreeName": "北星",
+    "rootHorseId": "hokusei",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
+  },
+  "horses": [
+    {
+      "id": "hokusei",
+      "name": "北星",
+      "foaled": {},
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "",
+      "dam": "",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cf16",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "kitakumo",
+      "name": "北雲",
+      "foaled": {
+        "year": 1947
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クモキク",
+      "dam": "北星",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00bf1c",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hokusei"
+    },
+    {
+      "id": "takatsuru",
+      "name": "タカツル",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "方景",
+      "dam": "北雲",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1956z00215",
+      "raceStats": {
+        "total": {
+          "runs": 44,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(秋)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kitakumo"
+    }
+  ]
+}

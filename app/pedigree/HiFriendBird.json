@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Hi Friend Bird",
     "rootHorseId": "hi-friend-bird",
-    "lastUpdated": "2025-09-23T12:04:10.329263Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hi-friend-bird",
       "name": "ハイフレンドバード",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 13}",
-      "foaledArray": ["1993", "04", "13"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シアトルダンサー(US)",
@@ -32,8 +35,11 @@
     {
       "id": "hi-friend-try",
       "name": "ハイフレンドトライ",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 17}",
-      "foaledArray": ["2000", "04", "17"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",
