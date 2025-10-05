@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "ジヤデニアー",
     "rootHorseId": "jardiniere",
-    "lastUpdated": "2025-09-27T15:39:34.787421Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jardiniere",
       "name": "ジヤデニアー",
-      "foaled": "1929",
-      "foaledArray": ["1929"],
+      "foaled": {
+        "year": 1929
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Ornamentation",
+      "dam": "Beryllia",
+      "color": "黒鹿毛",
       "breeder": "",
       "netkeibaId": "000a002365",
       "source": "tsx_conversion",
+      "importedYear": "1936",
+      "familyNumber": "F9-e",
+      "registration": "13巻1382号",
       "owner": "新田牧場"
     },
     {
       "id": "towa-kachidoki",
       "name": "トーワカチドキ",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 29}",
-      "foaledArray": ["1979", "04", "29"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キタノカチドキ",
@@ -294,8 +301,9 @@
     {
       "id": "towa-mor",
       "name": "トーワモアー",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フィダルゴ",
@@ -321,8 +329,9 @@
     {
       "id": "towa-bell",
       "name": "トーワベル",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴアルドアー(IRE)",
@@ -348,8 +357,9 @@
     {
       "id": "moaakuin",
       "name": "モアークヰン",
-      "foaled": "{'year': 1945}",
-      "foaledArray": ["1945"],
+      "foaled": {
+        "year": 1945
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミナミモア",
@@ -366,17 +376,18 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "pedigreeName": "モアークイン",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "queen-jardiniere"
+      "damId": "queen-jardiniere",
+      "pedigreeName": "モアークイン"
     },
     {
       "id": "queen-jardiniere",
       "name": "クインジヤデニアー",
-      "foaled": "{'year': 1936}",
-      "foaledArray": ["1936"],
+      "foaled": {
+        "year": 1936
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライトブリゲイド",
@@ -398,6 +409,263 @@
         "total": "0万円"
       },
       "damId": "jardiniere"
+    },
+    {
+      "id": "daidala",
+      "name": "ダイダラー",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フィリュース",
+      "dam": "ミホノフレーム",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "1955103105",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 10,
+            "day": 27
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬特別(OP)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "3",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 10,
+            "day": 28
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬特別(OP)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Daidala",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "mihono-flame"
+    },
+    {
+      "id": "mihono-flame",
+      "name": "ミホノフレーム",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ライジングフレーム(IRE)",
+      "dam": "第三愛田",
+      "color": "黒鹿毛",
+      "breeder": "厚真町",
+      "netkeibaId": "000a0035e0",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Mihono Flame",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daisanaida"
+    },
+    {
+      "id": "daisanaida",
+      "name": "第三愛田",
+      "foaled": {
+        "year": 1954
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヴイーノーピユロー(AR)",
+      "dam": "愛田",
+      "color": "鹿毛",
+      "breeder": "鵡川町",
+      "netkeibaId": "000a002d8d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "aida"
+    },
+    {
+      "id": "aida",
+      "name": "愛田",
+      "foaled": {
+        "year": 1939
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トウルヌソル(GB)",
+      "dam": "ジヤデニアー",
+      "color": "黒鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a0025be",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "jardiniere"
+    },
+    {
+      "id": "miss-korai",
+      "name": "ミスコウライ",
+      "foaled": {
+        "year": 1963
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヒンドスタン",
+      "dam": "マサミツ",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a003ec6",
+      "raceStats": {
+        "total": {
+          "runs": 36,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1967,
+            "month": 3,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 1,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春盃(OP)",
+          "displayRace": "日本経済新春盃",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "11",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 12,
+            "day": 25
+          },
+          "racecourse": "阪神",
+          "race": "阪神牝馬特別(OP)",
+          "displayRace": "阪神牝馬特別",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "1",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Miss Korai",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "masamitsu",
+      "name": "マサミツ",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シマタカ",
+      "dam": "モアークヰン",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002f18",
+      "raceStats": {
+        "total": {
+          "runs": 35,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 3,
+            "day": 29
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞競走(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "24",
+          "result": "7",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "moaakuin"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lake Worth",
     "rootHorseId": "lake-worth",
-    "lastUpdated": "2025-09-22T19:50:53.315102Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lake-worth",
       "name": "レイクワース",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cure the Blues",
@@ -32,8 +33,11 @@
     {
       "id": "san-lake-queen",
       "name": "サンレイククイン",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 11}",
-      "foaledArray": ["1996", "02", "11"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cozzene",
@@ -61,8 +65,11 @@
     {
       "id": "sanrei-duke",
       "name": "サンレイデューク",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 24}",
-      "foaledArray": ["2008", "03", "24"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デュランダル",
@@ -331,8 +338,11 @@
     {
       "id": "sanrei-laser",
       "name": "サンレイレーザー",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 23}",
-      "foaledArray": ["2009", "04", "23"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラスカルスズカ",
@@ -601,8 +611,11 @@
     {
       "id": "sanrei-jasper",
       "name": "サンレイジャスパー",
-      "foaled": "{'year': 2002, 'month': 5, 'day': 4}",
-      "foaledArray": ["2002", "05", "04"],
+      "foaled": {
+        "year": 2002,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミスズシャルダン",

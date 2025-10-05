@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Logica",
     "rootHorseId": "logica",
-    "lastUpdated": "2025-09-21T00:29:04.544089Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "logica",
       "name": "Logica",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Priolo(US)",
@@ -31,8 +32,11 @@
     {
       "id": "bande",
       "name": "バンデ",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 11}",
-      "foaledArray": ["2010", "04", "11"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Authorized",

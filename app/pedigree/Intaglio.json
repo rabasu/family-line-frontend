@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Intaglio",
     "rootHorseId": "intaglio",
-    "lastUpdated": "2025-09-25T17:29:01.700368Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "intaglio",
       "name": "インタグリオ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tenerani",
@@ -32,8 +33,9 @@
     {
       "id": "kyokuto-meld",
       "name": "キョクトウメルド",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レイバーン",
@@ -59,8 +61,11 @@
     {
       "id": "kyokuto-runrun",
       "name": "キョクトウルンルン",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 27}",
-      "foaledArray": ["1981", "04", "27"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハンターコム",
@@ -84,10 +89,13 @@
       "damId": "kyokuto-meld"
     },
     {
-      "id": "white-arrow",
+      "id": "white-arrow-1987",
       "name": "ホワイトアロー",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 13}",
-      "foaledArray": ["1987", "05", "13"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ベストブラッド",
@@ -426,7 +434,112 @@
         "central": "2億4,160万円",
         "local": "0万円"
       },
-      "damId": "kyokuto-runrun"
+      "damId": "kyokuto-runrun",
+      "linkName": "ホワイトアロー(1987)"
+    },
+    {
+      "id": "derby-spark",
+      "name": "ダービースパーク",
+      "foaled": {
+        "year": 1974,
+        "month": 5,
+        "day": 15
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "テストケイス",
+      "dam": "サンルプローシユ",
+      "color": "鹿毛",
+      "breeder": "ダービースタッド（幕別町）",
+      "netkeibaId": "1974101905",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1979,
+            "month": 11,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 4,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "8",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "9",
+          "result": "6",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Derby Spark",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "sans-reproche"
+    },
+    {
+      "id": "sans-reproche",
+      "name": "サンルプローシユ",
+      "foaled": {
+        "year": 1965
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Above Suspicion",
+      "dam": "インタグリオ",
+      "color": "鹿毛",
+      "breeder": "英",
+      "netkeibaId": "000a0002d7",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Sans Reproche",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "intaglio"
     }
   ]
 }

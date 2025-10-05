@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Keltshaan",
     "rootHorseId": "keltshaan",
-    "lastUpdated": "2025-09-21T20:40:40.598143Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "keltshaan",
       "name": "ケルトシャーン",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pleasant Colony",
@@ -32,8 +33,11 @@
     {
       "id": "marciano",
       "name": "マルシアーノ",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 2}",
-      "foaledArray": ["2010", "03", "02"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -61,8 +65,11 @@
     {
       "id": "erika-vita",
       "name": "エリカヴィータ",
-      "foaled": "{'year': 2019, 'month': 2, 'day': 3}",
-      "foaledArray": ["2019", "02", "03"],
+      "foaled": {
+        "year": 2019,
+        "month": 2,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -316,8 +323,11 @@
     {
       "id": "kinshasa-no-kiseki",
       "name": "キンシャサノキセキ",
-      "foaled": "{'year': 2003, 'month': 9, 'day': 24}",
-      "foaledArray": ["2003", "09", "24"],
+      "foaled": {
+        "year": 2003,
+        "month": 9,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

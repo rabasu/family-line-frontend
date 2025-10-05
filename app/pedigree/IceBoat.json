@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ice Boat",
     "rootHorseId": "ice-boat",
-    "lastUpdated": "2025-09-20T14:56:16.148938Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ice-boat",
       "name": "アイスボート",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Arctic Prince",
@@ -32,8 +33,9 @@
     {
       "id": "hidaka-canyon",
       "name": "ヒダカキャニオン",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソロナウェー",
@@ -59,8 +61,11 @@
     {
       "id": "canyon-pegasus",
       "name": "キャニオンペガサス",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 31}",
-      "foaledArray": ["1978", "03", "31"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードリドン(GB)",
@@ -86,8 +91,11 @@
     {
       "id": "canyon-ciro",
       "name": "キャニオンシロー",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 28}",
-      "foaledArray": ["1983", "04", "28"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルスキー",
@@ -206,8 +214,11 @@
     {
       "id": "tropical-lady",
       "name": "トロピカルレディー",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 22}",
-      "foaledArray": ["1996", "04", "22"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ウイニングチケット",
@@ -235,8 +246,11 @@
     {
       "id": "smart-orion",
       "name": "スマートオリオン",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 15}",
-      "foaledArray": ["2010", "03", "15"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 15
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "グラスワンダー",
@@ -456,6 +470,79 @@
         "local": "0万円"
       },
       "damId": "tropical-lady"
+    },
+    {
+      "id": "toufukuhoopu",
+      "name": "トウフクホープ",
+      "foaled": {
+        "year": 1972
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ネヴァービート(GB)",
+      "dam": "アイスボート",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a0101c0",
+      "raceStats": {
+        "total": {
+          "runs": 12,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(菊花賞ト(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(OP)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ice-boat"
     }
   ]
 }

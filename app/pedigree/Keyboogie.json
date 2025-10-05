@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Keyboogie",
     "rootHorseId": "keyboogie",
-    "lastUpdated": "2025-09-21T14:55:15.041142Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "keyboogie",
       "name": "キーブギー",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "key-west",
       "name": "キーウエスト",
-      "foaled": "{'year': 2013, 'month': 1, 'day': 29}",
-      "foaledArray": ["2013", "01", "29"],
+      "foaled": {
+        "year": 2013,
+        "month": 1,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
@@ -61,8 +65,11 @@
     {
       "id": "arranger",
       "name": "アレンジャー",
-      "foaled": "{'year': 2021, 'month': 5, 'day': 23}",
-      "foaledArray": ["2021", "05", "23"],
+      "foaled": {
+        "year": 2021,
+        "month": 5,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルスティール",
@@ -121,8 +128,11 @@
     {
       "id": "smart-robin",
       "name": "スマートロビン",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 5}",
-      "foaledArray": ["2008", "03", "05"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

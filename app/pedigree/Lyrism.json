@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lyrism",
     "rootHorseId": "lyrism",
-    "lastUpdated": "2025-09-25T03:50:20.790942Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lyrism",
       "name": "リリズム",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,9 @@
     {
       "id": "whakilyric",
       "name": "Whakilyric",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -58,8 +60,11 @@
     {
       "id": "hernando",
       "name": "エルナンド",
-      "foaled": "{'year': 1990, 'month': 2, 'day': 8}",
-      "foaledArray": ["1990", "02", "08"],
+      "foaled": {
+        "year": 1990,
+        "month": 2,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Niniski",

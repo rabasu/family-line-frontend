@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Jasoorah",
     "rootHorseId": "jasoorah",
-    "lastUpdated": "2025-09-22T00:08:18.808992Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jasoorah",
       "name": "ジャスーラー",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "jamil",
       "name": "ジャミール",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 9}",
-      "foaledArray": ["2006", "03", "09"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

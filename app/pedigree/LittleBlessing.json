@@ -1,16 +1,17 @@
 {
   "metadata": {
     "pedigreeName": "Little Blessing",
-    "rootHorseId": "little-blessing",
-    "lastUpdated": "2025-09-26T00:00:25.129781Z",
-    "source": "python_scraping_updated"
+    "rootHorseId": "little-blessing-1964",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "little-blessing-1964",
       "name": "リットルブレツシング",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Olympia",
@@ -32,8 +33,11 @@
     {
       "id": "shadaiorinpia",
       "name": "シャダイオリンピア",
-      "foaled": "{'year': 1975, 'month': 3, 'day': 25}",
-      "foaledArray": ["1975", "03", "25"],
+      "foaled": {
+        "year": 1975,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エルセンタウロ",
@@ -81,17 +85,20 @@
         }
       ],
       "source": "python_scraping",
-      "pedigreeName": "シヤダイオリンピア",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "little-blessing"
+      "damId": "little-blessing",
+      "pedigreeName": "シヤダイオリンピア"
     },
     {
       "id": "dyna-arkadia",
       "name": "ダイナアルカディア",
-      "foaled": "{'year': 1984, 'month': 6, 'day': 15}",
-      "foaledArray": ["1984", "06", "15"],
+      "foaled": {
+        "year": 1984,
+        "month": 6,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -119,8 +126,11 @@
     {
       "id": "my-valentine",
       "name": "マイバレンタイン",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 14}",
-      "foaledArray": ["1994", "02", "14"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -148,8 +158,11 @@
     {
       "id": "wild-sniper",
       "name": "ワイルドスナイパー",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 23}",
-      "foaledArray": ["1999", "03", "23"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バブルガムフェロー",
@@ -253,8 +266,11 @@
     {
       "id": "dyna-olympia",
       "name": "ダイナオリンピア",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 2}",
-      "foaledArray": ["1983", "05", "02"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

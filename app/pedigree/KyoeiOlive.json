@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Kyoei Olive",
     "rootHorseId": "kyoei-olive",
-    "lastUpdated": "2025-09-20T11:18:03.381506Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kyoei-olive",
       "name": "キョウエイオリーブ",
-      "foaled": "{'year': 1979, 'month': 3, 'day': 8}",
-      "foaledArray": ["1979", "03", "08"],
+      "foaled": {
+        "year": 1979,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Little Current(US)",
@@ -32,8 +35,11 @@
     {
       "id": "kyoei-meet",
       "name": "キョウエイミート",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 21}",
-      "foaledArray": ["1983", "04", "21"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クラウンドプリンス a",
@@ -61,8 +67,11 @@
     {
       "id": "kyoei-yoshino",
       "name": "キョウエイヨシノ",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 26}",
-      "foaledArray": ["1990", "04", "26"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プラウドデボネア(US)",
@@ -151,8 +160,11 @@
     {
       "id": "kyoei-truth",
       "name": "キョウエイトルース",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 16}",
-      "foaledArray": ["1997", "02", "16"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -196,8 +208,11 @@
     {
       "id": "another-truth",
       "name": "アナザートゥルース",
-      "foaled": "{'year': 2014, 'month': 3, 'day': 20}",
-      "foaledArray": ["2014", "03", "20"],
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 20
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "アイルハヴアナザー(US)",
@@ -736,8 +751,11 @@
     {
       "id": "leur-sauveur",
       "name": "ルールソヴァール",
-      "foaled": "{'year': 2012, 'month': 5, 'day': 20}",
-      "foaledArray": ["2012", "05", "20"],
+      "foaled": {
+        "year": 2012,
+        "month": 5,
+        "day": 20
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
@@ -961,13 +979,15 @@
     {
       "id": "sound-true",
       "name": "サウンドトゥルー",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 15}",
-      "foaledArray": ["2010", "05", "15"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 15
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
       "dam": "キョウエイトルース",
-      "dam_netkeiba_id": "1997106004",
       "color": "栗毛",
       "breeder": "岡田スタッド（新ひだか町）",
       "netkeibaId": "2010102446",
@@ -1617,7 +1637,8 @@
         "central": "2億6,638万円",
         "local": "4億9,364万円"
       },
-      "damId": "kyoei-truth"
+      "damId": "kyoei-truth",
+      "dam_netkeiba_id": "1997106004"
     }
   ]
 }

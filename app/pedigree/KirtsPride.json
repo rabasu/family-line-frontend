@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Kirt's Pride",
     "rootHorseId": "kirts-pride",
-    "lastUpdated": "2025-09-25T01:27:00.284358Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kirts-pride",
       "name": "Kirt's Pride",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kirtling",
@@ -31,8 +32,11 @@
     {
       "id": "kirt-clearance",
       "name": "カーツクリアランス",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 23}",
-      "foaledArray": ["1994", "02", "23"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Cryptoclearance",

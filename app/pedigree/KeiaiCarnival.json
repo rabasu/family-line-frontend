@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Keiai Carnival",
     "rootHorseId": "keiai-carnival",
-    "lastUpdated": "2025-09-23T18:06:43.070582Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "keiai-carnival",
       "name": "ケイアイカーニバル",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 1}",
-      "foaledArray": ["1997", "04", "01"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wolfhound",
@@ -32,8 +35,11 @@
     {
       "id": "keiai-aston",
       "name": "ケイアイアストン",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 17}",
-      "foaledArray": ["2005", "04", "17"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -332,8 +338,11 @@
     {
       "id": "keiai-fujin",
       "name": "ケイアイフウジン",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 29}",
-      "foaledArray": ["2002", "04", "29"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Klairana",
     "rootHorseId": "klairana",
-    "lastUpdated": "2025-09-25T09:22:11.148228Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "klairana",
       "name": "クライラナ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Klairon",
@@ -32,8 +33,11 @@
     {
       "id": "tokai-squall",
       "name": "トウカイスコール",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 9}",
-      "foaledArray": ["1982", "03", "09"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",
@@ -135,8 +139,11 @@
     {
       "id": "tokai-vista",
       "name": "トウカイビスタ",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 9}",
-      "foaledArray": ["1991", "03", "09"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラシアンルーブル(US)",

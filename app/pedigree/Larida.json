@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Larida",
     "rootHorseId": "larida",
-    "lastUpdated": "2025-09-24T22:22:26.448818Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "larida",
       "name": "Larida",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -31,8 +32,11 @@
     {
       "id": "brave-tender",
       "name": "ブレーブテンダー",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 16}",
-      "foaledArray": ["1994", "04", "16"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Gulch",

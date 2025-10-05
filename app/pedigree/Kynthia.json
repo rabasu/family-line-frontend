@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Kynthia",
     "rootHorseId": "kynthia",
-    "lastUpdated": "2025-09-22T11:01:51.043084Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kynthia",
       "name": "キュンティア",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 22}",
-      "foaledArray": ["1995", "03", "22"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Darshaan",
@@ -32,8 +35,11 @@
     {
       "id": "odile",
       "name": "オディール",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 28}",
-      "foaledArray": ["2005", "02", "28"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",

@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Kinky",
     "rootHorseId": "kinky",
-    "lastUpdated": "2025-09-20T11:47:43.270536Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kinky",
       "name": "キンキー",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gratitude",
       "dam": "Hysteria",
-      "dam_netkeiba_id": "",
       "color": "栃栗毛",
       "breeder": "英",
       "netkeibaId": "000a0001b9",
@@ -28,18 +28,19 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Kinky"
+      "englishName": "Kinky",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "asatake",
       "name": "アサタケ",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
       "dam": "キンキー",
-      "dam_netkeiba_id": "000a0001b9",
       "color": "青毛",
       "breeder": "静内町",
       "netkeibaId": "1955104823",
@@ -56,18 +57,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kinky"
+      "damId": "kinky",
+      "dam_netkeiba_id": "000a0001b9"
     },
     {
       "id": "tamamo-dictor",
       "name": "タマモディクター",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 13}",
-      "foaledArray": ["1981", "05", "13"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
       "dam": "アサタケ",
-      "dam_netkeiba_id": "1955104823",
       "color": "鹿毛",
       "breeder": "野坂牧場（静内町）",
       "netkeibaId": "1981104976",
@@ -86,18 +90,21 @@
         "central": "2,793万円",
         "local": "0万円"
       },
-      "damId": "asatake"
+      "damId": "asatake",
+      "dam_netkeiba_id": "1955104823"
     },
     {
       "id": "umeno-roman",
       "name": "ウメノローマン",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 26}",
-      "foaledArray": ["1994", "05", "26"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リードワンダー",
       "dam": "タマモディクター",
-      "dam_netkeiba_id": "1981104976",
       "color": "黒鹿毛",
       "breeder": "野坂牧場（静内町）",
       "netkeibaId": "1994101928",
@@ -116,18 +123,21 @@
         "central": "869万円",
         "local": "400万円"
       },
-      "damId": "tamamo-dictor"
+      "damId": "tamamo-dictor",
+      "dam_netkeiba_id": "1981104976"
     },
     {
       "id": "dantsu-mutant",
       "name": "ダンツミュータント",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 20}",
-      "foaledArray": ["2009", "04", "20"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マイネルラヴ",
       "dam": "ウメノローマン",
-      "dam_netkeiba_id": "1994101928",
       "color": "青鹿毛",
       "breeder": "野坂牧場（新ひだか町）",
       "netkeibaId": "2009104044",
@@ -207,7 +217,97 @@
         "central": "1億2,833万円",
         "local": "0万円"
       },
-      "damId": "umeno-roman"
+      "damId": "umeno-roman",
+      "dam_netkeiba_id": "1994101928"
+    },
+    {
+      "id": "orion-yamato",
+      "name": "オリオンヤマト",
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 8
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ファルコン(GB)",
+      "dam": "オリオンドレーク",
+      "color": "鹿毛",
+      "breeder": "北村牧場（青森県）",
+      "netkeibaId": "1977101800",
+      "raceStats": {
+        "total": {
+          "runs": 54,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 9,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "京王杯オータムH(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 8,
+            "day": 7
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(OP)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Orion Yamato",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "orion-drake"
+    },
+    {
+      "id": "orion-drake",
+      "name": "オリオンドレーク",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ディクタドレーク",
+      "dam": "キンキー",
+      "color": "栗毛",
+      "breeder": "森町",
+      "netkeibaId": "000a005537",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Orion Drake",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kinky"
     }
   ]
 }

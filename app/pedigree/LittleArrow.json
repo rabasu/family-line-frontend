@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Little Arrow",
     "rootHorseId": "little-arrow",
-    "lastUpdated": "2025-09-22T10:29:56.497225Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "little-arrow",
       "name": "リトルアロー",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -32,8 +33,11 @@
     {
       "id": "antonio-barows",
       "name": "アントニオバローズ",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 24}",
-      "foaledArray": ["2006", "04", "24"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

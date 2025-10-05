@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Indian Town",
     "rootHorseId": "indian-town",
-    "lastUpdated": "2025-09-20T10:18:11.576445Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "indian-town",
       "name": "Indian Town",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Glitterman",
       "dam": "All I Axe For",
-      "dam_netkeiba_id": "",
       "color": "黒鹿毛",
       "breeder": "",
       "netkeibaId": "000a0118e1",
@@ -27,18 +27,21 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "tahltan",
       "name": "タールタン",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 12}",
-      "foaledArray": ["2008", "03", "12"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Tapit(US)",
       "dam": "Indian Town",
-      "dam_netkeiba_id": "000a0118e1",
       "color": "芦毛",
       "breeder": "George Waggoner Stables Inc.（米）",
       "netkeibaId": "2008110131",
@@ -148,7 +151,8 @@
         "central": "1億6,075万円",
         "local": "350万円"
       },
-      "damId": "indian-town"
+      "damId": "indian-town",
+      "dam_netkeiba_id": "000a0118e1"
     }
   ]
 }

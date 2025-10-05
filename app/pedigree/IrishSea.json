@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Irish Sea",
     "rootHorseId": "irish-sea",
-    "lastUpdated": "2025-09-15T07:17:49.274573Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "irish-sea",
       "name": "アイリッシュシー",
-      "foaled": "{'year': 2014, 'month': 2, 'day': 28}",
-      "foaledArray": ["2014", "02", "28"],
+      "foaled": {
+        "year": 2014,
+        "month": 2,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Galileo(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "taisei-current",
       "name": "タイセイカレント",
-      "foaled": "{'year': 2022, 'month': 2, 'day': 16}",
-      "foaledArray": ["2022", "02", "16"],
+      "foaled": {
+        "year": 2022,
+        "month": 2,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "モーリス",

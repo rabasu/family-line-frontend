@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Liffey Lass",
     "rootHorseId": "liffey-lass",
-    "lastUpdated": "2025-09-24T06:07:38.977985Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "liffey-lass",
       "name": "リフィーラス",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Irish River(FR)",
@@ -32,8 +33,11 @@
     {
       "id": "isle-of-glass",
       "name": "アイルオブグラス",
-      "foaled": "{'year': 1988, 'month': 2, 'day': 2}",
-      "foaledArray": ["1988", "02", "02"],
+      "foaled": {
+        "year": 1988,
+        "month": 2,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Affirmed(US)",
@@ -59,8 +63,11 @@
     {
       "id": "mejiro-darling",
       "name": "メジロダーリング",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 28}",
-      "foaledArray": ["1996", "05", "28"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Desert",

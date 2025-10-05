@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lilac Lane",
     "rootHorseId": "lilac-lane",
-    "lastUpdated": "2025-09-21T17:18:18.978557Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lilac-lane",
       "name": "ライラックレーン",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bahri(US)",
@@ -32,8 +33,11 @@
     {
       "id": "fifth-petal",
       "name": "フィフスペトル",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 22}",
-      "foaledArray": ["2006", "05", "22"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",

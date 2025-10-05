@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Love Mommy",
     "rootHorseId": "love-mommy",
-    "lastUpdated": "2025-09-24T06:09:04.800164Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "love-mommy",
       "name": "ラヴマミー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar",
@@ -32,8 +33,11 @@
     {
       "id": "flaming-love",
       "name": "フレーミングラブ",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 25}",
-      "foaledArray": ["1991", "03", "25"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "The Minstrel(CAN)",
@@ -59,8 +63,11 @@
     {
       "id": "soulful-city",
       "name": "ソウルフルシチー",
-      "foaled": "{'year': 1999, 'month': 5, 'day': 4}",
-      "foaledArray": ["1999", "05", "04"],
+      "foaled": {
+        "year": 1999,
+        "month": 5,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ソウルオブザマター(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Le Haviee",
     "rootHorseId": "le-haviee",
-    "lastUpdated": "2025-09-24T19:22:36.429440Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "le-haviee",
       "name": "ルハビー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Plugged Nickle",
@@ -32,8 +33,11 @@
     {
       "id": "meisho-motonari",
       "name": "メイショウモトナリ",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 7}",
-      "foaledArray": ["1994", "05", "07"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アレミロード(US)",

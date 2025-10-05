@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Infantes",
     "rootHorseId": "infantes",
-    "lastUpdated": "2025-09-22T22:55:45.887079Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "infantes",
       "name": "アンファンテ",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Exclusive Native a",
@@ -32,8 +33,11 @@
     {
       "id": "storm-tigresse",
       "name": "ストームティグレス",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 21}",
-      "foaledArray": ["1995", "03", "21"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -122,8 +126,11 @@
     {
       "id": "osumi-daido",
       "name": "オースミダイドウ",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 9}",
-      "foaledArray": ["2004", "02", "09"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",

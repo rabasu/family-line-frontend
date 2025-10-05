@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ironis",
     "rootHorseId": "ironis",
-    "lastUpdated": "2025-09-25T09:21:07.487943Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ironis",
       "name": "アイロニス",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アイアンリージ",
@@ -32,8 +33,9 @@
     {
       "id": "nihon-top",
       "name": "ニホントップ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Abdos",
@@ -105,8 +107,9 @@
     {
       "id": "myojin-asahi",
       "name": "ミョウジンアサヒ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイハード(GB)",
@@ -132,8 +135,11 @@
     {
       "id": "risk-flora",
       "name": "リスクフローラ",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 15}",
-      "foaledArray": ["1991", "04", "15"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーパスノーセール(IRE)",
@@ -248,6 +254,96 @@
         "local": "0万円"
       },
       "damId": "myojin-asahi"
+    },
+    {
+      "id": "fujinoshooki",
+      "name": "フジノショーキ",
+      "foaled": {
+        "year": 1974,
+        "month": 6,
+        "day": 3
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ミシアーフ(IRE)",
+      "dam": "アイロニス",
+      "color": "鹿毛",
+      "breeder": "不二牧場（浦河町）",
+      "netkeibaId": "1974z01583",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "6(再)",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "10",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ironis"
     }
   ]
 }

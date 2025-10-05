@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Le Slew",
     "rootHorseId": "le-slew",
-    "lastUpdated": "2025-09-20T20:59:01.298248Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "le-slew",
       "name": "ルスルー",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "leap",
       "name": "リープ",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 31}",
-      "foaledArray": ["1991", "03", "31"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -59,8 +63,11 @@
     {
       "id": "placer",
       "name": "プラセール",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 24}",
-      "foaledArray": ["1998", "04", "24"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヘクタープロテクター(US)",
@@ -104,8 +111,11 @@
     {
       "id": "cool-hotarubi",
       "name": "クールホタルビ",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 4}",
-      "foaledArray": ["2012", "04", "04"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マツリダゴッホ",

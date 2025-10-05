@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "King's Imp",
     "rootHorseId": "kings-imp",
-    "lastUpdated": "2025-09-26T15:45:49.311478Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kings-imp",
       "name": "キングスインプ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "King's Troop",
@@ -32,8 +33,9 @@
     {
       "id": "sea-hawk-yoshioka",
       "name": "シーホークヨシオカ",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シーホーク",
@@ -59,8 +61,11 @@
     {
       "id": "mr-spain",
       "name": "ミスタースペイン",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 3}",
-      "foaledArray": ["1988", "05", "03"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フィリップオブスペイン",
@@ -374,8 +379,11 @@
     {
       "id": "long-kitty",
       "name": "ロングキティー",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 15}",
-      "foaledArray": ["1981", "03", "15"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",

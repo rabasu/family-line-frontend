@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Leap for Joy",
     "rootHorseId": "leap-for-joy",
-    "lastUpdated": "2025-09-21T10:47:49.360225Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "leap-for-joy",
       "name": "リープフォージョイ",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sharpo",
@@ -30,10 +31,13 @@
       "englishName": "Leap for Joy"
     },
     {
-      "id": "mood-indigo",
+      "id": "mood-indigo-2005",
       "name": "ムードインディゴ",
-      "foaled": "{'year': 2005, 'month': 1, 'day': 19}",
-      "foaledArray": ["2005", "01", "19"],
+      "foaled": {
+        "year": 2005,
+        "month": 1,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -362,8 +366,11 @@
     {
       "id": "you-can-smile",
       "name": "ユーキャンスマイル",
-      "foaled": "{'year': 2015, 'month': 5, 'day': 3}",
-      "foaledArray": ["2015", "05", "03"],
+      "foaled": {
+        "year": 2015,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -837,13 +844,16 @@
         "central": "3億9,748万円",
         "local": "0万円"
       },
-      "damId": "mood-indigo"
+      "damId": "mood-indigo-2005"
     },
     {
       "id": "ruby-casablanca",
       "name": "ルビーカサブランカ",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 17}",
-      "foaledArray": ["2017", "04", "17"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -1032,13 +1042,16 @@
         "central": "1億8,022万円",
         "local": "0万円"
       },
-      "damId": "mood-indigo"
+      "damId": "mood-indigo-2005"
     },
     {
       "id": "grand-chapel",
       "name": "グランドチャペル",
-      "foaled": "{'year': 2007, 'month': 2, 'day': 22}",
-      "foaledArray": ["2007", "02", "22"],
+      "foaled": {
+        "year": 2007,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -1082,8 +1095,11 @@
     {
       "id": "chapel-concert",
       "name": "チャペルコンサート",
-      "foaled": "{'year': 1999, 'month': 1, 'day': 31}",
-      "foaledArray": ["1999", "01", "31"],
+      "foaled": {
+        "year": 1999,
+        "month": 1,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

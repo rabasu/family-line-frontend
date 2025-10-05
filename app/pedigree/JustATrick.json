@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Just a Trick",
     "rootHorseId": "just-a-trick",
-    "lastUpdated": "2025-09-24T09:40:06.347776Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "just-a-trick",
       "name": "Just a Trick",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "King's Bishop",
@@ -31,8 +32,11 @@
     {
       "id": "hi-friend-code",
       "name": "ハイフレンドコード",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 20}",
-      "foaledArray": ["1995", "03", "20"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tunerup",

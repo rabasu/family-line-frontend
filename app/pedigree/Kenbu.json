@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Kenbu",
     "rootHorseId": "kenbu",
-    "lastUpdated": "2025-09-24T11:43:13.614373Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kenbu",
       "name": "Kenbu",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kenmare",
@@ -31,8 +32,11 @@
     {
       "id": "symboli-sword",
       "name": "シンボリスウォード",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 5}",
-      "foaledArray": ["1995", "02", "05"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Green Desert",
@@ -256,8 +260,11 @@
     {
       "id": "sweet-orchid",
       "name": "スイートオーキッド",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 13}",
-      "foaledArray": ["1997", "02", "13"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gone West",

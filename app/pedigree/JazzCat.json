@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Jazz Cat",
     "rootHorseId": "jazz-cat",
-    "lastUpdated": "2025-09-18T15:16:51.229844Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jazz-cat",
       "name": "ジャズキャット",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 3}",
-      "foaledArray": ["1997", "05", "03"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +35,11 @@
     {
       "id": "lord-vent-dor",
       "name": "ロードヴァンドール",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 2}",
-      "foaledArray": ["2013", "05", "02"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

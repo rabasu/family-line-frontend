@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Impertinent Lady",
     "rootHorseId": "impertinent-lady",
-    "lastUpdated": "2025-09-24T14:47:11.672297Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "impertinent-lady",
       "name": "Impertinent Lady",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sham",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-le-mars",
       "name": "エイシンレマーズ",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 18}",
-      "foaledArray": ["1996", "04", "18"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Phone Trick",

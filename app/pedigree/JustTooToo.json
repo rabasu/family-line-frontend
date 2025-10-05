@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Just Too Too",
     "rootHorseId": "just-too-too",
-    "lastUpdated": "2025-09-19T01:02:31.935344Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "just-too-too",
       "name": "ジャストトゥートゥー",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "In Excess(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "queens-milagro",
       "name": "クインズミラーグロ",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 25}",
-      "foaledArray": ["2012", "03", "25"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "I and You",
     "rootHorseId": "i-and-you",
-    "lastUpdated": "2025-09-18T14:48:38.051608Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "i-and-you",
       "name": "アイアンドユー",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 27}",
-      "foaledArray": ["1994", "02", "27"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",
@@ -32,8 +35,11 @@
     {
       "id": "noble-mars",
       "name": "ノーブルマーズ",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 10}",
-      "foaledArray": ["2013", "05", "10"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",

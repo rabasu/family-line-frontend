@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lily of the Valley",
     "rootHorseId": "lily-of-the-valley",
-    "lastUpdated": "2025-09-15T06:16:31.458981Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lily-of-the-valley",
       "name": "リリーオブザヴァレー",
-      "foaled": "{'year': 2007}",
-      "foaledArray": ["2007"],
+      "foaled": {
+        "year": 2007
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Galileo(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "beyond-the-valley",
       "name": "ビヨンドザヴァレー",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 27}",
-      "foaledArray": ["2020", "04", "27"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イスラボニータ",

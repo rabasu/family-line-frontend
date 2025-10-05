@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady Bend Fager",
     "rootHorseId": "lady-bend-fager",
-    "lastUpdated": "2025-09-25T17:31:57.721915Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-bend-fager",
       "name": "レディベンドフエイジヤー",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Never Bend",
@@ -32,8 +33,11 @@
     {
       "id": "k-s-miracle",
       "name": "ケイエスミラクル",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 16}",
-      "foaledArray": ["1988", "03", "16"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Stutz Blackhawk",

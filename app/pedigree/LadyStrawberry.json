@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Lady Strawberry",
     "rootHorseId": "lady-strawberry",
-    "lastUpdated": "2025-09-21T20:12:55.589257Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-strawberry",
       "name": "レディストロベリー",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 20}",
-      "foaledArray": ["1995", "02", "20"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +35,11 @@
     {
       "id": "blitzen",
       "name": "ブリッツェン",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 4}",
-      "foaledArray": ["2006", "03", "04"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",

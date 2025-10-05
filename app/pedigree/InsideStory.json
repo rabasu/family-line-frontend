@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Inside Story",
     "rootHorseId": "inside-story",
-    "lastUpdated": "2025-09-26T15:44:02.698711Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "inside-story",
       "name": "インサイドストーリー",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Narrator",
@@ -32,8 +33,9 @@
     {
       "id": "hide-tsubame",
       "name": "ヒデツバメ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Typhoon",
@@ -75,8 +77,11 @@
     {
       "id": "sapporo-star",
       "name": "サッポロスター",
-      "foaled": "{'year': 1977, 'month': 6, 'day': 1}",
-      "foaledArray": ["1977", "06", "01"],
+      "foaled": {
+        "year": 1977,
+        "month": 6,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラナーク",
@@ -102,8 +107,11 @@
     {
       "id": "umeno-seaborn",
       "name": "ウメノシーボン",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 7}",
-      "foaledArray": ["1983", "05", "07"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラッキーソブリン",
@@ -177,8 +185,11 @@
     {
       "id": "nippo-swallow",
       "name": "ニッポースワロー",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 22}",
-      "foaledArray": ["1981", "03", "22"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンシー",
@@ -323,6 +334,96 @@
         "local": "0万円"
       },
       "damId": "hide-tsubame"
+    },
+    {
+      "id": "nippo-hawk",
+      "name": "ニッポーホーク",
+      "foaled": {
+        "year": 1979,
+        "month": 3,
+        "day": 22
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "サンシー",
+      "dam": "ヒデツバメ",
+      "color": "黒鹿毛",
+      "breeder": "荻伏牧場（浦河町）",
+      "netkeibaId": "1979100938",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Nippo Hawk",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hide-tsubame"
+    },
+    {
+      "id": "silver-nero",
+      "name": "シルバーネロ",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "フォルティノ",
+      "dam": "インサイドストーリー",
+      "color": "芦毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000bdb",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Silver Nero",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "inside-story"
     }
   ]
 }

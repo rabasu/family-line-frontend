@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady of Ireland",
     "rootHorseId": "lady-of-ireland",
-    "lastUpdated": "2025-09-25T00:24:08.696822Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-of-ireland",
       "name": "レディーオブアイルランド",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Be My Guest",
@@ -32,8 +33,11 @@
     {
       "id": "boston-emperor",
       "name": "ボストンエンペラー",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 8}",
-      "foaledArray": ["1993", "04", "08"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "イナリワン",

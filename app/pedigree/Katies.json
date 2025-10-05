@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Katies",
     "rootHorseId": "katies",
-    "lastUpdated": "2025-09-25T03:50:08.951872Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "katies",
       "name": "Katies",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノノアルコ",
@@ -31,8 +32,11 @@
     {
       "id": "hishi-pinnacle",
       "name": "ヒシピナクル",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 17}",
-      "foaledArray": ["1996", "03", "17"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Theatrical",
@@ -286,8 +290,11 @@
     {
       "id": "hishi-nile",
       "name": "ヒシナイル",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 15}",
-      "foaledArray": ["1994", "04", "15"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",
@@ -466,8 +473,11 @@
     {
       "id": "hishi-amazon",
       "name": "ヒシアマゾン",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 26}",
-      "foaledArray": ["1991", "03", "26"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Theatrical",

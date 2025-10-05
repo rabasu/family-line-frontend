@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lola Lola",
     "rootHorseId": "lola-lola",
-    "lastUpdated": "2025-09-24T22:24:25.196327Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lola-lola",
       "name": "ローラローラ",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Saint Cyrien",
@@ -32,8 +33,11 @@
     {
       "id": "sakura-laurel",
       "name": "サクラローレル",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 8}",
-      "foaledArray": ["1991", "05", "08"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Rainbow Quest(US)",

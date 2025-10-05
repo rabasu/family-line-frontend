@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Jode",
     "rootHorseId": "jode",
-    "lastUpdated": "2025-09-21T03:50:57.938512Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jode",
       "name": "ジョード",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "diamond-pisa",
       "name": "ダイヤモンドピサ",
-      "foaled": "{'year': 2000, 'month': 2, 'day': 4}",
-      "foaledArray": ["2000", "02", "04"],
+      "foaled": {
+        "year": 2000,
+        "month": 2,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "all-that-jazz",
       "name": "オールザットジャズ",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 24}",
-      "foaledArray": ["2008", "02", "24"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",

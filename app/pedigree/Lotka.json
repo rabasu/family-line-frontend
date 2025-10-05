@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Lotka",
     "rootHorseId": "lotka",
-    "lastUpdated": "2025-09-24T03:37:14.653205Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lotka",
       "name": "Lotka",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 27}",
-      "foaledArray": ["1983", "03", "27"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -31,8 +34,11 @@
     {
       "id": "mambo-twist",
       "name": "マンボツイスト",
-      "foaled": "{'year': 1995, 'month': 1, 'day': 24}",
-      "foaledArray": ["1995", "01", "24"],
+      "foaled": {
+        "year": 1995,
+        "month": 1,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",

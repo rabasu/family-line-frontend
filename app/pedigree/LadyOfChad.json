@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady of Chad",
     "rootHorseId": "lady-of-chad",
-    "lastUpdated": "2025-09-19T11:48:51.147671Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-of-chad",
       "name": "レディオブチャド",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラストタイクーン(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "jewel-of-nile",
       "name": "ジュエルオブナイル",
-      "foaled": "{'year': 2007, 'month': 1, 'day': 25}",
-      "foaledArray": ["2007", "01", "25"],
+      "foaled": {
+        "year": 2007,
+        "month": 1,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デュランダル",
@@ -212,8 +216,11 @@
     {
       "id": "gold-cape",
       "name": "ゴールドケープ",
-      "foaled": "{'year': 2014, 'month': 3, 'day': 3}",
-      "foaledArray": ["2014", "03", "03"],
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ワークフォース(GB)",

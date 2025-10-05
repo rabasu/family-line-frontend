@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lisaleen",
     "rootHorseId": "lisaleen",
-    "lastUpdated": "2025-09-24T12:14:55.552355Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lisaleen",
       "name": "Lisaleen",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -31,8 +32,11 @@
     {
       "id": "road-ahead",
       "name": "ロードアヘッド",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 31}",
-      "foaledArray": ["1994", "03", "31"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Laragh",
     "rootHorseId": "laragh",
-    "lastUpdated": "2025-09-18T15:47:43.003640Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "laragh",
       "name": "ララア",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tapit(US)",
@@ -32,8 +33,11 @@
     {
       "id": "shamrock-hill",
       "name": "シャムロックヒル",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 23}",
-      "foaledArray": ["2017", "04", "23"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キズナ",
@@ -182,8 +186,11 @@
     {
       "id": "solace",
       "name": "サラス",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 23}",
-      "foaledArray": ["2015", "03", "23"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オルフェーヴル",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Invite",
     "rootHorseId": "invite",
-    "lastUpdated": "2025-09-23T04:18:02.573691Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "invite",
       "name": "インヴァイト",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Be My Guest",
@@ -32,8 +33,11 @@
     {
       "id": "reserve-seat",
       "name": "リザーブシート",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 11}",
-      "foaledArray": ["1995", "04", "11"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クリエイター(GB)",
@@ -61,8 +65,11 @@
     {
       "id": "solid-platinum",
       "name": "ソリッドプラチナム",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 30}",
-      "foaledArray": ["2003", "04", "30"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
@@ -256,8 +263,11 @@
     {
       "id": "win-kluger",
       "name": "ウインクリューガー",
-      "foaled": "{'year': 2000, 'month': 2, 'day': 13}",
-      "foaledArray": ["2000", "02", "13"],
+      "foaled": {
+        "year": 2000,
+        "month": 2,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",
