@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "With Strings",
     "rootHorseId": "with-strings",
-    "lastUpdated": "2025-09-18T04:51:24.676894Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "with-strings",
       "name": "ウィズストリングス",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 16}",
-      "foaledArray": ["1996", "04", "16"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デヒア(US)",
@@ -32,8 +35,11 @@
     {
       "id": "meisho-granada",
       "name": "メイショウグラナダ",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 13}",
-      "foaledArray": ["2005", "04", "13"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
@@ -61,8 +67,11 @@
     {
       "id": "meisho-glocke",
       "name": "メイショウグロッケ",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 19}",
-      "foaledArray": ["2014", "04", "19"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メイショウサムソン",

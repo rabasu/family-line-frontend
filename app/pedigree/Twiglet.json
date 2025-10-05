@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Twiglet",
     "rootHorseId": "twiglet",
-    "lastUpdated": "2025-09-24T10:40:26.128451Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "twiglet",
       "name": "Twiglet",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Twig Moss",
@@ -31,8 +32,11 @@
     {
       "id": "fairy-king-prawn",
       "name": "フェアリーキングプローン",
-      "foaled": "{'year': 1995, 'month': 10, 'day': 13}",
-      "foaledArray": ["1995", "10", "13"],
+      "foaled": {
+        "year": 1995,
+        "month": 10,
+        "day": 13
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",

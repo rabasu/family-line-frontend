@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tashjir",
     "rootHorseId": "tashjir",
-    "lastUpdated": "2025-09-24T05:37:16.722454Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tashjir",
       "name": "タシュジール",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Slew o' Gold",
@@ -32,8 +33,11 @@
     {
       "id": "siberian-meadow",
       "name": "シベリアンメドウ",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 5}",
-      "foaledArray": ["1999", "04", "05"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Meadowlake",

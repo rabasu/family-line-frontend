@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tanerlis",
     "rootHorseId": "tanerlis",
-    "lastUpdated": "2025-09-27T16:10:58.167421Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tanerlis",
       "name": "タナリス",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tanerko",
@@ -32,8 +33,11 @@
     {
       "id": "long-kasuga",
       "name": "ロングカスガ",
-      "foaled": "{'year': 1976, 'month': 5, 'day': 23}",
-      "foaledArray": ["1976", "05", "23"],
+      "foaled": {
+        "year": 1976,
+        "month": 5,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボールドリック(US)",
@@ -59,8 +63,11 @@
     {
       "id": "long-sharp",
       "name": "ロングシャープ",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 22}",
-      "foaledArray": ["1981", "04", "22"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -86,8 +93,11 @@
     {
       "id": "long-arch",
       "name": "ロングアーチ",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 11}",
-      "foaledArray": ["1987", "05", "11"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ナイスダンサー",
@@ -221,8 +231,11 @@
     {
       "id": "long-roller",
       "name": "ロングローラー",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 13}",
-      "foaledArray": ["1980", "05", "13"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラッキーソブリン",
@@ -333,6 +346,158 @@
       "englishName": "Long Roller",
       "prizeMoney": {
         "total": "0万円"
+      },
+      "damId": "tanerlis"
+    },
+    {
+      "id": "ronguichii",
+      "name": "ロングイチー",
+      "foaled": {
+        "year": 1974,
+        "month": 4,
+        "day": 13
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アステック",
+      "dam": "タナリス",
+      "color": "黒鹿毛",
+      "breeder": "高野牧場（浦河町）",
+      "netkeibaId": "1974104653",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "9",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 3,
+            "day": 12
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪杯(OP)",
+          "displayRace": "サンケイ大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 12,
+            "day": 25
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(重賞)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "10",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "20",
+          "result": "5",
+          "favorite": "18"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 3,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(OP)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 9,
+            "day": 5
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "370万円",
+        "central": "370万円",
+        "local": "0万円"
       },
       "damId": "tanerlis"
     }

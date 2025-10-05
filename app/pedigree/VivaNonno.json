@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Viva Nonno",
     "rootHorseId": "viva-nonno",
-    "lastUpdated": "2025-09-23T00:27:30.434018Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "viva-nonno",
       "name": "ビバノンノ",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 16}",
-      "foaledArray": ["1993", "05", "16"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Bird",
@@ -32,8 +35,11 @@
     {
       "id": "homan-tequila",
       "name": "ホーマンテキーラ",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 9}",
-      "foaledArray": ["2002", "02", "09"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

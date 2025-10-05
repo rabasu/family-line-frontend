@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Unlimited Budget",
     "rootHorseId": "unlimited-budget",
-    "lastUpdated": "2025-09-16T04:12:29.329478Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "unlimited-budget",
       "name": "アンリミテッドバジェット",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 12}",
-      "foaledArray": ["2010", "03", "12"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ストリートセンス(US)",
@@ -32,8 +35,11 @@
     {
       "id": "portafoglio",
       "name": "ポルタフォリオ",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 9}",
-      "foaledArray": ["2018", "04", "09"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tasha's Star",
     "rootHorseId": "tashas-star",
-    "lastUpdated": "2025-09-17T05:31:35.197723Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tashas-star",
       "name": "ターシャズスター",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Spanish Steps",
@@ -32,8 +33,11 @@
     {
       "id": "esmeraldina",
       "name": "エスメラルディーナ",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 4}",
-      "foaledArray": ["2011", "03", "04"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Harlan's Holiday",
@@ -152,8 +156,11 @@
     {
       "id": "arrivo",
       "name": "アリーヴォ",
-      "foaled": "{'year': 2018, 'month': 5, 'day': 17}",
-      "foaledArray": ["2018", "05", "17"],
+      "foaled": {
+        "year": 2018,
+        "month": 5,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ドゥラメンテ",

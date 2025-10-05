@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Yuhzuru",
     "rootHorseId": "yuhzuru",
-    "lastUpdated": "2025-09-25T01:54:35.479634Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "yuhzuru",
       "name": "ユウヅル",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Thatch",
@@ -32,8 +33,11 @@
     {
       "id": "yuzuru-hime",
       "name": "ユウズルヒメ",
-      "foaled": "{'year': 1986, 'month': 6, 'day': 1}",
-      "foaledArray": ["1986", "06", "01"],
+      "foaled": {
+        "year": 1986,
+        "month": 6,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レッドサン",
@@ -59,8 +63,11 @@
     {
       "id": "theseus-frise",
       "name": "テセウスフリーゼ",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 19}",
-      "foaledArray": ["1992", "05", "19"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",

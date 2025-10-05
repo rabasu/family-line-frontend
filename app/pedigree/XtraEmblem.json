@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Xtra Emblem",
     "rootHorseId": "xtra-emblem",
-    "lastUpdated": "2025-09-21T09:19:08.714845Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "xtra-emblem",
       "name": "Xtra Emblem",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Our Emblem",
@@ -31,8 +32,11 @@
     {
       "id": "a-shin-wezen",
       "name": "エーシンウェズン",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 3}",
-      "foaledArray": ["2007", "04", "03"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Trippi",

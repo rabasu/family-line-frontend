@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Wipe the Eye",
     "rootHorseId": "wipe-the-eye",
-    "lastUpdated": "2025-09-24T07:09:34.308664Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "wipe-the-eye",
       "name": "ワイプザアイ",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 8}",
-      "foaledArray": ["1991", "03", "08"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gulch",
@@ -32,8 +35,11 @@
     {
       "id": "strong-blood",
       "name": "ストロングブラッド",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 13}",
-      "foaledArray": ["1999", "03", "13"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",
@@ -437,8 +443,11 @@
     {
       "id": "summer-candle",
       "name": "サマーキャンドル",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 18}",
-      "foaledArray": ["1998", "03", "18"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シアトルダンサーII(US)",

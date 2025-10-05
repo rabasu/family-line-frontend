@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Whinchat",
     "rootHorseId": "whinchat",
-    "lastUpdated": "2025-09-27T04:05:29.097462Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "whinchat",
       "name": "ウインチヤツト",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nearula(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "lindus",
       "name": "リンダス",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファラモンド",
@@ -59,8 +61,9 @@
     {
       "id": "tokino-never",
       "name": "トキノネバー",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァービート(GB)",
@@ -86,8 +89,11 @@
     {
       "id": "meisho-eikan",
       "name": "メイショウエイカン",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 7}",
-      "foaledArray": ["1983", "03", "07"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -206,8 +212,11 @@
     {
       "id": "center-zeus",
       "name": "センターゼウス",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 22}",
-      "foaledArray": ["1991", "03", "22"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ストームオンザルース(CAN)",
@@ -296,8 +305,11 @@
     {
       "id": "center-majorca",
       "name": "センターマジョルカ",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 16}",
-      "foaledArray": ["1981", "03", "16"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アローエクスプレス",
@@ -325,8 +337,11 @@
     {
       "id": "center-sally",
       "name": "センターサリー",
-      "foaled": "{'year': 1975, 'month': 3, 'day': 3}",
-      "foaledArray": ["1975", "03", "03"],
+      "foaled": {
+        "year": 1975,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -344,6 +359,157 @@
       "raceResults": [],
       "source": "python_scraping",
       "englishName": "Center Sally",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "lindus"
+    },
+    {
+      "id": "texas-waipon",
+      "name": "テキサスワイポン",
+      "foaled": {
+        "year": 1974,
+        "month": 3,
+        "day": 30
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "フォルティノ",
+      "dam": "リンダス",
+      "color": "芦毛",
+      "breeder": "富田牧場（浦河町）",
+      "netkeibaId": "1974104772",
+      "raceStats": {
+        "total": {
+          "runs": 47,
+          "wins": 14
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 4,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "5",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 2,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(春)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "中京",
+          "race": "中京障害S(OP)",
+          "displayRace": "中京障害S(秋)",
+          "distance": "障3600",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "6(9)",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Texas Waipon",
       "prizeMoney": {
         "total": "0万円"
       },

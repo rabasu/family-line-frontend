@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Torc Anna",
     "rootHorseId": "torc-anna",
-    "lastUpdated": "2025-09-25T14:58:04.933486Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "torc-anna",
       "name": "トークアンナ",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sayani",
@@ -32,8 +33,9 @@
     {
       "id": "hokatsu",
       "name": "ホウカツ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トサミドリ",
@@ -59,8 +61,9 @@
     {
       "id": "hoyo-daughter",
       "name": "ホウヨウドーター",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レアリーリーガル(US)",
@@ -86,8 +89,9 @@
     {
       "id": "pass-word",
       "name": "パスワード",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファーストファミリー",
@@ -113,8 +117,11 @@
     {
       "id": "minamino-lady-don",
       "name": "ミナミノレデードン",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 18}",
-      "foaledArray": ["1983", "05", "18"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドン",
@@ -142,8 +149,11 @@
     {
       "id": "marukatsu-oja",
       "name": "マルカツオウジャ",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 4}",
-      "foaledArray": ["1990", "05", "04"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーパスノーセール(IRE)",
@@ -217,8 +227,11 @@
     {
       "id": "k-g-kagura",
       "name": "ケージーカグラ",
-      "foaled": "{'year': 1989, 'month': 5, 'day': 4}",
-      "foaledArray": ["1989", "05", "04"],
+      "foaled": {
+        "year": 1989,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ペール(IRE)",
@@ -307,8 +320,11 @@
     {
       "id": "hoyo-girl",
       "name": "ホウヨウガール",
-      "foaled": "{'year': 1978, 'month': 6, 'day': 15}",
-      "foaledArray": ["1978", "06", "15"],
+      "foaled": {
+        "year": 1978,
+        "month": 6,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファーストファミリー",
@@ -334,8 +350,9 @@
     {
       "id": "senho",
       "name": "センホウ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハッピーオーメン(IRE)",
@@ -361,8 +378,9 @@
     {
       "id": "toyotoshi",
       "name": "トヨトシ",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ティエポロ(ITA)",
@@ -384,6 +402,172 @@
         "total": "0万円"
       },
       "damId": "torc-anna"
+    },
+    {
+      "id": "companion",
+      "name": "コンパニオン",
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 3
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トライバルチーフ(GB)",
+      "dam": "ホウヨウドーター",
+      "color": "鹿毛",
+      "breeder": "豊洋牧場（新冠町）",
+      "netkeibaId": "1977102557",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 6,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 13
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 9,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 8,
+            "day": 2
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(OP)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(400万下)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 4,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 2,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "クイーンC(OP)",
+          "displayRace": "クイーンC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "京成杯3歳S(OP)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Companion",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hoyo-daughter"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Woodland Dream",
     "rootHorseId": "woodland-dream",
-    "lastUpdated": "2025-09-21T17:24:34.248954Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "woodland-dream",
       "name": "ウッドランドドリーム",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Charnwood Forest",
@@ -32,8 +33,11 @@
     {
       "id": "snow-fairy",
       "name": "スノーフェアリー",
-      "foaled": "{'year': 2007, 'month': 2, 'day': 12}",
-      "foaledArray": ["2007", "02", "12"],
+      "foaled": {
+        "year": 2007,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Intikhab",

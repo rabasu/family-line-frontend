@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Tennessee Girl",
     "rootHorseId": "tennessee-girl",
-    "lastUpdated": "2025-09-21T08:50:03.933085Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tennessee-girl",
       "name": "テネシーガール",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 14}",
-      "foaledArray": ["1997", "03", "14"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pine Bluff(US)",
@@ -32,8 +35,11 @@
     {
       "id": "a-shin-memphis",
       "name": "エーシンメンフィス",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 20}",
-      "foaledArray": ["2008", "04", "20"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Medaglia d'Oro",

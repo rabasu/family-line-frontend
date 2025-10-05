@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Vigdis",
     "rootHorseId": "vigdis",
-    "lastUpdated": "2025-09-27T07:06:44.181091Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "vigdis",
       "name": "ヴイグデイス",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Worden",
@@ -32,8 +33,9 @@
     {
       "id": "shin-mitsuko",
       "name": "シンミツコ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーシア",
@@ -59,8 +61,11 @@
     {
       "id": "shin-world",
       "name": "シンワールド",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 25}",
-      "foaledArray": ["1978", "03", "25"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バックストッパー",
@@ -86,8 +91,11 @@
     {
       "id": "shin-chestnut",
       "name": "シンチェスナッツ",
-      "foaled": "{'year': 1985, 'month': 6, 'day': 13}",
-      "foaledArray": ["1985", "06", "13"],
+      "foaled": {
+        "year": 1985,
+        "month": 6,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",

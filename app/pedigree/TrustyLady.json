@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Trusty Lady",
     "rootHorseId": "trusty-lady",
-    "lastUpdated": "2025-09-18T04:51:34.836051Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "trusty-lady",
       "name": "Trusty Lady",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 30}",
-      "foaledArray": ["1998", "04", "30"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",
@@ -31,8 +34,11 @@
     {
       "id": "mr-melody",
       "name": "ミスターメロディ",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 29}",
-      "foaledArray": ["2015", "03", "29"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Scat Daddy(US)",

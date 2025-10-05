@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Toyomaru",
     "rootHorseId": "toyomaru",
-    "lastUpdated": "2025-09-17T09:16:45.519257Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "toyomaru",
       "name": "トヨマル",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Clever Trick",
@@ -32,8 +33,11 @@
     {
       "id": "sugino-toyo-hime",
       "name": "スギノトヨヒメ",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 23}",
-      "foaledArray": ["1997", "05", "23"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -77,8 +81,11 @@
     {
       "id": "guyenne",
       "name": "ギュイエンヌ",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 29}",
-      "foaledArray": ["2005", "04", "29"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",
@@ -137,8 +144,11 @@
     {
       "id": "auvergne",
       "name": "オーヴェルニュ",
-      "foaled": "{'year': 2016, 'month': 5, 'day': 8}",
-      "foaledArray": ["2016", "05", "08"],
+      "foaled": {
+        "year": 2016,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スマートファルコン",

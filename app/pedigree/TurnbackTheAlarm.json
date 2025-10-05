@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Turnback the Alarm",
     "rootHorseId": "turnback-the-alarm",
-    "lastUpdated": "2025-09-23T18:38:39.605931Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "turnback-the-alarm",
       "name": "ターンバックジアラーム",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Darn That Alarm",
@@ -32,8 +33,11 @@
     {
       "id": "hallelujah-sunday",
       "name": "ハレルヤサンデー",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 19}",
-      "foaledArray": ["1998", "05", "19"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

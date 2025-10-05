@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Turfrose",
     "rootHorseId": "turfrose",
-    "lastUpdated": "2025-09-20T10:49:29.962252Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "turfrose",
       "name": "ターフローズ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 21}",
-      "foaledArray": ["2004", "03", "21"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Big Shuffle(US)",
@@ -32,8 +35,11 @@
     {
       "id": "star-of-persia",
       "name": "スターオブペルシャ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 2}",
-      "foaledArray": ["2013", "03", "02"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 2
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -137,13 +143,15 @@
     {
       "id": "rosa-gigantea",
       "name": "ロサギガンティア",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 18}",
-      "foaledArray": ["2011", "04", "18"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
       "dam": "ターフローズTurfrose",
-      "dam_netkeiba_id": "000a011870",
       "color": "青毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2011104295",
@@ -418,7 +426,8 @@
         "central": "2億2,455万円",
         "local": "0万円"
       },
-      "damId": "turfrose"
+      "damId": "turfrose",
+      "dam_netkeiba_id": "000a011870"
     }
   ]
 }

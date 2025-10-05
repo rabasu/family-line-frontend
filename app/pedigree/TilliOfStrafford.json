@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Tilli of Strafford",
     "rootHorseId": "tilli-of-strafford",
-    "lastUpdated": "2025-09-20T08:46:55.777369Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tilli-of-strafford",
       "name": "ティリオブストラッフォード",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",
       "dam": "Deviltante",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a0067fc",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Tilli of Strafford"
+      "englishName": "Tilli of Strafford",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "asukano-himiko",
       "name": "アスカノヒミコ",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 22}",
-      "foaledArray": ["2003", "04", "22"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タバスコキャット(US)",
       "dam": "ティリオブストラッフォード",
-      "dam_netkeiba_id": "000a0067fc",
       "color": "鹿毛",
       "breeder": "上山牧場（浦河町）",
       "netkeibaId": "2003103810",
@@ -58,18 +61,21 @@
         "central": "790万円",
         "local": "0万円"
       },
-      "damId": "tilli-of-strafford"
+      "damId": "tilli-of-strafford",
+      "dam_netkeiba_id": "000a0067fc"
     },
     {
       "id": "asukano-roman",
       "name": "アスカノロマン",
-      "foaled": "{'year': 2011, 'month': 5, 'day': 22}",
-      "foaledArray": ["2011", "05", "22"],
+      "foaled": {
+        "year": 2011,
+        "month": 5,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスデジタル a",
       "dam": "アスカノヒミコ",
-      "dam_netkeiba_id": "2003103810",
       "color": "栗毛",
       "breeder": "新冠タガノファーム（新冠町）",
       "netkeibaId": "2011104994",
@@ -509,7 +515,8 @@
         "central": "2億7,221万円",
         "local": "1,137万円"
       },
-      "damId": "asukano-himiko"
+      "damId": "asukano-himiko",
+      "dam_netkeiba_id": "2003103810"
     }
   ]
 }

@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "U Can Do It",
     "rootHorseId": "u-can-do-it",
-    "lastUpdated": "2025-09-20T10:48:14.795886Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "u-can-do-it",
       "name": "ユーキャンドゥイット",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gold Alert",
       "dam": "Royal Fit",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "米",
       "netkeibaId": "000a000381",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "U Can Do It"
+      "englishName": "U Can Do It",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "farnese",
       "name": "ファルネーゼ",
-      "foaled": "{'year': 2005, 'month': 1, 'day': 31}",
-      "foaledArray": ["2005", "01", "31"],
+      "foaled": {
+        "year": 2005,
+        "month": 1,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
       "dam": "ユーキャンドゥイット",
-      "dam_netkeiba_id": "000a000381",
       "color": "栗毛",
       "breeder": "社台コーポレーション白老ファーム（白老町）",
       "netkeibaId": "2005102174",
@@ -58,18 +61,21 @@
         "central": "3,890万円",
         "local": "0万円"
       },
-      "damId": "u-can-do-it"
+      "damId": "u-can-do-it",
+      "dam_netkeiba_id": "000a000381"
     },
     {
       "id": "daiwa-duchess",
       "name": "ダイワダッチェス",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 29}",
-      "foaledArray": ["2013", "04", "29"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ワークフォース(GB)",
       "dam": "ファルネーゼ",
-      "dam_netkeiba_id": "2005102174",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2013105601",
@@ -104,7 +110,8 @@
         "central": "5,811万円",
         "local": "0万円"
       },
-      "damId": "farnese"
+      "damId": "farnese",
+      "dam_netkeiba_id": "2005102174"
     }
   ]
 }

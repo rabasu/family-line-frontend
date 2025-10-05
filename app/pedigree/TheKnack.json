@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "The Knack",
     "rootHorseId": "the-knack",
-    "lastUpdated": "2025-09-21T16:17:31.744717Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "the-knack",
       "name": "ザナック",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",
@@ -32,8 +33,11 @@
     {
       "id": "meine-sharona",
       "name": "マイネシャローナ",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 14}",
-      "foaledArray": ["2002", "03", "14"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コマンダーインチーフ(GB)",
@@ -61,8 +65,11 @@
     {
       "id": "meine-auram",
       "name": "マイネオーラム",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 20}",
-      "foaledArray": ["2011", "03", "20"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
@@ -151,8 +158,11 @@
     {
       "id": "cosmo-ozora",
       "name": "コスモオオゾラ",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 17}",
-      "foaledArray": ["2009", "02", "17"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロージズインメイ(US)",

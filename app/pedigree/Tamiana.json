@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tamiana",
     "rootHorseId": "tamiana",
-    "lastUpdated": "2025-09-27T16:56:47.397846Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tamiana",
       "name": "タミアナ",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tamerlane",
@@ -32,8 +33,9 @@
     {
       "id": "seine-sport",
       "name": "セーヌスポート",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボールドアンドエイブル(US)",
@@ -210,8 +212,11 @@
     {
       "id": "five-france",
       "name": "ファイブフランス",
-      "foaled": "{'year': 1982, 'month': 5, 'day': 29}",
-      "foaledArray": ["1982", "05", "29"],
+      "foaled": {
+        "year": 1982,
+        "month": 5,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -255,8 +260,11 @@
     {
       "id": "gaily-pixy",
       "name": "ゲイリーピクシー",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 20}",
-      "foaledArray": ["1998", "05", "20"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rahy",
@@ -284,8 +292,11 @@
     {
       "id": "meine-elena",
       "name": "マイネエレーナ",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 18}",
-      "foaledArray": ["2008", "04", "18"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロージズインメイ(US)",
@@ -374,8 +385,11 @@
     {
       "id": "meiner-flap",
       "name": "マイネルフラップ",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 11}",
-      "foaledArray": ["2016", "02", "11"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヴィクトワールピサ",
@@ -524,8 +538,11 @@
     {
       "id": "meiner-elf",
       "name": "マイネルエルフ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 25}",
-      "foaledArray": ["2006", "03", "25"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -659,8 +676,11 @@
     {
       "id": "noble-grass",
       "name": "ノーブルグラス",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 7}",
-      "foaledArray": ["1991", "04", "07"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -884,8 +904,11 @@
     {
       "id": "nankin-ryuen",
       "name": "ナンキンリュウエン",
-      "foaled": "{'year': 1977, 'month': 6, 'day': 6}",
-      "foaledArray": ["1977", "06", "06"],
+      "foaled": {
+        "year": 1977,
+        "month": 6,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -1009,6 +1032,202 @@
       ],
       "source": "python_scraping",
       "englishName": "Nankin Ryuen",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tamiana"
+    },
+    {
+      "id": "yodo-hamanasu",
+      "name": "ヨドハマナス",
+      "foaled": {
+        "year": 1975,
+        "month": 3,
+        "day": 7
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ボールドアンドエイブル(US)",
+      "dam": "タミアナ",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（白老町）",
+      "netkeibaId": "1975102909",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 8,
+            "day": 23
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "阪神",
+          "race": "京都牝馬特別(OP)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "8",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "9",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 8,
+            "day": 19
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 2,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "6",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 9,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "クイーンS(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Yodo Hamanasu",
       "prizeMoney": {
         "total": "0万円"
       },

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Torsion Belle",
     "rootHorseId": "torsion-belle",
-    "lastUpdated": "2025-09-24T19:51:28.672836Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "torsion-belle",
       "name": "Torsion Belle",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Torsion",
@@ -31,8 +32,11 @@
     {
       "id": "juno-pentagon",
       "name": "ユノペンタゴン",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 14}",
-      "foaledArray": ["1993", "05", "14"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Red Ransom",

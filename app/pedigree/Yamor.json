@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Y'Amor",
     "rootHorseId": "yamor",
-    "lastUpdated": "2025-09-22T21:26:02.688314Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "yamor",
       "name": "イヤーモアー",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "doll",
       "name": "ドール",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 16}",
-      "foaledArray": ["1995", "05", "16"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セクレト(US)",
@@ -61,8 +65,11 @@
     {
       "id": "world-hunter",
       "name": "ワールドハンター",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 11}",
-      "foaledArray": ["2004", "03", "11"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジェイドハンター(US)",

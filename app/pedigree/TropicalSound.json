@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tropical Sound",
     "rootHorseId": "tropical-sound",
-    "lastUpdated": "2025-09-19T02:01:23.677895Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tropical-sound",
       "name": "トロピカルサウンドII",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fappiano(US)",
@@ -32,8 +33,11 @@
     {
       "id": "silk-universal",
       "name": "シルクユニバーサル",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 26}",
-      "foaledArray": ["2001", "02", "26"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -61,8 +65,11 @@
     {
       "id": "mondo-intero",
       "name": "モンドインテロ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 2}",
-      "foaledArray": ["2012", "02", "02"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -331,8 +338,11 @@
     {
       "id": "seda-brillantes",
       "name": "セダブリランテス",
-      "foaled": "{'year': 2014, 'month': 1, 'day': 12}",
-      "foaledArray": ["2014", "01", "12"],
+      "foaled": {
+        "year": 2014,
+        "month": 1,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープブリランテ",

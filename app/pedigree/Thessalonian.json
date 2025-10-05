@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Thessalonian",
     "rootHorseId": "thessalonian",
-    "lastUpdated": "2025-09-25T20:32:07.760499Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "thessalonian",
       "name": "テサロニアン",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Milesian",
@@ -32,8 +33,9 @@
     {
       "id": "saint-malo",
       "name": "サンマロ",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステューペンダス(US)",
@@ -59,8 +61,11 @@
     {
       "id": "golden-rose",
       "name": "ゴールデンローズ",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 2}",
-      "foaledArray": ["1982", "04", "02"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サーペンフロ",
@@ -88,8 +93,11 @@
     {
       "id": "hikaru-passion",
       "name": "ヒカルパッション",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 18}",
-      "foaledArray": ["1993", "05", "18"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
@@ -117,8 +125,11 @@
     {
       "id": "hikaru-carina",
       "name": "ヒカルカリーナ",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 2}",
-      "foaledArray": ["1999", "04", "02"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロマックイーン",
@@ -146,8 +157,11 @@
     {
       "id": "hula-bride",
       "name": "フーラブライド",
-      "foaled": "{'year': 2009, 'month': 5, 'day': 9}",
-      "foaledArray": ["2009", "05", "09"],
+      "foaled": {
+        "year": 2009,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゴールドアリュール",
@@ -386,8 +400,11 @@
     {
       "id": "running-free",
       "name": "ランニングフリー",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 20}",
-      "foaledArray": ["1983", "04", "20"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サーペンフロ",

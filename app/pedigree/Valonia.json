@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Valonia",
     "rootHorseId": "valonia",
-    "lastUpdated": "2025-09-27T11:35:00.643512Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "valonia",
       "name": "バロニア",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Val de Loir",
@@ -32,8 +33,9 @@
     {
       "id": "tenri-okan",
       "name": "テンリオーカン",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Jefferson",
@@ -59,8 +61,11 @@
     {
       "id": "tenri-answer",
       "name": "テンリアンサー",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 30}",
-      "foaledArray": ["1983", "03", "30"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンアンサー(CAN)",

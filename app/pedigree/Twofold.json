@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Twofold",
     "rootHorseId": "twofold",
-    "lastUpdated": "2025-09-24T19:49:53.326324Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "twofold",
       "name": "Twofold",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Timeless Moment",
@@ -31,8 +32,11 @@
     {
       "id": "mandarin-star",
       "name": "マンダリンスター",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 18}",
-      "foaledArray": ["1995", "05", "18"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Personal Hope",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Very Top",
     "rootHorseId": "very-top",
-    "lastUpdated": "2025-09-23T10:33:39.382626Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "very-top",
       "name": "ベリートップ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トンピオン",
@@ -32,8 +33,9 @@
     {
       "id": "erimo-screen",
       "name": "エリモスクリーン",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Silent Screen",
@@ -59,8 +61,11 @@
     {
       "id": "top-screen",
       "name": "トップスクリーン",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 29}",
-      "foaledArray": ["1980", "05", "29"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソナリティ(US)",
@@ -86,8 +91,11 @@
     {
       "id": "chokai-ruby",
       "name": "チョウカイルビー",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 25}",
-      "foaledArray": ["1993", "04", "25"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リヴリア(US)",
@@ -115,8 +123,11 @@
     {
       "id": "erimo-country",
       "name": "エリモカントリー",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 30}",
-      "foaledArray": ["2000", "05", "30"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ティンバーカントリー(US)",

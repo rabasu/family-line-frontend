@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Twice the Vice",
     "rootHorseId": "twice-the-vice",
-    "lastUpdated": "2025-09-24T03:36:55.458076Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "twice-the-vice",
       "name": "Twice the Vice",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 4}",
-      "foaledArray": ["1991", "04", "04"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Vice Regent",
@@ -31,8 +34,11 @@
     {
       "id": "major-cafe",
       "name": "メジャーカフェ",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 24}",
-      "foaledArray": ["1999", "03", "24"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Gone West",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Zollo",
     "rootHorseId": "zollo",
-    "lastUpdated": "2025-09-26T14:11:01.119332Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "zollo",
       "name": "ゾロ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Crepello(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "lord-hikari",
       "name": "ロードヒカリ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロドリゴII(IRE)",
@@ -59,8 +61,11 @@
     {
       "id": "chuo-sally",
       "name": "チュウオーサリー",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 17}",
-      "foaledArray": ["1983", "05", "17"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラッキーソブリン",

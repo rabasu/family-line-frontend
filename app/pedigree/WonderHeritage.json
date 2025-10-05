@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Wonder Heritage",
     "rootHorseId": "wonder-heritage",
-    "lastUpdated": "2025-09-22T10:30:45.278544Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "wonder-heritage",
       "name": "ワンダーヘリテージ",
-      "foaled": "{'year': 1995, 'month': 1, 'day': 29}",
-      "foaledArray": ["1995", "01", "29"],
+      "foaled": {
+        "year": 1995,
+        "month": 1,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pleasant Tap",
@@ -32,8 +35,11 @@
     {
       "id": "wonder-acute",
       "name": "ワンダーアキュート",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 14}",
-      "foaledArray": ["2006", "03", "14"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カリズマティック(US)",
@@ -647,8 +653,11 @@
     {
       "id": "wonder-speed",
       "name": "ワンダースピード",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 15}",
-      "foaledArray": ["2002", "03", "15"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キンググローリアス(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Winelight",
     "rootHorseId": "winelight",
-    "lastUpdated": "2025-09-24T16:17:40.579465Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "winelight",
       "name": "Winelight",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Dancer",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-windom",
       "name": "エイシンウインダム",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 18}",
-      "foaledArray": ["1996", "04", "18"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Peteski",

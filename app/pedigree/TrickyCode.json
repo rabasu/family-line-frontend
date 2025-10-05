@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tricky Code",
     "rootHorseId": "tricky-code",
-    "lastUpdated": "2025-09-23T04:16:24.171203Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tricky-code",
       "name": "トリッキーコード",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lost Code",
@@ -32,8 +33,11 @@
     {
       "id": "code-name",
       "name": "コードネーム",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 11}",
-      "foaledArray": ["1999", "04", "11"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "shinano-neige",
       "name": "シナノネージュ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 3}",
-      "foaledArray": ["2006", "03", "03"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
@@ -88,8 +95,11 @@
     {
       "id": "blanc-neige",
       "name": "ブランネージュ",
-      "foaled": "{'year': 2011, 'month': 1, 'day': 25}",
-      "foaledArray": ["2011", "01", "25"],
+      "foaled": {
+        "year": 2011,
+        "month": 1,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -253,8 +263,11 @@
     {
       "id": "hat-trick",
       "name": "ハットトリック",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 26}",
-      "foaledArray": ["2001", "04", "26"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

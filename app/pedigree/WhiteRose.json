@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "White Rose",
     "rootHorseId": "white-rose",
-    "lastUpdated": "2025-09-16T04:41:44.541021Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "white-rose",
       "name": "ホワイトローズII",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 30}",
-      "foaledArray": ["2010", "03", "30"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tapit(US)",
@@ -32,8 +35,11 @@
     {
       "id": "timur",
       "name": "ティムール",
-      "foaled": "{'year': 2020, 'month': 2, 'day': 28}",
-      "foaledArray": ["2020", "02", "28"],
+      "foaled": {
+        "year": 2020,
+        "month": 2,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",

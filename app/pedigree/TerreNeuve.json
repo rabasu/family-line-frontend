@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Terre Neuve",
     "rootHorseId": "terre-neuve",
-    "lastUpdated": "2025-09-18T18:26:53.099177Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "terre-neuve",
       "name": "テルヌーヴ",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 19}",
-      "foaledArray": ["2012", "04", "19"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Henrythenavigator(US)",
@@ -32,8 +35,11 @@
     {
       "id": "ho-o-catherine",
       "name": "ホウオウカトリーヌ",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 2}",
-      "foaledArray": ["2016", "02", "02"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マツリダゴッホ",

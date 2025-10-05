@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Warranty Applied",
     "rootHorseId": "warranty-applied",
-    "lastUpdated": "2025-09-23T21:05:26.328385Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "warranty-applied",
       "name": "Warranty Applied",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Monteverdi",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-preston",
       "name": "エイシンプレストン",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 9}",
-      "foaledArray": ["1997", "04", "09"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Green Dancer",

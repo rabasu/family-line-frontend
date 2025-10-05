@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Wannabe Grand",
     "rootHorseId": "wannabe-grand",
-    "lastUpdated": "2025-09-22T14:54:53.733976Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "wannabe-grand",
       "name": "Wannabe Grand",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -31,8 +32,11 @@
     {
       "id": "zetto-kirk",
       "name": "ゼットカーク",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 22}",
-      "foaledArray": ["2004", "02", "22"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Selkirk",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Vaudeville Lady",
     "rootHorseId": "vaudeville-lady",
-    "lastUpdated": "2025-09-21T17:40:24.813915Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "vaudeville-lady",
       "name": "ヴァーデビルレディー",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Top Ville",
@@ -32,8 +33,11 @@
     {
       "id": "i-see-takao",
       "name": "アイシータカオー",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 5}",
-      "foaledArray": ["1998", "03", "05"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ナリタブライアン",
@@ -61,8 +65,11 @@
     {
       "id": "kawakita-command",
       "name": "カワキタコマンド",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 29}",
-      "foaledArray": ["2007", "03", "29"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラプレジデント",

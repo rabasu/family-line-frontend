@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tehsilda",
     "rootHorseId": "tehsilda",
-    "lastUpdated": "2025-09-27T05:35:29.450110Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tehsilda",
       "name": "テーシルダ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -32,8 +33,9 @@
     {
       "id": "tofuku-sakae",
       "name": "トウフクサカエ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セントクレスピン(GB)",
@@ -197,8 +199,11 @@
     {
       "id": "princess-yoko",
       "name": "プリンセスヨーコ",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 12}",
-      "foaledArray": ["1989", "04", "12"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スプレンディドモーメント(IRE)",
@@ -224,8 +229,11 @@
     {
       "id": "build-up-river",
       "name": "ビルドアップリバー",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 11}",
-      "foaledArray": ["1995", "02", "11"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",
@@ -374,8 +382,11 @@
     {
       "id": "erimo-foresight",
       "name": "エリモフォーサイト",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 6}",
-      "foaledArray": ["1990", "05", "06"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リヴリア(US)",
@@ -419,8 +430,11 @@
     {
       "id": "erimo-ruler",
       "name": "エリモルーラー",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 14}",
-      "foaledArray": ["1980", "04", "14"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アローエクスプレス",
@@ -458,6 +472,200 @@
         "total": "0万円"
       },
       "damId": "tofuku-sakae"
+    },
+    {
+      "id": "tai-tehm",
+      "name": "タイテエム",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "セントクレスピン(GB)",
+      "dam": "テーシルダ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000b68",
+      "raceStats": {
+        "total": {
+          "runs": 16,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 4,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "マイラーズC(OP)",
+          "displayRace": "マイラーズC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 1,
+            "day": 7
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "19",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 10,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 10,
+            "day": 1
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(OP)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 7,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 6,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tai Tehm",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tehsilda"
     }
   ]
 }

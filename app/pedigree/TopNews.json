@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Top News",
     "rootHorseId": "top-news",
-    "lastUpdated": "2025-09-21T19:12:00.001351Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "top-news",
       "name": "トップニュースII",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "mayano-raijin",
       "name": "マヤノライジン",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 2}",
-      "foaledArray": ["2001", "04", "02"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",

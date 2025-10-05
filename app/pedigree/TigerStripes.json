@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tiger Stripes",
     "rootHorseId": "tiger-stripes",
-    "lastUpdated": "2025-09-23T20:35:55.005168Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tiger-stripes",
       "name": "Tiger Stripes",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Prince Rupert",
@@ -31,8 +32,11 @@
     {
       "id": "tigertail",
       "name": "タイガーテイル",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 3}",
-      "foaledArray": ["1999", "04", "03"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Priolo(US)",

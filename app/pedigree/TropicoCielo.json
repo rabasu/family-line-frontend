@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tropico Cielo",
     "rootHorseId": "tropico-cielo",
-    "lastUpdated": "2025-09-23T12:34:31.252407Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tropico-cielo",
       "name": "Tropico Cielo",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セクレト(US)",
@@ -31,8 +32,11 @@
     {
       "id": "ekolu-place",
       "name": "エコルプレイス",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 9}",
-      "foaledArray": ["2000", "03", "09"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Grindstone",

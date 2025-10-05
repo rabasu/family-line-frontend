@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Zero Minus",
     "rootHorseId": "zero-minus",
-    "lastUpdated": "2025-09-24T09:09:39.481488Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "zero-minus",
       "name": "Zero Minus",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "It's Freezing",
@@ -31,8 +32,11 @@
     {
       "id": "machikane-ran",
       "name": "マチカネラン",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 21}",
-      "foaledArray": ["1997", "04", "21"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Wild Again",

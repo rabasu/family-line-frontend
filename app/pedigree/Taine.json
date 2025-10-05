@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Taine",
     "rootHorseId": "taine",
-    "lastUpdated": "2025-09-22T12:30:39.548722Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "taine",
       "name": "Taine",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sir Ivor(US)",
@@ -31,8 +32,11 @@
     {
       "id": "central-coast",
       "name": "セントラルコースト",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 26}",
-      "foaledArray": ["2005", "02", "26"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "War Chant",

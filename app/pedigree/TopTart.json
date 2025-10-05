@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Top Tart",
     "rootHorseId": "top-tart",
-    "lastUpdated": "2025-09-24T23:24:58.000563Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "top-tart",
       "name": "Top Tart",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Believe the Queen",
@@ -31,8 +32,11 @@
     {
       "id": "pastry-chef",
       "name": "ペイストリーシェフ",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 28}",
-      "foaledArray": ["1994", "03", "28"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Chief's Crown",

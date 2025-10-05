@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Welsh Sovereign",
     "rootHorseId": "welsh-sovereign",
-    "lastUpdated": "2025-09-25T22:30:48.541807Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "welsh-sovereign",
       "name": "ウエルシユソヴリン",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grey Sovereign",
@@ -32,8 +33,9 @@
     {
       "id": "tanino-sovereign",
       "name": "タニノソブリン",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Martial(IRE)",
@@ -120,8 +122,9 @@
     {
       "id": "tanino-graceful",
       "name": "タニノグレースフル",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -147,8 +150,11 @@
     {
       "id": "katarina-rabbit",
       "name": "カタリナラビット",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 6}",
-      "foaledArray": ["1986", "04", "06"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンザン",
@@ -207,8 +213,11 @@
     {
       "id": "camphor-best",
       "name": "カンファーベスト",
-      "foaled": "{'year': 1999, 'month': 5, 'day': 16}",
-      "foaledArray": ["1999", "05", "16"],
+      "foaled": {
+        "year": 1999,
+        "month": 5,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -702,8 +711,11 @@
     {
       "id": "dandy-amber",
       "name": "ダンディアンバー",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 13}",
-      "foaledArray": ["1988", "03", "13"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",

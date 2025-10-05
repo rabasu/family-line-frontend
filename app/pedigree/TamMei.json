@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tam Mei",
     "rootHorseId": "tam-mei",
-    "lastUpdated": "2025-09-26T09:09:44.922688Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tam-mei",
       "name": "タムメイ",
-      "foaled": "{'year': 1959}",
-      "foaledArray": ["1959"],
+      "foaled": {
+        "year": 1959
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tudor Minstrel(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "sanei-royal",
       "name": "サンエイロイヤル",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラム",
@@ -59,8 +61,11 @@
     {
       "id": "tom-royal",
       "name": "トムロイヤル",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 9}",
-      "foaledArray": ["1983", "04", "09"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステッピングトム",
@@ -115,6 +120,168 @@
         "local": "0万円"
       },
       "damId": "sanei-royal"
+    },
+    {
+      "id": "five-one",
+      "name": "ファイブワン",
+      "foaled": {
+        "year": 1972,
+        "month": 3,
+        "day": 27
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ミンシオ",
+      "dam": "サクラヒメ",
+      "color": "鹿毛",
+      "breeder": "谷岡牧場（静内町）",
+      "netkeibaId": "1972103065",
+      "raceStats": {
+        "total": {
+          "runs": 47,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 12,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "8",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "福島",
+          "race": "七夕賞(OP)",
+          "displayRace": "七夕賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "京王杯オータムH(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 8,
+            "day": 3
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(OP)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "20",
+          "favorite": "12"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Five One",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "sakurahime",
+      "name": "サクラヒメ",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Premonition",
+      "dam": "タムメイ",
+      "color": "黒鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "1955100567",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tam-mei"
     }
   ]
 }

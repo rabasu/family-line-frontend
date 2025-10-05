@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Teddy's Promise",
     "rootHorseId": "teddys-promise",
-    "lastUpdated": "2025-09-18T12:47:48.327544Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "teddys-promise",
       "name": "テディーズプロミス",
-      "foaled": "{'year': 2008, 'month': 5, 'day': 6}",
-      "foaledArray": ["2008", "05", "06"],
+      "foaled": {
+        "year": 2008,
+        "month": 5,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Salt Lake",
@@ -32,8 +35,11 @@
     {
       "id": "my-rhapsody",
       "name": "マイラプソディ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 9}",
-      "foaledArray": ["2017", "02", "09"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

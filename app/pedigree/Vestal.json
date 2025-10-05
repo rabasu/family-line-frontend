@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Vestal",
     "rootHorseId": "vestal",
-    "lastUpdated": "2025-09-27T07:07:58.510435Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "vestal",
       "name": "ヴエスタル",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Royal Vale",
@@ -32,8 +33,9 @@
     {
       "id": "aurora-issei",
       "name": "オーロライッセイ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーアリバイ(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "maeko-dream",
       "name": "マエコウドリーム",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 8}",
-      "foaledArray": ["1985", "04", "08"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンシー",

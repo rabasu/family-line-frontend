@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tricsy",
     "rootHorseId": "tricsy",
-    "lastUpdated": "2025-09-22T05:20:54.886032Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tricsy",
       "name": "トリクシー",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Trictrac",
@@ -32,8 +33,9 @@
     {
       "id": "governor-suisei",
       "name": "ガバナスイセイ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -59,8 +61,11 @@
     {
       "id": "eastern-governor",
       "name": "イースタンガバナー",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 29}",
-      "foaledArray": ["1981", "03", "29"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
@@ -86,8 +91,11 @@
     {
       "id": "red-venus",
       "name": "レッドヴィーナス",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 19}",
-      "foaledArray": ["1998", "05", "19"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
@@ -115,8 +123,11 @@
     {
       "id": "top-coming",
       "name": "トップカミング",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 10}",
-      "foaledArray": ["2006", "04", "10"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 10
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ゴールドアリュール",

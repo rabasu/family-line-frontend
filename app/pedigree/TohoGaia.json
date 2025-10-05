@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Toho Gaia",
     "rootHorseId": "toho-gaia",
-    "lastUpdated": "2025-09-20T20:59:49.258891Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "toho-gaia",
       "name": "トーホウガイア",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 26}",
-      "foaledArray": ["2001", "04", "26"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Unbridled(US)",
       "dam": "Agami",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "Martyn P. Burke（米）",
       "netkeibaId": "2001110162",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Toho Gaia"
+      "englishName": "Toho Gaia",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "toho-amapola",
       "name": "トーホウアマポーラ",
-      "foaled": "{'year': 2009, 'month': 1, 'day': 29}",
-      "foaledArray": ["2009", "01", "29"],
+      "foaled": {
+        "year": 2009,
+        "month": 1,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
       "dam": "トーホウガイア",
-      "dam_netkeiba_id": "2001110162",
       "color": "栗毛",
       "breeder": "竹島幸治（日高町）",
       "netkeibaId": "2009102583",
@@ -194,13 +199,17 @@
         "central": "1億4,321万円",
         "local": "0万円"
       },
-      "damId": "toho-gaia"
+      "damId": "toho-gaia",
+      "dam_netkeiba_id": "2001110162"
     },
     {
       "id": "toho-jackal",
       "name": "トーホウジャッカル",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 11}",
-      "foaledArray": ["2011", "03", "11"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",

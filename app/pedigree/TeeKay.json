@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tee Kay",
     "rootHorseId": "tee-kay",
-    "lastUpdated": "2025-09-23T20:06:16.389312Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tee-kay",
       "name": "Tee Kay",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gold Meridian",
@@ -31,8 +32,11 @@
     {
       "id": "symboli-kris-s",
       "name": "シンボリクリスエス",
-      "foaled": "{'year': 1999, 'month': 1, 'day': 21}",
-      "foaledArray": ["1999", "01", "21"],
+      "foaled": {
+        "year": 1999,
+        "month": 1,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kris S.",
