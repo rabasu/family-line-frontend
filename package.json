@@ -72,6 +72,15 @@
   "lint-staged": {
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
       "prettier --write"
+    ],
+    "app/**/*.+(js|jsx|ts|tsx)": [
+      "cross-env NODE_OPTIONS='--max-old-space-size=4096' eslint --fix --max-warnings 0"
+    ],
+    "components/**/*.+(js|jsx|ts|tsx)": [
+      "cross-env NODE_OPTIONS='--max-old-space-size=4096' eslint --fix --max-warnings 0"
+    ],
+    "layouts/**/*.+(js|jsx|ts|tsx)": [
+      "cross-env NODE_OPTIONS='--max-old-space-size=4096' eslint --fix --max-warnings 0"
     ]
   },
   "packageManager": "yarn@3.6.1"
