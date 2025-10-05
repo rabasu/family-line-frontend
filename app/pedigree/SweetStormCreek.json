@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sweet Storm Creek",
     "rootHorseId": "sweet-storm-creek",
-    "lastUpdated": "2025-09-20T19:13:59.709129Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-storm-creek",
       "name": "スイートストームクリーク",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Creek",
@@ -32,8 +33,11 @@
     {
       "id": "meisho-bushido",
       "name": "メイショウブシドウ",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 16}",
-      "foaledArray": ["2009", "02", "16"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

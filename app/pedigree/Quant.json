@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Quant",
     "rootHorseId": "quant",
-    "lastUpdated": "2025-09-21T07:49:21.241130Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "quant",
       "name": "クワント",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 27}",
-      "foaledArray": ["1992", "04", "27"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Chief's Crown",
@@ -32,8 +35,11 @@
     {
       "id": "nanatsuboshi",
       "name": "ナナツボシ",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 18}",
-      "foaledArray": ["2001", "02", "18"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サザンヘイロー(US)",
@@ -77,8 +83,11 @@
     {
       "id": "storming-star",
       "name": "ストーミングスター",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 31}",
-      "foaledArray": ["2010", "03", "31"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ストーミングホーム(GB)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Return to Paris",
     "rootHorseId": "return-to-paris",
-    "lastUpdated": "2025-09-23T00:27:18.189268Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "return-to-paris",
       "name": "リターントゥパリ",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Riverman",
@@ -32,8 +33,11 @@
     {
       "id": "crillon",
       "name": "クリヨン",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 22}",
-      "foaledArray": ["1988", "04", "22"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -77,8 +81,11 @@
     {
       "id": "wild-lily",
       "name": "ワイルドリリー",
-      "foaled": "{'year': 1999, 'month': 2, 'day': 5}",
-      "foaledArray": ["1999", "02", "05"],
+      "foaled": {
+        "year": 1999,
+        "month": 2,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wild Again",
@@ -106,8 +113,11 @@
     {
       "id": "philopator",
       "name": "フィロパトール",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 5}",
-      "foaledArray": ["2009", "04", "05"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",
@@ -256,8 +266,11 @@
     {
       "id": "golden-cast",
       "name": "ゴールデンキャスト",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 1}",
-      "foaledArray": ["2000", "03", "01"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",
@@ -706,8 +719,11 @@
     {
       "id": "return-bandam",
       "name": "リターンバンダム",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 29}",
-      "foaledArray": ["1990", "05", "29"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Niniski",

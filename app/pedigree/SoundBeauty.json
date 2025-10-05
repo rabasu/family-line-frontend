@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Sound Beauty",
     "rootHorseId": "sound-beauty",
-    "lastUpdated": "2025-09-20T09:18:52.057051Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sound-beauty",
       "name": "サウンドビューティ",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 12}",
-      "foaledArray": ["1988", "04", "12"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Be My Guest",
       "dam": "Hobe Sound",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "B. R. and Mrs Firestone（愛）",
       "netkeibaId": "1988107901",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Sound Beauty"
+      "englishName": "Sound Beauty",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "taiki-beauty",
       "name": "タイキビューティー",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 21}",
-      "foaledArray": ["1995", "03", "21"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドクターデヴィアス(IRE)",
       "dam": "サウンドビューティ",
-      "dam_netkeiba_id": "1988107901",
       "color": "栗毛",
       "breeder": "大樹ファーム（大樹町）",
       "netkeibaId": "1995108148",
@@ -56,18 +61,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sound-beauty"
+      "damId": "sound-beauty",
+      "dam_netkeiba_id": "1988107901"
     },
     {
       "id": "seattle-beauty",
       "name": "シアトルビューティ",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 10}",
-      "foaledArray": ["2000", "05", "10"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タイキブリザード",
       "dam": "タイキビューティー",
-      "dam_netkeiba_id": "1995108148",
       "color": "鹿毛",
       "breeder": "ガーベラパークスタッド（浦河町）",
       "netkeibaId": "2000103751",
@@ -86,18 +94,21 @@
         "central": "4,721万円",
         "local": "0万円"
       },
-      "damId": "taiki-beauty"
+      "damId": "taiki-beauty",
+      "dam_netkeiba_id": "1995108148"
     },
     {
       "id": "sigerunokogirizame",
       "name": "シゲルノコギリザメ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 12}",
-      "foaledArray": ["2013", "03", "12"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スーパーホーネット",
       "dam": "シアトルビューティ",
-      "dam_netkeiba_id": "2000103751",
       "color": "黒鹿毛",
       "breeder": "ガーベラパークスタッド（浦河町）",
       "netkeibaId": "2013103351",
@@ -177,7 +188,8 @@
         "central": "6,956万円",
         "local": "0万円"
       },
-      "damId": "seattle-beauty"
+      "damId": "seattle-beauty",
+      "dam_netkeiba_id": "2000103751"
     }
   ]
 }

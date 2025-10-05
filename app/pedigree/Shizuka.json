@@ -1,16 +1,17 @@
 {
   "metadata": {
     "pedigreeName": "シズカ",
-    "rootHorseId": "shizuka",
-    "lastUpdated": "2025-09-27T15:26:42.347664Z",
-    "source": "python_scraping_updated"
+    "rootHorseId": "shizuka-1952",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
-      "id": "shizuka",
+      "id": "shizuka-1952",
       "name": "シズカ",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dogaway",
@@ -31,8 +32,9 @@
     {
       "id": "queen-rose",
       "name": "クインローズ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オーテモン",
@@ -53,13 +55,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shizuka"
+      "damId": "shizuka-1952"
     },
     {
       "id": "quick-berge",
       "name": "クイックバージ",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 28}",
-      "foaledArray": ["1978", "05", "28"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -85,8 +90,11 @@
     {
       "id": "long-title",
       "name": "ロングタイトル",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 7}",
-      "foaledArray": ["1988", "05", "07"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パークリージェント(CAN)",
@@ -205,8 +213,11 @@
     {
       "id": "hayate-mig",
       "name": "ハヤテミグ",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 30}",
-      "foaledArray": ["1980", "05", "30"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ファナティコ",
@@ -340,8 +351,9 @@
     {
       "id": "hikari-chigusa",
       "name": "ヒカリチグサ",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルタタン(US)",
@@ -367,8 +379,9 @@
     {
       "id": "makino-tsuki",
       "name": "マキノツキ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハクリョウ",
@@ -394,8 +407,9 @@
     {
       "id": "makino-hime",
       "name": "マキノヒメ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハロウエー(GB)",
@@ -416,7 +430,190 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shizuka"
+      "damId": "shizuka-1952"
+    },
+    {
+      "id": "hayate-takeru",
+      "name": "ハヤテタケル",
+      "foaled": {
+        "year": 1979,
+        "month": 5,
+        "day": 5
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ファナティコ",
+      "dam": "ヒカリチグサ",
+      "color": "鹿毛",
+      "breeder": "地興牧場（浦河町）",
+      "netkeibaId": "1979106872",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "9",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "2",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hayate Takeru",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hikari-chigusa"
+    },
+    {
+      "id": "tokino-tsuyoshi",
+      "name": "トキノツヨシ",
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 25
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "フリートウイング(US)",
+      "dam": "マキノツキ",
+      "color": "栗毛",
+      "breeder": "地興牧場（浦河町）",
+      "netkeibaId": "1977106711",
+      "raceStats": {
+        "total": {
+          "runs": 35,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "中",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tokino Tsuyoshi",
+      "prizeMoney": {
+        "total": "110万円",
+        "central": "110万円",
+        "local": "0万円"
+      },
+      "damId": "makino-tsuki"
+    },
+    {
+      "id": "ketsushiyou",
+      "name": "ケツシヨウ",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "チャイナロック(GB)",
+      "dam": "シズカ",
+      "color": "黒鹿毛",
+      "breeder": "三石産",
+      "netkeibaId": "1964z00764",
+      "raceStats": {
+        "total": {
+          "runs": 66,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "2",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shizuka-1952",
+      "pedigreeName": "ケッショウ"
     }
   ]
 }

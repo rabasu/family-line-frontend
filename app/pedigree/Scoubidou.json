@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Scoubidou",
     "rootHorseId": "scoubidou",
-    "lastUpdated": "2025-09-17T01:30:51.983834Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "scoubidou",
       "name": "スクービドゥー",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 21}",
-      "foaledArray": ["2004", "04", "21"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Johan Cruyff",
@@ -32,8 +35,11 @@
     {
       "id": "sound-vivace",
       "name": "サウンドビバーチェ",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 19}",
-      "foaledArray": ["2019", "04", "19"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドゥラメンテ",

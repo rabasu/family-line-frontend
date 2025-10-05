@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Serienholde",
     "rootHorseId": "serienholde",
-    "lastUpdated": "2025-09-17T10:47:31.286416Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "serienholde",
       "name": "セリエンホルデ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 23}",
-      "foaledArray": ["2013", "03", "23"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Soldier Hollow",
@@ -32,8 +35,11 @@
     {
       "id": "schnell-meister",
       "name": "シュネルマイスター",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 23}",
-      "foaledArray": ["2018", "03", "23"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kingman(GB)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "シアトル",
     "rootHorseId": "shiatoru",
-    "lastUpdated": "2025-09-27T05:35:01.815120Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shiatoru",
       "name": "シアトル",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダッパーダン",
@@ -31,8 +32,11 @@
     {
       "id": "masanoseikou",
       "name": "マサノセイコウ",
-      "foaled": "{'year': 1977, 'month': 3, 'day': 30}",
-      "foaledArray": ["1977", "03", "30"],
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハイセイコー",
@@ -57,8 +61,11 @@
     {
       "id": "longuette",
       "name": "ロンゲット",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 16}",
-      "foaledArray": ["1988", "04", "16"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロングエース",

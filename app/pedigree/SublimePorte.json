@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sublime Porte",
     "rootHorseId": "sublime-porte",
-    "lastUpdated": "2025-09-24T22:55:20.543560Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sublime-porte",
       "name": "サブライムポート",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Supreme Court",
@@ -32,8 +33,9 @@
     {
       "id": "miyako-ichi",
       "name": "ミヤコイチ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライジングウイナー",
@@ -59,8 +61,11 @@
     {
       "id": "manno-charlie",
       "name": "マンノチャーリー",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 21}",
-      "foaledArray": ["1980", "05", "21"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -86,8 +91,11 @@
     {
       "id": "manno-challenge",
       "name": "マンノチャレンジ",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 15}",
-      "foaledArray": ["1991", "05", "15"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ビゼンニシキ",

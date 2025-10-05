@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Seigniorage",
     "rootHorseId": "seigniorage",
-    "lastUpdated": "2025-09-22T13:55:57.924776Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seigniorage",
       "name": "セニョラージェ",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
       "dam": "Suavite",
-      "dam_netkeiba_id": "",
       "color": "青鹿毛",
       "breeder": "米",
       "netkeibaId": "000a006793",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Seigniorage"
+      "englishName": "Seigniorage",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "cockney",
       "name": "コックニー",
-      "foaled": "{'year': 2000, 'month': 1, 'day': 21}",
-      "foaledArray": ["2000", "01", "21"],
+      "foaled": {
+        "year": 2000,
+        "month": 1,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Swain(IRE)",
       "dam": "セニョラージェ",
-      "dam_netkeiba_id": "000a006793",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2000101367",
@@ -58,18 +61,21 @@
         "central": "2,600万円",
         "local": "0万円"
       },
-      "damId": "seigniorage"
+      "damId": "seigniorage",
+      "dam_netkeiba_id": "000a006793"
     },
     {
       "id": "urban-kid",
       "name": "アーバンキッド",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 4}",
-      "foaledArray": ["2013", "03", "04"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 4
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
       "dam": "コックニー",
-      "dam_netkeiba_id": "2000101367",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013105872",
@@ -284,13 +290,17 @@
         "central": "1億307万円",
         "local": "1,339万円"
       },
-      "damId": "cockney"
+      "damId": "cockney",
+      "dam_netkeiba_id": "2000101367"
     },
     {
       "id": "daiwa-wild-boar",
       "name": "ダイワワイルドボア",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 21}",
-      "foaledArray": ["2005", "02", "21"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",

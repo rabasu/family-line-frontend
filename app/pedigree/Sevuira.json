@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "セヴイラ",
     "rootHorseId": "sevuira",
-    "lastUpdated": "2025-09-27T11:34:15.051943Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sevuira",
       "name": "セヴイラ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Charlottesville",
@@ -31,8 +32,9 @@
     {
       "id": "bella-rose",
       "name": "ベラローズ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Red God",
@@ -58,8 +60,11 @@
     {
       "id": "smart-boy-1980",
       "name": "スマートボーイ",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 8}",
-      "foaledArray": ["1980", "05", "08"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サーペンフロ",

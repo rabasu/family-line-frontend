@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Reset In Blue",
     "rootHorseId": "reset-in-blue",
-    "lastUpdated": "2025-09-18T08:55:58.607877Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "reset-in-blue",
       "name": "Reset In Blue",
-      "foaled": "{'year': 2012}",
-      "foaledArray": ["2012"],
+      "foaled": {
+        "year": 2012
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fastnet Rock(AUS)",
@@ -31,8 +32,11 @@
     {
       "id": "shock-action",
       "name": "ショックアクション",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 27}",
-      "foaledArray": ["2018", "02", "27"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Gleneagles(IRE)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sillaca",
     "rootHorseId": "sillaca",
-    "lastUpdated": "2025-09-27T05:04:17.702157Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sillaca",
       "name": "シラツカ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オーバン",
@@ -32,8 +33,9 @@
     {
       "id": "run-soleil",
       "name": "ランソレイユ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -59,8 +61,11 @@
     {
       "id": "kyowa-fighter",
       "name": "キヨウワファイター",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 6}",
-      "foaledArray": ["1978", "05", "06"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タケシバオー",
@@ -86,8 +91,11 @@
     {
       "id": "kyowa-kanki",
       "name": "キョウワカンキ",
-      "foaled": "{'year': 1984, 'month': 3, 'day': 31}",
-      "foaledArray": ["1984", "03", "31"],
+      "foaled": {
+        "year": 1984,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
@@ -161,8 +169,11 @@
     {
       "id": "high-beam",
       "name": "ハイビーム",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 17}",
-      "foaledArray": ["1989", "04", "17"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 17
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "リードワンダー",
@@ -221,8 +232,11 @@
     {
       "id": "highway-dancer",
       "name": "ハイウェイダンサー",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 9}",
-      "foaledArray": ["1983", "05", "09"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンサーズイメージ",
@@ -244,6 +258,97 @@
         "total": "1,364万円",
         "central": "1,364万円",
         "local": "0万円"
+      },
+      "damId": "sillaca"
+    },
+    {
+      "id": "gaily-ace",
+      "name": "ゲイリーエース",
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 24
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "キタノカチドキ",
+      "dam": "シラツカ",
+      "color": "黒鹿毛",
+      "breeder": "井高清（静内町）",
+      "netkeibaId": "1977105769",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1980,
+            "month": 4,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(OP)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "中京",
+          "race": "きさらぎ賞(OP)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 12,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳S(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Gaily Ace",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "sillaca"
     }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sybil Fawlty",
     "rootHorseId": "sybil-fawlty",
-    "lastUpdated": "2025-09-22T21:26:28.406861Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sybil-fawlty",
       "name": "シビルフォルテイー",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Be My Guest",
@@ -32,8 +33,11 @@
     {
       "id": "sybil-sweet",
       "name": "シビルスイート",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 25}",
-      "foaledArray": ["1989", "04", "25"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリルドルフ",
@@ -61,8 +65,11 @@
     {
       "id": "meiner-hearty",
       "name": "マイネルハーティー",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 4}",
-      "foaledArray": ["2002", "04", "04"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マイネルラヴ",

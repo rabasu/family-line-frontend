@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Reappear",
     "rootHorseId": "reappear",
-    "lastUpdated": "2025-09-27T06:05:28.533106Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "reappear",
       "name": "リアピア",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Worden",
@@ -32,8 +33,9 @@
     {
       "id": "sweet-peace",
       "name": "スイートピース",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステューペンダス(US)",
@@ -59,8 +61,9 @@
     {
       "id": "sweet-suwanee",
       "name": "スイートスワニー",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -86,8 +89,11 @@
     {
       "id": "symboli-kriens",
       "name": "シンボリクリエンス",
-      "foaled": "{'year': 1985, 'month': 3, 'day': 21}",
-      "foaledArray": ["1985", "03", "21"],
+      "foaled": {
+        "year": 1985,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "モガミ(FR)",

@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Rugeon",
     "rootHorseId": "rugeon",
-    "lastUpdated": "2025-09-25T05:50:30.609302Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rugeon",
       "name": "ルージョン",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Windy Sea",
       "dam": "Allira",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "米",
       "netkeibaId": "000a000752",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Rugeon"
+      "englishName": "Rugeon",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "tanino-target",
       "name": "タニノターゲット",
-      "foaled": "{'year': 1986, 'month': 5, 'day': 26}",
-      "foaledArray": ["1986", "05", "26"],
+      "foaled": {
+        "year": 1986,
+        "month": 5,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タニノフェバリット",
       "dam": "ルージョン",
-      "dam_netkeiba_id": "000a000752",
       "color": "鹿毛",
       "breeder": "カントリー牧場（静内町）",
       "netkeibaId": "1986105983",
@@ -104,18 +107,21 @@
         "central": "8,000万円",
         "local": "0万円"
       },
-      "damId": "rugeon"
+      "damId": "rugeon",
+      "dam_netkeiba_id": "000a000752"
     },
     {
       "id": "tanino-holo-holo",
       "name": "タニノホロホロ",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 29}",
-      "foaledArray": ["1997", "04", "29"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
       "dam": "タニノターゲット",
-      "dam_netkeiba_id": "1986105983",
       "color": "黒鹿毛",
       "breeder": "カントリー牧場（静内町）",
       "netkeibaId": "1997101990",
@@ -132,18 +138,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tanino-target"
+      "damId": "tanino-target",
+      "dam_netkeiba_id": "1986105983"
     },
     {
       "id": "wanted",
       "name": "ウォンテッド",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 1}",
-      "foaledArray": ["2010", "05", "01"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",
       "dam": "タニノホロホロ",
-      "dam_netkeiba_id": "1997101990",
       "color": "黒鹿毛",
       "breeder": "カントリー牧場（新ひだか町）",
       "netkeibaId": "2010102603",
@@ -268,13 +277,17 @@
         "central": "7,523万円",
         "local": "0万円"
       },
-      "damId": "tanino-holo-holo"
+      "damId": "tanino-holo-holo",
+      "dam_netkeiba_id": "1997101990"
     },
     {
       "id": "sombrero",
       "name": "ソンブレロ",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 22}",
-      "foaledArray": ["2010", "02", "22"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",
@@ -363,8 +376,11 @@
     {
       "id": "tanino-rose",
       "name": "タニノローゼ",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 26}",
-      "foaledArray": ["2002", "04", "26"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェネラス(IRE)",
@@ -423,8 +439,11 @@
     {
       "id": "tanino-gordon",
       "name": "タニノゴードン",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 7}",
-      "foaledArray": ["1997", "05", "07"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "メジロマックイーン",
@@ -498,8 +517,11 @@
     {
       "id": "tanino-seven-two",
       "name": "タニノセブンツー",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 3}",
-      "foaledArray": ["1985", "04", "03"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴァイスリーガル",
@@ -558,8 +580,11 @@
     {
       "id": "tanino-hachiku",
       "name": "タニノハチク",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 13}",
-      "foaledArray": ["1979", "04", "13"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ツイッグ",
@@ -585,8 +610,11 @@
     {
       "id": "tanino-rousillon",
       "name": "タニノルション",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 19}",
-      "foaledArray": ["1992", "04", "19"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ルション(US)",

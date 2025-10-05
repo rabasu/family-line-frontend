@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ryzhkina",
     "rootHorseId": "ryzhkina",
-    "lastUpdated": "2025-09-17T12:17:15.918376Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ryzhkina",
       "name": "リュズキナ",
-      "foaled": "{'year': 2008}",
-      "foaledArray": ["2008"],
+      "foaled": {
+        "year": 2008
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "rouge-suerte",
       "name": "ルージュスエルテ",
-      "foaled": "{'year': 2021, 'month': 2, 'day': 16}",
-      "foaledArray": ["2021", "02", "16"],
+      "foaled": {
+        "year": 2021,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -92,8 +96,11 @@
     {
       "id": "red-genesis",
       "name": "レッドジェネシス",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 17}",
-      "foaledArray": ["2018", "03", "17"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Special Alert",
     "rootHorseId": "special-alert",
-    "lastUpdated": "2025-09-24T17:51:17.694282Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "special-alert",
       "name": "スペシャルアラート",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gulch",
@@ -32,8 +33,11 @@
     {
       "id": "cathbharr",
       "name": "カフヴァール",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 19}",
-      "foaledArray": ["2009", "04", "19"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デュランダル",
@@ -77,8 +81,11 @@
     {
       "id": "belenus",
       "name": "ベレヌス",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 6}",
-      "foaledArray": ["2017", "03", "06"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タートルボウル(IRE)",
@@ -242,8 +249,11 @@
     {
       "id": "reserve-your-heart",
       "name": "リザーブユアハート",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 7}",
-      "foaledArray": ["1996", "02", "07"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハウスバスター(US)",

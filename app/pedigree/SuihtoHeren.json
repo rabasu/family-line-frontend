@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Suihto Heren",
     "rootHorseId": "suihto-heren",
-    "lastUpdated": "2025-09-23T01:46:52.284246Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "suihto-heren",
       "name": "スイートヘレン",
-      "foaled": "{'year': 1951}",
-      "foaledArray": ["1951"],
+      "foaled": {
+        "year": 1951
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hellespont",
@@ -32,8 +33,9 @@
     {
       "id": "sweet-berry",
       "name": "スイートベリー",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トサミドリ",
@@ -59,8 +61,9 @@
     {
       "id": "fine-drama",
       "name": "ファインドラマ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンザン",
@@ -117,8 +120,11 @@
     {
       "id": "april-drama",
       "name": "エイプリルドラマ",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 17}",
-      "foaledArray": ["1989", "04", "17"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
@@ -146,8 +152,11 @@
     {
       "id": "logic",
       "name": "ロジック",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 17}",
-      "foaledArray": ["2003", "03", "17"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -367,6 +376,140 @@
         "local": "0万円"
       },
       "damId": "april-drama"
+    },
+    {
+      "id": "fainheriosu",
+      "name": "ファインヘリオス",
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 3
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヘリオス",
+      "dam": "ファインロツク",
+      "color": "鹿毛",
+      "breeder": "伊藤牧場（静内町）",
+      "netkeibaId": "1977z00171",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 6,
+            "day": 28
+          },
+          "racecourse": "中京",
+          "race": "高松宮杯(OP)",
+          "displayRace": "高松宮杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 15
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(OP)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 7,
+            "day": 6
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 4,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fine-rock"
+    },
+    {
+      "id": "fine-rock",
+      "name": "ファインロツク",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "チャイナロック(GB)",
+      "dam": "スイートベリー",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1966100673",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1968,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fine Rock",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "sweet-berry"
     }
   ]
 }

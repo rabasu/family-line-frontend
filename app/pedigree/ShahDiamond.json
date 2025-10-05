@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Shah Diamond",
     "rootHorseId": "shah-diamond",
-    "lastUpdated": "2025-09-24T15:45:54.040887Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shah-diamond",
       "name": "シャーダイヤモンド",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シャーラスタニ(US)",
@@ -32,8 +33,11 @@
     {
       "id": "tagano-brian",
       "name": "タガノブライアン",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 25}",
-      "foaledArray": ["1996", "05", "25"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sweet Indy",
     "rootHorseId": "sweet-indy",
-    "lastUpdated": "2025-09-15T08:18:46.591558Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-indy",
       "name": "スウィートインディ",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",
@@ -32,8 +33,11 @@
     {
       "id": "catnip",
       "name": "キャットニップ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 25}",
-      "foaledArray": ["2004", "03", "25"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タバスコキャット(US)",
@@ -59,8 +63,11 @@
     {
       "id": "healing",
       "name": "ヒーリング",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 29}",
-      "foaledArray": ["2013", "03", "29"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バトルプラン(US)",
@@ -88,8 +95,11 @@
     {
       "id": "reframing",
       "name": "リフレーミング",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 19}",
-      "foaledArray": ["2018", "03", "19"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",

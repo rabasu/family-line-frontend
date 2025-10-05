@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Stocks Up",
     "rootHorseId": "stocks-up",
-    "lastUpdated": "2025-09-24T17:49:31.896457Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "stocks-up",
       "name": "ストックスアップ",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kris S.",
       "dam": "Sunshine Starshine",
-      "dam_netkeiba_id": "",
       "color": "黒鹿毛",
       "breeder": "米",
       "netkeibaId": "000a00630d",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Stocks Up"
+      "englishName": "Stocks Up",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "erimo-pretty",
       "name": "エリモプリティー",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 15}",
-      "foaledArray": ["1999", "03", "15"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",
       "dam": "ストックスアップ",
-      "dam_netkeiba_id": "000a00630d",
       "color": "鹿毛",
       "breeder": "えりも農場（えりも町）",
       "netkeibaId": "1999106148",
@@ -56,18 +59,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "stocks-up"
+      "damId": "stocks-up",
+      "dam_netkeiba_id": "000a00630d"
     },
     {
       "id": "win-primera",
       "name": "ウインプリメーラ",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 4}",
-      "foaledArray": ["2010", "04", "04"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
       "dam": "エリモプリティー",
-      "dam_netkeiba_id": "1999106148",
       "color": "黒鹿毛",
       "breeder": "ビッグレッドファーム（新冠町）",
       "netkeibaId": "2010105925",
@@ -297,13 +303,17 @@
         "central": "2億3,123万円",
         "local": "0万円"
       },
-      "damId": "erimo-pretty"
+      "damId": "erimo-pretty",
+      "dam_netkeiba_id": "1999106148"
     },
     {
       "id": "erimo-pure",
       "name": "エリモピュア",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 5}",
-      "foaledArray": ["1995", "05", "05"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",

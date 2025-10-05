@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Ruby Tiger",
     "rootHorseId": "ruby-tiger",
-    "lastUpdated": "2025-09-23T17:37:51.297735Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ruby-tiger",
       "name": "ルビータイガー",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 8}",
-      "foaledArray": ["1987", "04", "08"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ahonoora",
@@ -32,8 +35,11 @@
     {
       "id": "silk-tiger",
       "name": "シルクタイガー",
-      "foaled": "{'year': 2002, 'month': 1, 'day': 13}",
-      "foaledArray": ["2002", "01", "13"],
+      "foaled": {
+        "year": 2002,
+        "month": 1,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エルコンドルパサー",

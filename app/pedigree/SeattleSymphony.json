@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Seattle Symphony",
     "rootHorseId": "seattle-symphony",
-    "lastUpdated": "2025-09-24T01:39:04.643233Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seattle-symphony",
       "name": "シアトルシンフォニー",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "millennium-suzuka",
       "name": "ミレニアムスズカ",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 9}",
-      "foaledArray": ["1998", "05", "09"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラムタラ(US)",

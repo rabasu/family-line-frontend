@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "ラツク",
     "rootHorseId": "ratsuku",
-    "lastUpdated": "2025-09-25T02:47:29.807719Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ratsuku",
       "name": "ラツク",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tropique",
@@ -31,8 +32,11 @@
     {
       "id": "aratama-beat",
       "name": "アラタマビート",
-      "foaled": "{'year': 1979, 'month': 1, 'day': 13}",
-      "foaledArray": ["1979", "01", "13"],
+      "foaled": {
+        "year": 1979,
+        "month": 1,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァービート(GB)",
@@ -58,8 +62,11 @@
     {
       "id": "aratama-wonder",
       "name": "アラタマワンダー",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 15}",
-      "foaledArray": ["1989", "03", "15"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リードワンダー",
@@ -459,6 +466,50 @@
         "local": "0万円"
       },
       "damId": "aratama-beat"
+    },
+    {
+      "id": "ihguruueh",
+      "name": "イーグルウエー",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ソロナウェー",
+      "dam": "ラツク",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a004c85",
+      "raceStats": {
+        "total": {
+          "runs": 26,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 4,
+            "day": 2
+          },
+          "racecourse": "福島",
+          "race": "弥生賞(OP)",
+          "displayRace": "弥生賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "0",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Ihguruueh",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ratsuku"
     }
   ]
 }

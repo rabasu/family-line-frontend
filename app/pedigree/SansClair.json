@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Sans Clair",
     "rootHorseId": "sans-clair",
-    "lastUpdated": "2025-09-20T11:17:06.832115Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sans-clair",
       "name": "サンクレール",
-      "foaled": "{'year': 1992, 'month': 2, 'day': 19}",
-      "foaledArray": ["1992", "02", "19"],
+      "foaled": {
+        "year": 1992,
+        "month": 2,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
       "dam": "Sans Condition",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "S. Niarchos（愛）",
       "netkeibaId": "1992110231",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Sans Clair"
+      "englishName": "Sans Clair",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "eternal-happiness",
       "name": "エターナルハピネス",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 25}",
-      "foaledArray": ["2001", "02", "25"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "サンクレール",
-      "dam_netkeiba_id": "1992110231",
       "color": "鹿毛",
       "breeder": "千代田牧場（静内町）",
       "netkeibaId": "2001104232",
@@ -134,18 +139,21 @@
         "central": "780万円",
         "local": "2,268万円"
       },
-      "damId": "sans-clair"
+      "damId": "sans-clair",
+      "dam_netkeiba_id": "1992110231"
     },
     {
       "id": "kajiki",
       "name": "カジキ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 26}",
-      "foaledArray": ["2009", "03", "26"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 26
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
       "dam": "エターナルハピネス",
-      "dam_netkeiba_id": "2001104232",
       "color": "鹿毛",
       "breeder": "千代田牧場（新ひだか町）",
       "netkeibaId": "2009103816",
@@ -195,7 +203,8 @@
         "central": "9,131万円",
         "local": "0万円"
       },
-      "damId": "eternal-happiness"
+      "damId": "eternal-happiness",
+      "dam_netkeiba_id": "2001104232"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Special Jade",
     "rootHorseId": "special-jade",
-    "lastUpdated": "2025-09-18T03:20:17.130796Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "special-jade",
       "name": "スペシャルジェイド",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cox(US)",
@@ -32,8 +33,11 @@
     {
       "id": "mon-vert",
       "name": "モンヴェール",
-      "foaled": "{'year': 2003, 'month': 5, 'day': 8}",
-      "foaledArray": ["2003", "05", "08"],
+      "foaled": {
+        "year": 2003,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
@@ -77,8 +81,11 @@
     {
       "id": "gold-dream",
       "name": "ゴールドドリーム",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 19}",
-      "foaledArray": ["2013", "04", "19"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゴールドアリュール",

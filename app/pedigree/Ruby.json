@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Ruby",
     "rootHorseId": "ruby",
-    "lastUpdated": "2025-09-20T11:47:10.552290Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ruby",
       "name": "ルビー",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
       "dam": "Offshore Boom",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "愛",
       "netkeibaId": "000a0111c7",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Ruby"
+      "englishName": "Ruby",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "fiero",
       "name": "フィエロ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 14}",
-      "foaledArray": ["2009", "03", "14"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "ルビー",
-      "dam_netkeiba_id": "000a0111c7",
       "color": "青鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2009106035",
@@ -329,7 +332,8 @@
         "central": "3億1,452万円",
         "local": "0万円"
       },
-      "damId": "ruby"
+      "damId": "ruby",
+      "dam_netkeiba_id": "000a0111c7"
     }
   ]
 }

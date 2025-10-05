@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Storm Sunday",
     "rootHorseId": "storm-sunday",
-    "lastUpdated": "2025-09-22T02:09:11.481877Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "storm-sunday",
       "name": "ストームサンデー",
-      "foaled": "{'year': 1989, 'month': 2, 'day': 11}",
-      "foaledArray": ["1989", "02", "11"],
+      "foaled": {
+        "year": 1989,
+        "month": 2,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Bird",
@@ -32,8 +35,11 @@
     {
       "id": "brightia-pulse",
       "name": "ブライティアパルス",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 14}",
-      "foaledArray": ["2005", "04", "14"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイタクリーヴァ",

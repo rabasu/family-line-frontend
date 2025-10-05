@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sweet Seventeen",
     "rootHorseId": "sweet-seventeen",
-    "lastUpdated": "2025-09-19T00:31:37.916589Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-seventeen",
       "name": "Sweet Seventeen",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hard Spun(US)",
@@ -31,8 +32,11 @@
     {
       "id": "delta-barows",
       "name": "デルタバローズ",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 4}",
-      "foaledArray": ["2015", "02", "04"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 4
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Into Mischief",

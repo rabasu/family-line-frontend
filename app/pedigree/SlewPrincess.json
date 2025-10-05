@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Slew Princess",
     "rootHorseId": "slew-princess",
-    "lastUpdated": "2025-09-20T13:08:58.328283Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "slew-princess",
       "name": "スループリンセス",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "sakura-blues",
       "name": "サクラブルース",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 23}",
-      "foaledArray": ["1996", "05", "23"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cure the Blues",
@@ -61,8 +65,11 @@
     {
       "id": "sakura-julep",
       "name": "サクラジュレップ",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 27}",
-      "foaledArray": ["2010", "05", "27"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラプレジデント",
@@ -88,8 +95,11 @@
     {
       "id": "kaiser-melange",
       "name": "カイザーメランジェ",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 29}",
-      "foaledArray": ["2015", "04", "29"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラオリオン",
@@ -388,13 +398,15 @@
     {
       "id": "sakura-gospel",
       "name": "サクラゴスペル",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 4}",
-      "foaledArray": ["2008", "04", "04"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラプレジデント",
       "dam": "サクラブルース",
-      "dam_netkeiba_id": "1996105031",
       "color": "黒鹿毛",
       "breeder": "山田牧場（新ひだか町）",
       "netkeibaId": "2008101031",
@@ -744,7 +756,8 @@
         "central": "3億1,148万円",
         "local": "169万円"
       },
-      "damId": "sakura-blues"
+      "damId": "sakura-blues",
+      "dam_netkeiba_id": "1996105031"
     }
   ]
 }

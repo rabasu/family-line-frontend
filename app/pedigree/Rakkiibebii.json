@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "ラッキーベビー",
     "rootHorseId": "rakkiibebii",
-    "lastUpdated": "2025-09-25T13:57:55.920640Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rakkiibebii",
       "name": "ラッキーベビー",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "My Babu(FR)",
@@ -31,8 +32,9 @@
     {
       "id": "lucky-way",
       "name": "ラッキーウエー",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソロナウェー",
@@ -58,8 +60,9 @@
     {
       "id": "eiteru-2",
       "name": "エイテルII",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エイトラックス(FR)",
@@ -85,8 +88,11 @@
     {
       "id": "grand-merci",
       "name": "グランメルシー",
-      "foaled": "{'year': 1982, 'month': 5, 'day': 30}",
-      "foaledArray": ["1982", "05", "30"],
+      "foaled": {
+        "year": 1982,
+        "month": 5,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",
@@ -112,8 +118,11 @@
     {
       "id": "kyoei-swat",
       "name": "キョウエイスワット",
-      "foaled": "{'year': 1986, 'month': 5, 'day': 30}",
-      "foaledArray": ["1986", "05", "30"],
+      "foaled": {
+        "year": 1986,
+        "month": 5,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クラウンドプリンス",
@@ -183,6 +192,199 @@
         "local": "0万円"
       },
       "damId": "grand-merci"
+    },
+    {
+      "id": "erimo-cup",
+      "name": "エリモカップ",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヒンドスタン",
+      "dam": "ゴールデンキー",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000b62",
+      "raceStats": {
+        "total": {
+          "runs": 22,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 9,
+            "day": 9
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "10",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 3,
+            "day": 12
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 1,
+            "day": 30
+          },
+          "racecourse": "京都",
+          "race": "スワンS(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 12,
+            "day": 26
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3100",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "19",
+          "result": "5",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 5,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "8",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Erimo Cup",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "golden-key"
+    },
+    {
+      "id": "golden-key",
+      "name": "ゴールデンキー",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Martial(IRE)",
+      "dam": "ラッキーベビー",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a003665",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 4,
+            "day": 4
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "19",
+          "favorite": "17"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Golden Key",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rakkiibebii"
     }
   ]
 }

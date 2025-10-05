@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Queue",
     "rootHorseId": "queue",
-    "lastUpdated": "2025-09-22T06:50:53.883912Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "queue",
       "name": "キュー",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 19}",
-      "foaledArray": ["1997", "02", "19"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
@@ -32,8 +35,9 @@
     {
       "id": "le-cirque",
       "name": "ルシルク",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dynaformer",
@@ -59,8 +63,11 @@
     {
       "id": "grand-silk",
       "name": "グランシルク",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 8}",
-      "foaledArray": ["2012", "04", "08"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
@@ -269,8 +276,11 @@
     {
       "id": "break-run-out",
       "name": "ブレイクランアウト",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 27}",
-      "foaledArray": ["2006", "04", "27"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Smart Strike(CAN)",

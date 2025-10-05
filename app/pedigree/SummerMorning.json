@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Summer Morning",
     "rootHorseId": "summer-morning",
-    "lastUpdated": "2025-09-25T19:31:58.979623Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "summer-morning",
       "name": "サマーモーニング",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sayajirao(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "futo-venture",
       "name": "フトウベンチヤ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -59,8 +61,11 @@
     {
       "id": "flash-shower",
       "name": "フラッシュシャワー",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 12}",
-      "foaledArray": ["1988", "04", "12"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アイノセントスキー",

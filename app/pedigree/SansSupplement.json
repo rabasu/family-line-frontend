@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sans Supplement",
     "rootHorseId": "sans-supplement",
-    "lastUpdated": "2025-09-25T02:54:35.991717Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sans-supplement",
       "name": "Sans Supplement",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grey Dawn",
@@ -31,8 +32,11 @@
     {
       "id": "minamino-elegance",
       "name": "ミナミノエレガンス",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 13}",
-      "foaledArray": ["1993", "03", "13"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Woodman",

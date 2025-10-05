@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Saint Brook",
     "rootHorseId": "saint-brook",
-    "lastUpdated": "2025-09-21T14:25:03.104407Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "saint-brook",
       "name": "セイントブルック",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Saint Ballado",
@@ -32,8 +33,11 @@
     {
       "id": "vizcaya",
       "name": "ビスカヤ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 26}",
-      "foaledArray": ["2006", "03", "26"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コマンダーインチーフ(GB)",

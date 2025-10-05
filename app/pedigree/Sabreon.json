@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sabreon",
     "rootHorseId": "sabreon",
-    "lastUpdated": "2025-09-18T23:30:02.831551Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sabreon",
       "name": "サブリアン",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,11 @@
     {
       "id": "moneycantbuymelove",
       "name": "マネーキャントバイミーラヴ",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 8}",
-      "foaledArray": ["2006", "02", "08"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pivotal",
@@ -59,8 +63,11 @@
     {
       "id": "mikki-rocket",
       "name": "ミッキーロケット",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 3}",
-      "foaledArray": ["2013", "03", "03"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ a",

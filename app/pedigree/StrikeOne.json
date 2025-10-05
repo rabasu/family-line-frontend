@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Strike One",
     "rootHorseId": "strike-one",
-    "lastUpdated": "2025-09-27T13:21:38.032394Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "strike-one",
       "name": "ストライクワン",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Match",
@@ -32,8 +33,11 @@
     {
       "id": "atei-sport",
       "name": "アテイスポート",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 20}",
-      "foaledArray": ["1980", "05", "20"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "レイズアボーイ",
@@ -137,8 +141,11 @@
     {
       "id": "robert-sport",
       "name": "ロベルスポート",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 25}",
-      "foaledArray": ["1981", "05", "25"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エルセンタウロ",
@@ -206,6 +213,112 @@
         "total": "2,626万円",
         "central": "2,626万円",
         "local": "0万円"
+      },
+      "damId": "strike-one"
+    },
+    {
+      "id": "romica-sport",
+      "name": "ロミカスポート",
+      "foaled": {
+        "year": 1975,
+        "month": 3,
+        "day": 17
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "エルセンタウロ",
+      "dam": "ストライクワン",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（白老町）",
+      "netkeibaId": "1975102904",
+      "raceStats": {
+        "total": {
+          "runs": 34,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 2,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "15",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "7",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 11,
+            "day": 19
+          },
+          "racecourse": "福島",
+          "race": "福島記念(OP)",
+          "displayRace": "福島記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 10,
+            "day": 22
+          },
+          "racecourse": "福島",
+          "race": "東北記念(OP)",
+          "displayRace": "東北記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Romica Sport",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "strike-one"
     }

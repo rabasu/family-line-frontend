@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Siyabona",
     "rootHorseId": "siyabona",
-    "lastUpdated": "2025-09-20T09:17:02.398311Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "siyabona",
       "name": "シヤボナ",
-      "foaled": "{'year': 2005}",
-      "foaledArray": ["2005"],
+      "foaled": {
+        "year": 2005
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -32,8 +33,11 @@
     {
       "id": "sekifu",
       "name": "セキフウ",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 17}",
-      "foaledArray": ["2019", "04", "17"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘニーヒューズ(US)",
@@ -287,13 +291,15 @@
     {
       "id": "big-arthur",
       "name": "ビッグアーサー",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 18}",
-      "foaledArray": ["2011", "03", "18"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
       "dam": "シヤボナSiyabona",
-      "dam_netkeiba_id": "000a01152e",
       "color": "鹿毛",
       "breeder": "バンブー牧場（浦河町）",
       "netkeibaId": "2011103328",
@@ -448,7 +454,8 @@
         "central": "2億9,981万円",
         "local": "0万円"
       },
-      "damId": "siyabona"
+      "damId": "siyabona",
+      "dam_netkeiba_id": "000a01152e"
     }
   ]
 }

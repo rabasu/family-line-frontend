@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Seattle Sunset",
     "rootHorseId": "seattle-sunset",
-    "lastUpdated": "2025-09-19T00:01:51.201795Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seattle-sunset",
       "name": "シアトルサンセット",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Belong to Me",
@@ -32,8 +33,11 @@
     {
       "id": "stay-in-seattle",
       "name": "ステイインシアトル",
-      "foaled": "{'year': 2011, 'month': 1, 'day': 11}",
-      "foaledArray": ["2011", "01", "11"],
+      "foaled": {
+        "year": 2011,
+        "month": 1,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

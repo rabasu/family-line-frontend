@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Seri Dietrich",
     "rootHorseId": "seri-dietrich",
-    "lastUpdated": "2025-09-23T22:06:29.656117Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seri-dietrich",
       "name": "セリノデートリッヒ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 5}",
-      "foaledArray": ["1995", "05", "05"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Farma Way",
@@ -32,8 +35,11 @@
     {
       "id": "south-pole",
       "name": "サウスポール",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 8}",
-      "foaledArray": ["2000", "05", "08"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキブリザード",

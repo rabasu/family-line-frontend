@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Southern House",
     "rootHorseId": "southern-house",
-    "lastUpdated": "2025-09-21T16:24:39.385432Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "southern-house",
       "name": "Southern House",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Paris House",
@@ -31,8 +32,11 @@
     {
       "id": "cosmo-phantom",
       "name": "コスモファントム",
-      "foaled": "{'year': 2007, 'month': 2, 'day': 8}",
-      "foaledArray": ["2007", "02", "08"],
+      "foaled": {
+        "year": 2007,
+        "month": 2,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Stephen Got Even",

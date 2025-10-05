@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rustic Lace",
     "rootHorseId": "rustic-lace",
-    "lastUpdated": "2025-09-25T00:25:33.500390Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rustic-lace",
       "name": "Rustic Lace",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rusticaro",
@@ -31,8 +32,11 @@
     {
       "id": "eruueeuin",
       "name": "エルウェーウィン",
-      "foaled": "{'year': 1990, 'month': 2, 'day': 24}",
-      "foaledArray": ["1990", "02", "24"],
+      "foaled": {
+        "year": 1990,
+        "month": 2,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -275,13 +279,13 @@
         }
       ],
       "source": "python_scraping",
-      "pedigreeName": "LーWay Win",
       "prizeMoney": {
         "total": "2億4,560万円",
         "central": "2億4,560万円",
         "local": "0万円"
       },
-      "damId": "rustic-lace"
+      "damId": "rustic-lace",
+      "pedigreeName": "LーWay Win"
     }
   ]
 }

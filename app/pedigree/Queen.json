@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "クイーン",
     "rootHorseId": "queen",
-    "lastUpdated": "2025-09-27T08:38:51.712703Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "queen",
       "name": "クイーン",
-      "foaled": "1920",
-      "foaledArray": ["1920"],
+      "foaled": {
+        "year": 1920
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Portrush",
+      "dam": "Dalmeny Queen",
+      "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a00238f",
       "source": "tsx_conversion",
+      "importedYear": "1925",
+      "familyNumber": "F39",
+      "registration": "5巻528号",
       "owner": "村下代吉→島田福栄？"
     },
     {
       "id": "daitaku-capitan",
       "name": "ダイタクカピタン",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 25}",
-      "foaledArray": ["1978", "03", "25"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダッパーダン",
@@ -174,8 +181,9 @@
     {
       "id": "shueiko",
       "name": "シユウエイコ",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダラノーア(FR)",
@@ -201,8 +209,9 @@
     {
       "id": "wakazakura",
       "name": "ワカザクラ",
-      "foaled": "{'year': 1947}",
-      "foaledArray": ["1947"],
+      "foaled": {
+        "year": 1947
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クモハタ",
@@ -227,8 +236,9 @@
     {
       "id": "ising-mint-dor",
       "name": "アイシンミンドア",
-      "foaled": "{'year': 1938}",
-      "foaledArray": ["1938"],
+      "foaled": {
+        "year": 1938
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミンドアー(GB)",
@@ -254,8 +264,9 @@
     {
       "id": "ising-parade",
       "name": "アイシンパレイド",
-      "foaled": "{'year': 1931}",
-      "foaledArray": ["1931"],
+      "foaled": {
+        "year": 1931
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クラツクマンナン(GB)",
@@ -277,6 +288,391 @@
         "total": "0万円"
       },
       "damId": "queen"
+    },
+    {
+      "id": "aishinpahru",
+      "name": "アイシンパール",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セイユウ",
+      "dam": "アイシンクイン",
+      "color": "鹿毛",
+      "breeder": "三石町",
+      "netkeibaId": "1955501018",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 12,
+            "day": 9
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(秋)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 11,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Aishinpahru",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "aishinkuin"
+    },
+    {
+      "id": "aishinkuin",
+      "name": "アイシンクイン",
+      "foaled": {
+        "year": 1960
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヒエン",
+      "dam": "アイシンミンドア",
+      "color": "",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00d043",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Aishinkuin",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ising-mint-dor"
+    },
+    {
+      "id": "daishin-volgard",
+      "name": "ダイシンボルガード",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "イーグル(GB)",
+      "dam": "ワカザクラ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000b13",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 12,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "9",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 28
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 3,
+            "day": 29
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 3,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "3",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "15",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "京都",
+          "race": "京都盃(OP)",
+          "displayRace": "京都盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "NHK盃(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 4,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "14",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Daishin Volgard",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "wakazakura"
+    },
+    {
+      "id": "hatsukari",
+      "name": "ハツカリ",
+      "foaled": {
+        "year": 1958
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ウイザード",
+      "dam": "ワカザクラ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a0030e5",
+      "raceStats": {
+        "total": {
+          "runs": 40,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1961,
+            "month": 10,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "クイーンステークス競(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 10,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念競走(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 5,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬競走(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "19",
+          "result": "2",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hatsukari",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "wakazakura"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Red Cat",
     "rootHorseId": "red-cat",
-    "lastUpdated": "2025-09-22T17:52:05.844774Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "red-cat",
       "name": "レッドキャット",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "elusive-cat",
       "name": "イルーシヴキャット",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 1}",
-      "foaledArray": ["2011", "04", "01"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -61,8 +65,11 @@
     {
       "id": "elusive-panther",
       "name": "イルーシヴパンサー",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 15}",
-      "foaledArray": ["2018", "02", "15"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -256,8 +263,11 @@
     {
       "id": "stella-rossa",
       "name": "ステラロッサ",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 17}",
-      "foaledArray": ["2008", "04", "17"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -346,8 +356,11 @@
     {
       "id": "direct-catch",
       "name": "ダイレクトキャッチ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 13}",
-      "foaledArray": ["2004", "03", "13"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",

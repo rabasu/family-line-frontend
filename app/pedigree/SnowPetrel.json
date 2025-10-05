@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Snow Petrel",
     "rootHorseId": "snow-petrel",
-    "lastUpdated": "2025-09-18T14:45:30.376817Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "snow-petrel",
       "name": "スノーペトレル",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Bird",
@@ -32,8 +33,11 @@
     {
       "id": "daimei-dark",
       "name": "ダイメイダーク",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 4}",
-      "foaledArray": ["2007", "04", "04"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -61,8 +65,11 @@
     {
       "id": "daimei-fuji",
       "name": "ダイメイフジ",
-      "foaled": "{'year': 2014, 'month': 3, 'day': 27}",
-      "foaledArray": ["2014", "03", "27"],
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスデジタル",
@@ -511,8 +518,11 @@
     {
       "id": "daimei-princess",
       "name": "ダイメイプリンセス",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 9}",
-      "foaledArray": ["2013", "04", "09"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",

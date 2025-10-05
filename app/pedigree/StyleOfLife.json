@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Style of Life",
     "rootHorseId": "style-of-life",
-    "lastUpdated": "2025-09-18T01:51:06.116020Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "style-of-life",
       "name": "スタイルオブライフ",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "The Minstrel(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "moonlight-dance",
       "name": "ムーンライトダンス",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 26}",
-      "foaledArray": ["2002", "03", "26"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sinndar(IRE)",
@@ -59,8 +63,11 @@
     {
       "id": "moonlight-bay",
       "name": "ムーンライトベイ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 24}",
-      "foaledArray": ["2006", "03", "24"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "High Chaparral(IRE)",
@@ -86,8 +93,11 @@
     {
       "id": "shigeru-pink-dia",
       "name": "シゲルピンクダイヤ",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 12}",
-      "foaledArray": ["2016", "02", "12"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -401,8 +411,11 @@
     {
       "id": "shigeru-pink-ruby",
       "name": "シゲルピンクルビー",
-      "foaled": "{'year': 2018, 'month': 1, 'day': 26}",
-      "foaledArray": ["2018", "01", "26"],
+      "foaled": {
+        "year": 2018,
+        "month": 1,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モーリス",

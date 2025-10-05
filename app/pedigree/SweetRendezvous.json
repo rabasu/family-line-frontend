@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sweet Rendezvous",
     "rootHorseId": "sweet-rendezvous",
-    "lastUpdated": "2025-09-25T01:54:57.416113Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-rendezvous",
       "name": "スイートランデブー",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Quiet Fling",
@@ -32,8 +33,11 @@
     {
       "id": "towa-winner",
       "name": "トーワウィナー",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 19}",
-      "foaledArray": ["1990", "03", "19"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ニホンピロウイナー",

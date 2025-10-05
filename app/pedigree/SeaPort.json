@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sea Port",
     "rootHorseId": "sea-port",
-    "lastUpdated": "2025-09-24T12:44:18.856758Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sea-port",
       "name": "Sea Port",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Averof",
@@ -31,8 +32,11 @@
     {
       "id": "indigenous",
       "name": "インディジェナス",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 25}",
-      "foaledArray": ["1993", "04", "25"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 25
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Marju(IRE)",

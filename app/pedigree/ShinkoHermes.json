@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Shinko Hermes",
     "rootHorseId": "shinko-hermes",
-    "lastUpdated": "2025-09-23T03:48:24.750610Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shinko-hermes",
       "name": "シンコウエルメス",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 1}",
-      "foaledArray": ["1993", "04", "01"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +35,9 @@
     {
       "id": "blue-danube",
       "name": "ブルーダヌーブ",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bahri(US)",
@@ -59,8 +63,11 @@
     {
       "id": "ocea-great",
       "name": "オセアグレイト",
-      "foaled": "{'year': 2016, 'month': 5, 'day': 29}",
-      "foaledArray": ["2016", "05", "29"],
+      "foaled": {
+        "year": 2016,
+        "month": 5,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オルフェーヴル",
@@ -239,8 +246,11 @@
     {
       "id": "tower-of-london",
       "name": "タワーオブロンドン",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 9}",
-      "foaledArray": ["2015", "02", "09"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Raven's Pass",
@@ -479,8 +489,9 @@
     {
       "id": "snow-pine",
       "name": "スノーパイン",
-      "foaled": "{'year': 2010}",
-      "foaledArray": ["2010"],
+      "foaled": {
+        "year": 2010
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dalakhani",
@@ -506,13 +517,15 @@
     {
       "id": "dee-majesty",
       "name": "ディーマジェスティ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 24}",
-      "foaledArray": ["2013", "03", "24"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "エルメスティアラ",
-      "dam_netkeiba_id": "1998105991",
       "color": "鹿毛",
       "breeder": "服部牧場（新ひだか町）",
       "netkeibaId": "2013104704",
@@ -667,18 +680,21 @@
         "central": "3億243万円",
         "local": "0万円"
       },
-      "damId": "hermes-tiara"
+      "damId": "hermes-tiara",
+      "dam_netkeiba_id": "1998105991"
     },
     {
       "id": "hermes-tiara",
       "name": "エルメスティアラ",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 18}",
-      "foaledArray": ["1998", "02", "18"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "シンコウエルメス",
-      "dam_netkeiba_id": "1993109848",
       "color": "鹿毛",
       "breeder": "シンコーファーム（門別町）",
       "netkeibaId": "1998105991",
@@ -695,13 +711,17 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shinko-hermes"
+      "damId": "shinko-hermes",
+      "dam_netkeiba_id": "1993109848"
     },
     {
       "id": "sacred-reve",
       "name": "セイクレットレーヴ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 12}",
-      "foaledArray": ["2009", "03", "12"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤムーン a",
@@ -805,8 +825,11 @@
     {
       "id": "er-nova",
       "name": "エルノヴァ",
-      "foaled": "{'year': 1999, 'month': 2, 'day': 17}",
-      "foaledArray": ["1999", "02", "17"],
+      "foaled": {
+        "year": 1999,
+        "month": 2,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

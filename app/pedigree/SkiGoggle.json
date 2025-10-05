@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ski Goggle",
     "rootHorseId": "ski-goggle",
-    "lastUpdated": "2025-09-25T06:50:37.108906Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ski-goggle",
       "name": "Ski Goggle",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルスキー",
@@ -31,8 +32,11 @@
     {
       "id": "ski-captain",
       "name": "スキーキャプテン",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 24}",
-      "foaledArray": ["1992", "04", "24"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Storm Bird",

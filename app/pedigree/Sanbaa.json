@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "サンバー",
     "rootHorseId": "sanbaa",
-    "lastUpdated": "2025-09-25T12:23:04.068851Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sanbaa",
       "name": "サンバー",
-      "foaled": "{'year': 1959}",
-      "foaledArray": ["1959"],
+      "foaled": {
+        "year": 1959
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Big Game(GB)",
@@ -31,8 +32,11 @@
     {
       "id": "three-fire",
       "name": "スリーファイヤー",
-      "foaled": "{'year': 1974, 'month': 2, 'day': 21}",
-      "foaledArray": ["1974", "02", "21"],
+      "foaled": {
+        "year": 1974,
+        "month": 2,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -494,8 +498,11 @@
     {
       "id": "furaito-suzuka",
       "name": "フライトスズカ",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 24}",
-      "foaledArray": ["1992", "04", "24"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パーフライト(US)",
@@ -584,8 +591,11 @@
     {
       "id": "narita-fujihime",
       "name": "ナリタフジヒメ",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 9}",
-      "foaledArray": ["1989", "03", "09"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディカードレム(US)",
@@ -734,8 +744,11 @@
     {
       "id": "yoshi-henry",
       "name": "ヨシヘンリー",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 6}",
-      "foaledArray": ["1980", "05", "06"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -761,8 +774,9 @@
     {
       "id": "yoshi-dia",
       "name": "ヨシダイヤ",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セダン(FR)",
@@ -780,6 +794,52 @@
       "raceResults": [],
       "source": "python_scraping",
       "englishName": "Yoshi Dia",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "sanbaa"
+    },
+    {
+      "id": "gold-lupin",
+      "name": "ゴールドルパン",
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 14
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ボールドアンドフリー",
+      "dam": "サンバー",
+      "color": "栗毛",
+      "breeder": "雨堤牧場（三石町）",
+      "netkeibaId": "1981103875",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 9,
+            "day": 4
+          },
+          "racecourse": "小倉",
+          "race": "小倉3歳S(OP)",
+          "displayRace": "小倉3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Gold Lupin",
       "prizeMoney": {
         "total": "0万円"
       },

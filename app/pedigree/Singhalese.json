@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Singhalese",
     "rootHorseId": "singhalese",
-    "lastUpdated": "2025-09-21T16:55:24.944716Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "singhalese",
       "name": "シンハリーズ",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 3}",
-      "foaledArray": ["2002", "03", "03"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "sri-pada",
       "name": "スリーパーダ",
-      "foaled": "{'year': 2019, 'month': 2, 'day': 28}",
-      "foaledArray": ["2019", "02", "28"],
+      "foaled": {
+        "year": 2019,
+        "month": 2,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミッキーアイル",
@@ -122,8 +128,11 @@
     {
       "id": "stutti",
       "name": "ストゥーティ",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 6}",
-      "foaledArray": ["2018", "02", "06"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モーリス",
@@ -227,8 +236,11 @@
     {
       "id": "lilavati",
       "name": "リラヴァティ",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 5}",
-      "foaledArray": ["2011", "03", "05"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゼンノロブロイ",
@@ -407,13 +419,15 @@
     {
       "id": "sinhalite",
       "name": "シンハライト",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 11}",
-      "foaledArray": ["2013", "04", "11"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "シンハリーズSinghalese",
-      "dam_netkeiba_id": "000a011191",
       "color": "黒鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013105906",
@@ -493,13 +507,17 @@
         "central": "2億8,642万円",
         "local": "0万円"
       },
-      "damId": "singhalese"
+      "damId": "singhalese",
+      "dam_netkeiba_id": "000a011191"
     },
     {
       "id": "adams-peak",
       "name": "アダムスピーク",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 12}",
-      "foaledArray": ["2009", "02", "12"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

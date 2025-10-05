@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "スヰートナン",
     "rootHorseId": "suiitonan",
-    "lastUpdated": "2025-09-26T05:07:22.218167Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "suiitonan",
       "name": "スヰートナン",
-      "foaled": "{'year': 1948}",
-      "foaledArray": ["1948"],
+      "foaled": {
+        "year": 1948
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Borealis",
@@ -31,8 +32,9 @@
     {
       "id": "yuukari",
       "name": "ユウカリ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライジングライト",
@@ -57,8 +59,9 @@
     {
       "id": "hokkai-five",
       "name": "ホッカイフアイブ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -84,8 +87,11 @@
     {
       "id": "windstob",
       "name": "ウインドストース",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 24}",
-      "foaledArray": ["1983", "03", "24"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",
@@ -275,6 +281,169 @@
         "local": "0万円"
       },
       "damId": "hokkai-five"
+    },
+    {
+      "id": "uerudei",
+      "name": "ウエルデイ",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "パーソロン(IRE)",
+      "dam": "ユウカリ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1967z00042",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "アルゼンチンジョッキ(OP)",
+          "displayRace": "アルゼンチンJCC",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 3,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 1,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "16",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 1,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "オールカマー(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 1,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "京成杯(OP)",
+          "displayRace": "京成杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "6",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yuukari"
     }
   ]
 }

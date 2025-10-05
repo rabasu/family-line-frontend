@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Slanted",
     "rootHorseId": "slanted",
-    "lastUpdated": "2025-09-25T10:22:31.101377Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "slanted",
       "name": "Slanted",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sir Wimborne",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-vermont",
       "name": "エイシンバーモント",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 8}",
-      "foaledArray": ["1991", "04", "08"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cozzene",

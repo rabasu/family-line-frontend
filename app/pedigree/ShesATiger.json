@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "She's a Tiger",
     "rootHorseId": "shes-a-tiger",
-    "lastUpdated": "2025-09-16T07:40:25.438813Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shes-a-tiger",
       "name": "シーズアタイガー",
-      "foaled": "{'year': 2011}",
-      "foaledArray": ["2011"],
+      "foaled": {
+        "year": 2011
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tale of the Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "danon-the-tiger",
       "name": "ダノンザタイガー",
-      "foaled": "{'year': 2020, 'month': 2, 'day': 3}",
-      "foaledArray": ["2020", "02", "03"],
+      "foaled": {
+        "year": 2020,
+        "month": 2,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

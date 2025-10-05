@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "スクールベル",
     "rootHorseId": "school_bell",
-    "lastUpdated": "2025-09-25T20:59:52.222018Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "school_bell",
       "name": "スクールベル",
-      "foaled": "1904",
-      "foaledArray": ["1904"],
+      "foaled": {
+        "year": 1904
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Bassetlaw",
+      "dam": "Amelia Fonso",
+      "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a002364",
       "source": "tsx_conversion",
+      "importedYear": "1916",
+      "familyNumber": "A39",
+      "registration": "3巻361号",
       "owner": "S.アイザックス（中倉保）"
     },
     {
       "id": "happy-chateau",
       "name": "ハッピーシャトー",
-      "foaled": "{'year': 1984, 'month': 2, 'day': 29}",
-      "foaledArray": ["1984", "02", "29"],
+      "foaled": {
+        "year": 1984,
+        "month": 2,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シャトーゲイ(US)",
@@ -309,8 +316,9 @@
     {
       "id": "happy-dael",
       "name": "ハッピーデール",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ルイスデール(GB)",
@@ -336,8 +344,9 @@
     {
       "id": "kyoretsu-queen",
       "name": "キヨウレツクイン",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヒンドスタン",
@@ -358,13 +367,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kuriraito"
+      "damId": "kuriraito-1959"
     },
     {
-      "id": "kuriraito",
+      "id": "kuriraito-1959",
       "name": "クリライト",
-      "foaled": "{'year': 1959}",
-      "foaledArray": ["1959"],
+      "foaled": {
+        "year": 1959
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライジングライト",
@@ -385,13 +395,15 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kuriberu"
+      "damId": "kuriberu",
+      "linkName": "クリライト(1959)"
     },
     {
       "id": "kuriberu",
       "name": "クリベル",
-      "foaled": "{'year': 1943}",
-      "foaledArray": ["1943"],
+      "foaled": {
+        "year": 1943
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クモハタ",
@@ -416,8 +428,9 @@
     {
       "id": "chierokii",
       "name": "チエロキー",
-      "foaled": "{'year': 1925}",
-      "foaledArray": ["1925"],
+      "foaled": {
+        "year": 1925
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイヤモンドウエツデイング(GB)",
@@ -438,6 +451,1049 @@
         "total": "0万円"
       },
       "damId": "school_bell"
+    },
+    {
+      "id": "hashiiwaooza",
+      "name": "ハシイワオーザ",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ミトタカラ",
+      "dam": "セカイベル",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1968z00733",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "福島",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "8",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "福島",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "6",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "sekaiberu"
+    },
+    {
+      "id": "sekaiberu",
+      "name": "セカイベル",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セカイオー",
+      "dam": "ミナミベル",
+      "color": "",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00bab3",
+      "raceStats": {
+        "total": {
+          "runs": 62,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Sekaiberu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "minamiberu"
+    },
+    {
+      "id": "minamiberu",
+      "name": "ミナミベル",
+      "foaled": {
+        "year": 1942
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "大鵬",
+      "dam": "チエロキー",
+      "color": "鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a002683",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "chierokii"
+    },
+    {
+      "id": "tsukiwaka",
+      "name": "ツキワカ",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "チャイナロック(GB)",
+      "dam": "ユニコン",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a0041be",
+      "raceStats": {
+        "total": {
+          "runs": 42,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1968,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "京都",
+          "race": "京阪盃(OP)",
+          "displayRace": "京阪盃",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "小倉",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 8,
+            "day": 25
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "阪神牝馬特別(OP)",
+          "displayRace": "阪神牝馬特別",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tsukiwaka",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yunikon"
+    },
+    {
+      "id": "yunikon",
+      "name": "ユニコン",
+      "foaled": {
+        "year": 1958
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ブリツカバツク(US)",
+      "dam": "ミスシヨウワ",
+      "color": "黒鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a002f2a",
+      "raceStats": {
+        "total": {
+          "runs": 2,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Yunikon",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "misushiyouwa"
+    },
+    {
+      "id": "misushiyouwa",
+      "name": "ミスシヨウワ",
+      "foaled": {
+        "year": 1952
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シーマー",
+      "dam": "タカマサ",
+      "color": "栃栗毛",
+      "breeder": "豊浦町",
+      "netkeibaId": "000a002a87",
+      "raceStats": {
+        "total": {
+          "runs": 3,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Misushiyouwa",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "takamasa"
+    },
+    {
+      "id": "takamasa",
+      "name": "タカマサ",
+      "foaled": {
+        "year": 1944
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クモハタ",
+      "dam": "ベルモント",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a0025c2",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Takamasa",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "belmont"
+    },
+    {
+      "id": "belmont",
+      "name": "ベルモント",
+      "foaled": {
+        "year": 1935
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アスフオード(GB)",
+      "dam": "チエロキー",
+      "color": "鹿毛",
+      "breeder": "岩手県",
+      "netkeibaId": "000a0026bd",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Belmont",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "chierokii"
+    },
+    {
+      "id": "yamanohikari",
+      "name": "ヤマノヒカリ",
+      "foaled": {
+        "year": 1962,
+        "month": 5,
+        "day": 31
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ライジングフレーム(IRE)",
+      "dam": "ミスツキトシ",
+      "color": "青毛",
+      "breeder": "苫小牧産",
+      "netkeibaId": "1962z00565",
+      "raceStats": {
+        "total": {
+          "runs": 77,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1966,
+            "month": 8,
+            "day": 21
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(OP)",
+          "displayRace": "札幌記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 2,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "8",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 12,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "8",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "misutsukitoshi",
+      "name": "ミスツキトシ",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トシシロ",
+      "dam": "セントベル",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a002b73",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "saint-bell"
+    },
+    {
+      "id": "saint-bell",
+      "name": "セントベル",
+      "foaled": {
+        "year": 1941
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "月友",
+      "dam": "チエロキー",
+      "color": "鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a00274a",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Saint Bell",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "chierokii"
+    },
+    {
+      "id": "yamanooo",
+      "name": "ヤマノオー",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハクリョウ",
+      "dam": "ミスツキトシ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1959z00187",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1963,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞競走(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "12",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 9,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠競走(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞競走(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "安田記念競走(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 5,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチンジョッキ(OP)",
+          "displayRace": "アルゼンチンJCC",
+          "distance": "芝2300",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "取",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞競走(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 3,
+            "day": 31
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 11,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "菊花賞競走(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "11",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 11,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "京都盃競走(OP)",
+          "displayRace": "京都盃",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 5,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "32",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "NHK盃競走(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "皐月賞競走(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "1",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "misutsukitoshi"
+    },
+    {
+      "id": "tosa-o",
+      "name": "トサオー",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "トサミドリ",
+      "dam": "セントベル",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000995",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 14
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 6,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞競走(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞競走(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "8",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 3,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "目黒記念競走(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念競走(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念競走(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "産経賞オールカマー競(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念競走(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "27",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "NHK盃競走(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 4,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "皐月賞競走(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "4",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tosa O",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "saint-bell"
+    },
+    {
+      "id": "harutakara",
+      "name": "ハルタカラ",
+      "foaled": {
+        "year": 1954
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ホウシユウ",
+      "dam": "ミスカブト",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1954z00175",
+      "raceStats": {
+        "total": {
+          "runs": 46,
+          "wins": 14
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1957,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 5,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "misukabuto",
+      "name": "ミスカブト",
+      "foaled": {
+        "year": 1952
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クレタケ",
+      "dam": "松甲",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a002a6a",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "matsukabuto"
+    },
+    {
+      "id": "matsukabuto",
+      "name": "松甲",
+      "foaled": {
+        "year": 1937
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カブトヤマ",
+      "dam": "クワーダレン",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a002648",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kuwaadaren"
+    },
+    {
+      "id": "kuwaadaren",
+      "name": "クワーダレン",
+      "foaled": {
+        "year": 1919
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダイヤモンドウエツデイング(GB)",
+      "dam": "スクールベル",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a01c97b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "school_bell"
+    },
+    {
+      "id": "doonan-oo",
+      "name": "ドーナンオー",
+      "foaled": {
+        "year": 1954,
+        "month": 5,
+        "day": 25
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "トビサクラ",
+      "dam": "セントベル",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "1954z00063",
+      "raceStats": {
+        "total": {
+          "runs": 46,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1956,
+            "month": 10,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "ジユニヤー・ステーク(OP)",
+          "displayRace": "ジュニヤーS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "saint-bell"
     }
   ]
 }

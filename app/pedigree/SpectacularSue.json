@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Spectacular Sue",
     "rootHorseId": "spectacular-sue",
-    "lastUpdated": "2025-09-24T15:46:34.280080Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "spectacular-sue",
       "name": "Spectacular Sue",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Spectacular Bid(US)",
@@ -31,8 +32,11 @@
     {
       "id": "sayaka",
       "name": "サヤカ",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 13}",
-      "foaledArray": ["1996", "03", "13"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Redeem",
     "rootHorseId": "redeem",
-    "lastUpdated": "2025-09-24T08:40:02.120721Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "redeem",
       "name": "レディーム",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Bird",
@@ -32,8 +33,11 @@
     {
       "id": "toho-daio",
       "name": "トーホウダイオー",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 3}",
-      "foaledArray": ["1997", "05", "03"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Rabbit Foot",
     "rootHorseId": "rabbit-foot",
-    "lastUpdated": "2025-09-18T19:55:06.378972Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rabbit-foot",
       "name": "ラビットフット",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 28}",
-      "foaledArray": ["1993", "03", "28"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
@@ -32,8 +35,11 @@
     {
       "id": "graceful-leap",
       "name": "グレイスフルリープ",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 12}",
-      "foaledArray": ["2010", "05", "12"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゴールドアリュール",

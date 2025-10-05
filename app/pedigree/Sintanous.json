@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Sintanous",
     "rootHorseId": "sintanous",
-    "lastUpdated": "2025-09-24T06:39:18.382565Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sintanous",
       "name": "Sintanous",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 16}",
-      "foaledArray": ["1983", "03", "16"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -31,8 +34,11 @@
     {
       "id": "raise-suzuran",
       "name": "レイズスズラン",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 6}",
-      "foaledArray": ["1994", "05", "06"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Woodman",

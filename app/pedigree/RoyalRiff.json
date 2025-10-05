@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Royal Riff",
     "rootHorseId": "royal-riff",
-    "lastUpdated": "2025-09-19T10:19:59.902668Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "royal-riff",
       "name": "ロイヤルリフ",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -32,8 +33,11 @@
     {
       "id": "piena-amazon",
       "name": "ピエナアマゾン",
-      "foaled": "{'year': 2007, 'month': 2, 'day': 17}",
-      "foaledArray": ["2007", "02", "17"],
+      "foaled": {
+        "year": 2007,
+        "month": 2,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -59,8 +63,11 @@
     {
       "id": "active-minoru",
       "name": "アクティブミノル",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 7}",
-      "foaledArray": ["2012", "04", "07"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スタチューオブリバティ(US)",

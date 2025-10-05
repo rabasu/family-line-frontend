@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Radical Chic",
     "rootHorseId": "radical-chic",
-    "lastUpdated": "2025-09-24T01:39:36.744044Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "radical-chic",
       "name": "ラディカルチック",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,9 @@
     {
       "id": "woodmans-chic",
       "name": "ウッドマンズシック",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Woodman",
@@ -59,8 +61,11 @@
     {
       "id": "kanoya-zakura",
       "name": "カノヤザクラ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 31}",
-      "foaledArray": ["2004", "03", "31"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
@@ -404,8 +409,11 @@
     {
       "id": "paian",
       "name": "パイアン",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 14}",
-      "foaledArray": ["1998", "02", "14"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cozzene",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sweet Emma",
     "rootHorseId": "sweet-emma",
-    "lastUpdated": "2025-09-25T07:21:13.633732Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-emma",
       "name": "スイートエマ",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Welsh Saint",
@@ -32,8 +33,11 @@
     {
       "id": "kyoei-keyman",
       "name": "キョウエイキーマン",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 20}",
-      "foaledArray": ["1989", "04", "20"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Petoski",

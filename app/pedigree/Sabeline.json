@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sabeline",
     "rootHorseId": "sabeline",
-    "lastUpdated": "2025-09-22T23:57:55.596486Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sabeline",
       "name": "Sabeline",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -31,8 +32,11 @@
     {
       "id": "trillion-cut",
       "name": "トリリオンカット",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 2}",
-      "foaledArray": ["2000", "04", "02"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Swain(IRE)",

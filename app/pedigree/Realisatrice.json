@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Realisatrice",
     "rootHorseId": "realisatrice",
-    "lastUpdated": "2025-09-15T08:47:22.735754Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "realisatrice",
       "name": "リアリサトリス",
-      "foaled": "{'year': 2008}",
-      "foaledArray": ["2008"],
+      "foaled": {
+        "year": 2008
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Numerous",
@@ -32,8 +33,11 @@
     {
       "id": "satono-carnaval",
       "name": "サトノカルナバル",
-      "foaled": "{'year': 2022, 'month': 3, 'day': 20}",
-      "foaledArray": ["2022", "03", "20"],
+      "foaled": {
+        "year": 2022,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キタサンブラック",

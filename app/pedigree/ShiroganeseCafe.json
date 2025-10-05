@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Shiroganese Cafe",
     "rootHorseId": "shiroganese-cafe",
-    "lastUpdated": "2025-09-17T03:01:47.363375Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shiroganese-cafe",
       "name": "シロガネーゼカフェ",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 19}",
-      "foaledArray": ["2000", "05", "19"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gulch",
@@ -32,8 +35,11 @@
     {
       "id": "sakura-allure",
       "name": "サクラアリュール",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 27}",
-      "foaledArray": ["2015", "03", "27"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゴールドアリュール",

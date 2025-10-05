@@ -2,42 +2,45 @@
   "metadata": {
     "pedigreeName": "Roll Your Own",
     "rootHorseId": "roll-your-own",
-    "lastUpdated": "2025-09-26T00:32:01.601832Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "roll-your-own",
       "name": "ロールユアオーン",
-      "foaled": "1924",
-      "foaledArray": ["1924"],
+      "foaled": {
+        "year": 1924
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Horron",
       "dam": "Negligee",
-      "color": "鹿毛",
-      "breeder": "F.F. Simms, Xalapa Stud",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a002408",
       "source": "tsx_conversion",
+      "importedYear": "1929",
+      "familyNumber": "F5-g",
+      "registration": "14巻1473号",
+      "owner": "社台牧場（北海道白老郡白老村）",
       "pedigreeName": "Roll Your Own",
       "died": "1944.12.21 死亡",
-      "owner": "社台牧場（北海道白老郡白老村）",
       "comments": "血統書データサービス; 『サラブレッド血統書 第5巻』p.300, 『サラブレッド血統書 第3巻』p.171; 血統書データサービス; サラブレッド血統書 第4巻 p.204; 血統書データサービス; サラブレッド血統書 第4巻 p.204; netkeiba; netkeiba; 血統書データサービス; netkeiba, JBIS; 血統書データサービス; 「サラブレッド血統書 第9巻」p.509; JBIS; 血統書データサービス; 血統書データサービス; POGDB; 血統書データサービス; 血統書データサービス; 血統書データサービス; 血統書データサービス; 血統書データサービス; 血統書データサービス"
     },
     {
       "id": "espalion",
       "name": "エスパリオン",
-      "foaled": "1935",
-      "foaledArray": ["1935"],
+      "foaled": {
+        "year": 1935
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハクリユウ",
       "dam": "ロールユアオーン",
-      "color": "栗毛",
-      "breeder": "社台牧場（北海道白老郡白老村）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "",
-      "source": "tsx_conversion",
-      "pedigreeName": "博磊",
       "raceStats": {
         "total": {
           "runs": 55,
@@ -71,9 +74,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "46,100円（本賞金）"
       },
       "raceResults": [
         {
@@ -231,26 +231,32 @@
           "result": "7"
         }
       ],
-      "retired": "1942年秋季 乗用",
-      "owner": "宮本恒平",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "46,100円（本賞金）"
+      },
+      "damId": "roll-your-own",
       "trainer": "大久保房松",
-      "jockey": "佐藤邦雄",
-      "damId": "roll-your-own"
+      "owner": "宮本恒平",
+      "pedigreeName": "博磊",
+      "retired": "1942年秋季 乗用",
+      "jockey": "佐藤邦雄"
     },
     {
       "id": "dai3-roll-your-own",
       "name": "ミスロール",
-      "foaled": "1936-05-27",
-      "foaledArray": ["1936", "05", "27"],
+      "foaled": {
+        "year": 1936,
+        "month": 5,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハクリユウ",
       "dam": "ロールユアオーン",
-      "color": "栗毛",
-      "breeder": "社台牧場（北海道白老郡白老村）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a00262a",
-      "source": "tsx_conversion",
-      "pedigreeName": "第参ロールユアオーン",
       "raceStats": {
         "total": {
           "runs": 33,
@@ -285,29 +291,32 @@
           }
         ]
       },
+      "raceResults": [],
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "11,180円"
       },
-      "raceResults": [],
-      "retired": "1942.08.10 蕃殖",
+      "damId": "roll-your-own",
+      "pedigreeName": "第参ロールユアオーン",
       "died": "1962.06.19 死亡",
-      "jockey": "佐藤勇",
-      "damId": "roll-your-own"
+      "retired": "1942.08.10 蕃殖",
+      "jockey": "佐藤勇"
     },
     {
       "id": "roll-hurray",
       "name": "ロールフレイ",
-      "foaled": "1948-05-15",
-      "foaledArray": ["1948", "05", "15"],
+      "foaled": {
+        "year": 1948,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トキノチカラ",
       "dam": "第参ロールユアオーン",
-      "color": "鹿毛",
-      "breeder": "増本忠孝（北海道静内郡静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a00293b",
-      "source": "tsx_conversion",
-      "formerPedigreeName": "トキノタマ",
       "raceStats": {
         "total": {
           "runs": 90,
@@ -342,9 +351,6 @@
           }
         ]
       },
-      "prizeMoney": {
-        "total": "3,215,560円"
-      },
       "raceResults": [
         {
           "date": {
@@ -361,27 +367,31 @@
           "result": "4"
         }
       ],
-      "died": "1968.12.30 死亡",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "3,215,560円"
+      },
+      "damId": "dai3-roll-your-own",
       "trainer": "増本勇",
-      "jockey": "岩元金三郎",
-      "damId": "dai3-roll-your-own"
+      "died": "1968.12.30 死亡",
+      "formerPedigreeName": "トキノタマ",
+      "jockey": "岩元金三郎"
     },
     {
       "id": "roll-merry",
       "name": "ロールメリー",
-      "foaled": "1955-04-06",
-      "foaledArray": ["1955", "04", "06"],
+      "foaled": {
+        "year": 1955,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タカクラヤマ",
       "dam": "ロールフレイ",
-      "color": "鹿毛",
-      "breeder": "増本孝一（北海道静内郡静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955z00316",
-      "source": "tsx_conversion",
-      "formerName": "フエアジヤパン",
-      "summary": "中山大障害・春秋連覇の抽せん馬",
-      "details": "\n抽せん馬「フエアジヤパン」として豊島美王麿に購買され、1957年デビュー。翌年から**ロールメリー**に改名、1959年5月より障害に転向。3戦目で障害初勝利を挙げ、その年の中山大障害（秋）では2着に健闘した。\n\nそこからオープン3勝を積み上げて1960年中山大障害（春）に出走すると、1番人気に応えて7馬身差で快勝した。さらに直行した中山大障害（秋）も10馬身差で圧勝、2年前の**ケニイモア**以来2頭目の大障害春秋連覇を達成した。通年でも14戦5勝（5-5-1-3）、1度も掲示板を外さない活躍により最優秀障害馬に選ばれた。\n\n翌1961年も現役を続行、中山大障害にも出走したが春3着・秋4着に終わった。この年を最後に引退、繁殖入りした記録がある[^CKN1961_108]が産駒は残っていない。\n[^CKN1961_108]:『中央競馬年鑑 昭和36年』p.108\n",
       "raceStats": {
         "total": {
           "runs": 62,
@@ -416,15 +426,6 @@
           }
         ]
       },
-      "prizeMoney": {
-        "total": "11,562,510円"
-      },
-      "awards": [
-        {
-          "year": 1960,
-          "award": "最優秀障害馬"
-        }
-      ],
       "raceResults": [
         {
           "date": {
@@ -525,26 +526,40 @@
           "result": "4"
         }
       ],
-      "retired": "1961.12.20 蕃殖",
-      "owner": "豊島美王麿",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "11,562,510円"
+      },
+      "damId": "roll-hurray",
       "trainer": "尾形藤吉（東京）→古賀嘉蔵（中山）",
-      "jockey": "古賀一隆",
-      "damId": "roll-hurray"
+      "owner": "豊島美王麿",
+      "formerName": "フエアジヤパン",
+      "summary": "中山大障害・春秋連覇の抽せん馬",
+      "details": "\n抽せん馬「フエアジヤパン」として豊島美王麿に購買され、1957年デビュー。翌年から**ロールメリー**に改名、1959年5月より障害に転向。3戦目で障害初勝利を挙げ、その年の中山大障害（秋）では2着に健闘した。\n\nそこからオープン3勝を積み上げて1960年中山大障害（春）に出走すると、1番人気に応えて7馬身差で快勝した。さらに直行した中山大障害（秋）も10馬身差で圧勝、2年前の**ケニイモア**以来2頭目の大障害春秋連覇を達成した。通年でも14戦5勝（5-5-1-3）、1度も掲示板を外さない活躍により最優秀障害馬に選ばれた。\n\n翌1961年も現役を続行、中山大障害にも出走したが春3着・秋4着に終わった。この年を最後に引退、繁殖入りした記録がある[^CKN1961_108]が産駒は残っていない。\n[^CKN1961_108]:『中央競馬年鑑 昭和36年』p.108\n",
+      "awards": [
+        {
+          "year": 1960,
+          "award": "最優秀障害馬"
+        }
+      ],
+      "retired": "1961.12.20 蕃殖",
+      "jockey": "古賀一隆"
     },
     {
       "id": "matsu-shirafuji",
       "name": "マツシラフジ",
-      "foaled": "1949-05-08",
-      "foaledArray": ["1949", "05", "08"],
+      "foaled": {
+        "year": 1949,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トキノチカラ",
       "dam": "第参ロールユアオーン",
-      "color": "栗毛",
-      "breeder": "増本忠孝（北海道静内郡静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a00285d",
-      "source": "tsx_conversion",
-      "formerPedigreeName": "ロールオン（ロールオーン）",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -552,23 +567,26 @@
         },
         "divisions": []
       },
+      "source": "tsx_conversion",
+      "damId": "dai3-roll-your-own",
       "died": "1962.02.10 死亡",
-      "damId": "dai3-roll-your-own"
+      "formerPedigreeName": "ロールオン（ロールオーン）"
     },
     {
       "id": "shirafuji-hime",
       "name": "シラフジヒメ",
-      "foaled": "1953-05-22",
-      "foaledArray": ["1953", "05", "22"],
+      "foaled": {
+        "year": 1953,
+        "month": 5,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シマタカ",
       "dam": "マツシラフジ",
-      "color": "鹿毛",
-      "breeder": "増本忠孝（北海道静内郡静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a002cf6",
-      "source": "tsx_conversion",
-      "formerPedigreeName": "豊島",
       "raceStats": {
         "total": {
           "runs": 69,
@@ -603,27 +621,31 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "226.1万円"
       },
-      "died": "1975.04. 用途変更",
-      "owner": "藤原キヨ",
+      "damId": "matsu-shirafuji",
       "trainer": "東原實",
-      "damId": "matsu-shirafuji"
+      "owner": "藤原キヨ",
+      "died": "1975.04. 用途変更",
+      "formerPedigreeName": "豊島"
     },
     {
       "id": "aiyuu",
       "name": "アイユウ",
-      "foaled": "1963-02-08",
-      "foaledArray": ["1963", "02", "08"],
+      "foaled": {
+        "year": 1963,
+        "month": 2,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シーフュリュー(GB)",
       "dam": "シラフジヒメ",
-      "color": "鹿毛",
-      "breeder": "（千葉県）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a003a47",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -631,22 +653,25 @@
         },
         "divisions": []
       },
-      "died": "1975.08. 死亡",
-      "damId": "shirafuji-hime"
+      "source": "tsx_conversion",
+      "damId": "shirafuji-hime",
+      "died": "1975.08. 死亡"
     },
     {
       "id": "sirius",
       "name": "シリユース",
-      "foaled": "1968-04-05",
-      "foaledArray": ["1968", "04", "05"],
+      "foaled": {
+        "year": 1968,
+        "month": 4,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テツソ(GB)",
       "dam": "アイユウ",
-      "color": "栗毛",
-      "breeder": "中村市太郎（青森県三戸郡）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955101548",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 25,
@@ -681,29 +706,29 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "269.0万円"
       },
-      "died": "1989.03. 用途変更",
+      "damId": "aiyuu",
       "owner": "沼田？",
-      "damId": "aiyuu"
+      "died": "1989.03. 用途変更"
     },
     {
       "id": "shofu-green",
       "name": "ショウフウグリーン",
-      "foaled": "1975-02-23",
-      "foaledArray": ["1975", "02", "23"],
+      "foaled": {
+        "year": 1975,
+        "month": 2,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アレツ(FR)",
       "dam": "シリユース",
-      "color": "栗毛",
-      "breeder": "東北牧場（青森県上北郡東北町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a0101e7",
-      "source": "tsx_conversion",
-      "localName": "シヨウフウグリーン",
-      "summary": "後の名伯楽・山内研二に重賞を勝たせた馬",
-      "details": "\n1977年、2歳の秋にショウフウグリーンの名でデビュー。翌年5月に9戦目で初勝利。次走の300万下は9着に敗れたが、ダートから芝に戻し、鞍上を山内研二に替えたところ一気に3連勝。最軽量ハンデを活かして小倉記念を制し、人馬共に重賞初勝利を挙げた。\n\n所謂「夏の登り馬」としてクラシック路線に参戦したが、京都新聞杯で10人気15着と惨敗、続くオープンも7着と敗れる。人馬共にG1初挑戦となる菊花賞では重賞勝ち馬ながら16番人気の低評価で、レースは中団につけるも最終3コーナーの坂で大失速。終わってみればブービー19着という大敗だった。なお大差の最下位には逃げて潰れたチェリーリュウが入った。\n\nその後は鞍上交代や距離短縮を試みるも勝利には届かず、1980年から高知へ移籍。拗音の都合でシヨウフウグリーンと名を改め、25戦4勝の成績を残した。\n\nなお最盛期を共にした山内研二は後に調教師として大成。**イシノサンデー**や**ダンツフレーム**を管理し、G1級8勝を含む重賞57勝を挙げることになる。そんな名伯楽が13年間の騎手人生で唯一掴んだ重賞勝利として、ショウフウグリーンはその名を残している。\n",
       "raceStats": {
         "total": {
           "runs": 45,
@@ -737,11 +762,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "44,389,000円",
-        "central": "38,625,000円",
-        "local": "5,764,000円"
       },
       "raceResults": [
         {
@@ -815,25 +835,36 @@
           "result": "8"
         }
       ],
-      "retired": "1979年（中央）",
-      "owner": "松本市三郎→松本勝利→中澤淺子",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "44,389,000円",
+        "central": "38,625,000円",
+        "local": "5,764,000円"
+      },
+      "damId": "sirius",
       "trainer": "田中良平（栗東）→工藤英嗣（高知）",
-      "jockey": "山内研二",
-      "damId": "sirius"
+      "owner": "松本市三郎→松本勝利→中澤淺子",
+      "localName": "シヨウフウグリーン",
+      "summary": "後の名伯楽・山内研二に重賞を勝たせた馬",
+      "details": "\n1977年、2歳の秋にショウフウグリーンの名でデビュー。翌年5月に9戦目で初勝利。次走の300万下は9着に敗れたが、ダートから芝に戻し、鞍上を山内研二に替えたところ一気に3連勝。最軽量ハンデを活かして小倉記念を制し、人馬共に重賞初勝利を挙げた。\n\n所謂「夏の登り馬」としてクラシック路線に参戦したが、京都新聞杯で10人気15着と惨敗、続くオープンも7着と敗れる。人馬共にG1初挑戦となる菊花賞では重賞勝ち馬ながら16番人気の低評価で、レースは中団につけるも最終3コーナーの坂で大失速。終わってみればブービー19着という大敗だった。なお大差の最下位には逃げて潰れたチェリーリュウが入った。\n\nその後は鞍上交代や距離短縮を試みるも勝利には届かず、1980年から高知へ移籍。拗音の都合でシヨウフウグリーンと名を改め、25戦4勝の成績を残した。\n\nなお最盛期を共にした山内研二は後に調教師として大成。**イシノサンデー**や**ダンツフレーム**を管理し、G1級8勝を含む重賞57勝を挙げることになる。そんな名伯楽が13年間の騎手人生で唯一掴んだ重賞勝利として、ショウフウグリーンはその名を残している。\n",
+      "retired": "1979年（中央）",
+      "jockey": "山内研二"
     },
     {
       "id": "king-sirius",
       "name": "キングシリユース",
-      "foaled": "1980-04-24",
-      "foaledArray": ["1980", "04", "24"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アレツ(FR)",
       "dam": "シリユース",
-      "color": "栗毛",
-      "breeder": "東北牧場（青森県上北郡東北町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1980102790",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 50,
@@ -867,11 +898,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "112,179,400円",
-        "central": "112,179,400円",
-        "local": "0円"
       },
       "raceResults": [
         {
@@ -931,28 +957,33 @@
           "result": "13"
         }
       ],
-      "retired": "1988.11.06（中央抹消）",
-      "owner": "松川八三→松岡弘（高知）",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "112,179,400円",
+        "central": "112,179,400円",
+        "local": "0円"
+      },
+      "damId": "sirius",
       "trainer": "長浜彦三郎→長浜博之（栗東）→濱田隆憲（高知）",
-      "jockey": "岩元市三",
-      "damId": "sirius"
+      "owner": "松川八三→松岡弘（高知）",
+      "retired": "1988.11.06（中央抹消）",
+      "jockey": "岩元市三"
     },
     {
       "id": "meiji-midori-1955",
       "name": "メイジミドリ",
-      "foaled": "1955-03-03",
-      "foaledArray": ["1955", "03", "03"],
+      "foaled": {
+        "year": 1955,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トサミドリ",
       "dam": "マツシラフジ",
-      "color": "鹿毛",
-      "breeder": "増本忠孝（北海道静内郡静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955z00137",
-      "source": "tsx_conversion",
-      "formerPedigreeName": "ミドリザン",
-      "linkName": "メイジミドリ(1955)",
-      "details": "\n1957年の夏に函館でデビュー。3戦目の北海道3歳S（4着）の後から馬主が変わっている。年末の阪神3歳Sでは8番人気の低評価を覆し、1番人気スマロ（後のホウシユウクイン）を破って関西の3歳チャンピオンとなった。\n\nしかし4歳になると成績が悪化、皐月賞・ダービー共に2桁着順に沈んでしまった。記録では毎回のように横行・後退・蹴りといった駐立不良を繰り返しており、気性が悪化していたのかもしれない。6月の宝塚盃（現在の阪急杯）では軽ハンデを味方に3着に入るも、左前繋靱帯炎を発症し9月の京都盃を取り消した。\n\nそれでも11月に復帰し、その復帰戦となるオープン戦で11カ月ぶりの勝利を挙げる。さらに連闘で臨んだ京都記念（秋）も勝利して重賞2勝目を挙げた。しかしケガもあってか翌年上期の出走は1度のみ。秋に再度復帰するもかつての強さは戻らず、この年いっぱいでターフを去った。\n",
       "raceStats": {
         "total": {
           "runs": 21,
@@ -986,9 +1017,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "2,651,000円"
       },
       "raceResults": [
         {
@@ -1076,25 +1104,33 @@
           "result": "1"
         }
       ],
-      "owner": "増本孝一→中野忠雄",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "2,651,000円"
+      },
+      "damId": "matsu-shirafuji",
       "trainer": "増本勇（京都）",
-      "jockey": "清水久雄",
-      "damId": "matsu-shirafuji"
+      "owner": "増本孝一→中野忠雄",
+      "formerPedigreeName": "ミドリザン",
+      "linkName": "メイジミドリ(1955)",
+      "details": "\n1957年の夏に函館でデビュー。3戦目の北海道3歳S（4着）の後から馬主が変わっている。年末の阪神3歳Sでは8番人気の低評価を覆し、1番人気スマロ（後のホウシユウクイン）を破って関西の3歳チャンピオンとなった。\n\nしかし4歳になると成績が悪化、皐月賞・ダービー共に2桁着順に沈んでしまった。記録では毎回のように横行・後退・蹴りといった駐立不良を繰り返しており、気性が悪化していたのかもしれない。6月の宝塚盃（現在の阪急杯）では軽ハンデを味方に3着に入るも、左前繋靱帯炎を発症し9月の京都盃を取り消した。\n\nそれでも11月に復帰し、その復帰戦となるオープン戦で11カ月ぶりの勝利を挙げる。さらに連闘で臨んだ京都記念（秋）も勝利して重賞2勝目を挙げた。しかしケガもあってか翌年上期の出走は1度のみ。秋に再度復帰するもかつての強さは戻らず、この年いっぱいでターフを去った。\n",
+      "jockey": "清水久雄"
     },
     {
       "id": "masuran",
       "name": "マスラン",
-      "foaled": "1951-04-22",
-      "foaledArray": ["1951", "04", "22"],
+      "foaled": {
+        "year": 1951,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シマタカ",
       "dam": "第参ロールユアオーン",
-      "color": "栗毛",
-      "breeder": "増本忠孝（北海道静内郡静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a002a93",
-      "source": "tsx_conversion",
-      "formerName": "ハマハヤテ",
       "raceStats": {
         "total": {
           "runs": 28,
@@ -1129,9 +1165,6 @@
           }
         ]
       },
-      "prizeMoney": {
-        "total": "114.7万円"
-      },
       "raceResults": [
         {
           "date": {
@@ -1148,25 +1181,32 @@
           "result": "2"
         }
       ],
-      "died": "1979.03.22 死亡",
-      "owner": "増本孝一",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "114.7万円"
+      },
+      "damId": "dai3-roll-your-own",
       "trainer": "増本勇",
-      "jockey": "熊坂明",
-      "damId": "dai3-roll-your-own"
+      "owner": "増本孝一",
+      "died": "1979.03.22 死亡",
+      "formerName": "ハマハヤテ",
+      "jockey": "熊坂明"
     },
     {
       "id": "light-nian",
       "name": "ライトニアン",
-      "foaled": "1958-02-28",
-      "foaledArray": ["1958", "02", "28"],
+      "foaled": {
+        "year": 1958,
+        "month": 2,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボストニアン",
       "dam": "マスラン",
-      "color": "栗毛",
-      "breeder": "（北海道静内郡静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a003322",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -1174,22 +1214,25 @@
         },
         "divisions": []
       },
-      "died": "1975.03.25 用途変更",
-      "damId": "masuran"
+      "source": "tsx_conversion",
+      "damId": "masuran",
+      "died": "1975.03.25 用途変更"
     },
     {
       "id": "sieger-queen",
       "name": "ジーガークイン",
-      "foaled": "1967-06-11",
-      "foaledArray": ["1967", "06", "11"],
+      "foaled": {
+        "year": 1967,
+        "month": 6,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リユウフオーレル",
       "dam": "ライトニアン",
-      "color": "鹿毛",
-      "breeder": "内藤牧場（北海道苫小牧市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955101913",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 27,
@@ -1224,25 +1267,28 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "390.0万円"
       },
-      "died": "1992.01.01 用途変更",
-      "damId": "light-nian"
+      "damId": "light-nian",
+      "died": "1992.01.01 用途変更"
     },
     {
       "id": "sieger-nijiko",
       "name": "ジーガーニジコ",
-      "foaled": "1975-03-20",
-      "foaledArray": ["1975", "03", "20"],
+      "foaled": {
+        "year": 1975,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファーザーズイメージ(USA)",
       "dam": "ジーガークイン",
-      "color": "栗毛",
-      "breeder": "坂東牧場（北海道沙流郡平取町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955106960",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 3,
@@ -1277,25 +1323,28 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "116.0万円"
       },
-      "died": "1992.01.01 用途変更",
-      "damId": "sieger-queen"
+      "damId": "sieger-queen",
+      "died": "1992.01.01 用途変更"
     },
     {
       "id": "sieger-gallant",
       "name": "ジーガーギヤラント",
-      "foaled": "1983-05-20",
-      "foaledArray": ["1983", "05", "20"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タケシバオー",
       "dam": "ジーガーニジコ",
-      "color": "黒鹿毛",
-      "breeder": "須崎牧場（北海道新冠郡新冠町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1983101051",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 14,
@@ -1330,25 +1379,28 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "216.0万円"
       },
-      "died": "1997.05.05 死亡",
-      "damId": "sieger-nijiko"
+      "damId": "sieger-nijiko",
+      "died": "1997.05.05 死亡"
     },
     {
       "id": "sieger-tercel",
       "name": "ジーガーターセル",
-      "foaled": "1990-03-04",
-      "foaledArray": ["1990", "03", "04"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ホスピタリテイ",
       "dam": "ジーガーギヤラント",
-      "color": "鹿毛",
-      "breeder": "須崎牧場（北海道新冠郡新冠町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1990102992",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 18,
@@ -1383,25 +1435,28 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "2631.0万円"
       },
-      "died": "2008.09.23 用途変更",
-      "damId": "sieger-gallant"
+      "damId": "sieger-gallant",
+      "died": "2008.09.23 用途変更"
     },
     {
       "id": "sieger-top-run",
       "name": "ジーガートップラン",
-      "foaled": "1999-04-12",
-      "foaledArray": ["1999", "04", "12"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",
       "dam": "ジーガーターセル",
-      "color": "鹿毛",
-      "breeder": "須崎牧場（北海道新冠郡新冠町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1999103929",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 19,
@@ -1436,27 +1491,28 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "710.0万円"
       },
-      "died": "2018.10.01 用途変更",
-      "damId": "sieger-tercel"
+      "damId": "sieger-tercel",
+      "died": "2018.10.01 用途変更"
     },
     {
       "id": "castle-top",
       "name": "キャッスルトップ",
-      "foaled": "2018-04-20",
-      "foaledArray": ["2018", "04", "20"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バンブーエール",
       "dam": "ジーガートップラン",
-      "color": "黒鹿毛",
-      "breeder": "城市公",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2018103898",
-      "source": "tsx_conversion",
-      "summary": "ブービー人気・単勝万馬券で3歳ダート王",
-      "details": "\n2020年10月に船橋でデビュー。初戦で2着となるも2戦目は10着、そのまま勝ち上がりは3歳春に遅れた。しかしそこから3連勝で船橋の水無月特別（B3）を勝利し、3歳ダート王決定戦・ジャパンダートダービーにコマを進めた。\n\n鞍上は11戦中7戦で手綱を執って2連勝中の仲野光馬の継続騎乗となった。連勝中とはいえつい2カ月前まで未勝利馬だったキャッスルトップの人気は低く、単勝129.5倍という13頭立ての12番人気に留まっていた。しかしレースでは果敢な逃げから直線で粘りこみ、追いすがるゴッドセレクションとウェルドーンをアタマ差抑えて優勝。騎手・調教師・馬主の全員がG1級競走初制覇、騎手と馬主はこれが初重賞勝利という記録づくめの勝利となった。\n\n鞍上や「単勝万馬券」だけでなく、本馬の血統も大きな話題となった。サンデーサイレンスの血が一滴もない、**ロールユアオーン**系というマイナーな牝系、かつ母系に入っている種牡馬も内国産馬ばかり（母父のマヤノトップガンも珍しいが、**ボストニアン**や**リユウフオーレル**もかなり希少）という骨董品様とした血統が注目を集めたのである。\n\n次走の戸塚記念では1番人気に支持されるも6着。ジャパンダートダービーの激走で燃え尽きてしまったのか、以降は20戦以上出走して馬券圏内は1度のみとなっている。\n（2024年8月現在）\n",
       "raceStats": {
         "total": {
           "runs": 46,
@@ -1491,17 +1547,6 @@
           }
         ]
       },
-      "prizeMoney": {
-        "total": "7,741.0万円",
-        "central": "0.0万円",
-        "local": "7,741.0万円"
-      },
-      "awards": [
-        {
-          "year": 2021,
-          "award": "NAR3歳最優秀牡馬"
-        }
-      ],
       "raceResults": [
         {
           "date": {
@@ -1714,25 +1759,41 @@
           "result": "11"
         }
       ],
-      "retired": "現役",
-      "owner": "城市公",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "7,741.0万円",
+        "central": "0.0万円",
+        "local": "7,741.0万円"
+      },
+      "damId": "sieger-top-run",
       "trainer": "渋谷信博（船橋）→宮川真衣（高知）",
-      "jockey": "仲野光馬",
-      "damId": "sieger-top-run"
+      "owner": "城市公",
+      "summary": "ブービー人気・単勝万馬券で3歳ダート王",
+      "details": "\n2020年10月に船橋でデビュー。初戦で2着となるも2戦目は10着、そのまま勝ち上がりは3歳春に遅れた。しかしそこから3連勝で船橋の水無月特別（B3）を勝利し、3歳ダート王決定戦・ジャパンダートダービーにコマを進めた。\n\n鞍上は11戦中7戦で手綱を執って2連勝中の仲野光馬の継続騎乗となった。連勝中とはいえつい2カ月前まで未勝利馬だったキャッスルトップの人気は低く、単勝129.5倍という13頭立ての12番人気に留まっていた。しかしレースでは果敢な逃げから直線で粘りこみ、追いすがるゴッドセレクションとウェルドーンをアタマ差抑えて優勝。騎手・調教師・馬主の全員がG1級競走初制覇、騎手と馬主はこれが初重賞勝利という記録づくめの勝利となった。\n\n鞍上や「単勝万馬券」だけでなく、本馬の血統も大きな話題となった。サンデーサイレンスの血が一滴もない、**ロールユアオーン**系というマイナーな牝系、かつ母系に入っている種牡馬も内国産馬ばかり（母父のマヤノトップガンも珍しいが、**ボストニアン**や**リユウフオーレル**もかなり希少）という骨董品様とした血統が注目を集めたのである。\n\n次走の戸塚記念では1番人気に支持されるも6着。ジャパンダートダービーの激走で燃え尽きてしまったのか、以降は20戦以上出走して馬券圏内は1度のみとなっている。\n（2024年8月現在）\n",
+      "awards": [
+        {
+          "year": 2021,
+          "award": "NAR3歳最優秀牡馬"
+        }
+      ],
+      "retired": "現役",
+      "jockey": "仲野光馬"
     },
     {
       "id": "sieger-wing",
       "name": "ジーガーウイング",
-      "foaled": "2004-04-12",
-      "foaledArray": ["2004", "04", "12"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ウイングアロー",
       "dam": "ジーガーターセル",
-      "color": "鹿毛",
-      "breeder": "須崎牧場（北海道新冠郡新冠町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2004100380",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 28,
@@ -1767,25 +1828,28 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "214.8万円"
       },
-      "died": "2022.09.30 転売不明",
-      "damId": "sieger-tercel"
+      "damId": "sieger-tercel",
+      "died": "2022.09.30 転売不明"
     },
     {
       "id": "sieger-laurence",
       "name": "ジーガーローレンス",
-      "foaled": "2016-03-07",
-      "foaledArray": ["2016", "03", "07"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘニーヒューズ(USA)",
       "dam": "ジーガーウイング",
-      "color": "鹿毛",
-      "breeder": "須崎牧場（北海道新冠郡新冠町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2016100322",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 16,
@@ -1820,26 +1884,28 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "500.0万円"
       },
-      "died": "2023.03.18 用途変更",
-      "damId": "sieger-wing"
+      "damId": "sieger-wing",
+      "died": "2023.03.18 用途変更"
     },
     {
       "id": "dai6-roll-your-own",
       "name": "ヨシトク",
-      "foaled": "1940-04-18",
-      "foaledArray": ["1940", "04", "18"],
+      "foaled": {
+        "year": 1940,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステーツマン(GB)",
       "dam": "ロールユアオーン",
-      "color": "鹿毛",
-      "breeder": "社台牧場（北海道白老郡白老村）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "",
-      "source": "tsx_conversion",
-      "pedigreeName": "第六ロールユアオーン",
       "raceStats": {
         "total": {
           "runs": 9,
@@ -1874,9 +1940,6 @@
           }
         ]
       },
-      "prizeMoney": {
-        "total": "4,970円以上"
-      },
       "raceResults": [
         {
           "date": {
@@ -1893,27 +1956,31 @@
           "result": "1"
         }
       ],
-      "retired": "1954年",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "4,970円以上"
+      },
+      "damId": "roll-your-own",
+      "pedigreeName": "第六ロールユアオーン",
       "died": "1965.12.02 死亡",
-      "jockey": "稗田十七二",
-      "damId": "roll-your-own"
+      "retired": "1954年",
+      "jockey": "稗田十七二"
     },
     {
       "id": "nobel",
       "name": "ノーベル",
-      "foaled": "1949-06-20",
-      "foaledArray": ["1949", "06", "20"],
+      "foaled": {
+        "year": 1949,
+        "month": 6,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "大鵬",
       "dam": "第六ロールユアオーン",
-      "color": "鹿毛",
-      "breeder": "辻芳雄（北海道浦河郡浦河町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "",
-      "source": "tsx_conversion",
-      "formerPedigreeName": "日高学",
-      "summary": "18勝を挙げ、同期の名牝に挑み続けた「サラ抽」一期生",
-      "details": "\nサラブレッドの抽せん馬（共同購入）制度が復活した1951年。ノーベルはその一期生として上田清次郎に購買され、7月の京都でデビューした。2歳時の戦績は9戦4勝（4-4-0-1）。年末の阪神3歳ステークスこそテツノハナ・レダ・クインナルビーに続く4着に敗れたが、それ以外は全て連対という好成績を収める。3歳時には正月開催の京都で優勝。その後も勝ち星を積み重ね、秋にはハンデ重賞のチャレンジカップ（現在の朝日チャレンジカップ）に出走。同期のクインナルビーとレダ、1歳上の桜花賞馬ツキカワらを破って重賞初制覇を果たした。\n\n順風満帆に思われたノーベルだったが、その後の道のりは厳しいものになる。阪神3歳ステークスで後塵を拝し、チャレンジカップで借りを返したクインナルビーとレダ、本格化した同期の2頭が大きな壁となった。\n\n1953年の京都ステークス・天皇賞（春）・鳴尾記念（春）では、1着2着を入れ替えながらクインナルビーとレダがワンツーフィニッシュを繰り返した。レダは中京競馬場で新設重賞を2つ勝った。天皇賞を勝ち抜けたレダを追うようにクインナルビーは天皇賞（秋）を制した。これら全てのレースにノーベルはいて、つまりその全てで敗れていた。ノーベルはクインナルビーに9度、レダに6度も敗れた。平場では勝てているのだが、この2頭の前にはどうしても勝利が遠かった。\n\n10月からは札幌の望月与一郎厩舎、東京の久保田彦之厩舎に転厩を繰り返した。11月末の毎日王冠では鳴尾記念（春）ぶりに3頭が揃ったが、この競走中にレダが故障を発生し予後不良となった。クインナルビーは14戦ぶりに馬券内を外す4着。ノーベルは生涯最低タイの7着に終わった。翌1954年の1月、日本経済新春杯3着を最後にクインナルビーは引退した。\n\n年明け初戦となった3月14日東京のA特ハン、ノーベルは4コーナーで故障を発生し競走を中止。病名は「左主腕前哆開骨折」、翌3月15日に薬殺された。配布価格は55万円、獲得賞金は530万円を超えていた。\n",
       "raceStats": {
         "total": {
           "runs": 57,
@@ -1947,9 +2014,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "5,333,760円"
       },
       "raceResults": [
         {
@@ -2163,18 +2227,28 @@
           "result": "7"
         }
       ],
-      "retired": "1954.03.14（推定）",
-      "died": "1954.03.14 予後不良",
-      "owner": "上田清次郎",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "5,333,760円"
+      },
+      "damId": "dai6-roll-your-own",
       "trainer": "上田武司→望月与一郎→久保田彦之",
-      "jockey": "上田三千夫",
-      "damId": "dai6-roll-your-own"
+      "owner": "上田清次郎",
+      "died": "1954.03.14 予後不良",
+      "formerPedigreeName": "日高学",
+      "summary": "18勝を挙げ、同期の名牝に挑み続けた「サラ抽」一期生",
+      "details": "\nサラブレッドの抽せん馬（共同購入）制度が復活した1951年。ノーベルはその一期生として上田清次郎に購買され、7月の京都でデビューした。2歳時の戦績は9戦4勝（4-4-0-1）。年末の阪神3歳ステークスこそテツノハナ・レダ・クインナルビーに続く4着に敗れたが、それ以外は全て連対という好成績を収める。3歳時には正月開催の京都で優勝。その後も勝ち星を積み重ね、秋にはハンデ重賞のチャレンジカップ（現在の朝日チャレンジカップ）に出走。同期のクインナルビーとレダ、1歳上の桜花賞馬ツキカワらを破って重賞初制覇を果たした。\n\n順風満帆に思われたノーベルだったが、その後の道のりは厳しいものになる。阪神3歳ステークスで後塵を拝し、チャレンジカップで借りを返したクインナルビーとレダ、本格化した同期の2頭が大きな壁となった。\n\n1953年の京都ステークス・天皇賞（春）・鳴尾記念（春）では、1着2着を入れ替えながらクインナルビーとレダがワンツーフィニッシュを繰り返した。レダは中京競馬場で新設重賞を2つ勝った。天皇賞を勝ち抜けたレダを追うようにクインナルビーは天皇賞（秋）を制した。これら全てのレースにノーベルはいて、つまりその全てで敗れていた。ノーベルはクインナルビーに9度、レダに6度も敗れた。平場では勝てているのだが、この2頭の前にはどうしても勝利が遠かった。\n\n10月からは札幌の望月与一郎厩舎、東京の久保田彦之厩舎に転厩を繰り返した。11月末の毎日王冠では鳴尾記念（春）ぶりに3頭が揃ったが、この競走中にレダが故障を発生し予後不良となった。クインナルビーは14戦ぶりに馬券内を外す4着。ノーベルは生涯最低タイの7着に終わった。翌1954年の1月、日本経済新春杯3着を最後にクインナルビーは引退した。\n\n年明け初戦となった3月14日東京のA特ハン、ノーベルは4コーナーで故障を発生し競走を中止。病名は「左主腕前哆開骨折」、翌3月15日に薬殺された。配布価格は55万円、獲得賞金は530万円を超えていた。\n",
+      "retired": "1954.03.14（推定）",
+      "jockey": "上田三千夫"
     },
     {
       "id": "mon-enfant",
       "name": "モナンファン",
-      "foaled": "{'year': 1985, 'month': 5, 'day': 21}",
-      "foaledArray": ["1985", "05", "21"],
+      "foaled": {
+        "year": 1985,
+        "month": 5,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンシャインボーイ",
@@ -2218,8 +2292,9 @@
     {
       "id": "mon-soleil",
       "name": "モンソレイユ",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミンシオ",
@@ -2291,8 +2366,9 @@
     {
       "id": "hohmuran",
       "name": "ホームラン",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボストニアン",
@@ -2310,6 +2386,166 @@
       "raceResults": [],
       "source": "python_scraping",
       "englishName": "Hohmuran",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "roll-hurray"
+    },
+    {
+      "id": "rakkiitateyama",
+      "name": "ラッキータテヤマ",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "タリヤートス(IRE)",
+      "dam": "カリムドーター",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1968z00650",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 1,
+            "day": 7
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 6,
+            "day": 25
+          },
+          "racecourse": "中京",
+          "race": "高松宮杯(OP)",
+          "displayRace": "高松宮杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "12",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "karim-daughter"
+    },
+    {
+      "id": "karim-daughter",
+      "name": "カリムドーター",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カリム(IRE)",
+      "dam": "マスラン",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a0036ed",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Karim Daughter",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "masuran"
+    },
+    {
+      "id": "masu-shigeru",
+      "name": "マスシゲル",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハロウエー(GB)",
+      "dam": "ロールフレイ",
+      "color": "青毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a003d32",
+      "raceStats": {
+        "total": {
+          "runs": 64,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1967,
+            "month": 11,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "7",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 11,
+            "day": 6
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "11",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Masu Shigeru",
       "prizeMoney": {
         "total": "0万円"
       },

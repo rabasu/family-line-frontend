@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sutomore",
     "rootHorseId": "sutomore",
-    "lastUpdated": "2025-09-25T07:51:27.133229Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sutomore",
       "name": "ストモール",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blue Tom",
@@ -32,8 +33,11 @@
     {
       "id": "white-sea-gull",
       "name": "ホワイトシーガル",
-      "foaled": "{'year': 1985, 'month': 5, 'day': 2}",
-      "foaledArray": ["1985", "05", "02"],
+      "foaled": {
+        "year": 1985,
+        "month": 5,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハビトニー(IRE)",
@@ -61,8 +65,11 @@
     {
       "id": "maxim-charade",
       "name": "マキシムシャレード",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 3}",
-      "foaledArray": ["1992", "03", "03"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スリルショー(US)",

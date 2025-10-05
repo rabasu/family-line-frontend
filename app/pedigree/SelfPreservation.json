@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Self Preservation",
     "rootHorseId": "self-preservation",
-    "lastUpdated": "2025-09-19T00:02:37.003710Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "self-preservation",
       "name": "セルフプリザヴェーション",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lion Heart",
@@ -32,8 +33,11 @@
     {
       "id": "chardonnay-gold",
       "name": "シャルドネゴールド",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 20}",
-      "foaledArray": ["2015", "03", "20"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

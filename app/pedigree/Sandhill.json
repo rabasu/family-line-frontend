@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sandhill",
     "rootHorseId": "sandhill",
-    "lastUpdated": "2025-09-24T01:07:24.203236Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sandhill",
       "name": "Sandhill",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Baynoun",
@@ -31,8 +32,11 @@
     {
       "id": "tiger-motion",
       "name": "タイガーモーション",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 29}",
-      "foaledArray": ["2000", "03", "29"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Grand Slam",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ruby Baby",
     "rootHorseId": "ruby-baby",
-    "lastUpdated": "2025-09-23T02:45:45.157563Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ruby-baby",
       "name": "ルビーベイビー",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハウスバスター(US)",
@@ -32,8 +33,11 @@
     {
       "id": "red-splendor",
       "name": "レッドスプレンダー",
-      "foaled": "{'year': 2003, 'month': 1, 'day': 23}",
-      "foaledArray": ["2003", "01", "23"],
+      "foaled": {
+        "year": 2003,
+        "month": 1,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

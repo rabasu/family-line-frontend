@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Raise Old Glory",
     "rootHorseId": "raise-old-glory",
-    "lastUpdated": "2025-09-25T02:47:07.813570Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "raise-old-glory",
       "name": "Raise Old Glory",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hoist the Flag",
@@ -31,8 +32,11 @@
     {
       "id": "king-of-ken",
       "name": "キングオブケン",
-      "foaled": "{'year': 1993, 'month': 1, 'day': 16}",
-      "foaledArray": ["1993", "01", "16"],
+      "foaled": {
+        "year": 1993,
+        "month": 1,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Manila",
@@ -196,8 +200,11 @@
     {
       "id": "cheers-emperor",
       "name": "チアズエンペラー",
-      "foaled": "{'year': 1993, 'month': 2, 'day': 22}",
-      "foaledArray": ["1993", "02", "22"],
+      "foaled": {
+        "year": 1993,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Carson City",
@@ -271,8 +278,9 @@
     {
       "id": "pudding-pop",
       "name": "Pudding Pop",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "It's Freezing",

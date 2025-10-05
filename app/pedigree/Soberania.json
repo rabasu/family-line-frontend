@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Soberania",
     "rootHorseId": "soberania",
-    "lastUpdated": "2025-09-18T17:55:26.656419Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "soberania",
       "name": "ソベラニア",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 29}",
-      "foaledArray": ["2006", "03", "29"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Monsun",
@@ -32,8 +35,11 @@
     {
       "id": "schwarze-kugel",
       "name": "シュバルツクーゲル",
-      "foaled": "{'year': 2021, 'month': 2, 'day': 19}",
-      "foaledArray": ["2021", "02", "19"],
+      "foaled": {
+        "year": 2021,
+        "month": 2,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",
@@ -122,8 +128,11 @@
     {
       "id": "schwarz-riese",
       "name": "シュヴァルツリーゼ",
-      "foaled": "{'year': 2016, 'month': 5, 'day': 6}",
-      "foaledArray": ["2016", "05", "06"],
+      "foaled": {
+        "year": 2016,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

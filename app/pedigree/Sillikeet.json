@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sillikeet",
     "rootHorseId": "sillikeet",
-    "lastUpdated": "2025-09-25T21:30:32.556196Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sillikeet",
       "name": "シリーキート",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Silly Season",
@@ -32,8 +33,9 @@
     {
       "id": "texana",
       "name": "テキサナ",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バーバー(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "kane-habomai",
       "name": "カネハボマイ",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 9}",
-      "foaledArray": ["1988", "04", "09"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゲイメセン(US)",
@@ -179,8 +184,11 @@
     {
       "id": "money-one",
       "name": "マネーワン",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 13}",
-      "foaledArray": ["1988", "05", "13"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルイヴィルサミット(US)",
@@ -239,8 +247,11 @@
     {
       "id": "masaki-sempu",
       "name": "マサキセンプー",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 26}",
-      "foaledArray": ["1979", "04", "26"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファルコン(GB)",

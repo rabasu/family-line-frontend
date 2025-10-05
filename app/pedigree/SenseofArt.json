@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Sense of Art",
     "rootHorseId": "sense-of-art",
-    "lastUpdated": "2025-09-15T23:00:11.143162Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sense-of-art",
       "name": "センスオブアート",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 26}",
-      "foaledArray": ["2002", "04", "26"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Unbridled(US)",
@@ -32,14 +35,17 @@
     {
       "id": "acanthus",
       "name": "アカンサス",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 16}",
-      "foaledArray": ["2008", "02", "16"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
       "dam": "センスオブアート",
-      "color": "青毛",
-      "breeder": "社台ファーム（千歳市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2008102889",
       "raceStats": {
         "total": {
@@ -272,14 +278,17 @@
     {
       "id": "contrapposto",
       "name": "コントラポスト",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 11}",
-      "foaledArray": ["2020", "04", "11"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",
       "dam": "アカンサス",
-      "color": "鹿毛",
-      "breeder": "社台ファーム（千歳市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2020102740",
       "raceStats": {
         "total": {
@@ -347,8 +356,11 @@
     {
       "id": "curren-leciel-bleu",
       "name": "カレンルシェルブル",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 19}",
-      "foaledArray": ["2018", "02", "19"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハービンジャー(GB)",
@@ -572,8 +584,11 @@
     {
       "id": "curren-che-carina",
       "name": "カレンケカリーナ",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 11}",
-      "foaledArray": ["2010", "02", "11"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

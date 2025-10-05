@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sasetti",
     "rootHorseId": "sasetti",
-    "lastUpdated": "2025-09-22T01:36:47.763772Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sasetti",
       "name": "サセッティ",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Selkirk",
@@ -32,8 +33,11 @@
     {
       "id": "red-cecilia",
       "name": "レッドセシリア",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 3}",
-      "foaledArray": ["2010", "02", "03"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -107,8 +111,11 @@
     {
       "id": "red-saints",
       "name": "レッドセインツ",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 17}",
-      "foaledArray": ["2008", "02", "17"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ravarino",
     "rootHorseId": "ravarino",
-    "lastUpdated": "2025-09-17T02:01:07.330195Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ravarino",
       "name": "ラヴァリーノ",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Unbridled(US)",
@@ -32,8 +33,11 @@
     {
       "id": "jack-dor",
       "name": "ジャックドール",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 8}",
-      "foaledArray": ["2018", "04", "08"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "モーリス",

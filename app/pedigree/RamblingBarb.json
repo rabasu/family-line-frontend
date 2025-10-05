@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rambling Barb",
     "rootHorseId": "rambling-barb",
-    "lastUpdated": "2025-09-24T13:14:25.225976Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rambling-barb",
       "name": "Rambling Barb",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cormorant",
@@ -31,8 +32,11 @@
     {
       "id": "shonan-happiness",
       "name": "ショウナンハピネス",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 11}",
-      "foaledArray": ["1995", "04", "11"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kris S.",

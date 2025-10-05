@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Saddlers Gal",
     "rootHorseId": "saddlers-gal",
-    "lastUpdated": "2025-09-24T16:47:26.289213Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "saddlers-gal",
       "name": "サドラーズギャル",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler's Wells(US)",
@@ -32,8 +33,11 @@
     {
       "id": "el-condor-pasa",
       "name": "エルコンドルパサー",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 17}",
-      "foaledArray": ["1995", "03", "17"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",

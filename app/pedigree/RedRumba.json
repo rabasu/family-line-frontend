@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Red Rumba",
     "rootHorseId": "red-rumba",
-    "lastUpdated": "2025-09-18T13:16:54.145795Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "red-rumba",
       "name": "レッドルンバ",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 1}",
-      "foaledArray": ["2005", "03", "01"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Red Ransom",
@@ -32,8 +35,11 @@
     {
       "id": "thracian-code",
       "name": "トラキアンコード",
-      "foaled": "{'year': 2012, 'month': 5, 'day': 19}",
-      "foaledArray": ["2012", "05", "19"],
+      "foaled": {
+        "year": 2012,
+        "month": 5,
+        "day": 19
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

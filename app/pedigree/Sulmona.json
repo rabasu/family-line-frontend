@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sulmona",
     "rootHorseId": "sulmona",
-    "lastUpdated": "2025-09-25T03:49:01.064668Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sulmona",
       "name": "Sulmona",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -31,8 +32,11 @@
     {
       "id": "shiroyama-bold",
       "name": "シロヤマボールド",
-      "foaled": "{'year': 1993, 'month': 2, 'day': 5}",
-      "foaledArray": ["1993", "02", "05"],
+      "foaled": {
+        "year": 1993,
+        "month": 2,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Persian Bold",

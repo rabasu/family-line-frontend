@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sadler's Maid",
     "rootHorseId": "sadlers-maid",
-    "lastUpdated": "2025-09-18T14:18:19.059964Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sadlers-maid",
       "name": "サドラーズメイド",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "fonteyn",
       "name": "フォンティーン",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 20}",
-      "foaledArray": ["2003", "03", "20"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エンドスウィープ(US)",
@@ -59,8 +63,11 @@
     {
       "id": "koyu-nureyev",
       "name": "コウユーヌレエフ",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 28}",
-      "foaledArray": ["2014", "04", "28"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロージズインメイ(US)",

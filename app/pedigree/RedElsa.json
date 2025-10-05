@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Red Elsa",
     "rootHorseId": "red-elsa",
-    "lastUpdated": "2025-09-18T11:58:18.647331Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "red-elsa",
       "name": "レッドエルザ",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 12}",
-      "foaledArray": ["2010", "04", "12"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Smart Strike(CAN)",
@@ -32,8 +35,11 @@
     {
       "id": "red-kingly",
       "name": "レッドキングリー",
-      "foaled": "{'year': 2022, 'month': 3, 'day': 8}",
-      "foaledArray": ["2022", "03", "08"],
+      "foaled": {
+        "year": 2022,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サートゥルナーリア",
@@ -92,8 +98,11 @@
     {
       "id": "red-leon",
       "name": "レッドレオン",
-      "foaled": "{'year': 2015, 'month': 1, 'day': 30}",
-      "foaledArray": ["2015", "01", "30"],
+      "foaled": {
+        "year": 2015,
+        "month": 1,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

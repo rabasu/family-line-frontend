@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Showgirl",
     "rootHorseId": "showgirl",
-    "lastUpdated": "2025-09-23T22:05:50.786179Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "showgirl",
       "name": "ショーガールII",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alleged(US)",
@@ -32,8 +33,11 @@
     {
       "id": "chocot",
       "name": "ショコット",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 31}",
-      "foaledArray": ["1997", "03", "31"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",

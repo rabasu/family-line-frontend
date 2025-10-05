@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Sabbiare",
     "rootHorseId": "sabbiare",
-    "lastUpdated": "2025-09-21T07:50:17.573987Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sabbiare",
       "name": "サビアーレ",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 1}",
-      "foaledArray": ["2000", "03", "01"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Capote",
@@ -32,8 +35,11 @@
     {
       "id": "capote-star",
       "name": "カポーティスター",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 22}",
-      "foaledArray": ["2009", "02", "22"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

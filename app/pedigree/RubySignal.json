@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ruby Signal",
     "rootHorseId": "ruby-signal",
-    "lastUpdated": "2025-09-26T12:43:05.524341Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ruby-signal",
       "name": "マイルービー",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Low Signal",
@@ -32,8 +33,9 @@
     {
       "id": "cristmas-queen",
       "name": "クリスマスクイン",
-      "foaled": "{'year': 1959}",
-      "foaledArray": ["1959"],
+      "foaled": {
+        "year": 1959
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゲイタイム(GB)",
@@ -59,8 +61,9 @@
     {
       "id": "flower-tosho",
       "name": "フラワートウショウ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フォルティノ",
@@ -86,8 +89,11 @@
     {
       "id": "eishin-warrior",
       "name": "エイシンウオリア",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 23}",
-      "foaledArray": ["1983", "05", "23"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -172,6 +178,512 @@
         "local": "0万円"
       },
       "damId": "flower-tosho"
+    },
+    {
+      "id": "kimino-derby",
+      "name": "キミノダービー",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "エルギャロー",
+      "dam": "ダービーコマチ",
+      "color": "栗毛",
+      "breeder": "幕別町",
+      "netkeibaId": "1955106142",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 12,
+            "day": 11
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 11,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "読売杯スプリンターズ(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 6,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "6",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "4歳牝馬特別(OP)",
+          "displayRace": "4歳牝馬特別（東）",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "9",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "阪神4歳牝馬特別(OP)",
+          "displayRace": "阪神4歳牝馬特別",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kimino Derby",
+      "prizeMoney": {
+        "total": "830万円",
+        "central": "830万円",
+        "local": "0万円"
+      },
+      "damId": "dahbih-komachi"
+    },
+    {
+      "id": "dahbih-komachi",
+      "name": "ダービーコマチ",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トサミドリ",
+      "dam": "クリスマスクイン",
+      "color": "栗毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a00439a",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Dahbih Komachi",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "cristmas-queen"
+    },
+    {
+      "id": "sanpou",
+      "name": "サンポウ",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ナディア",
+      "dam": "クリスマスクイン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1970z00209",
+      "raceStats": {
+        "total": {
+          "runs": 32,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "トヨタ賞中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 2,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(OP)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 10,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "京王杯オータムH(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 8,
+            "day": 25
+          },
+          "racecourse": "新潟",
+          "race": "新潟記念(OP)",
+          "displayRace": "新潟記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "新潟",
+          "race": "七夕賞(OP)",
+          "displayRace": "七夕賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 2,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 1,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 11,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 9,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 6,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "22",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 3,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 1,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "京成杯(OP)",
+          "displayRace": "京成杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 10,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "cristmas-queen"
+    },
+    {
+      "id": "time-tosho",
+      "name": "タイムトウショウ",
+      "foaled": {
+        "year": 1972
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フォルティノ",
+      "dam": "クリスマスクイン",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955105879",
+      "raceStats": {
+        "total": {
+          "runs": 40,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 1
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Time Tosho",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "cristmas-queen"
     }
   ]
 }

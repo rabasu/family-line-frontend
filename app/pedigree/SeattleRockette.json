@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Seattle Rockette",
     "rootHorseId": "seattle-rockette",
-    "lastUpdated": "2025-09-22T15:54:31.954819Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seattle-rockette",
       "name": "シアトルロケット",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "lucky-break",
       "name": "ラッキーブレイク",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 5}",
-      "foaledArray": ["2001", "04", "05"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジェリ(US)",

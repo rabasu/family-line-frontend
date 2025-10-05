@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Quick Command",
     "rootHorseId": "quick-command",
-    "lastUpdated": "2025-09-20T10:47:36.399779Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "quick-command",
       "name": "クイックコマンド",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gold Legend",
       "dam": "Jet Route",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a011496",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Quick Command"
+      "englishName": "Quick Command",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "lethal-weapon",
       "name": "リーサルウェポン",
-      "foaled": "{'year': 2011, 'month': 5, 'day': 29}",
-      "foaledArray": ["2011", "05", "29"],
+      "foaled": {
+        "year": 2011,
+        "month": 5,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "クイックコマンド",
-      "dam_netkeiba_id": "000a011496",
       "color": "鹿毛",
       "breeder": "タバタファーム（日高町）",
       "netkeibaId": "2011100497",
@@ -269,7 +272,8 @@
         "central": "8,378万円",
         "local": "0万円"
       },
-      "damId": "quick-command"
+      "damId": "quick-command",
+      "dam_netkeiba_id": "000a011496"
     }
   ]
 }

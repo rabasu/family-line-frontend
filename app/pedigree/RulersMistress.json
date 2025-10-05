@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rulers Mistress",
     "rootHorseId": "rulers-mistress",
-    "lastUpdated": "2025-09-27T12:51:20.151231Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rulers-mistress",
       "name": "ルーラースミストレス",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bold Ruler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "shadai-sophia",
       "name": "シャダイソフィア",
-      "foaled": "{'year': 1980, 'month': 3, 'day': 19}",
-      "foaledArray": ["1980", "03", "19"],
+      "foaled": {
+        "year": 1980,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

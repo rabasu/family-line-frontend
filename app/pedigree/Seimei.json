@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Seimei",
     "rootHorseId": "seimei",
-    "lastUpdated": "2025-09-22T16:27:34.031421Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seimei",
       "name": "セイメイ",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 11}",
-      "foaledArray": ["1993", "04", "11"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Exuberant",
@@ -32,8 +35,11 @@
     {
       "id": "senkaku",
       "name": "センカク",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 30}",
-      "foaledArray": ["2002", "04", "30"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マーベラスサンデー",

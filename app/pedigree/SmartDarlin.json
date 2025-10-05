@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Smart Darlin",
     "rootHorseId": "smart-darlin",
-    "lastUpdated": "2025-09-17T13:18:58.992248Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "smart-darlin",
       "name": "スマートダーリン",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar a",
@@ -32,8 +33,11 @@
     {
       "id": "laurel-ange",
       "name": "ローレルアンジュ",
-      "foaled": "{'year': 1999, 'month': 5, 'day': 29}",
-      "foaledArray": ["1999", "05", "29"],
+      "foaled": {
+        "year": 1999,
+        "month": 5,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パラダイスクリーク(US)",
@@ -92,8 +96,11 @@
     {
       "id": "repun-kamuy",
       "name": "レプンカムイ",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 23}",
-      "foaledArray": ["2018", "02", "23"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",

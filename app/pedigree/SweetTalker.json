@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Sweet Talker",
     "rootHorseId": "sweet-talker",
-    "lastUpdated": "2025-09-17T14:49:12.690032Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-talker",
       "name": "Sweet Talker",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 15}",
-      "foaledArray": ["2002", "04", "15"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Stormin Fever",
@@ -31,8 +34,11 @@
     {
       "id": "american-seed",
       "name": "アメリカンシード",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 17}",
-      "foaledArray": ["2017", "03", "17"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Tapit(US)",

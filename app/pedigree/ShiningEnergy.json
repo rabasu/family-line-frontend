@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Shining Energy",
     "rootHorseId": "shining-energy",
-    "lastUpdated": "2025-09-21T02:50:38.949181Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shining-energy",
       "name": "シャイニングエナジー",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rahy",
@@ -32,8 +33,11 @@
     {
       "id": "atom",
       "name": "アトム",
-      "foaled": "{'year': 2011, 'month': 5, 'day': 9}",
-      "foaledArray": ["2011", "05", "09"],
+      "foaled": {
+        "year": 2011,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

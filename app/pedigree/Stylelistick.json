@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Stylelistick",
     "rootHorseId": "stylelistick",
-    "lastUpdated": "2025-09-18T08:57:19.225042Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "stylelistick",
       "name": "スタイルリスティック",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "red-en-ciel",
       "name": "レッドアンシェル",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 9}",
-      "foaledArray": ["2014", "04", "09"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

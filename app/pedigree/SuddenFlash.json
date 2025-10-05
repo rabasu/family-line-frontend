@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sudden Flash",
     "rootHorseId": "sudden-flash",
-    "lastUpdated": "2025-09-24T18:19:32.787642Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sudden-flash",
       "name": "Sudden Flash",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Known Fact(US)",
@@ -31,8 +32,11 @@
     {
       "id": "taiki-flash",
       "name": "タイキフラッシュ",
-      "foaled": "{'year': 1991, 'month': 1, 'day': 23}",
-      "foaledArray": ["1991", "01", "23"],
+      "foaled": {
+        "year": 1991,
+        "month": 1,
+        "day": 23
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Spend a Buck(US)",

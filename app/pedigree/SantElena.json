@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sant Elena",
     "rootHorseId": "sant-elena",
-    "lastUpdated": "2025-09-19T10:51:09.422684Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sant-elena",
       "name": "Sant Elena",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Efisio",
@@ -31,8 +32,11 @@
     {
       "id": "best-approach",
       "name": "ベストアプローチ",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 24}",
-      "foaledArray": ["2014", "04", "24"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 24
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "New Approach",

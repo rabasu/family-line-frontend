@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rose Lilac",
     "rootHorseId": "rose-lilac",
-    "lastUpdated": "2025-09-25T04:50:27.841168Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rose-lilac",
       "name": "ローズライラック",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Zimone",
@@ -32,8 +33,9 @@
     {
       "id": "sweet-lilac",
       "name": "スイートライラック",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Canisbay",
@@ -59,8 +61,9 @@
     {
       "id": "brown-lord",
       "name": "ブラウンロード",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -86,8 +89,11 @@
     {
       "id": "sweet-forte",
       "name": "スイートフォルテ",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 16}",
-      "foaledArray": ["1984", "04", "16"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モガミ(FR)",
@@ -115,8 +121,11 @@
     {
       "id": "inter-my-way",
       "name": "インターマイウェイ",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 24}",
-      "foaledArray": ["1990", "03", "24"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ニッポーテイオー",
@@ -471,6 +480,232 @@
         "local": "70万円"
       },
       "damId": "sweet-forte"
+    },
+    {
+      "id": "colonel-symboli",
+      "name": "カーネルシンボリ",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "パーソロン(IRE)",
+      "dam": "ローズライラック",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a000bea",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "8",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 12,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "10",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チヤレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 2,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "農林省賞典目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 12,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "9",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "8",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 3,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "弥生賞(OP)",
+          "displayRace": "弥生賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "東京4歳S(OP)",
+          "displayRace": "東京4歳S",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 12,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 10,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 8,
+            "day": 19
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Colonel Symboli",
+      "prizeMoney": {
+        "total": "1,800万円",
+        "central": "1,800万円",
+        "local": "0万円"
+      },
+      "damId": "rose-lilac"
     }
   ]
 }
