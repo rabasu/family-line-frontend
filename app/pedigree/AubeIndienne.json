@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aube Indienne",
     "rootHorseId": "aube-indienne",
-    "lastUpdated": "2025-09-22T23:26:26.648455Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aube-indienne",
       "name": "オーブアンディアンヌ",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bluebird",
@@ -32,8 +33,11 @@
     {
       "id": "maruka-hannibal",
       "name": "マルカハンニバル",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 1}",
-      "foaledArray": ["2004", "04", "01"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",

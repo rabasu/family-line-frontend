@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bromelia",
     "rootHorseId": "bromelia",
-    "lastUpdated": "2025-09-24T08:08:41.520599Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bromelia",
       "name": "ブロメリア",
-      "foaled": "{'year': 1955}",
-      "foaledArray": ["1955"],
+      "foaled": {
+        "year": 1955
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bois Roussel",
@@ -32,8 +33,9 @@
     {
       "id": "blaze-turf",
       "name": "ブレーズターフ",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -59,8 +61,11 @@
     {
       "id": "dyna-victoria",
       "name": "ダイナビクトリア",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 1}",
-      "foaledArray": ["1978", "03", "01"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -164,8 +169,11 @@
     {
       "id": "victory-dance",
       "name": "ビクトリーダンス",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 29}",
-      "foaledArray": ["1987", "03", "29"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンサーズイメージ",
@@ -193,8 +201,11 @@
     {
       "id": "tsurumaru-zamurai",
       "name": "ツルマルザムライ",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 12}",
-      "foaledArray": ["1996", "03", "12"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -414,6 +425,64 @@
         "local": "2,160万円"
       },
       "damId": "victory-dance"
+    },
+    {
+      "id": "daitomonaaku",
+      "name": "ダイトモナーク",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "グレイモナーク(GB)",
+      "dam": "ブロメリア",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1968z00321",
+      "raceStats": {
+        "total": {
+          "runs": 12,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "19",
+          "result": "9",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "bromelia"
     }
   ]
 }

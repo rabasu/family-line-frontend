@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Charitable",
     "rootHorseId": "charitable",
-    "lastUpdated": "2025-09-24T00:07:55.595315Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "charitable",
       "name": "チャリタブル",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "stephanie-chan",
       "name": "ステファニーチャン",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 15}",
-      "foaledArray": ["1996", "04", "15"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アーミジャー(GB)",
@@ -242,8 +246,11 @@
     {
       "id": "tsukuba-hokuto-o",
       "name": "ツクバホクトオー",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 4}",
-      "foaledArray": ["2006", "04", "04"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -392,8 +399,11 @@
     {
       "id": "heisei-pikaichi",
       "name": "ヘイセイピカイチ",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 2}",
-      "foaledArray": ["2000", "04", "02"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",

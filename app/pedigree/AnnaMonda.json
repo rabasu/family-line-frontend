@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Anna Monda",
     "rootHorseId": "anna-monda",
-    "lastUpdated": "2025-09-15T10:17:35.086031Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "anna-monda",
       "name": "アンナモンダ",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 6}",
-      "foaledArray": ["2002", "02", "06"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Monsun",
@@ -32,8 +35,11 @@
     {
       "id": "ask-konnamonda",
       "name": "アスクコンナモンダ",
-      "foaled": "{'year': 2019, 'month': 2, 'day': 14}",
-      "foaledArray": ["2019", "02", "14"],
+      "foaled": {
+        "year": 2019,
+        "month": 2,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

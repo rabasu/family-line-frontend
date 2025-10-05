@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Annzala",
     "rootHorseId": "annzala",
-    "lastUpdated": "2025-09-26T08:07:24.772118Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "annzala",
       "name": "アンザラ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -32,8 +33,11 @@
     {
       "id": "annzala-hikari",
       "name": "アンザラヒカリ",
-      "foaled": "{'year': 1976, 'month': 4, 'day': 8}",
-      "foaledArray": ["1976", "04", "08"],
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴィエナ",
@@ -59,8 +63,11 @@
     {
       "id": "tokino-orient",
       "name": "トキノオリエント",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 6}",
-      "foaledArray": ["1984", "05", "06"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ランドギフト",
@@ -115,6 +122,156 @@
         "local": "0万円"
       },
       "damId": "annzala-hikari"
+    },
+    {
+      "id": "sachimofuji",
+      "name": "サチモフジ",
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 29
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アストラルグリーン",
+      "dam": "アンザラ",
+      "color": "鹿毛",
+      "breeder": "共栄牧場（新冠町）",
+      "netkeibaId": "1975z01078",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1980,
+            "month": 5,
+            "day": 18
+          },
+          "racecourse": "中京",
+          "race": "中京障害S(OP)",
+          "displayRace": "中京障害S(春)",
+          "distance": "障3600",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 8,
+            "day": 26
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "京都",
+          "race": "スワンS(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 4,
+            "day": 8
+          },
+          "racecourse": "小倉",
+          "race": "小倉大賞典(OP)",
+          "displayRace": "小倉大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 1,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "日経新春杯(OP)",
+          "displayRace": "日経新春杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "13",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "6",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 11,
+            "day": 26
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "annzala"
     }
   ]
 }

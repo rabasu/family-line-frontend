@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Countess Steffi",
     "rootHorseId": "countess-steffi",
-    "lastUpdated": "2025-09-21T13:53:52.679730Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "countess-steffi",
       "name": "カウンテスステフィ",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Geiger Counter",
@@ -32,8 +33,11 @@
     {
       "id": "precious-lover",
       "name": "プレシャスラバー",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 5}",
-      "foaledArray": ["1998", "02", "05"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ペンタイア(GB)",
@@ -61,8 +65,11 @@
     {
       "id": "narita-crystal",
       "name": "ナリタクリスタル",
-      "foaled": "{'year': 2006, 'month': 1, 'day': 16}",
-      "foaledArray": ["2006", "01", "16"],
+      "foaled": {
+        "year": 2006,
+        "month": 1,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",

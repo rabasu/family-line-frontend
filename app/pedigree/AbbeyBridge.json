@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Abbey Bridge",
     "rootHorseId": "abbey-bridge",
-    "lastUpdated": "2025-09-26T15:14:07.684828Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "abbey-bridge",
       "name": "アベイブリッジ",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Entente Cordiale",
@@ -32,8 +33,9 @@
     {
       "id": "tanino-venture",
       "name": "タニノベンチヤ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -59,8 +61,11 @@
     {
       "id": "rabbit-ball",
       "name": "ラビットボール",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 20}",
-      "foaledArray": ["1987", "03", "20"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラッキーソブリン",
@@ -209,8 +214,11 @@
     {
       "id": "lemon-balm",
       "name": "レモンバーム",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 30}",
-      "foaledArray": ["1997", "03", "30"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -238,8 +246,11 @@
     {
       "id": "mysterieuse",
       "name": "ミステリューズ",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 29}",
-      "foaledArray": ["2006", "04", "29"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ナリタトップロード",
@@ -265,8 +276,11 @@
     {
       "id": "lord-bless",
       "name": "ロードブレス",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 11}",
-      "foaledArray": ["2016", "04", "11"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダノンバラード",
@@ -535,8 +549,11 @@
     {
       "id": "anno-luce",
       "name": "アンノルーチェ",
-      "foaled": "{'year': 2005, 'month': 5, 'day': 7}",
-      "foaledArray": ["2005", "05", "07"],
+      "foaled": {
+        "year": 2005,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サッカーボーイ",
@@ -730,8 +747,11 @@
     {
       "id": "katsuragi-ace",
       "name": "カツラギエース",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 24}",
-      "foaledArray": ["1980", "04", "24"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ボイズィーボーイ",
@@ -981,6 +1001,154 @@
         "local": "0万円"
       },
       "damId": "tanino-venture"
+    },
+    {
+      "id": "taninomosuboroo",
+      "name": "タニノモスボロー",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "gelding",
+      "breed": "サラブレッド種",
+      "sire": "Mossborough",
+      "dam": "アベイブリッジ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1967z00302",
+      "raceStats": {
+        "total": {
+          "runs": 49,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3260",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3260",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "21",
+          "result": "18",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "14",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 4,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 3,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "10",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "abbey-bridge"
     }
   ]
 }

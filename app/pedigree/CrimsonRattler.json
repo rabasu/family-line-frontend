@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Crimson Rattler",
     "rootHorseId": "crimson-rattler",
-    "lastUpdated": "2025-09-22T16:24:25.510199Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "crimson-rattler",
       "name": "クリムゾンラトラー",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Crimson Satan",
@@ -32,8 +33,11 @@
     {
       "id": "takara-kanna",
       "name": "タカラカンナ",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 30}",
-      "foaledArray": ["1993", "04", "30"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サッカーボーイ",
@@ -92,8 +96,11 @@
     {
       "id": "meiner-mark",
       "name": "マイネルマーク",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 1}",
-      "foaledArray": ["2008", "04", "01"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロージズインメイ(US)",
@@ -167,8 +174,11 @@
     {
       "id": "meiner-kitz",
       "name": "マイネルキッツ",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 18}",
-      "foaledArray": ["2003", "03", "18"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "チーフベアハート(CAN)",
@@ -662,8 +672,11 @@
     {
       "id": "meine-canna",
       "name": "マイネカンナ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 13}",
-      "foaledArray": ["2004", "03", "13"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "All About Style",
     "rootHorseId": "all-about-style",
-    "lastUpdated": "2025-09-24T21:52:45.978913Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "all-about-style",
       "name": "オールアバウトスタイル",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Raja Baba",
@@ -32,8 +33,11 @@
     {
       "id": "opening-theme",
       "name": "オープニングテーマ",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 2}",
-      "foaledArray": ["1994", "02", "02"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Born a Lady",
     "rootHorseId": "born-a-lady",
-    "lastUpdated": "2025-09-24T19:19:17.264466Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "born-a-lady",
       "name": "Born a Lady",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tentam(US)",
@@ -31,8 +32,11 @@
     {
       "id": "lady-bonanza",
       "name": "レディボナンザ",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 27}",
-      "foaledArray": ["1995", "04", "27"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",

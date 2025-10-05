@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bazilia",
     "rootHorseId": "bazilia",
-    "lastUpdated": "2025-09-23T21:02:23.848025Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bazilia",
       "name": "バジリア",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "natural-nine",
       "name": "ナチュラルナイン",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 18}",
-      "foaledArray": ["2000", "03", "18"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",

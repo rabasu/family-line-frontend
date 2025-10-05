@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Asaka Fuji",
     "rootHorseId": "asaka-fuji",
-    "lastUpdated": "2025-09-22T19:49:38.249314Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "asaka-fuji",
       "name": "アサカフジ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 3}",
-      "foaledArray": ["1995", "05", "03"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
       "dam": "Connie's Gift",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "W. S. Kilroy & W. S. Farish（米）",
       "netkeibaId": "1995108553",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Asaka Fuji"
+      "englishName": "Asaka Fuji",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "halo-fuji",
       "name": "ヘイローフジ",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 30}",
-      "foaledArray": ["2003", "04", "30"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",
       "dam": "アサカフジ",
-      "dam_netkeiba_id": "1995108553",
       "color": "栗毛",
       "breeder": "協和牧場（新冠町）",
       "netkeibaId": "2003100206",
@@ -194,18 +199,21 @@
         "central": "1億2,878万円",
         "local": "0万円"
       },
-      "damId": "asaka-fuji"
+      "damId": "asaka-fuji",
+      "dam_netkeiba_id": "1995108553"
     },
     {
       "id": "laurel-veloce",
       "name": "ローレルベローチェ",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 3}",
-      "foaledArray": ["2011", "04", "03"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
       "dam": "ヘイローフジ",
-      "dam_netkeiba_id": "2003100206",
       "color": "栗毛",
       "breeder": "協和牧場（新冠町）",
       "netkeibaId": "2011104682",
@@ -270,13 +278,17 @@
         "central": "1億370万円",
         "local": "0万円"
       },
-      "damId": "halo-fuji"
+      "damId": "halo-fuji",
+      "dam_netkeiba_id": "2003100206"
     },
     {
       "id": "kyowa-jeanne",
       "name": "キョウワジャンヌ",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 15}",
-      "foaledArray": ["2008", "03", "15"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -395,8 +407,11 @@
     {
       "id": "kyowa-roaring",
       "name": "キョウワロアリング",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 27}",
-      "foaledArray": ["2001", "04", "27"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

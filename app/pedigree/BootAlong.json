@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Boot Along",
     "rootHorseId": "boot-along",
-    "lastUpdated": "2025-09-25T13:56:41.328661Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "boot-along",
       "name": "ブートアロング",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mameluke",
@@ -32,8 +33,9 @@
     {
       "id": "fujino-hayakaze",
       "name": "フジノハヤカゼ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バダクシャーン(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "blizzard",
       "name": "ブリザード",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 6}",
-      "foaledArray": ["1988", "04", "06"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジノフウウン",

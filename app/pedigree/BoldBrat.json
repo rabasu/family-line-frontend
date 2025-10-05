@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bold Brat",
     "rootHorseId": "bold-brat",
-    "lastUpdated": "2025-09-25T23:32:52.289748Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bold-brat",
       "name": "Bold Brat",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Boldnesian",
@@ -31,8 +32,11 @@
     {
       "id": "hunt-wish-j",
       "name": "ハントウイッシュ",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 30}",
-      "foaledArray": ["1987", "04", "30"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Vice Regent",

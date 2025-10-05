@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Brocatelle",
     "rootHorseId": "brocatelle",
-    "lastUpdated": "2025-09-23T20:36:03.786000Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "brocatelle",
       "name": "Brocatelle",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Desert",
@@ -31,8 +32,11 @@
     {
       "id": "fusaichi-hokutosei",
       "name": "フサイチホクトセイ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 9}",
-      "foaledArray": ["2001", "03", "09"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",

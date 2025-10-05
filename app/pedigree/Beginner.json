@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Beginner",
     "rootHorseId": "beginner",
-    "lastUpdated": "2025-09-26T01:02:11.964999Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "beginner",
       "name": "ビギナー",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bewildered",
@@ -32,8 +33,9 @@
     {
       "id": "eden-match",
       "name": "イーデンマッチ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マッチウォン(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "rainbow-akasaka",
       "name": "レインボーアカサカ",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 30}",
-      "foaledArray": ["1984", "05", "30"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザリー",
@@ -205,6 +210,230 @@
         "local": "0万円"
       },
       "damId": "eden-match"
+    },
+    {
+      "id": "bold-match",
+      "name": "ボールドマッチ",
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 28
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ボールドコンバタント",
+      "dam": "イーデンマッチ",
+      "color": "鹿毛",
+      "breeder": "千葉飯田牧場日高分場（門別町）",
+      "netkeibaId": "1977105310",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 12,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "中",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "2",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Bold Match",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "eden-match"
+    },
+    {
+      "id": "supiidokingu",
+      "name": "スピードキング",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "Hook Money",
+      "dam": "ビギナー",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1962z00127",
+      "raceStats": {
+        "total": {
+          "runs": 50,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1967,
+            "month": 10,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 9,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 7,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "オールカマー(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "11",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "7",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 9,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 6,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 2,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "11",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "beginner"
     }
   ]
 }

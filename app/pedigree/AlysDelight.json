@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aly's Delight",
     "rootHorseId": "alys-delight",
-    "lastUpdated": "2025-09-22T17:50:01.009064Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alys-delight",
       "name": "アリーズデライト",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar a",
@@ -32,8 +33,11 @@
     {
       "id": "quiet-day",
       "name": "クワイエットデイ",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 31}",
-      "foaledArray": ["2000", "05", "31"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

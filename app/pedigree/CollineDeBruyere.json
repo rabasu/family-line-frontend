@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Colline de Bruyere",
     "rootHorseId": "colline-de-bruyere",
-    "lastUpdated": "2025-09-17T00:30:24.743803Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "colline-de-bruyere",
       "name": "コリンヌドゥブルイェール",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lomond",
@@ -32,8 +33,11 @@
     {
       "id": "aobakorin",
       "name": "アオバコリン",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 9}",
-      "foaledArray": ["1999", "03", "09"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "カコイーシーズ(US)",
@@ -316,8 +320,11 @@
     {
       "id": "win-mighty",
       "name": "ウインマイティー",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 1}",
-      "foaledArray": ["2017", "04", "01"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゴールドシップ",

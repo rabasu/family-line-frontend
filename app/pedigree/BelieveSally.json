@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "ビリーヴサリー",
     "rootHorseId": "believe_sally",
-    "lastUpdated": "2025-09-26T10:07:36.885814Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "believe_sally",
       "name": "ビリーヴサリー",
-      "foaled": "1927",
-      "foaledArray": ["1927"],
+      "foaled": {
+        "year": 1927
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
+      "sire": "Behave Yourself",
+      "dam": "Believe Me Boys",
       "color": "",
-      "breeder": "",
+      "breeder": "米",
       "netkeibaId": "000a0025df",
       "source": "tsx_conversion",
+      "importedYear": "1936",
+      "familyNumber": "F6-a",
+      "registration": "14巻1598号",
       "owner": "社台牧場"
     },
     {
       "id": "mayano-ryujin",
       "name": "マヤノリュウジン",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 22}",
-      "foaledArray": ["2007", "03", "22"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",
@@ -234,8 +241,11 @@
     {
       "id": "pot-brilliance",
       "name": "ポットブリリアンス",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 22}",
-      "foaledArray": ["1994", "03", "22"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キンググローリアス(US)",
@@ -263,8 +273,11 @@
     {
       "id": "pot-calamity",
       "name": "ポットカラミティー",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 27}",
-      "foaledArray": ["1987", "03", "27"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
@@ -292,8 +305,11 @@
     {
       "id": "pot-laura",
       "name": "ポットローラ",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 18}",
-      "foaledArray": ["1978", "04", "18"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -319,8 +335,9 @@
     {
       "id": "ondeiinu",
       "name": "オンデイーヌ",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フェリオール(FR)",
@@ -345,8 +362,9 @@
     {
       "id": "goshono-hana",
       "name": "ゴシヨノハナ",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステージアレー(US)",
@@ -372,8 +390,9 @@
     {
       "id": "daiyonbiriivusarii",
       "name": "第四ビリーヴサリー",
-      "foaled": "{'year': 1944}",
-      "foaledArray": ["1944"],
+      "foaled": {
+        "year": 1944
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステーツマン(GB)",
@@ -398,8 +417,11 @@
     {
       "id": "mayano-benkei",
       "name": "マヤノベンケイ",
-      "foaled": "{'year': 2005, 'month': 1, 'day': 10}",
-      "foaledArray": ["2005", "01", "10"],
+      "foaled": {
+        "year": 2005,
+        "month": 1,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",
@@ -473,8 +495,11 @@
     {
       "id": "pot-napoleon",
       "name": "ポットナポレオン",
-      "foaled": "{'year': 1985, 'month': 3, 'day': 31}",
-      "foaledArray": ["1985", "03", "31"],
+      "foaled": {
+        "year": 1985,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
@@ -533,8 +558,11 @@
     {
       "id": "pot-pale",
       "name": "ポットペール",
-      "foaled": "{'year': 1979, 'month': 5, 'day': 22}",
-      "foaledArray": ["1979", "05", "22"],
+      "foaled": {
+        "year": 1979,
+        "month": 5,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ペール(IRE)",

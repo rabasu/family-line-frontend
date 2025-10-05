@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Altadena",
     "rootHorseId": "altadena",
-    "lastUpdated": "2025-09-24T04:38:44.037552Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "altadena",
       "name": "アルタデナ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "meisho-odo",
       "name": "メイショウオウドウ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 29}",
-      "foaledArray": ["1995", "05", "29"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

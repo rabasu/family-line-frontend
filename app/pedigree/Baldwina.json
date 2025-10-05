@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Baldwina",
     "rootHorseId": "baldwina",
-    "lastUpdated": "2025-09-20T08:47:15.489121Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "baldwina",
       "name": "バルドウィナ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 9}",
-      "foaledArray": ["1998", "03", "09"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pistolet Bleu",
@@ -32,14 +35,17 @@
     {
       "id": "sunshine",
       "name": "サンシャイン",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 25}",
-      "foaledArray": ["2009", "02", "25"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
       "dam": "バルドウィナ",
-      "color": "黒鹿毛",
-      "breeder": "社台ファーム（千歳市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2009105903",
       "raceStats": {
         "total": {
@@ -272,8 +278,11 @@
     {
       "id": "arata",
       "name": "アラタ",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 16}",
-      "foaledArray": ["2017", "03", "16"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -587,8 +596,11 @@
     {
       "id": "one-direct",
       "name": "ワンダイレクト",
-      "foaled": "{'year': 2020, 'month': 5, 'day': 4}",
-      "foaledArray": ["2020", "05", "04"],
+      "foaled": {
+        "year": 2020,
+        "month": 5,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハービンジャー(GB)",
@@ -647,8 +659,11 @@
     {
       "id": "one-to-one",
       "name": "ワントゥワン",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 21}",
-      "foaledArray": ["2013", "03", "21"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -842,8 +857,11 @@
     {
       "id": "one-carat",
       "name": "ワンカラット",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 3}",
-      "foaledArray": ["2006", "04", "03"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファルブラヴ(IRE)",
@@ -1232,13 +1250,15 @@
     {
       "id": "jeweler",
       "name": "ジュエラー",
-      "foaled": "{'year': 2013, 'month': 1, 'day': 17}",
-      "foaledArray": ["2013", "01", "17"],
+      "foaled": {
+        "year": 2013,
+        "month": 1,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴィクトワールピサ",
       "dam": "バルドウィナBaldwina",
-      "dam_netkeiba_id": "000a010b6d",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2013105582",
@@ -1333,7 +1353,8 @@
         "central": "1億6,910万円",
         "local": "0万円"
       },
-      "damId": "baldwina"
+      "damId": "baldwina",
+      "dam_netkeiba_id": "000a010b6d"
     }
   ]
 }

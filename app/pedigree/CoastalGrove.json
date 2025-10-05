@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Coastal Grove",
     "rootHorseId": "coastal-grove",
-    "lastUpdated": "2025-09-27T08:06:53.336313Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "coastal-grove",
       "name": "コスタルグローブ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Never Say Die",
@@ -32,8 +33,11 @@
     {
       "id": "inter-cecil",
       "name": "インターセシル",
-      "foaled": "{'year': 1977, 'month': 3, 'day': 6}",
-      "foaledArray": ["1977", "03", "06"],
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タカウォーク(US)",
@@ -59,8 +63,11 @@
     {
       "id": "inter-shadow",
       "name": "インターシャドー",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 16}",
-      "foaledArray": ["1982", "04", "16"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サチモシロー",

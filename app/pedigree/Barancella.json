@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Barancella",
     "rootHorseId": "barancella",
-    "lastUpdated": "2025-09-18T00:49:27.007715Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "barancella",
       "name": "バランセラ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 25}",
-      "foaledArray": ["2001", "03", "25"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Acatenango",
@@ -32,8 +35,11 @@
     {
       "id": "sea-of-love",
       "name": "シーオブラブ",
-      "foaled": "{'year': 2012, 'month': 1, 'day': 19}",
-      "foaledArray": ["2012", "01", "19"],
+      "foaled": {
+        "year": 2012,
+        "month": 1,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -61,8 +67,11 @@
     {
       "id": "wonderful-town",
       "name": "ワンダフルタウン",
-      "foaled": "{'year': 2018, 'month': 1, 'day': 31}",
-      "foaledArray": ["2018", "01", "31"],
+      "foaled": {
+        "year": 2018,
+        "month": 1,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",

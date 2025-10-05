@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Caerna",
     "rootHorseId": "caerna",
-    "lastUpdated": "2025-09-22T20:20:21.212863Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "caerna",
       "name": "カーナII",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,11 @@
     {
       "id": "love-caerna",
       "name": "ラブカーナ",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 29}",
-      "foaledArray": ["2004", "04", "29"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オース(IRE)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Clear Path",
     "rootHorseId": "clear-path",
-    "lastUpdated": "2025-09-17T01:32:49.957288Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "clear-path",
       "name": "クリアーパス",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",
@@ -32,14 +33,17 @@
     {
       "id": "petit-princesse",
       "name": "プティプランセス",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 23}",
-      "foaledArray": ["2006", "03", "23"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
       "dam": "クリアーパス",
-      "color": "鹿毛",
-      "breeder": "下河辺牧場（日高町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2006105481",
       "raceStats": {
         "total": {
@@ -107,8 +111,11 @@
     {
       "id": "ecoro-walz",
       "name": "エコロヴァルツ",
-      "foaled": "{'year': 2021, 'month': 2, 'day': 14}",
-      "foaledArray": ["2021", "02", "14"],
+      "foaled": {
+        "year": 2021,
+        "month": 2,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブラックタイド",
@@ -287,8 +294,11 @@
     {
       "id": "vento-voce",
       "name": "ヴェントヴォーチェ",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 20}",
-      "foaledArray": ["2017", "04", "20"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タートルボウル(IRE)",
@@ -452,8 +462,11 @@
     {
       "id": "runway-snap",
       "name": "ランウェイスナップ",
-      "foaled": "{'year': 2005, 'month': 1, 'day': 19}",
-      "foaledArray": ["2005", "01", "19"],
+      "foaled": {
+        "year": 2005,
+        "month": 1,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Distant View",

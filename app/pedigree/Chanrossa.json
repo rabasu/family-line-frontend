@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chanrossa",
     "rootHorseId": "chanrossa",
-    "lastUpdated": "2025-09-18T20:24:15.624090Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chanrossa",
       "name": "シャンロッサ",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Galileo(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "rock-you",
       "name": "ロックユー",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 25}",
-      "foaledArray": ["2018", "03", "25"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -77,8 +81,11 @@
     {
       "id": "cantabile",
       "name": "カンタービレ",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 6}",
-      "foaledArray": ["2015", "03", "06"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

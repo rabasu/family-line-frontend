@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Curl Curl",
     "rootHorseId": "curl-curl",
-    "lastUpdated": "2025-09-27T04:33:59.317403Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-05T11:17:19.793181Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
       "id": "curl-curl",
       "name": "カールカール",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Al Wassat",
@@ -32,8 +33,9 @@
     {
       "id": "kuni-horse",
       "name": "クニホース",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライジングフレーム(IRE)",
@@ -105,8 +107,9 @@
     {
       "id": "shiba-botan",
       "name": "シバボタン",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ムーティエ(FR)",
@@ -178,8 +181,11 @@
     {
       "id": "curl-botan",
       "name": "カールボタン",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 17}",
-      "foaledArray": ["1980", "05", "17"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タケシバオー",
@@ -205,8 +211,11 @@
     {
       "id": "first-record",
       "name": "ファーストレコード",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 15}",
-      "foaledArray": ["1991", "03", "15"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクライットー",
@@ -306,6 +315,209 @@
         "local": "0万円"
       },
       "damId": "curl-botan"
+    },
+    {
+      "id": "paramasu",
+      "name": "パラマス",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "エイトラックス(FR)",
+      "dam": "カツアサヒ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1969z00425",
+      "raceStats": {
+        "total": {
+          "runs": 45,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "7",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 7,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "2",
+          "favorite": "15"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "katsuasahi"
+    },
+    {
+      "id": "katsuasahi",
+      "name": "カツアサヒ",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "タリヤートス(IRE)",
+      "dam": "エリーゼ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a003c29",
+      "raceStats": {
+        "total": {
+          "runs": 16,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Katsuasahi",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "eriize-1957"
+    },
+    {
+      "id": "eriize-1957",
+      "name": "エリーゼ",
+      "foaled": {
+        "year": 1957
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヒンドスタン",
+      "dam": "カールカール",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1957100237",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "curl-curl",
+      "linkName": "エリーゼ(1957)"
+    },
+    {
+      "id": "elisabeth",
+      "name": "エリザベート",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハクリョウ",
+      "dam": "エリーゼ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955101226",
+      "raceStats": {
+        "total": {
+          "runs": 40,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "12",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "クイーンS(250万円以下)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 4,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "4歳牝馬特別(OP)",
+          "displayRace": "4歳牝馬特別（東）",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "8",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Elisabeth",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "eriize-1957"
     }
   ]
 }

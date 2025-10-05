@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Burnt Sienna",
     "rootHorseId": "burnt-sienna",
-    "lastUpdated": "2025-09-25T03:49:28.631189Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "burnt-sienna",
       "name": "バーントシエンナ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ribot(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "yamanin-crystal",
       "name": "ヤマニンクリスタル",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 27}",
-      "foaledArray": ["1980", "05", "27"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヤマニン",
@@ -59,8 +63,11 @@
     {
       "id": "yamanin-fox",
       "name": "ヤマニンフォックス",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 7}",
-      "foaledArray": ["1988", "04", "07"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヤマニンスキー",

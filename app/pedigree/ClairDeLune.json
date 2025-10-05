@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Clair de Lune",
     "rootHorseId": "clair-de-lune",
-    "lastUpdated": "2025-09-27T15:56:18.190254Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "clair-de-lune",
       "name": "クレールドリユンヌ",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sing Sing",
@@ -32,8 +33,9 @@
     {
       "id": "aino-miyuki",
       "name": "アイノミユキ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボンモー(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "yasuno-teio",
       "name": "ヤスノテイオー",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 21}",
-      "foaledArray": ["1995", "04", "21"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 21
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ニッポーテイオー",
@@ -149,8 +154,11 @@
     {
       "id": "long-quick",
       "name": "ロングクイック",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 16}",
-      "foaledArray": ["1982", "04", "16"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロングファスト",
@@ -554,8 +562,11 @@
     {
       "id": "slew-obest",
       "name": "スルーオベスト",
-      "foaled": "{'year': 1985, 'month': 3, 'day': 22}",
-      "foaledArray": ["1985", "03", "22"],
+      "foaled": {
+        "year": 1985,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タイテエム",
@@ -659,8 +670,11 @@
     {
       "id": "belle-dancer",
       "name": "ベルダンサー",
-      "foaled": "{'year': 1976, 'month': 4, 'day': 12}",
-      "foaledArray": ["1976", "04", "12"],
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネプテューヌス(FR)",
@@ -686,8 +700,11 @@
     {
       "id": "aino-speed",
       "name": "アイノスピード",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 26}",
-      "foaledArray": ["1980", "04", "26"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンアンサー(CAN)",
@@ -742,6 +759,184 @@
         "local": "0万円"
       },
       "damId": "aino-miyuki"
+    },
+    {
+      "id": "fuminohikari",
+      "name": "フミノヒカリ",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ネプテューヌス(FR)",
+      "dam": "クレールドリユンヌ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1971z00480",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "マイラーズC(OP)",
+          "displayRace": "マイラーズC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 3,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪杯(OP)",
+          "displayRace": "サンケイ大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春杯(OP)",
+          "displayRace": "日本経済新春杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "取",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(600万下)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "農林省賞典京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "朝日チャレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 8,
+            "day": 10
+          },
+          "racecourse": "小倉",
+          "race": "テレビ西日本賞北九州(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "2",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "関西テレビ放送賞スワ(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "小倉",
+          "race": "小倉大賞典(OP)",
+          "displayRace": "小倉大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "clair-de-lune"
     }
   ]
 }

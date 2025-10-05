@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aquarist",
     "rootHorseId": "aquarist",
-    "lastUpdated": "2025-09-18T19:55:55.247732Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aquarist",
       "name": "アクアリスト",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コロナドズクエスト(US)",
@@ -32,8 +33,11 @@
     {
       "id": "fashionista",
       "name": "ファッショニスタ",
-      "foaled": "{'year': 2014, 'month': 3, 'day': 25}",
-      "foaledArray": ["2014", "03", "25"],
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ストリートセンス(US)",

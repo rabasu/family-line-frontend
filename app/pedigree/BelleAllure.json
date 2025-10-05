@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Belle Allure",
     "rootHorseId": "belle-allure",
-    "lastUpdated": "2025-09-19T08:18:58.796808Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "belle-allure",
       "name": "ベルアリュールII",
-      "foaled": "{'year': 2005}",
-      "foaledArray": ["2005"],
+      "foaled": {
+        "year": 2005
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Numerous",
@@ -32,8 +33,11 @@
     {
       "id": "admire-belle",
       "name": "アドマイヤベル",
-      "foaled": "{'year': 2021, 'month': 3, 'day': 1}",
-      "foaledArray": ["2021", "03", "01"],
+      "foaled": {
+        "year": 2021,
+        "month": 3,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スワーヴリチャード",
@@ -122,8 +126,11 @@
     {
       "id": "belle-cresta",
       "name": "ベルクレスタ",
-      "foaled": "{'year': 2019, 'month': 2, 'day': 6}",
-      "foaledArray": ["2019", "02", "06"],
+      "foaled": {
+        "year": 2019,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドゥラメンテ",
@@ -227,8 +234,11 @@
     {
       "id": "admire-lead",
       "name": "アドマイヤリード",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 18}",
-      "foaledArray": ["2013", "03", "18"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

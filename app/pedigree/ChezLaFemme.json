@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chez La Femme",
     "rootHorseId": "chez-la-femme",
-    "lastUpdated": "2025-09-20T17:27:00.660403Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chez-la-femme",
       "name": "Chez La Femme",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Afternoon Deelites",
@@ -31,8 +32,11 @@
     {
       "id": "air-khalifa",
       "name": "エアハリファ",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 14}",
-      "foaledArray": ["2009", "02", "14"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディスクリートキャット(US)",

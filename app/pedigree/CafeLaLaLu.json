@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Cafe La La Lu",
     "rootHorseId": "cafe-la-la-lu",
-    "lastUpdated": "2025-09-18T18:24:46.153552Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cafe-la-la-lu",
       "name": "カフェララルー",
-      "foaled": "{'year': 2001, 'month': 1, 'day': 17}",
-      "foaledArray": ["2001", "01", "17"],
+      "foaled": {
+        "year": 2001,
+        "month": 1,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ストラヴィンスキー",
@@ -32,8 +35,11 @@
     {
       "id": "cafe-blitz",
       "name": "カフェブリッツ",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 24}",
-      "foaledArray": ["2013", "05", "24"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

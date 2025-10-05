@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Balawaki",
     "rootHorseId": "balawaki",
-    "lastUpdated": "2025-09-25T07:21:20.088390Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "balawaki",
       "name": "バラワキ",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -32,8 +33,11 @@
     {
       "id": "memory-keanu",
       "name": "メモリーキアヌ",
-      "foaled": "{'year': 2000, 'month': 6, 'day': 12}",
-      "foaledArray": ["2000", "06", "12"],
+      "foaled": {
+        "year": 2000,
+        "month": 6,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -242,8 +246,11 @@
     {
       "id": "memory-jasper",
       "name": "メモリージャスパー",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 5}",
-      "foaledArray": ["1991", "05", "05"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イルドブルボン(US)",

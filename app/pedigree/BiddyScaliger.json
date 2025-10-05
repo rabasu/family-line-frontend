@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "ビデイスキヤリジヤー",
     "rootHorseId": "biddy_scaliger",
-    "lastUpdated": "2025-09-25T17:29:47.849829Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "biddy_scaliger",
       "name": "ビデイスキヤリジヤー",
-      "foaled": "1929",
-      "foaledArray": ["1929"],
+      "foaled": {
+        "year": 1929
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Scaliger",
+      "dam": "Mistress Biddy",
+      "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a002644",
       "source": "tsx_conversion",
+      "importedYear": "1936",
+      "familyNumber": "F2-c",
+      "registration": "13巻1392号",
       "owner": "ユートピア牧場"
     },
     {
       "id": "dai-yusaku",
       "name": "ダイユウサク",
-      "foaled": "{'year': 1985, 'month': 6, 'day': 12}",
-      "foaledArray": ["1985", "06", "12"],
+      "foaled": {
+        "year": 1985,
+        "month": 6,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノノアルコ",
@@ -308,8 +315,11 @@
     {
       "id": "kuninokiyoko",
       "name": "クニノキヨコ",
-      "foaled": "{'year': 1977, 'month': 4, 'day': 7}",
-      "foaledArray": ["1977", "04", "07"],
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイコーター",
@@ -334,8 +344,9 @@
     {
       "id": "kunino-hana",
       "name": "クニノハナ",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァービート(GB)",
@@ -452,8 +463,9 @@
     {
       "id": "akiizumi",
       "name": "アキイヅミ",
-      "foaled": "{'year': 1955}",
-      "foaledArray": ["1955"],
+      "foaled": {
+        "year": 1955
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クリノハナ",
@@ -474,13 +486,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "asamidori"
+      "damId": "asamidori-1947"
     },
     {
-      "id": "asamidori",
+      "id": "asamidori-1947",
       "name": "アサミドリ",
-      "foaled": "{'year': 1947}",
-      "foaledArray": ["1947"],
+      "foaled": {
+        "year": 1947
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クレタケ",
@@ -500,7 +513,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "biddy_scaliger"
+      "damId": "biddy_scaliger",
+      "linkName": "アサミドリ(1947)"
     }
   ]
 }

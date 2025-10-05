@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Amaritude",
     "rootHorseId": "amaritude",
-    "lastUpdated": "2025-09-26T11:41:35.661163Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "amaritude",
       "name": "アマリテュード",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gratitude",
@@ -32,8 +33,9 @@
     {
       "id": "grand-aloe",
       "name": "グランドアロー",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オンリーフォアライフ",
@@ -59,8 +61,11 @@
     {
       "id": "tamamo-kotobuki",
       "name": "タマモコトブキ",
-      "foaled": "{'year': 1977, 'month': 3, 'day': 18}",
-      "foaledArray": ["1977", "03", "18"],
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロケット(GB)",
@@ -164,8 +169,11 @@
     {
       "id": "tamamo-diamond",
       "name": "タマモダイヤモンド",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 16}",
-      "foaledArray": ["1986", "04", "16"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -224,8 +232,11 @@
     {
       "id": "diamond-pierce",
       "name": "ダイヤモンドピアス",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 17}",
-      "foaledArray": ["1995", "04", "17"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
@@ -253,8 +264,11 @@
     {
       "id": "tamamo-pierce",
       "name": "タマモピアス",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 13}",
-      "foaledArray": ["2007", "05", "13"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -282,8 +296,11 @@
     {
       "id": "tamamo-earring",
       "name": "タマモイヤリング",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 19}",
-      "foaledArray": ["2012", "02", "19"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブラックタイド",
@@ -311,8 +328,11 @@
     {
       "id": "tamamo-black-tie",
       "name": "タマモブラックタイ",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 20}",
-      "foaledArray": ["2020", "04", "20"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デクラレーションオブウォー",
@@ -476,13 +496,15 @@
     {
       "id": "earth-sonic",
       "name": "アースソニック",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 3}",
-      "foaledArray": ["2009", "04", "03"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クロフネ",
       "dam": "ダイヤモンドピアス",
-      "dam_netkeiba_id": "1995100396",
       "color": "鹿毛",
       "breeder": "新冠伊藤牧場（新冠町）",
       "netkeibaId": "2009104934",
@@ -787,13 +809,17 @@
         "central": "2億2,937万円",
         "local": "0万円"
       },
-      "damId": "diamond-pierce"
+      "damId": "diamond-pierce",
+      "dam_netkeiba_id": "1995100396"
     },
     {
       "id": "three-operator",
       "name": "スリーオペレーター",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 26}",
-      "foaledArray": ["2003", "03", "26"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",
@@ -852,8 +878,11 @@
     {
       "id": "three-cape",
       "name": "スリーケープ",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 22}",
-      "foaledArray": ["1997", "03", "22"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミシル(US)",
@@ -881,8 +910,11 @@
     {
       "id": "north-cape",
       "name": "ノースケープ",
-      "foaled": "{'year': 1984, 'month': 2, 'day': 20}",
-      "foaledArray": ["1984", "02", "20"],
+      "foaled": {
+        "year": 1984,
+        "month": 2,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クラウンドプリンス a",
@@ -910,8 +942,9 @@
     {
       "id": "e-grand",
       "name": "イーグランド",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -937,8 +970,11 @@
     {
       "id": "smart-boy-1995",
       "name": "スマートボーイ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 10}",
-      "foaledArray": ["1995", "05", "10"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アサティス(US)",
@@ -1442,13 +1478,17 @@
         "central": "4億1,399万円",
         "local": "1,140万円"
       },
-      "damId": "unravel"
+      "damId": "unravel",
+      "linkName": "スマートボーイ(1995)"
     },
     {
       "id": "unravel",
       "name": "アンラブル",
-      "foaled": "{'year': 1990, 'month': 2, 'day': 26}",
-      "foaledArray": ["1990", "02", "26"],
+      "foaled": {
+        "year": 1990,
+        "month": 2,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーリュート(FR)",
@@ -1492,8 +1532,11 @@
     {
       "id": "alert",
       "name": "アラート",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 3}",
-      "foaledArray": ["1981", "03", "03"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
@@ -1582,8 +1625,9 @@
     {
       "id": "queen-grand",
       "name": "クイングランド",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オンリーフォアライフ",
@@ -1609,8 +1653,11 @@
     {
       "id": "tamamo-ruby-king",
       "name": "タマモルビーキング",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 24}",
-      "foaledArray": ["1997", "04", "24"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -1699,8 +1746,11 @@
     {
       "id": "tamamo-ruby",
       "name": "タマモルビー",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 18}",
-      "foaledArray": ["1988", "03", "18"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サウスアトランティック(IRE)",
@@ -1728,8 +1778,11 @@
     {
       "id": "g-t-boss",
       "name": "ジーティーボス",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 31}",
-      "foaledArray": ["1997", "03", "31"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パラダイスクリーク(US)",
@@ -1968,8 +2021,11 @@
     {
       "id": "astreasure",
       "name": "アストレジャー",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 9}",
-      "foaledArray": ["1990", "03", "09"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テンパレートシル(US)",
@@ -1997,8 +2053,11 @@
     {
       "id": "north-gift",
       "name": "ノースギフト",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 30}",
-      "foaledArray": ["1983", "05", "30"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -2026,8 +2085,11 @@
     {
       "id": "nobo-eiko-o",
       "name": "ノボエイコーオー",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 22}",
-      "foaledArray": ["1996", "04", "22"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",
@@ -2116,8 +2178,11 @@
     {
       "id": "humming-dancer",
       "name": "ハミングダンサー",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 1}",
-      "foaledArray": ["1989", "04", "01"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヤマニンスキー",
@@ -2145,8 +2210,11 @@
     {
       "id": "inter-unique",
       "name": "インターユニーク",
-      "foaled": "{'year': 1991, 'month': 2, 'day': 26}",
-      "foaledArray": ["1991", "02", "26"],
+      "foaled": {
+        "year": 1991,
+        "month": 2,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タマモクロス",
@@ -2355,8 +2423,11 @@
     {
       "id": "scrum-try",
       "name": "スクラムトライ",
-      "foaled": "{'year': 1986, 'month': 3, 'day': 9}",
-      "foaledArray": ["1986", "03", "09"],
+      "foaled": {
+        "year": 1986,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
@@ -2430,8 +2501,11 @@
     {
       "id": "kalista-kaiser",
       "name": "カリスタカイザー",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 16}",
-      "foaledArray": ["1983", "03", "16"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザリー",
@@ -2591,6 +2665,97 @@
         "local": "0万円"
       },
       "damId": "e-grand"
+    },
+    {
+      "id": "tamamo-concorde",
+      "name": "タマモコンコルド",
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 1
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "シャトーゲイ(US)",
+      "dam": "タマモジヨケツ",
+      "color": "鹿毛",
+      "breeder": "グランド牧場新冠支場（新冠町）",
+      "netkeibaId": "1980100657",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "16",
+          "favorite": "18"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 5,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tamamo Concorde",
+      "prizeMoney": {
+        "total": "510万円",
+        "central": "510万円",
+        "local": "0万円"
+      },
+      "damId": "tamamo-joketsu"
+    },
+    {
+      "id": "tamamo-joketsu",
+      "name": "タマモジヨケツ",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "グランドアロー",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955106282",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tamamo Joketsu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "grand-aloe"
     }
   ]
 }

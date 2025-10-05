@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "All Dance",
     "rootHorseId": "all-dance",
-    "lastUpdated": "2025-09-23T10:34:15.394115Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "all-dance",
       "name": "All Dance",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -31,8 +32,11 @@
     {
       "id": "tap-dance-city",
       "name": "タップダンスシチー",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 16}",
-      "foaledArray": ["1997", "03", "16"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Pleasant Tap",

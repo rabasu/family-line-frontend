@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "April Run",
     "rootHorseId": "april-run",
-    "lastUpdated": "2025-09-24T16:15:34.587533Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "april-run",
       "name": "エイプリルラン",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 21}",
-      "foaledArray": ["1978", "04", "21"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Run the Gantlet",
@@ -32,8 +35,9 @@
     {
       "id": "spring-in-paris",
       "name": "スプリングインパリス",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "General Assembly",
@@ -59,8 +63,9 @@
     {
       "id": "spring-ribbon",
       "name": "Spring Ribbon",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスオブライフ(US)",
@@ -85,8 +90,11 @@
     {
       "id": "soushun",
       "name": "ソウシュン",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 23}",
-      "foaledArray": ["1996", "02", "23"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Cure the Blues",

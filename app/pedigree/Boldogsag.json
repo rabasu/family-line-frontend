@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Boldogsag",
     "rootHorseId": "boldogsag",
-    "lastUpdated": "2025-09-17T00:01:51.787353Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "boldogsag",
       "name": "ボルドグザグ",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Layman",
@@ -32,8 +33,11 @@
     {
       "id": "boldog-hos",
       "name": "ボルドグフーシュ",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 23}",
-      "foaledArray": ["2019", "03", "23"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スクリーンヒーロー",

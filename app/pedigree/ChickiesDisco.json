@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chickie's Disco",
     "rootHorseId": "chickies-disco",
-    "lastUpdated": "2025-09-16T05:41:08.604972Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chickies-disco",
       "name": "チッキーズディスコ",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Shirley Heights(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "diana-barows",
       "name": "ダイアナバローズ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 12}",
-      "foaledArray": ["2006", "03", "12"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -152,8 +156,11 @@
     {
       "id": "william-barows",
       "name": "ウィリアムバローズ",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 17}",
-      "foaledArray": ["2018", "02", "17"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ミッキーアイル",

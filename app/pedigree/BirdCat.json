@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bird Cat",
     "rootHorseId": "bird-cat",
-    "lastUpdated": "2025-09-21T10:19:04.539516Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bird-cat",
       "name": "バードキャット",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "en-ciel-bleu",
       "name": "アンシェルブルー",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 8}",
-      "foaledArray": ["2007", "05", "08"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Banovina",
     "rootHorseId": "banovina",
-    "lastUpdated": "2025-09-17T09:50:00.216627Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "banovina",
       "name": "バノヴィナ",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Redoute's Choice",
@@ -32,8 +33,11 @@
     {
       "id": "shonan-bardi",
       "name": "ショウナンバルディ",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 23}",
-      "foaledArray": ["2016", "04", "23"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングズベスト(US)",

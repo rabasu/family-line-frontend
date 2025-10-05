@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Becalmed",
     "rootHorseId": "becalmed",
-    "lastUpdated": "2025-09-24T20:53:48.945692Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "becalmed",
       "name": "ダイワニシキ",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fair's Fair",
@@ -32,8 +33,9 @@
     {
       "id": "tohdai-merih",
       "name": "トーダイメリー",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラシヨウモン",
@@ -59,8 +61,9 @@
     {
       "id": "dojima-jo-o",
       "name": "ドージマジョオー",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シプリアニ(ITA)",
@@ -86,8 +89,11 @@
     {
       "id": "dojima-victory",
       "name": "ドージマビクトリー",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 3}",
-      "foaledArray": ["1980", "04", "03"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クレバーフェラ",
@@ -113,8 +119,11 @@
     {
       "id": "dojima-muteki",
       "name": "ドージマムテキ",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 31}",
-      "foaledArray": ["1990", "03", "31"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "テュデナムキング",

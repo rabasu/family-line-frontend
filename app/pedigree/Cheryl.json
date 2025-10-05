@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cheryl",
     "rootHorseId": "cheryl",
-    "lastUpdated": "2025-09-27T07:06:29.635739Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cheryl",
       "name": "シエリル",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スノッブ",
@@ -32,8 +33,11 @@
     {
       "id": "mejiro-union",
       "name": "メジロユニオン",
-      "foaled": "{'year': 1985, 'month': 5, 'day': 25}",
-      "foaledArray": ["1985", "05", "25"],
+      "foaled": {
+        "year": 1985,
+        "month": 5,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -61,8 +65,11 @@
     {
       "id": "mejiro-ormond",
       "name": "メジロオーモンド",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 25}",
-      "foaledArray": ["1998", "04", "25"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リンドシェーバー",
@@ -196,8 +203,11 @@
     {
       "id": "mejiro-ryan",
       "name": "メジロライアン",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 11}",
-      "foaledArray": ["1987", "04", "11"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -406,8 +416,11 @@
     {
       "id": "mejiro-chaser",
       "name": "メジロチェイサー",
-      "foaled": "{'year': 1977, 'month': 3, 'day': 2}",
-      "foaledArray": ["1977", "03", "02"],
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロサンマン",
@@ -479,8 +492,11 @@
     {
       "id": "mejiro-fulmar",
       "name": "メジロフルマー",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 3}",
-      "foaledArray": ["1984", "05", "03"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロンバード",
@@ -644,8 +660,11 @@
     {
       "id": "mejiro-anita",
       "name": "メジロアニタ",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 17}",
-      "foaledArray": ["1986", "04", "17"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロエスパーダ",
@@ -715,6 +734,415 @@
         "local": "0万円"
       },
       "damId": "mejiro-chaser"
+    },
+    {
+      "id": "mejiro-titan",
+      "name": "メジロティターン",
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 22
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "メジロアサマ",
+      "dam": "シエリル",
+      "color": "芦毛",
+      "breeder": "メジロ牧場（伊達市）",
+      "netkeibaId": "1978106598",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 12,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "6",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "ジャパンC(OP)",
+          "displayRace": "ジャパンC",
+          "distance": "芝2400",
+          "grade": "jra_big10",
+          "entry": "16",
+          "result": "12",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 5,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "日経賞(OP)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 4,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "アルゼンチン共和国杯(OP)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 3,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 2,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 1,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 12,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "8",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "14",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "オールカマー(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_big10",
+          "entry": "15",
+          "result": "9",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "日経賞(OP)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 4,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "アルゼンチン共和国杯(OP)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "1",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Mejiro Titan",
+      "prizeMoney": {
+        "total": "7,870万円",
+        "central": "7,870万円",
+        "local": "0万円"
+      },
+      "damId": "cheryl"
+    },
+    {
+      "id": "mejiro-enif",
+      "name": "メジロエニフ",
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 14
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フィディオン",
+      "dam": "シエリル",
+      "color": "鹿毛",
+      "breeder": "メジロ牧場（伊達市）",
+      "netkeibaId": "1979101600",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 3,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "ローレル競馬場賞中山(OP)",
+          "displayRace": "中山牝馬S",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "10",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 2,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 11,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(OP)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2400",
+          "grade": "jra_big10",
+          "entry": "19",
+          "result": "10",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 31
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬特別(OP)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "24",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "4歳牝馬特別(OP)",
+          "displayRace": "4歳牝馬特別（東）",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "6",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 1,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "クイーンC(OP)",
+          "displayRace": "クイーンC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Mejiro Enif",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "cheryl"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ariaan",
     "rootHorseId": "ariaan",
-    "lastUpdated": "2025-09-25T11:52:58.667628Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ariaan",
       "name": "アリアーン",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シルバーシャーク",
@@ -32,8 +33,11 @@
     {
       "id": "kyoei-shirayuki",
       "name": "キョウエイシラユキ",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 17}",
-      "foaledArray": ["1980", "04", "17"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クラウンドプリンス",
@@ -59,8 +63,11 @@
     {
       "id": "kyoei-corona",
       "name": "キョウエイコロナ",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 18}",
-      "foaledArray": ["1991", "05", "18"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーパスノーセール(IRE)",

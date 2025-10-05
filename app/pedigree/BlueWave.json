@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Blue Wave",
     "rootHorseId": "blue-wave",
-    "lastUpdated": "2025-09-24T10:41:56.283332Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "blue-wave",
       "name": "ブルーウェーブ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Neanderthal",
@@ -32,8 +33,11 @@
     {
       "id": "gloria-wave",
       "name": "グロリアウエーブ",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 5}",
-      "foaledArray": ["1978", "03", "05"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シルバーシャーク",
@@ -59,8 +63,11 @@
     {
       "id": "the-last-word",
       "name": "ザラストワード",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 26}",
-      "foaledArray": ["1987", "03", "26"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -104,8 +111,11 @@
     {
       "id": "fast-friend",
       "name": "ファストフレンド",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 12}",
-      "foaledArray": ["1994", "05", "12"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アイネスフウジン",

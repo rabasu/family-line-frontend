@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Canoodling",
     "rootHorseId": "canoodling",
-    "lastUpdated": "2025-09-24T06:39:40.710947Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "canoodling",
       "name": "Canoodling",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cyane",
@@ -31,8 +32,11 @@
     {
       "id": "toyo-dehere",
       "name": "トーヨーデヘア",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 20}",
-      "foaledArray": ["1997", "02", "20"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デヒア(US)",

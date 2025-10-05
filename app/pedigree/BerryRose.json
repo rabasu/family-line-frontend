@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Berry Rose",
     "rootHorseId": "berry-rose",
-    "lastUpdated": "2025-09-20T14:55:25.688939Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "berry-rose",
       "name": "ベリーローズ",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dancing Spree",
@@ -32,8 +33,11 @@
     {
       "id": "biko-sophia",
       "name": "ビコーソフィア",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 27}",
-      "foaledArray": ["2003", "02", "27"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エンドスウィープ(US)",
@@ -61,8 +65,11 @@
     {
       "id": "biko-pililani",
       "name": "ビコーピリラニ",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 21}",
-      "foaledArray": ["2010", "02", "21"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",

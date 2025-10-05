@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Admire Monroe",
     "rootHorseId": "admire-monroe",
-    "lastUpdated": "2025-09-18T19:25:00.134932Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "admire-monroe",
       "name": "アドマイヤモンロー",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 24}",
-      "foaledArray": ["1994", "02", "24"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +35,11 @@
     {
       "id": "ridge-man",
       "name": "リッジマン",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 25}",
-      "foaledArray": ["2013", "05", "25"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スウェプトオーヴァーボード(US)",

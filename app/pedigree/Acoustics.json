@@ -1,16 +1,17 @@
 {
   "metadata": {
     "pedigreeName": "Acoustics",
-    "rootHorseId": "acoustics",
-    "lastUpdated": "2025-09-25T07:22:02.396802Z",
-    "source": "python_scraping"
+    "rootHorseId": "acoustics-1957",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "acoustics-1957",
       "name": "アクーステイクス",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Whistler",
@@ -32,8 +33,9 @@
     {
       "id": "turkey-1968",
       "name": "ターキ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソロナウェー",
@@ -59,8 +61,9 @@
     {
       "id": "rock-turkey",
       "name": "ロックターキ",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "チャイナロック(GB)",
@@ -86,8 +89,11 @@
     {
       "id": "tenzan-yutaka",
       "name": "テンザンユタカ",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 17}",
-      "foaledArray": ["1991", "04", "17"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
@@ -367,6 +373,139 @@
         "local": "0万円"
       },
       "damId": "rock-turkey"
+    },
+    {
+      "id": "haidoru",
+      "name": "ハイドル",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "アクーステイクス",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1964z00271",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "11",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 6,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 11,
+            "day": 26
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "9",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 6,
+            "day": 18
+          },
+          "racecourse": "阪神",
+          "race": "毎日盃(OP)",
+          "displayRace": "毎日盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "23",
+          "favorite": "22"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "三歳S(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "2",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "acoustics-1957"
     }
   ]
 }

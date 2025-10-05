@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Carabina",
     "rootHorseId": "carabina",
-    "lastUpdated": "2025-09-25T08:51:10.697967Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "carabina",
       "name": "カラビナ",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ocarina",
@@ -32,8 +33,9 @@
     {
       "id": "purple-bamboo",
       "name": "パープルバンブー",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガバドール",
@@ -59,8 +61,9 @@
     {
       "id": "oka-bamboo",
       "name": "オウカバンブー",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モバリッズ",
@@ -86,8 +89,11 @@
     {
       "id": "fairy-bamboo",
       "name": "フェアリーバンブー",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 6}",
-      "foaledArray": ["1980", "04", "06"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ナイスダンサー",
@@ -113,8 +119,11 @@
     {
       "id": "bamboo-fellini",
       "name": "バンブーフェリーニ",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 23}",
-      "foaledArray": ["1991", "04", "23"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アウザール(US)",

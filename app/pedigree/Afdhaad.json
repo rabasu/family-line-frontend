@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Afdhaad",
     "rootHorseId": "afdhaad",
-    "lastUpdated": "2025-09-15T19:29:12.574211Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "afdhaad",
       "name": "Afdhaad",
-      "foaled": "{'year': 2013}",
-      "foaledArray": ["2013"],
+      "foaled": {
+        "year": 2013
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nayef",
@@ -31,8 +32,11 @@
     {
       "id": "sonshi",
       "name": "ソンシ",
-      "foaled": "{'year': 2021, 'month': 5, 'day': 3}",
-      "foaledArray": ["2021", "05", "03"],
+      "foaled": {
+        "year": 2021,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Night of Thunder(IRE)",

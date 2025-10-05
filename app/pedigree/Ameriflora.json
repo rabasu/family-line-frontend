@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ameriflora",
     "rootHorseId": "ameriflora",
-    "lastUpdated": "2025-09-24T12:15:06.633377Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ameriflora",
       "name": "Ameriflora",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -31,8 +32,11 @@
     {
       "id": "grass-wonder",
       "name": "グラスワンダー",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 18}",
-      "foaledArray": ["1995", "02", "18"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",

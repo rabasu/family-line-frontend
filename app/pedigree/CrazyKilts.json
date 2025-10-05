@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Crazy Kilts",
     "rootHorseId": "crazy-kilts",
-    "lastUpdated": "2025-09-27T13:21:21.883845Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "crazy-kilts",
       "name": "クレージーキルツ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "upsetter",
       "name": "アップセッター",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 27}",
-      "foaledArray": ["1980", "04", "27"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンディルート",
@@ -197,8 +201,11 @@
     {
       "id": "mr-le-mans",
       "name": "ミスタールマン",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 23}",
-      "foaledArray": ["1981", "04", "23"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "インターメゾ(GB)",
@@ -326,6 +333,217 @@
         "total": "4,870万円",
         "central": "4,870万円",
         "local": "0万円"
+      },
+      "damId": "crazy-kilts"
+    },
+    {
+      "id": "secre-faster",
+      "name": "セクレファスター",
+      "foaled": {
+        "year": 1976,
+        "month": 2,
+        "day": 24
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "Secretariat(US)",
+      "dam": "クレージーキルツ",
+      "color": "鹿毛",
+      "breeder": "明和牧場（新冠町）",
+      "netkeibaId": "1976103021",
+      "raceStats": {
+        "total": {
+          "runs": 49,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 2,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "新潟",
+          "race": "新潟記念(OP)",
+          "displayRace": "新潟記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 8,
+            "day": 8
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(OP)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "9",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズステーク(OP)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "6",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 8,
+            "day": 23
+          },
+          "racecourse": "新潟",
+          "race": "新潟記念(OP)",
+          "displayRace": "新潟記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 8,
+            "day": 2
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(OP)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": "新潟",
+          "race": "新潟大賞典(OP)",
+          "displayRace": "新潟大賞典",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "11",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 8,
+            "day": 24
+          },
+          "racecourse": "新潟",
+          "race": "新潟記念(OP)",
+          "displayRace": "新潟記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズステーク(OP)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 21
+          },
+          "racecourse": "福島",
+          "race": "東北記念(OP)",
+          "displayRace": "東北記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "8",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Secre Faster",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "crazy-kilts"
     }

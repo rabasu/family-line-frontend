@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Anna Palariva",
     "rootHorseId": "anna-palariva",
-    "lastUpdated": "2025-09-15T19:59:16.452576Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "anna-palariva",
       "name": "アンナパラリーヴァ",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,9 @@
     {
       "id": "adonita",
       "name": "アドニータ",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",
@@ -59,8 +61,11 @@
     {
       "id": "tip-top-2011",
       "name": "ティップトップ",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 8}",
-      "foaledArray": ["2011", "02", "08"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dubawi",
@@ -88,8 +93,11 @@
     {
       "id": "birth-cry",
       "name": "バースクライ",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 9}",
-      "foaledArray": ["2020", "03", "09"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

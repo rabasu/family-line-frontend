@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Banka",
     "rootHorseId": "banka",
-    "lastUpdated": "2025-09-25T12:25:44.412715Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "banka",
       "name": "バンカ",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Krakatao",
@@ -32,8 +33,9 @@
     {
       "id": "hidaka-enrumu",
       "name": "ヒダカエンルム",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイハード(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "hidaka-green",
       "name": "ヒダカグリーン",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 21}",
-      "foaledArray": ["1984", "04", "21"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バンブーアトラス",
@@ -88,8 +93,11 @@
     {
       "id": "admire-vigor",
       "name": "アドマイヤビゴール",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 2}",
-      "foaledArray": ["1993", "03", "02"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラチヨノオー",
@@ -148,8 +156,11 @@
     {
       "id": "multimax",
       "name": "マルチマックス",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 24}",
-      "foaledArray": ["1990", "04", "24"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "プリンスオブバーズ(US)",
@@ -268,8 +279,11 @@
     {
       "id": "speed-champ",
       "name": "スピードチャンプ",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 24}",
-      "foaledArray": ["1983", "03", "24"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",

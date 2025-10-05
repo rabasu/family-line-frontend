@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Between Time",
     "rootHorseId": "between-time",
-    "lastUpdated": "2025-09-20T21:59:38.719400Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "between-time",
       "name": "ビトゥイーンタイム",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Elegant Air",
@@ -32,8 +33,11 @@
     {
       "id": "shako-victoria",
       "name": "シャコービクトリア",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 9}",
-      "foaledArray": ["2000", "04", "09"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",
@@ -61,8 +65,11 @@
     {
       "id": "meisho-izayoi",
       "name": "メイショウイザヨイ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 19}",
-      "foaledArray": ["2009", "03", "19"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オレハマッテルゼ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Conservatoire",
     "rootHorseId": "conservatoire",
-    "lastUpdated": "2025-09-18T02:20:23.004309Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "conservatoire",
       "name": "コンサヴァトワー",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Street Cry(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "territorial",
       "name": "テリトーリアル",
-      "foaled": "{'year': 2014, 'month': 2, 'day': 26}",
-      "foaledArray": ["2014", "02", "26"],
+      "foaled": {
+        "year": 2014,
+        "month": 2,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Teofilo",

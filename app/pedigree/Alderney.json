@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Alderney",
     "rootHorseId": "alderney",
-    "lastUpdated": "2025-09-18T08:56:12.491116Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alderney",
       "name": "オルダニー",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Elusive Quality",
@@ -32,8 +33,11 @@
     {
       "id": "bluestone",
       "name": "ブルーストーン",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 19}",
-      "foaledArray": ["2011", "03", "19"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コマンズ(AUS)",
@@ -77,8 +81,11 @@
     {
       "id": "blue-symphony",
       "name": "ブルーシンフォニー",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 27}",
-      "foaledArray": ["2018", "03", "27"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スクリーンヒーロー",

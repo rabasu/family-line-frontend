@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Abi",
     "rootHorseId": "abi",
-    "lastUpdated": "2025-09-22T10:01:10.772995Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "abi",
       "name": "アビ",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Chief's Crown",
@@ -32,8 +33,11 @@
     {
       "id": "deep-sky",
       "name": "ディープスカイ",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 24}",
-      "foaledArray": ["2005", "04", "24"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",

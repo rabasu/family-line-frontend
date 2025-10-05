@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bala",
     "rootHorseId": "bala",
-    "lastUpdated": "2025-09-17T09:16:36.484418Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bala",
       "name": "バーラ",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "With Approval",
@@ -32,8 +33,11 @@
     {
       "id": "bay-to-bay",
       "name": "ベイトゥベイ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 22}",
-      "foaledArray": ["2007", "03", "22"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sligo Bay",
@@ -59,8 +63,11 @@
     {
       "id": "suave-aramis",
       "name": "スワーヴアラミス",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 26}",
-      "foaledArray": ["2015", "03", "26"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

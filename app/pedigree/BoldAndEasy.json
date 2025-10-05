@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bold And Easy",
     "rootHorseId": "bold-and-easy",
-    "lastUpdated": "2025-09-25T13:56:59.536338Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bold-and-easy",
       "name": "ボールドアンドイージー",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bold Lad",
@@ -32,8 +33,11 @@
     {
       "id": "gioconda",
       "name": "ジョコンダ",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 24}",
-      "foaledArray": ["1983", "05", "24"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンサーズイメージ",
@@ -61,8 +65,11 @@
     {
       "id": "ogi-savanna",
       "name": "オギサバンナ",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 5}",
-      "foaledArray": ["1990", "04", "05"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コリムスキー(US)",

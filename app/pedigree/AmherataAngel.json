@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Amherata Angel",
     "rootHorseId": "amherata-angel",
-    "lastUpdated": "2025-09-24T18:51:10.474454Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "amherata-angel",
       "name": "Amherata Angel",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Herat",
@@ -31,8 +32,11 @@
     {
       "id": "mt-arata",
       "name": "マウントアラタ",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 8}",
-      "foaledArray": ["1995", "02", "08"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Mt. Livermore",

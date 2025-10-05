@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Admire Yell",
     "rootHorseId": "admire-yell",
-    "lastUpdated": "2025-09-22T00:08:07.126890Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "admire-yell",
       "name": "アドマイヤエール",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 8}",
-      "foaledArray": ["1993", "05", "08"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェネラス(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "admire-subaru",
       "name": "アドマイヤスバル",
-      "foaled": "{'year': 2003, 'month': 5, 'day': 3}",
-      "foaledArray": ["2003", "05", "03"],
+      "foaled": {
+        "year": 2003,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤボス",

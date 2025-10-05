@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "A Little Kiss",
     "rootHorseId": "a-little-kiss",
-    "lastUpdated": "2025-09-24T11:43:05.812905Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "a-little-kiss",
       "name": "A Little Kiss",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sackford",
@@ -31,8 +32,11 @@
     {
       "id": "gaily-funky",
       "name": "ゲイリーファンキー",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 17}",
-      "foaledArray": ["1997", "04", "17"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Theatrical",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cithara",
     "rootHorseId": "cithara",
-    "lastUpdated": "2025-09-27T06:06:23.702209Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cithara",
       "name": "シザラ",
-      "foaled": "{'year': 1955}",
-      "foaledArray": ["1955"],
+      "foaled": {
+        "year": 1955
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Marsyas",
@@ -32,8 +33,9 @@
     {
       "id": "ryu-ganda",
       "name": "リュウガンダ",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フィリュース",
@@ -59,8 +61,11 @@
     {
       "id": "cithara-line",
       "name": "シザラライン",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 25}",
-      "foaledArray": ["1981", "05", "25"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハビトニー(IRE)",
@@ -86,8 +91,11 @@
     {
       "id": "sanei-kid",
       "name": "サンエイキッド",
-      "foaled": "{'year': 1990, 'month': 2, 'day': 28}",
-      "foaledArray": ["1990", "02", "28"],
+      "foaled": {
+        "year": 1990,
+        "month": 2,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラロータリー",
@@ -326,8 +334,11 @@
     {
       "id": "bamboo-passion",
       "name": "バンブーパッション",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 24}",
-      "foaledArray": ["1988", "05", "24"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バンブーアトラス",
@@ -430,8 +441,11 @@
     {
       "id": "fanabanbuu",
       "name": "ファナバンブー",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 13}",
-      "foaledArray": ["1982", "03", "13"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジョンティオンブル(GB)",
@@ -448,17 +462,18 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "pedigreeName": "フアナバンブー",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "jet-bamboo"
+      "damId": "jet-bamboo",
+      "pedigreeName": "フアナバンブー"
     },
     {
       "id": "jet-bamboo",
       "name": "ジェットバンブー",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードリージ(US)",
@@ -484,8 +499,11 @@
     {
       "id": "eishin-taurus",
       "name": "エイシンタウラス",
-      "foaled": "{'year': 1986, 'month': 3, 'day': 24}",
-      "foaledArray": ["1986", "03", "24"],
+      "foaled": {
+        "year": 1986,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -544,8 +562,11 @@
     {
       "id": "eishin-girl",
       "name": "エイシンガール",
-      "foaled": "{'year': 1979, 'month': 5, 'day': 15}",
-      "foaledArray": ["1979", "05", "15"],
+      "foaled": {
+        "year": 1979,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フィルモン(GB)",
@@ -571,8 +592,9 @@
     {
       "id": "port-line",
       "name": "ポートライン",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セダン(FR)",
@@ -594,6 +616,442 @@
         "total": "0万円"
       },
       "damId": "ryu-ganda"
+    },
+    {
+      "id": "bamboo-atlas",
+      "name": "バンブーアトラス",
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 27
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ジムフレンチ",
+      "dam": "バンブーシザラ",
+      "color": "鹿毛",
+      "breeder": "バンブー牧場（浦河町）",
+      "netkeibaId": "1979101247",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(OP)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "1",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "6",
+          "favorite": "12"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Bamboo Atlas",
+      "prizeMoney": {
+        "total": "7,000万円",
+        "central": "7,000万円",
+        "local": "0万円"
+      },
+      "damId": "bamboo-cithara"
+    },
+    {
+      "id": "bamboo-cithara",
+      "name": "バンブーシザラ",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "テスコボーイ(GB)",
+      "dam": "シザラ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955103576",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "阪神牝馬特別(OP)",
+          "displayRace": "阪神牝馬特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "14",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 11,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "ビクトリアC(OP)",
+          "displayRace": "ビクトリアC",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "18",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": "阪神",
+          "race": "デイリー杯3歳ステー(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "6",
+          "favorite": "16"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Bamboo Cithara",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "cithara"
+    },
+    {
+      "id": "fast-bamboo",
+      "name": "ファストバンブー",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "サムタイム(NZ)",
+      "dam": "シザラ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000b57",
+      "raceStats": {
+        "total": {
+          "runs": 45,
+          "wins": 12
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "スワンS(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 4,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "マイラーズC(OP)",
+          "displayRace": "マイラーズC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "マイラーズC(OP)",
+          "displayRace": "マイラーズC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "9",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 7
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 9,
+            "day": 19
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(OP)",
+          "displayRace": "札幌記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "21",
+          "result": "5",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪杯(OP)",
+          "displayRace": "サンケイ大阪杯",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 1,
+            "day": 31
+          },
+          "racecourse": "京都",
+          "race": "スワンS(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 1,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "京都杯(OP)",
+          "displayRace": "京都杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fast Bamboo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "cithara"
     }
   ]
 }

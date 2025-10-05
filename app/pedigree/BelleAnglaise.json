@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Belle Anglaise",
     "rootHorseId": "belle-anglaise",
-    "lastUpdated": "2025-09-22T01:06:33.696813Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "belle-anglaise",
       "name": "Belle Anglaise",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sir Ivor(US)",
@@ -31,8 +32,11 @@
     {
       "id": "ultra-fantasy",
       "name": "ウルトラファンタジー",
-      "foaled": "{'year': 2002, 'month': 10, 'day': 14}",
-      "foaledArray": ["2002", "10", "14"],
+      "foaled": {
+        "year": 2002,
+        "month": 10,
+        "day": 14
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Encosta de Lago",

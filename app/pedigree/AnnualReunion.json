@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Annual Reunion",
     "rootHorseId": "annual-reunion",
-    "lastUpdated": "2025-09-24T05:39:41.140054Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "annual-reunion",
       "name": "Annual Reunion",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cresta Rider",
@@ -31,8 +32,11 @@
     {
       "id": "daiwa-falcon-1999",
       "name": "ダイワファルコン",
-      "foaled": "{'year': 1999, 'month': 1, 'day': 1}",
-      "foaledArray": ["1999", "01", "01"],
+      "foaled": {
+        "year": 1999,
+        "month": 1,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "General Meeting",

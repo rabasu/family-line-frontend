@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Blade of Luck",
     "rootHorseId": "blade-of-luck",
-    "lastUpdated": "2025-09-24T16:47:57.658579Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "blade-of-luck",
       "name": "Blade of Luck",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blade",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-berlin",
       "name": "エイシンバーリン",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 11}",
-      "foaledArray": ["1992", "03", "11"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cozzene",

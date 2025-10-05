@@ -1,16 +1,17 @@
 {
   "metadata": {
     "pedigreeName": "Chaleur",
-    "rootHorseId": "chaleur",
-    "lastUpdated": "2025-09-24T09:41:24.291580Z",
-    "source": "python_scraping"
+    "rootHorseId": "chaleur-1979",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chaleur-1979",
       "name": "Chaleur",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rouge Sang",
@@ -31,8 +32,11 @@
     {
       "id": "sugino-hayakaze",
       "name": "スギノハヤカゼ",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 21}",
-      "foaledArray": ["1993", "04", "21"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Diesis",

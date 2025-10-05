@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bardonecchia",
     "rootHorseId": "bardonecchia",
-    "lastUpdated": "2025-09-21T17:41:35.862545Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bardonecchia",
       "name": "バルドネキア",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Indian Ridge",
@@ -32,8 +33,11 @@
     {
       "id": "italian-red",
       "name": "イタリアンレッド",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 24}",
-      "foaledArray": ["2006", "02", "24"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",

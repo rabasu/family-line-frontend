@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Birmanie",
     "rootHorseId": "birmanie",
-    "lastUpdated": "2025-09-27T13:21:31.090118Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "birmanie",
       "name": "バーマニー",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Prudent",
@@ -32,8 +33,11 @@
     {
       "id": "avanti",
       "name": "アバンティー",
-      "foaled": "{'year': 1979, 'month': 6, 'day': 15}",
-      "foaledArray": ["1979", "06", "15"],
+      "foaled": {
+        "year": 1979,
+        "month": 6,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シルバーシャーク",
@@ -161,6 +165,65 @@
         "total": "1,990万円",
         "central": "1,990万円",
         "local": "0万円"
+      },
+      "damId": "birmanie"
+    },
+    {
+      "id": "toridejo",
+      "name": "トリデジョウ",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "Val de Loir",
+      "dam": "バーマニー",
+      "color": "黒鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a000bf8",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "阪神",
+          "race": "京都大賞典(OP)",
+          "displayRace": "京都大賞典",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "12",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 6,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Toridejo",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "birmanie"
     }

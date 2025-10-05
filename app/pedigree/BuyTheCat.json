@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Buy the Cat",
     "rootHorseId": "buy-the-cat",
-    "lastUpdated": "2025-09-18T20:54:42.878558Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "buy-the-cat",
       "name": "バイザキャット",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "ayusan",
       "name": "アユサン",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 21}",
-      "foaledArray": ["2010", "02", "21"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -167,8 +171,11 @@
     {
       "id": "dolce-more",
       "name": "ドルチェモア",
-      "foaled": "{'year': 2020, 'month': 2, 'day': 21}",
-      "foaledArray": ["2020", "02", "21"],
+      "foaled": {
+        "year": 2020,
+        "month": 2,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",
@@ -392,8 +399,11 @@
     {
       "id": "mau-lea",
       "name": "マウレア",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 1}",
-      "foaledArray": ["2015", "02", "01"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

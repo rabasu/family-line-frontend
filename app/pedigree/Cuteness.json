@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cuteness",
     "rootHorseId": "cuteness",
-    "lastUpdated": "2025-09-23T19:35:18.772265Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cuteness",
       "name": "キュートネスII",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",
@@ -32,8 +33,11 @@
     {
       "id": "crystal-violet",
       "name": "クリスタルヴィオレ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 8}",
-      "foaledArray": ["2001", "03", "08"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Skip Away",

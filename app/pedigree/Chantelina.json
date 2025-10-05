@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chantelina",
     "rootHorseId": "chantelina",
-    "lastUpdated": "2025-09-26T11:08:29.319944Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chantelina",
       "name": "シャンテリナ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Chanteur",
@@ -32,8 +33,11 @@
     {
       "id": "white-chante",
       "name": "ホワイトシャンテ",
-      "foaled": "{'year': 1977, 'month': 5, 'day': 28}",
-      "foaledArray": ["1977", "05", "28"],
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ホワイトファイア(FR)",
@@ -59,8 +63,11 @@
     {
       "id": "ill-be-there",
       "name": "アイルビーゼア",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 6}",
-      "foaledArray": ["1983", "05", "06"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヨシノスキー",

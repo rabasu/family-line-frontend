@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bahrain Star",
     "rootHorseId": "bahrain-star",
-    "lastUpdated": "2025-09-24T23:22:59.282499Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bahrain-star",
       "name": "Bahrain Star",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Star Appeal(IRE)",
@@ -31,8 +32,11 @@
     {
       "id": "hikoki-gumo",
       "name": "ヒコーキグモ",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 18}",
-      "foaledArray": ["1994", "02", "18"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Keen",

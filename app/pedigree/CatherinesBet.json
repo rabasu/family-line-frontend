@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Catherine's Bet",
     "rootHorseId": "catherines-bet",
-    "lastUpdated": "2025-09-24T14:47:37.479655Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "catherines-bet",
       "name": "Catherine's Bet",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grey Dawn",
@@ -31,8 +32,11 @@
     {
       "id": "midnight-bet",
       "name": "ミッドナイトベット",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 24}",
-      "foaledArray": ["1994", "03", "24"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハウスバスター(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Antiquary",
     "rootHorseId": "antiquary",
-    "lastUpdated": "2025-09-19T00:32:37.632274Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "antiquary",
       "name": "アンティーケリー",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Polish Precedent(US)",
@@ -32,8 +33,11 @@
     {
       "id": "sing-up-rock",
       "name": "シングアップロック",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 22}",
-      "foaledArray": ["2004", "02", "22"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",
@@ -61,8 +65,11 @@
     {
       "id": "ganko",
       "name": "ガンコ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 12}",
-      "foaledArray": ["2013", "03", "12"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ナカヤマフェスタ",

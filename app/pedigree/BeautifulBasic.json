@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Beautiful Basic",
     "rootHorseId": "beautiful-basic",
-    "lastUpdated": "2025-09-20T23:00:11.190732Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "beautiful-basic",
       "name": "ビューティフルベーシック",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "rosy-mist",
       "name": "ロージーミスト",
-      "foaled": "{'year': 1997, 'month': 6, 'day': 1}",
-      "foaledArray": ["1997", "06", "01"],
+      "foaled": {
+        "year": 1997,
+        "month": 6,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "grand-prix-boss",
       "name": "グランプリボス",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 28}",
-      "foaledArray": ["2008", "03", "28"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

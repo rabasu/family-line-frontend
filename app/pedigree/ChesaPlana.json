@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chesa Plana",
     "rootHorseId": "chesa-plana",
-    "lastUpdated": "2025-09-23T04:15:21.495835Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chesa-plana",
       "name": "チェサプラナ",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Niniski",
@@ -32,8 +33,9 @@
     {
       "id": "vielle-senlis",
       "name": "ヴィエールソンリ",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cryptoclearance",
@@ -59,8 +61,11 @@
     {
       "id": "logi-major",
       "name": "ロジメジャー",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 28}",
-      "foaledArray": ["2009", "02", "28"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -254,8 +259,11 @@
     {
       "id": "alkaased",
       "name": "アルカセット",
-      "foaled": "{'year': 2000, 'month': 2, 'day': 19}",
-      "foaledArray": ["2000", "02", "19"],
+      "foaled": {
+        "year": 2000,
+        "month": 2,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",

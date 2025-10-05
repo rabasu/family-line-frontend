@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ann Stuart",
     "rootHorseId": "ann-stuart",
-    "lastUpdated": "2025-09-19T11:49:31.569083Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ann-stuart",
       "name": "アンスチュアート",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "tranche-fraise",
       "name": "トランシーフレーズ",
-      "foaled": "{'year': 1998, 'month': 6, 'day': 2}",
-      "foaledArray": ["1998", "06", "02"],
+      "foaled": {
+        "year": 1998,
+        "month": 6,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "champagne-flute",
       "name": "シャンパンフルート",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 13}",
-      "foaledArray": ["2005", "04", "13"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",
@@ -90,8 +97,11 @@
     {
       "id": "hautvillers",
       "name": "オーヴィレール",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 21}",
-      "foaledArray": ["2013", "03", "21"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -135,8 +145,11 @@
     {
       "id": "grand-est",
       "name": "グランテスト",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 19}",
-      "foaledArray": ["2020", "03", "19"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",
@@ -270,8 +283,11 @@
     {
       "id": "talking-drum",
       "name": "トーキングドラム",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 6}",
-      "foaledArray": ["2010", "03", "06"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ a",

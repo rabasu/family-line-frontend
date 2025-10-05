@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Blushing Cathy",
     "rootHorseId": "blushing-cathy",
-    "lastUpdated": "2025-09-25T03:48:52.270901Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "blushing-cathy",
       "name": "ブラッシングキヤシー",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blushing Groom(FR)",
@@ -32,8 +33,11 @@
     {
       "id": "yamanin-meteore",
       "name": "ヤマニンメテオール",
-      "foaled": "{'year': 1993, 'month': 6, 'day': 7}",
-      "foaledArray": ["1993", "06", "07"],
+      "foaled": {
+        "year": 1993,
+        "month": 6,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヤマニンスキー",

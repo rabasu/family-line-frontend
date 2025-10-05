@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chansonnette",
     "rootHorseId": "chansonnette",
-    "lastUpdated": "2025-09-22T03:06:49.010002Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chansonnette",
       "name": "シャンソネット",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mark of Esteem(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "danon-chantilly",
       "name": "ダノンシャンティ",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 28}",
-      "foaledArray": ["2007", "04", "28"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

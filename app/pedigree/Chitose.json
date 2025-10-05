@@ -1,16 +1,17 @@
 {
   "metadata": {
     "pedigreeName": "Chitose",
-    "rootHorseId": "chitose",
-    "lastUpdated": "2025-09-27T13:21:55.055141Z",
-    "source": "python_scraping"
+    "rootHorseId": "chitose-1972",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
-      "id": "chitose",
+      "id": "chitose-1972",
       "name": "チトセ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sing Sing",
@@ -32,8 +33,11 @@
     {
       "id": "onward-vesuvio",
       "name": "オンワードベスビオ",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 8}",
-      "foaledArray": ["1981", "05", "08"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オンワードガイ",
@@ -115,7 +119,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "chitose"
+      "damId": "chitose-1972"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Catalina",
     "rootHorseId": "catalina",
-    "lastUpdated": "2025-09-22T21:27:49.421795Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "catalina",
       "name": "キャタリナ",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "a-shin-cool-d",
       "name": "エーシンクールディ",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 9}",
-      "foaledArray": ["2006", "05", "09"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Distorted Humor(US)",
@@ -317,8 +321,11 @@
     {
       "id": "smile-kana",
       "name": "スマイルカナ",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 22}",
-      "foaledArray": ["2017", "03", "22"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -527,8 +534,11 @@
     {
       "id": "a-shin-twinkle",
       "name": "エイシンティンクル",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 8}",
-      "foaledArray": ["2013", "03", "08"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -647,13 +657,15 @@
     {
       "id": "a-shin-hikari",
       "name": "エイシンヒカリ",
-      "foaled": "{'year': 2011, 'month': 5, 'day': 3}",
-      "foaledArray": ["2011", "05", "03"],
+      "foaled": {
+        "year": 2011,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "キャタリナ",
-      "dam_netkeiba_id": "000a00b4d3",
       "color": "芦毛",
       "breeder": "木田牧場（新ひだか町）",
       "netkeibaId": "2011101273",
@@ -808,13 +820,17 @@
         "central": "1億9,731万円",
         "local": "0万円"
       },
-      "damId": "catalina"
+      "damId": "catalina",
+      "dam_netkeiba_id": "000a00b4d3"
     },
     {
       "id": "a-shin-p-c",
       "name": "エーシンピーシー",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 27}",
-      "foaledArray": ["2004", "04", "27"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Fusaichi Pegasus",

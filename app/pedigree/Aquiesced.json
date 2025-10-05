@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aquiesced",
     "rootHorseId": "aquiesced",
-    "lastUpdated": "2025-09-27T14:51:27.317356Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aquiesced",
       "name": "アキーシード",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Princely Gift",
@@ -32,8 +33,9 @@
     {
       "id": "inter-gemini",
       "name": "インタージェミニ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alcide",
@@ -59,8 +61,11 @@
     {
       "id": "kyoei-rare",
       "name": "キョウエイレア",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 29}",
-      "foaledArray": ["1979", "04", "29"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マイスワロー(GB)",
@@ -248,6 +253,82 @@
         "total": "4,363万円",
         "central": "4,363万円",
         "local": "0万円"
+      },
+      "damId": "inter-gemini"
+    },
+    {
+      "id": "inter-chime",
+      "name": "インターチャイム",
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 15
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ファリングドン",
+      "dam": "インタージェミニ",
+      "color": "栗毛",
+      "breeder": "インターナショナル牧場（門別町）",
+      "netkeibaId": "1975104128",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1980,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "2",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Inter Chime",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "inter-gemini"
     }

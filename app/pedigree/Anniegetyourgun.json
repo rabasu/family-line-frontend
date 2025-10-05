@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Anniegetyourgun",
     "rootHorseId": "anniegetyourgun",
-    "lastUpdated": "2025-09-23T02:47:18.822555Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "anniegetyourgun",
       "name": "Anniegetyourgun",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gone West",
@@ -31,8 +32,11 @@
     {
       "id": "cosmo-schindler",
       "name": "コスモシンドラー",
-      "foaled": "{'year': 2002, 'month': 8, 'day': 28}",
-      "foaledArray": ["2002", "08", "28"],
+      "foaled": {
+        "year": 2002,
+        "month": 8,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Green Desert",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bank Key",
     "rootHorseId": "bank-key",
-    "lastUpdated": "2025-09-24T16:18:33.607214Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bank-key",
       "name": "Bank Key",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Key to the Mint",
@@ -31,8 +32,11 @@
     {
       "id": "star-programmer",
       "name": "スタープログラマー",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 21}",
-      "foaledArray": ["1994", "02", "21"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",

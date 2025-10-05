@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aconite",
     "rootHorseId": "aconite",
-    "lastUpdated": "2025-09-26T11:40:47.121004Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aconite",
       "name": "アコニット",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Acropolis(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "kamimori-daiten",
       "name": "カミモリダイテン",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セダン(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "kamimori-lady",
       "name": "カミモリレディー",
-      "foaled": "{'year': 1981, 'month': 6, 'day': 8}",
-      "foaledArray": ["1981", "06", "08"],
+      "foaled": {
+        "year": 1981,
+        "month": 6,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネプテューヌス(FR)",
@@ -134,8 +139,11 @@
     {
       "id": "aconite-roman",
       "name": "アコニットローマン",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 18}",
-      "foaledArray": ["1990", "04", "18"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",
@@ -194,8 +202,11 @@
     {
       "id": "sometime",
       "name": "サムタイム",
-      "foaled": "{'year': 2002, 'month': 6, 'day': 3}",
-      "foaledArray": ["2002", "06", "03"],
+      "foaled": {
+        "year": 2002,
+        "month": 6,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -223,8 +234,11 @@
     {
       "id": "dear-comet",
       "name": "ディアコメット",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 10}",
-      "foaledArray": ["2009", "03", "10"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -250,8 +264,11 @@
     {
       "id": "battle-cry",
       "name": "バトルクライ",
-      "foaled": "{'year': 2019, 'month': 5, 'day': 16}",
-      "foaledArray": ["2019", "05", "16"],
+      "foaled": {
+        "year": 2019,
+        "month": 5,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "イスラボニータ",
@@ -310,8 +327,11 @@
     {
       "id": "three-rolls",
       "name": "スリーロールス",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 26}",
-      "foaledArray": ["2006", "04", "26"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -385,8 +405,11 @@
     {
       "id": "three-roman",
       "name": "スリーローマン",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 20}",
-      "foaledArray": ["1997", "05", "20"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -505,8 +528,11 @@
     {
       "id": "katsu-dynamic",
       "name": "カツダイナミック",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 10}",
-      "foaledArray": ["1983", "04", "10"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イエローゴッド",
@@ -610,8 +636,11 @@
     {
       "id": "katsu-top-girl",
       "name": "カツトップガール",
-      "foaled": "{'year': 1976, 'month': 4, 'day': 22}",
-      "foaledArray": ["1976", "04", "22"],
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンザン",
@@ -662,6 +691,99 @@
       "englishName": "Katsu Top Girl",
       "prizeMoney": {
         "total": "0万円"
+      },
+      "damId": "aconite"
+    },
+    {
+      "id": "katsu-top-ace",
+      "name": "カツトップエース",
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 20
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "イエローゴッド",
+      "dam": "アコニット",
+      "color": "栃栗毛",
+      "breeder": "堀忠志（様似町）",
+      "netkeibaId": "1978102784",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 4,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "1",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Katsu Top Ace",
+      "prizeMoney": {
+        "total": "1億1,100万円",
+        "central": "1億1,100万円",
+        "local": "0万円"
       },
       "damId": "aconite"
     }

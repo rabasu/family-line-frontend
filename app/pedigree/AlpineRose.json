@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Alpine Rose",
     "rootHorseId": "alpine-rose",
-    "lastUpdated": "2025-09-20T11:48:20.389891Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alpine-rose",
       "name": "アルペンローズ",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kris S.",
@@ -32,8 +33,11 @@
     {
       "id": "meisho-ohi",
       "name": "メイショウオウヒ",
-      "foaled": "{'year': 2008, 'month': 5, 'day': 7}",
-      "foaledArray": ["2008", "05", "07"],
+      "foaled": {
+        "year": 2008,
+        "month": 5,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
@@ -61,8 +65,11 @@
     {
       "id": "t-o-royal",
       "name": "テーオーロイヤル",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 6}",
-      "foaledArray": ["2018", "03", "06"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リオンディーズ",
@@ -256,8 +263,11 @@
     {
       "id": "meisho-hario",
       "name": "メイショウハリオ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 25}",
-      "foaledArray": ["2017", "02", "25"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パイロ(US)",
@@ -586,8 +596,11 @@
     {
       "id": "meisho-uchide",
       "name": "メイショウウチデ",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 9}",
-      "foaledArray": ["2016", "04", "09"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダノンシャンティ",
@@ -661,8 +674,11 @@
     {
       "id": "meisho-feve",
       "name": "メイショウフェーヴ",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 8}",
-      "foaledArray": ["2005", "04", "08"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
@@ -690,13 +706,15 @@
     {
       "id": "meisho-kadomatsu",
       "name": "メイショウカドマツ",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 25}",
-      "foaledArray": ["2009", "04", "25"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
       "dam": "アルペンローズAlpine Rose",
-      "dam_netkeiba_id": "000a00fecb",
       "color": "栗毛",
       "breeder": "三嶋牧場（浦河町）",
       "netkeibaId": "2009100777",
@@ -896,7 +914,8 @@
         "central": "1億4,496万円",
         "local": "0万円"
       },
-      "damId": "alpine-rose"
+      "damId": "alpine-rose",
+      "dam_netkeiba_id": "000a00fecb"
     }
   ]
 }
