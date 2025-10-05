@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Personally",
     "rootHorseId": "personally",
-    "lastUpdated": "2025-09-23T09:34:12.877373Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "personally",
       "name": "パーソナリー",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar a",
@@ -32,8 +33,9 @@
     {
       "id": "heavenly-advice",
       "name": "ヘヴンリーアドヴァイス",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Theatrical",
@@ -59,14 +61,17 @@
     {
       "id": "mimi-of-paradise",
       "name": "ミミオブパラダイス",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 18}",
-      "foaledArray": ["2006", "04", "18"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
       "dam": "ヘヴンリーアドヴァイス",
-      "color": "鹿毛",
-      "breeder": "フジワラファーム（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2006101527",
       "raceStats": {
         "total": {
@@ -88,14 +93,17 @@
     {
       "id": "heidrun",
       "name": "ハイドラン",
-      "foaled": "{'year': 2015, 'month': 5, 'day': 26}",
-      "foaledArray": ["2015", "05", "26"],
+      "foaled": {
+        "year": 2015,
+        "month": 5,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ローエングリン",
       "dam": "ミミオブパラダイス",
-      "color": "黒鹿毛",
-      "breeder": "フジワラファーム（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2015106181",
       "raceStats": {
         "total": {
@@ -117,14 +125,17 @@
     {
       "id": "lance-of-chaos",
       "name": "ランスオブカオス",
-      "foaled": "{'year': 2022, 'month': 3, 'day': 27}",
-      "foaledArray": ["2022", "03", "27"],
+      "foaled": {
+        "year": 2022,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シルバーステート",
       "dam": "ハイドラン",
-      "color": "黒鹿毛",
-      "breeder": "フジワラファーム（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022104401",
       "raceStats": {
         "total": {
@@ -207,8 +218,11 @@
     {
       "id": "iide-kenshin",
       "name": "イイデケンシン",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 21}",
-      "foaledArray": ["2005", "04", "21"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンダーガルチ(US)",
@@ -507,8 +521,11 @@
     {
       "id": "personal-rush",
       "name": "パーソナルラッシュ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 18}",
-      "foaledArray": ["2001", "03", "18"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ワイルドラッシュ(US)",

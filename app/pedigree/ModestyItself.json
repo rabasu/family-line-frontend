@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Modesty Itself",
     "rootHorseId": "modesty-itself",
-    "lastUpdated": "2025-09-23T01:47:30.064132Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "modesty-itself",
       "name": "モデスティイトセルフ",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blushing Groom(FR)",
@@ -32,8 +33,11 @@
     {
       "id": "meiner-polite",
       "name": "マイネルポライト",
-      "foaled": "{'year': 2003, 'month': 5, 'day': 31}",
-      "foaledArray": ["2003", "05", "31"],
+      "foaled": {
+        "year": 2003,
+        "month": 5,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤベガ",

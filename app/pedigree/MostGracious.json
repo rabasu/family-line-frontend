@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Most Gracious",
     "rootHorseId": "most-gracious",
-    "lastUpdated": "2025-09-21T09:48:13.695664Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "most-gracious",
       "name": "モーストグレイシャス",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tambourine",
@@ -32,8 +33,11 @@
     {
       "id": "white-gracious",
       "name": "ホワイトグレシャス",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 23}",
-      "foaledArray": ["1980", "05", "23"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラナーク",
@@ -59,8 +63,11 @@
     {
       "id": "hayate-gracious",
       "name": "ハヤテグレシャス",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 30}",
-      "foaledArray": ["1992", "05", "30"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァーダンス(US)",
@@ -104,8 +111,11 @@
     {
       "id": "t-m-otaka",
       "name": "テイエムオオタカ",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 30}",
-      "foaledArray": ["2008", "03", "30"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホワイトマズル(GB)",

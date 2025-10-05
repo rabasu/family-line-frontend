@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "My Goodness",
     "rootHorseId": "my-goodness",
-    "lastUpdated": "2025-09-20T18:27:19.584239Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "my-goodness",
       "name": "マイグッドネス",
-      "foaled": "{'year': 2005}",
-      "foaledArray": ["2005"],
+      "foaled": {
+        "year": 2005
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "danon-kingly",
       "name": "ダノンキングリー",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 25}",
-      "foaledArray": ["2016", "03", "25"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -242,8 +246,11 @@
     {
       "id": "danon-legend",
       "name": "ダノンレジェンド",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 24}",
-      "foaledArray": ["2010", "02", "24"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Macho Uno(US)",

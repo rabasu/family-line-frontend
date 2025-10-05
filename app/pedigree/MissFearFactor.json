@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Miss Fear Factor",
     "rootHorseId": "miss-fear-factor",
-    "lastUpdated": "2025-09-20T09:47:37.750294Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-fear-factor",
       "name": "Miss Fear Factor",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Siphon",
       "dam": "Puddlejump",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a0121f6",
@@ -27,18 +27,21 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "a-shin-bullseye",
       "name": "エイシンブルズアイ",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 6}",
-      "foaledArray": ["2011", "04", "06"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Belgravia a",
       "dam": "Miss Fear Factor",
-      "dam_netkeiba_id": "000a0121f6",
       "color": "栗毛",
       "breeder": "Elijah Bailey（米）",
       "netkeibaId": "2011110099",
@@ -283,7 +286,8 @@
         "central": "1億5,804万円",
         "local": "0万円"
       },
-      "damId": "miss-fear-factor"
+      "damId": "miss-fear-factor",
+      "dam_netkeiba_id": "000a0121f6"
     }
   ]
 }

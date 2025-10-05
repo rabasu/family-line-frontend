@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Panope",
     "rootHorseId": "panope",
-    "lastUpdated": "2025-09-26T12:10:14.496500Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "panope",
       "name": "パノープ",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Masthead",
@@ -32,8 +33,9 @@
     {
       "id": "fujino-ume",
       "name": "フジノウメ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブリツカバツク(US)",
@@ -59,8 +61,11 @@
     {
       "id": "fujino-setsuzan",
       "name": "フジノセツザン",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 20}",
-      "foaledArray": ["1982", "03", "20"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "コインドシルバー",
@@ -130,6 +135,780 @@
         "local": "0万円"
       },
       "damId": "fujino-ume"
+    },
+    {
+      "id": "fujino-tenyu",
+      "name": "フジノテンユウ",
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 12
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハンザダンサー",
+      "dam": "フジノアザヤカ",
+      "color": "栗毛",
+      "breeder": "不二牧場（浦河町）",
+      "netkeibaId": "1979101315",
+      "raceStats": {
+        "total": {
+          "runs": 33,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 10,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "11",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(OP)",
+          "displayRace": "札幌記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "11",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 5,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "日経賞(OP)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "2",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fujino Tenyu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fujino-azayaka"
+    },
+    {
+      "id": "fujino-azayaka",
+      "name": "フジノアザヤカ",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シャトーゲイ(US)",
+      "dam": "フジノウメ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955106263",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Fujino Azayaka",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fujino-ume"
+    },
+    {
+      "id": "nasunohien",
+      "name": "ナスノヒエン",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ワラビー",
+      "dam": "ナスノアラシ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1968z00405",
+      "raceStats": {
+        "total": {
+          "runs": 53,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "12",
+          "result": "7",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 4,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "6",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "13",
+          "result": "11",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "8",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nasuno-arashi"
+    },
+    {
+      "id": "nasuno-arashi",
+      "name": "ナスノアラシ",
+      "foaled": {
+        "year": 1958
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ブリツカバツク(US)",
+      "dam": "パノープ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a003483",
+      "raceStats": {
+        "total": {
+          "runs": 47,
+          "wins": 16
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1963,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "中山大障害競走(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "芝4100",
+          "grade": "jra_grandjump",
+          "entry": "4",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別競走(OP)",
+          "displayRace": "東京障害特別(春)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 11,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別競走(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "5(9)",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 10,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "中山大障害競走(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "芝4100",
+          "grade": "jra_grandjump",
+          "entry": "10",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 11,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別競走(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "6",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Nasuno Arashi",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "panope"
+    },
+    {
+      "id": "nasuno-seiran",
+      "name": "ナスノセイラン",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ワラビー",
+      "dam": "ナスノアラシ",
+      "color": "鹿毛",
+      "breeder": "栃木県",
+      "netkeibaId": "000a004dcf",
+      "raceStats": {
+        "total": {
+          "runs": 57,
+          "wins": 14
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "13",
+          "result": "8",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "8",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "8",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "6",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 12,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "9",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "4",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Nasuno Seiran",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nasuno-arashi"
+    },
+    {
+      "id": "fujino-homare",
+      "name": "フジノホマレ",
+      "foaled": {
+        "year": 1960
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ブリツカバツク(US)",
+      "dam": "パノープ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000aa5",
+      "raceStats": {
+        "total": {
+          "runs": 73,
+          "wins": 18
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 29
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "7",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 4,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "8",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 12,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "15",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 12,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "芝4200",
+          "grade": "jra_grandjump",
+          "entry": "12",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 10,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "ダ3300",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "9",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 4,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "芝4200",
+          "grade": "jra_grandjump",
+          "entry": "10",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 3,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "ダ2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "8",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 4,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 12,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2600",
+          "grade": "jra_big8",
+          "entry": "8",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 11,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "ダ2500",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念競走(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "目黒記念競走(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 5,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "14",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "NHK盃競走(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fujino Homare",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "panope"
     }
   ]
 }

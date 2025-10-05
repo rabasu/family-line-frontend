@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Nokaze",
     "rootHorseId": "nokaze",
-    "lastUpdated": "2025-09-15T09:17:11.948242Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nokaze",
       "name": "Nokaze",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エンパイアメーカー(US)",
@@ -31,8 +32,11 @@
     {
       "id": "air-sage",
       "name": "エアサージュ",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 1}",
-      "foaledArray": ["2018", "04", "01"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Point of Entry",

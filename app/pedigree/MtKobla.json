@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mt. Kobla",
     "rootHorseId": "mt-kobla",
-    "lastUpdated": "2025-09-18T19:25:29.195170Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mt-kobla",
       "name": "マウントコブラ",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mt. Livermore",
@@ -32,8 +33,11 @@
     {
       "id": "mount-gold",
       "name": "マウントゴールド",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 28}",
-      "foaledArray": ["2013", "03", "28"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

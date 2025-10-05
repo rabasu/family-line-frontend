@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Omedia",
     "rootHorseId": "omedia",
-    "lastUpdated": "2025-09-22T16:25:10.180423Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "omedia",
       "name": "オーミディア",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Riverman",
@@ -32,8 +33,11 @@
     {
       "id": "toyo-royal",
       "name": "トウヨウロイヤル",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 12}",
-      "foaledArray": ["1995", "04", "12"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルアカデミー(US)",
@@ -59,8 +63,11 @@
     {
       "id": "michael-barows-2001",
       "name": "マイケルバローズ",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 6}",
-      "foaledArray": ["2001", "05", "06"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",
@@ -255,8 +262,11 @@
     {
       "id": "satono-progress",
       "name": "サトノプログレス",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 2}",
-      "foaledArray": ["2005", "03", "02"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",

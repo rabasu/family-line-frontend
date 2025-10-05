@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "No No Never",
     "rootHorseId": "no-no-never",
-    "lastUpdated": "2025-09-23T23:38:03.620244Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "no-no-never",
       "name": "ノーノーネヴアー",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "rikiai-taikan",
       "name": "リキアイタイカン",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 25}",
-      "foaledArray": ["1998", "02", "25"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",

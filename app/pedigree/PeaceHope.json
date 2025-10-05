@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Peace Hope",
     "rootHorseId": "peace-hope",
-    "lastUpdated": "2025-09-27T04:04:55.375390Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "peace-hope",
       "name": "ピースホープ",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ardan",
@@ -32,8 +33,9 @@
     {
       "id": "shadai-hope",
       "name": "シヤダイホープ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガーサント",
@@ -59,8 +61,11 @@
     {
       "id": "iide-satan",
       "name": "イイデサターン",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 12}",
-      "foaledArray": ["1988", "04", "12"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -224,8 +229,11 @@
     {
       "id": "ibuki-ballerina",
       "name": "イブキバレリーナ",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 7}",
-      "foaledArray": ["1982", "04", "07"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -569,8 +577,11 @@
     {
       "id": "ibuki-silence",
       "name": "イブキサイレンス",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 1}",
-      "foaledArray": ["1992", "04", "01"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -640,6 +651,182 @@
         "local": "0万円"
       },
       "damId": "ibuki-ballerina"
+    },
+    {
+      "id": "haipurinsu",
+      "name": "ハイプリンス",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ガーサント",
+      "dam": "ピースホープ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1967z00378",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 4,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 1,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "シンザン記念(OP)",
+          "displayRace": "シンザン記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳S(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "6",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 9,
+            "day": 21
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "peace-hope"
+    },
+    {
+      "id": "iisutohoopu",
+      "name": "イーストホープ",
+      "foaled": {
+        "year": 1965
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ガーサント",
+      "dam": "ピースホープ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1965z00039",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 2,
+            "day": 23
+          },
+          "racecourse": "中京",
+          "race": "中京大賞典(OP)",
+          "displayRace": "中京大賞典",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 2,
+            "day": 9
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 2
+          },
+          "racecourse": "阪神",
+          "race": "毎日盃(OP)",
+          "displayRace": "毎日盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "8",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "peace-hope"
     }
   ]
 }

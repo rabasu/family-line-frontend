@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Moranbon",
     "rootHorseId": "moranbon",
-    "lastUpdated": "2025-09-23T23:10:20.892473Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "moranbon",
       "name": "モランボン",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sagace(FR)",
@@ -32,8 +33,11 @@
     {
       "id": "sakura-tairin",
       "name": "サクラタイリン",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 13}",
-      "foaledArray": ["2000", "04", "13"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miski",
     "rootHorseId": "miski",
-    "lastUpdated": "2025-09-21T08:17:55.896517Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miski",
       "name": "ミスキ",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -32,8 +33,11 @@
     {
       "id": "meisho-nobel",
       "name": "メイショウノーベル",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 31}",
-      "foaledArray": ["2009", "03", "31"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -167,8 +171,11 @@
     {
       "id": "bad-boy",
       "name": "バッドボーイ",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 7}",
-      "foaledArray": ["2010", "04", "07"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

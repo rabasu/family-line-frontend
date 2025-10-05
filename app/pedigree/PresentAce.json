@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Present Ace",
     "rootHorseId": "present-ace",
-    "lastUpdated": "2025-09-25T02:46:07.989280Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "present-ace",
       "name": "Present Ace",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "For the Moment",
@@ -31,8 +32,11 @@
     {
       "id": "yashima-captain",
       "name": "ヤシマキャプテン",
-      "foaled": "{'year': 1993, 'month': 2, 'day': 7}",
-      "foaledArray": ["1993", "02", "07"],
+      "foaled": {
+        "year": 1993,
+        "month": 2,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Cahill Road",

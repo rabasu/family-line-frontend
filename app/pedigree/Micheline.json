@@ -2,19 +2,20 @@
   "metadata": {
     "pedigreeName": "Micheline",
     "rootHorseId": "micheline",
-    "lastUpdated": "2025-09-23T00:26:25.942964Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "micheline",
       "name": "Micheline",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Shadeed(US)",
-      "dam": "プレイヤーホイールPrayer Wheel",
+      "dam": "プレイヤーホイール",
       "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a00b66c",
@@ -31,8 +32,11 @@
     {
       "id": "storm-seiko",
       "name": "ストームセイコー",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 1}",
-      "foaledArray": ["2001", "03", "01"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カリズマティック(US)",

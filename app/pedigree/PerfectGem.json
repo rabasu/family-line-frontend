@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Perfect Gem",
     "rootHorseId": "perfect-gem",
-    "lastUpdated": "2025-09-22T20:20:37.495158Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "perfect-gem",
       "name": "パーフェクトジェム",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar a",
@@ -32,8 +33,11 @@
     {
       "id": "gelato",
       "name": "ジェラート",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 13}",
-      "foaledArray": ["1997", "05", "13"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Boundary",
@@ -61,8 +65,11 @@
     {
       "id": "sherbet-tone",
       "name": "シャーベットトーン",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 28}",
-      "foaledArray": ["2002", "03", "28"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘクタープロテクター(US)",

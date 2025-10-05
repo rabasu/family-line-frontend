@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ottom",
     "rootHorseId": "ottom",
-    "lastUpdated": "2025-09-24T14:45:53.393023Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ottom",
       "name": "オットム",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Shirley Heights(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "tenacious-bio",
       "name": "テナシャスバイオ",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 27}",
-      "foaledArray": ["1993", "03", "27"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リズム(US)",

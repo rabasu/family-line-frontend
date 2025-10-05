@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "オドリコ",
     "rootHorseId": "odoriko",
-    "lastUpdated": "2025-09-25T13:25:45.422379Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "odoriko",
       "name": "オドリコ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -31,8 +32,11 @@
     {
       "id": "vienna-waltz",
       "name": "ウインナワルツ",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 19}",
-      "foaledArray": ["1978", "04", "19"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダストコマンダー(US)",
@@ -58,8 +62,11 @@
     {
       "id": "scotch-dancer",
       "name": "スコッチダンサー",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 2}",
-      "foaledArray": ["1984", "04", "02"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディクタス(FR)",
@@ -87,8 +94,11 @@
     {
       "id": "sado-dancer",
       "name": "サドーダンサー",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 24}",
-      "foaledArray": ["1990", "03", "24"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -116,8 +126,11 @@
     {
       "id": "moonlight-tango",
       "name": "ムーンライトタンゴ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 27}",
-      "foaledArray": ["1998", "03", "27"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -251,8 +264,11 @@
     {
       "id": "daiichi-joyful",
       "name": "ダイイチジョイフル",
-      "foaled": "{'year': 1989, 'month': 5, 'day': 11}",
-      "foaledArray": ["1989", "05", "11"],
+      "foaled": {
+        "year": 1989,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",
@@ -356,8 +372,11 @@
     {
       "id": "dyna-candy",
       "name": "ダイナキャンディ",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 3}",
-      "foaledArray": ["1980", "05", "03"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -421,6 +440,49 @@
       ],
       "source": "python_scraping",
       "englishName": "Dyna Candy",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "odoriko"
+    },
+    {
+      "id": "giyarantodansaa",
+      "name": "ギャラントダンサー",
+      "foaled": {
+        "year": 1975
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "Gallant Man",
+      "dam": "オドリコ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1975z00136",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 12,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },

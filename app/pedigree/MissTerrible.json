@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miss Terrible",
     "rootHorseId": "miss-terrible",
-    "lastUpdated": "2025-09-21T17:42:11.068493Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-terrible",
       "name": "Miss Terrible",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Numerous",
@@ -31,8 +32,11 @@
     {
       "id": "genten",
       "name": "ゲンテン",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 2}",
-      "foaledArray": ["2009", "04", "02"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Bernardini(US)",

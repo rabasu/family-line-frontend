@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Opening Title",
     "rootHorseId": "opening-title",
-    "lastUpdated": "2025-09-17T02:00:13.990247Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "opening-title",
       "name": "オープニングタイトル",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,11 @@
     {
       "id": "piena-venus",
       "name": "ピエナビーナス",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 18}",
-      "foaledArray": ["2004", "03", "18"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -182,8 +186,11 @@
     {
       "id": "win-odin",
       "name": "ウインオーディン",
-      "foaled": "{'year': 2020, 'month': 5, 'day': 11}",
-      "foaledArray": ["2020", "05", "11"],
+      "foaled": {
+        "year": 2020,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",

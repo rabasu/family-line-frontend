@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Princess Abby",
     "rootHorseId": "princess-abby",
-    "lastUpdated": "2025-09-22T17:50:28.910498Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "princess-abby",
       "name": "プリンセスアビー",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Explodent",
@@ -32,8 +33,11 @@
     {
       "id": "tokyu-abby",
       "name": "トウキュウアビー",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 27}",
-      "foaledArray": ["1995", "03", "27"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コマンダーインチーフ(GB)",
@@ -92,8 +96,11 @@
     {
       "id": "i-t-top",
       "name": "アイティトップ",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 17}",
-      "foaledArray": ["2005", "02", "17"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",

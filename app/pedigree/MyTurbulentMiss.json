@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "My Turbulent Miss",
     "rootHorseId": "my-turbulent-miss",
-    "lastUpdated": "2025-09-25T07:50:15.916767Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "my-turbulent-miss",
       "name": "My Turbulent Miss",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "My Dad George",
@@ -31,8 +32,11 @@
     {
       "id": "machikane-allegro",
       "name": "マチカネアレグロ",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 23}",
-      "foaledArray": ["1991", "05", "23"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kris S.",

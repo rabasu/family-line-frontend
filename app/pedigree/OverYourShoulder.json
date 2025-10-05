@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Over Your Shoulder",
     "rootHorseId": "over-your-shoulder",
-    "lastUpdated": "2025-09-24T05:38:20.251766Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "over-your-shoulder",
       "name": "Over Your Shoulder",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Graustark",
@@ -31,8 +32,11 @@
     {
       "id": "shinko-splendor",
       "name": "シンコウスプレンダ",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 31}",
-      "foaledArray": ["1994", "03", "31"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Dayjur",

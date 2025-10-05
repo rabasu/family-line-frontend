@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Nathalia",
     "rootHorseId": "nathalia",
-    "lastUpdated": "2025-09-24T15:46:52.389725Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nathalia",
       "name": "ナザリア",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nearco",
@@ -32,8 +33,9 @@
     {
       "id": "top-jo",
       "name": "トップジヨー",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "crystal-winds",
       "name": "クリスタルウインズ",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 16}",
-      "foaledArray": ["1990", "04", "16"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クリスタルパレス(FR)",
@@ -86,8 +91,11 @@
     {
       "id": "tenshino-uta",
       "name": "テンシノウタ",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 17}",
-      "foaledArray": ["1996", "04", "17"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シャンハイ(US)",
@@ -127,6 +135,49 @@
         "local": "322万円"
       },
       "damId": "crystal-winds"
+    },
+    {
+      "id": "umeya",
+      "name": "ウメヤ",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "Pampered King",
+      "dam": "ナザリア",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1967z00048",
+      "raceStats": {
+        "total": {
+          "runs": 25,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "21",
+          "result": "2",
+          "favorite": "12"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nathalia"
     }
   ]
 }

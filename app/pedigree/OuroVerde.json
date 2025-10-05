@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ouro Verde",
     "rootHorseId": "ouro-verde",
-    "lastUpdated": "2025-09-25T21:02:33.927934Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ouro-verde",
       "name": "Ouro Verde",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cool Moon",
@@ -31,8 +32,11 @@
     {
       "id": "ode",
       "name": "オード",
-      "foaled": "{'year': 1986, 'month': 5, 'day': 15}",
-      "foaledArray": ["1986", "05", "15"],
+      "foaled": {
+        "year": 1986,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lord Avie",

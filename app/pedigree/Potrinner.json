@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Potrinner",
     "rootHorseId": "potrinner",
-    "lastUpdated": "2025-09-22T15:55:44.133728Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "potrinner",
       "name": "Potrinner",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Potrillazo",
@@ -31,8 +32,11 @@
     {
       "id": "danon-go-go",
       "name": "ダノンゴーゴー",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 13}",
-      "foaledArray": ["2005", "03", "13"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アルデバラン(US)",

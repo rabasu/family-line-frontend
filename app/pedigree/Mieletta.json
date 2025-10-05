@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mieletta",
     "rootHorseId": "mieletta",
-    "lastUpdated": "2025-09-24T04:07:09.586133Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mieletta",
       "name": "ミエレツタ",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Honeyway",
@@ -32,8 +33,9 @@
     {
       "id": "echo-express",
       "name": "エコーエクスプレス",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スパニッシュイクスプレス(GB)",
@@ -59,8 +61,9 @@
     {
       "id": "dehmetehru",
       "name": "デーメテール",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スカイマスター(IRE)",
@@ -86,8 +89,11 @@
     {
       "id": "sunshine-doll",
       "name": "サンシャインドール",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 7}",
-      "foaledArray": ["1983", "05", "07"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンシャインボーイ",
@@ -113,8 +119,11 @@
     {
       "id": "marukato",
       "name": "マルカート",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 30}",
-      "foaledArray": ["1991", "04", "30"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゲイメセン(US)",
@@ -158,8 +167,11 @@
     {
       "id": "brown-shine",
       "name": "ブラウンシャイン",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 14}",
-      "foaledArray": ["1998", "05", "14"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヤマニンゼファー",
@@ -187,8 +199,11 @@
     {
       "id": "brown-wild",
       "name": "ブラウンワイルド",
-      "foaled": "{'year': 2008, 'month': 6, 'day': 16}",
-      "foaledArray": ["2008", "06", "16"],
+      "foaled": {
+        "year": 2008,
+        "month": 6,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ワイルドラッシュ(US)",
@@ -277,8 +292,11 @@
     {
       "id": "brown-chatelet",
       "name": "ブラウンシャトレー",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 17}",
-      "foaledArray": ["1997", "05", "17"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ナグルスキー(CAN)",
@@ -1098,6 +1116,260 @@
         "local": "2億4,718万円"
       },
       "damId": "marukato"
+    },
+    {
+      "id": "die-parade",
+      "name": "ダイパレード",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "ミエレツタ",
+      "color": "栗毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a000aa2",
+      "raceStats": {
+        "total": {
+          "runs": 32,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 6,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "13",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチンジョッキ(OP)",
+          "displayRace": "アルゼンチンJCC",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "ダ2300",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "11",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "14",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチンジョッキ(OP)",
+          "displayRace": "アルゼンチンJCC",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "9",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 3,
+            "day": 31
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 3,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "1",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 1,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "金盃(OP)",
+          "displayRace": "金盃（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 11,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Die Parade",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "mieletta"
     }
   ]
 }

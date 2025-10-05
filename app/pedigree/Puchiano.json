@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Puchiano",
     "rootHorseId": "puchiano",
-    "lastUpdated": "2025-09-20T13:37:56.423374Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "puchiano",
       "name": "プチアノ",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rubiano",
       "dam": "Pucheca",
-      "dam_netkeiba_id": "",
       "color": "芦毛",
       "breeder": "米",
       "netkeibaId": "000a006671",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Puchiano"
+      "englishName": "Puchiano",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "last-partner",
       "name": "ラストパートナー",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 14}",
-      "foaledArray": ["2001", "04", "14"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エリシオ(FR)",
       "dam": "プチアノ",
-      "dam_netkeiba_id": "000a006671",
       "color": "鹿毛",
       "breeder": "ハクツ牧場（新冠町）",
       "netkeibaId": "2001102160",
@@ -74,18 +77,21 @@
         "central": "1,135万円",
         "local": "127万円"
       },
-      "damId": "puchiano"
+      "damId": "puchiano",
+      "dam_netkeiba_id": "000a006671"
     },
     {
       "id": "miyako-deluxe",
       "name": "ミヤコデラックス",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 4}",
-      "foaledArray": ["2009", "04", "04"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",
       "dam": "ラストパートナー",
-      "dam_netkeiba_id": "2001102160",
       "color": "鹿毛",
       "breeder": "ハクツ牧場（新冠町）",
       "netkeibaId": "2009105048",
@@ -210,7 +216,8 @@
         "central": "2,757万円",
         "local": "0万円"
       },
-      "damId": "last-partner"
+      "damId": "last-partner",
+      "dam_netkeiba_id": "2001102160"
     }
   ]
 }

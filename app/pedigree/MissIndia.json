@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "pedigreeName": "Miss India",
+    "rootHorseId": "miss-india",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
+  },
+  "horses": [
+    {
+      "id": "miss-india",
+      "name": "ミスインデイア",
+      "foaled": {
+        "year": 1950
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Beau Son",
+      "dam": "Lakshmi",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a007e9c",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Miss India"
+    },
+    {
+      "id": "buritsuka-san",
+      "name": "ブリツカサン",
+      "foaled": {
+        "year": 1958
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ブリツカバツク(US)",
+      "dam": "ミスインデイア",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a003185",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Buritsuka San",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "miss-india"
+    },
+    {
+      "id": "marimo-rock",
+      "name": "マリモロツク",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "チャイナロック(GB)",
+      "dam": "ブリツカサン",
+      "color": "鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a004125",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Marimo Rock",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "buritsuka-san"
+    },
+    {
+      "id": "rokkupetorosu",
+      "name": "ロックペトロス",
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 17
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ペトロス(GB)",
+      "dam": "マリモロツク",
+      "color": "栗毛",
+      "breeder": "優駿牧場（門別町）",
+      "netkeibaId": "1977z00106",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 10,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(春)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "6",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "marimo-rock"
+    }
+  ]
+}

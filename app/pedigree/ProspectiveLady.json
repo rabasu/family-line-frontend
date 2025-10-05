@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Prospective Lady",
     "rootHorseId": "prospective-lady",
-    "lastUpdated": "2025-09-25T09:53:29.587529Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "prospective-lady",
       "name": "プロスペクテイヴレディ",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "prost-line",
       "name": "プロストライン",
-      "foaled": "{'year': 1989, 'month': 2, 'day': 21}",
-      "foaledArray": ["1989", "02", "21"],
+      "foaled": {
+        "year": 1989,
+        "month": 2,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Mt. Livermore",

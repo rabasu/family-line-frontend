@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mackie",
     "rootHorseId": "mackie",
-    "lastUpdated": "2025-09-22T22:26:46.400080Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mackie",
       "name": "Mackie",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Summer Squall(US)",
@@ -31,8 +32,11 @@
     {
       "id": "seeking-the-best",
       "name": "シーキングザベスト",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 21}",
-      "foaledArray": ["2001", "05", "21"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Noble Ready",
     "rootHorseId": "noble-ready",
-    "lastUpdated": "2025-09-15T19:27:28.324703Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "noble-ready",
       "name": "ノーブルレディー",
-      "foaled": "{'year': 2014}",
-      "foaledArray": ["2014"],
+      "foaled": {
+        "year": 2014
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "More Than Ready",
@@ -32,8 +33,11 @@
     {
       "id": "noble-roger",
       "name": "ノーブルロジャー",
-      "foaled": "{'year': 2021, 'month': 5, 'day': 8}",
-      "foaledArray": ["2021", "05", "08"],
+      "foaled": {
+        "year": 2021,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パレスマリス",

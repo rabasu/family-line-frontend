@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Nadara",
     "rootHorseId": "nadara",
-    "lastUpdated": "2025-09-27T16:09:06.125124Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nadara",
       "name": "ナダラ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -32,8 +33,9 @@
     {
       "id": "nishino-teresina",
       "name": "ニシノテラシナ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セントクレスピン(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "saint-nadara",
       "name": "セントナダラ",
-      "foaled": "{'year': 1984, 'month': 3, 'day': 15}",
-      "foaledArray": ["1984", "03", "15"],
+      "foaled": {
+        "year": 1984,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "レッドアラート",
@@ -134,8 +139,11 @@
     {
       "id": "kamikaze-ichiban",
       "name": "カミカゼイチバン",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 2}",
-      "foaledArray": ["1981", "03", "02"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

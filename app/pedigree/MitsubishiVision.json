@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mitsubishi Vision",
     "rootHorseId": "mitsubishi-vision",
-    "lastUpdated": "2025-09-25T00:26:08.453605Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mitsubishi-vision",
       "name": "Mitsubishi Vision",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cure the Blues",
@@ -31,8 +32,11 @@
     {
       "id": "daiwa-angela",
       "name": "ダイワアンジェラ",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 13}",
-      "foaledArray": ["1994", "03", "13"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Crafty Prospector",

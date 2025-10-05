@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Princess Reema",
     "rootHorseId": "princess-reema",
-    "lastUpdated": "2025-09-24T05:38:11.484905Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "princess-reema",
       "name": "プリンセスリーマ",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Affirmed(US)",
@@ -32,8 +33,11 @@
     {
       "id": "meisho-doto",
       "name": "メイショウドトウ",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 25}",
-      "foaledArray": ["1996", "03", "25"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Bigstone",

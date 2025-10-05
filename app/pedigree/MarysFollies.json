@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mary's Follies",
     "rootHorseId": "marys-follies",
-    "lastUpdated": "2025-09-17T06:31:21.904680Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "marys-follies",
       "name": "Mary's Follies",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "More Than Ready",
@@ -31,8 +32,11 @@
     {
       "id": "cafe-pharoah",
       "name": "カフェファラオ",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 3}",
-      "foaledArray": ["2017", "03", "03"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "American Pharoah(US)",

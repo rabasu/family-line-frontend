@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Mrs.Squillionaire",
     "rootHorseId": "mrs-squillionaire",
-    "lastUpdated": "2025-09-22T01:09:20.666638Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mrs-squillionaire",
       "name": "Mrs.Squillionaire",
-      "foaled": "{'year': 1995, 'month': 11, 'day': 10}",
-      "foaledArray": ["1995", "11", "10"],
+      "foaled": {
+        "year": 1995,
+        "month": 11,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラストタイクーン(IRE)",
@@ -31,8 +34,11 @@
     {
       "id": "green-birdie",
       "name": "グリーンバーディー",
-      "foaled": "{'year': 2003, 'month': 10, 'day': 31}",
-      "foaledArray": ["2003", "10", "31"],
+      "foaled": {
+        "year": 2003,
+        "month": 10,
+        "day": 31
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Catbird",

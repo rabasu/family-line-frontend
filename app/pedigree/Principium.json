@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Principium",
     "rootHorseId": "principium",
-    "lastUpdated": "2025-09-22T19:52:29.371752Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "principium",
       "name": "プリンシピウム",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハンセル(US)",
@@ -32,8 +33,11 @@
     {
       "id": "kongo-rikishio",
       "name": "コンゴウリキシオー",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 27}",
-      "foaledArray": ["2002", "03", "27"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ストラヴィンスキー",

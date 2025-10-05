@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pleasure Cruise",
     "rootHorseId": "pleasure-cruise",
-    "lastUpdated": "2025-09-27T12:51:47.659657Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pleasure-cruise",
       "name": "プレジアクルーズ",
-      "foaled": "{'year': 1955}",
-      "foaledArray": ["1955"],
+      "foaled": {
+        "year": 1955
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blue Peter",
@@ -32,8 +33,9 @@
     {
       "id": "ken-star",
       "name": "ケンスター",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mossborough",
@@ -59,8 +61,11 @@
     {
       "id": "pleasure-hill",
       "name": "プレジャーヒル",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 8}",
-      "foaledArray": ["1986", "04", "08"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バンブーアトラス",
@@ -134,8 +139,11 @@
     {
       "id": "kyoei-ascent",
       "name": "キョウエイアセント",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 20}",
-      "foaledArray": ["1979", "04", "20"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フォルティノ",

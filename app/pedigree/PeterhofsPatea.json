@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Peterhof's Patea",
     "rootHorseId": "peterhofs-patea",
-    "lastUpdated": "2025-09-22T11:01:40.394584Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "peterhofs-patea",
       "name": "ピーターホフズパティア",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Peterhof",
@@ -32,8 +33,11 @@
     {
       "id": "jolly-dance",
       "name": "ジョリーダンス",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 22}",
-      "foaledArray": ["2001", "04", "22"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

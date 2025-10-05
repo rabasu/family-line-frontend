@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Performada",
     "rootHorseId": "performada",
-    "lastUpdated": "2025-09-15T08:47:57.787555Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "performada",
       "name": "ペルフォルマーダ",
-      "foaled": "{'year': 2011, 'month': 8, 'day': 18}",
-      "foaledArray": ["2011", "08", "18"],
+      "foaled": {
+        "year": 2011,
+        "month": 8,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Jump Start",
@@ -32,8 +35,11 @@
     {
       "id": "red-radiance",
       "name": "レッドラディエンス",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 20}",
-      "foaledArray": ["2019", "04", "20"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

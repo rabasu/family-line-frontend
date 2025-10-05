@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Princess Olivia",
     "rootHorseId": "princess-olivia",
-    "lastUpdated": "2025-09-20T21:00:47.050704Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "princess-olivia",
       "name": "プリンセスオリビア",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lycius",
@@ -32,8 +33,11 @@
     {
       "id": "blooming-alley",
       "name": "ブルーミングアレー",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 24}",
-      "foaledArray": ["2007", "03", "24"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -107,14 +111,17 @@
     {
       "id": "suvarna",
       "name": "スヴァルナ",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 25}",
-      "foaledArray": ["2015", "03", "25"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 25
+      },
       "sex": "",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
       "dam": "ブルーミングアレー",
-      "color": "黒鹿毛",
-      "breeder": "社台ファーム（千歳市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2015104512",
       "raceStats": {
         "total": {
@@ -152,8 +159,11 @@
     {
       "id": "rambling-alley",
       "name": "ランブリングアレー",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 24}",
-      "foaledArray": ["2016", "03", "24"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -332,8 +342,11 @@
     {
       "id": "spielberg",
       "name": "スピルバーグ",
-      "foaled": "{'year': 2009, 'month': 5, 'day': 12}",
-      "foaledArray": ["2009", "05", "12"],
+      "foaled": {
+        "year": 2009,
+        "month": 5,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -512,8 +525,11 @@
     {
       "id": "tosen-ra",
       "name": "トーセンラー",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 21}",
-      "foaledArray": ["2008", "04", "21"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

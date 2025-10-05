@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mariemma",
     "rootHorseId": "mariemma",
-    "lastUpdated": "2025-09-22T06:50:04.018700Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mariemma",
       "name": "マリエンマ",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -32,8 +33,11 @@
     {
       "id": "manno-victoria",
       "name": "マンノヴィクトリア",
-      "foaled": "{'year': 2008, 'month': 5, 'day': 5}",
-      "foaledArray": ["2008", "05", "05"],
+      "foaled": {
+        "year": 2008,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",
@@ -59,8 +63,11 @@
     {
       "id": "manno-grand-prix",
       "name": "マンノグランプリ",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 9}",
-      "foaledArray": ["2016", "04", "09"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スマートファルコン",
@@ -119,8 +126,11 @@
     {
       "id": "manno-racing",
       "name": "マンノレーシング",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 19}",
-      "foaledArray": ["2003", "03", "19"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",

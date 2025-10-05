@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Miss Kenton",
     "rootHorseId": "miss-kenton",
-    "lastUpdated": "2025-09-17T03:31:57.225362Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-kenton",
       "name": "Miss Kenton",
-      "foaled": "{'year': 2011, 'month': 1, 'day': 28}",
-      "foaledArray": ["2011", "01", "28"],
+      "foaled": {
+        "year": 2011,
+        "month": 1,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pivotal",
@@ -31,8 +34,11 @@
     {
       "id": "darlington-hall",
       "name": "ダーリントンホール",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 14}",
-      "foaledArray": ["2017", "03", "14"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "New Approach",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ninny",
     "rootHorseId": "ninny",
-    "lastUpdated": "2025-09-27T05:35:19.946234Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ninny",
       "name": "ニニー",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tom Fool",
@@ -32,8 +33,9 @@
     {
       "id": "doya-ranger",
       "name": "ドウヤレンジャー",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロムサシ",
@@ -59,8 +61,11 @@
     {
       "id": "mejiro-gooden",
       "name": "メジログッテン",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 9}",
-      "foaledArray": ["1987", "05", "09"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "モガミ(FR)",

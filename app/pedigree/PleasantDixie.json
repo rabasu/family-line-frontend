@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pleasant Dixie",
     "rootHorseId": "pleasant-dixie",
-    "lastUpdated": "2025-09-22T10:00:41.587936Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pleasant-dixie",
       "name": "Pleasant Dixie",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dixieland Band",
@@ -31,8 +32,11 @@
     {
       "id": "black-bar-spin",
       "name": "ブラックバースピン",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 6}",
-      "foaledArray": ["2003", "04", "06"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Put It Back",

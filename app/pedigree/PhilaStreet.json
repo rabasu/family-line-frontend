@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Phila Street",
     "rootHorseId": "phila-street",
-    "lastUpdated": "2025-09-22T20:22:39.071802Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "phila-street",
       "name": "フィラストリート",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cozzene",
@@ -32,14 +33,17 @@
     {
       "id": "lewers-street",
       "name": "ルアーズストリート",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 11}",
-      "foaledArray": ["2007", "04", "11"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
       "dam": "フィラストリート",
-      "color": "鹿毛",
-      "breeder": "下河辺牧場（日高町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2007105554",
       "raceStats": {
         "total": {
@@ -61,14 +65,17 @@
     {
       "id": "coconuts-brown",
       "name": "ココナッツブラウン",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 28}",
-      "foaledArray": ["2020", "04", "28"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キタサンブラック",
       "dam": "ルアーズストリート",
-      "color": "鹿毛",
-      "breeder": "下河辺牧場（日高町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2020101607",
       "raceStats": {
         "total": {
@@ -136,8 +143,11 @@
     {
       "id": "satono-wizard",
       "name": "サトノウィザード",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 30}",
-      "foaledArray": ["2016", "03", "30"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",
@@ -196,8 +206,11 @@
     {
       "id": "broad-street",
       "name": "ブロードストリート",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 28}",
-      "foaledArray": ["2006", "03", "28"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -526,8 +539,11 @@
     {
       "id": "finistere",
       "name": "フィニステール",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 16}",
-      "foaledArray": ["2004", "04", "16"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miss Caswell",
     "rootHorseId": "miss-caswell",
-    "lastUpdated": "2025-09-17T13:20:03.130524Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-caswell",
       "name": "ミスカスウェル",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "woman-in-red",
       "name": "ウーマンインレッド",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 18}",
-      "foaledArray": ["2008", "03", "18"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
@@ -59,8 +63,11 @@
     {
       "id": "lion-boss",
       "name": "ライオンボス",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 19}",
-      "foaledArray": ["2015", "03", "19"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バトルプラン(US)",

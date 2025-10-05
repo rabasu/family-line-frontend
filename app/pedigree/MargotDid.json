@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Margot Did",
     "rootHorseId": "margot-did",
-    "lastUpdated": "2025-09-15T20:29:49.722057Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "margot-did",
       "name": "マーゴットディド",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 17}",
-      "foaledArray": ["2008", "03", "17"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Exceed And Excel",
@@ -32,8 +35,11 @@
     {
       "id": "justin-milano",
       "name": "ジャスティンミラノ",
-      "foaled": "{'year': 2021, 'month': 4, 'day': 9}",
-      "foaledArray": ["2021", "04", "09"],
+      "foaled": {
+        "year": 2021,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",

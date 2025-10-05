@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Original Spin",
     "rootHorseId": "original-spin",
-    "lastUpdated": "2025-09-18T21:26:16.721015Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "original-spin",
       "name": "オリジナルスピン",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",
@@ -32,14 +33,17 @@
     {
       "id": "hiraboku-bijin",
       "name": "ヒラボクビジン",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 8}",
-      "foaledArray": ["2007", "05", "08"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "オリジナルスピン",
-      "color": "黒鹿毛",
-      "breeder": "谷川牧場（浦河町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2007101587",
       "raceStats": {
         "total": {
@@ -61,8 +65,11 @@
     {
       "id": "brian-sense",
       "name": "ブライアンセンス",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 16}",
-      "foaledArray": ["2020", "03", "16"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホッコータルマエ",
@@ -181,8 +188,11 @@
     {
       "id": "incantation",
       "name": "インカンテーション",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 24}",
-      "foaledArray": ["2010", "03", "24"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シニスターミニスター(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Princesse Timide",
     "rootHorseId": "princesse-timide",
-    "lastUpdated": "2025-09-23T04:15:47.932239Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "princesse-timide",
       "name": "Princesse Timide",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blushing Groom(FR)",
@@ -31,8 +32,11 @@
     {
       "id": "star-king-man",
       "name": "スターキングマン",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 14}",
-      "foaledArray": ["1999", "04", "14"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",

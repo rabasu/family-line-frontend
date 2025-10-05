@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Milde",
     "rootHorseId": "milde",
-    "lastUpdated": "2025-09-23T01:45:31.356888Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "milde",
       "name": "ミルド",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Desert Wine",
@@ -32,14 +33,17 @@
     {
       "id": "kurokami-1993",
       "name": "クロカミ",
-      "foaled": "{'year': 1993, 'month': 2, 'day': 25}",
-      "foaledArray": ["1993", "02", "25"],
+      "foaled": {
+        "year": 1993,
+        "month": 2,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
       "dam": "ミルド",
-      "color": "鹿毛",
-      "breeder": "T. Wada（愛）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1993110096",
       "raceStats": {
         "total": {
@@ -168,8 +172,11 @@
     {
       "id": "crow-canyon",
       "name": "クロウキャニオン",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 29}",
-      "foaledArray": ["2002", "04", "29"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
@@ -213,8 +220,11 @@
     {
       "id": "yoho-lake",
       "name": "ヨーホーレイク",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 19}",
-      "foaledArray": ["2018", "03", "19"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -423,8 +433,11 @@
     {
       "id": "stone-ridge",
       "name": "ストーンリッジ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 17}",
-      "foaledArray": ["2017", "02", "17"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -528,8 +541,11 @@
     {
       "id": "dantes-view",
       "name": "ダンテスヴュー",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 25}",
-      "foaledArray": ["2019", "03", "25"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -663,13 +679,15 @@
     {
       "id": "lavender-valley",
       "name": "ラベンダーヴァレイ",
-      "foaled": "{'year': 2013, 'month': 1, 'day': 31}",
-      "foaledArray": ["2013", "01", "31"],
+      "foaled": {
+        "year": 2013,
+        "month": 1,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "クロウキャニオン",
-      "dam_netkeiba_id": "2002106979",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013105855",
@@ -749,13 +767,17 @@
         "central": "1億260万円",
         "local": "0万円"
       },
-      "damId": "crow-canyon"
+      "damId": "crow-canyon",
+      "dam_netkeiba_id": "2002106979"
     },
     {
       "id": "bell-canyon",
       "name": "ベルキャニオン",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 5}",
-      "foaledArray": ["2011", "02", "05"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -919,8 +941,11 @@
     {
       "id": "camino-tassajara",
       "name": "カミノタサハラ",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 14}",
-      "foaledArray": ["2010", "02", "14"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -979,8 +1004,11 @@
     {
       "id": "mount-shasta",
       "name": "マウントシャスタ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 1}",
-      "foaledArray": ["2009", "03", "01"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -1114,8 +1142,11 @@
     {
       "id": "boreas",
       "name": "ボレアス",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 11}",
-      "foaledArray": ["2008", "03", "11"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -1294,8 +1325,11 @@
     {
       "id": "hard-crystal",
       "name": "ハードクリスタル",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 27}",
-      "foaledArray": ["2000", "04", "27"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クリスタルグリッターズ(US)",
@@ -1549,8 +1583,9 @@
     {
       "id": "sweet-milde",
       "name": "スイートミルド",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスホール(US)",

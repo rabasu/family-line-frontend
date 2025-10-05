@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Omaita",
     "rootHorseId": "omaita",
-    "lastUpdated": "2025-09-22T06:19:15.094189Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "omaita",
       "name": "オマイタ",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -32,8 +33,11 @@
     {
       "id": "tsurumaru-jupiter",
       "name": "ツルマルジュピター",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 1}",
-      "foaledArray": ["2007", "05", "01"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pandora",
     "rootHorseId": "pandora",
-    "lastUpdated": "2025-09-25T23:32:01.603606Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pandora",
       "name": "モントカロー",
-      "foaled": "{'year': 1921}",
-      "foaledArray": ["1921"],
+      "foaled": {
+        "year": 1921
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Aleconner",
@@ -32,8 +33,9 @@
     {
       "id": "buratsukumonto",
       "name": "ブラツクモント",
-      "foaled": "{'year': 1932}",
-      "foaledArray": ["1932"],
+      "foaled": {
+        "year": 1932
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブラツクスミス(GB)",
@@ -58,8 +60,9 @@
     {
       "id": "kingunaito",
       "name": "キングナイト",
-      "foaled": "{'year': 1946}",
-      "foaledArray": ["1946"],
+      "foaled": {
+        "year": 1946
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セフト(GB)",
@@ -84,8 +87,9 @@
     {
       "id": "harrow-night",
       "name": "ハローナイト",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハロウエー(GB)",
@@ -111,8 +115,9 @@
     {
       "id": "kinko-arrow",
       "name": "キンコーアロー",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アローエクスプレス",
@@ -138,8 +143,11 @@
     {
       "id": "zogebune-megami",
       "name": "ゾウゲブネメガミ",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 21}",
-      "foaledArray": ["1987", "04", "21"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ターゴワイス(US)",

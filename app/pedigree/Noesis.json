@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Noesis",
     "rootHorseId": "noesis",
-    "lastUpdated": "2025-09-25T02:46:49.138485Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "noesis",
       "name": "ノエシス",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ペルセポリスII",
@@ -32,8 +33,11 @@
     {
       "id": "ibuki-perceive",
       "name": "イブキパーシヴ",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 11}",
-      "foaledArray": ["1993", "04", "11"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pearl Necklace",
     "rootHorseId": "pearl-necklace",
-    "lastUpdated": "2025-09-21T23:38:08.467956Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pearl-necklace",
       "name": "パールネツクレース",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mill Reef(US)",
@@ -32,8 +33,11 @@
     {
       "id": "never-bouchon",
       "name": "ネヴァブション",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 19}",
-      "foaledArray": ["2003", "02", "19"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マーベラスサンデー",

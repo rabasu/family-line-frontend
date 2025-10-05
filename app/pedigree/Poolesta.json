@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Poolesta",
     "rootHorseId": "poolesta",
-    "lastUpdated": "2025-09-22T07:20:07.627130Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "poolesta",
       "name": "Poolesta",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hero's Honor",
@@ -31,8 +32,11 @@
     {
       "id": "dragon-welds",
       "name": "ドラゴンウェルズ",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 22}",
-      "foaledArray": ["2003", "04", "22"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Dynaformer",

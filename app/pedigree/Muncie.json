@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Muncie",
     "rootHorseId": "muncie",
-    "lastUpdated": "2025-09-23T01:47:49.455045Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "muncie",
       "name": "ミュンシー",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "stratagem",
       "name": "ストラタジェム",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 24}",
-      "foaledArray": ["2001", "02", "24"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

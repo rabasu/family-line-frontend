@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miss Vegas",
     "rootHorseId": "miss-vegas",
-    "lastUpdated": "2025-09-18T09:26:53.328356Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-vegas",
       "name": "ミスベガス",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Efisio",
@@ -32,8 +33,11 @@
     {
       "id": "lucky-dice",
       "name": "ラッキーダイス",
-      "foaled": "{'year': 2007, 'month': 2, 'day': 23}",
-      "foaledArray": ["2007", "02", "23"],
+      "foaled": {
+        "year": 2007,
+        "month": 2,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
@@ -61,8 +65,11 @@
     {
       "id": "jo-kana-chan",
       "name": "ジョーカナチャン",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 3}",
-      "foaledArray": ["2015", "02", "03"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",

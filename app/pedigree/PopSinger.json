@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pop Singer",
     "rootHorseId": "pop-singer",
-    "lastUpdated": "2025-09-22T16:26:40.748619Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pop-singer",
       "name": "ポップシンガー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "pops",
       "name": "ポップス",
-      "foaled": "{'year': 1992, 'month': 2, 'day': 15}",
-      "foaledArray": ["1992", "02", "15"],
+      "foaled": {
+        "year": 1992,
+        "month": 2,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -77,8 +81,11 @@
     {
       "id": "anthology",
       "name": "アンソロジー",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 25}",
-      "foaledArray": ["2004", "03", "25"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
@@ -106,8 +113,11 @@
     {
       "id": "another-lyric",
       "name": "アナザーリリック",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 17}",
-      "foaledArray": ["2018", "03", "17"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リオンディーズ",
@@ -286,8 +296,11 @@
     {
       "id": "speed-ripper",
       "name": "スピードリッパー",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 11}",
-      "foaledArray": ["2008", "03", "11"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファルブラヴ(IRE)",
@@ -526,8 +539,11 @@
     {
       "id": "pop-rock",
       "name": "ポップロック",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 19}",
-      "foaledArray": ["2001", "03", "19"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エリシオ(FR)",

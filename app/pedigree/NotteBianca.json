@@ -2,21 +2,22 @@
   "metadata": {
     "pedigreeName": "Notte Bianca",
     "rootHorseId": "notte-bianca",
-    "lastUpdated": "2025-09-15T20:28:54.535277Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "notte-bianca",
       "name": "ノッテビアンカ",
-      "foaled": "{'year': 2013}",
-      "foaledArray": ["2013"],
+      "foaled": {
+        "year": 2013
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kendargent",
       "dam": "Biancarosa",
-      "color": "鹿毛",
-      "breeder": "仏",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a013870",
       "raceStats": {
         "total": {
@@ -32,8 +33,11 @@
     {
       "id": "long-run-2018",
       "name": "ロングラン",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 9}",
-      "foaledArray": ["2018", "02", "09"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 9
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ヴィクトワールピサ",
@@ -207,19 +211,23 @@
         "central": "2億2,028万円",
         "local": "0万円"
       },
-      "damId": "notte-bianca"
+      "damId": "notte-bianca",
+      "linkName": "ロングラン(2018)"
     },
     {
       "id": "bonne-soiree",
       "name": "ボンヌソワレ",
-      "foaled": "{'year': 2022, 'month': 2, 'day': 14}",
-      "foaledArray": ["2022", "02", "14"],
+      "foaled": {
+        "year": 2022,
+        "month": 2,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レイデオロ",
       "dam": "ノッテビアンカ",
-      "color": "栗毛",
-      "breeder": "社台ファーム（千歳市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022105435",
       "raceStats": {
         "total": {

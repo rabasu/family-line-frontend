@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Music Lane",
     "rootHorseId": "music-lane",
-    "lastUpdated": "2025-09-23T22:03:24.516926Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "music-lane",
       "name": "Music Lane",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -31,8 +32,11 @@
     {
       "id": "music-hawk",
       "name": "ミュージックホーク",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 3}",
-      "foaledArray": ["2001", "05", "03"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",

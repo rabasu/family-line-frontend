@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Namara",
     "rootHorseId": "namara",
-    "lastUpdated": "2025-09-24T09:41:14.919572Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "namara",
       "name": "ナマラ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pieces of Eight",
@@ -32,8 +33,11 @@
     {
       "id": "my-gloria",
       "name": "マイグローリア",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 6}",
-      "foaledArray": ["1987", "03", "06"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",
@@ -61,8 +65,11 @@
     {
       "id": "vital-track",
       "name": "ヴァイタルトラック",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 27}",
-      "foaledArray": ["1995", "04", "27"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダハール(US)",

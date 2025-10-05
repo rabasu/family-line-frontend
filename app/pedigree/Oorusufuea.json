@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "オールスフエア",
     "rootHorseId": "oorusufuea",
-    "lastUpdated": "2025-09-25T10:55:04.021648Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "oorusufuea",
       "name": "オールスフエア",
-      "foaled": "{'year': 1946}",
-      "foaledArray": ["1946"],
+      "foaled": {
+        "year": 1946
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Marabou",
@@ -31,8 +32,9 @@
     {
       "id": "fueaueh",
       "name": "フェアウエー",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wayside Inn",
@@ -58,8 +60,9 @@
     {
       "id": "dai-sansui",
       "name": "ダイサンスイ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モンタヴァル(FR)",
@@ -85,8 +88,9 @@
     {
       "id": "morino-flora",
       "name": "モリノフローラ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイハード(GB)",
@@ -112,8 +116,11 @@
     {
       "id": "casablanca-city",
       "name": "カサブランカシチー",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 8}",
-      "foaledArray": ["1988", "05", "08"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホリスキー",
@@ -198,6 +205,199 @@
         "local": "0万円"
       },
       "damId": "morino-flora"
+    },
+    {
+      "id": "riyuumusashi",
+      "name": "リユウムサシ",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "タークスリライアンス(FR)",
+      "dam": "オールスフエア",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1959z00452",
+      "raceStats": {
+        "total": {
+          "runs": 28,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1964,
+            "month": 3,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 2,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 12,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念競走(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "目黒記念競走(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 10,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "11",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "有馬記念競走(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2600",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "13",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 10,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "産経賞オールカマー競(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 9,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念競走(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠競走(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 9,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 7,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞競走(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "oorusufuea"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "プレフアード",
     "rootHorseId": "purefuaado",
-    "lastUpdated": "2025-09-27T12:06:24.722814Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "purefuaado",
       "name": "プレフアード",
-      "foaled": "{'year': 1949}",
-      "foaledArray": ["1949"],
+      "foaled": {
+        "year": 1949
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Chanteur",
@@ -31,8 +32,9 @@
     {
       "id": "kuihn-pegasasu",
       "name": "クイーンペガサス",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライジングフレーム(IRE)",
@@ -53,13 +55,15 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "purefuaado"
+      "damId": "purefuaado",
+      "linkName": "クイーンペガサス(1957)"
     },
     {
       "id": "kenno-hana",
       "name": "ケンノハナ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サウンドトラック(IRE)",
@@ -85,8 +89,11 @@
     {
       "id": "yellow-rose",
       "name": "イエローローズ",
-      "foaled": "{'year': 1977, 'month': 5, 'day': 21}",
-      "foaledArray": ["1977", "05", "21"],
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イエローゴッド",
@@ -112,8 +119,11 @@
     {
       "id": "bald-star",
       "name": "ボールドスター",
-      "foaled": "{'year': 1982, 'month': 5, 'day': 11}",
-      "foaledArray": ["1982", "05", "11"],
+      "foaled": {
+        "year": 1982,
+        "month": 5,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボールドリック(US)",
@@ -141,8 +151,11 @@
     {
       "id": "super-play",
       "name": "スーパープレイ",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 17}",
-      "foaledArray": ["1990", "04", "17"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラグビーボール",
@@ -396,8 +409,11 @@
     {
       "id": "new-gallop",
       "name": "ニューギャロップ",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 18}",
-      "foaledArray": ["1980", "04", "18"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トレンタム",
@@ -561,8 +577,9 @@
     {
       "id": "hokuei-fubuki",
       "name": "ホクエイフブキ",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ルイスデール(GB)",
@@ -619,8 +636,9 @@
     {
       "id": "kiyotani",
       "name": "キヨタニ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラッシー(IRE)",
@@ -641,6 +659,168 @@
         "total": "0万円"
       },
       "damId": "purefuaado"
+    },
+    {
+      "id": "burubon",
+      "name": "ブルボン",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヒンドスタン",
+      "dam": "クイーンペガサス",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1966z00389",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "毎日盃(OP)",
+          "displayRace": "毎日盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 1,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "シンザン記念(OP)",
+          "displayRace": "シンザン記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳S(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "8",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": "阪神",
+          "race": "3歳S(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kuihn-pegasasu"
+    },
+    {
+      "id": "kuiinpegasasu",
+      "name": "クイーンペガサス",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ライジングフレーム(IRE)",
+      "dam": "プレフアード",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1959z00044",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1962,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "阪神牝馬特別競走(OP)",
+          "displayRace": "阪神牝馬特別",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "2",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "purefuaado",
+      "linkName": "クイーンペガサス(1959)"
     }
   ]
 }

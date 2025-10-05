@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Noholme's Queen",
     "rootHorseId": "noholmes-queen",
-    "lastUpdated": "2025-09-27T05:35:54.583636Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "noholmes-queen",
       "name": "ノーホームスクイーン",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Noholme",
@@ -32,8 +33,11 @@
     {
       "id": "phoenix-dyna",
       "name": "フェニックスダイナ",
-      "foaled": "{'year': 1980, 'month': 3, 'day': 23}",
-      "foaledArray": ["1980", "03", "23"],
+      "foaled": {
+        "year": 1980,
+        "month": 3,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エルセンタウロ",
@@ -120,8 +124,11 @@
     {
       "id": "muteki-tenho",
       "name": "ムテキテンホー",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 11}",
-      "foaledArray": ["1989", "03", "11"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイナガリバー",

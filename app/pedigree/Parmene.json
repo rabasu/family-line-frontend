@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Parmene",
     "rootHorseId": "parmene",
-    "lastUpdated": "2025-09-25T14:26:49.843351Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "parmene",
       "name": "パーミーン",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pardal",
@@ -32,8 +33,9 @@
     {
       "id": "sica-doll",
       "name": "シカドール",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sica Boy(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "kiyo-hiho",
       "name": "キヨヒホウ",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 18}",
-      "foaledArray": ["1980", "04", "18"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ルイスデール(GB)",
@@ -179,8 +184,11 @@
     {
       "id": "leo-ryuho",
       "name": "レオリュウホウ",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 21}",
-      "foaledArray": ["1995", "04", "21"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンシングブレーヴ(US)",
@@ -359,8 +367,11 @@
     {
       "id": "great-wave",
       "name": "グレイトウェーブ",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 18}",
-      "foaledArray": ["1988", "04", "18"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "モーニングフローリック",
@@ -475,6 +486,384 @@
         "local": "0万円"
       },
       "damId": "kiyo-hiho"
+    },
+    {
+      "id": "kiyo-hidaka",
+      "name": "キヨヒダカ",
+      "foaled": {
+        "year": 1978,
+        "month": 2,
+        "day": 23
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ホープフリーオン",
+      "dam": "シカドール",
+      "color": "鹿毛",
+      "breeder": "日胆上水牧場（鵡川町）",
+      "netkeibaId": "1978101762",
+      "raceStats": {
+        "total": {
+          "runs": 42,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1985,
+            "month": 3,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1985,
+            "month": 2,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "フェブラリーハンデキ(OP)",
+          "displayRace": "フェブラリーH",
+          "distance": "ダ1600",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "11",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジ",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "17",
+          "result": "15",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "エプソムC(OP)",
+          "displayRace": "エプソムC",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "10",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "安田記念(GI)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "22",
+          "result": "5",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングカッ(OP)",
+          "displayRace": "京王杯スプリングC",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "22",
+          "result": "19",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 10,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 9,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "京王杯オータムH(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 7,
+            "day": 10
+          },
+          "racecourse": "福島",
+          "race": "七夕賞(OP)",
+          "displayRace": "七夕賞",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 6,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 5,
+            "day": 15
+          },
+          "racecourse": "新潟",
+          "race": "新潟大賞典(OP)",
+          "displayRace": "新潟大賞典",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 5,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 3,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 2,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "2",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 12,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "2",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "13",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 7,
+            "day": 4
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(OP)",
+          "displayRace": "札幌記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 6,
+            "day": 21
+          },
+          "racecourse": "福島",
+          "race": "ラジオたんぱ賞(OP)",
+          "displayRace": "ラジオたんぱ賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "取",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 4,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "13",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 3,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "京成杯(OP)",
+          "displayRace": "京成杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kiyo Hidaka",
+      "prizeMoney": {
+        "total": "3,700万円",
+        "central": "3,700万円",
+        "local": "0万円"
+      },
+      "damId": "sica-doll"
     }
   ]
 }

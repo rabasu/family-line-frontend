@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Maltese Superb",
     "rootHorseId": "maltese-superb",
-    "lastUpdated": "2025-09-20T11:17:54.053590Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "maltese-superb",
       "name": "マルターズスパーブ",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 21}",
-      "foaledArray": ["1997", "02", "21"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "With Approval",
       "dam": "Primedex",
-      "dam_netkeiba_id": "",
       "color": "芦毛",
       "breeder": "Irwin Weiner & France Weiner（米）",
       "netkeibaId": "1997110259",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Maltese Superb"
+      "englishName": "Maltese Superb",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "siberian-superb",
       "name": "シベリアンスパーブ",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 1}",
-      "foaledArray": ["2009", "02", "01"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シベリアンホーク",
       "dam": "マルターズスパーブ",
-      "dam_netkeiba_id": "1997110259",
       "color": "鹿毛",
       "breeder": "山岡牧場（新冠町）",
       "netkeibaId": "2009105407",
@@ -149,7 +154,8 @@
         "central": "1億2,351万円",
         "local": "28万円"
       },
-      "damId": "maltese-superb"
+      "damId": "maltese-superb",
+      "dam_netkeiba_id": "1997110259"
     }
   ]
 }

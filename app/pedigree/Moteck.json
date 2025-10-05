@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Moteck",
     "rootHorseId": "moteck",
-    "lastUpdated": "2025-09-22T02:38:46.338582Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "moteck",
       "name": "モテック",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラストタイクーン(IRE)",
       "dam": "Sudaka",
-      "dam_netkeiba_id": "",
       "color": "黒鹿毛",
       "breeder": "仏",
       "netkeibaId": "000a006840",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Moteck"
+      "englishName": "Moteck",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "recondite",
       "name": "レコンダイト",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 14}",
-      "foaledArray": ["2010", "02", "14"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
       "dam": "モテック",
-      "dam_netkeiba_id": "000a006840",
       "color": "黒鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2010103963",
@@ -269,13 +272,17 @@
         "central": "1億5,518万円",
         "local": "0万円"
       },
-      "damId": "moteck"
+      "damId": "moteck",
+      "dam_netkeiba_id": "000a006840"
     },
     {
       "id": "saint-emilion",
       "name": "サンテミリオン",
-      "foaled": "{'year': 2007, 'month': 1, 'day': 30}",
-      "foaledArray": ["2007", "01", "30"],
+      "foaled": {
+        "year": 2007,
+        "month": 1,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゼンノロブロイ",

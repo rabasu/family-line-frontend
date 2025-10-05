@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Personal Delight",
     "rootHorseId": "personal-delight",
-    "lastUpdated": "2025-09-21T20:12:19.139671Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "personal-delight",
       "name": "Personal Delight",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Personal Flag",
@@ -31,8 +32,11 @@
     {
       "id": "imbarco",
       "name": "インバルコ",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 3}",
-      "foaledArray": ["2006", "04", "03"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Fusaichi Pegasus",

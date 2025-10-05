@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mystic Light",
     "rootHorseId": "mystic-light",
-    "lastUpdated": "2025-09-22T03:07:33.105313Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mystic-light",
       "name": "ミスティックライト",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",
@@ -32,8 +33,11 @@
     {
       "id": "narita-shuttle",
       "name": "ナリタシャトル",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 15}",
-      "foaledArray": ["2005", "03", "15"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",
@@ -167,8 +171,11 @@
     {
       "id": "run-heramba",
       "name": "ランヘランバ",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 8}",
-      "foaledArray": ["2003", "04", "08"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",
@@ -317,8 +324,11 @@
     {
       "id": "meisho-dontaku",
       "name": "メイショウドンタク",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 28}",
-      "foaledArray": ["2006", "02", "28"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

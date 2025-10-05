@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mars Violet",
     "rootHorseId": "mars-violet",
-    "lastUpdated": "2025-09-22T20:22:17.879192Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mars-violet",
       "name": "マーズヴァイオレット",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "t-m-yamato-o",
       "name": "テイエムヤマトオー",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 31}",
-      "foaledArray": ["2001", "05", "31"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -137,8 +141,11 @@
     {
       "id": "hiraboku-royal",
       "name": "ヒラボクロイヤル",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 15}",
-      "foaledArray": ["2004", "03", "15"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Melodien",
     "rootHorseId": "melodien",
-    "lastUpdated": "2025-09-24T08:41:14.164348Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "melodien",
       "name": "メロディアン",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mariache",
@@ -32,8 +33,11 @@
     {
       "id": "symboli-oregon",
       "name": "シンボリオレゴン",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 23}",
-      "foaledArray": ["1997", "03", "23"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスホール(US)",

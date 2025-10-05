@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pell-Mell",
     "rootHorseId": "pell-mell",
-    "lastUpdated": "2025-09-23T10:02:22.413901Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pell-mell",
       "name": "ペルメル",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pall Mall",
@@ -32,8 +33,9 @@
     {
       "id": "katsura-asahi",
       "name": "カツラアサヒ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レベルコ(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "asahi-marine",
       "name": "アサヒマリン",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 8}",
-      "foaledArray": ["1992", "05", "08"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スティールハート",
@@ -86,8 +91,11 @@
     {
       "id": "light-pacific",
       "name": "ライトパシフィック",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 22}",
-      "foaledArray": ["1999", "03", "22"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
@@ -157,6 +165,112 @@
         "local": "64万円"
       },
       "damId": "asahi-marine"
+    },
+    {
+      "id": "blabby-o",
+      "name": "ブラビオー",
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 19
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "カウアイキング",
+      "dam": "カツラアサヒ",
+      "color": "鹿毛",
+      "breeder": "パシフィック牧場（三石町）",
+      "netkeibaId": "1977103132",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 2,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 8,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 8,
+            "day": 2
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(OP)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(400万下)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Blabby O",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "katsura-asahi"
     }
   ]
 }

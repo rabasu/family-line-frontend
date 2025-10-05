@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Never Clear",
     "rootHorseId": "never-clear",
-    "lastUpdated": "2025-09-27T06:06:11.990785Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "never-clear",
       "name": "ネヴアークリア",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Never Say Die",
@@ -32,8 +33,9 @@
     {
       "id": "cross-turner",
       "name": "クロスターナ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボールドリック(US)",
@@ -59,8 +61,11 @@
     {
       "id": "divvy-grow",
       "name": "ディビーグロー",
-      "foaled": "{'year': 1986, 'month': 5, 'day': 5}",
-      "foaledArray": ["1986", "05", "05"],
+      "foaled": {
+        "year": 1986,
+        "month": 5,
+        "day": 5
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ニゾン(US)",

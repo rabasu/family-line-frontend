@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Maggie Jiggs",
     "rootHorseId": "maggie-jiggs",
-    "lastUpdated": "2025-09-16T03:11:08.982435Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "maggie-jiggs",
       "name": "マギージグス",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gigantic",
@@ -32,8 +33,11 @@
     {
       "id": "maggie-sanitsu",
       "name": "マギーサンイツ",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 25}",
-      "foaledArray": ["1981", "03", "25"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングオブダービー(US)",
@@ -59,8 +63,11 @@
     {
       "id": "bay-leaf-suita",
       "name": "ベイリーフスイータ",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 30}",
-      "foaledArray": ["1987", "03", "30"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ターゴワイス(US)",
@@ -88,8 +95,11 @@
     {
       "id": "favori",
       "name": "ファヴォリ",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 20}",
-      "foaledArray": ["1996", "04", "20"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",
@@ -117,8 +127,11 @@
     {
       "id": "tokai-life",
       "name": "トウカイライフ",
-      "foaled": "{'year': 2007, 'month': 2, 'day': 21}",
-      "foaledArray": ["2007", "02", "21"],
+      "foaled": {
+        "year": 2007,
+        "month": 2,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",
@@ -162,8 +175,11 @@
     {
       "id": "lebensstil",
       "name": "レーベンスティール",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 8}",
-      "foaledArray": ["2020", "03", "08"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルスティール",
@@ -323,6 +339,264 @@
         "local": "0万円"
       },
       "damId": "tokai-life"
+    },
+    {
+      "id": "takeno-dia",
+      "name": "タケノダイヤ",
+      "foaled": {
+        "year": 1978,
+        "month": 2,
+        "day": 25
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "テスコボーイ(GB)",
+      "dam": "マギージグス",
+      "color": "青鹿毛",
+      "breeder": "木村牧場（門別町）",
+      "netkeibaId": "1978105246",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1984,
+            "month": 4,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "日経賞(OP)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "9",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 3,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "7",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 11,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "11",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "7",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(OP)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2400",
+          "grade": "jra_big10",
+          "entry": "16",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬特別(OP)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "24",
+          "result": "16",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 3,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "報知杯阪神4歳牝馬特(OP)",
+          "displayRace": "阪神4歳牝馬特別",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "クイーンC(OP)",
+          "displayRace": "クイーンC",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "京成杯3歳S(OP)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 9,
+            "day": 14
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Takeno Dia",
+      "prizeMoney": {
+        "total": "2,460万円",
+        "central": "2,460万円",
+        "local": "0万円"
+      },
+      "damId": "maggie-jiggs"
     }
   ]
 }

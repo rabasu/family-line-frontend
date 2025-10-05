@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Noble Stella",
     "rootHorseId": "noble-stella",
-    "lastUpdated": "2025-09-21T01:49:34.094860Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "noble-stella",
       "name": "ノーブルステラ",
-      "foaled": "{'year': 2001, 'month': 1, 'day': 22}",
-      "foaledArray": ["2001", "01", "22"],
+      "foaled": {
+        "year": 2001,
+        "month": 1,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Monsun",
@@ -32,8 +35,11 @@
     {
       "id": "noble-jewelry",
       "name": "ノーブルジュエリー",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 13}",
-      "foaledArray": ["2008", "02", "13"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Smarty Jones(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Parfait",
     "rootHorseId": "parfait",
-    "lastUpdated": "2025-09-25T09:21:33.486874Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "parfait",
       "name": "パルフエ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゼダーン(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "onward-nancy",
       "name": "オンワードナンシー",
-      "foaled": "{'year': 1985, 'month': 3, 'day': 24}",
-      "foaledArray": ["1985", "03", "24"],
+      "foaled": {
+        "year": 1985,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードツービート",
@@ -77,8 +81,11 @@
     {
       "id": "onward-rose",
       "name": "オンワードロゼ",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 27}",
-      "foaledArray": ["1989", "04", "27"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オンワードカメルン",
@@ -106,8 +113,11 @@
     {
       "id": "onward-rattle",
       "name": "オンワードラトゥル",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 4}",
-      "foaledArray": ["2002", "04", "04"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ストローズクリーク(US)",
@@ -151,8 +161,11 @@
     {
       "id": "onward-noble",
       "name": "オンワードノーブル",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 11}",
-      "foaledArray": ["1991", "05", "11"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",

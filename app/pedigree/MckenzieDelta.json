@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "McKenzie Delta",
     "rootHorseId": "mckenzie-delta",
-    "lastUpdated": "2025-09-23T18:36:44.689531Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mckenzie-delta",
       "name": "マツケンジーデルタ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pretendre",
@@ -32,8 +33,11 @@
     {
       "id": "dyna-mckenzie",
       "name": "ダイナマッケンジー",
-      "foaled": "{'year': 1984, 'month': 3, 'day': 24}",
-      "foaledArray": ["1984", "03", "24"],
+      "foaled": {
+        "year": 1984,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -92,8 +96,11 @@
     {
       "id": "meiner-amundsen",
       "name": "マイネルアムンゼン",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 5}",
-      "foaledArray": ["1999", "03", "05"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ペンタイア(GB)",
