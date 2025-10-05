@@ -21,6 +21,8 @@ module.exports = {
   parserOptions: {
     project: false,
     tsconfigRootDir: __dirname,
+    ecmaVersion: 2020,
+    sourceType: 'module',
   },
   ignorePatterns: ['app/pedigree/**/*.json', '**/*.json', 'node_modules/', '.next/', 'dist/', 'build/', 'public/', 'scraping/', 'scripts/', 'temp_test/'],
   rules: {
