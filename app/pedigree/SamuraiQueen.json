@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Samurai Queen",
     "rootHorseId": "samurai-queen",
-    "lastUpdated": "2025-09-23T00:28:36.611682Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "samurai-queen",
       "name": "サムライクイーン",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wajima",
@@ -32,8 +33,11 @@
     {
       "id": "yukimizake",
       "name": "ユキミザケ",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 11}",
-      "foaledArray": ["1990", "05", "11"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アレミロード(US)",
@@ -122,8 +126,11 @@
     {
       "id": "mogaribue",
       "name": "モガリブエ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 17}",
-      "foaledArray": ["1998", "03", "17"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

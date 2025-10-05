@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Shires Ende",
     "rootHorseId": "shires-ende",
-    "lastUpdated": "2025-09-22T16:26:32.295593Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shires-ende",
       "name": "シャイアーズエンデ",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 24}",
-      "foaledArray": ["1995", "03", "24"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "El Prado",
@@ -32,8 +35,11 @@
     {
       "id": "midas-touch",
       "name": "ミダースタッチ",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 9}",
-      "foaledArray": ["2005", "04", "09"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rosetta",
     "rootHorseId": "rosetta",
-    "lastUpdated": "2025-09-27T04:36:54.878866Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rosetta",
       "name": "ロゼッタ",
-      "foaled": "{'year': 1954}",
-      "foaledArray": ["1954"],
+      "foaled": {
+        "year": 1954
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fair's Fair",
@@ -32,8 +33,9 @@
     {
       "id": "kitano-sugata",
       "name": "キタノスガタ",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソロナウェー",
@@ -54,13 +56,15 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "rosetta"
+      "damId": "rosetta",
+      "linkName": "キタノスガタ(1964)"
     },
     {
       "id": "fujino-sanko",
       "name": "フジノサンコー",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バーボンプリンス(US)",
@@ -86,8 +90,11 @@
     {
       "id": "hashino-cedar",
       "name": "ハシノシーダー",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 6}",
-      "foaledArray": ["1978", "03", "06"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミンシオ",
@@ -113,8 +120,11 @@
     {
       "id": "sunlight-bourbon",
       "name": "サンライトブルボン",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 26}",
-      "foaledArray": ["1990", "03", "26"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イルドブルボン(US)",
@@ -142,8 +152,11 @@
     {
       "id": "chuo-saya",
       "name": "チュウオーサーヤ",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 20}",
-      "foaledArray": ["2002", "04", "20"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディアブロ(US)",
@@ -171,8 +184,11 @@
     {
       "id": "guanciale",
       "name": "グァンチャーレ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 27}",
-      "foaledArray": ["2012", "02", "27"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スクリーンヒーロー",
@@ -426,8 +442,11 @@
     {
       "id": "nasuno-seikan",
       "name": "ナスノセイカン",
-      "foaled": "{'year': 2012, 'month': 5, 'day': 23}",
-      "foaledArray": ["2012", "05", "23"],
+      "foaled": {
+        "year": 2012,
+        "month": 5,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -606,8 +625,11 @@
     {
       "id": "nasuno-fiona",
       "name": "ナスノフィオナ",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 12}",
-      "foaledArray": ["2002", "04", "12"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ホワイトマズル(GB)",
@@ -651,8 +673,11 @@
     {
       "id": "nasuno-flora",
       "name": "ナスノフローラ",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 24}",
-      "foaledArray": ["1994", "04", "24"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タイトスポット(US)",
@@ -680,8 +705,9 @@
     {
       "id": "nasuno-aroma",
       "name": "ナスノアロマ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラディガ(US)",
@@ -707,8 +733,9 @@
     {
       "id": "nasuno-kaori",
       "name": "ナスノカオリ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -945,8 +972,9 @@
     {
       "id": "nasuno-hoshi",
       "name": "ナスノホシ",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Faux Tirage",
@@ -972,8 +1000,11 @@
     {
       "id": "sammy-miracle",
       "name": "サミーミラクル",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 23}",
-      "foaledArray": ["2000", "05", "23"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
@@ -1062,8 +1093,11 @@
     {
       "id": "lucir-cedar",
       "name": "ルシールシーダー",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 16}",
-      "foaledArray": ["1990", "05", "16"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クリスタルグリッターズ(US)",
@@ -1091,8 +1125,11 @@
     {
       "id": "power-cedar",
       "name": "パワーシーダー",
-      "foaled": "{'year': 1981, 'month': 6, 'day': 3}",
-      "foaledArray": ["1981", "06", "03"],
+      "foaled": {
+        "year": 1981,
+        "month": 6,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザリー",
@@ -1316,8 +1353,11 @@
     {
       "id": "meisho-yoshiie",
       "name": "メイショウヨシイエ",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 9}",
-      "foaledArray": ["1991", "04", "09"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -1856,8 +1896,9 @@
     {
       "id": "julietta",
       "name": "ジユリエツタ",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイアトム",
@@ -1883,8 +1924,11 @@
     {
       "id": "nasuno-loran",
       "name": "ナスノローラン",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 24}",
-      "foaledArray": ["1986", "04", "24"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スティールハート",
@@ -1988,8 +2032,11 @@
     {
       "id": "nasuno-chihaya",
       "name": "ナスノチハヤ",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 30}",
-      "foaledArray": ["1978", "05", "30"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "グレートヘロン",
@@ -2015,8 +2062,9 @@
     {
       "id": "nasuno-chigusa",
       "name": "ナスノチグサ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -2418,8 +2466,11 @@
     {
       "id": "weib-cedar",
       "name": "ヴァイスシーダー",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 8}",
-      "foaledArray": ["1988", "05", "08"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "メンデス(FR)",
@@ -2598,8 +2649,11 @@
     {
       "id": "nasuno-taizan",
       "name": "ナスノタイザン",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 28}",
-      "foaledArray": ["1982", "03", "28"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディクタス(FR)",
@@ -2688,8 +2742,11 @@
     {
       "id": "nasuno-prince",
       "name": "ナスノプリンス",
-      "foaled": "{'year': 1981, 'month': 3, 'day': 28}",
-      "foaledArray": ["1981", "03", "28"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルム(GB)",
@@ -2748,8 +2805,11 @@
     {
       "id": "mayano-galaxy",
       "name": "マヤノギャラクシー",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 8}",
-      "foaledArray": ["1990", "03", "08"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トレボロ(US)",
@@ -2898,8 +2958,11 @@
     {
       "id": "nasuno-madoka",
       "name": "ナスノマドカ",
-      "foaled": "{'year': 1977, 'month': 4, 'day': 24}",
-      "foaledArray": ["1977", "04", "24"],
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイハード(GB)",

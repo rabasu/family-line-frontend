@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Queen Maud",
     "rootHorseId": "queen-maud",
-    "lastUpdated": "2025-09-15T19:27:50.459731Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "queen-maud",
       "name": "クイーンモード",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Akarad",
@@ -32,8 +33,11 @@
     {
       "id": "seeking-my-love",
       "name": "シーキングマイラブ",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 9}",
-      "foaledArray": ["2000", "05", "09"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
@@ -77,8 +81,11 @@
     {
       "id": "gorgeous-lunch",
       "name": "ゴージャスランチ",
-      "foaled": "{'year': 2015, 'month': 1, 'day': 29}",
-      "foaledArray": ["2015", "01", "29"],
+      "foaled": {
+        "year": 2015,
+        "month": 1,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
@@ -167,8 +174,11 @@
     {
       "id": "lucullan-feast",
       "name": "ルカランフィースト",
-      "foaled": "{'year': 2021, 'month': 4, 'day': 25}",
-      "foaledArray": ["2021", "04", "25"],
+      "foaled": {
+        "year": 2021,
+        "month": 4,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "イスラボニータ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sea Front",
     "rootHorseId": "sea-front",
-    "lastUpdated": "2025-09-17T09:48:11.988100Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sea-front",
       "name": "シーフロント",
-      "foaled": "{'year': 2011}",
-      "foaledArray": ["2011"],
+      "foaled": {
+        "year": 2011
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Le Havre",
@@ -32,8 +33,11 @@
     {
       "id": "serifos",
       "name": "セリフォス",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 7}",
-      "foaledArray": ["2019", "03", "07"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

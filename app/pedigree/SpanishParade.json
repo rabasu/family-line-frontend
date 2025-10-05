@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Spanish Parade",
     "rootHorseId": "spanish-parade",
-    "lastUpdated": "2025-09-24T18:21:10.201251Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "spanish-parade",
       "name": "Spanish Parade",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Roberto",
@@ -31,8 +32,11 @@
     {
       "id": "king-namura",
       "name": "キングナムラ",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 26}",
-      "foaledArray": ["1995", "02", "26"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",

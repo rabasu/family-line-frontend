@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Swimmingly",
     "rootHorseId": "swimmingly",
-    "lastUpdated": "2025-09-23T10:32:13.875415Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "swimmingly",
       "name": "Swimmingly",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nashwan",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-sullivan",
       "name": "エイシンサリヴァン",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 18}",
-      "foaledArray": ["2002", "02", "18"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "El Prado",

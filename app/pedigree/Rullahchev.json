@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rullahchev",
     "rootHorseId": "rullahchev",
-    "lastUpdated": "2025-09-27T13:22:48.979798Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rullahchev",
       "name": "ルーラーシエヴ",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Prince Chevalier",
@@ -32,8 +33,9 @@
     {
       "id": "rullahus",
       "name": "ルラウス",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フィリュース",
@@ -59,8 +61,11 @@
     {
       "id": "southern-fever",
       "name": "サザンフィーバー",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 24}",
-      "foaledArray": ["1982", "04", "24"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ベストブラッド",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Scalding",
     "rootHorseId": "scalding",
-    "lastUpdated": "2025-09-25T00:57:18.472629Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "scalding",
       "name": "スコールディング",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Raise a Native",
@@ -32,8 +33,11 @@
     {
       "id": "makiba-silent",
       "name": "マキバサイレント",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 9}",
-      "foaledArray": ["1992", "05", "09"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ベリファ(IRE)",

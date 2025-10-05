@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Song of Silence",
     "rootHorseId": "song-of-silence",
-    "lastUpdated": "2025-09-18T03:51:58.181434Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "song-of-silence",
       "name": "ソングオブサイレンス",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Unbridled(US)",
@@ -32,8 +33,11 @@
     {
       "id": "lament",
       "name": "ラメント",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 30}",
-      "foaledArray": ["2010", "03", "30"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アドマイヤムーン",
@@ -61,8 +65,11 @@
     {
       "id": "acorn",
       "name": "エイコーン",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 25}",
-      "foaledArray": ["2015", "04", "25"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フリオーソ",

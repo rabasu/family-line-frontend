@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sunny Morning",
     "rootHorseId": "sunny-morning",
-    "lastUpdated": "2025-09-24T23:53:24.324526Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sunny-morning",
       "name": "サニーモーニング",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Law Society",
@@ -32,8 +33,11 @@
     {
       "id": "shirokita-cross",
       "name": "シロキタクロス",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 13}",
-      "foaledArray": ["1993", "03", "13"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タマモクロス",

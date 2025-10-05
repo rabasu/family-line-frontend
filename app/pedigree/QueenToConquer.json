@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Queen to Conquer",
     "rootHorseId": "queen-to-conquer",
-    "lastUpdated": "2025-09-23T22:02:32.712913Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "queen-to-conquer",
       "name": "Queen to Conquer",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "King's Bishop",
@@ -31,8 +32,11 @@
     {
       "id": "green-blitz",
       "name": "グリーンブリッツ",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 28}",
-      "foaledArray": ["1994", "04", "28"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",

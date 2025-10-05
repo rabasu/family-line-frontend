@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Scarlet Ink",
     "rootHorseId": "scarlet-ink",
-    "lastUpdated": "2025-09-24T22:55:34.390291Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "scarlet-ink",
       "name": "スカーレットインク",
-      "foaled": "1971",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Crimson Satan",
@@ -18,19 +19,22 @@
       "color": "栗毛",
       "breeder": "米",
       "netkeibaId": "000a000768",
-      "source": "tsx_conversion",
-      "pedigreeName": "Scarlet Ink",
       "raceStats": {
         "total": {},
         "divisions": []
       },
+      "source": "tsx_conversion",
+      "pedigreeName": "Scarlet Ink",
       "comments": "コメント:1987年3月8日"
     },
     {
       "id": "scarlet-rose",
       "name": "スカーレットローズ",
-      "foaled": "1987-03-08",
-      "foaledArray": ["1987", "03", "08"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -38,8 +42,6 @@
       "color": "栗毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "1987105592",
-      "source": "tsx_conversion",
-      "englishName": "Scarlet Rose",
       "raceStats": {
         "total": {
           "runs": 14,
@@ -47,20 +49,25 @@
         },
         "divisions": []
       },
+      "source": "tsx_conversion",
+      "englishName": "Scarlet Rose",
       "prizeMoney": {
         "total": "1,960万円",
         "central": "1,960万円",
         "local": "0万円"
       },
-      "owner": "吉田照哉",
+      "damId": "scarlet-ink",
       "trainer": "松山康久 (美浦)",
-      "damId": "scarlet-ink"
+      "owner": "吉田照哉"
     },
     {
       "id": "scarlet-lady",
       "name": "スカーレットレディ",
-      "foaled": "1995-05-10",
-      "foaledArray": ["1995", "05", "10"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -68,8 +75,6 @@
       "color": "黒鹿毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "1995107900",
-      "source": "tsx_conversion",
-      "englishName": "Scarlet Lady",
       "raceStats": {
         "total": {
           "runs": 16,
@@ -77,40 +82,38 @@
         },
         "divisions": []
       },
+      "source": "tsx_conversion",
+      "englishName": "Scarlet Lady",
       "prizeMoney": {
         "total": "1,567万円",
         "central": "1,567万円",
         "local": "0万円"
       },
-      "owner": "小金井惠雄",
+      "damId": "scarlet-rose",
       "trainer": "松山康久 (美浦)",
-      "damId": "scarlet-rose"
+      "owner": "小金井惠雄"
     },
     {
       "id": "vermilion",
       "name": "ヴァーミリアン",
-      "foaled": "2002-04-10",
-      "foaledArray": ["2002", "04", "10"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エルコンドルパサー",
       "dam": "スカーレットレディ",
-      "color": "黒鹿毛",
-      "breeder": "ノーザンファーム（早来町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2002100877",
-      "source": "tsx_conversion",
-      "englishName": "Vermilion",
       "raceStats": {
         "total": {
           "runs": 34,
           "wins": 15
         },
         "divisions": []
-      },
-      "prizeMoney": {
-        "total": "113,285万円",
-        "central": "38,685万円",
-        "local": "74,600万円"
       },
       "raceResults": [
         {
@@ -590,15 +593,25 @@
           "favorite": "2"
         }
       ],
-      "owner": "サンデーレーシング",
+      "source": "tsx_conversion",
+      "englishName": "Vermilion",
+      "prizeMoney": {
+        "total": "113,285万円",
+        "central": "38,685万円",
+        "local": "74,600万円"
+      },
+      "damId": "scarlet-lady",
       "trainer": "石坂正 (栗東)",
-      "damId": "scarlet-lady"
+      "owner": "サンデーレーシング"
     },
     {
       "id": "drop-of-light",
       "name": "ドロップオブライト",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 14}",
-      "foaledArray": ["2019", "03", "14"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トーセンラー",
@@ -732,14 +745,17 @@
     {
       "id": "precious-drop",
       "name": "プレシャスドロップ",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 26}",
-      "foaledArray": ["2003", "03", "26"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
       "dam": "ザラストドロップ",
-      "color": "栗毛",
-      "breeder": "岡田スタッド（静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2003104556",
       "raceStats": {
         "total": {
@@ -761,14 +777,17 @@
     {
       "id": "the-last-drop",
       "name": "ザラストドロップ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 10}",
-      "foaledArray": ["1995", "05", "10"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヤマニンスキー",
       "dam": "カーペディエム",
-      "color": "栗毛",
-      "breeder": "岡田スタッド（静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1995100206",
       "raceStats": {
         "total": {
@@ -790,14 +809,17 @@
     {
       "id": "kape-diem",
       "name": "カーペディエム",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 7}",
-      "foaledArray": ["1989", "04", "07"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
       "dam": "スカーレットブルー",
-      "color": "栗毛",
-      "breeder": "岡田スタッド（静内町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1989106035",
       "raceStats": {
         "total": {
@@ -817,8 +839,11 @@
     {
       "id": "scarlet-blue",
       "name": "スカーレットブルー",
-      "foaled": "{'year': 1982, 'month': 5, 'day': 1}",
-      "foaledArray": ["1982", "05", "01"],
+      "foaled": {
+        "year": 1982,
+        "month": 5,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -844,14 +869,17 @@
     {
       "id": "vermicelles",
       "name": "ヴェルミセル",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 4}",
-      "foaledArray": ["2020", "04", "04"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゴールドシップ",
       "dam": "マルーンドロップ",
-      "color": "栗毛",
-      "breeder": "岡田スタッド（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2020103945",
       "raceStats": {
         "total": {
@@ -919,14 +947,17 @@
     {
       "id": "maroon-drop",
       "name": "マルーンドロップ",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 31}",
-      "foaledArray": ["2011", "03", "31"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コンデュイット(IRE)",
       "dam": "ザラストドロップ",
-      "color": "栗毛",
-      "breeder": "岡田スタッド（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2011101749",
       "raceStats": {
         "total": {
@@ -948,8 +979,11 @@
     {
       "id": "lilac",
       "name": "ライラック",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 28}",
-      "foaledArray": ["2019", "04", "28"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オルフェーヴル",
@@ -1293,8 +1327,11 @@
     {
       "id": "viva-bouquet",
       "name": "ヴィーヴァブーケ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 30}",
-      "foaledArray": ["2006", "03", "30"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -1322,8 +1359,11 @@
     {
       "id": "blue-ridge-river",
       "name": "ブルーリッジリバー",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 21}",
-      "foaledArray": ["1999", "04", "21"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -1532,8 +1572,11 @@
     {
       "id": "shonan-manuela",
       "name": "ショウナンマヌエラ",
-      "foaled": "{'year': 2021, 'month': 1, 'day': 30}",
-      "foaledArray": ["2021", "01", "30"],
+      "foaled": {
+        "year": 2021,
+        "month": 1,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジャスタウェイ",
@@ -1637,8 +1680,11 @@
     {
       "id": "diagonal-cloth",
       "name": "ダイアゴナルクロス",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 8}",
-      "foaledArray": ["2010", "04", "08"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -1666,8 +1712,11 @@
     {
       "id": "special-ribbon",
       "name": "スペシャルリボン",
-      "foaled": "{'year': 2003, 'month': 5, 'day': 19}",
-      "foaledArray": ["2003", "05", "19"],
+      "foaled": {
+        "year": 2003,
+        "month": 5,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -1693,8 +1742,11 @@
     {
       "id": "scarlet-ribbon",
       "name": "スカーレットリボン",
-      "foaled": "{'year': 1985, 'month': 6, 'day': 4}",
-      "foaledArray": ["1985", "06", "04"],
+      "foaled": {
+        "year": 1985,
+        "month": 6,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -1873,8 +1925,11 @@
     {
       "id": "t-o-sirius",
       "name": "テーオーシリウス",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 3}",
-      "foaledArray": ["2018", "04", "03"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャスタウェイ",
@@ -2008,8 +2063,11 @@
     {
       "id": "hello-scarlet",
       "name": "ハロースカーレット",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 6}",
-      "foaledArray": ["2006", "03", "06"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -2037,8 +2095,11 @@
     {
       "id": "hello-sunrise",
       "name": "ハローサンライズ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 7}",
-      "foaledArray": ["1998", "03", "07"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -2097,8 +2158,11 @@
     {
       "id": "taisei-avenir",
       "name": "タイセイアベニール",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 20}",
-      "foaledArray": ["2015", "04", "20"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ベーカバド(FR)",
@@ -2352,8 +2416,11 @@
     {
       "id": "hallo-dream",
       "name": "ハロードリーム",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 16}",
-      "foaledArray": ["2004", "03", "16"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -2379,8 +2446,11 @@
     {
       "id": "ca-va",
       "name": "サヴァ",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 10}",
-      "foaledArray": ["2018", "04", "10"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アイルハヴアナザー(US)",
@@ -2559,8 +2629,11 @@
     {
       "id": "daiwa-burgundy",
       "name": "ダイワバーガンディ",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 13}",
-      "foaledArray": ["2006", "02", "13"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -2634,8 +2707,11 @@
     {
       "id": "daiwa-rouge",
       "name": "ダイワルージュ",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 4}",
-      "foaledArray": ["1998", "05", "04"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -2799,8 +2875,11 @@
     {
       "id": "scarlet-bouquet",
       "name": "スカーレットブーケ",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 11}",
-      "foaledArray": ["1988", "04", "11"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -3069,8 +3148,11 @@
     {
       "id": "black-hole",
       "name": "ブラックホール",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 16}",
-      "foaledArray": ["2017", "02", "16"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゴールドシップ",
@@ -3204,8 +3286,11 @@
     {
       "id": "danon-liberty",
       "name": "ダノンリバティ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 29}",
-      "foaledArray": ["2012", "02", "29"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -3474,8 +3559,11 @@
     {
       "id": "scarlet-bell",
       "name": "スカーレットベル",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 6}",
-      "foaledArray": ["2001", "04", "06"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エリシオ(FR)",
@@ -3503,13 +3591,15 @@
     {
       "id": "brave-smash",
       "name": "ブレイブスマッシュ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 22}",
-      "foaledArray": ["2013", "03", "22"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トーセンファントム",
       "dam": "トーセンスマッシュ",
-      "dam_netkeiba_id": "2004101464",
       "color": "鹿毛",
       "breeder": "エスティファーム（日高町）",
       "netkeibaId": "2013100096",
@@ -3874,18 +3964,21 @@
         "central": "7,496万円",
         "local": "0万円"
       },
-      "damId": "tosen-smash"
+      "damId": "tosen-smash",
+      "dam_netkeiba_id": "2004101464"
     },
     {
       "id": "tosen-smash",
       "name": "トーセンスマッシュ",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 29}",
-      "foaledArray": ["2004", "02", "29"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",
       "dam": "アナスミラビリス",
-      "dam_netkeiba_id": "1991103026",
       "color": "栗毛",
       "breeder": "ヒサイファーム（三石町）",
       "netkeibaId": "2004101464",
@@ -3904,18 +3997,21 @@
         "central": "500万円",
         "local": "0万円"
       },
-      "damId": "annus-mirabilis-1991"
+      "damId": "annus-mirabilis-1991",
+      "dam_netkeiba_id": "1991103026"
     },
     {
       "id": "annus-mirabilis-1991",
       "name": "アナスミラビリス",
-      "foaled": "{'year': 1991, 'month': 6, 'day': 9}",
-      "foaledArray": ["1991", "06", "09"],
+      "foaled": {
+        "year": 1991,
+        "month": 6,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",
       "dam": "スカーレットブルー",
-      "dam_netkeiba_id": "1982101950",
       "color": "鹿毛",
       "breeder": "岡田スタッド（静内町）",
       "netkeibaId": "1991103026",
@@ -3934,13 +4030,17 @@
         "central": "1,025万円",
         "local": "0万円"
       },
-      "damId": "scarlet-blue"
+      "damId": "scarlet-blue",
+      "dam_netkeiba_id": "1982101950"
     },
     {
       "id": "daiwa-falcon-2007",
       "name": "ダイワファルコン",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 25}",
-      "foaledArray": ["2007", "03", "25"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",
@@ -4315,8 +4415,11 @@
     {
       "id": "solitary-king",
       "name": "ソリタリーキング",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 11}",
-      "foaledArray": ["2007", "04", "11"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -4795,8 +4898,11 @@
     {
       "id": "kings-emblem",
       "name": "キングスエンブレム",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 12}",
-      "foaledArray": ["2005", "02", "12"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ウォーエンブレム(US)",
@@ -5020,8 +5126,11 @@
     {
       "id": "quark-star",
       "name": "クォークスター",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 18}",
-      "foaledArray": ["2007", "05", "18"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -5110,8 +5219,11 @@
     {
       "id": "festa-delle-donna",
       "name": "フェスタデルドンナ",
-      "foaled": "{'year': 1994, 'month': 6, 'day': 16}",
-      "foaledArray": ["1994", "06", "16"],
+      "foaled": {
+        "year": 1994,
+        "month": 6,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヘクタープロテクター(US)",
@@ -5139,8 +5251,11 @@
     {
       "id": "daiwa-scarlet",
       "name": "ダイワスカーレット",
-      "foaled": "{'year': 2004, 'month': 5, 'day': 13}",
-      "foaledArray": ["2004", "05", "13"],
+      "foaled": {
+        "year": 2004,
+        "month": 5,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -5319,8 +5434,11 @@
     {
       "id": "daiwa-major",
       "name": "ダイワメジャー",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 8}",
-      "foaledArray": ["2001", "04", "08"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -5724,8 +5842,11 @@
     {
       "id": "saqalat",
       "name": "サカラート",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 21}",
-      "foaledArray": ["2000", "04", "21"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
@@ -6249,8 +6370,11 @@
     {
       "id": "tayasu-intime",
       "name": "タヤスアンティーム",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 25}",
-      "foaledArray": ["1995", "02", "25"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -6369,8 +6493,11 @@
     {
       "id": "scarlet-mail",
       "name": "スカーレットメール",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 13}",
-      "foaledArray": ["1994", "03", "13"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",

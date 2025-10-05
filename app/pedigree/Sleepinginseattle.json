@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sleepinginseattle",
     "rootHorseId": "sleepinginseattle",
-    "lastUpdated": "2025-09-17T11:19:12.889064Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sleepinginseattle",
       "name": "スリーピングインシアトル",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "sound-barrier-2007",
       "name": "サウンドバリアー",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 3}",
-      "foaledArray": ["2007", "04", "03"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスデジタル",
@@ -107,8 +111,11 @@
     {
       "id": "sound-chiara",
       "name": "サウンドキアラ",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 31}",
-      "foaledArray": ["2015", "03", "31"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sarela",
     "rootHorseId": "sarela",
-    "lastUpdated": "2025-09-21T03:19:48.569560Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sarela",
       "name": "サレラ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "nishino-komachi",
       "name": "ニシノコマチ",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 26}",
-      "foaledArray": ["1996", "04", "26"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -61,8 +65,11 @@
     {
       "id": "shigeru-juyaku",
       "name": "シゲルジュウヤク",
-      "foaled": "{'year': 2008, 'month': 1, 'day': 13}",
-      "foaledArray": ["2008", "01", "13"],
+      "foaled": {
+        "year": 2008,
+        "month": 1,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "グラスワンダー",

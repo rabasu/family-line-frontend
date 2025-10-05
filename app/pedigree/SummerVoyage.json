@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Summer Voyage",
     "rootHorseId": "summer-voyage",
-    "lastUpdated": "2025-09-18T16:48:47.264543Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "summer-voyage",
       "name": "サマーヴォヤージュ",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Summer Squall(US)",
@@ -32,8 +33,11 @@
     {
       "id": "setouchi-solar",
       "name": "セトウチソーラー",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 14}",
-      "foaledArray": ["2007", "04", "14"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -61,8 +65,11 @@
     {
       "id": "emeral-fight",
       "name": "エメラルファイト",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 9}",
-      "foaledArray": ["2016", "04", "09"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クロフネ",

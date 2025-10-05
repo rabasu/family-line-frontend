@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Subtle Change",
     "rootHorseId": "subtle-change",
-    "lastUpdated": "2025-09-24T03:08:18.863679Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "subtle-change",
       "name": "サトルチェンジ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Law Society",
@@ -32,8 +33,11 @@
     {
       "id": "manhattan-fizz",
       "name": "マンハッタンフィズ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 15}",
-      "foaledArray": ["2001", "03", "15"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "columbus-circle",
       "name": "コロンバスサークル",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 4}",
-      "foaledArray": ["2006", "02", "04"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ホワイトマズル(GB)",
@@ -256,8 +263,11 @@
     {
       "id": "red-genova",
       "name": "レッドジェノヴァ",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 22}",
-      "foaledArray": ["2014", "04", "22"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -331,13 +341,15 @@
     {
       "id": "derby-fizz",
       "name": "ダービーフィズ",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 24}",
-      "foaledArray": ["2010", "02", "24"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",
       "dam": "マンハッタンフィズ",
-      "dam_netkeiba_id": "2001103097",
       "color": "栗毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2010103940",
@@ -657,13 +669,17 @@
         "central": "1億5,909万円",
         "local": "0万円"
       },
-      "damId": "manhattan-fizz"
+      "damId": "manhattan-fizz",
+      "dam_netkeiba_id": "2001103097"
     },
     {
       "id": "apricot-fizz",
       "name": "アプリコットフィズ",
-      "foaled": "{'year': 2007, 'month': 1, 'day': 26}",
-      "foaledArray": ["2007", "01", "26"],
+      "foaled": {
+        "year": 2007,
+        "month": 1,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",
@@ -977,8 +993,11 @@
     {
       "id": "cresco-grand",
       "name": "クレスコグランド",
-      "foaled": "{'year': 2008, 'month': 1, 'day': 31}",
-      "foaledArray": ["2008", "01", "31"],
+      "foaled": {
+        "year": 2008,
+        "month": 1,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",
@@ -1082,8 +1101,11 @@
     {
       "id": "air-smap",
       "name": "エアスマップ",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 4}",
-      "foaledArray": ["1995", "04", "04"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -1292,8 +1314,11 @@
     {
       "id": "manhattan-cafe",
       "name": "マンハッタンカフェ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 5}",
-      "foaledArray": ["1998", "03", "05"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

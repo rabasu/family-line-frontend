@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "レベツカゼサード",
     "rootHorseId": "rebetsukazesaado",
-    "lastUpdated": "2025-09-27T04:34:20.760651Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rebetsukazesaado",
       "name": "レベツカゼサード",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Migoli",
@@ -31,8 +32,9 @@
     {
       "id": "kawachi-hime",
       "name": "カワチヒメ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラヴァンダン",
@@ -89,8 +91,9 @@
     {
       "id": "kawachi-star",
       "name": "カワチスター",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルドリマー(US)",
@@ -116,8 +119,11 @@
     {
       "id": "kawachi-green",
       "name": "カワチグリーン",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 10}",
-      "foaledArray": ["1984", "05", "10"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "グリーングラス",
@@ -143,8 +149,11 @@
     {
       "id": "the-scoop",
       "name": "ザスクープ",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 22}",
-      "foaledArray": ["1991", "05", "22"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 22
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
@@ -229,6 +238,436 @@
         "local": "0万円"
       },
       "damId": "kawachi-green"
+    },
+    {
+      "id": "white-fontaine",
+      "name": "ホワイトフォンテン",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ノーアリバイ(FR)",
+      "dam": "レベツカの弐",
+      "color": "芦毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a000bcd",
+      "raceStats": {
+        "total": {
+          "runs": 50,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 1,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "除",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 11,
+            "day": 28
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "13",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 11,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "9",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 7,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチン共和国杯(OP)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 4,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 3,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 1,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "7",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 12,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "13",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "農林省賞典目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "9",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 8,
+            "day": 24
+          },
+          "racecourse": "新潟",
+          "race": "農林省賞典新潟記念(OP)",
+          "displayRace": "新潟記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 29
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチン共和国杯(OP)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "11",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "福島",
+          "race": "福島記念(OP)",
+          "displayRace": "福島記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "10",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "8",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 9,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "24",
+          "favorite": "15"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "White Fontaine",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "rebetsuka-ni",
+      "name": "レベツカの弐",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "レベツカゼサード",
+      "color": "芦毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a0039f5",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rebetsukazesaado"
     }
   ]
 }

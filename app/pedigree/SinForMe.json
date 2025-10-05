@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sin for Me",
     "rootHorseId": "sin-for-me",
-    "lastUpdated": "2025-09-24T12:41:54.870742Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sin-for-me",
       "name": "シンフォーミー",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Time for a Change",
@@ -32,8 +33,11 @@
     {
       "id": "water-polaris",
       "name": "ウォーターポラリス",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 12}",
-      "foaledArray": ["1997", "03", "12"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "El Prado",

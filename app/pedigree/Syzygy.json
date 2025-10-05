@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Syzygy",
     "rootHorseId": "syzygy",
-    "lastUpdated": "2025-09-26T09:08:37.301781Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "syzygy",
       "name": "Syzygy",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "First Landing",
@@ -31,8 +32,11 @@
     {
       "id": "southjet",
       "name": "サウスジェット",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 9}",
-      "foaledArray": ["1983", "03", "09"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Northjet(IRE)",

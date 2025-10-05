@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Seattle Dawn",
     "rootHorseId": "seattle-dawn",
-    "lastUpdated": "2025-09-24T22:22:53.416114Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seattle-dawn",
       "name": "Seattle Dawn",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grey Dawn",
@@ -31,8 +32,11 @@
     {
       "id": "premium-thunder",
       "name": "プレミアムサンダー",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 13}",
-      "foaledArray": ["1994", "03", "13"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Easy Goer",

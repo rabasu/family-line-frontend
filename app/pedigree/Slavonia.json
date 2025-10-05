@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Slavonia",
     "rootHorseId": "slavonia",
-    "lastUpdated": "2025-09-17T13:17:21.972314Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "slavonia",
       "name": "スラヴォニア",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",
@@ -32,8 +33,9 @@
     {
       "id": "slavonska",
       "name": "スラボンスカ",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Diesis",
@@ -59,8 +61,11 @@
     {
       "id": "mozu-furimukanaide",
       "name": "モズフリムカナイデ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 8}",
-      "foaledArray": ["2012", "02", "08"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",
@@ -86,8 +91,11 @@
     {
       "id": "mozu-nagareboshi",
       "name": "モズナガレボシ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 4}",
-      "foaledArray": ["2017", "02", "04"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "グランプリボス",

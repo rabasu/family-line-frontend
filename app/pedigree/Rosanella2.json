@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rosanella 2",
     "rootHorseId": "rosanella-2",
-    "lastUpdated": "2025-09-24T22:55:27.160249Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rosanella-2",
       "name": "ロザネラ",
-      "foaled": "{'year': 1953}",
-      "foaledArray": ["1953"],
+      "foaled": {
+        "year": 1953
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alizier",
@@ -32,8 +33,9 @@
     {
       "id": "watsonia",
       "name": "ワツオニア",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wild Risk",
@@ -59,8 +61,9 @@
     {
       "id": "mercury-record",
       "name": "マークリレコード",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルレコード(US)",
@@ -86,8 +89,11 @@
     {
       "id": "queen-tebie",
       "name": "クインテビエ",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 14}",
-      "foaledArray": ["1984", "05", "14"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リィフォー(GB)",
@@ -115,8 +121,11 @@
     {
       "id": "dragon-lily",
       "name": "ドラゴンリリー",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 30}",
-      "foaledArray": ["1992", "03", "30"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イブンベイ(GB)",
@@ -175,8 +184,11 @@
     {
       "id": "big-grass",
       "name": "ビッググラス",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 24}",
-      "foaledArray": ["2001", "04", "24"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エルコンドルパサー",
@@ -415,8 +427,11 @@
     {
       "id": "mayano-poseidon",
       "name": "マヤノポセイドン",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 31}",
-      "foaledArray": ["1990", "03", "31"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タマモクロス",
@@ -606,6 +621,97 @@
         "local": "0万円"
       },
       "damId": "queen-tebie"
+    },
+    {
+      "id": "burke-sport",
+      "name": "バークスポート",
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 1
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ファーストドーン",
+      "dam": "ワツオニア",
+      "color": "黒鹿毛",
+      "breeder": "西山牧場（鵡川町）",
+      "netkeibaId": "1979100345",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "12",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 6,
+            "day": 27
+          },
+          "racecourse": "福島",
+          "race": "ラジオたんぱ賞(OP)",
+          "displayRace": "ラジオたんぱ賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Burke Sport",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "watsonia"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Running Bobcats",
     "rootHorseId": "running-bobcats",
-    "lastUpdated": "2025-09-20T16:26:23.106436Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "running-bobcats",
       "name": "ランニングボブキャッツ",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Running Stag",
@@ -32,8 +33,11 @@
     {
       "id": "rapier-wit",
       "name": "レピアーウィット",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 15}",
-      "foaledArray": ["2015", "04", "15"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘニーヒューズ(US)",
@@ -167,8 +171,11 @@
     {
       "id": "asia-express",
       "name": "アジアエクスプレス",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 9}",
-      "foaledArray": ["2011", "02", "09"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘニーヒューズ(US)",

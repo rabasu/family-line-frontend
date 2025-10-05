@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sentimental Woman",
     "rootHorseId": "sentimental-woman",
-    "lastUpdated": "2025-09-27T11:32:58.685779Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sentimental-woman",
       "name": "センテイメンタルウーマン",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Prince John",
@@ -32,8 +33,11 @@
     {
       "id": "meiwa-grace",
       "name": "メイワグレース",
-      "foaled": "{'year': 1979, 'month': 3, 'day': 16}",
-      "foaledArray": ["1979", "03", "16"],
+      "foaled": {
+        "year": 1979,
+        "month": 3,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シルバーシャーク",
@@ -59,8 +63,11 @@
     {
       "id": "peerless-crown",
       "name": "ピアレスクラウン",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 3}",
-      "foaledArray": ["1989", "04", "03"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カツラギエース",
@@ -179,8 +186,11 @@
     {
       "id": "big-passer",
       "name": "ビックパッサー",
-      "foaled": "{'year': 1982, 'month': 6, 'day': 7}",
-      "foaledArray": ["1982", "06", "07"],
+      "foaled": {
+        "year": 1982,
+        "month": 6,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "メイワパッサー",
@@ -222,8 +232,11 @@
     {
       "id": "rosy-daughter",
       "name": "ローズイドーター",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 4}",
-      "foaledArray": ["1978", "05", "04"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シルバーシャーク",
@@ -249,8 +262,9 @@
     {
       "id": "meiwa-rose",
       "name": "メイワローズ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァービート(GB)",

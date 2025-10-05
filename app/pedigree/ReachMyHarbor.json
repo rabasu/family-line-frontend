@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Reach My Harbor",
     "rootHorseId": "reach-my-harbor",
-    "lastUpdated": "2025-09-21T18:10:29.345723Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "reach-my-harbor",
       "name": "リーチマイハーバー",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 23}",
-      "foaledArray": ["1999", "03", "23"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボストンハーバー(US)",
@@ -32,8 +35,11 @@
     {
       "id": "caliburn",
       "name": "カリバーン",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 17}",
-      "foaledArray": ["2007", "04", "17"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 17
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "デュランダル",

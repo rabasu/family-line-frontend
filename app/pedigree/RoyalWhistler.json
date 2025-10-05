@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Royal Whistler",
     "rootHorseId": "royal-whistler",
-    "lastUpdated": "2025-09-25T23:33:34.017519Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "royal-whistler",
       "name": "ロイヤルホイツスラー",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Whistler",
@@ -32,8 +33,9 @@
     {
       "id": "fainnissei",
       "name": "ファインニッセイ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラナーク",
@@ -201,19 +203,22 @@
         }
       ],
       "source": "python_scraping",
-      "pedigreeName": "ファインニツセイ",
       "prizeMoney": {
         "total": "1,400万円",
         "central": "1,400万円",
         "local": "0万円"
       },
-      "damId": "royal-whistler"
+      "damId": "royal-whistler",
+      "pedigreeName": "ファインニツセイ"
     },
     {
       "id": "meisho-cobra",
       "name": "メイショウコブラ",
-      "foaled": "{'year': 1986, 'month': 3, 'day': 12}",
-      "foaledArray": ["1986", "03", "12"],
+      "foaled": {
+        "year": 1986,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラッキーソブリン",

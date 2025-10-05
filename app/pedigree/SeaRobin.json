@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sea Robin",
     "rootHorseId": "sea-robin",
-    "lastUpdated": "2025-09-25T23:33:02.291613Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sea-robin",
       "name": "シーロビン",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シーホーク",
@@ -32,8 +33,11 @@
     {
       "id": "hurricane-rose",
       "name": "ハリケンローズ",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 28}",
-      "foaledArray": ["1987", "04", "28"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザリー",

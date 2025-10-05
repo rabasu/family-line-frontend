@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Seductress of Peru",
     "rootHorseId": "seductress-of-peru",
-    "lastUpdated": "2025-09-27T11:33:27.876018Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seductress-of-peru",
       "name": "セダクトレスオブペルー",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Arctic Prince",
@@ -32,8 +33,9 @@
     {
       "id": "bold-peru",
       "name": "ボールドペルー",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボールドアンドエイブル(US)",
@@ -59,8 +61,11 @@
     {
       "id": "june-bride-1983",
       "name": "ジューンブライド",
-      "foaled": "{'year': 1983, 'month': 2, 'day': 28}",
-      "foaledArray": ["1983", "02", "28"],
+      "foaled": {
+        "year": 1983,
+        "month": 2,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノースオブザロー(US)",

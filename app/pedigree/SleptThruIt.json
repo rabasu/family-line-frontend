@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Slept Thru It",
     "rootHorseId": "slept-thru-it",
-    "lastUpdated": "2025-09-24T14:14:25.310485Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "slept-thru-it",
       "name": "Slept Thru It",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sunny's Halo(CAN)",
@@ -31,8 +32,11 @@
     {
       "id": "tokio-wild",
       "name": "トキオワイルド",
-      "foaled": "{'year': 1994, 'month': 1, 'day': 19}",
-      "foaledArray": ["1994", "01", "19"],
+      "foaled": {
+        "year": 1994,
+        "month": 1,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",

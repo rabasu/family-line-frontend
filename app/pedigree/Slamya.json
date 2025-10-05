@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Slamya",
     "rootHorseId": "slamya",
-    "lastUpdated": "2025-09-24T21:24:13.414038Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "slamya",
       "name": "Slamya",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-paris",
       "name": "エイシンパリス",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 30}",
-      "foaledArray": ["1995", "04", "30"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Irish River(FR)",

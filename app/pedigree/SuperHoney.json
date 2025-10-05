@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Super Honey",
     "rootHorseId": "super-honey",
-    "lastUpdated": "2025-09-25T05:19:52.317264Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "super-honey",
       "name": "スーパーハニイ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "hills-of-heather",
       "name": "ヒルズオブヘザー",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cure the Blues",
@@ -59,8 +61,11 @@
     {
       "id": "taiki-duke",
       "name": "タイキデューク",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 15}",
-      "foaledArray": ["1991", "03", "15"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスオブライフ(US)",

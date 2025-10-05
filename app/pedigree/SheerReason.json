@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sheer Reason",
     "rootHorseId": "sheer-reason",
-    "lastUpdated": "2025-09-17T05:01:08.537531Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sheer-reason",
       "name": "シアーリーズン",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "annaata",
       "name": "アンナータ",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 9}",
-      "foaledArray": ["2010", "02", "09"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アドマイヤムーン",
@@ -60,8 +64,11 @@
     {
       "id": "new-monument",
       "name": "ニューモニュメント",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 6}",
-      "foaledArray": ["2016", "04", "06"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘニーヒューズ(US)",

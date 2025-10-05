@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Querida",
     "rootHorseId": "querida",
-    "lastUpdated": "2025-09-24T21:24:30.304732Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "querida",
       "name": "Querida",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Habitat",
@@ -31,8 +32,11 @@
     {
       "id": "mother-mary",
       "name": "マザーメリー",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 19}",
-      "foaledArray": ["1993", "03", "19"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",

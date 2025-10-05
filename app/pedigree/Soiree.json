@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Soiree",
     "rootHorseId": "soiree",
-    "lastUpdated": "2025-09-25T16:27:35.349536Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "soiree",
       "name": "ソワレ",
-      "foaled": "{'year': 1953}",
-      "foaledArray": ["1953"],
+      "foaled": {
+        "year": 1953
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Chanteur",
@@ -32,8 +33,9 @@
     {
       "id": "court-ball",
       "name": "コートボール",
-      "foaled": "{'year': 1959}",
-      "foaledArray": ["1959"],
+      "foaled": {
+        "year": 1959
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Supreme Court",
@@ -59,8 +61,9 @@
     {
       "id": "dash-way",
       "name": "ダツシユウエー",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソロナウェー",
@@ -147,8 +150,9 @@
     {
       "id": "dash-jo-o",
       "name": "ダッシュジヨオー",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァービート(GB)",
@@ -174,8 +178,11 @@
     {
       "id": "sea-ball",
       "name": "シーボール",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 29}",
-      "foaledArray": ["1983", "03", "29"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シーホーク",
@@ -201,8 +208,11 @@
     {
       "id": "dash-fudo",
       "name": "ダッシュフドー",
-      "foaled": "{'year': 1989, 'month': 5, 'day': 26}",
-      "foaledArray": ["1989", "05", "26"],
+      "foaled": {
+        "year": 1989,
+        "month": 5,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カウンテスアップ",

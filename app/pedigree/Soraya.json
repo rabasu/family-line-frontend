@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Soraya",
     "rootHorseId": "soraya",
-    "lastUpdated": "2025-09-25T22:31:00.657363Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "soraya",
       "name": "ソラヤ",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Djebe",
@@ -32,8 +33,9 @@
     {
       "id": "shin-soraya",
       "name": "シンソラヤ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -59,8 +61,11 @@
     {
       "id": "safari-olive",
       "name": "サファリオリーブ",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 17}",
-      "foaledArray": ["1984", "04", "17"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リアルム(GB)",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Sakura Blossom",
     "rootHorseId": "sakura-blossom",
-    "lastUpdated": "2025-09-22T21:57:08.680740Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sakura-blossom",
       "name": "サクラブラッサム",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 30}",
-      "foaledArray": ["1996", "04", "30"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +35,11 @@
     {
       "id": "sakura-zeus",
       "name": "サクラゼウス",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 9}",
-      "foaledArray": ["2004", "03", "09"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

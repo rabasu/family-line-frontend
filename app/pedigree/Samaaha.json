@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Samaaha",
     "rootHorseId": "samaaha",
-    "lastUpdated": "2025-09-18T17:15:45.926634Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "samaaha",
       "name": "サマーハ",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",
@@ -32,14 +33,17 @@
     {
       "id": "bidaaya",
       "name": "ビダーヤ",
-      "foaled": "{'year': 2021, 'month': 3, 'day': 3}",
-      "foaledArray": ["2021", "03", "03"],
+      "foaled": {
+        "year": 2021,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルスティール",
       "dam": "サマーハ",
-      "color": "鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2021105537",
       "raceStats": {
         "total": {
@@ -77,8 +81,11 @@
     {
       "id": "sciacchetra",
       "name": "シャケトラ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 17}",
-      "foaledArray": ["2013", "03", "17"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

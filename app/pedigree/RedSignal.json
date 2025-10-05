@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Red Signal",
     "rootHorseId": "red-signal",
-    "lastUpdated": "2025-09-25T18:01:43.903979Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "red-signal",
       "name": "レッドシグナル",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Roan Rocket",
@@ -32,8 +33,11 @@
     {
       "id": "george-monarch",
       "name": "ジョージモナーク",
-      "foaled": "{'year': 1985, 'month': 5, 'day': 14}",
-      "foaledArray": ["1985", "05", "14"],
+      "foaled": {
+        "year": 1985,
+        "month": 5,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rest of Love",
     "rootHorseId": "rest-of-love",
-    "lastUpdated": "2025-09-21T23:37:24.154386Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rest-of-love",
       "name": "レストオブラブ",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "remain-love",
       "name": "リメインラブ",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 23}",
-      "foaledArray": ["1995", "02", "23"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nabeel Dancer",
@@ -61,8 +65,11 @@
     {
       "id": "sangre-azul",
       "name": "サングレアズール",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 24}",
-      "foaledArray": ["2007", "04", "24"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",

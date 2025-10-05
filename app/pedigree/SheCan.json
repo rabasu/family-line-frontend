@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "She Can",
     "rootHorseId": "she-can",
-    "lastUpdated": "2025-09-22T15:55:21.716131Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "she-can",
       "name": "シーキャン",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cannonade",
@@ -32,8 +33,11 @@
     {
       "id": "you-can-fly",
       "name": "ユーキャンフライ",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 7}",
-      "foaledArray": ["1992", "03", "07"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
@@ -61,8 +65,11 @@
     {
       "id": "night-flier",
       "name": "ナイトフライヤー",
-      "foaled": "{'year': 1999, 'month': 5, 'day': 12}",
-      "foaledArray": ["1999", "05", "12"],
+      "foaled": {
+        "year": 1999,
+        "month": 5,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

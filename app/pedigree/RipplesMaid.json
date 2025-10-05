@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ripples Maid",
     "rootHorseId": "ripples-maid",
-    "lastUpdated": "2025-09-18T14:48:51.175274Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ripples-maid",
       "name": "リップルスメイド",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dansili",
@@ -32,8 +33,11 @@
     {
       "id": "mikki-charm",
       "name": "ミッキーチャーム",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 7}",
-      "foaledArray": ["2015", "02", "07"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

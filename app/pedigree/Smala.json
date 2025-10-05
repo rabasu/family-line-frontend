@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Smala",
     "rootHorseId": "smala",
-    "lastUpdated": "2025-09-17T12:49:23.790190Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "smala",
       "name": "スマラ",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Antheus",
@@ -32,8 +33,11 @@
     {
       "id": "lampeia",
       "name": "ランペイア",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 25}",
-      "foaledArray": ["2004", "02", "25"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -122,8 +126,11 @@
     {
       "id": "masahaya-dream",
       "name": "マサハヤドリーム",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 17}",
-      "foaledArray": ["2012", "03", "17"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 17
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "メイショウサムソン",

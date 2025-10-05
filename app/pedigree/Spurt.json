@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Spurt",
     "rootHorseId": "spurt",
-    "lastUpdated": "2025-09-24T02:03:47.462479Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "spurt",
       "name": "スパートII",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Proper Reality(US)",
@@ -32,8 +33,11 @@
     {
       "id": "tagano-forty",
       "name": "タガノフォーティ",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 31}",
-      "foaledArray": ["1998", "05", "31"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",

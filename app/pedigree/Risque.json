@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Risque",
     "rootHorseId": "risque",
-    "lastUpdated": "2025-09-25T09:53:20.037239Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "risque",
       "name": "リスク",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wild Risk",
@@ -32,8 +33,9 @@
     {
       "id": "hermes-sedan",
       "name": "エルメスセダン",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セダン(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "hermessky",
       "name": "エルメススキー",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 17}",
-      "foaledArray": ["1980", "04", "17"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
@@ -86,8 +91,11 @@
     {
       "id": "cheers-atom",
       "name": "チアズアトム",
-      "foaled": "{'year': 1989, 'month': 5, 'day': 20}",
-      "foaledArray": ["1989", "05", "20"],
+      "foaled": {
+        "year": 1989,
+        "month": 5,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",

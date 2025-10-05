@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Switch Ur Kingdom",
     "rootHorseId": "switch-ur-kingdom",
-    "lastUpdated": "2025-09-24T03:07:14.633064Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "switch-ur-kingdom",
       "name": "Switch Ur Kingdom",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Key to the Kingdom",
@@ -31,8 +32,11 @@
     {
       "id": "juno-pierrot",
       "name": "ユノピエロ",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 15}",
-      "foaledArray": ["1998", "02", "15"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サザンヘイロー(US)",

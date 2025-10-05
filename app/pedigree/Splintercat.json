@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Splintercat",
     "rootHorseId": "splintercat",
-    "lastUpdated": "2025-09-24T07:39:48.324490Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "splintercat",
       "name": "スプリンターキャット",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "tenzan-desert",
       "name": "テンザンデザート",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 31}",
-      "foaledArray": ["1998", "03", "31"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Desert",

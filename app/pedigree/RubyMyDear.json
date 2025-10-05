@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Ruby My Dear",
     "rootHorseId": "ruby-my-dear",
-    "lastUpdated": "2025-09-23T10:02:33.865936Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ruby-my-dear",
       "name": "ルビーマイディア",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 22}",
-      "foaledArray": ["1994", "05", "22"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gone West",
@@ -32,8 +35,11 @@
     {
       "id": "admire-carib",
       "name": "アドマイヤカリブ",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 13}",
-      "foaledArray": ["2003", "02", "13"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sally Rand",
     "rootHorseId": "sally-rand",
-    "lastUpdated": "2025-09-21T14:53:41.505967Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sally-rand",
       "name": "サリーランド",
-      "foaled": "{'year': 1954}",
-      "foaledArray": ["1954"],
+      "foaled": {
+        "year": 1954
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Vulgan",
@@ -32,8 +33,9 @@
     {
       "id": "okapanasu",
       "name": "オカパナス",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パナスリッパー(IRE)",
@@ -59,8 +61,9 @@
     {
       "id": "oka-tesco",
       "name": "オカテスコ",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -86,8 +89,11 @@
     {
       "id": "hanasaki-meguro",
       "name": "ハナサキメグロ",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 19}",
-      "foaledArray": ["1981", "04", "19"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トランスアランティック(US)",
@@ -113,8 +119,11 @@
     {
       "id": "keiai-ballade",
       "name": "ケイアイバラード",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 29}",
-      "foaledArray": ["1993", "03", "29"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リヴリア(US)",
@@ -142,8 +151,11 @@
     {
       "id": "cosmo-sensor",
       "name": "コスモセンサー",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 14}",
-      "foaledArray": ["2007", "03", "14"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",

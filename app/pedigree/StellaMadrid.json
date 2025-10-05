@@ -2,21 +2,24 @@
   "metadata": {
     "pedigreeName": "Stella Madrid",
     "rootHorseId": "stella-madrid",
-    "lastUpdated": "2025-09-24T00:39:05.520240Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "stella-madrid",
       "name": "ステラマドリッド",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 15}",
-      "foaledArray": ["1987", "05", "15"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar a",
       "dam": "My Juliet",
-      "color": "鹿毛",
-      "breeder": "米",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a0065b4",
       "raceStats": {
         "total": {
@@ -32,8 +35,11 @@
     {
       "id": "isle-de-france",
       "name": "アイルドフランス",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 30}",
-      "foaledArray": ["1995", "03", "30"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -59,8 +65,11 @@
     {
       "id": "asterix",
       "name": "アステリックス",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 22}",
-      "foaledArray": ["2010", "04", "22"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
@@ -86,14 +95,17 @@
     {
       "id": "ghardaia",
       "name": "ガルダイア",
-      "foaled": "{'year': 2022, 'month': 3, 'day': 26}",
-      "foaledArray": ["2022", "03", "26"],
+      "foaled": {
+        "year": 2022,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
       "dam": "アステリックス",
-      "color": "鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022104596",
       "raceStats": {
         "total": {
@@ -161,8 +173,11 @@
     {
       "id": "aerolithe",
       "name": "アエロリット",
-      "foaled": "{'year': 2014, 'month': 5, 'day': 17}",
-      "foaledArray": ["2014", "05", "17"],
+      "foaled": {
+        "year": 2014,
+        "month": 5,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",
@@ -446,13 +461,15 @@
     {
       "id": "mikki-isle",
       "name": "ミッキーアイル",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 12}",
-      "foaledArray": ["2011", "03", "12"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "スターアイル",
-      "dam_netkeiba_id": "2004110007",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2011103916",
@@ -727,18 +744,21 @@
         "central": "5億2,948万円",
         "local": "0万円"
       },
-      "damId": "star-isle"
+      "damId": "star-isle",
+      "dam_netkeiba_id": "2004110007"
     },
     {
       "id": "star-isle",
       "name": "スターアイル",
-      "foaled": "{'year': 2004, 'month': 5, 'day': 18}",
-      "foaledArray": ["2004", "05", "18"],
+      "foaled": {
+        "year": 2004,
+        "month": 5,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロックオブジブラルタル",
       "dam": "アイルドフランスIsle de France",
-      "dam_netkeiba_id": "000a0105b9",
       "color": "鹿毛",
       "breeder": "Tower Bloodstock（愛）",
       "netkeibaId": "2004110007",
@@ -757,13 +777,17 @@
         "central": "2,042万円",
         "local": "0万円"
       },
-      "damId": "isle-de-france"
+      "damId": "isle-de-france",
+      "dam_netkeiba_id": "000a0105b9"
     },
     {
       "id": "diamond-biko",
       "name": "ダイヤモンドビコー",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 25}",
-      "foaledArray": ["1998", "05", "25"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

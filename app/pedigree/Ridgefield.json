@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ridgefield",
     "rootHorseId": "ridgefield",
-    "lastUpdated": "2025-09-24T06:38:32.552975Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ridgefield",
       "name": "リッジフィールド",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Saratoga Six",
@@ -32,8 +33,11 @@
     {
       "id": "sapphire-coast",
       "name": "サファイヤコースト",
-      "foaled": "{'year': 1997, 'month': 1, 'day': 29}",
-      "foaledArray": ["1997", "01", "29"],
+      "foaled": {
+        "year": 1997,
+        "month": 1,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

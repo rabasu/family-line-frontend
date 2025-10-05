@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Shonan Time",
     "rootHorseId": "shonan-time",
-    "lastUpdated": "2025-09-17T02:32:06.970496Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shonan-time",
       "name": "ショウナンタイム",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 17}",
-      "foaledArray": ["1996", "02", "17"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gilded Time",
@@ -32,8 +35,11 @@
     {
       "id": "shonan-aoba",
       "name": "ショウナンアオバ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 5}",
-      "foaledArray": ["2007", "03", "05"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -61,8 +67,11 @@
     {
       "id": "lord-bay-leaf",
       "name": "ロードベイリーフ",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 27}",
-      "foaledArray": ["2017", "04", "27"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヴァンセンヌ",

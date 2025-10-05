@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Shake Hand",
     "rootHorseId": "shake-hand",
-    "lastUpdated": "2025-09-23T11:32:23.777499Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shake-hand",
       "name": "シェイクハンド",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 1}",
-      "foaledArray": ["1992", "04", "01"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +35,11 @@
     {
       "id": "impression",
       "name": "インプレッション",
-      "foaled": "{'year': 2002, 'month': 6, 'day': 4}",
-      "foaledArray": ["2002", "06", "04"],
+      "foaled": {
+        "year": 2002,
+        "month": 6,
+        "day": 4
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Soccer Mom",
     "rootHorseId": "soccer-mom",
-    "lastUpdated": "2025-09-22T05:51:05.233523Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "soccer-mom",
       "name": "サッカーマム",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -32,14 +33,17 @@
     {
       "id": "lilas-corsage",
       "name": "リラコサージュ",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 17}",
-      "foaledArray": ["2010", "04", "17"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "サッカーマム",
-      "color": "栗毛",
-      "breeder": "ケイアイファーム（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2010101344",
       "raceStats": {
         "total": {
@@ -137,14 +141,17 @@
     {
       "id": "lord-couronne",
       "name": "ロードクロンヌ",
-      "foaled": "{'year': 2021, 'month': 3, 'day': 8}",
-      "foaledArray": ["2021", "03", "08"],
+      "foaled": {
+        "year": 2021,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リオンディーズ",
       "dam": "リラコサージュ",
-      "color": "黒鹿毛",
-      "breeder": "ケイアイファーム（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2021100169",
       "raceStats": {
         "total": {
@@ -212,8 +219,11 @@
     {
       "id": "lord-golazo",
       "name": "ロードゴラッソ",
-      "foaled": "{'year': 2015, 'month': 5, 'day': 16}",
-      "foaledArray": ["2015", "05", "16"],
+      "foaled": {
+        "year": 2015,
+        "month": 5,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -602,8 +612,11 @@
     {
       "id": "lady-rouge",
       "name": "レディルージュ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 13}",
-      "foaledArray": ["2006", "03", "13"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",

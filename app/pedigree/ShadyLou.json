@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Shady Lou",
     "rootHorseId": "shady-lou",
-    "lastUpdated": "2025-09-24T09:41:36.186780Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shady-lou",
       "name": "シエイデイールー",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Creme dela Creme",
@@ -32,8 +33,11 @@
     {
       "id": "shady-lane",
       "name": "シェイディレーン",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 27}",
-      "foaledArray": ["1986", "04", "27"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -59,8 +63,11 @@
     {
       "id": "tsukuba-forte",
       "name": "ツクバフォルテ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 12}",
-      "foaledArray": ["1998", "03", "12"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "グルームダンサー(US)",

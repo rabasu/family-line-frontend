@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Sylvan Song",
     "rootHorseId": "sylvan-song",
-    "lastUpdated": "2025-09-16T01:00:27.343036Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sylvan-song",
       "name": "シルヴァンソング",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 23}",
-      "foaledArray": ["2009", "02", "23"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Street Cry(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "clean-air",
       "name": "クリーンエア",
-      "foaled": "{'year': 2021, 'month': 3, 'day': 18}",
-      "foaledArray": ["2021", "03", "18"],
+      "foaled": {
+        "year": 2021,
+        "month": 3,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルインパクト",

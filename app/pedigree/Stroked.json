@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Stroked",
     "rootHorseId": "stroked",
-    "lastUpdated": "2025-09-21T09:19:53.761502Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "stroked",
       "name": "ストロークト",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Riverman",
       "dam": "Her B.",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "米",
       "netkeibaId": "000a0061b5",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Stroked"
+      "englishName": "Stroked",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "long-stardom",
       "name": "ロングスターダム",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 25}",
-      "foaledArray": ["1996", "02", "25"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
       "dam": "ストロークト",
-      "dam_netkeiba_id": "000a0061b5",
       "color": "栗毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "1996107337",
@@ -56,18 +59,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "stroked"
+      "damId": "stroked",
+      "dam_netkeiba_id": "000a0061b5"
     },
     {
       "id": "twinkle",
       "name": "トゥインクル",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 15}",
-      "foaledArray": ["2011", "04", "15"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
       "dam": "ロングスターダム",
-      "dam_netkeiba_id": "1996107337",
       "color": "栗毛",
       "breeder": "いとう牧場（日高町）",
       "netkeibaId": "2011100066",
@@ -147,13 +153,17 @@
         "central": "1億3,801万円",
         "local": "0万円"
       },
-      "damId": "long-stardom"
+      "damId": "long-stardom",
+      "dam_netkeiba_id": "1996107337"
     },
     {
       "id": "alma-divin",
       "name": "アルマディヴァン",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 12}",
-      "foaledArray": ["2010", "04", "12"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロベイリー",
@@ -407,8 +417,11 @@
     {
       "id": "game-compiler",
       "name": "ゲームコンパイラ",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 30}",
-      "foaledArray": ["1998", "04", "30"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロライアン",
@@ -434,8 +447,11 @@
     {
       "id": "rainbow-dahlia",
       "name": "レインボーダリア",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 27}",
-      "foaledArray": ["2007", "04", "27"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -659,8 +675,11 @@
     {
       "id": "arome",
       "name": "アローム",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 4}",
-      "foaledArray": ["1990", "04", "04"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

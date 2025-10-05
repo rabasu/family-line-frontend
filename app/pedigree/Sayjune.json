@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sayjune",
     "rootHorseId": "sayjune",
-    "lastUpdated": "2025-09-27T16:09:13.432451Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sayjune",
       "name": "セイジユーン",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tamerlane",
@@ -32,8 +33,9 @@
     {
       "id": "kensei-dia",
       "name": "ケンセイダイヤ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Relic",
@@ -59,8 +61,11 @@
     {
       "id": "kensei-musashi",
       "name": "ケンセイムサシ",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 19}",
-      "foaledArray": ["1983", "04", "19"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マラケート",
@@ -104,8 +109,11 @@
     {
       "id": "kensei-hien",
       "name": "ケンセイヒエン",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 3}",
-      "foaledArray": ["1981", "05", "03"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パーソナリティ(US)",
@@ -139,6 +147,202 @@
       ],
       "source": "python_scraping",
       "englishName": "Kensei Hien",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kensei-dia"
+    },
+    {
+      "id": "kensei-good",
+      "name": "ケンセイグット",
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 28
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "グッドリー(FR)",
+      "dam": "ケンセイダイヤ",
+      "color": "栗毛",
+      "breeder": "杉安牧場（鹿児島県）",
+      "netkeibaId": "1977100169",
+      "raceStats": {
+        "total": {
+          "runs": 32,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "22",
+          "result": "4",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_big10",
+          "entry": "13",
+          "result": "11",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "14",
+          "result": "8",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 3,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "12",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "日経新春杯(OP)",
+          "displayRace": "日経新春杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "5",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "9",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kensei Good",
       "prizeMoney": {
         "total": "0万円"
       },

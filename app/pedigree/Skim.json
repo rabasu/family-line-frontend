@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Skim",
     "rootHorseId": "skim",
-    "lastUpdated": "2025-09-23T19:06:08.055277Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "skim",
       "name": "スキム",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "mystic-eyes",
       "name": "ミスティックアイズ",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 15}",
-      "foaledArray": ["1992", "05", "15"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Eastern Echo",
@@ -61,8 +65,11 @@
     {
       "id": "mystic-age",
       "name": "ミスティックエイジ",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 21}",
-      "foaledArray": ["2001", "04", "21"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

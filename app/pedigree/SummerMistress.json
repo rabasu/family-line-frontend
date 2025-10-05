@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Summer Mistress",
     "rootHorseId": "summer-mistress",
-    "lastUpdated": "2025-09-23T23:09:43.643408Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "summer-mistress",
       "name": "サマーミストレス",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Master Willie",
@@ -32,8 +33,11 @@
     {
       "id": "center-angelo",
       "name": "センターアンジェロ",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 8}",
-      "foaledArray": ["2000", "04", "08"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",

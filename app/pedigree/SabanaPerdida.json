@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sabana Perdida",
     "rootHorseId": "sabana-perdida",
-    "lastUpdated": "2025-09-18T15:04:28.625352Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sabana-perdida",
       "name": "サバナパディーダ",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cape Cross",
@@ -32,8 +33,11 @@
     {
       "id": "caribbean-romance",
       "name": "カリビアンロマンス",
-      "foaled": "{'year': 2011, 'month': 1, 'day': 31}",
-      "foaledArray": ["2011", "01", "31"],
+      "foaled": {
+        "year": 2011,
+        "month": 1,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コマンズ(AUS)",
@@ -61,8 +65,11 @@
     {
       "id": "derma-louvre",
       "name": "デルマルーヴル",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 19}",
-      "foaledArray": ["2016", "03", "19"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パイロ(US)",
@@ -586,8 +593,11 @@
     {
       "id": "caribbean-gold",
       "name": "カリビアンゴールド",
-      "foaled": "{'year': 2014, 'month': 2, 'day': 9}",
-      "foaledArray": ["2014", "02", "09"],
+      "foaled": {
+        "year": 2014,
+        "month": 2,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

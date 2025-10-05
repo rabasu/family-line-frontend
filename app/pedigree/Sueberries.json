@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sueberries",
     "rootHorseId": "sueberries",
-    "lastUpdated": "2025-09-24T20:19:43.692181Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sueberries",
       "name": "シユーベリーズ",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Curragh King",
@@ -32,8 +33,9 @@
     {
       "id": "marine-turf",
       "name": "マリーンターフ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フィリュース",
@@ -59,8 +61,11 @@
     {
       "id": "miss-radical",
       "name": "ミスラディカル",
-      "foaled": "{'year': 1979, 'month': 5, 'day': 30}",
-      "foaledArray": ["1979", "05", "30"],
+      "foaled": {
+        "year": 1979,
+        "month": 5,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レックスレンジャー",
@@ -329,8 +334,11 @@
     {
       "id": "miss-casablanca",
       "name": "ミスカサブランカ",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 27}",
-      "foaledArray": ["1994", "04", "27"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ベストブラッド",
@@ -430,6 +438,110 @@
         "local": "0万円"
       },
       "damId": "miss-radical"
+    },
+    {
+      "id": "valeur-turf",
+      "name": "バルールターフ",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ゴールドアロー",
+      "dam": "シユーベリーズ",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "1955104767",
+      "raceStats": {
+        "total": {
+          "runs": 55,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 7,
+            "day": 13
+          },
+          "racecourse": "中京",
+          "race": "東海テレビ杯金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "7",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Valeur Turf",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "sueberries"
     }
   ]
 }

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Samitar",
     "rootHorseId": "samitar",
-    "lastUpdated": "2025-09-18T18:25:17.857063Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "samitar",
       "name": "サミター",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 1}",
-      "foaledArray": ["2009", "02", "01"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロックオブジブラルタル",
@@ -32,8 +35,11 @@
     {
       "id": "danon-chaser",
       "name": "ダノンチェイサー",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 6}",
-      "foaledArray": ["2016", "02", "06"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

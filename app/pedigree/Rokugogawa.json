@@ -2,27 +2,169 @@
   "metadata": {
     "pedigreeName": "ロクゴガワ",
     "rootHorseId": "rokugogawa",
-    "lastUpdated": "2025-09-22T11:41:00.000000Z",
-    "source": "user_input"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rokugogawa",
       "name": "ロクゴガワ",
-      "foaled": "1918",
-      "foaledArray": ["1918"],
+      "foaled": {
+        "year": 1918
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Don Reynaldo",
       "dam": "Chlorite",
       "color": "栗毛",
-      "breeder": "豪州",
+      "breeder": "",
       "netkeibaId": "000a00237c",
       "source": "user_input",
-      "owner": "日本競馬倶楽部→新井清太郎",
+      "importedYear": "1925",
+      "familyNumber": "F5-d",
       "registration": "5巻617号",
-      "importYear": "1925",
-      "familyNumber": "F5-d"
+      "owner": "日本競馬倶楽部→新井清太郎",
+      "importYear": "1925"
+    },
+    {
+      "id": "waiemuchaina",
+      "name": "ワイエムチャイナ",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "チャイナロック(GB)",
+      "dam": "ノースウイン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1969z01098",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 11,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "12",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 9,
+            "day": 10
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nohsuuin"
+    },
+    {
+      "id": "nohsuuin",
+      "name": "ノースウイン",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カネフブキ",
+      "dam": "ミナミヒメ",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a002cf2",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Nohsuuin",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "minamihime"
+    },
+    {
+      "id": "minamihime",
+      "name": "ミナミヒメ",
+      "foaled": {
+        "year": 1944
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "山正",
+      "dam": "グリンロツク",
+      "color": "栗毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a002712",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gurinrotsuku"
+    },
+    {
+      "id": "gurinrotsuku",
+      "name": "グリンロツク",
+      "foaled": {
+        "year": 1932
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "オールグリーン(GB)",
+      "dam": "ロクゴガワ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a002463",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rokugogawa"
     }
   ]
 }

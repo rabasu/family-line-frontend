@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "So Smug",
     "rootHorseId": "so-smug",
-    "lastUpdated": "2025-09-22T02:38:37.604435Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "so-smug",
       "name": "ソウスマッグ",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -32,8 +33,11 @@
     {
       "id": "phoenicorn",
       "name": "フェニコーン",
-      "foaled": "{'year': 2004, 'month': 5, 'day': 13}",
-      "foaledArray": ["2004", "05", "13"],
+      "foaled": {
+        "year": 2004,
+        "month": 5,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Sweet Habitat",
     "rootHorseId": "sweet-habitat",
-    "lastUpdated": "2025-09-20T16:26:03.234533Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-habitat",
       "name": "スイートハビタット",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 30}",
-      "foaledArray": ["2000", "03", "30"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grand Lodge(US)",
@@ -32,8 +35,11 @@
     {
       "id": "sweet-salsa",
       "name": "スイートサルサ",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 15}",
-      "foaledArray": ["2010", "03", "15"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デュランダル",

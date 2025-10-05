@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sheriyza",
     "rootHorseId": "sheriyza",
-    "lastUpdated": "2025-09-22T18:20:42.947518Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sheriyza",
       "name": "シェリーザ",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,11 @@
     {
       "id": "sans-adieu",
       "name": "サンアディユ",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 26}",
-      "foaledArray": ["2002", "03", "26"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",

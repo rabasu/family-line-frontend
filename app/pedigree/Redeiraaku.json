@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "レデイラーク",
     "rootHorseId": "redeiraaku",
-    "lastUpdated": "2025-09-27T07:36:13.714530Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "redeiraaku",
       "name": "レデイラーク",
-      "foaled": "{'year': 1943}",
-      "foaledArray": ["1943"],
+      "foaled": {
+        "year": 1943
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Marabou",
@@ -31,8 +32,9 @@
     {
       "id": "konsaru",
       "name": "コンサル",
-      "foaled": "{'year': 1953}",
-      "foaledArray": ["1953"],
+      "foaled": {
+        "year": 1953
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Turkaris",
@@ -57,8 +59,9 @@
     {
       "id": "tokuno-kogiku",
       "name": "トクノコギク",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モリマツ",
@@ -84,8 +87,9 @@
     {
       "id": "toku-roman",
       "name": "トクロマン",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -111,8 +115,11 @@
     {
       "id": "tsunami",
       "name": "ツナミ",
-      "foaled": "{'year': 1982, 'month': 2, 'day': 27}",
-      "foaledArray": ["1982", "02", "27"],
+      "foaled": {
+        "year": 1982,
+        "month": 2,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンザン",
@@ -227,6 +234,256 @@
         "local": "0万円"
       },
       "damId": "toku-roman"
+    },
+    {
+      "id": "senkoutorakku",
+      "name": "センコウトラック",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "サウンドトラック(IRE)",
+      "dam": "クインフロラー",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1970z00275",
+      "raceStats": {
+        "total": {
+          "runs": 42,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 12,
+            "day": 10
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳S(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "8",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 8,
+            "day": 27
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "4",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kuin-furorah"
+    },
+    {
+      "id": "kuin-furorah",
+      "name": "クインフロラー",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヤサカ(NZ)",
+      "dam": "レデイラーク",
+      "color": "鹿毛",
+      "breeder": "三石町",
+      "netkeibaId": "000a003804",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kuin Furorah",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "redeiraaku"
+    },
+    {
+      "id": "toku-zakura",
+      "name": "トクザクラ",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "パーソロン(IRE)",
+      "dam": "トクノコギク",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "1955102530",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 1,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "12",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 11,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "14",
+          "result": "14",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 11,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 10,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 12,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "朝日杯3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "京成杯3歳S(OP)",
+          "displayRace": "京成杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Toku Zakura",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tokuno-kogiku"
     }
   ]
 }

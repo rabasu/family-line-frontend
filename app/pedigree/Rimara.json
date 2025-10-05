@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rimara",
     "rootHorseId": "rimara",
-    "lastUpdated": "2025-09-27T03:33:42.680126Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rimara",
       "name": "リマラ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Counsel",
@@ -32,8 +33,9 @@
     {
       "id": "jet-seven",
       "name": "ジェットセブン",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "インディアナ",
@@ -59,8 +61,11 @@
     {
       "id": "inano-lover-john",
       "name": "イナノラバージョン",
-      "foaled": "{'year': 1977, 'month': 5, 'day': 4}",
-      "foaledArray": ["1977", "05", "04"],
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラバージョン",

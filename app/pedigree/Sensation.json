@@ -2,21 +2,24 @@
   "metadata": {
     "pedigreeName": "Sensation",
     "rootHorseId": "sensation",
-    "lastUpdated": "2025-09-20T10:48:22.950399Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sensation",
       "name": "センセーション",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 3}",
-      "foaledArray": ["1993", "04", "03"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソヴィエトスター(US)",
       "dam": "Outstandingly",
-      "color": "鹿毛",
-      "breeder": "英",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a0067cc",
       "raceStats": {
         "total": {
@@ -32,8 +35,11 @@
     {
       "id": "sunday-smile",
       "name": "サンデースマイルII",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 9}",
-      "foaledArray": ["2003", "02", "09"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -59,14 +65,17 @@
     {
       "id": "smile-shower",
       "name": "スマイルシャワー",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 16}",
-      "foaledArray": ["2011", "04", "16"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
       "dam": "サンデースマイルII",
-      "color": "鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2011103871",
       "raceStats": {
         "total": {
@@ -104,8 +113,11 @@
     {
       "id": "smile-through",
       "name": "スマイルスルー",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 15}",
-      "foaledArray": ["2020", "04", "15"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",
@@ -179,8 +191,11 @@
     {
       "id": "man-of-spirit",
       "name": "マンオブスピリット",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 8}",
-      "foaledArray": ["2017", "02", "08"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 8
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",
@@ -314,13 +329,15 @@
     {
       "id": "fluky",
       "name": "フルーキー",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 31}",
-      "foaledArray": ["2010", "03", "31"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Redoute's Choice",
       "dam": "サンデースマイルIISunday Smile",
-      "dam_netkeiba_id": "000a01165a",
       "color": "青鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2010104134",
@@ -655,7 +672,8 @@
         "central": "2億4,836万円",
         "local": "0万円"
       },
-      "damId": "sunday-smile"
+      "damId": "sunday-smile",
+      "dam_netkeiba_id": "000a01165a"
     }
   ]
 }

@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Reve d'Oscar",
     "rootHorseId": "reve-doscar",
-    "lastUpdated": "2025-09-22T17:52:14.418765Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "reve-doscar",
       "name": "レーヴドスカー",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 24}",
-      "foaledArray": ["1997", "04", "24"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Highest Honor",
       "dam": "Numidie",
-      "dam_netkeiba_id": "",
       "color": "芦毛",
       "breeder": "Haras de Manneville（仏）",
       "netkeibaId": "1997190001",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Reve d'Oscar"
+      "englishName": "Reve d'Oscar",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "reve-mistral",
       "name": "レーヴミストラル",
-      "foaled": "{'year': 2012, 'month': 5, 'day': 8}",
-      "foaledArray": ["2012", "05", "08"],
+      "foaled": {
+        "year": 2012,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ a",
       "dam": "レーヴドスカー",
-      "dam_netkeiba_id": "1997190001",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2012104929",
@@ -194,13 +199,17 @@
         "central": "1億4,358万円",
         "local": "0万円"
       },
-      "damId": "reve-doscar"
+      "damId": "reve-doscar",
+      "dam_netkeiba_id": "1997190001"
     },
     {
       "id": "reve-dessor",
       "name": "レーヴディソール",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 8}",
-      "foaledArray": ["2008", "04", "08"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -304,8 +313,11 @@
     {
       "id": "reve-dorient",
       "name": "レーヴドリアン",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 30}",
-      "foaledArray": ["2007", "03", "30"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -424,8 +436,11 @@
     {
       "id": "apres-un-reve",
       "name": "アプレザンレーヴ",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 13}",
-      "foaledArray": ["2006", "03", "13"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -514,8 +529,11 @@
     {
       "id": "reve-damour",
       "name": "レーヴダムール",
-      "foaled": "{'year': 2005, 'month': 1, 'day': 28}",
-      "foaledArray": ["2005", "01", "28"],
+      "foaled": {
+        "year": 2005,
+        "month": 1,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファルブラヴ(IRE)",

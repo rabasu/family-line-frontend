@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Saint Frontier",
     "rootHorseId": "saint-frontier",
-    "lastUpdated": "2025-09-17T03:00:45.648614Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "saint-frontier",
       "name": "セントフロンティア",
-      "foaled": "{'year': 2002, 'month': 9, 'day': 21}",
-      "foaledArray": ["2002", "09", "21"],
+      "foaled": {
+        "year": 2002,
+        "month": 9,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -32,8 +35,11 @@
     {
       "id": "hela",
       "name": "ヒーラ",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 25}",
-      "foaledArray": ["2009", "02", "25"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -107,8 +113,11 @@
     {
       "id": "echt",
       "name": "エヒト",
-      "foaled": "{'year': 2017, 'month': 5, 'day': 9}",
-      "foaledArray": ["2017", "05", "09"],
+      "foaled": {
+        "year": 2017,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",

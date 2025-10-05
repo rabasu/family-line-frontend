@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Robbies Rainbow",
     "rootHorseId": "robbies-rainbow",
-    "lastUpdated": "2025-09-23T04:17:44.393166Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "robbies-rainbow",
       "name": "ロビースレインボウ",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rainbow Quest(US)",
@@ -32,8 +33,11 @@
     {
       "id": "amore-pegasus",
       "name": "アモーレペガサス",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 11}",
-      "foaledArray": ["1999", "04", "11"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メジロライアン",
@@ -61,8 +65,11 @@
     {
       "id": "moon-express",
       "name": "ムーンエクスプレス",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 22}",
-      "foaledArray": ["2012", "03", "22"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アドマイヤムーン",
@@ -166,8 +173,11 @@
     {
       "id": "cosmo-sunbeam",
       "name": "コスモサンビーム",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 28}",
-      "foaledArray": ["2001", "03", "28"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ザグレブ(US)",

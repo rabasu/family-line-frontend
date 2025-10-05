@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Shes a Calling",
     "rootHorseId": "shes-a-calling",
-    "lastUpdated": "2025-09-24T11:43:24.615933Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shes-a-calling",
       "name": "Shes a Calling",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Clever Trick",
@@ -31,8 +32,11 @@
     {
       "id": "kinshi-stone",
       "name": "キンシストーン",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 1}",
-      "foaledArray": ["1997", "02", "01"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Salt Lake",

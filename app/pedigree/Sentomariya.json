@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "セントマリヤ",
     "rootHorseId": "sentomariya",
-    "lastUpdated": "2025-09-28T03:19:16.912790Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sentomariya",
       "name": "セントマリヤ",
-      "foaled": "{'year': 1902}",
-      "foaledArray": ["1902"],
+      "foaled": {
+        "year": 1902
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "",
@@ -31,8 +32,9 @@
     {
       "id": "kumoi",
       "name": "雲井",
-      "foaled": "{'year': 1913}",
-      "foaledArray": ["1913"],
+      "foaled": {
+        "year": 1913
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イボア(GB)",
@@ -57,8 +59,9 @@
     {
       "id": "matsukaze-1920",
       "name": "松風",
-      "foaled": "{'year': 1920}",
-      "foaledArray": ["1920"],
+      "foaled": {
+        "year": 1920
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トリニチースクヱーア(GB)",
@@ -78,13 +81,15 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kumoi"
+      "damId": "kumoi",
+      "linkName": "松風(1920)"
     },
     {
       "id": "matsumi",
       "name": "松美",
-      "foaled": "{'year': 1929}",
-      "foaledArray": ["1929"],
+      "foaled": {
+        "year": 1929
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "第二ホーンビーム",
@@ -109,8 +114,9 @@
     {
       "id": "misuaburaaru",
       "name": "ミスアブラール",
-      "foaled": "{'year': 1936}",
-      "foaledArray": ["1936"],
+      "foaled": {
+        "year": 1936
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アブラール(FR)",
@@ -135,8 +141,9 @@
     {
       "id": "katatsuki",
       "name": "カタツキ",
-      "foaled": "{'year': 1942}",
-      "foaledArray": ["1942"],
+      "foaled": {
+        "year": 1942
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "方景",
@@ -161,8 +168,9 @@
     {
       "id": "goorudokuin",
       "name": "ゴールドクヰン",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラツキーパーク",
@@ -179,17 +187,18 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "pedigreeName": "ゴールドクイン",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "katatsuki"
+      "damId": "katatsuki",
+      "pedigreeName": "ゴールドクイン"
     },
     {
       "id": "suzu-tatsuhana",
       "name": "スズタツハナ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ニユーバラツケー",
@@ -215,8 +224,9 @@
     {
       "id": "kitano-tatsuhana",
       "name": "キタノタツハナ",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スカレー",
@@ -242,8 +252,11 @@
     {
       "id": "mr-cash",
       "name": "ミスターキャッシュ",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 21}",
-      "foaledArray": ["1985", "04", "21"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タカラトウザイ",
@@ -373,6 +386,852 @@
         "local": "0万円"
       },
       "damId": "kitano-tatsuhana"
+    },
+    {
+      "id": "aino-hayate",
+      "name": "アイノハヤテ",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ムツミシゲル",
+      "dam": "スミラール",
+      "color": "黒鹿毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a00c517",
+      "raceStats": {
+        "total": {
+          "runs": 25,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 2,
+            "day": 27
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(春)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 12,
+            "day": 5
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(秋)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 6,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "セイユウ記念(OP)",
+          "displayRace": "セイユウ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 4,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "5",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Aino Hayate",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "sumirahru"
+    },
+    {
+      "id": "sumirahru",
+      "name": "スミラール",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "トモカゲオー",
+      "dam": "カタツキ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955500238",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Sumirahru",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "katatsuki"
+    },
+    {
+      "id": "nyuuhiroshi",
+      "name": "ニューヒロシ",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ニホンゴー",
+      "dam": "ユキヤマ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1973z00855",
+      "raceStats": {
+        "total": {
+          "runs": 35,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 8,
+            "day": 20
+          },
+          "racecourse": "新潟",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 3,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 9,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "シユンエイ記念(OP)",
+          "displayRace": "シュンエイ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 22
+          },
+          "racecourse": "新潟",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 6,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "セイユウ記念(OP)",
+          "displayRace": "セイユウ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 4,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "9",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yukiyama"
+    },
+    {
+      "id": "yukiyama",
+      "name": "ユキヤマ",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セイユウ",
+      "dam": "マダレーン",
+      "color": "鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "1955500572",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Yukiyama",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "madarehn"
+    },
+    {
+      "id": "madarehn",
+      "name": "マダレーン",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セイホウ",
+      "dam": "マダムホワイト",
+      "color": "栃栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00de25",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Madarehn",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "madamuhowaito"
+    },
+    {
+      "id": "madamuhowaito",
+      "name": "マダムホワイト",
+      "foaled": {
+        "year": 1952
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "方景",
+      "dam": "ミスアブラール",
+      "color": "栗毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a00dcd8",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "misuaburaaru"
+    },
+    {
+      "id": "suzukahaado",
+      "name": "スズカハード",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハードリドン(GB)",
+      "dam": "ツキカゲ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1970z00256",
+      "raceStats": {
+        "total": {
+          "runs": 43,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 8
+          },
+          "racecourse": "小倉",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 7,
+            "day": 11
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 29
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 7,
+            "day": 13
+          },
+          "racecourse": "中京",
+          "race": "東海テレビ杯金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "トヨタ賞中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "朝日チャレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 7,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 3,
+            "day": 31
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "tsukikage-1965",
+      "name": "ツキカゲ",
+      "foaled": {
+        "year": 1965
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミネフジ",
+      "dam": "ハマノツキ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00e790",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hamanotsuki",
+      "linkName": "ツキカゲ(1965)"
+    },
+    {
+      "id": "hamanotsuki",
+      "name": "ハマノツキ",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カンダオー",
+      "dam": "カタツキ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00dd94",
+      "raceStats": {
+        "total": {
+          "runs": 2,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "katatsuki"
+    },
+    {
+      "id": "ukihashi",
+      "name": "ウキハシ",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ニイタカヤマ",
+      "dam": "ゴールドクヰン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1959z00210",
+      "raceStats": {
+        "total": {
+          "runs": 49,
+          "wins": 15
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 2,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(春)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "11",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 9,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 8,
+            "day": 11
+          },
+          "racecourse": "中京",
+          "race": "愛知盃競走(OP)",
+          "displayRace": "愛知盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 4,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 3,
+            "day": 3
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典競走(OP)",
+          "displayRace": "アラブ大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 9,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 3,
+            "day": 4
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典競走(OP)",
+          "displayRace": "アラブ大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "goorudokuin"
+    },
+    {
+      "id": "tajimachikara",
+      "name": "タジマチカラ",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ニユーバラツケー",
+      "dam": "カタツキ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1956z00220",
+      "raceStats": {
+        "total": {
+          "runs": 47,
+          "wins": 16
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1960,
+            "month": 5,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "アラブ王冠競走(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2300",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "katatsuki"
     }
   ]
 }

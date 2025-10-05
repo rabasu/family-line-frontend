@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Re Toss",
     "rootHorseId": "re-toss",
-    "lastUpdated": "2025-09-23T04:17:36.121191Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "re-toss",
       "name": "レトス",
-      "foaled": "{'year': 1987, 'month': 9, 'day': 14}",
-      "foaledArray": ["1987", "09", "14"],
+      "foaled": {
+        "year": 1987,
+        "month": 9,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Egg Toss",
@@ -32,8 +35,11 @@
     {
       "id": "coin-toss",
       "name": "コイントス",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 20}",
-      "foaledArray": ["1998", "03", "20"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

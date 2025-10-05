@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Spanish Alliance",
     "rootHorseId": "spanish-alliance",
-    "lastUpdated": "2025-09-27T16:56:07.847751Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "spanish-alliance",
       "name": "スパニツシュアリアンス",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マタドア",
@@ -32,8 +33,9 @@
     {
       "id": "ryu-aiance",
       "name": "リュウアイアンス",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ザラズーストラ",
@@ -59,8 +61,11 @@
     {
       "id": "ryu-boy",
       "name": "リュウボーイ",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 3}",
-      "foaledArray": ["1979", "04", "03"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リュウファーロス",
@@ -157,6 +162,578 @@
       "prizeMoney": {
         "total": "111万円",
         "central": "111万円",
+        "local": "0万円"
+      },
+      "damId": "ryu-aiance"
+    },
+    {
+      "id": "ryuukikou",
+      "name": "リュウキコウ",
+      "foaled": {
+        "year": 1974,
+        "month": 5,
+        "day": 21
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "リュウファーロス",
+      "dam": "リュウアイアンス",
+      "color": "栗毛",
+      "breeder": "三浦牧場（青森県）",
+      "netkeibaId": "1974100854",
+      "raceStats": {
+        "total": {
+          "runs": 41,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "日経新春杯(OP)",
+          "displayRace": "日経新春杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": "中京",
+          "race": "愛知杯(OP)",
+          "displayRace": "愛知杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "9",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 6,
+            "day": 1
+          },
+          "racecourse": "中京",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2400",
+          "grade": "jra_big10",
+          "entry": "15",
+          "result": "13",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "阪神",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "16",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 3,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪杯(OP)",
+          "displayRace": "サンケイ大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 2,
+            "day": 17
+          },
+          "racecourse": "中京",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 11,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "9",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 11,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "11",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 14
+          },
+          "racecourse": "中京",
+          "race": "京都大賞典(OP)",
+          "displayRace": "京都大賞典",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 6,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "高松宮杯(OP)",
+          "displayRace": "高松宮杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_big10",
+          "entry": "13",
+          "result": "4",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "6",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 3,
+            "day": 25
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 3,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪杯(OP)",
+          "displayRace": "サンケイ大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 2,
+            "day": 4
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "11",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 11,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 11,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 10,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "京都大賞典(OP)",
+          "displayRace": "京都大賞典",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "金杯(600万下)",
+          "displayRace": "金杯（西）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "6",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 12,
+            "day": 18
+          },
+          "racecourse": "中京",
+          "race": "愛知杯(OP)",
+          "displayRace": "愛知杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "18",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 10,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "10",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(OP)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(重賞)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "5",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 5,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "6",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "20",
+          "result": "16",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 3,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 2,
+            "day": 13
+          },
+          "racecourse": "中京",
+          "race": "きさらぎ賞(OP)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 12,
+            "day": 12
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳S(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "阪神",
+          "race": "3歳S(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "5",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "2,100万円",
+        "central": "2,100万円",
         "local": "0万円"
       },
       "damId": "ryu-aiance"

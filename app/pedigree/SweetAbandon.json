@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sweet Abandon",
     "rootHorseId": "sweet-abandon",
-    "lastUpdated": "2025-09-24T19:51:17.446037Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sweet-abandon",
       "name": "スイートアバンダン",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "admire-call",
       "name": "アドマイヤコール",
-      "foaled": "{'year': 1991, 'month': 5, 'day': 7}",
-      "foaledArray": ["1991", "05", "07"],
+      "foaled": {
+        "year": 1991,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイテエム",

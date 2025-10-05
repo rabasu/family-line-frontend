@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Queen Cola",
     "rootHorseId": "queen-cola",
-    "lastUpdated": "2025-09-27T14:21:51.425026Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "queen-cola",
       "name": "クイーンコーラ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Agricola",
@@ -32,8 +33,11 @@
     {
       "id": "bull-king",
       "name": "ブルキング",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 7}",
-      "foaledArray": ["1978", "05", "07"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カウアイキング",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Stor Beirte",
     "rootHorseId": "stor-beirte",
-    "lastUpdated": "2025-09-25T12:24:16.605332Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "stor-beirte",
       "name": "ストアベアーテ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Umberto",
@@ -32,8 +33,9 @@
     {
       "id": "world-rock",
       "name": "ワールドロック",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "チャイナロック(GB)",
@@ -59,8 +61,9 @@
     {
       "id": "world-hill",
       "name": "ワールドヒル",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミンシオ",
@@ -86,8 +89,11 @@
     {
       "id": "the-foxy-lady",
       "name": "ザフォクシーレディ",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 22}",
-      "foaledArray": ["1982", "03", "22"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フリートウイング(US)",
@@ -113,8 +119,11 @@
     {
       "id": "yamahisa-laurel",
       "name": "ヤマヒサローレル",
-      "foaled": "{'year': 1990, 'month': 6, 'day': 6}",
-      "foaledArray": ["1990", "06", "06"],
+      "foaled": {
+        "year": 1990,
+        "month": 6,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーリュート(FR)",

@@ -2,21 +2,22 @@
   "metadata": {
     "pedigreeName": "Saimaa",
     "rootHorseId": "saimaa",
-    "lastUpdated": "2025-09-15T21:58:56.878387Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "saimaa",
       "name": "サイマー",
-      "foaled": "{'year': 2013}",
-      "foaledArray": ["2013"],
+      "foaled": {
+        "year": 2013
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Zoffany",
       "dam": "Serisia",
-      "color": "鹿毛",
-      "breeder": "愛",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a013e79",
       "raceStats": {
         "total": {
@@ -32,8 +33,11 @@
     {
       "id": "sunrise-zipangu",
       "name": "サンライズジパング",
-      "foaled": "{'year': 2021, 'month': 3, 'day': 16}",
-      "foaledArray": ["2021", "03", "16"],
+      "foaled": {
+        "year": 2021,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",

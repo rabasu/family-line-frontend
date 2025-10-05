@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Rose Law",
     "rootHorseId": "rose-law",
-    "lastUpdated": "2025-09-18T15:47:21.537377Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rose-law",
       "name": "ローズロー",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 15}",
-      "foaledArray": ["2010", "04", "15"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "New Approach",
@@ -32,8 +35,11 @@
     {
       "id": "due-process",
       "name": "デュープロセス",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 2}",
-      "foaledArray": ["2016", "04", "02"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

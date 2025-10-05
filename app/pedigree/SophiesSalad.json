@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sophie's Salad",
     "rootHorseId": "sophies-salad",
-    "lastUpdated": "2025-09-17T00:00:13.771833Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sophies-salad",
       "name": "ソフィーズサラド",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rahy",
@@ -32,8 +33,11 @@
     {
       "id": "indriya",
       "name": "インドリヤ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 19}",
-      "foaledArray": ["2012", "02", "19"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Stormy Atlantic",
@@ -59,8 +63,11 @@
     {
       "id": "rivara",
       "name": "リバーラ",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 14}",
-      "foaledArray": ["2020", "03", "14"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キンシャサノキセキ",

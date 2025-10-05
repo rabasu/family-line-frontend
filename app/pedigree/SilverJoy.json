@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Silver Joy",
     "rootHorseId": "silver-joy",
-    "lastUpdated": "2025-09-21T09:49:33.953271Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "silver-joy",
       "name": "シルバージョイ",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Silver Deputy",
@@ -32,8 +33,11 @@
     {
       "id": "oken-bruce-lee",
       "name": "オウケンブルースリ",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 24}",
-      "foaledArray": ["2005", "02", "24"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",

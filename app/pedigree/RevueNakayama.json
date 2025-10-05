@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Revue Nakayama",
     "rootHorseId": "revue-nakayama",
-    "lastUpdated": "2025-09-22T16:54:59.231486Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "revue-nakayama",
       "name": "レビューナカヤマ",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 20}",
-      "foaledArray": ["1998", "02", "20"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mountain Cat",
@@ -32,8 +35,11 @@
     {
       "id": "nakayama-paradise",
       "name": "ナカヤマパラダイス",
-      "foaled": "{'year': 2003, 'month': 5, 'day': 19}",
-      "foaledArray": ["2003", "05", "19"],
+      "foaled": {
+        "year": 2003,
+        "month": 5,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パラダイスクリーク(US)",

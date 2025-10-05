@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Seto Flowerian",
     "rootHorseId": "seto-flowerian",
-    "lastUpdated": "2025-09-24T03:09:04.884523Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "seto-flowerian",
       "name": "セトフローリアンII",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bellotto",
@@ -32,8 +33,11 @@
     {
       "id": "fusaichi-junk",
       "name": "フサイチジャンク",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 26}",
-      "foaledArray": ["2003", "03", "26"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -152,8 +156,11 @@
     {
       "id": "tiger-cafe",
       "name": "タイガーカフェ",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 7}",
-      "foaledArray": ["1999", "03", "07"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Rosy Dolly",
     "rootHorseId": "rosy-dolly",
-    "lastUpdated": "2025-09-27T16:10:36.231833Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "rosy-dolly",
       "name": "ローズイドリー",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bois Roussel",
@@ -32,8 +33,9 @@
     {
       "id": "rosy-myth",
       "name": "ローズイミス",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nearco",
@@ -59,8 +61,9 @@
     {
       "id": "taka-rosy",
       "name": "タカローズイ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ソロナウェー",
@@ -86,8 +89,11 @@
     {
       "id": "rosy-baron",
       "name": "ローズイバロン",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 13}",
-      "foaledArray": ["1984", "04", "13"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ターゴワイス(US)",
@@ -146,8 +152,11 @@
     {
       "id": "cannon-z",
       "name": "キャノンゼット",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 3}",
-      "foaledArray": ["1980", "04", "03"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ボールドラツド",
@@ -249,8 +258,9 @@
     {
       "id": "rosy-venture",
       "name": "ローズイベンチャー",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -276,8 +286,9 @@
     {
       "id": "rosy-victory",
       "name": "ローズイビクトリー",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボウプリンス",
@@ -303,8 +314,11 @@
     {
       "id": "hikari-family",
       "name": "ヒカリファミリー",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 20}",
-      "foaledArray": ["1979", "04", "20"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ドン",
@@ -361,8 +375,9 @@
     {
       "id": "rosy-levin",
       "name": "ローズイレビン",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テッソ(GB)",
@@ -384,6 +399,124 @@
         "total": "0万円"
       },
       "damId": "rosy-dolly"
+    },
+    {
+      "id": "passhingubencha",
+      "name": "パッシングベンチャ",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヴェンチア",
+      "dam": "タカローズイ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a010223",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 2,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 1,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春杯(OP)",
+          "displayRace": "日本経済新春杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "7",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "阪神",
+          "race": "京都大賞典(OP)",
+          "displayRace": "京都大賞典",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "阪神",
+          "race": "朝日チヤレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "6",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "taka-rosy"
     }
   ]
 }

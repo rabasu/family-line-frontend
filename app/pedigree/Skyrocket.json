@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Skyrocket",
     "rootHorseId": "skyrocket",
-    "lastUpdated": "2025-09-23T17:37:08.035987Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "skyrocket",
       "name": "スカイロケットII",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -32,8 +33,11 @@
     {
       "id": "meteor-burst",
       "name": "メテオバースト",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 18}",
-      "foaledArray": ["2001", "04", "18"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

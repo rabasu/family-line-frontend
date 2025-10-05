@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Sharp Stable",
     "rootHorseId": "sharp-stable",
-    "lastUpdated": "2025-09-23T03:47:52.906125Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "sharp-stable",
       "name": "シャープステーブル",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sharpen Up",
@@ -32,8 +33,11 @@
     {
       "id": "kyowa-hoseki",
       "name": "キョウワホウセキ",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 6}",
-      "foaledArray": ["1989", "04", "06"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリルドルフ",
@@ -212,8 +216,11 @@
     {
       "id": "kyowa-splendor",
       "name": "キョウワスプレンダ",
-      "foaled": "{'year': 2001, 'month': 1, 'day': 27}",
-      "foaledArray": ["2001", "01", "27"],
+      "foaled": {
+        "year": 2001,
+        "month": 1,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

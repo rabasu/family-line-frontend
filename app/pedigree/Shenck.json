@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Shenck",
     "rootHorseId": "shenck",
-    "lastUpdated": "2025-09-22T06:20:47.717713Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shenck",
       "name": "シェンク",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Zafonic(US)",
@@ -32,8 +33,11 @@
     {
       "id": "garibaldi",
       "name": "ガリバルディ",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 7}",
-      "foaledArray": ["2011", "02", "07"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -332,8 +336,11 @@
     {
       "id": "zarema",
       "name": "ザレマ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 21}",
-      "foaledArray": ["2004", "03", "21"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -677,8 +684,11 @@
     {
       "id": "maruka-shenck",
       "name": "マルカシェンク",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 19}",
-      "foaledArray": ["2003", "03", "19"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "シノブエ",
     "rootHorseId": "shinobue",
-    "lastUpdated": "2025-09-23T23:07:45.375789Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "shinobue",
       "name": "シノブエ",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "King's Abbey",
@@ -31,8 +32,9 @@
     {
       "id": "sanbiinasu",
       "name": "サンビーナス",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンプルーフ(FR)",
@@ -57,8 +59,9 @@
     {
       "id": "sun-woman",
       "name": "サンウーマン",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フロリバンダ",
@@ -84,8 +87,11 @@
     {
       "id": "gold-proof",
       "name": "ゴールドプルーフ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 1}",
-      "foaledArray": ["1995", "05", "01"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゴールドレット",
