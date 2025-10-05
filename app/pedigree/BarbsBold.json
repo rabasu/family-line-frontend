@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Barb's Bold",
     "rootHorseId": "barbs-bold",
-    "lastUpdated": "2025-09-25T05:19:15.739079Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "barbs-bold",
       "name": "バーブスボールド",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bold Forbes",
@@ -32,8 +33,9 @@
     {
       "id": "page-proof",
       "name": "ページプルーフ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -59,8 +61,11 @@
     {
       "id": "proof-of-love",
       "name": "プルーフオブラヴ",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 5}",
-      "foaledArray": ["2000", "05", "05"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -88,8 +93,11 @@
     {
       "id": "living-proof",
       "name": "リビングプルーフ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 9}",
-      "foaledArray": ["2007", "03", "09"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファルブラヴ(IRE)",
@@ -117,8 +125,11 @@
     {
       "id": "tetradrachm",
       "name": "テトラドラクマ",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 16}",
-      "foaledArray": ["2015", "02", "16"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ a",
@@ -207,8 +218,11 @@
     {
       "id": "bulldog-boss",
       "name": "ブルドッグボス",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 20}",
-      "foaledArray": ["2012", "04", "20"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -627,8 +641,11 @@
     {
       "id": "lyphard-cannes",
       "name": "リファールカンヌ",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 8}",
-      "foaledArray": ["1997", "05", "08"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -654,8 +671,11 @@
     {
       "id": "lyphard-niece",
       "name": "リファールニース",
-      "foaled": "{'year': 1989, 'month': 5, 'day': 20}",
-      "foaledArray": ["1989", "05", "20"],
+      "foaled": {
+        "year": 1989,
+        "month": 5,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Greinton",
@@ -681,8 +701,11 @@
     {
       "id": "komet",
       "name": "コメート",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 26}",
-      "foaledArray": ["2012", "03", "26"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブラックタイド",
@@ -786,8 +809,11 @@
     {
       "id": "june-bride-2006",
       "name": "ジューンブライド",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 12}",
-      "foaledArray": ["2006", "02", "12"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
@@ -810,13 +836,17 @@
         "central": "0万円",
         "local": "38万円"
       },
-      "damId": "lyphard-niece"
+      "damId": "lyphard-niece",
+      "linkName": "ジューンブライド(2006)"
     },
     {
       "id": "mayano-stardom",
       "name": "マヤノスターダム",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 4}",
-      "foaledArray": ["2002", "04", "04"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カーネギー(IRE)",
@@ -950,8 +980,11 @@
     {
       "id": "seeking-the-dia",
       "name": "シーキングザダイヤ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 1}",
-      "foaledArray": ["2001", "03", "01"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -1385,8 +1418,11 @@
     {
       "id": "seeking-the-pearl",
       "name": "シーキングザパール",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 16}",
-      "foaledArray": ["1994", "04", "16"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
@@ -1685,8 +1721,11 @@
     {
       "id": "big-fleet",
       "name": "ビッグフリート",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 30}",
-      "foaledArray": ["1998", "04", "30"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
@@ -1865,8 +1904,11 @@
     {
       "id": "silent-killer",
       "name": "サイレントキラー",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 8}",
-      "foaledArray": ["1992", "04", "08"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 8
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "スリルショー(US)",

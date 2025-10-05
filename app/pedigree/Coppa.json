@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Coppa",
     "rootHorseId": "coppa",
-    "lastUpdated": "2025-09-15T21:58:44.324631Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "coppa",
       "name": "コッパ",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 20}",
-      "foaledArray": ["2013", "04", "20"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Yesbyjimminy",
@@ -32,8 +35,11 @@
     {
       "id": "tudo-de-bom",
       "name": "トゥードジボン",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 30}",
-      "foaledArray": ["2019", "03", "30"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "イスラボニータ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "C'Est Moi Meme",
     "rootHorseId": "cest-moi-meme",
-    "lastUpdated": "2025-09-25T03:17:43.803340Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cest-moi-meme",
       "name": "C'Est Moi Meme",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -31,8 +32,11 @@
     {
       "id": "sugino-gaisenmon",
       "name": "スギノガイセンモン",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 3}",
-      "foaledArray": ["1991", "03", "03"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "General Assembly",

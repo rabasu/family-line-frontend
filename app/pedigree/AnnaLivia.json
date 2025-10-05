@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Anna Livia",
     "rootHorseId": "anna-livia",
-    "lastUpdated": "2025-09-25T19:30:12.679875Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "anna-livia",
       "name": "アンナリビア",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northfields",
@@ -32,8 +33,11 @@
     {
       "id": "kiri-sancy",
       "name": "キリサンシー",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 14}",
-      "foaledArray": ["1985", "04", "14"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンシー",

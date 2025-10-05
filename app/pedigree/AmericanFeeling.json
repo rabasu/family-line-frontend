@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "American Feeling",
     "rootHorseId": "american-feeling",
-    "lastUpdated": "2025-09-25T00:24:41.851112Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "american-feeling",
       "name": "アメリカンフィーリング",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "osumi-best",
       "name": "オースミベスト",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 3}",
-      "foaledArray": ["1992", "03", "03"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

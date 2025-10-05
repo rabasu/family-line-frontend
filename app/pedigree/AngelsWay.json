@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Angel's Way",
     "rootHorseId": "angels-way",
-    "lastUpdated": "2025-09-27T16:10:25.917044Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "angels-way",
       "name": "エンジェルスウエー",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sovereign Path",
@@ -32,8 +33,9 @@
     {
       "id": "tai-angel",
       "name": "タイエンジェル",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フロリバンダ",
@@ -59,8 +61,11 @@
     {
       "id": "kikuno-angel",
       "name": "キクノエンジェル",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 5}",
-      "foaledArray": ["1980", "05", "05"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイテエム",
@@ -205,6 +210,172 @@
         "local": "0万円"
       },
       "damId": "tai-angel"
+    },
+    {
+      "id": "marubutsu-angel",
+      "name": "マルブツエンジェル",
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 25
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "フィルモン(GB)",
+      "dam": "エンジェルスウエー",
+      "color": "鹿毛",
+      "breeder": "松田牧場（様似町）",
+      "netkeibaId": "1977104763",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3270",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "中",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "14",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": "京都",
+          "race": "スワンS(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "9",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 1
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "ダ1700",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "日経新春杯(OP)",
+          "displayRace": "日経新春杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "12",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(OP)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Marubutsu Angel",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "angels-way"
     }
   ]
 }

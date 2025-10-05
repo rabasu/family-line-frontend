@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ala",
     "rootHorseId": "ala",
-    "lastUpdated": "2025-09-25T20:31:14.490693Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ala",
       "name": "アラ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Abdos",
@@ -32,8 +33,11 @@
     {
       "id": "harbor-lotus",
       "name": "ハーバーロータス",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 16}",
-      "foaledArray": ["1979", "04", "16"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードツービート",
@@ -75,8 +79,11 @@
     {
       "id": "royal-harbor",
       "name": "ロイヤルハーバー",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 1}",
-      "foaledArray": ["1990", "03", "01"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アスワン",
@@ -360,8 +367,11 @@
     {
       "id": "high-harbor",
       "name": "ハイハーバー",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 12}",
-      "foaledArray": ["1988", "04", "12"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サウスアトランティック(IRE)",

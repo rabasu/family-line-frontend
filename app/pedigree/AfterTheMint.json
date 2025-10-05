@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "After the Mint",
     "rootHorseId": "after-the-mint",
-    "lastUpdated": "2025-09-24T23:52:43.256478Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "after-the-mint",
       "name": "アフターザミント",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Key to the Mint",
@@ -32,8 +33,11 @@
     {
       "id": "foundry-rivlia",
       "name": "ファンドリリヴリア",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 12}",
-      "foaledArray": ["1990", "05", "12"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リヴリア(US)",

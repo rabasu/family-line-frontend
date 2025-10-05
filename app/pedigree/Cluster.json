@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cluster",
     "rootHorseId": "cluster",
-    "lastUpdated": "2025-09-21T09:49:55.757111Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cluster",
       "name": "クラスター",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "t-m-inazuma",
       "name": "テイエムイナズマ",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 31}",
-      "foaledArray": ["2010", "03", "31"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブラックタイド",

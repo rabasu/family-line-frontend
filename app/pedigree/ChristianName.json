@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Christian Name",
     "rootHorseId": "christian-name",
-    "lastUpdated": "2025-09-17T02:01:54.337851Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "christian-name",
       "name": "クリスチャンネーム",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 3}",
-      "foaledArray": ["1993", "04", "03"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cadeaux Genereux",
@@ -32,8 +35,11 @@
     {
       "id": "cosmo-crystal",
       "name": "コスモクリスタル",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 18}",
-      "foaledArray": ["2006", "05", "18"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マイネルラヴ",
@@ -61,8 +67,11 @@
     {
       "id": "win-carnelian",
       "name": "ウインカーネリアン",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 16}",
-      "foaledArray": ["2017", "04", "16"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スクリーンヒーロー",

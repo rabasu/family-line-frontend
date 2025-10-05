@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aguilera",
     "rootHorseId": "aguilera",
-    "lastUpdated": "2025-09-27T04:35:30.104577Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aguilera",
       "name": "アギレラ",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Dancer",
@@ -32,8 +33,11 @@
     {
       "id": "major-winner",
       "name": "メジャーウィナー",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 14}",
-      "foaledArray": ["1990", "05", "14"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",

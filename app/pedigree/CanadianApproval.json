@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Canadian Approval",
     "rootHorseId": "canadian-approval",
-    "lastUpdated": "2025-09-19T01:32:44.301025Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "canadian-approval",
       "name": "カナディアンアプルーバル",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "With Approval",
@@ -32,8 +33,11 @@
     {
       "id": "cosmo-canadian",
       "name": "コスモカナディアン",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 3}",
-      "foaledArray": ["2013", "05", "03"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロージズインメイ(US)",

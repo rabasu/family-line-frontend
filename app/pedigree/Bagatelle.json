@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bagatelle",
     "rootHorseId": "bagatelle",
-    "lastUpdated": "2025-09-18T04:21:30.028970Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bagatelle",
       "name": "バガテール",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Diesis",
@@ -32,8 +33,11 @@
     {
       "id": "ultra-pegasus",
       "name": "ウルトラペガサス",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 12}",
-      "foaledArray": ["2005", "03", "12"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fusaichi Pegasus",
@@ -61,8 +65,11 @@
     {
       "id": "my-blue-heaven",
       "name": "マイブルーヘブン",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 9}",
-      "foaledArray": ["2014", "04", "09"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",

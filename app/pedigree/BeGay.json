@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Be Gay",
     "rootHorseId": "be-gay",
-    "lastUpdated": "2025-09-27T07:36:22.167562Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "be-gay",
       "name": "ビーゲイ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ballymoss(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "marubutsu-sir-pen",
       "name": "マルブツサーペン",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 9}",
-      "foaledArray": ["1981", "05", "09"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サーペンフロ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "アバロンピーク",
     "rootHorseId": "abaronpiiku",
-    "lastUpdated": "2025-09-25T11:24:05.856933Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "abaronpiiku",
       "name": "アバロンピーク",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Peak Halyard",
@@ -31,8 +32,9 @@
     {
       "id": "shima-peak",
       "name": "シマピーク",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シマタカ",
@@ -58,8 +60,9 @@
     {
       "id": "man-ojo",
       "name": "マンノージョウ",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リンボー(US)",
@@ -85,8 +88,11 @@
     {
       "id": "high-victor",
       "name": "ハイビクター",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 12}",
-      "foaledArray": ["1978", "05", "12"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ツイッグ",
@@ -112,8 +118,11 @@
     {
       "id": "hashiru-shogun",
       "name": "ハシルショウグン",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 18}",
-      "foaledArray": ["1988", "04", "18"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "メンデス(FR)",

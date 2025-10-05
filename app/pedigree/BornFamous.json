@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Born Famous",
     "rootHorseId": "born-famous",
-    "lastUpdated": "2025-09-21T10:19:45.060016Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "born-famous",
       "name": "ボーンフェイマス",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Exuberant",
@@ -32,8 +33,11 @@
     {
       "id": "born-star",
       "name": "ボーンスター",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 20}",
-      "foaledArray": ["1996", "05", "20"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "provinage",
       "name": "プロヴィナージュ",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 3}",
-      "foaledArray": ["2005", "02", "03"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
@@ -331,8 +338,11 @@
     {
       "id": "sunrise-sieg",
       "name": "サンライズジーク",
-      "foaled": "{'year': 2020, 'month': 5, 'day': 15}",
-      "foaledArray": ["2020", "05", "15"],
+      "foaled": {
+        "year": 2020,
+        "month": 5,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
@@ -406,8 +416,11 @@
     {
       "id": "narita-star-one",
       "name": "ナリタスターワン",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 24}",
-      "foaledArray": ["2012", "02", "24"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ショウナンカンプ",
@@ -706,8 +719,11 @@
     {
       "id": "eden-rock",
       "name": "エデンロック",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 8}",
-      "foaledArray": ["2010", "03", "08"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",

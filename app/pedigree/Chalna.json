@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chalna",
     "rootHorseId": "chalna",
-    "lastUpdated": "2025-09-23T09:04:03.617006Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chalna",
       "name": "シャルナ",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Darshaan",
@@ -32,8 +33,9 @@
     {
       "id": "celadon",
       "name": "セラドン",
-      "foaled": "{'year': 2007}",
-      "foaledArray": ["2007"],
+      "foaled": {
+        "year": 2007
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゴールドヘイロー",
@@ -59,8 +61,11 @@
     {
       "id": "copano-kicking",
       "name": "コパノキッキング",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 7}",
-      "foaledArray": ["2015", "03", "07"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 7
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Spring At Last",
@@ -344,8 +349,11 @@
     {
       "id": "moere-genius",
       "name": "モエレジーニアス",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 10}",
-      "foaledArray": ["2003", "03", "10"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フサイチコンコルド",

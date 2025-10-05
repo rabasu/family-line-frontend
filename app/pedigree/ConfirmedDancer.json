@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Confirmed Dancer",
     "rootHorseId": "confirmed-dancer",
-    "lastUpdated": "2025-09-23T21:35:32.270112Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "confirmed-dancer",
       "name": "コンファームドダンサー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Dancer",
@@ -32,8 +33,11 @@
     {
       "id": "t-h-grace",
       "name": "ティエッチグレース",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 20}",
-      "foaledArray": ["1997", "04", "20"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Capote",

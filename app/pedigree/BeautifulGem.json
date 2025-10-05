@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Beautiful Gem",
     "rootHorseId": "beautiful-gem",
-    "lastUpdated": "2025-09-22T07:19:32.196407Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "beautiful-gem",
       "name": "ビューティフルジェム",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "jieniisongu",
       "name": "ジェニーソング",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 16}",
-      "foaledArray": ["2001", "02", "16"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rahy",
@@ -60,8 +64,11 @@
     {
       "id": "san-diego-city",
       "name": "サンディエゴシチー",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 28}",
-      "foaledArray": ["2007", "04", "28"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

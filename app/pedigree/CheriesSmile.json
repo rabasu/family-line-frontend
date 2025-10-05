@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Cherie's Smile",
     "rootHorseId": "cheries-smile",
-    "lastUpdated": "2025-09-19T09:51:17.385006Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cheries-smile",
       "name": "シェリーズスマイル",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 15}",
-      "foaledArray": ["2001", "05", "15"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングオブキングス(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "brightline",
       "name": "ブライトライン",
-      "foaled": "{'year': 2009, 'month': 5, 'day': 6}",
-      "foaledArray": ["2009", "05", "06"],
+      "foaled": {
+        "year": 2009,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

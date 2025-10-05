@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Court Jestress",
     "rootHorseId": "court-jestress",
-    "lastUpdated": "2025-09-24T10:39:50.001666Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "court-jestress",
       "name": "コートジェストレス",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Crozier",
@@ -32,8 +33,11 @@
     {
       "id": "dyna-jest",
       "name": "ダイナジェスト",
-      "foaled": "{'year': 1980, 'month': 3, 'day': 22}",
-      "foaledArray": ["1980", "03", "22"],
+      "foaled": {
+        "year": 1980,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -59,8 +63,11 @@
     {
       "id": "dyna-agatha",
       "name": "ダイナアガサ",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 4}",
-      "foaledArray": ["1984", "05", "04"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンフォードラッド(IRE)",
@@ -104,8 +111,11 @@
     {
       "id": "renaissance",
       "name": "ルネッサンス",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 8}",
-      "foaledArray": ["1997", "03", "08"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",
@@ -205,6 +215,81 @@
         "local": "0万円"
       },
       "damId": "dyna-agatha"
+    },
+    {
+      "id": "rakkiitauro",
+      "name": "ラッキータウロ",
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 17
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "エルセンタウロ",
+      "dam": "コートジェストレス",
+      "color": "黒鹿毛",
+      "breeder": "社台ファーム（白老町）",
+      "netkeibaId": "1976z01582",
+      "raceStats": {
+        "total": {
+          "runs": 36,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "8",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 12,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズステーク(OP)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "court-jestress"
     }
   ]
 }

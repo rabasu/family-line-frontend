@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Analupus",
     "rootHorseId": "analupus",
-    "lastUpdated": "2025-09-24T00:09:34.731037Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "analupus",
       "name": "アナルーパス",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hugh Lupus",
@@ -32,8 +33,9 @@
     {
       "id": "hamalupus",
       "name": "ハマルーパス",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ムーティエ(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "black-lupus",
       "name": "ブラックルーパス",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 6}",
-      "foaledArray": ["1978", "04", "06"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スティンティノ(GB)",
@@ -86,8 +91,11 @@
     {
       "id": "kaori-roman",
       "name": "カオリローマン",
-      "foaled": "{'year': 1989, 'month': 6, 'day': 14}",
-      "foaledArray": ["1989", "06", "14"],
+      "foaled": {
+        "year": 1989,
+        "month": 6,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",
@@ -115,8 +123,11 @@
     {
       "id": "kaori-giovanni",
       "name": "カオリジョバンニ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 12}",
-      "foaledArray": ["1998", "03", "12"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラストタイクーン(IRE)",

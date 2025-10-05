@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Carling",
     "rootHorseId": "carling",
-    "lastUpdated": "2025-09-22T21:58:22.200793Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "carling",
       "name": "カーリング",
-      "foaled": "{'year': 1992, 'month': 2, 'day': 17}",
-      "foaledArray": ["1992", "02", "17"],
+      "foaled": {
+        "year": 1992,
+        "month": 2,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Garde Royale",
       "dam": "Corraleja",
-      "dam_netkeiba_id": "",
       "color": "黒鹿毛",
       "breeder": "Jean Delbart（仏）",
       "netkeibaId": "1992190002",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Carling"
+      "englishName": "Carling",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "extra-end",
       "name": "エキストラエンド",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 7}",
-      "foaledArray": ["2009", "04", "07"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "カーリング",
-      "dam_netkeiba_id": "1992190002",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2009105771",
@@ -479,13 +484,17 @@
         "central": "2億4,638万円",
         "local": "0万円"
       },
-      "damId": "carling"
+      "damId": "carling",
+      "dam_netkeiba_id": "1992190002"
     },
     {
       "id": "libertas",
       "name": "リベルタス",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 9}",
-      "foaledArray": ["2008", "02", "09"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -604,8 +613,11 @@
     {
       "id": "brave-heart",
       "name": "ブレーヴハート",
-      "foaled": "{'year': 2002, 'month': 5, 'day': 2}",
-      "foaledArray": ["2002", "05", "02"],
+      "foaled": {
+        "year": 2002,
+        "month": 5,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -799,8 +811,11 @@
     {
       "id": "lohengrin",
       "name": "ローエングリン",
-      "foaled": "{'year': 1999, 'month': 6, 'day': 8}",
-      "foaledArray": ["1999", "06", "08"],
+      "foaled": {
+        "year": 1999,
+        "month": 6,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",
@@ -1439,7 +1454,8 @@
         "central": "5億7,423万円",
         "local": "0万円"
       },
-      "damId": "carling"
+      "damId": "carling",
+      "linkName": "ローエングリン(1999)"
     }
   ]
 }

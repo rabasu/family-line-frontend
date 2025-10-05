@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Constant Change",
     "rootHorseId": "constant-change",
-    "lastUpdated": "2025-09-26T14:11:35.161939Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "constant-change",
       "name": "コンスタントチエンジ",
-      "foaled": "{'year': 1959}",
-      "foaledArray": ["1959"],
+      "foaled": {
+        "year": 1959
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Never Say Die",
@@ -32,8 +33,9 @@
     {
       "id": "fushimi-akari",
       "name": "フシミアカリ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ムーティエ(FR)",
@@ -59,8 +61,9 @@
     {
       "id": "fushimi-hard",
       "name": "フシミハード",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードリドン(GB)",
@@ -86,8 +89,11 @@
     {
       "id": "ron-spark",
       "name": "ロンスパーク",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 2}",
-      "foaledArray": ["1982", "04", "02"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シーホーク",
@@ -337,6 +343,111 @@
         "local": "0万円"
       },
       "damId": "fushimi-hard"
+    },
+    {
+      "id": "kooyoochikara",
+      "name": "コーヨーチカラ",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ミラルゴ",
+      "dam": "コンスタントチエンジ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a0101dc",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "4",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(OP)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "15",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "680万円",
+        "central": "680万円",
+        "local": "0万円"
+      },
+      "damId": "constant-change"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Beatrix Kiddo",
     "rootHorseId": "beatrix-kiddo",
-    "lastUpdated": "2025-09-18T08:58:06.709904Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "beatrix-kiddo",
       "name": "ビートリックスキッド",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Victory Note",
@@ -32,8 +33,11 @@
     {
       "id": "satono-garnet",
       "name": "サトノガーネット",
-      "foaled": "{'year': 2015, 'month': 1, 'day': 28}",
-      "foaledArray": ["2015", "01", "28"],
+      "foaled": {
+        "year": 2015,
+        "month": 1,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

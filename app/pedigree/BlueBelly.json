@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Blue Belly",
     "rootHorseId": "blue-belly",
-    "lastUpdated": "2025-09-25T14:27:20.281158Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "blue-belly",
       "name": "ブルーベリーII",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ベリファ(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "heian-wassl",
       "name": "ヘイアンワッスル",
-      "foaled": "{'year': 1988, 'month': 2, 'day': 15}",
-      "foaledArray": ["1988", "02", "15"],
+      "foaled": {
+        "year": 1988,
+        "month": 2,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ワツスル(GB)",

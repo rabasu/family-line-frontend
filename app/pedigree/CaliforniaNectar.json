@@ -2,21 +2,24 @@
   "metadata": {
     "pedigreeName": "California Nectar",
     "rootHorseId": "california-nectar",
-    "lastUpdated": "2025-09-17T01:00:17.326243Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "california-nectar",
       "name": "カリフォルニアネクター",
-      "foaled": "{'year': 2008, 'month': 1, 'day': 28}",
-      "foaledArray": ["2008", "01", "28"],
+      "foaled": {
+        "year": 2008,
+        "month": 1,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Stormy Atlantic",
       "dam": "Absolute Nectar",
-      "color": "鹿毛",
-      "breeder": "米",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a01205b",
       "raceStats": {
         "total": {
@@ -32,14 +35,17 @@
     {
       "id": "queen-pirates",
       "name": "クイーンパイレーツ",
-      "foaled": "{'year': 2014, 'month': 2, 'day': 10}",
-      "foaledArray": ["2014", "02", "10"],
+      "foaled": {
+        "year": 2014,
+        "month": 2,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
       "dam": "カリフォルニアネクター",
-      "color": "黒鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2014105872",
       "raceStats": {
         "total": {
@@ -59,8 +65,11 @@
     {
       "id": "outrange",
       "name": "アウトレンジ",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 4}",
-      "foaledArray": ["2020", "04", "04"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "レガーロ",
@@ -179,8 +188,11 @@
     {
       "id": "hapi",
       "name": "ハピ",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 15}",
-      "foaledArray": ["2019", "03", "15"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キズナ",

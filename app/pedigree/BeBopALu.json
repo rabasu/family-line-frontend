@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Be Bop a Lu",
     "rootHorseId": "be-bop-a-lu",
-    "lastUpdated": "2025-09-23T19:34:49.092613Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "be-bop-a-lu",
       "name": "ビーバップアルー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "tenshino-kiseki",
       "name": "テンシノキセキ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 29}",
-      "foaledArray": ["1998", "03", "29"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

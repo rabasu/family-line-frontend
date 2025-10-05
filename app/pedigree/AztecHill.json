@@ -2,21 +2,24 @@
   "metadata": {
     "pedigreeName": "Aztec Hill",
     "rootHorseId": "aztec-hill",
-    "lastUpdated": "2025-09-15T07:08:51.216780Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aztec-hill",
       "name": "アズテックヒル",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 27}",
-      "foaledArray": ["1990", "03", "27"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Proud Truth",
       "dam": "Tribal Hill",
-      "color": "鹿毛",
-      "breeder": "米",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a0064da",
       "raceStats": {
         "total": {
@@ -32,14 +35,17 @@
     {
       "id": "ancient-hill",
       "name": "エンシェントヒル",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 8}",
-      "foaledArray": ["2001", "03", "08"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エンドスウィープ(US)",
       "dam": "アズテックヒル",
-      "color": "鹿毛",
-      "breeder": "ノーザンファーム（早来町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2001103297",
       "raceStats": {
         "total": {
@@ -152,14 +158,17 @@
     {
       "id": "corcovado",
       "name": "コルコバード",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 6}",
-      "foaledArray": ["2013", "03", "06"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
       "dam": "エンシェントヒル",
-      "color": "黒鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2013105816",
       "raceStats": {
         "total": {
@@ -227,8 +236,11 @@
     {
       "id": "redentor",
       "name": "ヘデントール",
-      "foaled": "{'year': 2021, 'month': 4, 'day': 6}",
-      "foaledArray": ["2021", "04", "06"],
+      "foaled": {
+        "year": 2021,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",

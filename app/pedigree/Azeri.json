@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Azeri",
     "rootHorseId": "azeri",
-    "lastUpdated": "2025-09-20T10:18:02.220607Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "azeri",
       "name": "アゼリ",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 6}",
-      "foaledArray": ["1998", "05", "06"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェイドハンター(US)",
@@ -32,8 +35,11 @@
     {
       "id": "shirvanshah",
       "name": "シルヴァンシャー",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 28}",
-      "foaledArray": ["2015", "03", "28"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -122,13 +128,15 @@
     {
       "id": "leukerbad",
       "name": "ロイカバード",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 8}",
-      "foaledArray": ["2013", "03", "08"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "アゼリAzeri",
-      "dam_netkeiba_id": "000a0117a2",
       "color": "黒鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013105760",
@@ -223,7 +231,8 @@
         "central": "8,567万円",
         "local": "0万円"
       },
-      "damId": "azeri"
+      "damId": "azeri",
+      "dam_netkeiba_id": "000a0117a2"
     }
   ]
 }

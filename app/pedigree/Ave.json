@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Ave",
     "rootHorseId": "ave",
-    "lastUpdated": "2025-09-17T09:49:39.940918Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ave",
       "name": "アーヴェイ",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 14}",
-      "foaledArray": ["2006", "02", "14"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danehill Dancer(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "open-your-eyes",
       "name": "オープンユアアイズ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 6}",
-      "foaledArray": ["2013", "03", "06"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴィクトワールピサ",
@@ -61,8 +67,11 @@
     {
       "id": "lovely-your-eyes",
       "name": "ラブリイユアアイズ",
-      "foaled": "{'year': 2019, 'month': 3, 'day': 19}",
-      "foaledArray": ["2019", "03", "19"],
+      "foaled": {
+        "year": 2019,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロゴタイプ",

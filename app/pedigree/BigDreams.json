@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Big Dreams",
     "rootHorseId": "big-dreams",
-    "lastUpdated": "2025-09-25T00:26:18.630997Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "big-dreams",
       "name": "Big Dreams",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Great Above",
@@ -31,8 +32,11 @@
     {
       "id": "yashima-japan",
       "name": "ヤシマジャパン",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 21}",
-      "foaledArray": ["1994", "04", "21"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",

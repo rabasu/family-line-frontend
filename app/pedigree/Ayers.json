@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ayers",
     "rootHorseId": "ayers",
-    "lastUpdated": "2025-09-24T18:52:24.902571Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ayers",
       "name": "エアーズ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rockefella",
@@ -32,8 +33,9 @@
     {
       "id": "belle-top",
       "name": "ベルトップ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネプテューヌス(FR)",
@@ -120,8 +122,11 @@
     {
       "id": "tokai-chateau",
       "name": "トウカイシャトー",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 14}",
-      "foaledArray": ["1982", "04", "14"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シャトーゲイ(US)",
@@ -147,8 +152,11 @@
     {
       "id": "tokai-smile",
       "name": "トウカイスマイル",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 18}",
-      "foaledArray": ["1988", "05", "18"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",
@@ -176,8 +184,11 @@
     {
       "id": "tokai-punch",
       "name": "トウカイパンチ",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 26}",
-      "foaledArray": ["1995", "04", "26"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リズム(US)",

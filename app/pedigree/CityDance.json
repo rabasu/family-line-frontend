@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "City Dance",
     "rootHorseId": "city-dance",
-    "lastUpdated": "2025-09-24T20:20:11.976700Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "city-dance",
       "name": "City Dance",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -31,8 +32,11 @@
     {
       "id": "toyo-seattle",
       "name": "トーヨーシアトル",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 4}",
-      "foaledArray": ["1993", "04", "04"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",

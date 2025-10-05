@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Bettolle",
     "rootHorseId": "bettolle",
-    "lastUpdated": "2025-09-18T11:25:37.864227Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bettolle",
       "name": "ベットーレ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 11}",
-      "foaledArray": ["2009", "03", "11"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blu Air Force",
@@ -32,8 +35,11 @@
     {
       "id": "gloria-mundi",
       "name": "グロリアムンディ",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 13}",
-      "foaledArray": ["2018", "03", "13"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -272,8 +278,11 @@
     {
       "id": "nine-to-five",
       "name": "ナイントゥファイブ",
-      "foaled": "{'year': 2017, 'month': 1, 'day': 31}",
-      "foaledArray": ["2017", "01", "31"],
+      "foaled": {
+        "year": 2017,
+        "month": 1,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スクリーンヒーロー",

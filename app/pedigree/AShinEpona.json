@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "A Shin Epona",
     "rootHorseId": "a-shin-epona",
-    "lastUpdated": "2025-09-16T09:41:34.536809Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "a-shin-epona",
       "name": "エーシンエポナ",
-      "foaled": "{'year': 2010, 'month': 1, 'day': 30}",
-      "foaledArray": ["2010", "01", "30"],
+      "foaled": {
+        "year": 2010,
+        "month": 1,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Curlin(US)",
@@ -32,8 +35,11 @@
     {
       "id": "gastrique",
       "name": "ガストリック",
-      "foaled": "{'year': 2020, 'month': 2, 'day': 12}",
-      "foaledArray": ["2020", "02", "12"],
+      "foaled": {
+        "year": 2020,
+        "month": 2,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャスタウェイ",

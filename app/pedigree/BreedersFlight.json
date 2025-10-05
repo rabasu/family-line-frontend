@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Breeder's Flight",
     "rootHorseId": "breeders-flight",
-    "lastUpdated": "2025-09-21T00:29:46.487189Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "breeders-flight",
       "name": "ブリーダーズフライト",
-      "foaled": "{'year': 1985, 'month': 3, 'day': 4}",
-      "foaledArray": ["1985", "03", "04"],
+      "foaled": {
+        "year": 1985,
+        "month": 3,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cutlass",
@@ -32,8 +35,11 @@
     {
       "id": "keiai-dosojin",
       "name": "ケイアイドウソジン",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 12}",
-      "foaledArray": ["2006", "04", "12"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",

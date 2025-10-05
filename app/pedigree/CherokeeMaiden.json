@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cherokee Maiden",
     "rootHorseId": "cherokee-maiden",
-    "lastUpdated": "2025-09-15T07:08:00.005693Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cherokee-maiden",
       "name": "チェロキーメイドン",
-      "foaled": "{'year': 2017}",
-      "foaledArray": ["2017"],
+      "foaled": {
+        "year": 2017
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Distorted Humor(US)",
@@ -32,8 +33,11 @@
     {
       "id": "mistress",
       "name": "ミストレス",
-      "foaled": "{'year': 2022, 'month': 2, 'day': 2}",
-      "foaledArray": ["2022", "02", "02"],
+      "foaled": {
+        "year": 2022,
+        "month": 2,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キズナ",

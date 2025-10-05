@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ambaciatrice",
     "rootHorseId": "ambaciatrice",
-    "lastUpdated": "2025-09-25T22:01:36.549539Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ambaciatrice",
       "name": "アンバシアトリス",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Jet Diplomacy",
@@ -32,8 +33,11 @@
     {
       "id": "foro-romano",
       "name": "フォロロマーノ",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 22}",
-      "foaledArray": ["1987", "03", "22"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アスワン",

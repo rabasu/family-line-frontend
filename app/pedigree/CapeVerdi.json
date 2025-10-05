@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cape Verdi",
     "rootHorseId": "cape-verdi",
-    "lastUpdated": "2025-09-20T17:56:15.421181Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cape-verdi",
       "name": "ケープヴェルディ",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,9 @@
     {
       "id": "arctic-silk",
       "name": "アークティックシルク",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Selkirk",
@@ -59,8 +61,11 @@
     {
       "id": "golden-number",
       "name": "ゴールデンナンバー",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 11}",
-      "foaledArray": ["2009", "02", "11"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

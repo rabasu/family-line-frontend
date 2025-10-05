@@ -1,16 +1,17 @@
 {
   "metadata": {
     "pedigreeName": "Amelia",
-    "rootHorseId": "amelia",
-    "lastUpdated": "2025-09-20T01:22:01.754923Z",
-    "source": "python_scraping"
+    "rootHorseId": "amelia-1998",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "amelia-1998",
       "name": "Amelia",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dixieland Band",
@@ -31,8 +32,11 @@
     {
       "id": "asakusa-genki",
       "name": "アサクサゲンキ",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 17}",
-      "foaledArray": ["2015", "04", "17"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 17
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Stormy Atlantic",

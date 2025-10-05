@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cataract",
     "rootHorseId": "cataract",
-    "lastUpdated": "2025-09-18T16:18:48.862430Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cataract",
       "name": "キャタラクト",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "feariibaniyan",
       "name": "フェアリーバニヤン",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 8}",
-      "foaledArray": ["2003", "03", "08"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Honour and Glory",
@@ -60,8 +64,11 @@
     {
       "id": "london-town",
       "name": "ロンドンタウン",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 22}",
-      "foaledArray": ["2013", "04", "22"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カネヒキリ",

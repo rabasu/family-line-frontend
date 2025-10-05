@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Annabel",
     "rootHorseId": "annabel",
-    "lastUpdated": "2025-09-26T03:03:26.900933Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "annabel",
       "name": "アンナベル",
-      "foaled": "{'year': 1951}",
-      "foaledArray": ["1951"],
+      "foaled": {
+        "year": 1951
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Al Wassat",
@@ -32,8 +33,9 @@
     {
       "id": "marubutsu-queen",
       "name": "マルブツクイン",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァービート(GB)",
@@ -75,8 +77,9 @@
     {
       "id": "marubutsu-echo",
       "name": "マルブツエコー",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セントクレスピン(GB)",
@@ -102,8 +105,11 @@
     {
       "id": "marubutsu-fast",
       "name": "マルブツファースト",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 2}",
-      "foaledArray": ["1982", "04", "02"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゲイルーザック",

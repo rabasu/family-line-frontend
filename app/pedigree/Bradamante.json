@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Bradamante",
     "rootHorseId": "bradamante",
-    "lastUpdated": "2025-09-25T01:28:07.915784Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bradamante",
       "name": "ブラダマンテ",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Roberto",
       "dam": "Sulemeif",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "米",
       "netkeibaId": "000a0062fc",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Bradamante"
+      "englishName": "Bradamante",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "blessing",
       "name": "ブレッシング",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 4}",
-      "foaledArray": ["1994", "04", "04"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
       "dam": "ブラダマンテ",
-      "dam_netkeiba_id": "000a0062fc",
       "color": "鹿毛",
       "breeder": "下河辺牧場（門別町）",
       "netkeibaId": "1994102930",
@@ -58,18 +61,21 @@
         "central": "755万円",
         "local": "0万円"
       },
-      "damId": "bradamante"
+      "damId": "bradamante",
+      "dam_netkeiba_id": "000a0062fc"
     },
     {
       "id": "azuma-shuttle",
       "name": "アズマシャトル",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 5}",
-      "foaledArray": ["2011", "04", "05"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ゼンノロブロイ",
       "dam": "ブレッシング",
-      "dam_netkeiba_id": "1994102930",
       "color": "鹿毛",
       "breeder": "下河辺牧場（日高町）",
       "netkeibaId": "2011100370",
@@ -254,13 +260,17 @@
         "central": "1億4,594万円",
         "local": "0万円"
       },
-      "damId": "blessing"
+      "damId": "blessing",
+      "dam_netkeiba_id": "1994102930"
     },
     {
       "id": "the-taiki",
       "name": "ザタイキ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 28}",
-      "foaledArray": ["2007", "03", "28"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -319,8 +329,11 @@
     {
       "id": "floral-lady",
       "name": "フローラルレディ",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 12}",
-      "foaledArray": ["1997", "03", "12"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -348,8 +361,11 @@
     {
       "id": "pisa-no-patek",
       "name": "ピサノパテック",
-      "foaled": "{'year': 2002, 'month': 1, 'day': 20}",
-      "foaledArray": ["2002", "01", "20"],
+      "foaled": {
+        "year": 2002,
+        "month": 1,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -573,8 +589,11 @@
     {
       "id": "still-in-love",
       "name": "スティルインラブ",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 2}",
-      "foaledArray": ["2000", "05", "02"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -813,8 +832,11 @@
     {
       "id": "big-baillamont",
       "name": "ビッグバイアモン",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 16}",
-      "foaledArray": ["1993", "04", "16"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バイアモン(US)",

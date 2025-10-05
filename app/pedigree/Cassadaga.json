@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cassadaga",
     "rootHorseId": "cassadaga",
-    "lastUpdated": "2025-09-24T23:23:39.028390Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cassadaga",
       "name": "カサダガ",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cassaleria",
@@ -32,8 +33,11 @@
     {
       "id": "stone-stepper",
       "name": "ストーンステッパー",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 9}",
-      "foaledArray": ["1993", "05", "09"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Crafty Prospector",

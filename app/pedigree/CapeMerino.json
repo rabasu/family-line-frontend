@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cape Merino",
     "rootHorseId": "cape-merino",
-    "lastUpdated": "2025-09-23T17:38:20.634028Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cape-merino",
       "name": "Cape Merino",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Clantime",
@@ -31,8 +32,11 @@
     {
       "id": "cape-of-good-hope",
       "name": "ケープオブグッドホープ",
-      "foaled": "{'year': 1998, 'month': 1, 'day': 21}",
-      "foaledArray": ["1998", "01", "21"],
+      "foaled": {
+        "year": 1998,
+        "month": 1,
+        "day": 21
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Inchinor",

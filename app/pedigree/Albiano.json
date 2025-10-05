@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Albiano",
     "rootHorseId": "albiano",
-    "lastUpdated": "2025-09-16T01:28:59.195527Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "albiano",
       "name": "アルビアーノ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 6}",
-      "foaledArray": ["2012", "02", "06"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Harlan's Holiday",
@@ -32,8 +35,11 @@
     {
       "id": "avverare",
       "name": "アヴェラーレ",
-      "foaled": "{'year': 2018, 'month': 3, 'day': 29}",
-      "foaledArray": ["2018", "03", "29"],
+      "foaled": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドゥラメンテ",

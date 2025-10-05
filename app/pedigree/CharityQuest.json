@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Charity Quest",
     "rootHorseId": "charity-quest",
-    "lastUpdated": "2025-09-21T10:20:03.536228Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "charity-quest",
       "name": "チャリティークエスト",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コロナドズクエスト(US)",
@@ -32,8 +33,11 @@
     {
       "id": "blank-cheque",
       "name": "ブランクチェック",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 24}",
-      "foaledArray": ["2017", "04", "24"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パイロ(US)",
@@ -92,8 +96,11 @@
     {
       "id": "knowledge",
       "name": "ノウレッジ",
-      "foaled": "{'year': 2010, 'month': 1, 'day': 23}",
-      "foaledArray": ["2010", "01", "23"],
+      "foaled": {
+        "year": 2010,
+        "month": 1,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ストリートセンス(US)",

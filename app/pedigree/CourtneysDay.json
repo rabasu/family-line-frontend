@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Courtney's Day",
     "rootHorseId": "courtneys-day",
-    "lastUpdated": "2025-09-22T01:07:22.241298Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "courtneys-day",
       "name": "コートネイズデイ",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Roberto",
@@ -32,8 +33,11 @@
     {
       "id": "imagination",
       "name": "イマジネーション",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 26}",
-      "foaledArray": ["1996", "02", "26"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -59,8 +63,11 @@
     {
       "id": "courir-passion",
       "name": "クリールパッション",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 1}",
-      "foaledArray": ["2005", "03", "01"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ワイルドラッシュ(US)",

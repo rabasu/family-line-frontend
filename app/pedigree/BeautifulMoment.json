@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Beautiful Moment",
     "rootHorseId": "beautiful-moment",
-    "lastUpdated": "2025-09-21T21:10:35.463873Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "beautiful-moment",
       "name": "Beautiful Moment",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Crusader Sword",
@@ -31,8 +32,11 @@
     {
       "id": "henny-hound",
       "name": "ヘニーハウンド",
-      "foaled": "{'year': 2008, 'month': 5, 'day': 13}",
-      "foaledArray": ["2008", "05", "13"],
+      "foaled": {
+        "year": 2008,
+        "month": 5,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘニーヒューズ(US)",

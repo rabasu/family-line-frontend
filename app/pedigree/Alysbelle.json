@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Alysbelle",
     "rootHorseId": "alysbelle",
-    "lastUpdated": "2025-09-24T04:07:58.039929Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alysbelle",
       "name": "Alysbelle",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar",
@@ -31,8 +32,11 @@
     {
       "id": "matikane-kinnohosi",
       "name": "マチカネキンノホシ",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 2}",
-      "foaledArray": ["1996", "04", "02"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",

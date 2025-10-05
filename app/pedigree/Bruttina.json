@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Bruttina",
     "rootHorseId": "bruttina",
-    "lastUpdated": "2025-09-23T19:32:28.857638Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "bruttina",
       "name": "ブルティナ",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Primo Dominie",
@@ -32,8 +33,11 @@
     {
       "id": "move-of-sunday",
       "name": "ムーヴオブサンデー",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 15}",
-      "foaledArray": ["2001", "04", "15"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

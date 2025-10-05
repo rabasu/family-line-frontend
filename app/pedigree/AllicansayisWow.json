@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Allicansayis Wow",
     "rootHorseId": "allicansayis-wow",
-    "lastUpdated": "2025-09-15T06:46:22.696141Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "allicansayis-wow",
       "name": "オールアイキャンセイイズワウ",
-      "foaled": "{'year': 2005}",
-      "foaledArray": ["2005"],
+      "foaled": {
+        "year": 2005
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Street Cry(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "kineo-dancer",
       "name": "キネオダンサー",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 28}",
-      "foaledArray": ["2011", "02", "28"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -61,8 +65,11 @@
     {
       "id": "run-for-vow",
       "name": "ランフォーヴァウ",
-      "foaled": "{'year': 2022, 'month': 3, 'day': 20}",
-      "foaledArray": ["2022", "03", "20"],
+      "foaled": {
+        "year": 2022,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",

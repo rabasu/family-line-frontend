@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Burningwood",
     "rootHorseId": "burningwood",
-    "lastUpdated": "2025-09-22T01:08:59.391187Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "burningwood",
       "name": "バーニングウッド",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 19}",
-      "foaledArray": ["1997", "02", "19"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タバスコキャット(US)",
@@ -32,8 +35,11 @@
     {
       "id": "fireflaught",
       "name": "ファイアーフロート",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 17}",
-      "foaledArray": ["2006", "04", "17"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",

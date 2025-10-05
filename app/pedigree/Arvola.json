@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Arvola",
     "rootHorseId": "arvola",
-    "lastUpdated": "2025-09-24T10:40:33.590717Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "arvola",
       "name": "アルヴォラ",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "shoei-mizuki",
       "name": "ショウエイミズキ",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 3}",
-      "foaledArray": ["1996", "03", "03"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nashwan",
@@ -61,8 +65,11 @@
     {
       "id": "developpe",
       "name": "デヴェロッペ",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 4}",
-      "foaledArray": ["2005", "04", "04"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボストンハーバー(US)",
@@ -136,8 +143,11 @@
     {
       "id": "crocosmia",
       "name": "クロコスミア",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 17}",
-      "foaledArray": ["2013", "05", "17"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
@@ -556,8 +566,11 @@
     {
       "id": "diktat",
       "name": "ディクタット",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 25}",
-      "foaledArray": ["1995", "02", "25"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ウォーニング(GB)",

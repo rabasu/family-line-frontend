@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Amenerdis",
     "rootHorseId": "amenerdis",
-    "lastUpdated": "2025-09-27T15:26:56.220748Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "amenerdis",
       "name": "アメナーデイス",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Worden",
@@ -32,8 +33,9 @@
     {
       "id": "queen-tateyama",
       "name": "クインタテヤマ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "レイバーン",
@@ -59,8 +61,11 @@
     {
       "id": "lucky-taniyan",
       "name": "ラッキータニヤン",
-      "foaled": "{'year': 1977, 'month': 5, 'day': 5}",
-      "foaledArray": ["1977", "05", "05"],
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イエローゴッド",
@@ -86,8 +91,11 @@
     {
       "id": "dantsu-elite",
       "name": "ダンツエリート",
-      "foaled": "{'year': 1984, 'month': 3, 'day': 14}",
-      "foaledArray": ["1984", "03", "14"],
+      "foaled": {
+        "year": 1984,
+        "month": 3,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トウショウイレブン",
@@ -176,8 +184,11 @@
     {
       "id": "god-river",
       "name": "ゴットリバー",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 16}",
-      "foaledArray": ["1982", "04", "16"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タケシバオー",

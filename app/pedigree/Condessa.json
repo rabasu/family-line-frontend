@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Condessa",
     "rootHorseId": "condessa",
-    "lastUpdated": "2025-09-24T22:24:34.224111Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "condessa",
       "name": "Condessa",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Condorcet",
@@ -31,8 +32,11 @@
     {
       "id": "biko-pegasus",
       "name": "ビコーペガサス",
-      "foaled": "{'year': 1991, 'month': 2, 'day': 8}",
-      "foaledArray": ["1991", "02", "08"],
+      "foaled": {
+        "year": 1991,
+        "month": 2,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Danzig",

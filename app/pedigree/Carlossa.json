@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Carlossa",
     "rootHorseId": "carlossa",
-    "lastUpdated": "2025-09-23T12:04:24.544350Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "carlossa",
       "name": "カーロッサ",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 16}",
-      "foaledArray": ["1995", "05", "16"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +35,11 @@
     {
       "id": "chakra",
       "name": "チャクラ",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 27}",
-      "foaledArray": ["2000", "04", "27"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",

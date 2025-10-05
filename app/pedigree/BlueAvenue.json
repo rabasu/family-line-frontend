@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Blue Avenue",
     "rootHorseId": "blue-avenue",
-    "lastUpdated": "2025-09-24T04:39:17.136003Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "blue-avenue",
       "name": "ブルーアヴェニュー",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Classic Go Go",
@@ -32,8 +33,11 @@
     {
       "id": "miss-pascali",
       "name": "ミスパスカリ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 5}",
-      "foaledArray": ["2001", "03", "05"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Greeley",
@@ -137,8 +141,11 @@
     {
       "id": "winter-cosmos",
       "name": "ウィンターコスモス",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 30}",
-      "foaledArray": ["2007", "04", "30"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -164,8 +171,11 @@
     {
       "id": "ice-bubble",
       "name": "アイスバブル",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 8}",
-      "foaledArray": ["2015", "04", "08"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -464,8 +474,11 @@
     {
       "id": "miyamazakura",
       "name": "ミヤマザクラ",
-      "foaled": "{'year': 2017, 'month': 5, 'day': 2}",
-      "foaledArray": ["2017", "05", "02"],
+      "foaled": {
+        "year": 2017,
+        "month": 5,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -569,8 +582,11 @@
     {
       "id": "gruyeres",
       "name": "グリュイエール",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 1}",
-      "foaledArray": ["2012", "04", "01"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -704,8 +720,11 @@
     {
       "id": "popocatepetl",
       "name": "ポポカテペトル",
-      "foaled": "{'year': 2014, 'month': 2, 'day': 22}",
-      "foaledArray": ["2014", "02", "22"],
+      "foaled": {
+        "year": 2014,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -869,13 +888,15 @@
     {
       "id": "mount-robson",
       "name": "マウントロブソン",
-      "foaled": "{'year': 2013, 'month': 1, 'day': 30}",
-      "foaledArray": ["2013", "01", "30"],
+      "foaled": {
+        "year": 2013,
+        "month": 1,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "ミスパスカリ",
-      "dam_netkeiba_id": "2001103436",
       "color": "芦毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013106108",
@@ -1000,13 +1021,17 @@
         "central": "1億2,221万円",
         "local": "0万円"
       },
-      "damId": "miss-pascali"
+      "damId": "miss-pascali",
+      "dam_netkeiba_id": "2001103436"
     },
     {
       "id": "kurofune",
       "name": "クロフネ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 31}",
-      "foaledArray": ["1998", "03", "31"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",

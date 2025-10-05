@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Abyla",
     "rootHorseId": "abyla",
-    "lastUpdated": "2025-09-21T00:28:43.047358Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "abyla",
       "name": "アビラ",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロックオブジブラルタル",
@@ -32,8 +33,11 @@
     {
       "id": "catedral",
       "name": "カテドラル",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 9}",
-      "foaledArray": ["2016", "02", "09"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -542,8 +546,11 @@
     {
       "id": "jebel-musa",
       "name": "ジェベルムーサ",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 15}",
-      "foaledArray": ["2010", "02", "15"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",

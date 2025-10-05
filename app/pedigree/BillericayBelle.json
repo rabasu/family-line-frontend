@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "ビラーリケーベル",
     "rootHorseId": "billericay_belle",
-    "lastUpdated": "2025-09-26T13:10:24.018757Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "billericay_belle",
       "name": "ビラーリケーベル",
-      "foaled": "1932",
-      "foaledArray": ["1932"],
+      "foaled": {
+        "year": 1932
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Samphire",
+      "dam": "Lingy Heath",
+      "color": "栗毛",
       "breeder": "",
       "netkeibaId": "000a0024fc",
       "source": "tsx_conversion",
+      "importedYear": "1936",
+      "familyNumber": "F8-f",
+      "registration": "14巻1666号",
       "owner": "小岩井農場"
     },
     {
       "id": "chestnut-valley",
       "name": "チェスナットバレー",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 24}",
-      "foaledArray": ["1981", "04", "24"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ファルコン(GB)",
@@ -249,8 +256,9 @@
     {
       "id": "july-road",
       "name": "ジユライロード",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -276,8 +284,9 @@
     {
       "id": "miss-djakarta",
       "name": "ミスジヤカルタ",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アポッスル(GB)",
@@ -303,8 +312,9 @@
     {
       "id": "union",
       "name": "ユニオン",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガルカドール",
@@ -331,8 +341,9 @@
     {
       "id": "genryu",
       "name": "ゲンリユウ",
-      "foaled": "{'year': 1949}",
-      "foaledArray": ["1949"],
+      "foaled": {
+        "year": 1949
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プリメロ(GB)",
@@ -358,8 +369,9 @@
     {
       "id": "daisanbiraarikeeberu",
       "name": "第参ビラーリケーベル",
-      "foaled": "{'year': 1944}",
-      "foaledArray": ["1944"],
+      "foaled": {
+        "year": 1944
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シアンモア(GB)",
@@ -380,6 +392,64 @@
         "total": "0万円"
       },
       "damId": "billericay_belle"
+    },
+    {
+      "id": "iriyuu",
+      "name": "イリユウ",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "イツセイ",
+      "dam": "ゲンリユウ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1955z00251",
+      "raceStats": {
+        "total": {
+          "runs": 36,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1960,
+            "month": 1,
+            "day": 17
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春盃競走(OP)",
+          "displayRace": "日本経済新春盃",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "9",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 5,
+            "day": 17
+          },
+          "racecourse": "京都",
+          "race": "京都記念競走(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "genryu"
     }
   ]
 }

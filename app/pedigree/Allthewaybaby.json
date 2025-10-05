@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Allthewaybaby",
     "rootHorseId": "allthewaybaby",
-    "lastUpdated": "2025-09-22T17:51:56.722754Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "allthewaybaby",
       "name": "オールザウェイベイビー",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grand Slam",
@@ -32,8 +33,11 @@
     {
       "id": "oh-my-baby",
       "name": "オーマイベイビー",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 1}",
-      "foaledArray": ["2011", "04", "01"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -59,13 +63,16 @@
     {
       "id": "stella-veloce",
       "name": "ステラヴェローチェ",
-      "foaled": "{'year': 2018, 'month': 2, 'day': 19}",
-      "foaledArray": ["2018", "02", "19"],
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バゴ(FR)",
       "dam": "オーマイベイビー",
-      "color": "鹿毛",
+      "color": "青鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2018104980",
       "raceStats": {
@@ -344,8 +351,11 @@
     {
       "id": "goshawk-ken",
       "name": "ゴスホークケン",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 3}",
-      "foaledArray": ["2005", "03", "03"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Bernstein",

@@ -2,24 +2,213 @@
   "metadata": {
     "pedigreeName": "アルプス",
     "rootHorseId": "alps",
-    "lastUpdated": "2025-09-07T14:36:10.930Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alps",
       "name": "アルプス",
-      "foaled": "1919",
-      "foaledArray": ["1919"],
+      "foaled": {
+        "year": 1919
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Tressady",
+      "dam": "La Siesta",
+      "color": "黒鹿毛",
       "breeder": "",
       "netkeibaId": "000a0023b2",
       "source": "tsx_conversion",
+      "importedYear": "1924",
+      "familyNumber": "F7-c",
+      "registration": "4巻486号",
       "owner": "東京競馬倶楽部輸入→高橋勝造"
+    },
+    {
+      "id": "raitorongu",
+      "name": "ライトロング",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "テスコボーイ(GB)",
+      "dam": "ランコウ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1970z00615",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "21",
+          "favorite": "20"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 4,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "11",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 3,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 2,
+            "day": 11
+          },
+          "racecourse": "中京",
+          "race": "きさらぎ賞(OP)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 10,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "3歳S(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "4",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rankou"
+    },
+    {
+      "id": "rankou",
+      "name": "ランコウ",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ラプソデー",
+      "dam": "オーリエント",
+      "color": "鹿毛",
+      "breeder": "岩手県",
+      "netkeibaId": "000a003690",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Rankou",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ooriento"
+    },
+    {
+      "id": "ooriento",
+      "name": "オーリエント",
+      "foaled": {
+        "year": 1948
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "クモハタ",
+      "dam": "ミントラス",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00293f",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "mintorasu"
+    },
+    {
+      "id": "mintorasu",
+      "name": "ミントラス",
+      "foaled": {
+        "year": 1937
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミンドアー(GB)",
+      "dam": "アルプス",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a002654",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "alps"
     }
   ]
 }

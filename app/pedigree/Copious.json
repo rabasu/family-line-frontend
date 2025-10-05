@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Copious",
     "rootHorseId": "copious",
-    "lastUpdated": "2025-09-25T02:17:31.251334Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "copious",
       "name": "Copious",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "In Reality",
@@ -31,8 +32,11 @@
     {
       "id": "eishin-olean",
       "name": "エイシンオーリアン",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 13}",
-      "foaledArray": ["1993", "05", "13"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Devil's Bag",

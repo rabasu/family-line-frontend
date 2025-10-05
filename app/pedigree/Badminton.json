@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Badminton",
     "rootHorseId": "badminton",
-    "lastUpdated": "2025-09-25T10:24:07.307199Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "badminton",
       "name": "バドミントン",
-      "foaled": "{'year': 1953}",
-      "foaledArray": ["1953"],
+      "foaled": {
+        "year": 1953
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Epigram",
@@ -32,8 +33,9 @@
     {
       "id": "miss-tarumae",
       "name": "ミスタルマエ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハクリョウ",
@@ -75,8 +77,9 @@
     {
       "id": "yama-hoyu",
       "name": "ヤマホウユウ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガーサント",
@@ -102,8 +105,11 @@
     {
       "id": "yamanin-policy",
       "name": "ヤマニンポリシー",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 4}",
-      "foaledArray": ["1981", "05", "04"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blushing Groom(FR)",
@@ -129,8 +135,11 @@
     {
       "id": "yamanin-zephyr",
       "name": "ヤマニンゼファー",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 27}",
-      "foaledArray": ["1988", "05", "27"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ニホンピロウイナー",

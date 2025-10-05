@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Breeze Lass",
     "rootHorseId": "breeze-lass",
-    "lastUpdated": "2025-09-24T13:12:12.666917Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "breeze-lass",
       "name": "Breeze Lass",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "It's Freezing",
@@ -31,8 +32,11 @@
     {
       "id": "gaily-condor",
       "name": "ゲイリーコンドル",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 2}",
-      "foaledArray": ["1995", "02", "02"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",

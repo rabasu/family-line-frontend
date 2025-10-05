@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Crystal Dawn",
     "rootHorseId": "crystal-dawn",
-    "lastUpdated": "2025-09-27T13:20:42.227281Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "crystal-dawn",
       "name": "クリスタルドーン",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sunrise Flight",
@@ -32,8 +33,11 @@
     {
       "id": "new-fanfan",
       "name": "ニューファンファン",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 3}",
-      "foaledArray": ["1982", "04", "03"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カネミノブ",
@@ -266,6 +270,51 @@
         "total": "3,907万円",
         "central": "3,907万円",
         "local": "0万円"
+      },
+      "damId": "crystal-dawn"
+    },
+    {
+      "id": "kiminotoukou",
+      "name": "キミノトウコウ",
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 30
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "フォルティノ",
+      "dam": "クリスタルドーン",
+      "color": "青鹿毛",
+      "breeder": "冨岡農場（浦河町）",
+      "netkeibaId": "1976z01664",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 6,
+            "day": 12
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "crystal-dawn"
     }

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Coquerelle",
     "rootHorseId": "coquerelle",
-    "lastUpdated": "2025-09-15T08:47:45.924661Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "coquerelle",
       "name": "コケレール",
-      "foaled": "{'year': 2004, 'month': 1, 'day': 30}",
-      "foaledArray": ["2004", "01", "30"],
+      "foaled": {
+        "year": 2004,
+        "month": 1,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Zamindar",
@@ -32,8 +35,11 @@
     {
       "id": "endless-summer",
       "name": "エンドレスサマー",
-      "foaled": "{'year': 2022, 'month': 4, 'day': 11}",
-      "foaledArray": ["2022", "04", "11"],
+      "foaled": {
+        "year": 2022,
+        "month": 4,
+        "day": 11
+      },
       "sex": "",
       "breed": "サラブレッド種",
       "sire": "アルアイン",

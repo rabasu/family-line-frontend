@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Caricatura",
     "rootHorseId": "caricatura",
-    "lastUpdated": "2025-09-24T10:09:03.374863Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "caricatura",
       "name": "カリカチユーラ",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
       "dam": "Straight Street",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a006180",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Caricatura"
+      "englishName": "Caricatura",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "cartoon",
       "name": "カートゥーン",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 15}",
-      "foaledArray": ["1995", "03", "15"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",
       "dam": "カリカチユーラ",
-      "dam_netkeiba_id": "000a006180",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "1995107879",
@@ -89,18 +92,21 @@
         "central": "9,139万円",
         "local": "0万円"
       },
-      "damId": "caricatura"
+      "damId": "caricatura",
+      "dam_netkeiba_id": "000a006180"
     },
     {
       "id": "deputy-premier",
       "name": "デピュティプリミエ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 28}",
-      "foaledArray": ["2004", "03", "28"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フレンチデピュティ(US)",
       "dam": "カートゥーン",
-      "dam_netkeiba_id": "1995107879",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "2004102873",
@@ -117,18 +123,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "cartoon"
+      "damId": "cartoon",
+      "dam_netkeiba_id": "1995107879"
     },
     {
       "id": "dokofukukaze",
       "name": "ドコフクカゼ",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 19}",
-      "foaledArray": ["2010", "04", "19"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ワイルドラッシュ(US)",
       "dam": "デピュティプリミエ",
-      "dam_netkeiba_id": "2004102873",
       "color": "黒鹿毛",
       "breeder": "ファニーフレンズファーム（日高町）",
       "netkeibaId": "2010100978",
@@ -268,13 +277,17 @@
         "central": "1億8,873万円",
         "local": "350万円"
       },
-      "damId": "deputy-premier"
+      "damId": "deputy-premier",
+      "dam_netkeiba_id": "2004102873"
     },
     {
       "id": "a-p-burst",
       "name": "エーピーバースト",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 13}",
-      "foaledArray": ["1996", "04", "13"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "レオダーバン",
@@ -483,8 +496,11 @@
     {
       "id": "a-agent",
       "name": "エーエージェント",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 19}",
-      "foaledArray": ["1988", "03", "19"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grey Dawn",

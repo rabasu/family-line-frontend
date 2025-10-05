@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Brehat",
     "rootHorseId": "brehat",
-    "lastUpdated": "2025-09-24T16:16:14.168786Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "brehat",
       "name": "ブレハツト",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sayajirao(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "kane-aoi",
       "name": "カネアオイ",
-      "foaled": "{'year': 1975, 'month': 4, 'day': 15}",
-      "foaledArray": ["1975", "04", "15"],
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バーバー(GB)",
@@ -59,8 +63,11 @@
     {
       "id": "keiai-john",
       "name": "ケイアイジョン",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 29}",
-      "foaledArray": ["1996", "03", "29"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スリルショー(US)",
@@ -415,6 +422,452 @@
         "local": "1,440万円"
       },
       "damId": "kane-aoi"
+    },
+    {
+      "id": "kane-akebi",
+      "name": "カネアケビ",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "バーバー(GB)",
+      "dam": "ブレハツト",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "1955104412",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 8,
+            "day": 3
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(OP)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "8",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 10,
+            "day": 27
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "26",
+          "result": "15",
+          "favorite": "19"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kane Akebi",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "brehat"
+    },
+    {
+      "id": "kane-ikoma",
+      "name": "カネイコマ",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "バーバー(GB)",
+      "dam": "ブレハツト",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a000b91",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "15",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 4,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "2",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 8,
+            "day": 27
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "7",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kane Ikoma",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "brehat"
+    },
+    {
+      "id": "kane-akiba",
+      "name": "カネアキバ",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "フィリュース",
+      "dam": "ブレハツト",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a000bb4",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 10,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 7,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "8",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "9",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "弥生賞(OP)",
+          "displayRace": "弥生賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 3,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "京成杯(OP)",
+          "displayRace": "京成杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kane Akiba",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "brehat"
+    },
+    {
+      "id": "kane-hayate",
+      "name": "カネハヤテ",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ニンバス",
+      "dam": "ブレハツト",
+      "color": "黒鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a000af7",
+      "raceStats": {
+        "total": {
+          "runs": 18,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "ダ2100",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "8",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "12",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "12",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "NHK盃(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kane Hayate",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "brehat"
     }
   ]
 }

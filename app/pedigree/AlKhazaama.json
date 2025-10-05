@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Al Khazaama",
     "rootHorseId": "al-khazaama",
-    "lastUpdated": "2025-09-21T16:54:30.295131Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "al-khazaama",
       "name": "アルカザーマ",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar a",
@@ -32,8 +33,11 @@
     {
       "id": "meine-diva",
       "name": "マイネディーバ",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 17}",
-      "foaledArray": ["1999", "03", "17"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",
@@ -77,8 +81,11 @@
     {
       "id": "meiner-attract",
       "name": "マイネルアトラクト",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 27}",
-      "foaledArray": ["2009", "02", "27"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤマックス",

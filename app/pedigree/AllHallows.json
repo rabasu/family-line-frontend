@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "All Hallows",
     "rootHorseId": "all-hallows",
-    "lastUpdated": "2025-09-21T14:24:51.662482Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "all-hallows",
       "name": "オールハローズ",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Halo",
@@ -32,8 +33,11 @@
     {
       "id": "saintly-prayer",
       "name": "セイントリープレア",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 31}",
-      "foaledArray": ["2000", "05", "31"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンシングブレーヴ(US)",
@@ -61,8 +65,11 @@
     {
       "id": "opera-dancing",
       "name": "オペラダンシング",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 20}",
-      "foaledArray": ["2009", "02", "20"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Aranthera",
     "rootHorseId": "aranthera",
-    "lastUpdated": "2025-09-22T17:51:23.266293Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aranthera",
       "name": "アランセラ",
-      "foaled": "{'year': 1995, 'month': 1, 'day': 14}",
-      "foaledArray": ["1995", "01", "14"],
+      "foaled": {
+        "year": 1995,
+        "month": 1,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dixieland Band",
@@ -32,8 +35,11 @@
     {
       "id": "subject",
       "name": "サブジェクト",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 17}",
-      "foaledArray": ["2005", "02", "17"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

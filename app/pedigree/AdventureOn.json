@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Adventure On",
     "rootHorseId": "adventure-on",
-    "lastUpdated": "2025-09-22T23:58:07.093603Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "adventure-on",
       "name": "アドベンチャーオン",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Relaunch",
@@ -32,8 +33,11 @@
     {
       "id": "keiai-guard",
       "name": "ケイアイガード",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 16}",
-      "foaledArray": ["2001", "05", "16"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デヒア(US)",

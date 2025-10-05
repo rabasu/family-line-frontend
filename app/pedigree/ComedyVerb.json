@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Comedy Verb",
     "rootHorseId": "comedy-verb",
-    "lastUpdated": "2025-09-24T06:08:07.992240Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "comedy-verb",
       "name": "Comedy Verb",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Verbatim",
@@ -31,8 +32,11 @@
     {
       "id": "gaily-tomahawk",
       "name": "ゲイリートマホーク",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 16}",
-      "foaledArray": ["1996", "04", "16"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 16
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "Sunny's Halo(CAN)",

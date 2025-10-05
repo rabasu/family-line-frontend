@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Ana Marie",
     "rootHorseId": "ana-marie",
-    "lastUpdated": "2025-09-19T11:20:04.822542Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ana-marie",
       "name": "アナマリー",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 17}",
-      "foaledArray": ["1999", "04", "17"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Anabaa",
@@ -32,8 +35,11 @@
     {
       "id": "ana-americana",
       "name": "アナアメリカーナ",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 16}",
-      "foaledArray": ["2006", "02", "16"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "American Post",
@@ -59,8 +65,11 @@
     {
       "id": "mayson-junior",
       "name": "メイソンジュニア",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 25}",
-      "foaledArray": ["2014", "04", "25"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Mayson",

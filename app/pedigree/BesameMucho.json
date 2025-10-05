@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Besame Mucho",
     "rootHorseId": "besame-mucho",
-    "lastUpdated": "2025-09-24T10:10:58.595764Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "besame-mucho",
       "name": "ベサメムーチョ",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dixieland Band",
@@ -32,8 +33,11 @@
     {
       "id": "gaily-mucho",
       "name": "ゲイリームーチョ",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 6}",
-      "foaledArray": ["1998", "02", "06"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サザンヘイロー(US)",

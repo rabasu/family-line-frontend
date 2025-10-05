@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Carniola",
     "rootHorseId": "carniola",
-    "lastUpdated": "2025-09-21T00:58:50.590422Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "carniola",
       "name": "カルニオラ",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rainbow Quest(US)",
@@ -32,8 +33,9 @@
     {
       "id": "kranjska",
       "name": "クランチーカ",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -59,8 +61,11 @@
     {
       "id": "nishino-silhouette",
       "name": "ニシノシルエット",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 11}",
-      "foaledArray": ["2006", "05", "11"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -88,8 +93,11 @@
     {
       "id": "nishino-love-wink",
       "name": "ニシノラブウインク",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 13}",
-      "foaledArray": ["2019", "04", "13"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
@@ -193,13 +201,15 @@
     {
       "id": "ambitious-2012",
       "name": "アンビシャス",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 17}",
-      "foaledArray": ["2012", "02", "17"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "カーニバルソング",
-      "dam_netkeiba_id": "2001103328",
       "color": "黒鹿毛",
       "breeder": "辻牧場（浦河町）",
       "netkeibaId": "2012105400",
@@ -490,18 +500,21 @@
         "local": "0万円"
       },
       "damId": "carnival-song",
+      "dam_netkeiba_id": "2001103328",
       "linkName": "アンビシャス(2012)"
     },
     {
       "id": "carnival-song",
       "name": "カーニバルソング",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 18}",
-      "foaledArray": ["2001", "03", "18"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エルコンドルパサー",
       "dam": "カルニオラCarniola",
-      "dam_netkeiba_id": "000a000094",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "2001103328",
@@ -536,13 +549,17 @@
         "central": "1,852万円",
         "local": "0万円"
       },
-      "damId": "carniola"
+      "damId": "carniola",
+      "dam_netkeiba_id": "000a000094"
     },
     {
       "id": "nishino-akatsuki",
       "name": "ニシノアカツキ",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 19}",
-      "foaledArray": ["2011", "03", "19"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",

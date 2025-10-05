@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Crown Lavender",
     "rootHorseId": "crown-lavender",
-    "lastUpdated": "2025-09-26T13:42:19.495681Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "crown-lavender",
       "name": "クラウンラヴエンダー",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "My Babu(FR)",
@@ -32,8 +33,9 @@
     {
       "id": "crown-chateau",
       "name": "クラウンシャトー",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シャトーゲイ(US)",
@@ -59,8 +61,11 @@
     {
       "id": "takano-lavender",
       "name": "タカノラベンダー",
-      "foaled": "{'year': 1987, 'month': 3, 'day': 14}",
-      "foaledArray": ["1987", "03", "14"],
+      "foaled": {
+        "year": 1987,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラシアンルーブル(US)",
@@ -88,8 +93,11 @@
     {
       "id": "kanetoshi-kosho",
       "name": "カネトシコウショウ",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 23}",
-      "foaledArray": ["2006", "04", "23"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "グランデラ(IRE)",
@@ -133,8 +141,11 @@
     {
       "id": "hokko-amber",
       "name": "ホッコーアンバー",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 25}",
-      "foaledArray": ["1995", "03", "25"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -193,8 +204,11 @@
     {
       "id": "agnes-beat",
       "name": "アグネスビート",
-      "foaled": "{'year': 1982, 'month': 5, 'day': 5}",
-      "foaledArray": ["1982", "05", "05"],
+      "foaled": {
+        "year": 1982,
+        "month": 5,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンディクテイター",
@@ -309,6 +323,97 @@
         "local": "0万円"
       },
       "damId": "crown-chateau"
+    },
+    {
+      "id": "marubutsu-beat",
+      "name": "マルブツビート",
+      "foaled": {
+        "year": 1970,
+        "month": 4,
+        "day": 3
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "マリーノ(FR)",
+      "dam": "クラウンラヴエンダー",
+      "color": "黒鹿毛",
+      "breeder": "社台ファーム（白老産）",
+      "netkeibaId": "1970z00543",
+      "raceStats": {
+        "total": {
+          "runs": 53,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 3,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(春)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "13",
+          "result": "9",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "毎日放送賞京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3260",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3200",
+          "grade": "jra_jump",
+          "entry": "11",
+          "result": "9",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Marubutsu Beat",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "crown-lavender"
     }
   ]
 }

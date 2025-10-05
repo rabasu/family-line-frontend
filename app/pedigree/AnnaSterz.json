@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Anna Sterz",
     "rootHorseId": "anna-sterz",
-    "lastUpdated": "2025-09-18T04:20:49.192612Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "anna-sterz",
       "name": "アンナステルツ",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "keiai-gerbera",
       "name": "ケイアイガーベラ",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 27}",
-      "foaledArray": ["2006", "04", "27"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Smarty Jones(US)",
@@ -167,8 +171,11 @@
     {
       "id": "keiai-nautique",
       "name": "ケイアイノーテック",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 7}",
-      "foaledArray": ["2015", "04", "07"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

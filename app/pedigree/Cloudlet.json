@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Cloudlet",
     "rootHorseId": "cloudlet",
-    "lastUpdated": "2025-09-26T11:07:38.986367Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "cloudlet",
       "name": "クラウドレツト",
-      "foaled": "{'year': 1954}",
-      "foaledArray": ["1954"],
+      "foaled": {
+        "year": 1954
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ニンバス",
@@ -32,8 +33,9 @@
     {
       "id": "takalet",
       "name": "タカレット",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "チャイナロック(GB)",
@@ -59,8 +61,9 @@
     {
       "id": "sound-let",
       "name": "サウンドレット",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サウンドトラック(IRE)",
@@ -86,8 +89,11 @@
     {
       "id": "kachita-girl",
       "name": "カチタガール",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 14}",
-      "foaledArray": ["1988", "04", "14"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モーニングフローリック",
@@ -191,8 +197,11 @@
     {
       "id": "silk-guardian",
       "name": "シルクガーディアン",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 17}",
-      "foaledArray": ["1996", "05", "17"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヘクタープロテクター(US)",
@@ -401,8 +410,11 @@
     {
       "id": "jusaburo",
       "name": "ジュサブロー",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 15}",
-      "foaledArray": ["1982", "03", "15"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シーホーク",
@@ -472,6 +484,94 @@
         "local": "0万円"
       },
       "damId": "sound-let"
+    },
+    {
+      "id": "erimoretto",
+      "name": "エリモレット",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ネヴァービート(GB)",
+      "dam": "クラウドレツト",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1971z00816",
+      "raceStats": {
+        "total": {
+          "runs": 35,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 11,
+            "day": 28
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 29
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "13",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "関西テレビ放送賞スワ(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "cloudlet"
     }
   ]
 }

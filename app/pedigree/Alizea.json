@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Alizea",
     "rootHorseId": "alizea",
-    "lastUpdated": "2025-09-24T19:50:05.149396Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alizea",
       "name": "Alizea",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Premiership",
@@ -31,8 +32,11 @@
     {
       "id": "f-one-nakayama",
       "name": "エフワンナカヤマ",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 15}",
-      "foaledArray": ["1995", "02", "15"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Skip Trial",

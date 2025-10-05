@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ambulea",
     "rootHorseId": "ambulea",
-    "lastUpdated": "2025-09-25T11:23:24.383466Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ambulea",
       "name": "アンブリー",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ambiorix",
@@ -32,8 +33,9 @@
     {
       "id": "shadai-ambulea",
       "name": "シヤダイアンブリー",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モデルフール",
@@ -59,8 +61,11 @@
     {
       "id": "ambrosia",
       "name": "アンブローシア",
-      "foaled": "{'year': 1985, 'month': 5, 'day': 23}",
-      "foaledArray": ["1985", "05", "23"],
+      "foaled": {
+        "year": 1985,
+        "month": 5,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -104,8 +109,11 @@
     {
       "id": "rondo-in-d",
       "name": "ロンドインディ",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 22}",
-      "foaledArray": ["2002", "03", "22"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -131,8 +139,11 @@
     {
       "id": "ceres-rondy",
       "name": "セレスロンディー",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 5}",
-      "foaledArray": ["2007", "04", "05"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "プリサイスエンド(US)",
@@ -176,8 +187,11 @@
     {
       "id": "win-genius",
       "name": "ウインジーニアス",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 19}",
-      "foaledArray": ["2000", "04", "19"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "バブルガムフェロー",
@@ -221,8 +235,11 @@
     {
       "id": "sakura-gal",
       "name": "サクラギャル",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 18}",
-      "foaledArray": ["1983", "04", "18"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -250,8 +267,11 @@
     {
       "id": "sakura-expert",
       "name": "サクラエキスパート",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 13}",
-      "foaledArray": ["1993", "04", "13"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラチヨノオー",
@@ -535,8 +555,11 @@
     {
       "id": "air-chariot",
       "name": "エアチャリオット",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 17}",
-      "foaledArray": ["1991", "04", "17"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 17
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
@@ -655,8 +678,11 @@
     {
       "id": "king-pharaoh",
       "name": "キングファラオ",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 16}",
-      "foaledArray": ["1990", "04", "16"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",
@@ -745,8 +771,11 @@
     {
       "id": "dyna-prism",
       "name": "ダイナプリズム",
-      "foaled": "{'year': 1984, 'month': 6, 'day': 9}",
-      "foaledArray": ["1984", "06", "09"],
+      "foaled": {
+        "year": 1984,
+        "month": 6,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -770,6 +799,64 @@
         "local": "0万円"
       },
       "damId": "shadai-ambulea"
+    },
+    {
+      "id": "hakukongou",
+      "name": "ハクコンゴウ",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ガーサント",
+      "dam": "アンブリー",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1968z00443",
+      "raceStats": {
+        "total": {
+          "runs": 36,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1972,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4100",
+          "grade": "jra_grandjump",
+          "entry": "13",
+          "result": "12(再)",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1972,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "4",
+          "result": "1",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ambulea"
     }
   ]
 }

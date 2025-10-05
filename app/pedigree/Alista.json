@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Alista",
     "rootHorseId": "alista",
-    "lastUpdated": "2025-09-24T13:11:47.619710Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alista",
       "name": "アリスタ",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Welsh Pageant",
@@ -32,8 +33,11 @@
     {
       "id": "fujino-seikai",
       "name": "フジノセイカイ",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 19}",
-      "foaledArray": ["1984", "05", "19"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コインドシルバー",
@@ -61,8 +65,11 @@
     {
       "id": "fujino-seigaiha",
       "name": "フジノセイガイハ",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 11}",
-      "foaledArray": ["1994", "05", "11"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",

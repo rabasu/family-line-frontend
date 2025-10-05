@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Beautiful Gold",
     "rootHorseId": "beautiful-gold",
-    "lastUpdated": "2025-09-24T03:07:57.380999Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "beautiful-gold",
       "name": "ビューティフルゴールド",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "heritage-gold",
       "name": "ヘリテージゴールド",
-      "foaled": "{'year': 2005, 'month': 5, 'day': 30}",
-      "foaledArray": ["2005", "05", "30"],
+      "foaled": {
+        "year": 2005,
+        "month": 5,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -61,8 +65,11 @@
     {
       "id": "azuma-heritage",
       "name": "アズマヘリテージ",
-      "foaled": "{'year': 2016, 'month': 4, 'day': 15}",
-      "foaledArray": ["2016", "04", "15"],
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トーセンジョーダン",
@@ -196,8 +203,11 @@
     {
       "id": "big-gold",
       "name": "ビッグゴールド",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 21}",
-      "foaledArray": ["1998", "03", "21"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -826,8 +836,11 @@
     {
       "id": "big-hunter",
       "name": "ビッグハンター",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 7}",
-      "foaledArray": ["1997", "03", "07"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",

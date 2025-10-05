@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aria Pura",
     "rootHorseId": "aria-pura",
-    "lastUpdated": "2025-09-16T06:42:48.472074Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aria-pura",
       "name": "アリアプーラ",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Flying Spur",
@@ -32,8 +33,11 @@
     {
       "id": "hugin",
       "name": "フギン",
-      "foaled": "{'year': 2010, 'month': 8, 'day': 30}",
-      "foaledArray": ["2010", "08", "30"],
+      "foaled": {
+        "year": 2010,
+        "month": 8,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ストリートセンス(US)",
@@ -92,8 +96,11 @@
     {
       "id": "divination",
       "name": "ディヴィナシオン",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 22}",
-      "foaledArray": ["2017", "03", "22"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヴィクトワールピサ",

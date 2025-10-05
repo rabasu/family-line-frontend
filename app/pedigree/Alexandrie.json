@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Alexandrie",
     "rootHorseId": "alexandrie",
-    "lastUpdated": "2025-09-24T06:39:30.182196Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "alexandrie",
       "name": "Alexandrie",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Val de l'Orne",
@@ -31,8 +32,11 @@
     {
       "id": "admire-kaiser",
       "name": "アドマイヤカイザー",
-      "foaled": "{'year': 1996, 'month': 5, 'day': 9}",
-      "foaledArray": ["1996", "05", "09"],
+      "foaled": {
+        "year": 1996,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Rainbow Quest(US)",

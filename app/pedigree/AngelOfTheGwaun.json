@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Angel of The Gwaun",
     "rootHorseId": "angel-of-the-gwaun",
-    "lastUpdated": "2025-09-21T20:42:56.952061Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "angel-of-the-gwaun",
       "name": "Angel of The Gwaun",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -31,8 +32,11 @@
     {
       "id": "cosmo-meadow",
       "name": "コスモメドウ",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 14}",
-      "foaledArray": ["2007", "05", "14"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングズベスト(US)",

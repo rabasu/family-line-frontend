@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aloha",
     "rootHorseId": "aloha",
-    "lastUpdated": "2025-09-27T03:32:44.676842Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aloha",
       "name": "アロハ",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガーサント",
@@ -32,8 +33,9 @@
     {
       "id": "ultra-yashima",
       "name": "ウルトラヤシマ",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネプテューヌス(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "shadai-marine",
       "name": "シャダイマリーン",
-      "foaled": "{'year': 1977, 'month': 4, 'day': 9}",
-      "foaledArray": ["1977", "04", "09"],
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トライバルチーフ(GB)",
@@ -102,8 +107,11 @@
     {
       "id": "eishin-happiness",
       "name": "エイシンハピネス",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 1}",
-      "foaledArray": ["1984", "04", "01"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -207,8 +215,11 @@
     {
       "id": "eishin-kachita",
       "name": "エイシンカチータ",
-      "foaled": "{'year': 1994, 'month': 6, 'day': 17}",
-      "foaledArray": ["1994", "06", "17"],
+      "foaled": {
+        "year": 1994,
+        "month": 6,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バンブーアトラス",
@@ -297,8 +308,11 @@
     {
       "id": "ultra-kuma",
       "name": "ウルトラクマ",
-      "foaled": "{'year': 1981, 'month': 6, 'day': 5}",
-      "foaledArray": ["1981", "06", "05"],
+      "foaled": {
+        "year": 1981,
+        "month": 6,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ザペイシェント",

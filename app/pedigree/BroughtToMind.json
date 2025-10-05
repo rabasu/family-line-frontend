@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Brought to Mind",
     "rootHorseId": "brought-to-mind",
-    "lastUpdated": "2025-09-22T01:36:37.073526Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "brought-to-mind",
       "name": "ブロートツウマインド",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ruthie's Native a",
@@ -32,8 +33,11 @@
     {
       "id": "t-h-mambo",
       "name": "ティエッチマンボ",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 23}",
-      "foaledArray": ["1997", "02", "23"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -61,8 +65,11 @@
     {
       "id": "admire-major",
       "name": "アドマイヤメジャー",
-      "foaled": "{'year': 2006, 'month': 2, 'day': 8}",
-      "foaledArray": ["2006", "02", "08"],
+      "foaled": {
+        "year": 2006,
+        "month": 2,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",

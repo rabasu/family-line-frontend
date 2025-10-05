@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Chickaree",
     "rootHorseId": "chickaree",
-    "lastUpdated": "2025-09-23T10:04:30.280666Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "chickaree",
       "name": "チカリー",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "deep-summer",
       "name": "ディープサマー",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 18}",
-      "foaledArray": ["2002", "03", "18"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",

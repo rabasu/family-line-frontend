@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Clever Dancer",
     "rootHorseId": "clever-dancer",
-    "lastUpdated": "2025-09-24T13:43:09.683152Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "clever-dancer",
       "name": "クレヴアーダンサー",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "toyo-jo-o",
       "name": "トーヨージョオー",
-      "foaled": "{'year': 1990, 'month': 6, 'day': 8}",
-      "foaledArray": ["1990", "06", "08"],
+      "foaled": {
+        "year": 1990,
+        "month": 6,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イルドブルボン(US)",
@@ -59,8 +63,11 @@
     {
       "id": "meiner-bayern",
       "name": "マイネルバイエルン",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 28}",
-      "foaledArray": ["1996", "03", "28"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シルヴァーエンディング(US)",

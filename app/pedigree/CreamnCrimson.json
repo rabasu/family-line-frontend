@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Cream'n Crimson",
     "rootHorseId": "creamn-crimson",
-    "lastUpdated": "2025-09-25T14:57:37.265452Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "creamn-crimson",
       "name": "クリームンクリムズン",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 25}",
-      "foaledArray": ["1980", "04", "25"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Vaguely Noble(GB)",
@@ -32,8 +35,9 @@
     {
       "id": "creamery",
       "name": "クリームリー",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -59,8 +63,11 @@
     {
       "id": "yuwa-kingston",
       "name": "ユーワキングストン",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 27}",
-      "foaledArray": ["1999", "04", "27"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 27
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "バブルガムフェロー",
@@ -104,8 +111,11 @@
     {
       "id": "hishi-masaru",
       "name": "ヒシマサル",
-      "foaled": "{'year': 1989, 'month': 2, 'day': 20}",
-      "foaledArray": ["1989", "02", "20"],
+      "foaled": {
+        "year": 1989,
+        "month": 2,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -234,7 +244,8 @@
         "central": "2億1,666万円",
         "local": "0万円"
       },
-      "damId": "creamn-crimson"
+      "damId": "creamn-crimson",
+      "linkName": "ヒシマサル(1989)"
     }
   ]
 }

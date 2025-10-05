@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Aussie Company",
     "rootHorseId": "aussie-company",
-    "lastUpdated": "2025-09-20T20:59:22.728047Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "aussie-company",
       "name": "オージーカンパニー",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Catrail",
@@ -32,8 +33,11 @@
     {
       "id": "cosmo-dance-night",
       "name": "コスモダンスナイト",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 6}",
-      "foaledArray": ["2003", "03", "06"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",
@@ -77,8 +81,11 @@
     {
       "id": "win-soiree",
       "name": "ウインソワレ",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 24}",
-      "foaledArray": ["2012", "03", "24"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロージズインメイ(US)",
