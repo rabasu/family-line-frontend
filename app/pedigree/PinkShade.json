@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pink Shade",
     "rootHorseId": "pink-shade",
-    "lastUpdated": "2025-09-21T16:55:33.125836Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pink-shade",
       "name": "ピンクシェイド",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "forty-ace",
       "name": "フォーティエース",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 21}",
-      "foaledArray": ["1997", "04", "21"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",
@@ -77,8 +81,11 @@
     {
       "id": "agnes-run-up",
       "name": "アグネスラナップ",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 4}",
-      "foaledArray": ["2005", "04", "04"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -167,8 +174,11 @@
     {
       "id": "t-up-wild",
       "name": "ティアップワイルド",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 20}",
-      "foaledArray": ["2006", "04", "20"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ワイルドラッシュ(US)",

@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Oregon Girl",
     "rootHorseId": "oregon-girl",
-    "lastUpdated": "2025-09-20T14:28:35.416719Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "oregon-girl",
       "name": "オレゴンガール",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 9}",
-      "foaledArray": ["1997", "03", "09"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rubiano",
       "dam": "Paying Guest",
-      "dam_netkeiba_id": "",
       "color": "芦毛",
       "breeder": "Pedigree Farms Inc.（加）",
       "netkeibaId": "1997110165",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Oregon Girl"
+      "englishName": "Oregon Girl",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "a-shin-moreover",
       "name": "エーシンモアオバー",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 31}",
-      "foaledArray": ["2006", "03", "31"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
       "dam": "オレゴンガール",
-      "dam_netkeiba_id": "1997110165",
       "color": "鹿毛",
       "breeder": "栄進牧場（浦河町）",
       "netkeibaId": "2006101789",
@@ -479,7 +484,8 @@
         "central": "2億1,474万円",
         "local": "1億8,485万円"
       },
-      "damId": "oregon-girl"
+      "damId": "oregon-girl",
+      "dam_netkeiba_id": "1997110165"
     }
   ]
 }

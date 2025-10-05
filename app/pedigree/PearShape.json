@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pear Shape",
     "rootHorseId": "pear-shape",
-    "lastUpdated": "2025-09-22T22:26:18.097214Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pear-shape",
       "name": "Pear Shape",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Red Ransom",
@@ -31,8 +32,11 @@
     {
       "id": "samurai-tigers",
       "name": "サムライタイガース",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 22}",
-      "foaledArray": ["2004", "03", "22"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Indian Charlie",

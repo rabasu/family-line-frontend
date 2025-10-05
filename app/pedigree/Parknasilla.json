@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Parknasilla",
     "rootHorseId": "parknasilla",
-    "lastUpdated": "2025-09-25T09:21:46.158526Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "parknasilla",
       "name": "パークナシラ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sea(FR)",
@@ -32,8 +33,11 @@
     {
       "id": "sea-bird-park",
       "name": "シーバードパーク",
-      "foaled": "{'year': 1976, 'month': 4, 'day': 3}",
-      "foaledArray": ["1976", "04", "03"],
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シルバーシャーク",
@@ -302,8 +306,11 @@
     {
       "id": "cutie-up",
       "name": "キューティアップ",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 18}",
-      "foaledArray": ["1987", "04", "18"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アップセッター",
@@ -392,8 +399,11 @@
     {
       "id": "meiner-oper",
       "name": "マイネルオーパー",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 25}",
-      "foaledArray": ["1999", "03", "25"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",
@@ -587,8 +597,11 @@
     {
       "id": "dynamic-bird",
       "name": "ダイナミックバード",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 23}",
-      "foaledArray": ["1990", "05", "23"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーパスノーセール(IRE)",

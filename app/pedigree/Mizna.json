@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Mizna",
     "rootHorseId": "mizna",
-    "lastUpdated": "2025-09-20T23:00:32.611563Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mizna",
       "name": "ミズナ",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dubai Millennium(GB)",
       "dam": "Tribulation",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a010cea",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Mizna"
+      "englishName": "Mizna",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "decipher",
       "name": "ディサイファ",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 20}",
-      "foaledArray": ["2009", "04", "20"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "ミズナ",
-      "dam_netkeiba_id": "000a010cea",
       "color": "鹿毛",
       "breeder": "ダーレー・ジャパン・ファーム（日高町）",
       "netkeibaId": "2009102678",
@@ -464,13 +467,17 @@
         "central": "4億2,095万円",
         "local": "0万円"
       },
-      "damId": "mizna"
+      "damId": "mizna",
+      "dam_netkeiba_id": "000a010cea"
     },
     {
       "id": "admire-taishi",
       "name": "アドマイヤタイシ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 5}",
-      "foaledArray": ["2007", "03", "05"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Pia Grace",
     "rootHorseId": "pia-grace",
-    "lastUpdated": "2025-09-23T22:05:29.662981Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pia-grace",
       "name": "ピアグレイス",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 26}",
-      "foaledArray": ["1988", "04", "26"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar",
@@ -32,8 +35,11 @@
     {
       "id": "mideon-bit",
       "name": "ミデオンビット",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 10}",
-      "foaledArray": ["1997", "04", "10"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アジュディケーティング(US)",

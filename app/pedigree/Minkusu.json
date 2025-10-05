@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "ミンクス",
     "rootHorseId": "minkusu",
-    "lastUpdated": "2025-09-25T15:57:08.615374Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "minkusu",
       "name": "ミンクス",
-      "foaled": "{'year': 1945}",
-      "foaledArray": ["1945"],
+      "foaled": {
+        "year": 1945
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Discovery",
@@ -31,8 +32,9 @@
     {
       "id": "deruta",
       "name": "デルタ",
-      "foaled": "{'year': 1954}",
-      "foaledArray": ["1954"],
+      "foaled": {
+        "year": 1954
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フランクリー(US)",
@@ -58,8 +60,9 @@
     {
       "id": "merry-dancer",
       "name": "メリーダンサー",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライジングフレーム(IRE)",
@@ -191,8 +194,11 @@
     {
       "id": "kamino-kaoru",
       "name": "カミノカオル",
-      "foaled": "{'year': 1976, 'month': 2, 'day': 24}",
-      "foaledArray": ["1976", "02", "24"],
+      "foaled": {
+        "year": 1976,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイアトム",
@@ -264,8 +270,11 @@
     {
       "id": "kamino-elf",
       "name": "カミノエルフ",
-      "foaled": "{'year': 1989, 'month': 5, 'day': 5}",
-      "foaledArray": ["1989", "05", "05"],
+      "foaled": {
+        "year": 1989,
+        "month": 5,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パーフライト(US)",
@@ -350,6 +359,260 @@
         "local": "0万円"
       },
       "damId": "kamino-kaoru"
+    },
+    {
+      "id": "hekiraku",
+      "name": "ヘキラク",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "Mafosta",
+      "dam": "ミンクス",
+      "color": "栗毛",
+      "breeder": "白老町",
+      "netkeibaId": "000a00096d",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1957,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞競走(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "5",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "目黒記念競走(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "産経賞オールカマー競(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 7,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "中山記念競走(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 6,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "安田賞競走(OP)",
+          "displayRace": "安田賞",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 4,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンド・ステー(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "4",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 3,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "目黒記念競走(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 3,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "スプリング・ハンデキ(OP)",
+          "displayRace": "スプリングH",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 12,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念競走(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "中山グランプリ競走(OP)",
+          "displayRace": "中山グランプリ",
+          "distance": "芝2600",
+          "grade": "jra_big8",
+          "entry": "12",
+          "result": "12",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念競走(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 11,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "菊花賞競走(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "14",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "27",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "NHK盃競走(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "皐月賞競走(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "1",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hekiraku",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "minkusu"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Needlecraft",
     "rootHorseId": "needlecraft",
-    "lastUpdated": "2025-09-18T20:26:06.863361Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "needlecraft",
       "name": "ニードルクラフト",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mark of Esteem(IRE)",
@@ -32,8 +33,11 @@
     {
       "id": "fine-needle",
       "name": "ファインニードル",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 26}",
-      "foaledArray": ["2013", "04", "26"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤムーン a",

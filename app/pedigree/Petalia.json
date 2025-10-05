@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Petalia",
     "rootHorseId": "petalia",
-    "lastUpdated": "2025-09-24T16:45:27.480786Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "petalia",
       "name": "Petalia",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sir Ivor(US)",
@@ -31,8 +32,11 @@
     {
       "id": "hikari-cermet",
       "name": "ヒカリサーメット",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 18}",
-      "foaledArray": ["1994", "05", "18"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Danzig",

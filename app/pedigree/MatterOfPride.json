@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Matter of Pride",
     "rootHorseId": "matter-of-pride",
-    "lastUpdated": "2025-09-24T12:43:40.393919Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "matter-of-pride",
       "name": "マターオブプライド",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Raise a Native",
@@ -32,8 +33,11 @@
     {
       "id": "tagano-silence",
       "name": "タガノサイレンス",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 7}",
-      "foaledArray": ["1993", "03", "07"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

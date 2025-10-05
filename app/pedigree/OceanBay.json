@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ocean Bay",
     "rootHorseId": "ocean-bay",
-    "lastUpdated": "2025-09-23T20:03:17.972837Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ocean-bay",
       "name": "Ocean Bay",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Groovy",
@@ -31,8 +32,11 @@
     {
       "id": "meine-isle",
       "name": "マイネアイル",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 4}",
-      "foaledArray": ["1998", "04", "04"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Candy Stripes",

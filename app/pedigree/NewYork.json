@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "New York",
     "rootHorseId": "new-york",
-    "lastUpdated": "2025-09-25T14:56:04.829110Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "new-york",
       "name": "ニユーヨーク",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Count Rendered",
@@ -32,8 +33,9 @@
     {
       "id": "somei",
       "name": "ソウメイ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "メイヂヒカリ",
@@ -59,8 +61,9 @@
     {
       "id": "nike-1967",
       "name": "ニケ",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "チャイナロック(GB)",
@@ -86,8 +89,11 @@
     {
       "id": "gaarandoshichii",
       "name": "ガーランドシチー",
-      "foaled": "{'year': 1977, 'month': 5, 'day': 13}",
-      "foaledArray": ["1977", "05", "13"],
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プロント(FR)",
@@ -112,8 +118,11 @@
     {
       "id": "happy-guinness",
       "name": "ハッピィーギネス",
-      "foaled": "{'year': 1986, 'month': 6, 'day': 24}",
-      "foaledArray": ["1986", "06", "24"],
+      "foaled": {
+        "year": 1986,
+        "month": 6,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",

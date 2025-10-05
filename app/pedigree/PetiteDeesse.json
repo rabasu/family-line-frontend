@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Petite Deesse",
     "rootHorseId": "petite-deesse",
-    "lastUpdated": "2025-09-27T16:56:17.487093Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "petite-deesse",
       "name": "プティットデエース",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイアトム",
@@ -32,8 +33,11 @@
     {
       "id": "erimo-roller",
       "name": "エリモローラ",
-      "foaled": "{'year': 1979, 'month': 3, 'day': 24}",
-      "foaledArray": ["1979", "03", "24"],
+      "foaled": {
+        "year": 1979,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "イースタンフリート",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "O'Quinn's Lassie",
     "rootHorseId": "oquinns-lassie",
-    "lastUpdated": "2025-09-26T04:03:11.041870Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "oquinns-lassie",
       "name": "オウクウインズラッシー",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hasty Road(US)",
@@ -32,8 +33,11 @@
     {
       "id": "hokuto-camry",
       "name": "ホクトカムリ",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 11}",
-      "foaledArray": ["1980", "05", "11"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バーバー(GB)",
@@ -59,8 +63,11 @@
     {
       "id": "hide-ryu-o",
       "name": "ヒデリュウオー",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 25}",
-      "foaledArray": ["1984", "05", "25"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラシンゲキ",

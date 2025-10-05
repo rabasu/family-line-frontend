@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Macarena",
     "rootHorseId": "macarena",
-    "lastUpdated": "2025-09-25T07:49:21.197568Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "macarena",
       "name": "マカレナ",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Worden",
@@ -32,8 +33,9 @@
     {
       "id": "ii",
       "name": "ロイヤルノーザンII",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -58,8 +60,11 @@
     {
       "id": "starlight-mary",
       "name": "スターライトマリー",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 12}",
-      "foaledArray": ["1992", "05", "12"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",

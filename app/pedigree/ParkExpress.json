@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Park Express",
     "rootHorseId": "park-express",
-    "lastUpdated": "2025-09-24T14:13:32.217620Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "park-express",
       "name": "Park Express",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ahonoora",
@@ -31,8 +32,11 @@
     {
       "id": "shinko-forest",
       "name": "シンコウフォレスト",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 29}",
-      "foaledArray": ["1993", "04", "29"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Green Desert",

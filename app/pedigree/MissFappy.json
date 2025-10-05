@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miss Fappy",
     "rootHorseId": "miss-fappy",
-    "lastUpdated": "2025-09-20T22:00:39.953369Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-fappy",
       "name": "ミスファピー",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fappiano(US)",
@@ -32,8 +33,11 @@
     {
       "id": "canyon-lily",
       "name": "キャニオンリリー",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 21}",
-      "foaledArray": ["1999", "03", "21"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エルハーブ(US)",
@@ -61,8 +65,11 @@
     {
       "id": "fukuno-dream",
       "name": "フクノドリーム",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 30}",
-      "foaledArray": ["2011", "03", "30"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヨハネスブルグ(US)",

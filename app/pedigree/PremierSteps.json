@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Premier Steps",
     "rootHorseId": "premier-steps",
-    "lastUpdated": "2025-09-16T07:10:43.038645Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "premier-steps",
       "name": "プレミアステップス",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 19}",
-      "foaledArray": ["2010", "03", "19"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Footstepsinthesand(GB)",
@@ -32,8 +35,11 @@
     {
       "id": "dobune",
       "name": "ドーブネ",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 3}",
-      "foaledArray": ["2019", "04", "03"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

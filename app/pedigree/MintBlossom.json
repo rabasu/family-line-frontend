@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mint Blossom",
     "rootHorseId": "mint-blossom",
-    "lastUpdated": "2025-09-25T02:25:16.914974Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mint-blossom",
       "name": "ミントブラッサム",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hard Sauce",
@@ -32,8 +33,9 @@
     {
       "id": "miss-apo",
       "name": "ミスアポ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アポッスル(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "onward-nire",
       "name": "オンワードニレ",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 25}",
-      "foaledArray": ["1978", "05", "25"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードツービート",
@@ -86,8 +91,11 @@
     {
       "id": "onward-oak",
       "name": "オンワードオーク",
-      "foaled": "{'year': 1985, 'month': 5, 'day': 11}",
-      "foaledArray": ["1985", "05", "11"],
+      "foaled": {
+        "year": 1985,
+        "month": 5,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "カネミノブ",
@@ -131,8 +139,11 @@
     {
       "id": "onward-atout",
       "name": "オンワードアトゥ",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 27}",
-      "foaledArray": ["1993", "03", "27"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トライマイベスト(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Montage",
     "rootHorseId": "montage",
-    "lastUpdated": "2025-09-25T04:50:38.905058Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "montage",
       "name": "Montage",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar",
@@ -31,8 +32,11 @@
     {
       "id": "saint-lyphard",
       "name": "セイントリファール",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 5}",
-      "foaledArray": ["1993", "05", "05"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -256,8 +260,11 @@
     {
       "id": "kachiboshi",
       "name": "カチボシ",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 8}",
-      "foaledArray": ["1992", "04", "08"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスホール(US)",
@@ -391,8 +398,9 @@
     {
       "id": "sweet-hikko",
       "name": "スイートヒコ",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Buckaroo",

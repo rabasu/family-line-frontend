@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Night Again",
     "rootHorseId": "night-again",
-    "lastUpdated": "2025-09-25T22:00:24.192987Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "night-again",
       "name": "ナイトアゲイン",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Petition",
@@ -32,8 +33,9 @@
     {
       "id": "kashiwa-pretty",
       "name": "カシワプリティ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blast",
@@ -75,8 +77,9 @@
     {
       "id": "kashiwa-jo-o",
       "name": "カシワジョオー",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フロリバンダ",
@@ -102,8 +105,11 @@
     {
       "id": "katsuno-jo-o",
       "name": "カツノジョオー",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 12}",
-      "foaledArray": ["1987", "04", "12"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソナリティ(US)",

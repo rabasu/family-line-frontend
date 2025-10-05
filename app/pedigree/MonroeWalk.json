@@ -2,21 +2,24 @@
   "metadata": {
     "pedigreeName": "Monroe Walk",
     "rootHorseId": "monroe-walk",
-    "lastUpdated": "2025-09-20T14:07:11.694621Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "monroe-walk",
       "name": "モンローウォーク",
-      "foaled": "{'year': 1989, 'month': 9, 'day': 28}",
-      "foaledArray": ["1989", "09", "28"],
+      "foaled": {
+        "year": 1989,
+        "month": 9,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sir Tristram",
       "dam": "Amarissa",
-      "color": "鹿毛",
-      "breeder": "Tasman Breeding Venture No.1（豪）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1989108599",
       "raceStats": {
         "total": {
@@ -32,8 +35,11 @@
     {
       "id": "celebrar",
       "name": "セレブラール",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 18}",
-      "foaledArray": ["2004", "04", "18"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボストンハーバー(US)",
@@ -61,14 +67,17 @@
     {
       "id": "said",
       "name": "サイード",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 23}",
-      "foaledArray": ["2019", "04", "23"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 23
+      },
       "sex": "",
       "breed": "サラブレッド種",
       "sire": "キズナ",
       "dam": "セレブラール",
-      "color": "鹿毛",
-      "breeder": "土居牧場（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2019103152",
       "raceStats": {
         "total": {
@@ -181,8 +190,11 @@
     {
       "id": "iberis",
       "name": "イベリス",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 21}",
-      "foaledArray": ["2016", "03", "21"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",
@@ -406,13 +418,15 @@
     {
       "id": "bel-canto",
       "name": "ベルカント",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 2}",
-      "foaledArray": ["2011", "03", "02"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
       "dam": "セレブラール",
-      "dam_netkeiba_id": "2004101364",
       "color": "栗毛",
       "breeder": "土居忠吉（新ひだか町）",
       "netkeibaId": "2011101395",
@@ -732,7 +746,8 @@
         "central": "2億6,070万円",
         "local": "0万円"
       },
-      "damId": "celebrar"
+      "damId": "celebrar",
+      "dam_netkeiba_id": "2004101364"
     }
   ]
 }

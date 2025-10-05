@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Orange Harp",
     "rootHorseId": "orange-harp",
-    "lastUpdated": "2025-09-27T05:36:17.538599Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "orange-harp",
       "name": "オレンジハープ",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tudor Minstrel(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "hahrotsutsu",
       "name": "ハーロツツ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ズクロ",
@@ -59,8 +61,9 @@
     {
       "id": "aster-nielsen",
       "name": "アスタニールセン",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リマンド(GB)",
@@ -117,8 +120,11 @@
     {
       "id": "crystal-aster",
       "name": "クリスタルアスター",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 30}",
-      "foaledArray": ["1986", "04", "30"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クリスタルパレス(FR)",
@@ -233,6 +239,317 @@
         "local": "0万円"
       },
       "damId": "aster-nielsen"
+    },
+    {
+      "id": "howa-sekito",
+      "name": "ホーワセキト",
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 7
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "タレイラン",
+      "dam": "ソワドレーヌ",
+      "color": "鹿毛",
+      "breeder": "社台牧場（白老町）",
+      "netkeibaId": "1978106689",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "中山",
+          "race": "ダービー卿チヤレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 8
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 10,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "20",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 8,
+            "day": 23
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 9,
+            "day": 14
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Howa Sekito",
+      "prizeMoney": {
+        "total": "870万円",
+        "central": "870万円",
+        "local": "0万円"
+      },
+      "damId": "soi-de-reine"
+    },
+    {
+      "id": "soi-de-reine",
+      "name": "ソワドレーヌ",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ガーサント",
+      "dam": "マドレーヌ",
+      "color": "栗毛",
+      "breeder": "白老町",
+      "netkeibaId": "1955101645",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Soi de Reine",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "madoreenu"
+    },
+    {
+      "id": "madoreenu",
+      "name": "マドレーヌ",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フェリオール(FR)",
+      "dam": "オレンジハープ",
+      "color": "鹿毛",
+      "breeder": "白老町",
+      "netkeibaId": "000a00354c",
+      "raceStats": {
+        "total": {
+          "runs": 2,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "orange-harp"
+    },
+    {
+      "id": "tamamoasahi",
+      "name": "タマモアサヒ",
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 7
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "リマンド(GB)",
+      "dam": "ソワドレーヌ",
+      "color": "栗毛",
+      "breeder": "社台牧場（白老町）",
+      "netkeibaId": "1976z00392",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 12,
+            "day": 10
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳S(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "soi-de-reine"
+    },
+    {
+      "id": "asahirimando",
+      "name": "アサヒリマンド",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "リマンド(GB)",
+      "dam": "ソワドレーヌ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1974z00014",
+      "raceStats": {
+        "total": {
+          "runs": 18,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 9,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "朝日チャレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 3,
+            "day": 26
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 8,
+            "day": 7
+          },
+          "racecourse": "小倉",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "soi-de-reine"
     }
   ]
 }

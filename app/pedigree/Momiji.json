@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Momiji",
     "rootHorseId": "momiji",
-    "lastUpdated": "2025-09-26T06:06:37.179166Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "momiji",
       "name": "モミジ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Harambee",
@@ -32,8 +33,11 @@
     {
       "id": "classic-bridge",
       "name": "クラシックブリッジ",
-      "foaled": "{'year': 1986, 'month': 3, 'day': 22}",
-      "foaledArray": ["1986", "03", "22"],
+      "foaled": {
+        "year": 1986,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーアテンション(FR)",
@@ -71,6 +75,112 @@
         "total": "1億2,022万円",
         "central": "1億2,022万円",
         "local": "0万円"
+      },
+      "damId": "momiji"
+    },
+    {
+      "id": "nishinosky",
+      "name": "ニシノスキー",
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 1
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "マルゼンスキー",
+      "dam": "モミジ",
+      "color": "鹿毛",
+      "breeder": "隆栄牧場（新冠町）",
+      "netkeibaId": "1980103194",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1984,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "安田記念(GI)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "22",
+          "result": "15",
+          "favorite": "21"
+        },
+        {
+          "date": {
+            "year": 1984,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングカッ(OP)",
+          "displayRace": "京王杯スプリングC",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "22",
+          "result": "16",
+          "favorite": "19"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "ラジオ日本賞セントラ(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1983,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "18",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 12,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "1",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Nishinosky",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "momiji"
     }

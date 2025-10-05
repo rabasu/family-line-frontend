@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Mandarin Mama",
     "rootHorseId": "mandarin-mama",
-    "lastUpdated": "2025-09-20T10:48:35.718262Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mandarin-mama",
       "name": "マンダリンママ",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 12}",
-      "foaledArray": ["1996", "04", "12"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lord at War",
       "dam": "Stani River",
-      "dam_netkeiba_id": "",
       "color": "栗毛",
       "breeder": "New Phoenix Stable（米）",
       "netkeibaId": "1996110311",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Mandarin Mama"
+      "englishName": "Mandarin Mama",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "t-m-taiho",
       "name": "テイエムタイホー",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 29}",
-      "foaledArray": ["2009", "04", "29"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ニューイングランド",
       "dam": "マンダリンママ",
-      "dam_netkeiba_id": "1996110311",
       "color": "栗毛",
       "breeder": "若林武雄（日高町）",
       "netkeibaId": "2009103182",
@@ -269,7 +274,8 @@
         "central": "1億8,213万円",
         "local": "0万円"
       },
-      "damId": "mandarin-mama"
+      "damId": "mandarin-mama",
+      "dam_netkeiba_id": "1996110311"
     }
   ]
 }

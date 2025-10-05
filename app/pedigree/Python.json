@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Python",
     "rootHorseId": "python",
-    "lastUpdated": "2025-09-24T22:52:47.417406Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "python",
       "name": "パイソン",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fappiano(US)",
@@ -32,8 +33,11 @@
     {
       "id": "king-admire",
       "name": "キングアドマイヤ",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 15}",
-      "foaledArray": ["1992", "03", "15"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Paula Revere",
     "rootHorseId": "paula-revere",
-    "lastUpdated": "2025-09-21T09:20:14.867666Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "paula-revere",
       "name": "ポーラリヴァール",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 29}",
-      "foaledArray": ["1988", "04", "29"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caveat",
       "dam": "Dodie",
-      "dam_netkeiba_id": "",
       "color": "黒鹿毛",
       "breeder": "米",
       "netkeibaId": "000a0064f9",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Paula Revere"
+      "englishName": "Paula Revere",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "partition",
       "name": "パルティシオン",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 9}",
-      "foaledArray": ["2001", "03", "09"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エルコンドルパサー",
       "dam": "ポーラリヴァール",
-      "dam_netkeiba_id": "000a0064f9",
       "color": "黒鹿毛",
       "breeder": "追分ファーム（追分町）",
       "netkeibaId": "2001103030",
@@ -56,18 +61,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "paula-revere"
+      "damId": "paula-revere",
+      "dam_netkeiba_id": "000a0064f9"
     },
     {
       "id": "makio-bowler",
       "name": "マキオボーラー",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 12}",
-      "foaledArray": ["2010", "04", "12"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "メイショウボーラー",
       "dam": "パルティシオン",
-      "dam_netkeiba_id": "2001103030",
       "color": "黒鹿毛",
       "breeder": "馬道繁樹（浦河町）",
       "netkeibaId": "2010101930",
@@ -162,13 +170,17 @@
         "central": "1億743万円",
         "local": "0万円"
       },
-      "damId": "partition"
+      "damId": "partition",
+      "dam_netkeiba_id": "2001103030"
     },
     {
       "id": "masano-blues",
       "name": "マサノブルース",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 20}",
-      "foaledArray": ["2007", "03", "20"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 20
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",

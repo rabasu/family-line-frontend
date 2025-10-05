@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Marnie's Majik",
     "rootHorseId": "marnies-majik",
-    "lastUpdated": "2025-09-24T22:25:25.318683Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "marnies-majik",
       "name": "Marnie's Majik",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Elocutionist(US)",
@@ -31,8 +32,11 @@
     {
       "id": "daiwa-west",
       "name": "ダイワウエスト",
-      "foaled": "{'year': 1994, 'month': 2, 'day': 25}",
-      "foaledArray": ["1994", "02", "25"],
+      "foaled": {
+        "year": 1994,
+        "month": 2,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Gone West",

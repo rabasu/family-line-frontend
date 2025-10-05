@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "New Hope",
     "rootHorseId": "new-hope",
-    "lastUpdated": "2025-09-22T02:38:26.544131Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "new-hope",
       "name": "ニューホープ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ragusa",
@@ -32,8 +33,9 @@
     {
       "id": "sayamajo",
       "name": "サヤマジョー",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -59,8 +61,11 @@
     {
       "id": "kikuka-floral",
       "name": "キクカフローラル",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 1}",
-      "foaledArray": ["1989", "04", "01"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
@@ -88,8 +93,11 @@
     {
       "id": "ike-dragon",
       "name": "イケドラゴン",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 20}",
-      "foaledArray": ["2005", "03", "20"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ニューイングランド",

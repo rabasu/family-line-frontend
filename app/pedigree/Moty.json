@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Moty",
     "rootHorseId": "moty",
-    "lastUpdated": "2025-09-24T16:18:22.287317Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "moty",
       "name": "モウテイ",
-      "foaled": "{'year': 1954}",
-      "foaledArray": ["1954"],
+      "foaled": {
+        "year": 1954
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Migoli",
@@ -32,8 +33,9 @@
     {
       "id": "kitty-onward",
       "name": "キテイオンワード",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ナスアロー(US)",
@@ -59,8 +61,11 @@
     {
       "id": "kitty-tesco",
       "name": "キテイテスコ",
-      "foaled": "{'year': 1980, 'month': 2, 'day': 24}",
-      "foaledArray": ["1980", "02", "24"],
+      "foaled": {
+        "year": 1980,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -86,8 +91,11 @@
     {
       "id": "isono-roubles",
       "name": "イソノルーブル",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 13}",
-      "foaledArray": ["1988", "03", "13"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラシアンルーブル(US)",
@@ -191,8 +199,11 @@
     {
       "id": "isono-swallow",
       "name": "イソノスワロー",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 28}",
-      "foaledArray": ["2002", "03", "28"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デヒア(US)",
@@ -220,8 +231,11 @@
     {
       "id": "monstre",
       "name": "モンストール",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 8}",
-      "foaledArray": ["2009", "04", "08"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤマックス",
@@ -370,8 +384,11 @@
     {
       "id": "isono-winner",
       "name": "イソノウイナー",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 21}",
-      "foaledArray": ["1994", "03", "21"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クリスタルグリッターズ(US)",
@@ -486,6 +503,50 @@
         "local": "0万円"
       },
       "damId": "isono-roubles"
+    },
+    {
+      "id": "gold-master",
+      "name": "ゴールドマスター",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "バルバール(FR)",
+      "dam": "キテイオンワード",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000c22",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 3,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(OP)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Gold Master",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kitty-onward"
     }
   ]
 }

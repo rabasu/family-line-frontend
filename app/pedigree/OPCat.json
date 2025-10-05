@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "O. P. Cat",
     "rootHorseId": "o-p-cat",
-    "lastUpdated": "2025-09-24T13:42:40.069327Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "o-p-cat",
       "name": "オーピーキャット",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "raffica",
       "name": "ラフィカ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 11}",
-      "foaledArray": ["1998", "03", "11"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -61,8 +65,11 @@
     {
       "id": "air-pascale",
       "name": "エアパスカル",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 11}",
-      "foaledArray": ["2005", "02", "11"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ウォーエンブレム(US)",
@@ -196,8 +203,11 @@
     {
       "id": "bright-jewelry",
       "name": "ブライトジュエリー",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 18}",
-      "foaledArray": ["2020", "04", "18"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
@@ -256,13 +266,15 @@
     {
       "id": "jun-tsubasa",
       "name": "ジュンツバサ",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 15}",
-      "foaledArray": ["2012", "04", "15"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
       "dam": "ピンクガーター",
-      "dam_netkeiba_id": "2000101544",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2012104777",
@@ -312,18 +324,21 @@
         "central": "2,565万円",
         "local": "0万円"
       },
-      "damId": "pink-garter"
+      "damId": "pink-garter",
+      "dam_netkeiba_id": "2000101544"
     },
     {
       "id": "pink-garter",
       "name": "ピンクガーター",
-      "foaled": "{'year': 2000, 'month': 2, 'day': 27}",
-      "foaledArray": ["2000", "02", "27"],
+      "foaled": {
+        "year": 2000,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アフリート(CAN)",
       "dam": "オーピーキャットO. P. Cat",
-      "dam_netkeiba_id": "000a0064f3",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "2000101544",
@@ -342,13 +357,17 @@
         "central": "4,325万円",
         "local": "0万円"
       },
-      "damId": "o-p-cat"
+      "damId": "o-p-cat",
+      "dam_netkeiba_id": "000a0064f3"
     },
     {
       "id": "caldo-brezza",
       "name": "カルドブレッサ",
-      "foaled": "{'year': 2008, 'month': 5, 'day': 13}",
-      "foaledArray": ["2008", "05", "13"],
+      "foaled": {
+        "year": 2008,
+        "month": 5,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャングルポケット",
@@ -557,8 +576,11 @@
     {
       "id": "black-tuxedo",
       "name": "ブラックタキシード",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 15}",
-      "foaledArray": ["1996", "03", "15"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

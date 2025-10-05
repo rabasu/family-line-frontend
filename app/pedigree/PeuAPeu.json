@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Peu a Peu",
     "rootHorseId": "peu-a-peu",
-    "lastUpdated": "2025-09-21T01:50:02.159383Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "peu-a-peu",
       "name": "プアプー",
-      "foaled": "{'year': 1998}",
-      "foaledArray": ["1998"],
+      "foaled": {
+        "year": 1998
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dashing Blade",
@@ -32,8 +33,11 @@
     {
       "id": "allmahlich",
       "name": "アルメーリヒ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 12}",
-      "foaledArray": ["2007", "03", "12"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",
@@ -61,8 +65,11 @@
     {
       "id": "armeria-bloom",
       "name": "アルメリアブルーム",
-      "foaled": "{'year': 2014, 'month': 5, 'day': 16}",
-      "foaledArray": ["2014", "05", "16"],
+      "foaled": {
+        "year": 2014,
+        "month": 5,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドリームジャーニー",
@@ -136,8 +143,11 @@
     {
       "id": "ocean-blue",
       "name": "オーシャンブルー",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 26}",
-      "foaledArray": ["2008", "03", "26"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

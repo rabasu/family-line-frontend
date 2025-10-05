@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Miami Gulch",
     "rootHorseId": "miami-gulch",
-    "lastUpdated": "2025-09-23T11:34:02.157569Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miami-gulch",
       "name": "マイアミガルチ",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gulch",
       "dam": "Raja's Delight",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a00656a",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Miami Gulch"
+      "englishName": "Miami Gulch",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "big-queen",
       "name": "ビッグクィーン",
-      "foaled": "{'year': 2004, 'month': 5, 'day': 16}",
-      "foaledArray": ["2004", "05", "16"],
+      "foaled": {
+        "year": 2004,
+        "month": 5,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "マイアミガルチ",
-      "dam_netkeiba_id": "000a00656a",
       "color": "鹿毛",
       "breeder": "北星村田牧場（新冠町）",
       "netkeibaId": "2004100852",
@@ -58,18 +61,21 @@
         "central": "50万円",
         "local": "176万円"
       },
-      "damId": "miami-gulch"
+      "damId": "miami-gulch",
+      "dam_netkeiba_id": "000a00656a"
     },
     {
       "id": "cross-krieger",
       "name": "クロスクリーガー",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 11}",
-      "foaledArray": ["2012", "04", "11"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤオーラ",
       "dam": "ビッグクィーン",
-      "dam_netkeiba_id": "2004100852",
       "color": "鹿毛",
       "breeder": "北星村田牧場（新冠町）",
       "netkeibaId": "2012100772",
@@ -134,13 +140,17 @@
         "central": "8,037万円",
         "local": "4,375万円"
       },
-      "damId": "big-queen"
+      "damId": "big-queen",
+      "dam_netkeiba_id": "2004100852"
     },
     {
       "id": "yukino-sun-royal",
       "name": "ユキノサンロイヤル",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 10}",
-      "foaledArray": ["1997", "04", "10"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

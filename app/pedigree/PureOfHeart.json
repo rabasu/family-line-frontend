@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pure Of Heart",
     "rootHorseId": "pure-of-heart",
-    "lastUpdated": "2025-09-24T02:35:19.330216Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pure-of-heart",
       "name": "ピュアオブハート",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Woodman",
@@ -32,8 +33,11 @@
     {
       "id": "t-m-southern-o",
       "name": "テイエムサザンオー",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 27}",
-      "foaledArray": ["1999", "03", "27"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カーネギー(IRE)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pluja",
     "rootHorseId": "pluja",
-    "lastUpdated": "2025-09-15T08:47:32.776158Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pluja",
       "name": "プルージャ",
-      "foaled": "{'year': 2013}",
-      "foaledArray": ["2013"],
+      "foaled": {
+        "year": 2013
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sidney's Candy",
@@ -32,8 +33,11 @@
     {
       "id": "nishino-lavanda",
       "name": "ニシノラヴァンダ",
-      "foaled": "{'year': 2022, 'month': 2, 'day': 24}",
-      "foaledArray": ["2022", "02", "24"],
+      "foaled": {
+        "year": 2022,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サトノアラジン",

@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Maia",
     "rootHorseId": "maia",
-    "lastUpdated": "2025-09-25T01:25:18.250731Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "maia",
       "name": "マイア",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cipol",
       "dam": "Leandra",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "亜",
       "netkeibaId": "000a0060dd",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Maia"
+      "englishName": "Maia",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "northern-maia",
       "name": "ノーザンマイア",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 6}",
-      "foaledArray": ["1990", "03", "06"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
       "dam": "マイア",
-      "dam_netkeiba_id": "000a0060dd",
       "color": "鹿毛",
       "breeder": "社台ファーム（早来町）",
       "netkeibaId": "1990104643",
@@ -74,18 +77,21 @@
         "central": "7,522万円",
         "local": "0万円"
       },
-      "damId": "maia"
+      "damId": "maia",
+      "dam_netkeiba_id": "000a0060dd"
     },
     {
       "id": "katsura-driver",
       "name": "カツラドライバー",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 9}",
-      "foaledArray": ["1998", "03", "09"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ニホンピロウイナー",
       "dam": "ノーザンマイア",
-      "dam_netkeiba_id": "1990104643",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "1998101801",
@@ -104,18 +110,21 @@
         "central": "130万円",
         "local": "0万円"
       },
-      "damId": "northern-maia"
+      "damId": "northern-maia",
+      "dam_netkeiba_id": "1990104643"
     },
     {
       "id": "admire-morale",
       "name": "アドマイヤモラール",
-      "foaled": "{'year': 2013, 'month': 2, 'day': 9}",
-      "foaledArray": ["2013", "02", "09"],
+      "foaled": {
+        "year": 2013,
+        "month": 2,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キンシャサノキセキ",
       "dam": "カツラドライバー",
-      "dam_netkeiba_id": "1998101801",
       "color": "黒鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013105825",
@@ -210,13 +219,17 @@
         "central": "2,868万円",
         "local": "0万円"
       },
-      "damId": "katsura-driver"
+      "damId": "katsura-driver",
+      "dam_netkeiba_id": "1998101801"
     },
     {
       "id": "f-t-maia",
       "name": "エフティマイア",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 14}",
-      "foaledArray": ["2005", "02", "14"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -455,8 +468,11 @@
     {
       "id": "seiryu-o",
       "name": "セイリューオー",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 13}",
-      "foaledArray": ["1994", "04", "13"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -635,8 +651,11 @@
     {
       "id": "good-my-love",
       "name": "グッドマイラブ",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 2}",
-      "foaledArray": ["1987", "05", "02"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -662,8 +681,11 @@
     {
       "id": "argentine-tango",
       "name": "アルゼンチンタンゴ",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 7}",
-      "foaledArray": ["1989", "03", "07"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mrs McArdy",
     "rootHorseId": "mrs-mcardy",
-    "lastUpdated": "2025-09-24T01:38:31.377049Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mrs-mcardy",
       "name": "ミセスマカディー",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トライバルチーフ(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "admire-mcardy",
       "name": "アドマイヤマカディ",
-      "foaled": "{'year': 1991, 'month': 6, 'day': 12}",
-      "foaledArray": ["1991", "06", "12"],
+      "foaled": {
+        "year": 1991,
+        "month": 6,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -59,8 +63,11 @@
     {
       "id": "admire-cozzene",
       "name": "アドマイヤコジーン",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 8}",
-      "foaledArray": ["1996", "04", "08"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Cozzene",

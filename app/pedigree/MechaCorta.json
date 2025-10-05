@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Mecha Corta",
     "rootHorseId": "mecha-corta",
-    "lastUpdated": "2025-09-17T01:32:43.989181Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mecha-corta",
       "name": "メチャコルタ",
-      "foaled": "{'year': 2012, 'month': 7, 'day': 18}",
-      "foaledArray": ["2012", "07", "18"],
+      "foaled": {
+        "year": 2012,
+        "month": 7,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "El Corredor",
@@ -32,14 +35,17 @@
     {
       "id": "danon-fair-lady",
       "name": "ダノンフェアレディ",
-      "foaled": "{'year': 2022, 'month': 1, 'day': 19}",
-      "foaledArray": ["2022", "01", "19"],
+      "foaled": {
+        "year": 2022,
+        "month": 1,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キズナ",
       "dam": "メチャコルタ",
-      "color": "黒鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022105087",
       "raceStats": {
         "total": {
@@ -77,8 +83,11 @@
     {
       "id": "diamond-hands",
       "name": "ダイヤモンドハンズ",
-      "foaled": "{'year': 2020, 'month': 2, 'day': 7}",
-      "foaledArray": ["2020", "02", "07"],
+      "foaled": {
+        "year": 2020,
+        "month": 2,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サトノダイヤモンド",

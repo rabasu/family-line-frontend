@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "My Darling One",
     "rootHorseId": "my-darling-one",
-    "lastUpdated": "2025-09-25T02:18:15.361625Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "my-darling-one",
       "name": "My Darling One",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Exclusive Native",
@@ -31,8 +32,11 @@
     {
       "id": "heart-lake",
       "name": "ハートレイク",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 22}",
-      "foaledArray": ["1991", "04", "22"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Nureyev",

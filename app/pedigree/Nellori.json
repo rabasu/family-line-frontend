@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Nellori",
     "rootHorseId": "nellori",
-    "lastUpdated": "2025-09-23T18:08:31.758677Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nellori",
       "name": "ネロリ",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dan Cupid",
@@ -32,8 +33,11 @@
     {
       "id": "chateau-formosa",
       "name": "シャトーフォモサ",
-      "foaled": "{'year': 1977, 'month': 2, 'day': 18}",
-      "foaledArray": ["1977", "02", "18"],
+      "foaled": {
+        "year": 1977,
+        "month": 2,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シャトーゲイ(US)",
@@ -59,8 +63,11 @@
     {
       "id": "cheers-dancer",
       "name": "チアズダンサー",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 6}",
-      "foaledArray": ["1993", "04", "06"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -164,8 +171,11 @@
     {
       "id": "cheers-message",
       "name": "チアズメッセージ",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 7}",
-      "foaledArray": ["2000", "04", "07"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -419,8 +429,11 @@
     {
       "id": "cheers-brightly",
       "name": "チアズブライトリー",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 24}",
-      "foaledArray": ["1998", "03", "24"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

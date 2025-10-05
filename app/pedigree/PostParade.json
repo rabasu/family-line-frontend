@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Post Parade",
     "rootHorseId": "post-parade",
-    "lastUpdated": "2025-09-20T15:56:26.536094Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "post-parade",
       "name": "ポストパレード",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",
@@ -32,8 +33,11 @@
     {
       "id": "keiai-elegant",
       "name": "ケイアイエレガント",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 28}",
-      "foaledArray": ["2009", "03", "28"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",

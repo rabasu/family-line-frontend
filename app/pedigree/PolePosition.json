@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Pole Position",
     "rootHorseId": "pole-position",
-    "lastUpdated": "2025-09-20T13:38:39.497306Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pole-position",
       "name": "ポールポジションII",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pivotal",
       "dam": "Danehurst",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "英",
       "netkeibaId": "000a0116c0",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Pole Position"
+      "englishName": "Pole Position",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "saimon-seele",
       "name": "サイモンゼーレ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 22}",
-      "foaledArray": ["2013", "03", "22"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キンシャサノキセキ",
       "dam": "ポールポジションII",
-      "dam_netkeiba_id": "000a0116c0",
       "color": "鹿毛",
       "breeder": "三嶋牧場（浦河町）",
       "netkeibaId": "2013103760",
@@ -119,7 +122,8 @@
         "central": "5,095万円",
         "local": "125万円"
       },
-      "damId": "pole-position"
+      "damId": "pole-position",
+      "dam_netkeiba_id": "000a0116c0"
     }
   ]
 }

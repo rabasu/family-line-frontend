@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pretty Lucky",
     "rootHorseId": "pretty-lucky",
-    "lastUpdated": "2025-09-24T07:07:03.044601Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pretty-lucky",
       "name": "プリティラッキー",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Shirley Heights(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "yusei-stein",
       "name": "ユーセイシュタイン",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 27}",
-      "foaledArray": ["1996", "03", "27"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ニホンピロウイナー",

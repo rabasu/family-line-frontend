@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Passionaria",
     "rootHorseId": "passionaria",
-    "lastUpdated": "2025-09-24T09:40:49.861382Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "passionaria",
       "name": "パッショナリアII",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Beldale Flutter",
@@ -32,8 +33,11 @@
     {
       "id": "fusaichi-gold",
       "name": "フサイチゴールド",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 20}",
-      "foaledArray": ["1996", "02", "20"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -77,8 +81,11 @@
     {
       "id": "fusaichi-sonic",
       "name": "フサイチソニック",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 24}",
-      "foaledArray": ["1997", "03", "24"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",

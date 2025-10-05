@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "One for Rose",
     "rootHorseId": "one-for-rose",
-    "lastUpdated": "2025-09-21T15:54:52.127958Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "one-for-rose",
       "name": "ワンフォーローズ",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tejano Run",
@@ -32,14 +33,17 @@
     {
       "id": "quatre-feuilles",
       "name": "キャトルフィーユ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 3}",
-      "foaledArray": ["2009", "03", "03"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "ワンフォーローズ",
-      "color": "鹿毛",
-      "breeder": "ケイアイファーム（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2009101532",
       "raceStats": {
         "total": {
@@ -287,8 +291,11 @@
     {
       "id": "argine",
       "name": "アルジーヌ",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 25}",
-      "foaledArray": ["2020", "04", "25"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",
@@ -392,8 +399,11 @@
     {
       "id": "lord-les-ailes",
       "name": "ロードレゼル",
-      "foaled": "{'year': 2019, 'month': 5, 'day': 16}",
-      "foaledArray": ["2019", "05", "16"],
+      "foaled": {
+        "year": 2019,
+        "month": 5,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -452,8 +462,11 @@
     {
       "id": "angel-face",
       "name": "エンジェルフェイス",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 5}",
-      "foaledArray": ["2013", "03", "05"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -587,8 +600,11 @@
     {
       "id": "lady-alba-rosa",
       "name": "レディアルバローザ",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 21}",
-      "foaledArray": ["2007", "04", "21"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",

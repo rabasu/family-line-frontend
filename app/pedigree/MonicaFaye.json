@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Monica Faye",
     "rootHorseId": "monica-faye",
-    "lastUpdated": "2025-09-24T01:38:08.775665Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "monica-faye",
       "name": "Monica Faye",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wolf Power",
@@ -31,8 +32,11 @@
     {
       "id": "silk-bravo",
       "name": "シルクブラボー",
-      "foaled": "{'year': 2000, 'month': 2, 'day': 6}",
-      "foaledArray": ["2000", "02", "06"],
+      "foaled": {
+        "year": 2000,
+        "month": 2,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Cozzene",

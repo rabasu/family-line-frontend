@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Prance",
     "rootHorseId": "prance",
-    "lastUpdated": "2025-09-22T10:29:27.788878Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "prance",
       "name": "プランス",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",
@@ -32,8 +33,9 @@
     {
       "id": "ocean-dream",
       "name": "オーシャンドリーム",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",
@@ -59,8 +61,11 @@
     {
       "id": "spinning-noir",
       "name": "スピニングノアール",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 2}",
-      "foaledArray": ["2001", "02", "02"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スピニングワールド(US)",

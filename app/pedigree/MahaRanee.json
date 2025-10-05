@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Maha Ranee",
     "rootHorseId": "maha-ranee",
-    "lastUpdated": "2025-09-25T07:20:27.679562Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "maha-ranee",
       "name": "マハラニー",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "His Highness",
@@ -32,8 +33,9 @@
     {
       "id": "hahbah-shiruku",
       "name": "ハーバーシルク",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラヴァンダン",
@@ -59,8 +61,9 @@
     {
       "id": "harbor-small",
       "name": "ハーバースモール",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アイアンリージ",
@@ -86,8 +89,11 @@
     {
       "id": "a-p-royal",
       "name": "エーピーロイヤル",
-      "foaled": "{'year': 1988, 'month': 2, 'day': 18}",
-      "foaledArray": ["1988", "02", "18"],
+      "foaled": {
+        "year": 1988,
+        "month": 2,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルスキー",
@@ -113,8 +119,11 @@
     {
       "id": "a-p-greed",
       "name": "エーピーグリード",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 12}",
-      "foaledArray": ["1995", "04", "12"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フェアジャッジメント(US)",
@@ -293,8 +302,11 @@
     {
       "id": "golden-eye",
       "name": "ゴールデンアイ",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 8}",
-      "foaledArray": ["1988", "05", "08"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サーペンフロ",
@@ -593,8 +605,11 @@
     {
       "id": "noel",
       "name": "ノエル",
-      "foaled": "{'year': 1977, 'month': 3, 'day': 30}",
-      "foaledArray": ["1977", "03", "30"],
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フォルティノ",
@@ -620,8 +635,9 @@
     {
       "id": "iburi-hatsuhime",
       "name": "イブリハツヒメ",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ライジングフレーム(IRE)",
@@ -643,6 +659,95 @@
         "total": "0万円"
       },
       "damId": "maha-ranee"
+    },
+    {
+      "id": "tomoe-o",
+      "name": "トモエオー",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ジルドレ",
+      "dam": "イブリハツヒメ",
+      "color": "鹿毛",
+      "breeder": "伊達市",
+      "netkeibaId": "000a000b73",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1973,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "11",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 12,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "朝日杯3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "札幌",
+          "race": "北海道3歳S(OP)",
+          "displayRace": "北海道3歳S",
+          "distance": "ダ1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tomoe O",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "iburi-hatsuhime"
     }
   ]
 }

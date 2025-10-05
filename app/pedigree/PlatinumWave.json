@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Platinum Wave",
     "rootHorseId": "platinum-wave",
-    "lastUpdated": "2025-09-23T09:04:14.543621Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "platinum-wave",
       "name": "プラチナウェーブ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "hookipa-wave",
       "name": "ホオキパウェーブ",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 16}",
-      "foaledArray": ["2001", "03", "16"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カーネギー(IRE)",

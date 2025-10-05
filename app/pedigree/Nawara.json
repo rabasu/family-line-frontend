@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Nawara",
     "rootHorseId": "nawara",
-    "lastUpdated": "2025-09-24T12:12:59.289508Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nawara",
       "name": "Nawara",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Welsh Pageant",
@@ -31,8 +32,11 @@
     {
       "id": "lord-successor",
       "name": "ロードサクセサー",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 23}",
-      "foaledArray": ["1995", "04", "23"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "My Cherie",
     "rootHorseId": "my-cherie",
-    "lastUpdated": "2025-09-23T22:33:44.724169Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "my-cherie",
       "name": "My Cherie",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Woodman",
@@ -31,8 +32,11 @@
     {
       "id": "wonderful-days",
       "name": "ワンダフルデイズ",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 16}",
-      "foaledArray": ["2000", "03", "16"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ボストンハーバー(US)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Net Dancer",
     "rootHorseId": "net-dancer",
-    "lastUpdated": "2025-09-23T23:09:57.593407Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "net-dancer",
       "name": "Net Dancer",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -31,8 +32,11 @@
     {
       "id": "eagle-cafe",
       "name": "イーグルカフェ",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 10}",
-      "foaledArray": ["1997", "02", "10"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Gulch",

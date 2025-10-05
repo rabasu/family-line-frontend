@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Olimpia Dukakis",
     "rootHorseId": "olimpia-dukakis",
-    "lastUpdated": "2025-09-20T21:31:23.208564Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "olimpia-dukakis",
       "name": "オリンピアデュカキス",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Isopach",
@@ -32,8 +33,11 @@
     {
       "id": "hollywood-dream",
       "name": "ハリウッドドリーム",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 11}",
-      "foaledArray": ["1999", "04", "11"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バブルガムフェロー",
@@ -61,8 +65,11 @@
     {
       "id": "majin-prosper",
       "name": "マジンプロスパー",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 7}",
-      "foaledArray": ["2007", "03", "07"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤコジーン",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miss Kirsty",
     "rootHorseId": "miss-kirsty",
-    "lastUpdated": "2025-09-22T00:37:39.529945Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-kirsty",
       "name": "ミスカースティー",
-      "foaled": "{'year': 1997}",
-      "foaledArray": ["1997"],
+      "foaled": {
+        "year": 1997
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -32,8 +33,11 @@
     {
       "id": "maruka-phoenix",
       "name": "マルカフェニックス",
-      "foaled": "{'year': 2004, 'month': 5, 'day': 27}",
-      "foaledArray": ["2004", "05", "27"],
+      "foaled": {
+        "year": 2004,
+        "month": 5,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

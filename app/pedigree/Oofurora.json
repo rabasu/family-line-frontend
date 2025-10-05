@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "オーフロラ",
     "rootHorseId": "oofurora",
-    "lastUpdated": "2025-09-25T23:31:26.130834Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "oofurora",
       "name": "オーフロラ",
-      "foaled": "{'year': 1919}",
-      "foaledArray": ["1919"],
+      "foaled": {
+        "year": 1919
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Patrobas",
@@ -31,8 +32,9 @@
     {
       "id": "hiryuu",
       "name": "飛竜",
-      "foaled": "{'year': 1929}",
-      "foaledArray": ["1929"],
+      "foaled": {
+        "year": 1929
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クラツクマンナン(GB)",
@@ -55,10 +57,11 @@
       "damId": "oofurora"
     },
     {
-      "id": "kenzan",
+      "id": "kenzan-1941",
       "name": "ケンザン",
-      "foaled": "{'year': 1941}",
-      "foaledArray": ["1941"],
+      "foaled": {
+        "year": 1941
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セフト(GB)",
@@ -78,13 +81,15 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hiryuu"
+      "damId": "hiryuu",
+      "linkName": "ケンザン(1941)"
     },
     {
       "id": "benten",
       "name": "ベンテン",
-      "foaled": "{'year': 1951}",
-      "foaledArray": ["1951"],
+      "foaled": {
+        "year": 1951
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プリメロ(GB)",
@@ -104,13 +109,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kenzan"
+      "damId": "kenzan-1941"
     },
     {
       "id": "grand-lassy",
       "name": "グランドラッシー",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラッシー(IRE)",
@@ -136,8 +142,9 @@
     {
       "id": "miyano-matsu",
       "name": "ミヤノマツ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イエローゴッド",
@@ -163,8 +170,11 @@
     {
       "id": "tsurumaru-mimata-o",
       "name": "ツルマルミマタオー",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 7}",
-      "foaledArray": ["1987", "05", "07"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "グリーングラス",
@@ -324,6 +334,309 @@
         "local": "0万円"
       },
       "damId": "miyano-matsu"
+    },
+    {
+      "id": "sunny-flower",
+      "name": "サニーフラワー",
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 2
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "リボッコ",
+      "dam": "エリモケンザン",
+      "color": "栗毛",
+      "breeder": "水野繁一（えりも町）",
+      "netkeibaId": "1975105758",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1980,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "13",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 8,
+            "day": 19
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 4,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "4歳牝馬特別(OP)",
+          "displayRace": "4歳牝馬特別（東）",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "6",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Sunny Flower",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "erimo-kenzan"
+    },
+    {
+      "id": "erimo-kenzan",
+      "name": "エリモケンザン",
+      "foaled": {
+        "year": 1969
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "キングスベンチ",
+      "dam": "コートウクイン",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955102064",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Erimo Kenzan",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "koto-queen"
+    },
+    {
+      "id": "koto-queen",
+      "name": "コートウクイン",
+      "foaled": {
+        "year": 1959
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヤサカ(NZ)",
+      "dam": "ベンテン",
+      "color": "栗毛",
+      "breeder": "三石町",
+      "netkeibaId": "1959100456",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Koto Queen",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "benten"
+    },
+    {
+      "id": "ezokouzan",
+      "name": "エゾコウザン",
+      "foaled": {
+        "year": 1958
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "キンコウ(US)",
+      "dam": "ダイラクザン",
+      "color": "鹿毛",
+      "breeder": "豊浦町",
+      "netkeibaId": "000a0032ae",
+      "raceStats": {
+        "total": {
+          "runs": 36,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1961,
+            "month": 11,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念競走(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 10,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "クイーンステークス競(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "1",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "dairakuzan",
+      "name": "ダイラクザン",
+      "foaled": {
+        "year": 1952
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シーマー",
+      "dam": "ラクザン",
+      "color": "黒鹿毛",
+      "breeder": "豊浦町",
+      "netkeibaId": "000a002a76",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "rakuzan"
+    },
+    {
+      "id": "rakuzan",
+      "name": "ラクザン",
+      "foaled": {
+        "year": 1943
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "レイモンド(IRE)",
+      "dam": "飛竜",
+      "color": "鹿毛",
+      "breeder": "豊浦町",
+      "netkeibaId": "000a0025c3",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hiryuu"
     }
   ]
 }

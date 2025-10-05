@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Manyara",
     "rootHorseId": "manyara",
-    "lastUpdated": "2025-09-17T01:31:48.922756Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "manyara",
       "name": "マニヤラ",
-      "foaled": "{'year': 2011}",
-      "foaledArray": ["2011"],
+      "foaled": {
+        "year": 2011
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Manduro(GER)",
@@ -32,8 +33,11 @@
     {
       "id": "ballerina",
       "name": "バレリーナ",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 18}",
-      "foaledArray": ["2020", "03", "18"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

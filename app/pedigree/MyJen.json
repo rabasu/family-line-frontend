@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "My Jen",
     "rootHorseId": "my-jen",
-    "lastUpdated": "2025-09-18T14:17:31.327937Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "my-jen",
       "name": "マイジェン",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 5}",
-      "foaledArray": ["2007", "05", "05"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fusaichi Pegasus",
@@ -32,8 +35,11 @@
     {
       "id": "purpur-ray",
       "name": "プルパレイ",
-      "foaled": "{'year': 2019, 'month': 2, 'day': 10}",
-      "foaledArray": ["2019", "02", "10"],
+      "foaled": {
+        "year": 2019,
+        "month": 2,
+        "day": 10
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "イスラボニータ",
@@ -272,8 +278,11 @@
     {
       "id": "satono-gold",
       "name": "サトノゴールド",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 4}",
-      "foaledArray": ["2017", "02", "04"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 4
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ゴールドシップ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Nice Raise",
     "rootHorseId": "nice-raise",
-    "lastUpdated": "2025-09-22T23:27:04.325480Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nice-raise",
       "name": "ナイスレイズ",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "my-michelle",
       "name": "マイミッシェル",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 30}",
-      "foaledArray": ["2000", "03", "30"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",
@@ -61,8 +65,11 @@
     {
       "id": "mach-velocity",
       "name": "マッハヴェロシティ",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 22}",
-      "foaledArray": ["2006", "04", "22"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
@@ -331,8 +338,11 @@
     {
       "id": "meisho-bowler",
       "name": "メイショウボーラー",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 16}",
-      "foaledArray": ["2001", "04", "16"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",

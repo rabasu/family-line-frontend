@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Op Art",
     "rootHorseId": "op-art",
-    "lastUpdated": "2025-09-27T03:32:07.919698Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "op-art",
       "name": "オプアート",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ambiopoise",
@@ -32,8 +33,11 @@
     {
       "id": "hokkai-lovely",
       "name": "ホッカイラブリー",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 29}",
-      "foaledArray": ["1985", "04", "29"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ホッカイダイヤ",
@@ -61,8 +65,11 @@
     {
       "id": "hokkai-rousseau",
       "name": "ホッカイルソー",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 2}",
-      "foaledArray": ["1992", "05", "02"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マークオブディスティンクション(GB)",
@@ -361,8 +368,11 @@
     {
       "id": "hokkai-seres",
       "name": "ホッカイセレス",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 28}",
-      "foaledArray": ["1990", "04", "28"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モガミ(FR)",
@@ -571,8 +581,11 @@
     {
       "id": "hokkai-tesco",
       "name": "ホッカイテスコ",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 24}",
-      "foaledArray": ["1980", "05", "24"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -598,8 +611,11 @@
     {
       "id": "hokkai-pegasus",
       "name": "ホッカイペガサス",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 23}",
-      "foaledArray": ["1981", "05", "23"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホッカイダイヤ",
@@ -787,6 +803,154 @@
         "total": "530万円",
         "central": "530万円",
         "local": "0万円"
+      },
+      "damId": "op-art"
+    },
+    {
+      "id": "hokkainooburu",
+      "name": "ホッカイノーブル",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ファーザーズイメージ",
+      "dam": "オプアート",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1973z00601",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチン共和国杯(OP)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "9",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 8,
+            "day": 28
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 5,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチン共和国杯(OP)",
+          "displayRace": "アルゼンチン共和国杯",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 2,
+            "day": 20
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 2,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 12,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズステーク(OP)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "1",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "op-art"
     }

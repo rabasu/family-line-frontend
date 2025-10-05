@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Or Vision",
     "rootHorseId": "or-vision",
-    "lastUpdated": "2025-09-25T08:50:26.735890Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "or-vision",
       "name": "Or Vision",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Irish River(FR)",
@@ -31,8 +32,11 @@
     {
       "id": "dolphin-street",
       "name": "ドルフィンストリート",
-      "foaled": "{'year': 1990, 'month': 2, 'day': 27}",
-      "foaledArray": ["1990", "02", "27"],
+      "foaled": {
+        "year": 1990,
+        "month": 2,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Bluebird",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Palace Rumor",
     "rootHorseId": "palace-rumor",
-    "lastUpdated": "2025-09-17T10:18:15.361832Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "palace-rumor",
       "name": "パレスルーマー",
-      "foaled": "{'year': 2003}",
-      "foaledArray": ["2003"],
+      "foaled": {
+        "year": 2003
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Royal Anthem",
@@ -32,13 +33,16 @@
     {
       "id": "justin-palace",
       "name": "ジャスティンパレス",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 12}",
-      "foaledArray": ["2019", "04", "12"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "パレスルーマー",
-      "color": "鹿毛",
+      "color": "青鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2019105346",
       "raceStats": {
@@ -347,8 +351,11 @@
     {
       "id": "iron-barows",
       "name": "アイアンバローズ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 2}",
-      "foaledArray": ["2017", "02", "02"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オルフェーヴル",

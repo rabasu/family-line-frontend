@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miss Audimar",
     "rootHorseId": "miss-audimar",
-    "lastUpdated": "2025-09-24T21:23:39.708959Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-audimar",
       "name": "Miss Audimar",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Leader",
@@ -31,8 +32,11 @@
     {
       "id": "gaily-eagle",
       "name": "ゲイリーイーグル",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 19}",
-      "foaledArray": ["1993", "04", "19"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Mujtahid",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Montfleur",
     "rootHorseId": "montfleur",
-    "lastUpdated": "2025-09-18T16:17:17.798226Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "montfleur",
       "name": "モンフルール",
-      "foaled": "{'year': 2002}",
-      "foaledArray": ["2002"],
+      "foaled": {
+        "year": 2002
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,9 @@
     {
       "id": "mystique",
       "name": "ミスティークII",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Monsun",
@@ -59,8 +61,11 @@
     {
       "id": "jodie",
       "name": "ジョディー",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 7}",
-      "foaledArray": ["2016", "02", "07"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

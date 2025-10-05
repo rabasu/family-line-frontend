@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mary Linoa",
     "rootHorseId": "mary-linoa",
-    "lastUpdated": "2025-09-21T16:55:12.517933Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mary-linoa",
       "name": "メアリーリノア",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "L'Emigrant",
@@ -32,8 +33,11 @@
     {
       "id": "share-elegance",
       "name": "シェアエレガンス",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 3}",
-      "foaledArray": ["1998", "04", "03"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラムタラ(US)",
@@ -61,8 +65,11 @@
     {
       "id": "hiruno-damour",
       "name": "ヒルノダムール",
-      "foaled": "{'year': 2007, 'month': 5, 'day': 20}",
-      "foaledArray": ["2007", "05", "20"],
+      "foaled": {
+        "year": 2007,
+        "month": 5,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
@@ -346,8 +353,11 @@
     {
       "id": "dear-majesty",
       "name": "ディアマジェスティ",
-      "foaled": "{'year': 2006, 'month': 5, 'day': 29}",
-      "foaledArray": ["2006", "05", "29"],
+      "foaled": {
+        "year": 2006,
+        "month": 5,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -436,8 +446,11 @@
     {
       "id": "reve-de-grand-pa",
       "name": "レーブドグランパ",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 13}",
-      "foaledArray": ["1994", "03", "13"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",

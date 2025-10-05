@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Palme d'Or",
     "rootHorseId": "palme-dor",
-    "lastUpdated": "2025-09-17T02:31:27.066863Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "palme-dor",
       "name": "パルムドールII",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
@@ -32,8 +33,11 @@
     {
       "id": "danon-suzuran",
       "name": "ダノンスズラン",
-      "foaled": "{'year': 2007, 'month': 2, 'day': 17}",
-      "foaledArray": ["2007", "02", "17"],
+      "foaled": {
+        "year": 2007,
+        "month": 2,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Awesome Again(CAN)",
@@ -61,8 +65,11 @@
     {
       "id": "rosa-noir",
       "name": "ローザノワール",
-      "foaled": "{'year': 2016, 'month': 2, 'day': 27}",
-      "foaledArray": ["2016", "02", "27"],
+      "foaled": {
+        "year": 2016,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Maria d'Oro",
     "rootHorseId": "maria-doro",
-    "lastUpdated": "2025-09-26T15:44:51.477623Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "maria-doro",
       "name": "マリアドロ",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Big Game(GB)",
@@ -32,8 +33,9 @@
     {
       "id": "kineusu-maria",
       "name": "キネウスマリア",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロムルス",
@@ -59,8 +61,11 @@
     {
       "id": "monte-maria",
       "name": "モンテマリア",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 15}",
-      "foaledArray": ["1981", "05", "15"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネヴァービート(GB)",
@@ -86,8 +91,11 @@
     {
       "id": "hoppo-maria",
       "name": "ホッポウマリア",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 29}",
-      "foaledArray": ["1987", "04", "29"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",
@@ -115,8 +123,11 @@
     {
       "id": "brian-maria",
       "name": "ブライアンマリア",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 9}",
-      "foaledArray": ["1995", "05", "09"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -144,8 +155,11 @@
     {
       "id": "mille-sagesse",
       "name": "ミルサジェス",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 4}",
-      "foaledArray": ["2003", "03", "04"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -169,10 +183,13 @@
       "damId": "brian-maria"
     },
     {
-      "id": "seiei",
+      "id": "seiei-2008",
       "name": "セイエイ",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 29}",
-      "foaledArray": ["2008", "04", "29"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アルカセット(US)",
@@ -346,13 +363,17 @@
         "central": "4,679万円",
         "local": "0万円"
       },
-      "damId": "mille-sagesse"
+      "damId": "mille-sagesse",
+      "linkName": "セイエイ(2008)"
     },
     {
       "id": "t-m-ace",
       "name": "テイエムエース",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 29}",
-      "foaledArray": ["2003", "04", "29"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "テイエムオペラオー",
@@ -471,8 +492,11 @@
     {
       "id": "t-m-season",
       "name": "テイエムシーズン",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 14}",
-      "foaledArray": ["1998", "03", "14"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "カコイーシーズ(US)",
@@ -516,8 +540,11 @@
     {
       "id": "monte-come-on",
       "name": "モンテカモン",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 15}",
-      "foaledArray": ["1989", "04", "15"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スイフトスワロー(US)",
@@ -621,8 +648,11 @@
     {
       "id": "monte-lyon",
       "name": "モンテリヨン",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 15}",
-      "foaledArray": ["1983", "05", "15"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハンターコム",
@@ -650,8 +680,11 @@
     {
       "id": "monte-dancer",
       "name": "モンテダンサー",
-      "foaled": "{'year': 1976, 'month': 4, 'day': 16}",
-      "foaledArray": ["1976", "04", "16"],
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボールドリック(US)",
@@ -677,8 +710,9 @@
     {
       "id": "monte-okan",
       "name": "モンテオーカン",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヒンドスタン",
@@ -795,8 +829,11 @@
     {
       "id": "flower-champ",
       "name": "フラワーチャンプ",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 21}",
-      "foaledArray": ["1998", "04", "21"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -915,8 +952,11 @@
     {
       "id": "kitano-fantasy",
       "name": "キタノファンタジー",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 3}",
-      "foaledArray": ["1991", "04", "03"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラシアンルーブル(US)",
@@ -960,8 +1000,11 @@
     {
       "id": "beautiful-queen",
       "name": "ビュティフルクイン",
-      "foaled": "{'year': 1984, 'month': 5, 'day': 6}",
-      "foaledArray": ["1984", "05", "06"],
+      "foaled": {
+        "year": 1984,
+        "month": 5,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",
@@ -987,8 +1030,11 @@
     {
       "id": "hiroo-sumire",
       "name": "ヒロオスミレ",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 19}",
-      "foaledArray": ["1978", "03", "19"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハクホオショウ",
@@ -1014,8 +1060,9 @@
     {
       "id": "higashi-eight",
       "name": "ヒガシエイト",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードリドン(GB)",
@@ -1057,8 +1104,11 @@
     {
       "id": "dantsu-flame",
       "name": "ダンツフレーム",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 19}",
-      "foaledArray": ["1998", "04", "19"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -1402,8 +1452,11 @@
     {
       "id": "inter-pyrenees",
       "name": "インターピレネー",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 25}",
-      "foaledArray": ["1990", "04", "25"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンキリコ(US)",
@@ -1507,8 +1560,11 @@
     {
       "id": "zenno-pepper",
       "name": "ゼンノペッパー",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 29}",
-      "foaledArray": ["1996", "03", "29"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -1552,8 +1608,11 @@
     {
       "id": "monte-japan",
       "name": "モンテジャパン",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 1}",
-      "foaledArray": ["1982", "03", "01"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -1732,8 +1791,11 @@
     {
       "id": "monte-fast",
       "name": "モンテファスト",
-      "foaled": "{'year': 1978, 'month': 5, 'day': 31}",
-      "foaledArray": ["1978", "05", "31"],
+      "foaled": {
+        "year": 1978,
+        "month": 5,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シーホーク",
@@ -1893,6 +1955,686 @@
         "local": "0万円"
       },
       "damId": "monte-okan"
+    },
+    {
+      "id": "monte-ribot",
+      "name": "モンテリボー",
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 26
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "リボッコ",
+      "dam": "モンテオーカン",
+      "color": "栗毛",
+      "breeder": "杵臼斉藤牧場（浦河町）",
+      "netkeibaId": "1975105995",
+      "raceStats": {
+        "total": {
+          "runs": 40,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "5",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "6",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "22",
+          "result": "12",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "6",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 4,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 2,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 2,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 11,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Monte Ribot",
+      "prizeMoney": {
+        "total": "850万円",
+        "central": "850万円",
+        "local": "0万円"
+      },
+      "damId": "monte-okan"
+    },
+    {
+      "id": "monte-prince",
+      "name": "モンテプリンス",
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 1
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "シーホーク",
+      "dam": "モンテオーカン",
+      "color": "鹿毛",
+      "breeder": "杵臼斉藤牧場（浦河町）",
+      "netkeibaId": "1977100869",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 12,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "11",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(OP)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_big10",
+          "entry": "15",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 3,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "ジャパンC(OP)",
+          "displayRace": "ジャパンC",
+          "distance": "芝2400",
+          "grade": "jra_big10",
+          "entry": "15",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "10",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 3,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "弥生賞(OP)",
+          "displayRace": "弥生賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "東京4歳S(OP)",
+          "displayRace": "東京4歳S",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "6",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Monte Prince",
+      "prizeMoney": {
+        "total": "2億2,830万円",
+        "central": "2億2,830万円",
+        "local": "0万円"
+      },
+      "damId": "monte-okan"
+    },
+    {
+      "id": "higashi-hindo",
+      "name": "ヒガシヒンド",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヒンドスタン",
+      "dam": "マリアドロ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a000ba0",
+      "raceStats": {
+        "total": {
+          "runs": 43,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 8,
+            "day": 15
+          },
+          "racecourse": "新潟",
+          "race": "新潟記念(OP)",
+          "displayRace": "新潟記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 7,
+            "day": 19
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "福島",
+          "race": "七夕賞(OP)",
+          "displayRace": "七夕賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 5,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 4,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "ダ2100",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Higashi Hindo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "maria-doro"
     }
   ]
 }

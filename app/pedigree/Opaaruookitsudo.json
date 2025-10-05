@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "オパールオーキツド",
     "rootHorseId": "opaaruookitsudo",
-    "lastUpdated": "2025-09-25T15:27:28.371081Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "opaaruookitsudo",
       "name": "オパールオーキツド",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "MacArthur",
@@ -31,8 +32,9 @@
     {
       "id": "sansei-midori",
       "name": "サンセイミドリ",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トサミドリ",
@@ -104,8 +106,9 @@
     {
       "id": "miss-choshu",
       "name": "ミスチヨウシユウ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボウプリンス",
@@ -131,8 +134,9 @@
     {
       "id": "hagino-queen",
       "name": "ハギノクイーン",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エタン(US)",
@@ -204,8 +208,11 @@
     {
       "id": "hagino-suisei",
       "name": "ハギノスイセイ",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 1}",
-      "foaledArray": ["1988", "05", "01"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハギノカムイオー",

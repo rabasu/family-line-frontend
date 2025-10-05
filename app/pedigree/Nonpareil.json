@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Nonpareil",
     "rootHorseId": "nonpareil",
-    "lastUpdated": "2025-09-27T07:35:31.674114Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nonpareil",
       "name": "ノンパレル",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Supreme Court",
@@ -32,8 +33,9 @@
     {
       "id": "urakawa-suisen",
       "name": "ウラカワスイセン",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボンモー(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "silver-ikki",
       "name": "シルバーイッキ",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 14}",
-      "foaledArray": ["1983", "03", "14"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 14
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シルバーランド",

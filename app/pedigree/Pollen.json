@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Pollen",
     "rootHorseId": "pollen",
-    "lastUpdated": "2025-09-18T12:27:02.440946Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pollen",
       "name": "ポーレン",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 11}",
-      "foaledArray": ["2005", "04", "11"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Orpen",
@@ -32,8 +35,11 @@
     {
       "id": "pollentia",
       "name": "ポレンティア",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 24}",
-      "foaledArray": ["2017", "04", "24"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

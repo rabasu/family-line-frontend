@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mainly",
     "rootHorseId": "mainly",
-    "lastUpdated": "2025-09-22T04:19:01.433784Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mainly",
       "name": "メインリー",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wild Again",
@@ -32,8 +33,11 @@
     {
       "id": "sunrise-prince",
       "name": "サンライズプリンス",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 13}",
-      "foaledArray": ["2007", "04", "13"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",

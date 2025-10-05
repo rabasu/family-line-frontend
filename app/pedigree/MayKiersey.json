@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "May Kiersey",
     "rootHorseId": "may-kiersey",
-    "lastUpdated": "2025-09-20T09:48:27.385108Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "may-kiersey",
       "name": "メイキアシー",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
       "dam": "Gwynn",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "愛",
       "netkeibaId": "000a011dcc",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "May Kiersey"
+      "englishName": "May Kiersey",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "bravissimo",
       "name": "ブラヴィッシモ",
-      "foaled": "{'year': 2012, 'month': 2, 'day': 18}",
-      "foaledArray": ["2012", "02", "18"],
+      "foaled": {
+        "year": 2012,
+        "month": 2,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Fastnet Rock(AUS)",
       "dam": "メイキアシー",
-      "dam_netkeiba_id": "000a011dcc",
       "color": "鹿毛",
       "breeder": "社台ファーム（千歳市）",
       "netkeibaId": "2012104438",
@@ -209,7 +212,8 @@
         "central": "1億2,768万円",
         "local": "0万円"
       },
-      "damId": "may-kiersey"
+      "damId": "may-kiersey",
+      "dam_netkeiba_id": "000a011dcc"
     }
   ]
 }

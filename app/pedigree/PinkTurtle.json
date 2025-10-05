@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pink Turtle",
     "rootHorseId": "pink-turtle",
-    "lastUpdated": "2025-09-22T10:59:56.045830Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pink-turtle",
       "name": "ピンクタートル",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Blushing Groom(FR)",
@@ -32,8 +33,9 @@
     {
       "id": "pinochet",
       "name": "ピノシェット",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -59,8 +61,11 @@
     {
       "id": "cafe-pinoko",
       "name": "カフェピノコ",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 31}",
-      "foaledArray": ["2000", "03", "31"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",
@@ -104,8 +109,11 @@
     {
       "id": "maxim-cafe",
       "name": "マキシムカフェ",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 7}",
-      "foaledArray": ["2007", "04", "07"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
@@ -133,8 +141,11 @@
     {
       "id": "t-o-keynes",
       "name": "テーオーケインズ",
-      "foaled": "{'year': 2017, 'month': 4, 'day': 27}",
-      "foaledArray": ["2017", "04", "27"],
+      "foaled": {
+        "year": 2017,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シニスターミニスター(US)",
@@ -388,8 +399,11 @@
     {
       "id": "matenro-orion",
       "name": "マテンロウオリオン",
-      "foaled": "{'year': 2019, 'month': 2, 'day': 20}",
-      "foaledArray": ["2019", "02", "20"],
+      "foaled": {
+        "year": 2019,
+        "month": 2,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -803,13 +817,16 @@
         "central": "1億5,322万円",
         "local": "0万円"
       },
-      "damId": "parthenon"
+      "damId": "parthenon-2012"
     },
     {
-      "id": "parthenon",
+      "id": "parthenon-2012",
       "name": "パルテノン",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 28}",
-      "foaledArray": ["2012", "03", "28"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -832,13 +849,17 @@
         "central": "192万円",
         "local": "44万円"
       },
-      "damId": "lady-pastel"
+      "damId": "lady-pastel",
+      "linkName": "パルテノン(2012)"
     },
     {
       "id": "lady-pastel",
       "name": "レディパステル",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 26}",
-      "foaledArray": ["1998", "04", "26"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",
@@ -1062,13 +1083,15 @@
     {
       "id": "tamano-brunette",
       "name": "タマノブリュネット",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 22}",
-      "foaledArray": ["2012", "03", "22"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープスカイ",
       "dam": "カフェピノコ",
-      "dam_netkeiba_id": "2000101629",
       "color": "栗毛",
       "breeder": "三嶋牧場（浦河町）",
       "netkeibaId": "2012105567",
@@ -1238,13 +1261,17 @@
         "central": "4,993万円",
         "local": "5,035万円"
       },
-      "damId": "cafe-pinoko"
+      "damId": "cafe-pinoko",
+      "dam_netkeiba_id": "2000101629"
     },
     {
       "id": "matenro-happiness",
       "name": "マテンロウハピネス",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 6}",
-      "foaledArray": ["2012", "03", "06"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -1348,8 +1375,11 @@
     {
       "id": "lady-happiness",
       "name": "レディハピネス",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 21}",
-      "foaledArray": ["2007", "04", "21"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Montjeu(IRE)",
@@ -1375,8 +1405,11 @@
     {
       "id": "lord-acclaim",
       "name": "ロードアクレイム",
-      "foaled": "{'year': 2009, 'month': 5, 'day': 11}",
-      "foaledArray": ["2009", "05", "11"],
+      "foaled": {
+        "year": 2009,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -1450,8 +1483,11 @@
     {
       "id": "spirytus",
       "name": "スピリタス",
-      "foaled": "{'year': 2005, 'month': 4, 'day': 11}",
-      "foaledArray": ["2005", "04", "11"],
+      "foaled": {
+        "year": 2005,
+        "month": 4,
+        "day": 11
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "タニノギムレット",
@@ -1600,8 +1636,11 @@
     {
       "id": "lord-rock-star",
       "name": "ロードロックスター",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 22}",
-      "foaledArray": ["2006", "03", "22"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロックオブジブラルタル",

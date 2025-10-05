@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Moonlady",
     "rootHorseId": "moonlady",
-    "lastUpdated": "2025-09-21T02:50:04.079751Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "moonlady",
       "name": "ムーンレディ",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 28}",
-      "foaledArray": ["1997", "03", "28"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Platini(GER)",
@@ -32,8 +35,9 @@
     {
       "id": "mazai",
       "name": "マザイ",
-      "foaled": "{'year': 2005}",
-      "foaledArray": ["2005"],
+      "foaled": {
+        "year": 2005
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファスリエフ(US)",
@@ -59,8 +63,11 @@
     {
       "id": "major-typhoon",
       "name": "メジャータイフーン",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 5}",
-      "foaledArray": ["2013", "03", "05"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -119,8 +126,11 @@
     {
       "id": "eishin-flash",
       "name": "エイシンフラッシュ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 27}",
-      "foaledArray": ["2007", "03", "27"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングズベスト(US)",

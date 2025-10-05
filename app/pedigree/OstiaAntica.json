@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Ostia Antica",
     "rootHorseId": "ostia-antica",
-    "lastUpdated": "2025-09-23T21:33:15.122750Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ostia-antica",
       "name": "オステアアンティカ",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 24}",
-      "foaledArray": ["1995", "04", "24"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",
@@ -32,8 +35,11 @@
     {
       "id": "outdistance",
       "name": "アウトディスタンス",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 16}",
-      "foaledArray": ["2001", "04", "16"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カーネギー(IRE)",

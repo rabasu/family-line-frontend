@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "My Viviane",
     "rootHorseId": "my-viviane",
-    "lastUpdated": "2025-09-16T06:10:27.423432Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "my-viviane",
       "name": "マイビビアーヌ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 14}",
-      "foaledArray": ["2009", "03", "14"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Shamardal(US)",
@@ -32,8 +35,11 @@
     {
       "id": "metal-speed",
       "name": "メタルスピード",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 28}",
-      "foaledArray": ["2020", "03", "28"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シルバーステート",

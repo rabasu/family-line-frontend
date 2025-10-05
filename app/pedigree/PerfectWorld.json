@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Perfect World",
     "rootHorseId": "perfect-world",
-    "lastUpdated": "2025-09-17T01:29:57.174098Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "perfect-world",
       "name": "パーフェクトワールド",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Gone West",
@@ -32,8 +33,11 @@
     {
       "id": "dancing-queen",
       "name": "ダンシングクイーン",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 2}",
-      "foaledArray": ["2006", "04", "02"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Giant(US)",
@@ -61,8 +65,11 @@
     {
       "id": "kurino-premium",
       "name": "クリノプレミアム",
-      "foaled": "{'year': 2017, 'month': 3, 'day': 23}",
-      "foaledArray": ["2017", "03", "23"],
+      "foaled": {
+        "year": 2017,
+        "month": 3,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オルフェーヴル",

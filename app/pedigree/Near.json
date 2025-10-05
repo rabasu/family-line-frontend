@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Near",
     "rootHorseId": "near",
-    "lastUpdated": "2025-09-24T06:37:17.478149Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "near",
       "name": "ニヤー",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -32,8 +33,9 @@
     {
       "id": "near-the-gold",
       "name": "ニアーザゴールド",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
@@ -59,8 +61,11 @@
     {
       "id": "lord-platinum",
       "name": "ロードプラチナム",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 11}",
-      "foaledArray": ["1996", "03", "11"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "トニービン(IRE)",

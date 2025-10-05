@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Purely Surprized",
     "rootHorseId": "purely-surprized",
-    "lastUpdated": "2025-09-21T04:49:04.994984Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "purely-surprized",
       "name": "Purely Surprized",
-      "foaled": "{'year': 2004}",
-      "foaledArray": ["2004"],
+      "foaled": {
+        "year": 2004
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pure Prize",
@@ -31,8 +32,11 @@
     {
       "id": "apollo-sonic",
       "name": "アポロソニック",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 2}",
-      "foaledArray": ["2010", "04", "02"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Big Brown(US)",

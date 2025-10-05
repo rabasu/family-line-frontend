@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "オーデヤレスト",
     "rootHorseId": "o_dearest",
-    "lastUpdated": "2025-09-25T14:27:52.731513Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "o_dearest",
       "name": "オーデヤレスト",
-      "foaled": "1903",
-      "foaledArray": ["1903"],
+      "foaled": {
+        "year": 1903
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
+      "sire": "Hackler",
+      "dam": "Louise",
       "color": "",
       "breeder": "",
       "netkeibaId": "000a0024c5",
       "source": "tsx_conversion",
+      "importedYear": "1907",
+      "familyNumber": "F22",
+      "registration": "登録なし",
       "owner": "奥羽種馬牧場"
     },
     {
       "id": "meiner-castle",
       "name": "マイネルキャッスル",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 9}",
-      "foaledArray": ["1990", "04", "09"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カブラヤオー",
@@ -84,8 +91,9 @@
     {
       "id": "shiroyama-hayate",
       "name": "シロヤマハヤテ",
-      "foaled": "{'year': 1973}",
-      "foaledArray": ["1973"],
+      "foaled": {
+        "year": 1973
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロムルス",
@@ -111,8 +119,11 @@
     {
       "id": "kiyanbera",
       "name": "キヤンベラ",
-      "foaled": "{'year': 1962, 'month': 4, 'day': 17}",
-      "foaledArray": ["1962", "04", "17"],
+      "foaled": {
+        "year": 1962,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダブルマーク(AUS)",
@@ -137,8 +148,9 @@
     {
       "id": "swan-g",
       "name": "スワンジー",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シマタカ",
@@ -164,8 +176,9 @@
     {
       "id": "yawata-yama",
       "name": "ヤワタヤマ",
-      "foaled": "{'year': 1949}",
-      "foaledArray": ["1949"],
+      "foaled": {
+        "year": 1949
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "崇優",
@@ -186,13 +199,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "moriaki"
+      "damId": "moriaki-1935"
     },
     {
-      "id": "moriaki",
+      "id": "moriaki-1935",
       "name": "守昭",
-      "foaled": "{'year': 1935}",
-      "foaledArray": ["1935"],
+      "foaled": {
+        "year": 1935
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シアンモア(GB)",
@@ -217,8 +231,9 @@
     {
       "id": "tekishiyou",
       "name": "テキシヨウ",
-      "foaled": "{'year': 1927}",
-      "foaledArray": ["1927"],
+      "foaled": {
+        "year": 1927
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガロン(GB)",
@@ -243,8 +258,9 @@
     {
       "id": "daigooodeyaresuto",
       "name": "第五オーデヤレスト",
-      "foaled": "{'year': 1919}",
-      "foaledArray": ["1919"],
+      "foaled": {
+        "year": 1919
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラシカツター(GB)",
@@ -265,6 +281,182 @@
         "total": "0万円"
       },
       "damId": "o_dearest"
+    },
+    {
+      "id": "lionel",
+      "name": "ライオネル",
+      "foaled": {
+        "year": 1975
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ロムルス",
+      "dam": "キヤンベラ",
+      "color": "",
+      "breeder": "ヤマオカ牧場（新冠産）",
+      "netkeibaId": "1975z00712",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 10,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "16",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 4,
+            "day": 30
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 2,
+            "day": 12
+          },
+          "racecourse": "中京",
+          "race": "きさらぎ賞(OP)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Lionel",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kiyanbera"
+    },
+    {
+      "id": "shinkousutaa",
+      "name": "シンコウスター",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ロムルス",
+      "dam": "キヤンベラ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1971z00234",
+      "raceStats": {
+        "total": {
+          "runs": 16,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "NHK杯(OP)",
+          "displayRace": "NHK杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "16",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "函館",
+          "race": "函館3歳S(OP)",
+          "displayRace": "函館3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "2",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kiyanbera"
+    },
+    {
+      "id": "deyaresuto",
+      "name": "デヤレスト",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "テューダーペリオッド(GB)",
+      "dam": "スワンジー",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1964z00232",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "1",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "swan-g",
+      "linkName": "デヤレスト(1964)"
     }
   ]
 }

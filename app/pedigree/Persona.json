@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Persona",
     "rootHorseId": "persona",
-    "lastUpdated": "2025-09-23T21:35:43.388712Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "persona",
       "name": "ペルソナ",
-      "foaled": "{'year': 1982}",
-      "foaledArray": ["1982"],
+      "foaled": {
+        "year": 1982
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sanhedrin",
@@ -32,8 +33,11 @@
     {
       "id": "persona-soleil",
       "name": "ペルソナソレイユ",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 5}",
-      "foaledArray": ["1988", "03", "05"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -59,8 +63,11 @@
     {
       "id": "tosen-orion",
       "name": "トーセンオリオン",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 20}",
-      "foaledArray": ["2000", "03", "20"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カリスタグローリ",

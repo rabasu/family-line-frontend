@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Negano",
     "rootHorseId": "negano",
-    "lastUpdated": "2025-09-21T08:19:33.165751Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "negano",
       "name": "ネガノ",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -32,8 +33,11 @@
     {
       "id": "white-veil",
       "name": "ホワイトヴェール",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 3}",
-      "foaledArray": ["2004", "03", "03"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",
@@ -61,8 +65,11 @@
     {
       "id": "chestnut-coat",
       "name": "チェスナットコート",
-      "foaled": "{'year': 2014, 'month': 5, 'day': 8}",
-      "foaledArray": ["2014", "05", "08"],
+      "foaled": {
+        "year": 2014,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -436,8 +443,11 @@
     {
       "id": "dasher-go-go",
       "name": "ダッシャーゴーゴー",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 22}",
-      "foaledArray": ["2007", "03", "22"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",

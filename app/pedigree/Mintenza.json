@@ -2,24 +2,223 @@
   "metadata": {
     "pedigreeName": "ミンテンザ",
     "rootHorseId": "mintenza",
-    "lastUpdated": "2025-09-07T14:36:11.213Z",
-    "source": "tsx_conversion_babel"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mintenza",
       "name": "ミンテンザ",
-      "foaled": "1905",
-      "foaledArray": ["1905"],
+      "foaled": {
+        "year": 1905
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "Minting",
+      "dam": "Verenza",
+      "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a01b557",
       "source": "tsx_conversion",
+      "importedYear": "1912",
+      "familyNumber": "F6-b",
+      "registration": "登録なし",
       "owner": "奥羽種畜場"
+    },
+    {
+      "id": "tsuusan-itsu",
+      "name": "ツウサンイツ",
+      "foaled": {
+        "year": 1960
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "フジミナト",
+      "dam": "フクカツフジ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00d324",
+      "raceStats": {
+        "total": {
+          "runs": 54,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 9,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2300",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 3,
+            "day": 8
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠競走(OP)",
+          "displayRace": "アラブ王冠(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "3",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "fukukatsufuji",
+      "name": "フクカツフジ",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アサフジ",
+      "dam": "藤姫",
+      "color": "鹿毛",
+      "breeder": "鹿児島県",
+      "netkeibaId": "000a002c72",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "fujihime"
+    },
+    {
+      "id": "fujihime",
+      "name": "藤姫",
+      "foaled": {
+        "year": 1936
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミツシヨン",
+      "dam": "ミンテン",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "000a0027e1",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "minten"
+    },
+    {
+      "id": "minten",
+      "name": "ミンテン",
+      "foaled": {
+        "year": 1928
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ペリオン(GB)",
+      "dam": "第三ミンテンザ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a002487",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daisanmintenza"
+    },
+    {
+      "id": "daisanmintenza",
+      "name": "第三ミンテンザ",
+      "foaled": {
+        "year": 1918
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ビリーゼヴエルガー",
+      "dam": "ミンテンザ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a0023b1",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "mintenza"
     }
   ]
 }

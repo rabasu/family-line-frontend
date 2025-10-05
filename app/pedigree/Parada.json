@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Parada",
     "rootHorseId": "parada",
-    "lastUpdated": "2025-09-24T03:08:11.896314Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "parada",
       "name": "パラダ",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Liloy",
@@ -32,8 +33,11 @@
     {
       "id": "takai-rodrigo",
       "name": "タカイロドリゴ",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 22}",
-      "foaledArray": ["1994", "03", "22"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロドリゴデトリアーノ(US)",
@@ -59,8 +63,11 @@
     {
       "id": "meiner-solomon",
       "name": "マイネルソロモン",
-      "foaled": "{'year': 2000, 'month': 3, 'day': 16}",
-      "foaledArray": ["2000", "03", "16"],
+      "foaled": {
+        "year": 2000,
+        "month": 3,
+        "day": 16
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "トウカイテイオー",
@@ -299,8 +306,11 @@
     {
       "id": "meiner-ambre",
       "name": "マイネルアンブル",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 22}",
-      "foaledArray": ["1999", "03", "22"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アンバーシャダイ",

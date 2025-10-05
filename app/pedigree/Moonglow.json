@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Moonglow",
     "rootHorseId": "moonglow",
-    "lastUpdated": "2025-09-18T01:50:45.533239Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "moonglow",
       "name": "ムーングロウ",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nayef",
@@ -32,8 +33,11 @@
     {
       "id": "mondreise",
       "name": "モントライゼ",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 4}",
-      "foaledArray": ["2018", "04", "04"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

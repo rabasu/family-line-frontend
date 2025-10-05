@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "ナンシーシー",
     "rootHorseId": "nanshiishii",
-    "lastUpdated": "2025-09-27T14:10:45.869230Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "nanshiishii",
       "name": "ナンシーシー",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Boxthorn",
@@ -31,8 +32,9 @@
     {
       "id": "vincennes-1957",
       "name": "ヴアンサンヌ",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴイーノーピユロー(AR)",
@@ -58,8 +60,9 @@
     {
       "id": "tetsuno-mon",
       "name": "テツノモン",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アポッスル(GB)",
@@ -85,8 +88,11 @@
     {
       "id": "kirimmon",
       "name": "キリンモン",
-      "foaled": "{'year': 1976, 'month': 4, 'day': 12}",
-      "foaledArray": ["1976", "04", "12"],
+      "foaled": {
+        "year": 1976,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スノッブ",
@@ -128,8 +134,11 @@
     {
       "id": "hayabusamon",
       "name": "ハヤブサモン",
-      "foaled": "{'year': 1985, 'month': 6, 'day': 2}",
-      "foaledArray": ["1985", "06", "02"],
+      "foaled": {
+        "year": 1985,
+        "month": 6,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラシンゲキ",
@@ -248,8 +257,11 @@
     {
       "id": "celebration",
       "name": "セレブレイション",
-      "foaled": "{'year': 1980, 'month': 2, 'day': 24}",
-      "foaledArray": ["1980", "02", "24"],
+      "foaled": {
+        "year": 1980,
+        "month": 2,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マグニテュード(IRE)",
@@ -368,8 +380,9 @@
     {
       "id": "umberto",
       "name": "ウムベルト",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セダン(FR)",
@@ -395,8 +408,9 @@
     {
       "id": "okutabia",
       "name": "オクタヴイア",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パールダイヴァー",
@@ -414,6 +428,152 @@
       "raceResults": [],
       "source": "python_scraping",
       "englishName": "Okutabia",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nanshiishii"
+    },
+    {
+      "id": "rikihoopu",
+      "name": "リキホープ",
+      "foaled": {
+        "year": 1963
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "リンボー(US)",
+      "dam": "ナンシーワイン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1963z00356",
+      "raceStats": {
+        "total": {
+          "runs": 76,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "阪神障害S(OP)",
+          "displayRace": "阪神障害S(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "3",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nancy-wine"
+    },
+    {
+      "id": "nancy-wine",
+      "name": "ナンシーワイン",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヴイーノーピユロー(AR)",
+      "dam": "ナンシーシー",
+      "color": "黒鹿毛",
+      "breeder": "三石町",
+      "netkeibaId": "000a002eef",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Nancy Wine",
       "prizeMoney": {
         "total": "0万円"
       },

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Platinum Princess",
     "rootHorseId": "platinum-princess",
-    "lastUpdated": "2025-09-25T10:54:27.116874Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "platinum-princess",
       "name": "プラテイナムプリンセス",
-      "foaled": "{'year': 1980}",
-      "foaledArray": ["1980"],
+      "foaled": {
+        "year": 1980
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "wish-dream",
       "name": "ウィッシュドリーム",
-      "foaled": "{'year': 1989, 'month': 5, 'day': 11}",
-      "foaledArray": ["1989", "05", "11"],
+      "foaled": {
+        "year": 1989,
+        "month": 5,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リファーズウィッシュ(FR)",

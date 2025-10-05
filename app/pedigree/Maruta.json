@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "丸田",
     "rootHorseId": "maruta",
-    "lastUpdated": "2025-09-28T02:48:30.925245Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "maruta",
       "name": "丸田",
-      "foaled": "{'year': 1906}",
-      "foaledArray": ["1906"],
+      "foaled": {
+        "year": 1906
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "",
@@ -31,8 +32,9 @@
     {
       "id": "shouhaku-1909",
       "name": "松伯",
-      "foaled": "{'year': 1909}",
-      "foaledArray": ["1909"],
+      "foaled": {
+        "year": 1909
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "第二ジンギスカン",
@@ -57,8 +59,9 @@
     {
       "id": "kaiten",
       "name": "階天",
-      "foaled": "{'year': 1915}",
-      "foaledArray": ["1915"],
+      "foaled": {
+        "year": 1915
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オーバーヤン五ノ二",
@@ -83,8 +86,9 @@
     {
       "id": "yoshinosakura",
       "name": "吉野桜",
-      "foaled": "{'year': 1932}",
-      "foaledArray": ["1932"],
+      "foaled": {
+        "year": 1932
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "カノウ",
@@ -107,10 +111,11 @@
       "damId": "kaiten"
     },
     {
-      "id": "housen",
+      "id": "housen-1943",
       "name": "芳戦",
-      "foaled": "{'year': 1943}",
-      "foaledArray": ["1943"],
+      "foaled": {
+        "year": 1943
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "芳慈",
@@ -135,8 +140,9 @@
     {
       "id": "strong-bunker",
       "name": "ストロングバンカー",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "インターナショナル",
@@ -157,13 +163,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "housen"
+      "damId": "housen-1943"
     },
     {
       "id": "ichitoku-minoru",
       "name": "イチトクミノル",
-      "foaled": "{'year': 1978}",
-      "foaledArray": ["1978"],
+      "foaled": {
+        "year": 1978
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タランドロス(FR)",
@@ -189,8 +196,11 @@
     {
       "id": "s-m-fire",
       "name": "エスエムファイヤー",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 17}",
-      "foaledArray": ["1992", "04", "17"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヒロタケスター",

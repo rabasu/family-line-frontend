@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "New Dice",
     "rootHorseId": "new-dice",
-    "lastUpdated": "2025-09-21T23:37:32.201878Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "new-dice",
       "name": "New Dice",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Capote",
@@ -31,8 +32,11 @@
     {
       "id": "molto-grande",
       "name": "モルトグランデ",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 17}",
-      "foaledArray": ["2004", "02", "17"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "War Chant",

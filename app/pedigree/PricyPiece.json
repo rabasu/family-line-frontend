@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Pricy Piece",
     "rootHorseId": "pricy-piece",
-    "lastUpdated": "2025-09-25T18:59:24.952016Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "pricy-piece",
       "name": "プリシーピース",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Princely Gift",
@@ -32,8 +33,11 @@
     {
       "id": "hokuto-madonna",
       "name": "ホクトマドンナ",
-      "foaled": "{'year': 1980, 'month': 5, 'day': 10}",
-      "foaledArray": ["1980", "05", "10"],
+      "foaled": {
+        "year": 1980,
+        "month": 5,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -59,8 +63,11 @@
     {
       "id": "ambitious-hope",
       "name": "アンビシャスホープ",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 19}",
-      "foaledArray": ["1987", "04", "19"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スティールハート",

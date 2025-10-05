@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Palriana",
     "rootHorseId": "palriana",
-    "lastUpdated": "2025-09-26T03:02:31.726346Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "palriana",
       "name": "パールリアナ",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Pall Mall",
@@ -32,8 +33,11 @@
     {
       "id": "oshima-riana",
       "name": "オオシマリアナ",
-      "foaled": "{'year': 1977, 'month': 3, 'day': 29}",
-      "foaledArray": ["1977", "03", "29"],
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セントクレスピン(GB)",
@@ -59,8 +63,11 @@
     {
       "id": "machikanewaraukado",
       "name": "マチカネワラウカド",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 20}",
-      "foaledArray": ["1994", "04", "20"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スキャン(US)",
@@ -269,8 +276,11 @@
     {
       "id": "green-molly",
       "name": "グリンモリー",
-      "foaled": "{'year': 1985, 'month': 3, 'day': 16}",
-      "foaledArray": ["1985", "03", "16"],
+      "foaled": {
+        "year": 1985,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",

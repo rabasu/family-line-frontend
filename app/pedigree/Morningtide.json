@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Morningtide",
     "rootHorseId": "morningtide",
-    "lastUpdated": "2025-09-23T09:03:54.149194Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "morningtide",
       "name": "モーニングタイド",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seeking the Gold",
@@ -32,8 +33,11 @@
     {
       "id": "meiner-morgen",
       "name": "マイネルモルゲン",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 26}",
-      "foaledArray": ["2000", "05", "26"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Mt. Livermore",

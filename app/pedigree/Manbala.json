@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Manbala",
     "rootHorseId": "manbala",
-    "lastUpdated": "2025-09-20T22:59:55.125103Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "manbala",
       "name": "マンバラ",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 8}",
-      "foaledArray": ["2003", "04", "08"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Linamix(FR)",
@@ -32,8 +35,11 @@
     {
       "id": "cosmo-barbara",
       "name": "コスモバルバラ",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 28}",
-      "foaledArray": ["2009", "03", "28"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロージズインメイ(US)",

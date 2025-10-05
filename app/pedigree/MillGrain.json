@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Mill Grain",
     "rootHorseId": "mill-grain",
-    "lastUpdated": "2025-09-22T13:29:14.347559Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mill-grain",
       "name": "ミルグレイン",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 5}",
-      "foaledArray": ["1997", "05", "05"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Polish Precedent(US)",
@@ -32,8 +35,11 @@
     {
       "id": "fine-grain",
       "name": "ファイングレイン",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 7}",
-      "foaledArray": ["2003", "03", "07"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",

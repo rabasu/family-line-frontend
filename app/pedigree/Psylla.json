@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Psylla",
     "rootHorseId": "psylla",
-    "lastUpdated": "2025-09-20T11:16:49.403027Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "psylla",
       "name": "シラー",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fabulous Dancer",
       "dam": "Silicon Lady",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "仏",
       "netkeibaId": "000a00667a",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Psylla"
+      "englishName": "Psylla",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "kikuno-storm",
       "name": "キクノストーム",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 8}",
-      "foaledArray": ["2009", "04", "08"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スタチューオブリバティ(US)",
       "dam": "シラー",
-      "dam_netkeiba_id": "000a00667a",
       "color": "鹿毛",
       "breeder": "高村牧場（浦河町）",
       "netkeibaId": "2009100515",
@@ -179,7 +182,8 @@
         "central": "1億5,570万円",
         "local": "465万円"
       },
-      "damId": "psylla"
+      "damId": "psylla",
+      "dam_netkeiba_id": "000a00667a"
     }
   ]
 }

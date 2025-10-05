@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Melito",
     "rootHorseId": "melito",
-    "lastUpdated": "2025-09-19T00:00:39.712299Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "melito",
       "name": "メリート",
-      "foaled": "{'year': 2006, 'month': 9, 'day': 30}",
-      "foaledArray": ["2006", "09", "30"],
+      "foaled": {
+        "year": 2006,
+        "month": 9,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Redoute's Choice",
@@ -32,8 +35,11 @@
     {
       "id": "campbell-junior",
       "name": "キャンベルジュニア",
-      "foaled": "{'year': 2012, 'month': 7, 'day': 27}",
-      "foaledArray": ["2012", "07", "27"],
+      "foaled": {
+        "year": 2012,
+        "month": 7,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Encosta de Lago",

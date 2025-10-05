@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mysteries",
     "rootHorseId": "mysteries",
-    "lastUpdated": "2025-09-25T02:16:10.686413Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mysteries",
       "name": "Mysteries",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -31,8 +32,11 @@
     {
       "id": "agnes-world",
       "name": "アグネスワールド",
-      "foaled": "{'year': 1995, 'month': 4, 'day': 28}",
-      "foaledArray": ["1995", "04", "28"],
+      "foaled": {
+        "year": 1995,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -301,8 +305,11 @@
     {
       "id": "hishi-akebono",
       "name": "ヒシアケボノ",
-      "foaled": "{'year': 1992, 'month': 2, 'day': 27}",
-      "foaledArray": ["1992", "02", "27"],
+      "foaled": {
+        "year": 1992,
+        "month": 2,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Woodman",

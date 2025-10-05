@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Negrita",
     "rootHorseId": "negrita",
-    "lastUpdated": "2025-09-25T15:26:32.966850Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "negrita",
       "name": "ネグリタ",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Oise",
@@ -32,8 +33,9 @@
     {
       "id": "royal-nus",
       "name": "ロイヤルナス",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ネプテューヌス(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "tsurumai-nus",
       "name": "ツルマイナス",
-      "foaled": "{'year': 1986, 'month': 6, 'day': 25}",
-      "foaledArray": ["1986", "06", "25"],
+      "foaled": {
+        "year": 1986,
+        "month": 6,
+        "day": 25
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -295,6 +300,152 @@
         "local": "0万円"
       },
       "damId": "royal-nus"
+    },
+    {
+      "id": "ayafubuki",
+      "name": "アヤフブキ",
+      "foaled": {
+        "year": 1972
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "アラナス(FR)",
+      "dam": "アヤヒメ",
+      "color": "黒鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a0101c1",
+      "raceStats": {
+        "total": {
+          "runs": 25,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "14",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(菊花賞ト(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "神戸新聞杯(OP)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 1,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "日刊スポーツ賞シンザ(OP)",
+          "displayRace": "シンザン記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "11",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 29
+          },
+          "racecourse": "阪神",
+          "race": "3歳S(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "2",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ayahime"
+    },
+    {
+      "id": "ayahime",
+      "name": "アヤヒメ",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "Pardao",
+      "dam": "ネグリタ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955101332",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Ayahime",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "negrita"
     }
   ]
 }

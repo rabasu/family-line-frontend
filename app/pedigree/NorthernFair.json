@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Northern Fair",
     "rootHorseId": "northern-fair",
-    "lastUpdated": "2025-09-27T13:52:47.158515Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "northern-fair",
       "name": "ノーザンフェア",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bold Lad",
@@ -32,8 +33,11 @@
     {
       "id": "super-swallow",
       "name": "スーパースワロー",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 19}",
-      "foaledArray": ["1979", "04", "19"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マイスワロー(GB)",
@@ -130,6 +134,144 @@
       "prizeMoney": {
         "total": "1,200万円",
         "central": "1,200万円",
+        "local": "0万円"
+      },
+      "damId": "northern-fair"
+    },
+    {
+      "id": "shunshige",
+      "name": "シュンシゲ",
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 27
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "コントライト(US)",
+      "dam": "ノーザンフェア",
+      "color": "鹿毛",
+      "breeder": "吉田牧場（早来町）",
+      "netkeibaId": "1978106770",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1983,
+            "month": 5,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 7,
+            "day": 4
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(OP)",
+          "displayRace": "札幌記念",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 6,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "10",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 2,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズステー(OP)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(OP)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2400",
+          "grade": "jra_big10",
+          "entry": "16",
+          "result": "16",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 10,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "2",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Shunshige",
+      "prizeMoney": {
+        "total": "390万円",
+        "central": "390万円",
         "local": "0万円"
       },
       "damId": "northern-fair"

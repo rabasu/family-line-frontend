@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Petitio",
     "rootHorseId": "petitio",
-    "lastUpdated": "2025-09-25T08:50:07.809111Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "petitio",
       "name": "ペテイテイオ",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ribot(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "chandelier-lady",
       "name": "シャンデリアレディ",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 26}",
-      "foaledArray": ["1981", "04", "26"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スティールハート",
@@ -59,8 +63,11 @@
     {
       "id": "big-fight",
       "name": "ビッグファイト",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 25}",
-      "foaledArray": ["1988", "03", "25"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

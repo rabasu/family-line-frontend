@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Mischievous Misty",
     "rootHorseId": "mischievous-misty",
-    "lastUpdated": "2025-09-15T06:47:52.604315Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "mischievous-misty",
       "name": "ミスチヴァスミスティ",
-      "foaled": "{'year': 2014}",
-      "foaledArray": ["2014"],
+      "foaled": {
+        "year": 2014
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Into Mischief",
@@ -32,8 +33,11 @@
     {
       "id": "dantsu-elan",
       "name": "ダンツエラン",
-      "foaled": "{'year': 2022, 'month': 4, 'day': 6}",
-      "foaledArray": ["2022", "04", "06"],
+      "foaled": {
+        "year": 2022,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",

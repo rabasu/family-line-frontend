@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Medieval Queen",
     "rootHorseId": "medieval-queen",
-    "lastUpdated": "2025-09-26T13:10:38.483020Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "medieval-queen",
       "name": "メデイーヴアルクイーン",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Herbager",
@@ -32,8 +33,11 @@
     {
       "id": "modern-princess",
       "name": "モダンプリンセス",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 14}",
-      "foaledArray": ["1978", "04", "14"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードリドン(GB)",
@@ -59,8 +63,11 @@
     {
       "id": "danke-rikiya",
       "name": "ダンケリキヤ",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 1}",
-      "foaledArray": ["1983", "05", "01"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
@@ -149,8 +156,11 @@
     {
       "id": "round-bowl",
       "name": "ラウンドボウル",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 19}",
-      "foaledArray": ["1981", "05", "19"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ラディガ(US)",

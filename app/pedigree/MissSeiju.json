@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Miss Seiju",
     "rootHorseId": "miss-seiju",
-    "lastUpdated": "2025-09-25T15:58:12.892306Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "miss-seiju",
       "name": "ミスセイジユ",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "War Glory",
@@ -32,8 +33,9 @@
     {
       "id": "seiju-ni",
       "name": "セイジユニ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゲイタイム(GB)",
@@ -59,8 +61,9 @@
     {
       "id": "kaneno-michi",
       "name": "カネノミチ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セダン(FR)",
@@ -86,8 +89,11 @@
     {
       "id": "toshishige-ace",
       "name": "トシシゲエース",
-      "foaled": "{'year': 1979, 'month': 3, 'day': 28}",
-      "foaledArray": ["1979", "03", "28"],
+      "foaled": {
+        "year": 1979,
+        "month": 3,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バーバー(GB)",
@@ -161,8 +167,11 @@
     {
       "id": "marumatsu-ace",
       "name": "マルマツエース",
-      "foaled": "{'year': 1988, 'month': 4, 'day': 8}",
-      "foaledArray": ["1988", "04", "08"],
+      "foaled": {
+        "year": 1988,
+        "month": 4,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ギャロップダイナ",

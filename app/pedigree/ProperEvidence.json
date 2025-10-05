@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Proper Evidence",
     "rootHorseId": "proper-evidence",
-    "lastUpdated": "2025-09-23T01:17:26.275110Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "proper-evidence",
       "name": "プロパーエヴィデンス",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Stiff Sentence",
@@ -32,8 +33,11 @@
     {
       "id": "shigeno-mind",
       "name": "シゲノマインド",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 22}",
-      "foaledArray": ["1992", "03", "22"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Miswaki",
@@ -59,8 +63,11 @@
     {
       "id": "yamatake-golden",
       "name": "ヤマタケゴールデン",
-      "foaled": "{'year': 2003, 'month': 5, 'day': 15}",
-      "foaledArray": ["2003", "05", "15"],
+      "foaled": {
+        "year": 2003,
+        "month": 5,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",
