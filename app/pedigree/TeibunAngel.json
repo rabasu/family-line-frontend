@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Teibun Angel",
     "rootHorseId": "teibun-angel",
-    "lastUpdated": "2025-09-24T11:09:51.590856Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "teibun-angel",
       "name": "テイブンエンジェル",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "carnegie-daian",
       "name": "カーネギーダイアン",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 19}",
-      "foaledArray": ["1997", "03", "19"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カーネギー(IRE)",

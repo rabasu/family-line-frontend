@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Zarissa",
     "rootHorseId": "zarissa",
-    "lastUpdated": "2025-09-24T02:04:50.110150Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "zarissa",
       "name": "ザリサ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lyphard",
@@ -32,8 +33,11 @@
     {
       "id": "mayano-absolute",
       "name": "マヤノアブソルート",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 2}",
-      "foaledArray": ["1997", "03", "02"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",

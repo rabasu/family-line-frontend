@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Vague Dream",
     "rootHorseId": "vague-dream",
-    "lastUpdated": "2025-09-25T09:52:50.549775Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "vague-dream",
       "name": "ヴェイグドリーム",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Vaguely Noble(GB)",
@@ -32,8 +33,11 @@
     {
       "id": "chansonniere",
       "name": "シャンソニエール",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 2}",
-      "foaledArray": ["1989", "04", "02"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンシャインボーイ",

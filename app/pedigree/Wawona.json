@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Wawona",
     "rootHorseId": "wawona",
-    "lastUpdated": "2025-09-25T05:49:28.156931Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "wawona",
       "name": "ワオナ",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "To Market",
@@ -32,8 +33,9 @@
     {
       "id": "kiyo-sugata",
       "name": "キヨスガタ",
-      "foaled": "{'year': 1965}",
-      "foaledArray": ["1965"],
+      "foaled": {
+        "year": 1965
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ridan",
@@ -54,13 +56,17 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "wawona"
+      "damId": "wawona",
+      "linkName": "キヨスガタ(1965)"
     },
     {
       "id": "bravest-u",
       "name": "ブレイブエストユー",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 16}",
-      "foaledArray": ["1982", "03", "16"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",
@@ -86,8 +92,11 @@
     {
       "id": "dragon-u",
       "name": "ドラゴンユー",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 21}",
-      "foaledArray": ["1989", "04", "21"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スルーザドラゴン(US)",
@@ -113,8 +122,11 @@
     {
       "id": "shimmei-yushun",
       "name": "シンメイユウシュン",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 29}",
-      "foaledArray": ["1998", "03", "29"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タヤスレミグラン",
@@ -142,8 +154,11 @@
     {
       "id": "love-heart",
       "name": "ラブハート",
-      "foaled": "{'year': 2003, 'month': 6, 'day': 4}",
-      "foaledArray": ["2003", "06", "04"],
+      "foaled": {
+        "year": 2003,
+        "month": 6,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マイネルラヴ",
@@ -171,8 +186,11 @@
     {
       "id": "love-kampf",
       "name": "ラブカンプー",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 11}",
-      "foaledArray": ["2015", "04", "11"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ショウナンカンプ",
@@ -576,8 +594,11 @@
     {
       "id": "king-heart",
       "name": "キングハート",
-      "foaled": "{'year': 2013, 'month': 5, 'day': 7}",
-      "foaledArray": ["2013", "05", "07"],
+      "foaled": {
+        "year": 2013,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オレハマッテルゼ",
@@ -936,8 +957,11 @@
     {
       "id": "glorious-u",
       "name": "グローリアスユー",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 5}",
-      "foaledArray": ["1992", "04", "05"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キンググローリアス(US)",
@@ -1041,8 +1065,11 @@
     {
       "id": "northerly-yu",
       "name": "ノーザリーユー",
-      "foaled": "{'year': 1983, 'month': 3, 'day': 31}",
-      "foaledArray": ["1983", "03", "31"],
+      "foaled": {
+        "year": 1983,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザリー",
@@ -1066,6 +1093,349 @@
         "local": "0万円"
       },
       "damId": "kiyo-sugata"
+    },
+    {
+      "id": "kiyoryuuzuki",
+      "name": "キヨリューズキ",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハッピーオーメン(IRE)",
+      "dam": "ワオナ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1971z00134",
+      "raceStats": {
+        "total": {
+          "runs": 50,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 2,
+            "day": 6
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(OP)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "12",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "阪神",
+          "race": "朝日チヤレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "7",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 7,
+            "day": 11
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 6,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "9",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 4,
+            "day": 4
+          },
+          "racecourse": "小倉",
+          "race": "小倉大賞典(OP)",
+          "displayRace": "小倉大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 29
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "9",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 1
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(OP)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 8,
+            "day": 31
+          },
+          "racecourse": "小倉",
+          "race": "農林省賞典小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 8,
+            "day": 10
+          },
+          "racecourse": "小倉",
+          "race": "テレビ西日本賞北九州(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "関西テレビ放送賞スワ(OP)",
+          "displayRace": "スワンS",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "小倉",
+          "race": "小倉大賞典(OP)",
+          "displayRace": "小倉大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "トヨタ賞中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 2,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "中日新聞杯(OP)",
+          "displayRace": "中日新聞杯",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典(OP)",
+          "displayRace": "阪神大賞典",
+          "distance": "芝3000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "13",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "12",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "京都",
+          "race": "京都新聞杯(OP)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "朝日チャレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 8,
+            "day": 25
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "wawona"
     }
   ]
 }

@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "pedigreeName": "夕田",
+    "rootHorseId": "yuuta",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
+  },
+  "horses": [
+    {
+      "id": "yuuta",
+      "name": "夕田",
+      "foaled": {},
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "",
+      "dam": "",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01ce52",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "yamashina",
+      "name": "山科",
+      "foaled": {
+        "year": 1910
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ペロレーシヨン",
+      "dam": "夕田",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01ce53",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yuuta"
+    },
+    {
+      "id": "dainiyamashina",
+      "name": "第二山科",
+      "foaled": {
+        "year": 1919
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "キルブルツク",
+      "dam": "山科",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01ce54",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yamashina"
+    },
+    {
+      "id": "kawaka",
+      "name": "川科",
+      "foaled": {
+        "year": 1937
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "オーダツクス",
+      "dam": "第二山科",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00d8a9",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dainiyamashina"
+    },
+    {
+      "id": "furinto",
+      "name": "フリント",
+      "foaled": {
+        "year": 1949
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ナカヒカリ",
+      "dam": "川科",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00db0e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kawaka"
+    },
+    {
+      "id": "yuusei",
+      "name": "ユウセイ",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "セイユウ",
+      "dam": "フリント",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1962z00579",
+      "raceStats": {
+        "total": {
+          "runs": 38,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1966,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(秋)",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠(春)",
+          "distance": "芝2300",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "1",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "furinto"
+    }
+  ]
+}

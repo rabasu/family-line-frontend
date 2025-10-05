@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tree of Knowledge",
     "rootHorseId": "tree-of-knowledge",
-    "lastUpdated": "2025-09-25T07:49:39.118797Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tree-of-knowledge",
       "name": "ツリーオブノレッジ",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sassafras(FR)",
@@ -32,8 +33,11 @@
     {
       "id": "taiki-blizzard",
       "name": "タイキブリザード",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 12}",
-      "foaledArray": ["1991", "03", "12"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -317,8 +321,11 @@
     {
       "id": "paradise-creek",
       "name": "パラダイスクリーク",
-      "foaled": "{'year': 1989, 'month': 2, 'day': 4}",
-      "foaledArray": ["1989", "02", "04"],
+      "foaled": {
+        "year": 1989,
+        "month": 2,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Irish River(FR)",
@@ -362,8 +369,9 @@
     {
       "id": "north-of-eden",
       "name": "North Of Eden",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northfields",

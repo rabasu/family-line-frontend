@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Terminal Flower",
     "rootHorseId": "terminal-flower",
-    "lastUpdated": "2025-09-19T11:49:13.429332Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "terminal-flower",
       "name": "ターミナルフラワー",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 28}",
-      "foaledArray": ["1997", "04", "28"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Salt Lake",
@@ -32,8 +35,11 @@
     {
       "id": "aramasa-sniper",
       "name": "アラマサスナイパー",
-      "foaled": "{'year': 2003, 'month': 5, 'day': 2}",
-      "foaledArray": ["2003", "05", "02"],
+      "foaled": {
+        "year": 2003,
+        "month": 5,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
@@ -61,8 +67,11 @@
     {
       "id": "isis",
       "name": "イシス",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 18}",
-      "foaledArray": ["2012", "03", "18"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",
@@ -90,8 +99,11 @@
     {
       "id": "dura",
       "name": "ドゥーラ",
-      "foaled": "{'year': 2020, 'month': 2, 'day': 8}",
-      "foaledArray": ["2020", "02", "08"],
+      "foaled": {
+        "year": 2020,
+        "month": 2,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ドゥラメンテ",
@@ -225,8 +237,11 @@
     {
       "id": "xmas",
       "name": "クリスマス",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 4}",
-      "foaledArray": ["2011", "03", "04"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バゴ(FR)",
@@ -400,7 +415,8 @@
         "central": "1億3,795万円",
         "local": "0万円"
       },
-      "damId": "aramasa-sniper"
+      "damId": "aramasa-sniper",
+      "linkName": "クリスマス(2011)"
     }
   ]
 }

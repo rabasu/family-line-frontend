@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Welcome Star",
     "rootHorseId": "welcome-star",
-    "lastUpdated": "2025-09-25T18:59:42.609613Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "welcome-star",
       "name": "ウェルカムスター",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Royal Hamlet",
@@ -32,8 +33,9 @@
     {
       "id": "tai-grey",
       "name": "タイグレイ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トピオ(FR)",
@@ -59,8 +61,11 @@
     {
       "id": "tai-battle",
       "name": "タイバトル",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 16}",
-      "foaledArray": ["1978", "03", "16"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タイテエム",
@@ -86,8 +91,11 @@
     {
       "id": "tai-eagle",
       "name": "タイイーグル",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 16}",
-      "foaledArray": ["1987", "05", "16"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーアテンション(FR)",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Valixa",
     "rootHorseId": "valixa",
-    "lastUpdated": "2025-09-22T04:49:59.101888Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "valixa",
       "name": "Valixa",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Linamix(FR)",
@@ -31,8 +32,11 @@
     {
       "id": "symboli-gran",
       "name": "シンボリグラン",
-      "foaled": "{'year': 2002, 'month': 5, 'day': 18}",
-      "foaledArray": ["2002", "05", "18"],
+      "foaled": {
+        "year": 2002,
+        "month": 5,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Grand Lodge(US)",

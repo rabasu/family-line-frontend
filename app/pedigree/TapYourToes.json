@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tap Your Toes",
     "rootHorseId": "tap-your-toes",
-    "lastUpdated": "2025-09-24T13:44:56.756897Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tap-your-toes",
       "name": "タツプユアトウズ",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "State Dinner(US)",
@@ -32,8 +33,11 @@
     {
       "id": "reward-titan",
       "name": "リワードタイタン",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 26}",
-      "foaledArray": ["1992", "03", "26"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジャッジアンジェルーチ(US)",

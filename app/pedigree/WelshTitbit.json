@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Welsh Tit-Bit",
     "rootHorseId": "welsh-tit-bit",
-    "lastUpdated": "2025-09-23T21:03:19.683290Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "welsh-tit-bit",
       "name": "ウエルシユテイツトビツト",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Owen Tudor",
@@ -32,8 +33,9 @@
     {
       "id": "chihayaenzeru",
       "name": "チハヤエンゼル",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オンリーフォアライフ",
@@ -59,8 +61,9 @@
     {
       "id": "silk-venture",
       "name": "シルクベエンチア",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴェンチア",
@@ -86,8 +89,11 @@
     {
       "id": "silk-angel",
       "name": "シルクエンゼル",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 3}",
-      "foaledArray": ["1983", "04", "03"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーソロン(IRE)",
@@ -113,8 +119,11 @@
     {
       "id": "kokuto-beauty",
       "name": "コクトビューティー",
-      "foaled": "{'year': 1988, 'month': 5, 'day': 25}",
-      "foaledArray": ["1988", "05", "25"],
+      "foaled": {
+        "year": 1988,
+        "month": 5,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サウスアトランティック(IRE)",
@@ -158,8 +167,11 @@
     {
       "id": "smile-contest",
       "name": "スマイルコンテスト",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 25}",
-      "foaledArray": ["2001", "05", "25"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サッカーボーイ",
@@ -187,8 +199,11 @@
     {
       "id": "courir-kaiser",
       "name": "クリールカイザー",
-      "foaled": "{'year': 2009, 'month': 5, 'day': 8}",
-      "foaledArray": ["2009", "05", "08"],
+      "foaled": {
+        "year": 2009,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",
@@ -457,8 +472,11 @@
     {
       "id": "smile-tomorrow",
       "name": "スマイルトゥモロー",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 20}",
-      "foaledArray": ["1999", "04", "20"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ホワイトマズル(GB)",
@@ -648,6 +666,79 @@
         "local": "0万円"
       },
       "damId": "kokuto-beauty"
+    },
+    {
+      "id": "kiriidasshu",
+      "name": "キリーダッシュ",
+      "foaled": {
+        "year": 1975
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ミンシオ",
+      "dam": "チハヤエンゼル",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1975z00149",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1979,
+            "month": 2,
+            "day": 18
+          },
+          "racecourse": "中山",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "11",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 2,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "東京4歳S(OP)",
+          "displayRace": "東京4歳S",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 12,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "3歳S(OP)",
+          "displayRace": "朝日杯3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "chihayaenzeru"
     }
   ]
 }

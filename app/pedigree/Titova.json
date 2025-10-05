@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Titova",
     "rootHorseId": "titova",
-    "lastUpdated": "2025-09-23T21:36:06.416259Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "titova",
       "name": "テイトヴア",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アイアンリージ",
@@ -32,8 +33,11 @@
     {
       "id": "marugo-arrow",
       "name": "マルゴアロー",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 16}",
-      "foaledArray": ["1981", "04", "16"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アローエクスプレス",
@@ -75,8 +79,11 @@
     {
       "id": "marugo-lily",
       "name": "マルゴリリー",
-      "foaled": "{'year': 1989, 'month': 2, 'day': 27}",
-      "foaledArray": ["1989", "02", "27"],
+      "foaled": {
+        "year": 1989,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アスワン",
@@ -102,8 +109,11 @@
     {
       "id": "marugo-wish",
       "name": "マルゴウィッシュ",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 12}",
-      "foaledArray": ["1996", "04", "12"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リファーズウィッシュ(FR)",

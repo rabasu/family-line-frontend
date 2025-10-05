@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "To the Letter",
     "rootHorseId": "to-the-letter",
-    "lastUpdated": "2025-09-26T02:03:11.127718Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "to-the-letter",
       "name": "トゥザレター",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Arts and Letters",
@@ -32,8 +33,11 @@
     {
       "id": "dyna-letter",
       "name": "ダイナレター",
-      "foaled": "{'year': 1984, 'month': 3, 'day': 3}",
-      "foaledArray": ["1984", "03", "03"],
+      "foaled": {
+        "year": 1984,
+        "month": 3,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

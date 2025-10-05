@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Unfoiled",
     "rootHorseId": "unfoiled",
-    "lastUpdated": "2025-09-20T18:55:47.607197Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "unfoiled",
       "name": "アンフォイルド",
-      "foaled": "{'year': 1995}",
-      "foaledArray": ["1995"],
+      "foaled": {
+        "year": 1995
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Unbridled",
@@ -32,8 +33,11 @@
     {
       "id": "madam-cherokee",
       "name": "マダムチェロキー",
-      "foaled": "{'year': 2001, 'month': 3, 'day': 22}",
-      "foaledArray": ["2001", "03", "22"],
+      "foaled": {
+        "year": 2001,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cherokee Run",
@@ -77,8 +81,11 @@
     {
       "id": "hokko-tarumae",
       "name": "ホッコータルマエ",
-      "foaled": "{'year': 2009, 'month': 5, 'day': 26}",
-      "foaledArray": ["2009", "05", "26"],
+      "foaled": {
+        "year": 2009,
+        "month": 5,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",

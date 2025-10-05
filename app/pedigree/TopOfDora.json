@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Top of Dora",
     "rootHorseId": "top-of-dora",
-    "lastUpdated": "2025-09-19T11:20:28.619648Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "top-of-dora",
       "name": "トップオブドーラ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 8}",
-      "foaledArray": ["2004", "03", "08"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Grand Slam",
@@ -32,8 +35,11 @@
     {
       "id": "maltese-diosa",
       "name": "マルターズディオサ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 7}",
-      "foaledArray": ["2017", "02", "07"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キズナ",
@@ -272,8 +278,11 @@
     {
       "id": "altair",
       "name": "アルタイル",
-      "foaled": "{'year': 2012, 'month': 4, 'day': 24}",
-      "foaledArray": ["2012", "04", "24"],
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カネヒキリ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Twitchet",
     "rootHorseId": "twitchet",
-    "lastUpdated": "2025-09-24T10:40:00.809896Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "twitchet",
       "name": "Twitchet",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Roberto",
@@ -31,8 +32,11 @@
     {
       "id": "yuwa-caesar",
       "name": "ユーワシーザー",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 24}",
-      "foaledArray": ["1997", "03", "24"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",

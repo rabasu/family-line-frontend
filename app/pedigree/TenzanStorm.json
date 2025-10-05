@@ -2,20 +2,22 @@
   "metadata": {
     "pedigreeName": "Tenzan Storm",
     "rootHorseId": "tenzan-storm",
-    "lastUpdated": "2025-09-20T14:28:58.961377Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tenzan-storm",
       "name": "テンザンストーム",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 15}",
-      "foaledArray": ["1994", "04", "15"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
       "dam": "Rythmical",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "F. A. Genter Stable  Inc.（米）",
       "netkeibaId": "1994109659",
@@ -28,18 +30,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Tenzan Storm"
+      "englishName": "Tenzan Storm",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "air-la-jolla",
       "name": "エアラホーヤ",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 27}",
-      "foaledArray": ["2003", "02", "27"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボストンハーバー(US)",
       "dam": "テンザンストーム",
-      "dam_netkeiba_id": "1994109659",
       "color": "青鹿毛",
       "breeder": "藤原牧場（静内町）",
       "netkeibaId": "2003105451",
@@ -58,18 +63,21 @@
         "central": "1,300万円",
         "local": "0万円"
       },
-      "damId": "tenzan-storm"
+      "damId": "tenzan-storm",
+      "dam_netkeiba_id": "1994109659"
     },
     {
       "id": "majesty-hearts",
       "name": "マジェスティハーツ",
-      "foaled": "{'year': 2010, 'month': 5, 'day': 20}",
-      "foaledArray": ["2010", "05", "20"],
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
       "dam": "エアラホーヤ",
-      "dam_netkeiba_id": "2003105451",
       "color": "鹿毛",
       "breeder": "藤原牧場（新ひだか町）",
       "netkeibaId": "2010103287",
@@ -359,7 +367,8 @@
         "central": "1億5,417万円",
         "local": "0万円"
       },
-      "damId": "air-la-jolla"
+      "damId": "air-la-jolla",
+      "dam_netkeiba_id": "2003105451"
     }
   ]
 }

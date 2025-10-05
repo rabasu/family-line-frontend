@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Whitesburg Express",
     "rootHorseId": "whitesburg-express",
-    "lastUpdated": "2025-09-16T04:10:28.270626Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "whitesburg-express",
       "name": "ホッワイツバーグエクスプレス",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Whitesburg",
@@ -32,8 +33,9 @@
     {
       "id": "livermore-leslie",
       "name": "リヴァーモアレスリー",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mt. Livermore",
@@ -59,8 +61,11 @@
     {
       "id": "sweet-reason",
       "name": "スウィートリーズン",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 24}",
-      "foaledArray": ["2011", "04", "24"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ストリートセンス(US)",
@@ -86,8 +91,11 @@
     {
       "id": "diastima",
       "name": "ディアスティマ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 10}",
-      "foaledArray": ["2017", "02", "10"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

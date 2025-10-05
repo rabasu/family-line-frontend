@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Think Twice",
     "rootHorseId": "think-twice",
-    "lastUpdated": "2025-09-25T14:56:20.454595Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "think-twice",
       "name": "シンクトウワイス",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tropique",
@@ -32,8 +33,11 @@
     {
       "id": "agnes-there",
       "name": "アグネスゼアー",
-      "foaled": "{'year': 1977, 'month': 5, 'day': 31}",
-      "foaledArray": ["1977", "05", "31"],
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロードリージ(US)",
@@ -120,8 +124,11 @@
     {
       "id": "mogami-swiss",
       "name": "モガミスイス",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 17}",
-      "foaledArray": ["1987", "04", "17"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",

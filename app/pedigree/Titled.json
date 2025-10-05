@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Titled",
     "rootHorseId": "titled",
-    "lastUpdated": "2025-09-20T10:17:22.033944Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "titled",
       "name": "タイトルド",
-      "foaled": "{'year': 1996}",
-      "foaledArray": ["1996"],
+      "foaled": {
+        "year": 1996
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Rainbow Quest(US)",
       "dam": "Her Ladyship",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "英",
       "netkeibaId": "000a00683c",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Titled"
+      "englishName": "Titled",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "catchy-title",
       "name": "キャッチータイトル",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 6}",
-      "foaledArray": ["2003", "03", "06"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",
       "dam": "タイトルド",
-      "dam_netkeiba_id": "000a00683c",
       "color": "栗毛",
       "breeder": "ノーザンファーム（早来町）",
       "netkeibaId": "2003102900",
@@ -134,18 +137,21 @@
         "central": "5,765万円",
         "local": "0万円"
       },
-      "damId": "titled"
+      "damId": "titled",
+      "dam_netkeiba_id": "000a00683c"
     },
     {
       "id": "major-emblem",
       "name": "メジャーエンブレム",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 26}",
-      "foaledArray": ["2013", "03", "26"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
       "dam": "キャッチータイトル",
-      "dam_netkeiba_id": "2003102900",
       "color": "栗毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013105840",
@@ -240,7 +246,8 @@
         "central": "2億4,310万円",
         "local": "0万円"
       },
-      "damId": "catchy-title"
+      "damId": "catchy-title",
+      "dam_netkeiba_id": "2003102900"
     }
   ]
 }

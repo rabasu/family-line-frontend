@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tanzania",
     "rootHorseId": "tanzania",
-    "lastUpdated": "2025-09-21T01:48:08.569027Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tanzania",
       "name": "Tanzania",
-      "foaled": "{'year': 1994}",
-      "foaledArray": ["1994"],
+      "foaled": {
+        "year": 1994
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alzao",
@@ -31,8 +32,11 @@
     {
       "id": "uncoiled",
       "name": "アンコイルド",
-      "foaled": "{'year': 2009, 'month': 5, 'day': 1}",
-      "foaledArray": ["2009", "05", "01"],
+      "foaled": {
+        "year": 2009,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Giant(US)",

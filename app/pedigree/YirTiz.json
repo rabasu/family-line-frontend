@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Yir Tiz",
     "rootHorseId": "yir-tiz",
-    "lastUpdated": "2025-09-22T00:06:53.116018Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "yir-tiz",
       "name": "ヤアティズ",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bismark",
@@ -32,8 +33,11 @@
     {
       "id": "cinderella-road",
       "name": "シンデレラロード",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 30}",
-      "foaledArray": ["1993", "05", "30"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アジュディケーティング(US)",
@@ -77,8 +81,11 @@
     {
       "id": "toho-progress",
       "name": "トウホープログレス",
-      "foaled": "{'year': 1999, 'month': 2, 'day': 22}",
-      "foaledArray": ["1999", "02", "22"],
+      "foaled": {
+        "year": 1999,
+        "month": 2,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ナリタブライアン",
@@ -122,8 +129,11 @@
     {
       "id": "all-as-one",
       "name": "オールアズワン",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 6}",
-      "foaledArray": ["2008", "03", "06"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ネオユニヴァース",

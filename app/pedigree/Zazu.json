@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Zazu",
     "rootHorseId": "zazu",
-    "lastUpdated": "2025-09-19T01:30:35.173130Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "zazu",
       "name": "ザズー",
-      "foaled": "{'year': 2008, 'month': 2, 'day': 24}",
-      "foaledArray": ["2008", "02", "24"],
+      "foaled": {
+        "year": 2008,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tapit(US)",
@@ -32,8 +35,11 @@
     {
       "id": "arusha",
       "name": "アルーシャ",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 1}",
-      "foaledArray": ["2015", "02", "01"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

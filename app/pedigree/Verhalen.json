@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Verhalen",
     "rootHorseId": "verhalen",
-    "lastUpdated": "2025-09-23T22:04:53.660155Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "verhalen",
       "name": "バーハレン",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Capote",
@@ -32,8 +33,11 @@
     {
       "id": "namura-ryuju",
       "name": "ナムラリュージュ",
-      "foaled": "{'year': 2001, 'month': 5, 'day': 12}",
-      "foaledArray": ["2001", "05", "12"],
+      "foaled": {
+        "year": 2001,
+        "month": 5,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラチトセオー",
@@ -92,8 +96,11 @@
     {
       "id": "namura-express",
       "name": "ナムラエキスプレス",
-      "foaled": "{'year': 1999, 'month': 5, 'day': 8}",
-      "foaledArray": ["1999", "05", "08"],
+      "foaled": {
+        "year": 1999,
+        "month": 5,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンスインザダーク",

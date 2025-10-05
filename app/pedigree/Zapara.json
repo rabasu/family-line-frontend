@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Zapara",
     "rootHorseId": "zapara",
-    "lastUpdated": "2025-09-15T22:28:35.763496Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "zapara",
       "name": "Zapara",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 13}",
-      "foaledArray": ["2010", "02", "13"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Not for Love",
@@ -31,8 +34,11 @@
     {
       "id": "meta-max",
       "name": "メタマックス",
-      "foaled": "{'year': 2020, 'month': 5, 'day': 12}",
-      "foaledArray": ["2020", "05", "12"],
+      "foaled": {
+        "year": 2020,
+        "month": 5,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Into Mischief",

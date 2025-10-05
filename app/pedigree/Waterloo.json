@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Waterloo",
     "rootHorseId": "waterloo",
-    "lastUpdated": "2025-09-22T17:25:22.301323Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "waterloo",
       "name": "ウォータールー",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bold Lad",
@@ -32,8 +33,9 @@
     {
       "id": "white-water-lady",
       "name": "ホワイトウォーターレディ",
-      "foaled": "{'year': 1984}",
-      "foaledArray": ["1984"],
+      "foaled": {
+        "year": 1984
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Riverman",
@@ -59,8 +61,11 @@
     {
       "id": "nature-guide",
       "name": "ネイチャーガイド",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 11}",
-      "foaledArray": ["2003", "04", "11"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エルコンドルパサー",
@@ -88,8 +93,11 @@
     {
       "id": "azuma-takkun",
       "name": "アズマタックン",
-      "foaled": "{'year': 2013, 'month': 1, 'day': 17}",
-      "foaledArray": ["2013", "01", "17"],
+      "foaled": {
+        "year": 2013,
+        "month": 1,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブラックタイド",
@@ -313,13 +321,15 @@
     {
       "id": "sundarbans",
       "name": "シュンドルボン",
-      "foaled": "{'year': 2011, 'month': 1, 'day': 20}",
-      "foaledArray": ["2011", "01", "20"],
+      "foaled": {
+        "year": 2011,
+        "month": 1,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
       "dam": "ネイチャーガイド",
-      "dam_netkeiba_id": "2003106127",
       "color": "青鹿毛",
       "breeder": "下河辺牧場（日高町）",
       "netkeibaId": "2011100352",
@@ -459,13 +469,17 @@
         "central": "1億5,277万円",
         "local": "0万円"
       },
-      "damId": "nature-guide"
+      "damId": "nature-guide",
+      "dam_netkeiba_id": "2003106127"
     },
     {
       "id": "liquid-notes",
       "name": "リキッドノーツ",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 6}",
-      "foaledArray": ["2001", "04", "06"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エルコンドルパサー",

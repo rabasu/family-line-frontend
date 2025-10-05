@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Velda",
     "rootHorseId": "velda",
-    "lastUpdated": "2025-09-16T06:40:22.239777Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "velda",
       "name": "ヴェルダ",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Observatory",
@@ -32,8 +33,11 @@
     {
       "id": "prognosis",
       "name": "プログノーシス",
-      "foaled": "{'year': 2018, 'month': 5, 'day': 15}",
-      "foaledArray": ["2018", "05", "15"],
+      "foaled": {
+        "year": 2018,
+        "month": 5,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

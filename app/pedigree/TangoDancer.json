@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Tango Dancer",
     "rootHorseId": "tango-dancer",
-    "lastUpdated": "2025-09-24T13:13:58.276459Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "tango-dancer",
       "name": "タンゴダンサー",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Unconscious",
@@ -32,8 +33,11 @@
     {
       "id": "keiwan-marion",
       "name": "ケイワンマリオン",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 20}",
-      "foaledArray": ["1989", "03", "20"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゲイメセン(US)",
@@ -61,8 +65,11 @@
     {
       "id": "clockwork",
       "name": "クロックワーク",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 29}",
-      "foaledArray": ["1996", "03", "29"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",

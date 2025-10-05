@@ -2,15 +2,14 @@
   "metadata": {
     "pedigreeName": "上帯",
     "rootHorseId": "uwaobi",
-    "lastUpdated": "2025-09-25T16:26:01.823649Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "uwaobi",
       "name": "上帯",
-      "foaled": "None",
-      "foaledArray": [],
+      "foaled": {},
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "",
@@ -31,8 +30,9 @@
     {
       "id": "toyohashi",
       "name": "豊橋",
-      "foaled": "{'year': 1910}",
-      "foaledArray": ["1910"],
+      "foaled": {
+        "year": 1910
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "豊平",
@@ -57,8 +57,9 @@
     {
       "id": "bebau",
       "name": "ベバウ",
-      "foaled": "{'year': 1918}",
-      "foaledArray": ["1918"],
+      "foaled": {
+        "year": 1918
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イボア(GB)",
@@ -83,8 +84,9 @@
     {
       "id": "yomogiyama",
       "name": "蓬山",
-      "foaled": "{'year': 1941}",
-      "foaledArray": ["1941"],
+      "foaled": {
+        "year": 1941
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "第六シアンモア",
@@ -109,8 +111,9 @@
     {
       "id": "taisei-goku",
       "name": "タイセイゴクー",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブツフラー(GB)",
@@ -167,8 +170,9 @@
     {
       "id": "tanino-saiasu",
       "name": "タニノサイアス",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タニノムーティエ",
@@ -257,8 +261,11 @@
     {
       "id": "tanino-fast",
       "name": "タニノファスト",
-      "foaled": "{'year': 1987, 'month': 4, 'day': 29}",
-      "foaledArray": ["1987", "04", "29"],
+      "foaled": {
+        "year": 1987,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロングファスト",
@@ -343,6 +350,240 @@
         "local": "0万円"
       },
       "damId": "tanino-saiasu"
+    },
+    {
+      "id": "hoorai",
+      "name": "ホーライ",
+      "foaled": {
+        "year": 1957
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アシヤガワ",
+      "dam": "メイゲキ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1957z00242",
+      "raceStats": {
+        "total": {
+          "runs": 78,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1963,
+            "month": 6,
+            "day": 2
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(春)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 10,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(秋)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1962,
+            "month": 6,
+            "day": 24
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(春)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "3",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "meigeki",
+      "name": "メイゲキ",
+      "foaled": {
+        "year": 1948
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハヤタケ",
+      "dam": "第二高田",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00cab0",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dainitakada"
+    },
+    {
+      "id": "dainitakada",
+      "name": "第二高田",
+      "foaled": {
+        "year": 1939
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ニグリス(SYR)",
+      "dam": "第三アバンドン",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00c7a1",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daisanabandon"
+    },
+    {
+      "id": "daisanabandon",
+      "name": "第三アバンドン",
+      "foaled": {
+        "year": 1921
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "第三サツパーダンス",
+      "dam": "アバンドン",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01cc29",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "abandon"
+    },
+    {
+      "id": "abandon",
+      "name": "アバンドン",
+      "foaled": {
+        "year": 1914
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハアリー",
+      "dam": "第四ハツピネス",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01c99c",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daiyonhatsupinesu"
+    },
+    {
+      "id": "daiyonhatsupinesu",
+      "name": "第四ハツピネス",
+      "foaled": {
+        "year": 1908
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミグノン",
+      "dam": "ハツピネス",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01c99b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hatsupinesu"
+    },
+    {
+      "id": "hatsupinesu",
+      "name": "ハツピネス",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハタカゼ",
+      "dam": "蓬山",
+      "color": "栗毛",
+      "breeder": "三石町",
+      "netkeibaId": "000a00b83c",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yomogiyama"
     }
   ]
 }

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Team Colors",
     "rootHorseId": "team-colors",
-    "lastUpdated": "2025-09-23T21:03:05.879886Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "team-colors",
       "name": "チームカラーズ",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "god-of-chance",
       "name": "ゴッドオブチャンス",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 10}",
-      "foaledArray": ["1998", "04", "10"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Cozzene",

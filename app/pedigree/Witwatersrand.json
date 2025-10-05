@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Witwatersrand",
     "rootHorseId": "witwatersrand",
-    "lastUpdated": "2025-09-25T05:21:01.589058Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "witwatersrand",
       "name": "ウイットワタースランド",
-      "foaled": "{'year': 1981, 'month': 2, 'day': 12}",
-      "foaledArray": ["1981", "02", "12"],
+      "foaled": {
+        "year": 1981,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -32,8 +35,11 @@
     {
       "id": "chokai-carol",
       "name": "チョウカイキャロル",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 26}",
-      "foaledArray": ["1991", "03", "26"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",

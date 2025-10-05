@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Wonder Again",
     "rootHorseId": "wonder-again",
-    "lastUpdated": "2025-09-20T23:30:00.984446Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "wonder-again",
       "name": "Wonder Again",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",
@@ -31,8 +32,11 @@
     {
       "id": "red-raven",
       "name": "レッドレイヴン",
-      "foaled": "{'year': 2010, 'month': 3, 'day': 4}",
-      "foaledArray": ["2010", "03", "04"],
+      "foaled": {
+        "year": 2010,
+        "month": 3,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Smart Strike(CAN)",

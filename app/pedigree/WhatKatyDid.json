@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "What Katy Did",
     "rootHorseId": "what-katy-did",
-    "lastUpdated": "2025-09-22T06:50:37.037789Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "what-katy-did",
       "name": "ホワットケイティーディド",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -32,8 +33,11 @@
     {
       "id": "admire-light",
       "name": "アドマイヤライト",
-      "foaled": "{'year': 1996, 'month': 3, 'day': 19}",
-      "foaledArray": ["1996", "03", "19"],
+      "foaled": {
+        "year": 1996,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kris S.",
@@ -61,14 +65,17 @@
     {
       "id": "glint-of-light",
       "name": "グリントオブライト",
-      "foaled": "{'year': 2013, 'month': 2, 'day': 24}",
-      "foaledArray": ["2013", "02", "24"],
+      "foaled": {
+        "year": 2013,
+        "month": 2,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",
       "dam": "アドマイヤライト",
-      "color": "栗毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2013105769",
       "raceStats": {
         "total": {
@@ -90,14 +97,17 @@
     {
       "id": "hiruno-hamburg",
       "name": "ヒルノハンブルク",
-      "foaled": "{'year': 2022, 'month': 2, 'day': 7}",
-      "foaledArray": ["2022", "02", "07"],
+      "foaled": {
+        "year": 2022,
+        "month": 2,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ナダル(US)",
       "dam": "グリントオブライト",
-      "color": "黒鹿毛",
-      "breeder": "目名共同トレーニングセンター（新ひだか町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022103614",
       "raceStats": {
         "total": {
@@ -165,8 +175,11 @@
     {
       "id": "jetzt",
       "name": "イェッツト",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 1}",
-      "foaledArray": ["2015", "04", "01"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "カンパニー",
@@ -240,8 +253,11 @@
     {
       "id": "istanbul",
       "name": "イスタンブール",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 7}",
-      "foaledArray": ["2010", "02", "07"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
@@ -262,13 +278,17 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "alexandria"
+      "damId": "alexandria",
+      "linkName": "イスタンブール(2010)"
     },
     {
       "id": "alexandria",
       "name": "アレキサンドリア",
-      "foaled": "{'year': 2003, 'month': 2, 'day': 8}",
-      "foaledArray": ["2003", "02", "08"],
+      "foaled": {
+        "year": 2003,
+        "month": 2,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -296,8 +316,11 @@
     {
       "id": "beluga",
       "name": "ベルーガ",
-      "foaled": "{'year': 2015, 'month': 2, 'day': 11}",
-      "foaledArray": ["2015", "02", "11"],
+      "foaled": {
+        "year": 2015,
+        "month": 2,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キンシャサノキセキ",
@@ -371,8 +394,11 @@
     {
       "id": "sleepless-night",
       "name": "スリープレスナイト",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 7}",
-      "foaledArray": ["2004", "02", "07"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",

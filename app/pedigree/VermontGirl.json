@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Vermont Girl",
     "rootHorseId": "vermont-girl",
-    "lastUpdated": "2025-09-18T16:47:28.611939Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "vermont-girl",
       "name": "バーモントガール",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 9}",
-      "foaledArray": ["1997", "05", "09"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミシエロ(US)",
@@ -32,8 +35,11 @@
     {
       "id": "a-shin-velocity",
       "name": "エーシンベロシティ",
-      "foaled": "{'year': 2005, 'month': 1, 'day': 30}",
-      "foaledArray": ["2005", "01", "30"],
+      "foaled": {
+        "year": 2005,
+        "month": 1,
+        "day": 30
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lemon Drop Kid",
@@ -61,8 +67,11 @@
     {
       "id": "meisho-tekkon",
       "name": "メイショウテッコン",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 17}",
-      "foaledArray": ["2015", "04", "17"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",

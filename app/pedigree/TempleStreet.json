@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Temple Street",
     "rootHorseId": "temple-street",
-    "lastUpdated": "2025-09-19T02:31:59.472799Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "temple-street",
       "name": "Temple Street",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Machiavellian",
@@ -31,8 +32,11 @@
     {
       "id": "ittetsu",
       "name": "イッテツ",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 2}",
-      "foaledArray": ["2012", "03", "02"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Invincible Spirit(IRE)",

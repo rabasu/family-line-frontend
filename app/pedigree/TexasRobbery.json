@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Texas Robbery",
     "rootHorseId": "texas-robbery",
-    "lastUpdated": "2025-09-23T00:28:13.623246Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "texas-robbery",
       "name": "Texas Robbery",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mr. Prospector",
@@ -31,8 +32,11 @@
     {
       "id": "daiwa-bandit",
       "name": "ダイワバンディット",
-      "foaled": "{'year': 2001, 'month': 2, 'day': 16}",
-      "foaledArray": ["2001", "02", "16"],
+      "foaled": {
+        "year": 2001,
+        "month": 2,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ボストンハーバー(US)",

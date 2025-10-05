@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "テイプトン",
     "rootHorseId": "teiputon",
-    "lastUpdated": "2025-09-22T14:27:08.155564Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "teiputon",
       "name": "テイプトン",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sabu",
@@ -31,8 +32,9 @@
     {
       "id": "khyber-pass",
       "name": "カイバーパス",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "グローリーホワイト(US)",
@@ -58,8 +60,11 @@
     {
       "id": "kuresonhaado",
       "name": "クレソンハード",
-      "foaled": "{'year': 1977, 'month': 4, 'day': 12}",
-      "foaledArray": ["1977", "04", "12"],
+      "foaled": {
+        "year": 1977,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイハード(GB)",
@@ -84,8 +89,11 @@
     {
       "id": "kleson-c-b",
       "name": "クレソンシービー",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 8}",
-      "foaledArray": ["1993", "04", "08"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミスターシービー",
@@ -111,8 +119,11 @@
     {
       "id": "black-lady",
       "name": "ブラックレディ",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 21}",
-      "foaledArray": ["2004", "04", "21"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングヘイロー",
@@ -182,6 +193,79 @@
         "local": "0万円"
       },
       "damId": "kleson-c-b"
+    },
+    {
+      "id": "konkorudo",
+      "name": "コンコルド",
+      "foaled": {
+        "year": 1957
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ヴイーノーピユロー(AR)",
+      "dam": "テイプトン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1957z00052",
+      "raceStats": {
+        "total": {
+          "runs": 37,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1962,
+            "month": 4,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "中山記念競走(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 9,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 6,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "安田記念競走(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "teiputon"
     }
   ]
 }

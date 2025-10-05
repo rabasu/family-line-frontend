@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Via Medici",
     "rootHorseId": "via-medici",
-    "lastUpdated": "2025-09-18T03:22:29.081303Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "via-medici",
       "name": "ヴィアメディチ",
-      "foaled": "{'year': 2007, 'month': 4, 'day': 27}",
-      "foaledArray": ["2007", "04", "27"],
+      "foaled": {
+        "year": 2007,
+        "month": 4,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Medicean",
@@ -32,8 +35,11 @@
     {
       "id": "admire-mars",
       "name": "アドマイヤマーズ",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 16}",
-      "foaledArray": ["2016", "03", "16"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
