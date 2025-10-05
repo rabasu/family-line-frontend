@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "クロシエット",
     "rootHorseId": "kuroshietto",
-    "lastUpdated": "2025-09-26T04:36:01.902397Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kuroshietto",
       "name": "クロシエット",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mossborough",
@@ -31,8 +32,11 @@
     {
       "id": "kurino-ivor",
       "name": "クリノアイバー",
-      "foaled": "{'year': 1977, 'month': 5, 'day': 4}",
-      "foaledArray": ["1977", "05", "04"],
+      "foaled": {
+        "year": 1977,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "グレートオンワード",
@@ -58,8 +62,11 @@
     {
       "id": "winners-circle",
       "name": "ウィナーズサークル",
-      "foaled": "{'year': 1986, 'month': 4, 'day': 10}",
-      "foaledArray": ["1986", "04", "10"],
+      "foaled": {
+        "year": 1986,
+        "month": 4,
+        "day": 10
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シーホーク",
@@ -148,8 +155,11 @@
     {
       "id": "kurino-teio",
       "name": "クリノテイオー",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 15}",
-      "foaledArray": ["1985", "04", "15"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "モバリッズ",
@@ -309,6 +319,529 @@
         "local": "0万円"
       },
       "damId": "kurino-ivor"
+    },
+    {
+      "id": "niuonwaado",
+      "name": "ニウオンワード",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハクリョウ",
+      "dam": "クロシエット",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1964z00256",
+      "raceStats": {
+        "total": {
+          "runs": 53,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "13",
+          "result": "9",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "ダービー卿チャレンジ(OP)",
+          "displayRace": "ダービー卿チャレンジT",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "オールカマー(250万円以下)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 8,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "京王盃オータムH(OP)",
+          "displayRace": "京王盃オータムH",
+          "distance": "ダ1700",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 8,
+            "day": 3
+          },
+          "racecourse": "中京",
+          "race": "愛知盃(OP)",
+          "displayRace": "愛知盃",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 7,
+            "day": 20
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 6,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "14",
+          "favorite": "14"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチンジョッキ(OP)",
+          "displayRace": "アルゼンチンJCC",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "8",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 2,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "東京新聞盃(OP)",
+          "displayRace": "東京新聞盃",
+          "distance": "ダ2100",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 1,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "金盃(OP)",
+          "displayRace": "金盃（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "9",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "11",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(OP)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "16",
+          "result": "5",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "5",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "アルゼンチンジョッキ(OP)",
+          "displayRace": "アルゼンチンJCC",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "5",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 9,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "オールカマー(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "3",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 5,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞(OP)",
+          "displayRace": "日本経済賞",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズステーク(OP)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 4,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 3,
+            "day": 31
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 3,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 2,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "東京新聞盃(OP)",
+          "displayRace": "東京新聞盃",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "9",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 1,
+            "day": 21
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーク(OP)",
+          "displayRace": "アメリカJCC",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(OP)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_big8",
+          "entry": "15",
+          "result": "5",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 12,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "21",
+          "result": "7",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 10,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 10,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "セントライト記念(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "9",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "18",
+          "favorite": "27"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 4,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "NHK盃(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 2,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "東京4歳S(OP)",
+          "displayRace": "東京4歳S",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kuroshietto"
     }
   ]
 }

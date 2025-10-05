@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Krayyalei",
     "rootHorseId": "krayyalei",
-    "lastUpdated": "2025-09-22T21:58:12.933156Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "krayyalei",
       "name": "Krayyalei",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Krayyan",
@@ -31,8 +32,11 @@
     {
       "id": "silver-zetto",
       "name": "シルヴァーゼット",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 6}",
-      "foaledArray": ["2001", "04", "06"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Foxhound",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "L'On Vite",
     "rootHorseId": "lon-vite",
-    "lastUpdated": "2025-09-24T07:08:50.547032Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lon-vite",
       "name": "L'On Vite",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -31,8 +32,11 @@
     {
       "id": "big-viking",
       "name": "ビッグバイキング",
-      "foaled": "{'year': 1996, 'month': 4, 'day': 24}",
-      "foaledArray": ["1996", "04", "24"],
+      "foaled": {
+        "year": 1996,
+        "month": 4,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Theatrical",

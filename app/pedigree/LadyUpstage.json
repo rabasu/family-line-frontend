@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Lady Upstage",
     "rootHorseId": "lady-upstage",
-    "lastUpdated": "2025-09-18T17:56:02.719876Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-upstage",
       "name": "レディアップステージ",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 25}",
-      "foaledArray": ["1997", "04", "25"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alzao",
@@ -32,8 +35,11 @@
     {
       "id": "smart-odin",
       "name": "スマートオーディン",
-      "foaled": "{'year': 2013, 'month': 2, 'day': 20}",
-      "foaledArray": ["2013", "02", "20"],
+      "foaled": {
+        "year": 2013,
+        "month": 2,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダノンシャンティ",

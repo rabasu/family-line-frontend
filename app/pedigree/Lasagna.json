@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lasagna",
     "rootHorseId": "lasagna",
-    "lastUpdated": "2025-09-27T08:38:00.978512Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lasagna",
       "name": "ラサーナ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Major Portion",
@@ -32,8 +33,9 @@
     {
       "id": "ebi-portion",
       "name": "エビポーシヨン",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エムローン",
@@ -59,8 +61,11 @@
     {
       "id": "mineno-kagayaki",
       "name": "ミネノカガヤキ",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 25}",
-      "foaledArray": ["1981", "04", "25"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オフィスダンサー",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Lady Deauville",
     "rootHorseId": "lady-deauville",
-    "lastUpdated": "2025-09-20T10:17:53.865245Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-deauville",
       "name": "レディドーヴィル",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 10}",
-      "foaledArray": ["2005", "02", "10"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファスリエフ(US)",
@@ -32,8 +35,11 @@
     {
       "id": "port-vendres",
       "name": "ポールヴァンドル",
-      "foaled": "{'year': 2014, 'month': 3, 'day': 22}",
-      "foaledArray": ["2014", "03", "22"],
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",
@@ -92,13 +98,15 @@
     {
       "id": "les-planches",
       "name": "レプランシュ",
-      "foaled": "{'year': 2013, 'month': 4, 'day': 12}",
-      "foaledArray": ["2013", "04", "12"],
+      "foaled": {
+        "year": 2013,
+        "month": 4,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
       "dam": "レディドーヴィルLady Deauville",
-      "dam_netkeiba_id": "000a011811",
       "color": "鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013106178",
@@ -208,7 +216,8 @@
         "central": "4,251万円",
         "local": "161万円"
       },
-      "damId": "lady-deauville"
+      "damId": "lady-deauville",
+      "dam_netkeiba_id": "000a011811"
     }
   ]
 }

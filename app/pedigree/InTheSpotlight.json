@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "In The Spotlight",
     "rootHorseId": "in-the-spotlight",
-    "lastUpdated": "2025-09-15T09:18:21.605017Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "in-the-spotlight",
       "name": "インザスポットライト",
-      "foaled": "{'year': 2014, 'month': 2, 'day': 6}",
-      "foaledArray": ["2014", "02", "06"],
+      "foaled": {
+        "year": 2014,
+        "month": 2,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Exceed And Excel",
@@ -32,8 +35,11 @@
     {
       "id": "light-back",
       "name": "ライトバック",
-      "foaled": "{'year': 2021, 'month': 1, 'day': 14}",
-      "foaledArray": ["2021", "01", "14"],
+      "foaled": {
+        "year": 2021,
+        "month": 1,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キズナ",

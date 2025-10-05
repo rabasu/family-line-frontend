@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Josette",
     "rootHorseId": "josette",
-    "lastUpdated": "2025-09-21T21:12:42.963934Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "josette",
       "name": "ジョセット",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",
@@ -32,8 +33,11 @@
     {
       "id": "las-venturas",
       "name": "ラスヴェンチュラス",
-      "foaled": "{'year': 2009, 'month': 3, 'day': 8}",
-      "foaledArray": ["2009", "03", "08"],
+      "foaled": {
+        "year": 2009,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -122,8 +126,11 @@
     {
       "id": "deep-sound",
       "name": "ディープサウンド",
-      "foaled": "{'year': 2008, 'month': 3, 'day': 8}",
-      "foaledArray": ["2008", "03", "08"],
+      "foaled": {
+        "year": 2008,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

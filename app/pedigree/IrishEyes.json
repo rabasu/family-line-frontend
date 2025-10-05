@@ -2,42 +2,47 @@
   "metadata": {
     "pedigreeName": "Irish Eyes",
     "rootHorseId": "irish-eyes",
-    "lastUpdated": "2025-09-27T08:38:29.263469Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "irish-eyes",
       "name": "アイリツシユアイズ",
-      "foaled": "1928",
-      "foaledArray": ["1928"],
+      "foaled": {
+        "year": 1928
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Treclare",
       "dam": "Liena",
       "color": "鹿毛",
-      "breeder": "W. Booth, N.S.W.",
+      "breeder": "鹿毛",
       "netkeibaId": "000a0024c0",
       "source": "tsx_conversion",
+      "importedYear": "1934",
+      "familyNumber": "F1-c",
+      "registration": "16巻2016号",
+      "owner": "渋谷平乗（S11〜14）→下河邊牧場（千葉県印旛郡遠山村）",
       "pedigreeName": "Irish Eyes",
       "died": "1947.05.10 難産斃死",
-      "owner": "下河邊牧場（千葉県印旛郡遠山村）",
       "comments": "サラブレッド血統書 第3巻 p.1; 血統書データベース; 凪的電脳賽馬; 血統書データベース; 血統書データサービス; JBIS; 血統書データサービス; サラブレッド血統書 10巻 p.525; JBIS; 血統書データサービス; JBIS; JBIS; 血統書データサービス; 日付はJRA競走馬情報; JBIS"
     },
     {
       "id": "ohohikari",
       "name": "オホヒカリ",
-      "foaled": "1943-04-15",
-      "foaledArray": ["1943", "04", "15"],
+      "foaled": {
+        "year": 1943,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "月友",
       "dam": "アイリツシユアイズ",
-      "color": "栗毛",
-      "breeder": "下河邊牧場（北海道浦河郡浦河町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a002645",
-      "source": "tsx_conversion",
-      "formerPedigreeName": "第参アイリツシユアイズ",
       "raceStats": {
         "total": {
           "runs": 31,
@@ -130,27 +135,29 @@
           "result": "5"
         }
       ],
-      "died": "1967.04.27 死亡",
-      "owner": "栗林友二（大東牧場）",
+      "source": "tsx_conversion",
+      "damId": "irish-eyes",
       "trainer": "尾形藤吉",
-      "jockey": "野平祐二",
-      "damId": "irish-eyes"
+      "owner": "栗林友二（大東牧場）",
+      "died": "1967.04.27 死亡",
+      "formerPedigreeName": "第参アイリツシユアイズ",
+      "jockey": "野平祐二"
     },
     {
       "id": "kurinohana",
       "name": "クリノハナ",
-      "foaled": "1949-05-18",
-      "foaledArray": ["1949", "05", "18"],
+      "foaled": {
+        "year": 1949,
+        "month": 5,
+        "day": 18
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "プリメロ(GB)",
       "dam": "オホヒカリ",
-      "color": "栗毛",
-      "breeder": "大東牧場（千葉県印旛郡遠山村）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a0008d8",
-      "source": "tsx_conversion",
-      "formerName": "デンコウ",
-      "formerPedigreeName": "オレゴン",
       "raceStats": {
         "total": {
           "runs": 11,
@@ -184,9 +191,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "3,169,500円"
       },
       "raceResults": [
         {
@@ -246,28 +250,34 @@
           "result": "7"
         }
       ],
-      "retired": "1953.03.05 蕃殖",
-      "died": "1965.09.29 敗血症",
-      "owner": "栗林友二",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "3,169,500円"
+      },
+      "damId": "ohohikari",
       "trainer": "尾形藤吉",
-      "jockey": "八木沢勝美",
-      "damId": "ohohikari"
+      "owner": "栗林友二",
+      "died": "1965.09.29 敗血症",
+      "formerName": "デンコウ",
+      "formerPedigreeName": "オレゴン",
+      "retired": "1953.03.05 蕃殖",
+      "jockey": "八木沢勝美"
     },
     {
       "id": "kurinohoshi",
       "name": "クリノホシ",
-      "foaled": "1953-05-08",
-      "foaledArray": ["1953", "05", "08"],
+      "foaled": {
+        "year": 1953,
+        "month": 5,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "プリメロ(GB)",
       "dam": "オホヒカリ",
-      "color": "鹿毛",
-      "breeder": "大東牧場（千葉県印旛郡遠山村）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a002a5e",
-      "source": "tsx_conversion",
-      "formerName": "クリノカワ",
-      "formerPedigreeName": "オホヒカリノ三",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -275,23 +285,28 @@
         },
         "divisions": []
       },
-      "died": "1977.11 死亡",
+      "source": "tsx_conversion",
+      "damId": "ohohikari",
       "owner": "栗林友二",
-      "damId": "ohohikari"
+      "died": "1977.11 死亡",
+      "formerName": "クリノカワ",
+      "formerPedigreeName": "オホヒカリノ三"
     },
     {
       "id": "kurikatsura",
       "name": "クリカツラ",
-      "foaled": "1962-04-21",
-      "foaledArray": ["1962", "04", "21"],
+      "foaled": {
+        "year": 1962,
+        "month": 4,
+        "day": 21
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テイエポロ(ITY)",
       "dam": "クリノホシ",
-      "color": "黒鹿毛",
-      "breeder": "大東牧場（千葉県印旛郡遠山村）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955100312",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 47,
@@ -326,28 +341,31 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "22,790,000円"
       },
-      "died": "1984.09 用途変更",
-      "owner": "栗林友二",
+      "damId": "kurinohoshi",
       "trainer": "大久保房松",
-      "jockey": "郷原洋行",
-      "damId": "kurinohoshi"
+      "owner": "栗林友二",
+      "died": "1984.09 用途変更",
+      "jockey": "郷原洋行"
     },
     {
       "id": "lilac-point",
       "name": "ライラックポイント",
-      "foaled": "1979-03-26",
-      "foaledArray": ["1979", "03", "26"],
+      "foaled": {
+        "year": 1979,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",
       "dam": "クリカツラ",
-      "color": "黒鹿毛",
-      "breeder": "ユートピア牧場（北海道室蘭市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1979101622",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 39,
@@ -381,9 +399,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "45,164,000円"
       },
       "raceResults": [
         {
@@ -443,25 +458,31 @@
           "result": "10"
         }
       ],
-      "died": "1997.12.29 死亡",
-      "owner": "栗林友二",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "45,164,000円"
+      },
+      "damId": "kurikatsura",
       "trainer": "飯塚好次",
-      "jockey": "的場均",
-      "damId": "kurikatsura"
+      "owner": "栗林友二",
+      "died": "1997.12.29 死亡",
+      "jockey": "的場均"
     },
     {
       "id": "kuri-dahlia",
       "name": "クリダリア",
-      "foaled": "1986-03-17",
-      "foaledArray": ["1986", "03", "17"],
+      "foaled": {
+        "year": 1986,
+        "month": 3,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ニチドウアラシ",
       "dam": "ライラックポイント",
-      "color": "鹿毛",
-      "breeder": "ユートピア牧場（北海道登別市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1986104818",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 27,
@@ -495,9 +516,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "43,652,600円"
       },
       "raceResults": [
         {
@@ -613,25 +631,31 @@
           "result": "11"
         }
       ],
-      "died": "2007.12.23 死亡",
-      "owner": "栗林英雄",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "43,652,600円"
+      },
+      "damId": "lilac-point",
       "trainer": "飯塚好次",
-      "jockey": "的場均",
-      "damId": "lilac-point"
+      "owner": "栗林英雄",
+      "died": "2007.12.23 死亡",
+      "jockey": "的場均"
     },
     {
       "id": "rice-shower",
       "name": "ライスシャワー",
-      "foaled": "1989-03-05",
-      "foaledArray": ["1989", "03", "05"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ",
       "dam": "ライラックポイント",
-      "color": "黒鹿毛",
-      "breeder": "ユートピア牧場（北海道室蘭市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1989107699",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 25,
@@ -666,15 +690,6 @@
           }
         ]
       },
-      "prizeMoney": {
-        "total": "729,497,000円"
-      },
-      "awards": [
-        {
-          "year": 1995,
-          "award": "JRA特別賞"
-        }
-      ],
       "raceResults": [
         {
           "date": {
@@ -999,25 +1014,37 @@
           "result": "中"
         }
       ],
-      "died": "1995.06.04 予後不良",
-      "owner": "栗林英雄",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "729,497,000円"
+      },
+      "damId": "lilac-point",
       "trainer": "飯塚好次",
-      "jockey": "的場均",
-      "damId": "lilac-point"
+      "owner": "栗林英雄",
+      "died": "1995.06.04 予後不良",
+      "awards": [
+        {
+          "year": 1995,
+          "award": "JRA特別賞"
+        }
+      ],
+      "jockey": "的場均"
     },
     {
       "id": "lincolnshire",
       "name": "リンカーンシア",
-      "foaled": "1980-03-20",
-      "foaledArray": ["1980", "03", "20"],
+      "foaled": {
+        "year": 1980,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボイズイーボーイ(GB)",
       "dam": "クリカツラ",
-      "color": "黒鹿毛",
-      "breeder": "ユートピア牧場（北海道室蘭市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1980102115",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 19,
@@ -1052,26 +1079,29 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "9,240,000円"
       },
-      "died": "1987.02.13 死亡",
+      "damId": "kurikatsura",
       "owner": "栗林英雄",
-      "damId": "kurikatsura"
+      "died": "1987.02.13 死亡"
     },
     {
       "id": "kuri-baron",
       "name": "クリバロン",
-      "foaled": "1985-04-23",
-      "foaledArray": ["1985", "04", "23"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "タクラマカン",
       "dam": "リンカーンシア",
-      "color": "鹿毛",
-      "breeder": "大東牧場（千葉県）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1985103631",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 35,
@@ -1105,9 +1135,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "141,697,000円"
       },
       "raceResults": [
         {
@@ -1181,25 +1208,31 @@
           "result": "中"
         }
       ],
-      "retired": "1991.05.01 乗馬",
-      "owner": "栗林英雄",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "141,697,000円"
+      },
+      "damId": "lincolnshire",
       "trainer": "橋口弘次",
-      "jockey": "池添兼雄",
-      "damId": "lincolnshire"
+      "owner": "栗林英雄",
+      "retired": "1991.05.01 乗馬",
+      "jockey": "池添兼雄"
     },
     {
       "id": "kuri-yutaka",
       "name": "クリユタカ",
-      "foaled": "1968-05-09",
-      "foaledArray": ["1968", "05", "09"],
+      "foaled": {
+        "year": 1968,
+        "month": 5,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "グレイモナーク(GB)",
       "dam": "クリノホシ",
-      "color": "芦毛",
-      "breeder": "大東牧場（千葉県）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1968z00180",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 56,
@@ -1233,9 +1266,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "70,401,000円"
       },
       "raceResults": [
         {
@@ -1295,24 +1325,30 @@
           "result": "6"
         }
       ],
-      "owner": "栗林友二",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "70,401,000円"
+      },
+      "damId": "kurinohoshi",
       "trainer": "阿部正太郎",
-      "jockey": "郷原洋行→法理弘",
-      "damId": "kurinohoshi"
+      "owner": "栗林友二",
+      "jockey": "郷原洋行→法理弘"
     },
     {
       "id": "kuri-hot",
       "name": "クリホツト",
-      "foaled": "1970-05-31",
-      "foaledArray": ["1970", "05", "31"],
+      "foaled": {
+        "year": 1970,
+        "month": 5,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オンリーフオアライフ(GB)",
       "dam": "クリノホシ",
-      "color": "鹿毛",
-      "breeder": "大東牧場（千葉県成田市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955102326",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 4,
@@ -1347,23 +1383,26 @@
           }
         ]
       },
-      "died": "1989.08 用途変更",
+      "source": "tsx_conversion",
+      "damId": "kurinohoshi",
       "owner": "今村正忠",
-      "damId": "kurinohoshi"
+      "died": "1989.08 用途変更"
     },
     {
       "id": "kuri-amie",
       "name": "クリアミー",
-      "foaled": "1974-04-25",
-      "foaledArray": ["1974", "04", "25"],
+      "foaled": {
+        "year": 1974,
+        "month": 4,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シーフユリユー(GB)",
       "dam": "クリホツト",
-      "color": "黒鹿毛",
-      "breeder": "大東牧場（千葉県市原市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1955106006",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 6,
@@ -1398,27 +1437,29 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "3,070,000円"
       },
-      "died": "1992.03.20 用途変更",
+      "damId": "kuri-hot",
       "owner": "山本一夫",
-      "damId": "kuri-hot"
+      "died": "1992.03.20 用途変更"
     },
     {
       "id": "breezy-lad",
       "name": "ブリージーラッド",
-      "foaled": "1981-03-08",
-      "foaledArray": ["1981", "03", "08"],
+      "foaled": {
+        "year": 1981,
+        "month": 3,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ボールドラッド(USA)",
       "dam": "クリアミー",
-      "color": "鹿毛",
-      "breeder": "ユートピア牧場（北海道室蘭市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1981100780",
-      "source": "tsx_conversion",
-      "localName": "ブリージーラツド",
       "raceStats": {
         "total": {
           "runs": 31,
@@ -1452,11 +1493,6 @@
             }
           }
         ]
-      },
-      "prizeMoney": {
-        "total": "105,665,400円",
-        "central": "85,900,400円",
-        "local": "19,765,000円"
       },
       "raceResults": [
         {
@@ -1558,25 +1594,34 @@
           "result": "8"
         }
       ],
-      "retired": "1988.05.11",
-      "owner": "栗林英雄",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "105,665,400円",
+        "central": "85,900,400円",
+        "local": "19,765,000円"
+      },
+      "damId": "kuri-amie",
       "trainer": "秋谷元次（大井）→松田博資（栗東）",
-      "jockey": "松本勉→小島貞博",
-      "damId": "kuri-amie"
+      "owner": "栗林英雄",
+      "localName": "ブリージーラツド",
+      "retired": "1988.05.11",
+      "jockey": "松本勉→小島貞博"
     },
     {
       "id": "kuri-young",
       "name": "クリヤング",
-      "foaled": "1982-03-06",
-      "foaledArray": ["1982", "03", "06"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンネイティヴ(CAN)",
       "dam": "クリアミー",
-      "color": "青鹿毛",
-      "breeder": "ユートピア牧場（北海道室蘭市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1982102140",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 6,
@@ -1611,26 +1656,29 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "660,000円"
       },
-      "died": "1996.10 用途変更",
+      "damId": "kuri-amie",
       "owner": "（有）ユートピア牧場",
-      "damId": "kuri-amie"
+      "died": "1996.10 用途変更"
     },
     {
       "id": "kuri-try",
       "name": "クリトライ",
-      "foaled": "1989-04-01",
-      "foaledArray": ["1989", "04", "01"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フォティテン(USA)",
       "dam": "クリヤング",
-      "color": "青鹿毛",
-      "breeder": "ユートピア牧場（北海道室蘭市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1989107691",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 10,
@@ -1665,9 +1713,6 @@
           }
         ]
       },
-      "prizeMoney": {
-        "total": "35,486,600円"
-      },
       "raceResults": [
         {
           "date": {
@@ -1698,25 +1743,31 @@
           "result": "15"
         }
       ],
-      "retired": "1992.10.02 乗馬",
-      "died": "1992. 廃用？",
-      "owner": "栗林英雄",
+      "source": "tsx_conversion",
+      "prizeMoney": {
+        "total": "35,486,600円"
+      },
+      "damId": "kuri-young",
       "trainer": "阿部新生（美浦）",
-      "damId": "kuri-young"
+      "owner": "栗林英雄",
+      "died": "1992. 廃用？",
+      "retired": "1992.10.02 乗馬"
     },
     {
       "id": "kuri-amount",
       "name": "クリアモン",
-      "foaled": "1992-03-13",
-      "foaledArray": ["1992", "03", "13"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バイアモン(USA)",
       "dam": "クリヤング",
-      "color": "黒鹿毛",
-      "breeder": "ユートピア牧場（北海道登別市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "1992109307",
-      "source": "tsx_conversion",
       "raceStats": {
         "total": {
           "runs": 7,
@@ -1751,20 +1802,24 @@
           }
         ]
       },
+      "source": "tsx_conversion",
       "prizeMoney": {
         "total": "7,750,000円"
       },
-      "retired": "1996.03.22 繫殖",
-      "died": "2011.09.20 死亡",
-      "owner": "（有）ユートピア牧場",
+      "damId": "kuri-young",
       "trainer": "阿部新生（美浦）",
-      "damId": "kuri-young"
+      "owner": "（有）ユートピア牧場",
+      "died": "2011.09.20 死亡",
+      "retired": "1996.03.22 繫殖"
     },
     {
       "id": "clear",
       "name": "クリア",
-      "foaled": "{'year': 1981, 'month': 5, 'day': 24}",
-      "foaledArray": ["1981", "05", "24"],
+      "foaled": {
+        "year": 1981,
+        "month": 5,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンネイティヴ(CAN)",
@@ -1868,8 +1923,9 @@
     {
       "id": "kuri-wakasa",
       "name": "クリワカサ",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ビービービー(US)",
@@ -1891,6 +1947,365 @@
         "total": "0万円"
       },
       "damId": "kuri-hot"
+    },
+    {
+      "id": "kuri-royce",
+      "name": "クリロイス",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ゲイタイム(GB)",
+      "dam": "クリノホシ",
+      "color": "栃栗毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a000ad9",
+      "raceStats": {
+        "total": {
+          "runs": 60,
+          "wins": 12
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1970,
+            "month": 4,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 2,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(OP)",
+          "displayRace": "東京新聞杯",
+          "distance": "ダ2100",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "8",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 1,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "金盃(OP)",
+          "displayRace": "金盃（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(秋)",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "9",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズステーク(OP)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 8,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "京王盃オータムH(OP)",
+          "displayRace": "京王盃オータムH",
+          "distance": "ダ1700",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 6,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "5",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 3,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 3,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "ダ2300",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 2,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 2,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "東京新聞盃(OP)",
+          "displayRace": "東京新聞盃",
+          "distance": "ダ2100",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "2",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "金盃(OP)",
+          "displayRace": "金盃（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "3",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念(OP)",
+          "displayRace": "クモハタ記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 9,
+            "day": 1
+          },
+          "racecourse": "東京",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 7,
+            "day": 14
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 6,
+            "day": 18
+          },
+          "racecourse": "中山",
+          "race": "日本短波賞(OP)",
+          "displayRace": "日本短波賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "28",
+          "result": "13",
+          "favorite": "23"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 4,
+            "day": 30
+          },
+          "racecourse": "中山",
+          "race": "NHK盃(OP)",
+          "displayRace": "NHK盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "5",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 3,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "8",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kuri Royce",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kurinohoshi"
     }
   ]
 }

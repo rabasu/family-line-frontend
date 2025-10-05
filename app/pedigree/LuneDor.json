@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Lune d'Or",
     "rootHorseId": "lune-dor",
-    "lastUpdated": "2025-09-18T03:19:29.535114Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lune-dor",
       "name": "リュヌドール",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 22}",
-      "foaledArray": ["2001", "04", "22"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Green Tune",
@@ -32,8 +35,11 @@
     {
       "id": "fierement",
       "name": "フィエールマン",
-      "foaled": "{'year': 2015, 'month': 1, 'day': 20}",
-      "foaledArray": ["2015", "01", "20"],
+      "foaled": {
+        "year": 2015,
+        "month": 1,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

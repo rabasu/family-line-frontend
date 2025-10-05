@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Kate Hodder",
     "rootHorseId": "kate-hodder",
-    "lastUpdated": "2025-09-25T17:59:39.693951Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kate-hodder",
       "name": "ケイトホダア",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sir Ivor(US)",
@@ -32,8 +33,11 @@
     {
       "id": "uto-jane",
       "name": "ユートジェーン",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 25}",
-      "foaledArray": ["1989", "03", "25"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マルゼンスキー",

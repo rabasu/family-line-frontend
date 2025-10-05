@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lyndonville",
     "rootHorseId": "lyndonville",
-    "lastUpdated": "2025-09-24T14:12:44.446423Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lyndonville",
       "name": "Lyndonville",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Top Ville",
@@ -31,8 +32,11 @@
     {
       "id": "tsukuba-symphony",
       "name": "ツクバシンフォニー",
-      "foaled": "{'year': 1993, 'month': 1, 'day': 22}",
-      "foaledArray": ["1993", "01", "22"],
+      "foaled": {
+        "year": 1993,
+        "month": 1,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",

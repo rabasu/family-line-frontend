@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Jet Setting",
     "rootHorseId": "jet-setting",
-    "lastUpdated": "2025-09-16T08:12:48.507872Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jet-setting",
       "name": "ジェットセッティング",
-      "foaled": "{'year': 2013, 'month': 2, 'day': 16}",
-      "foaledArray": ["2013", "02", "16"],
+      "foaled": {
+        "year": 2013,
+        "month": 2,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fast Company",
@@ -32,8 +35,11 @@
     {
       "id": "pace-setting",
       "name": "ペースセッティング",
-      "foaled": "{'year': 2020, 'month': 3, 'day': 26}",
-      "foaledArray": ["2020", "03", "26"],
+      "foaled": {
+        "year": 2020,
+        "month": 3,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Showcasing",

@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "La Liz",
     "rootHorseId": "la-liz",
-    "lastUpdated": "2025-09-17T03:03:14.654053Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "la-liz",
       "name": "ラリズ",
-      "foaled": "{'year': 2004, 'month': 8, 'day': 10}",
-      "foaledArray": ["2004", "08", "10"],
+      "foaled": {
+        "year": 2004,
+        "month": 8,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bernstein",
@@ -32,8 +35,11 @@
     {
       "id": "hishi-iguazu",
       "name": "ヒシイグアス",
-      "foaled": "{'year': 2016, 'month': 1, 'day': 22}",
-      "foaledArray": ["2016", "01", "22"],
+      "foaled": {
+        "year": 2016,
+        "month": 1,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

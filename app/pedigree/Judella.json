@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Judella",
     "rootHorseId": "judella",
-    "lastUpdated": "2025-09-27T15:56:11.003180Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "judella",
       "name": "ジユデラ",
-      "foaled": "{'year': 1953}",
-      "foaledArray": ["1953"],
+      "foaled": {
+        "year": 1953
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Niccolo Dell'Arca",
@@ -32,8 +33,9 @@
     {
       "id": "jupique",
       "name": "ジュピツク",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Tropique",
@@ -165,8 +167,11 @@
     {
       "id": "hamana-jubi",
       "name": "ハマナジュビー",
-      "foaled": "{'year': 1982, 'month': 5, 'day': 6}",
-      "foaledArray": ["1982", "05", "06"],
+      "foaled": {
+        "year": 1982,
+        "month": 5,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラッキーソブリン",
@@ -192,8 +197,11 @@
     {
       "id": "isami-sakura",
       "name": "イサミサクラ",
-      "foaled": "{'year': 1992, 'month': 3, 'day': 24}",
-      "foaledArray": ["1992", "03", "24"],
+      "foaled": {
+        "year": 1992,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アイネスフウジン",
@@ -327,8 +335,11 @@
     {
       "id": "reward-plunder",
       "name": "リワードプランダー",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 6}",
-      "foaledArray": ["1990", "05", "06"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "クリスタルグリッターズ(US)",
@@ -432,8 +443,11 @@
     {
       "id": "nehai-answer",
       "name": "ネーハイアンサー",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 16}",
-      "foaledArray": ["1980", "04", "16"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンアンサー(CAN)",
@@ -492,8 +506,9 @@
     {
       "id": "die-hard-big",
       "name": "ダイハードビック",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイハード(GB)",

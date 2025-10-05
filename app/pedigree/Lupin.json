@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Lupin",
     "rootHorseId": "lupin",
-    "lastUpdated": "2025-09-16T04:42:59.597507Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lupin",
       "name": "ルパンII",
-      "foaled": "{'year': 2014, 'month': 4, 'day': 13}",
-      "foaledArray": ["2014", "04", "13"],
+      "foaled": {
+        "year": 2014,
+        "month": 4,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Medaglia d'Oro",
@@ -32,8 +35,11 @@
     {
       "id": "di-speranza",
       "name": "ディスペランツァ",
-      "foaled": "{'year': 2021, 'month': 3, 'day': 2}",
-      "foaledArray": ["2021", "03", "02"],
+      "foaled": {
+        "year": 2021,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",
@@ -152,8 +158,11 @@
     {
       "id": "phantom-thief",
       "name": "ファントムシーフ",
-      "foaled": "{'year': 2020, 'month': 2, 'day': 22}",
-      "foaledArray": ["2020", "02", "22"],
+      "foaled": {
+        "year": 2020,
+        "month": 2,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハービンジャー(GB)",

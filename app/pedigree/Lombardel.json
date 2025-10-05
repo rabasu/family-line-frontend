@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lombardel",
     "rootHorseId": "lombardel",
-    "lastUpdated": "2025-09-24T08:41:22.284840Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lombardel",
       "name": "ロンバーデル",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lombardi",
@@ -32,8 +33,11 @@
     {
       "id": "yuwa-falcon",
       "name": "ユーワファルコン",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 7}",
-      "foaledArray": ["1997", "04", "07"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "スターオブコジーン(US)",

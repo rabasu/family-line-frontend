@@ -1,16 +1,17 @@
 {
   "metadata": {
     "pedigreeName": "Lettre d'Amour",
-    "rootHorseId": "lettre-damour",
-    "lastUpdated": "2025-09-24T20:20:57.455468Z",
-    "source": "python_scraping"
+    "rootHorseId": "lettre-damour-1979",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lettre-damour-1979",
       "name": "Lettre d'Amour",
-      "foaled": "{'year': 1979}",
-      "foaledArray": ["1979"],
+      "foaled": {
+        "year": 1979
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caro",
@@ -31,8 +32,11 @@
     {
       "id": "meiner-messer",
       "name": "マイネルメッサー",
-      "foaled": "{'year': 1995, 'month': 2, 'day': 1}",
-      "foaledArray": ["1995", "02", "01"],
+      "foaled": {
+        "year": 1995,
+        "month": 2,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Diesis",

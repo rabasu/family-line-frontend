@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lynphae",
     "rootHorseId": "lynphae",
-    "lastUpdated": "2025-09-19T01:31:59.250304Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lynphae",
       "name": "リファン",
-      "foaled": "{'year': 1990}",
-      "foaledArray": ["1990"],
+      "foaled": {
+        "year": 1990
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Fappiano(US)",
@@ -32,8 +33,11 @@
     {
       "id": "fumino-cinderella",
       "name": "フミノシンデレラ",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 23}",
-      "foaledArray": ["2000", "04", "23"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンダーガルチ(US)",
@@ -61,8 +65,11 @@
     {
       "id": "fumino-moon",
       "name": "フミノムーン",
-      "foaled": "{'year': 2012, 'month': 3, 'day': 30}",
-      "foaledArray": ["2012", "03", "30"],
+      "foaled": {
+        "year": 2012,
+        "month": 3,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アドマイヤムーン a",

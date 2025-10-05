@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Laurea",
     "rootHorseId": "laurea",
-    "lastUpdated": "2025-09-25T03:50:02.363678Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "laurea",
       "name": "Laurea",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sharpman",
@@ -31,8 +32,11 @@
     {
       "id": "lando",
       "name": "ランド",
-      "foaled": "{'year': 1990, 'month': 1, 'day': 23}",
-      "foaledArray": ["1990", "01", "23"],
+      "foaled": {
+        "year": 1990,
+        "month": 1,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Acatenango",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "June Moon",
     "rootHorseId": "june-moon",
-    "lastUpdated": "2025-09-24T03:37:04.706523Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "june-moon",
       "name": "June Moon",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler's Wells(US)",
@@ -31,8 +32,11 @@
     {
       "id": "zachariah",
       "name": "ザカリヤ",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 26}",
-      "foaledArray": ["1996", "02", "26"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Zafonic(US)",

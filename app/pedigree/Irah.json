@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Irah",
     "rootHorseId": "irah",
-    "lastUpdated": "2025-09-27T12:51:41.030601Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "irah",
       "name": "イラー",
-      "foaled": "{'year': 1960}",
-      "foaledArray": ["1960"],
+      "foaled": {
+        "year": 1960
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アイアンリージ",
@@ -32,8 +33,9 @@
     {
       "id": "zariba-kuihn",
       "name": "ザリバクイーン",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングスベンチ",
@@ -59,8 +61,9 @@
     {
       "id": "quadrille",
       "name": "カドリール",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -86,8 +89,11 @@
     {
       "id": "leotingo",
       "name": "レオティンゴ",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 4}",
-      "foaledArray": ["1982", "03", "04"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サティンゴ",

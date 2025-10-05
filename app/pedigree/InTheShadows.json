@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "In the Shadows",
     "rootHorseId": "in-the-shadows",
-    "lastUpdated": "2025-09-25T22:30:20.854517Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "in-the-shadows",
       "name": "インザシャドウズ",
-      "foaled": "{'year': 1964}",
-      "foaledArray": ["1964"],
+      "foaled": {
+        "year": 1964
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Above Suspicion",
@@ -32,8 +33,9 @@
     {
       "id": "red-shadow",
       "name": "レツドシャドウ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バーバー(GB)",
@@ -59,8 +61,9 @@
     {
       "id": "shadow",
       "name": "シヤドウ",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ウエンセスラス",
@@ -86,8 +89,11 @@
     {
       "id": "kashiwas-princess",
       "name": "カシワズプリンセス",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 14}",
-      "foaledArray": ["1989", "04", "14"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルスキー",
@@ -236,8 +242,11 @@
     {
       "id": "oak-spirits",
       "name": "オークスピリッツ",
-      "foaled": "{'year': 1994, 'month': 5, 'day': 7}",
-      "foaledArray": ["1994", "05", "07"],
+      "foaled": {
+        "year": 1994,
+        "month": 5,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -263,8 +272,11 @@
     {
       "id": "ike-top-gun",
       "name": "イケトップガン",
-      "foaled": "{'year': 2004, 'month': 6, 'day': 17}",
-      "foaledArray": ["2004", "06", "17"],
+      "foaled": {
+        "year": 2004,
+        "month": 6,
+        "day": 17
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",
@@ -413,8 +425,11 @@
     {
       "id": "leo-silence",
       "name": "レオサイレンス",
-      "foaled": "{'year': 1988, 'month': 3, 'day': 22}",
-      "foaledArray": ["1988", "03", "22"],
+      "foaled": {
+        "year": 1988,
+        "month": 3,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ジョンデコーム(GB)",
@@ -514,6 +529,185 @@
         "local": "0万円"
       },
       "damId": "shadow"
+    },
+    {
+      "id": "kane-oe",
+      "name": "カネオオエ",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "バーバー(GB)",
+      "dam": "インザシャドウズ",
+      "color": "鹿毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a000c38",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(OP)",
+          "displayRace": "毎日王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 6,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "福島",
+          "race": "福島大賞典(OP)",
+          "displayRace": "福島大賞典",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 4,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "9",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 3,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "11",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "福島",
+          "race": "七夕賞(OP)",
+          "displayRace": "七夕賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "安田記念(OP)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "7",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "7",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "14",
+          "result": "6",
+          "favorite": "13"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Kane Oe",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "in-the-shadows"
     }
   ]
 }

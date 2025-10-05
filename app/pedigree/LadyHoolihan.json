@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady Hoolihan",
     "rootHorseId": "lady-hoolihan",
-    "lastUpdated": "2025-09-21T19:11:30.196586Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-hoolihan",
       "name": "レディーホリハン",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alydar a",
@@ -32,8 +33,11 @@
     {
       "id": "yakumo-wild",
       "name": "ヤクモワイルド",
-      "foaled": "{'year': 1992, 'month': 5, 'day': 4}",
-      "foaledArray": ["1992", "05", "04"],
+      "foaled": {
+        "year": 1992,
+        "month": 5,
+        "day": 4
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Wild Again",
@@ -61,8 +65,11 @@
     {
       "id": "spring-caesar",
       "name": "スプリングカエサル",
-      "foaled": "{'year': 2006, 'month': 4, 'day': 20}",
-      "foaledArray": ["2006", "04", "20"],
+      "foaled": {
+        "year": 2006,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",

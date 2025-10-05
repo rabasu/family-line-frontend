@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Ipswich",
     "rootHorseId": "ipswich",
-    "lastUpdated": "2025-09-15T09:39:42.414145Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ipswich",
       "name": "イプスウィッチ",
-      "foaled": "{'year': 2010, 'month': 4, 'day': 24}",
-      "foaledArray": ["2010", "04", "24"],
+      "foaled": {
+        "year": 2010,
+        "month": 4,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danehill Dancer(IRE)",
@@ -32,8 +35,11 @@
     {
       "id": "veloce-era",
       "name": "ヴェローチェエラ",
-      "foaled": "{'year': 2021, 'month': 3, 'day': 5}",
-      "foaledArray": ["2021", "03", "05"],
+      "foaled": {
+        "year": 2021,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルスティール",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady Ying",
     "rootHorseId": "lady-ying",
-    "lastUpdated": "2025-09-16T05:12:48.351630Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-ying",
       "name": "レディイン",
-      "foaled": "{'year': 1999}",
-      "foaledArray": ["1999"],
+      "foaled": {
+        "year": 1999
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kendor",
@@ -32,8 +33,11 @@
     {
       "id": "ichiokuno-hoshi",
       "name": "イチオクノホシ",
-      "foaled": "{'year': 2009, 'month': 4, 'day': 2}",
-      "foaledArray": ["2009", "04", "02"],
+      "foaled": {
+        "year": 2009,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ゼンノロブロイ",
@@ -152,14 +156,17 @@
     {
       "id": "mini-transat",
       "name": "ミニトランザット",
-      "foaled": "{'year': 2022, 'month': 4, 'day': 11}",
-      "foaledArray": ["2022", "04", "11"],
+      "foaled": {
+        "year": 2022,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",
       "dam": "イチオクノホシ",
-      "color": "芦毛",
-      "breeder": "社台ファーム（千歳市）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022105230",
       "raceStats": {
         "total": {
@@ -242,8 +249,11 @@
     {
       "id": "costa-bonita",
       "name": "コスタボニータ",
-      "foaled": "{'year': 2019, 'month': 4, 'day': 29}",
-      "foaledArray": ["2019", "04", "29"],
+      "foaled": {
+        "year": 2019,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イスラボニータ",
@@ -437,8 +447,11 @@
     {
       "id": "ipheion",
       "name": "イフェイオン",
-      "foaled": "{'year': 2021, 'month': 4, 'day': 1}",
-      "foaledArray": ["2021", "04", "01"],
+      "foaled": {
+        "year": 2021,
+        "month": 4,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エピファネイア",

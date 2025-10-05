@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Ireland",
     "rootHorseId": "ireland",
-    "lastUpdated": "2025-09-26T10:09:19.265619Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "ireland",
       "name": "アイアランド",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Milesian",
@@ -32,8 +33,11 @@
     {
       "id": "katsu-taifu",
       "name": "カツタイフウ",
-      "foaled": "{'year': 1975, 'month': 4, 'day': 11}",
-      "foaledArray": ["1975", "04", "11"],
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -59,8 +63,11 @@
     {
       "id": "katsu-taifu-o",
       "name": "カツタイフウオー",
-      "foaled": "{'year': 1983, 'month': 5, 'day': 1}",
-      "foaledArray": ["1983", "05", "01"],
+      "foaled": {
+        "year": 1983,
+        "month": 5,
+        "day": 1
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヴァリィフォージュ(IRE)",

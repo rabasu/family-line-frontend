@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "コウラク",
     "rootHorseId": "kouraku",
-    "lastUpdated": "2025-09-23T20:36:30.102613Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kouraku",
       "name": "コウラク",
-      "foaled": "{'year': 1952}",
-      "foaledArray": ["1952"],
+      "foaled": {
+        "year": 1952
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Paper Boy",
@@ -31,8 +32,9 @@
     {
       "id": "hully",
       "name": "ハリー",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミナミホマレ",
@@ -119,8 +121,9 @@
     {
       "id": "millet",
       "name": "ミレー",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "チャイナロック(GB)",
@@ -146,8 +149,11 @@
     {
       "id": "mars-crown",
       "name": "マルスクラウン",
-      "foaled": "{'year': 1985, 'month': 5, 'day': 20}",
-      "foaledArray": ["1985", "05", "20"],
+      "foaled": {
+        "year": 1985,
+        "month": 5,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クラウンドプリンス",
@@ -173,8 +179,11 @@
     {
       "id": "royal-bio",
       "name": "ロイヤルバイオ",
-      "foaled": "{'year': 1991, 'month': 3, 'day': 7}",
-      "foaledArray": ["1991", "03", "07"],
+      "foaled": {
+        "year": 1991,
+        "month": 3,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリルドルフ",
@@ -200,8 +209,11 @@
     {
       "id": "active-bio",
       "name": "アクティブバイオ",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 24}",
-      "foaledArray": ["1997", "05", "24"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オペラハウス(GB)",
@@ -676,6 +688,82 @@
         "local": "0万円"
       },
       "damId": "royal-bio"
+    },
+    {
+      "id": "hiyoshi-shikainami",
+      "name": "ヒヨシシカイナミ",
+      "foaled": {
+        "year": 1977,
+        "month": 3,
+        "day": 27
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "シンザン",
+      "dam": "ミレー",
+      "color": "鹿毛",
+      "breeder": "十字善三郎（三石町）",
+      "netkeibaId": "1977102970",
+      "raceStats": {
+        "total": {
+          "runs": 34,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1982,
+            "month": 12,
+            "day": 5
+          },
+          "racecourse": "中京",
+          "race": "愛知杯(OP)",
+          "displayRace": "愛知杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1982,
+            "month": 7,
+            "day": 11
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "8",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "中京",
+          "race": "愛知杯(OP)",
+          "displayRace": "愛知杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hiyoshi Shikainami",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "millet"
     }
   ]
 }

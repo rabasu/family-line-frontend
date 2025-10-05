@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Kandent",
     "rootHorseId": "kandent",
-    "lastUpdated": "2025-09-25T10:25:00.602471Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kandent",
       "name": "カンデント",
-      "foaled": "{'year': 1958}",
-      "foaledArray": ["1958"],
+      "foaled": {
+        "year": 1958
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Buisson Ardent",
@@ -32,8 +33,9 @@
     {
       "id": "suino-martine",
       "name": "スイノマーチン",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイハード(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "hirono-favored",
       "name": "ヒロノフェイバアド",
-      "foaled": "{'year': 1980, 'month': 4, 'day': 29}",
-      "foaledArray": ["1980", "04", "29"],
+      "foaled": {
+        "year": 1980,
+        "month": 4,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -86,8 +91,11 @@
     {
       "id": "kisoji-gold",
       "name": "キソジゴールド",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 16}",
-      "foaledArray": ["1989", "04", "16"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ワッスルタッチ(US)",
@@ -431,8 +439,11 @@
     {
       "id": "homare-okan",
       "name": "ホマレオーカン",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 22}",
-      "foaledArray": ["1990", "05", "22"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サクラユタカオー",
@@ -686,8 +697,11 @@
     {
       "id": "gold-moon",
       "name": "ゴールドムーン",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 3}",
-      "foaledArray": ["1982", "04", "03"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リィフォー(GB)",
@@ -715,8 +729,9 @@
     {
       "id": "kazuno-regal",
       "name": "カズノリーガル",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アローエクスプレス",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Little Kiss",
     "rootHorseId": "little-kiss",
-    "lastUpdated": "2025-09-24T23:53:04.439793Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "little-kiss",
       "name": "リトルキッス",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Danzig",
@@ -32,8 +33,11 @@
     {
       "id": "slew-ogreen",
       "name": "スルーオグリーン",
-      "foaled": "{'year': 1994, 'month': 3, 'day': 7}",
-      "foaledArray": ["1994", "03", "07"],
+      "foaled": {
+        "year": 1994,
+        "month": 3,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",

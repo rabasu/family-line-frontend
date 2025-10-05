@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Kastria",
     "rootHorseId": "kastria",
-    "lastUpdated": "2025-09-21T03:48:27.648877Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kastria",
       "name": "カストリア",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -32,8 +33,11 @@
     {
       "id": "shuji",
       "name": "シュウジ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 16}",
-      "foaledArray": ["2013", "03", "16"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 16
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キンシャサノキセキ",
@@ -437,8 +441,11 @@
     {
       "id": "tsurumaru-leon",
       "name": "ツルマルレオン",
-      "foaled": "{'year': 2008, 'month': 4, 'day': 30}",
-      "foaledArray": ["2008", "04", "30"],
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 30
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",

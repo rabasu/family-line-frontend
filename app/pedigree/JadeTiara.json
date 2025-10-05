@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Jade Tiara",
     "rootHorseId": "jade-tiara",
-    "lastUpdated": "2025-09-23T09:03:24.215033Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jade-tiara",
       "name": "Jade Tiara",
-      "foaled": "{'year': 1993, 'month': 1, 'day': 1}",
-      "foaledArray": ["1993", "01", "01"],
+      "foaled": {
+        "year": 1993,
+        "month": 1,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Bureaucracy",
@@ -31,8 +34,11 @@
     {
       "id": "silent-witness",
       "name": "サイレントウィットネス",
-      "foaled": "{'year': 1999, 'month': 10, 'day': 1}",
-      "foaledArray": ["1999", "10", "01"],
+      "foaled": {
+        "year": 1999,
+        "month": 10,
+        "day": 1
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "El Moxie",

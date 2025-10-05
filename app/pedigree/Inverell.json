@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Inverell",
     "rootHorseId": "inverell",
-    "lastUpdated": "2025-09-24T17:49:16.026742Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "inverell",
       "name": "インバレル",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Slew o' Gold",
@@ -32,8 +33,11 @@
     {
       "id": "tagano-shaadi",
       "name": "タガノシャーディ",
-      "foaled": "{'year': 1993, 'month': 3, 'day': 29}",
-      "foaledArray": ["1993", "03", "29"],
+      "foaled": {
+        "year": 1993,
+        "month": 3,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シャーディー(US)",
@@ -61,8 +65,11 @@
     {
       "id": "asuka-top-lady",
       "name": "アスカトップレディ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 13}",
-      "foaledArray": ["2007", "03", "13"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 13
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アドマイヤボス",
@@ -286,8 +293,11 @@
     {
       "id": "daiwa-superior",
       "name": "ダイワスペリアー",
-      "foaled": "{'year': 1995, 'month': 5, 'day': 15}",
-      "foaledArray": ["1995", "05", "15"],
+      "foaled": {
+        "year": 1995,
+        "month": 5,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルシャダイ(US)",

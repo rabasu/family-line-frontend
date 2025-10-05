@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lucky Pisces",
     "rootHorseId": "lucky-pisces",
-    "lastUpdated": "2025-09-23T10:34:06.292625Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lucky-pisces",
       "name": "ラッキーパイシーズ",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Crafty Prospector",
@@ -32,8 +33,11 @@
     {
       "id": "agnes-jedi",
       "name": "アグネスジェダイ",
-      "foaled": "{'year': 2002, 'month': 2, 'day': 11}",
-      "foaledArray": ["2002", "02", "11"],
+      "foaled": {
+        "year": 2002,
+        "month": 2,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスワールド",

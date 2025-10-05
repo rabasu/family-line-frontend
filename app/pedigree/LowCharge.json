@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Low Charge",
     "rootHorseId": "low-charge",
-    "lastUpdated": "2025-09-26T07:37:09.157289Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "low-charge",
       "name": "トサノウサ",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Low Signal",
@@ -32,8 +33,9 @@
     {
       "id": "seiki-hikari",
       "name": "セイキヒカリ",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シマタカ",
@@ -59,8 +61,9 @@
     {
       "id": "queen-seiki",
       "name": "クインセイキ",
-      "foaled": "{'year': 1963}",
-      "foaledArray": ["1963"],
+      "foaled": {
+        "year": 1963
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クレイマント(GB)",
@@ -86,8 +89,9 @@
     {
       "id": "zenith-queen",
       "name": "ゼニスクイン",
-      "foaled": "{'year': 1972}",
-      "foaledArray": ["1972"],
+      "foaled": {
+        "year": 1972
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "チャイナロック(GB)",
@@ -113,8 +117,11 @@
     {
       "id": "tesco-ivy",
       "name": "テスコアイビー",
-      "foaled": "{'year': 1982, 'month': 3, 'day': 26}",
-      "foaledArray": ["1982", "03", "26"],
+      "foaled": {
+        "year": 1982,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -142,8 +149,11 @@
     {
       "id": "shako-tesco",
       "name": "シャコーテスコ",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 27}",
-      "foaledArray": ["1994", "04", "27"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホスピタリテイ",
@@ -337,8 +347,11 @@
     {
       "id": "cool-heart",
       "name": "クールハート",
-      "foaled": "{'year': 1984, 'month': 3, 'day': 24}",
-      "foaledArray": ["1984", "03", "24"],
+      "foaled": {
+        "year": 1984,
+        "month": 3,
+        "day": 24
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディクタス(FR)",
@@ -652,8 +665,11 @@
     {
       "id": "cornelian",
       "name": "コーネリアン",
-      "foaled": "{'year': 1978, 'month': 3, 'day': 27}",
-      "foaledArray": ["1978", "03", "27"],
+      "foaled": {
+        "year": 1978,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",
@@ -679,8 +695,9 @@
     {
       "id": "maranda",
       "name": "マランダ",
-      "foaled": "{'year': 1970}",
-      "foaledArray": ["1970"],
+      "foaled": {
+        "year": 1970
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "オンリーフォアライフ",
@@ -722,8 +739,9 @@
     {
       "id": "guriinraito",
       "name": "グリーンライト",
-      "foaled": "{'year': 1955}",
-      "foaledArray": ["1955"],
+      "foaled": {
+        "year": 1955
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トサミドリ",
@@ -748,8 +766,11 @@
     {
       "id": "cape-point",
       "name": "ケープポイント",
-      "foaled": "{'year': 1983, 'month': 4, 'day': 11}",
-      "foaledArray": ["1983", "04", "11"],
+      "foaled": {
+        "year": 1983,
+        "month": 4,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "マイスワロー(GB)",
@@ -999,6 +1020,178 @@
         "local": "0万円"
       },
       "damId": "cornelian"
+    },
+    {
+      "id": "nepuchufuru",
+      "name": "ネプチュフル",
+      "foaled": {
+        "year": 1975,
+        "month": 4,
+        "day": 8
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ネプテューヌス(FR)",
+      "dam": "セレナーデ",
+      "color": "栗毛",
+      "breeder": "高田実（門別町）",
+      "netkeibaId": "1975z01275",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1980,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "中京",
+          "race": "高松宮杯(OP)",
+          "displayRace": "高松宮杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "9",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 11,
+            "day": 4
+          },
+          "racecourse": "阪神",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "3",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "serenaade",
+      "name": "セレナーデ",
+      "foaled": {
+        "year": 1966
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "セダン(FR)",
+      "dam": "グリーンライト",
+      "color": "鹿毛",
+      "breeder": "栃木県",
+      "netkeibaId": "1955100652",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "guriinraito"
+    },
+    {
+      "id": "kaarusubatto",
+      "name": "カールスバット",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "インターメゾ(GB)",
+      "dam": "マリヤローズ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1974z00135",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1978,
+            "month": 9,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "1",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1978,
+            "month": 8,
+            "day": 27
+          },
+          "racecourse": "新潟",
+          "race": "新潟記念(OP)",
+          "displayRace": "新潟記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "4",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "maria-rose"
+    },
+    {
+      "id": "maria-rose",
+      "name": "マリヤローズ",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "シプリアニ(ITA)",
+      "dam": "グリーンライト",
+      "color": "鹿毛",
+      "breeder": "栃木県",
+      "netkeibaId": "1955100653",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Maria Rose",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "guriinraito"
     }
   ]
 }

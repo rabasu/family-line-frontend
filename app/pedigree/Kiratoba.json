@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Kiratoba",
     "rootHorseId": "kiratoba",
-    "lastUpdated": "2025-09-27T04:36:42.943539Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kiratoba",
       "name": "キラトバ",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Exclusive Native",
@@ -32,8 +33,11 @@
     {
       "id": "eishin-percy",
       "name": "エイシンパーシー",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 26}",
-      "foaledArray": ["1990", "04", "26"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 26
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ノーザンテースト(CAN)",

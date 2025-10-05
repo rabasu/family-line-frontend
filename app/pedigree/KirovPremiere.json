@@ -2,21 +2,24 @@
   "metadata": {
     "pedigreeName": "Kirov Premiere",
     "rootHorseId": "kirov-premiere",
-    "lastUpdated": "2025-09-20T18:56:15.908710Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kirov-premiere",
       "name": "キロフプリミエール",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 15}",
-      "foaledArray": ["1990", "04", "15"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Sadler(US)",
       "dam": "Querida",
-      "color": "鹿毛",
-      "breeder": "英",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "000a0064dc",
       "raceStats": {
         "total": {
@@ -32,8 +35,11 @@
     {
       "id": "cesario",
       "name": "シーザリオ",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 31}",
-      "foaledArray": ["2002", "03", "31"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 31
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スペシャルウィーク",
@@ -122,14 +128,17 @@
     {
       "id": "celia",
       "name": "シーリア",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 17}",
-      "foaledArray": ["2015", "03", "17"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
       "dam": "シーザリオ",
-      "color": "鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2015104823",
       "raceStats": {
         "total": {
@@ -151,14 +160,17 @@
     {
       "id": "vincentio",
       "name": "ヴィンセンシオ",
-      "foaled": "{'year': 2022, 'month': 2, 'day': 6}",
-      "foaledArray": ["2022", "02", "06"],
+      "foaled": {
+        "year": 2022,
+        "month": 2,
+        "day": 6
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リアルスティール",
       "dam": "シーリア",
-      "color": "黒鹿毛",
-      "breeder": "ノーザンファーム（安平町）",
+      "color": "",
+      "breeder": "",
       "netkeibaId": "2022104832",
       "raceStats": {
         "total": {
@@ -226,8 +238,11 @@
     {
       "id": "authority-2017",
       "name": "オーソリティ",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 12}",
-      "foaledArray": ["2017", "02", "12"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "オルフェーヴル",
@@ -451,8 +466,11 @@
     {
       "id": "rosalind",
       "name": "ロザリンド",
-      "foaled": "{'year': 2011, 'month': 2, 'day': 3}",
-      "foaledArray": ["2011", "02", "03"],
+      "foaled": {
+        "year": 2011,
+        "month": 2,
+        "day": 3
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -480,8 +498,11 @@
     {
       "id": "lupercalia",
       "name": "ルペルカーリア",
-      "foaled": "{'year': 2018, 'month': 4, 'day': 28}",
-      "foaledArray": ["2018", "04", "28"],
+      "foaled": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "モーリス",
@@ -570,8 +591,11 @@
     {
       "id": "saturnalia",
       "name": "サートゥルナーリア",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 21}",
-      "foaledArray": ["2016", "03", "21"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ロードカナロア",
@@ -720,13 +744,15 @@
     {
       "id": "leontes",
       "name": "リオンディーズ",
-      "foaled": "{'year': 2013, 'month': 1, 'day': 29}",
-      "foaledArray": ["2013", "01", "29"],
+      "foaled": {
+        "year": 2013,
+        "month": 1,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "キングカメハメハ",
       "dam": "シーザリオ",
-      "dam_netkeiba_id": "2002100844",
       "color": "黒鹿毛",
       "breeder": "ノーザンファーム（安平町）",
       "netkeibaId": "2013105915",
@@ -806,13 +832,17 @@
         "central": "1億3,040万円",
         "local": "0万円"
       },
-      "damId": "cesario"
+      "damId": "cesario",
+      "dam_netkeiba_id": "2002100844"
     },
     {
       "id": "epiphaneia",
       "name": "エピファネイア",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 11}",
-      "foaledArray": ["2010", "02", "11"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 11
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",

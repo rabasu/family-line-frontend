@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady Glenna",
     "rootHorseId": "lady-glenna",
-    "lastUpdated": "2025-09-23T21:34:37.513139Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-glenna",
       "name": "Lady Glenna",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lion d'Or",
@@ -31,8 +32,11 @@
     {
       "id": "toshi-the-boss",
       "name": "トシザボス",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 8}",
-      "foaledArray": ["1998", "02", "08"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 8
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Lost Code",

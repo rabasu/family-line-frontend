@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Jood",
     "rootHorseId": "jood",
-    "lastUpdated": "2025-09-24T09:10:10.134227Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jood",
       "name": "Jood",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",
@@ -31,8 +32,11 @@
     {
       "id": "fantastic-light",
       "name": "ファンタスティックライト",
-      "foaled": "{'year': 1996, 'month': 2, 'day': 13}",
-      "foaledArray": ["1996", "02", "13"],
+      "foaled": {
+        "year": 1996,
+        "month": 2,
+        "day": 13
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Rahy",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Links of Gold",
     "rootHorseId": "links-of-gold",
-    "lastUpdated": "2025-09-25T01:25:01.111617Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "links-of-gold",
       "name": "リンクスオブゴールド",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Linkage",
@@ -32,8 +33,11 @@
     {
       "id": "yaeno-jo-o",
       "name": "ヤエノジョオー",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 18}",
-      "foaledArray": ["1990", "04", "18"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Cure the Blues",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Laila Alawi",
     "rootHorseId": "laila-alawi",
-    "lastUpdated": "2025-09-23T02:16:11.819731Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "laila-alawi",
       "name": "ライラアラウィ",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Mtoto",
@@ -32,8 +33,11 @@
     {
       "id": "fjord-cruise",
       "name": "フィヨルドクルーズ",
-      "foaled": "{'year': 2001, 'month': 4, 'day': 20}",
-      "foaledArray": ["2001", "04", "20"],
+      "foaled": {
+        "year": 2001,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

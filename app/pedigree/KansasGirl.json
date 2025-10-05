@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Kansas Girl",
     "rootHorseId": "kansas-girl",
-    "lastUpdated": "2025-09-21T13:55:13.341321Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "kansas-girl",
       "name": "カンザスガール",
-      "foaled": "{'year': 1998, 'month': 2, 'day': 12}",
-      "foaledArray": ["1998", "02", "12"],
+      "foaled": {
+        "year": 1998,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンダーガルチ(US)",
@@ -32,8 +35,11 @@
     {
       "id": "a-shin-virgo",
       "name": "エーシンヴァーゴウ",
-      "foaled": "{'year': 2007, 'month': 3, 'day': 19}",
-      "foaledArray": ["2007", "03", "19"],
+      "foaled": {
+        "year": 2007,
+        "month": 3,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファルブラヴ(IRE)",

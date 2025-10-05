@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Lambada Style",
     "rootHorseId": "lambada-style",
-    "lastUpdated": "2025-09-24T10:41:21.731817Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lambada-style",
       "name": "ランバダスタイル",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダンシングブレーヴ(US)",
       "dam": "Santa's Sister",
-      "dam_netkeiba_id": "",
       "color": "黒鹿毛",
       "breeder": "愛",
       "netkeibaId": "000a006467",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Lambada Style"
+      "englishName": "Lambada Style",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "passional-dance",
       "name": "パッショナルダンス",
-      "foaled": "{'year': 2002, 'month': 3, 'day': 2}",
-      "foaledArray": ["2002", "03", "02"],
+      "foaled": {
+        "year": 2002,
+        "month": 3,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
       "dam": "ランバダスタイル",
-      "dam_netkeiba_id": "000a006467",
       "color": "青鹿毛",
       "breeder": "丸幸小林牧場（浦河町）",
       "netkeibaId": "2002103275",
@@ -58,18 +61,21 @@
         "central": "2,339万円",
         "local": "0万円"
       },
-      "damId": "lambada-style"
+      "damId": "lambada-style",
+      "dam_netkeiba_id": "000a006467"
     },
     {
       "id": "winkle-salute",
       "name": "ウインクルサルーテ",
-      "foaled": "{'year': 2013, 'month': 3, 'day': 7}",
-      "foaledArray": ["2013", "03", "07"],
+      "foaled": {
+        "year": 2013,
+        "month": 3,
+        "day": 7
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハービンジャー(GB)",
       "dam": "パッショナルダンス",
-      "dam_netkeiba_id": "2002103275",
       "color": "鹿毛",
       "breeder": "丸幸小林牧場（浦河町）",
       "netkeibaId": "2013103727",
@@ -149,13 +155,17 @@
         "central": "1億331万円",
         "local": "0万円"
       },
-      "damId": "passional-dance"
+      "damId": "passional-dance",
+      "dam_netkeiba_id": "2002103275"
     },
     {
       "id": "dantsu-kissui",
       "name": "ダンツキッスイ",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 28}",
-      "foaledArray": ["2005", "03", "28"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 28
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
@@ -304,8 +314,11 @@
     {
       "id": "sunflower-girl",
       "name": "サンフラワーガール",
-      "foaled": "{'year': 2000, 'month': 4, 'day': 18}",
-      "foaledArray": ["2000", "04", "18"],
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タイキシャトル",
@@ -331,8 +344,11 @@
     {
       "id": "tricky-eyes",
       "name": "トリッキーアイズ",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 5}",
-      "foaledArray": ["1999", "03", "05"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブラックタイアフェアー(IRE)",
@@ -406,8 +422,11 @@
     {
       "id": "ataraxia",
       "name": "アタラクシア",
-      "foaled": "{'year': 1997, 'month': 2, 'day': 23}",
-      "foaledArray": ["1997", "02", "23"],
+      "foaled": {
+        "year": 1997,
+        "month": 2,
+        "day": 23
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "デインヒル(US)",

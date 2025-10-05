@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Immaculate Cat",
     "rootHorseId": "immaculate-cat",
-    "lastUpdated": "2025-09-17T05:31:49.415223Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "immaculate-cat",
       "name": "イマーキュレイトキャット",
-      "foaled": "{'year': 2008}",
-      "foaledArray": ["2008"],
+      "foaled": {
+        "year": 2008
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "vollkommen",
       "name": "フォルコメン",
-      "foaled": "{'year': 2016, 'month': 3, 'day': 13}",
-      "foaledArray": ["2016", "03", "13"],
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 13
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "ヴィクトワールピサ",

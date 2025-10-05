@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Incurable Romantic",
     "rootHorseId": "incurable-romantic",
-    "lastUpdated": "2025-09-22T23:25:52.515546Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "incurable-romantic",
       "name": "インキュラブルロマンティック",
-      "foaled": "{'year': 1991}",
-      "foaledArray": ["1991"],
+      "foaled": {
+        "year": 1991
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Stop the Music",
@@ -32,8 +33,11 @@
     {
       "id": "fujino-wave",
       "name": "フジノウェーブ",
-      "foaled": "{'year': 2002, 'month': 4, 'day': 27}",
-      "foaledArray": ["2002", "04", "27"],
+      "foaled": {
+        "year": 2002,
+        "month": 4,
+        "day": 27
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブラックタイアフェアー(IRE)",
@@ -632,8 +636,11 @@
     {
       "id": "kinetics",
       "name": "キネティクス",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 3}",
-      "foaledArray": ["1999", "04", "03"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フォーティナイナー(US)",

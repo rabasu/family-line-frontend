@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Little Book",
     "rootHorseId": "little-book",
-    "lastUpdated": "2025-09-18T15:48:18.344041Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "little-book",
       "name": "リトルブック",
-      "foaled": "{'year': 2008}",
-      "foaledArray": ["2008"],
+      "foaled": {
+        "year": 2008
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Librettist",
@@ -32,8 +33,11 @@
     {
       "id": "roger-barows",
       "name": "ロジャーバローズ",
-      "foaled": "{'year': 2016, 'month': 1, 'day': 24}",
-      "foaledArray": ["2016", "01", "24"],
+      "foaled": {
+        "year": 2016,
+        "month": 1,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

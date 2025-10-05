@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Karamea",
     "rootHorseId": "karamea",
-    "lastUpdated": "2025-09-24T20:19:20.519435Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "karamea",
       "name": "Karamea",
-      "foaled": "{'year': 1987}",
-      "foaledArray": ["1987"],
+      "foaled": {
+        "year": 1987
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Air Forbes Won",
@@ -31,8 +32,11 @@
     {
       "id": "figaro",
       "name": "フィガロ",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 4}",
-      "foaledArray": ["1995", "03", "04"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 4
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Future Storm",

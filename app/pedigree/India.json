@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "India",
     "rootHorseId": "india",
-    "lastUpdated": "2025-09-18T11:27:59.260086Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "india",
       "name": "India",
-      "foaled": "{'year': 2003, 'month': 4, 'day': 2}",
-      "foaledArray": ["2003", "04", "02"],
+      "foaled": {
+        "year": 2003,
+        "month": 4,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヘネシー(US)",
@@ -31,8 +34,11 @@
     {
       "id": "mozu-ascot",
       "name": "モズアスコット",
-      "foaled": "{'year': 2014, 'month': 3, 'day': 31}",
-      "foaledArray": ["2014", "03", "31"],
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Frankel",

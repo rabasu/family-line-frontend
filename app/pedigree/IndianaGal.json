@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Indiana Gal",
     "rootHorseId": "indiana-gal",
-    "lastUpdated": "2025-09-18T12:48:14.220757Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "indiana-gal",
       "name": "インディアナギャル",
-      "foaled": "{'year': 2005, 'month': 2, 'day': 23}",
-      "foaledArray": ["2005", "02", "23"],
+      "foaled": {
+        "year": 2005,
+        "month": 2,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Intikhab",
@@ -32,8 +35,11 @@
     {
       "id": "danon-premium",
       "name": "ダノンプレミアム",
-      "foaled": "{'year': 2015, 'month': 4, 'day': 3}",
-      "foaledArray": ["2015", "04", "03"],
+      "foaled": {
+        "year": 2015,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

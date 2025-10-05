@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady Middleton",
     "rootHorseId": "lady-middleton",
-    "lastUpdated": "2025-09-21T01:49:06.110163Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-middleton",
       "name": "レディミドルトン",
-      "foaled": "{'year': 2005}",
-      "foaledArray": ["2005"],
+      "foaled": {
+        "year": 2005
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Kingmambo(US)",
@@ -32,8 +33,11 @@
     {
       "id": "lady-of-opera",
       "name": "レディオブオペラ",
-      "foaled": "{'year': 2010, 'month': 1, 'day': 28}",
-      "foaledArray": ["2010", "01", "28"],
+      "foaled": {
+        "year": 2010,
+        "month": 1,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Singspiel(IRE)",

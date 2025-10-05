@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "La Boum",
     "rootHorseId": "la-boum",
-    "lastUpdated": "2025-09-18T04:49:56.882069Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "la-boum",
       "name": "ラブーム",
-      "foaled": "{'year': 2003, 'month': 3, 'day': 20}",
-      "foaledArray": ["2003", "03", "20"],
+      "foaled": {
+        "year": 2003,
+        "month": 3,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Monsun",
@@ -32,8 +35,11 @@
     {
       "id": "oh-my-darling",
       "name": "オーマイダーリン",
-      "foaled": "{'year': 2017, 'month': 1, 'day': 28}",
-      "foaledArray": ["2017", "01", "28"],
+      "foaled": {
+        "year": 2017,
+        "month": 1,
+        "day": 28
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",

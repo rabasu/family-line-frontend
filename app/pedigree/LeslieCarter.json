@@ -2,30 +2,37 @@
   "metadata": {
     "pedigreeName": "レスリーカーター",
     "rootHorseId": "leslie_carter",
-    "lastUpdated": "2025-09-26T15:14:57.065318Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "leslie_carter",
       "name": "レスリーカーター",
-      "foaled": "1900",
-      "foaledArray": ["1900"],
+      "foaled": {
+        "year": 1900
+      },
       "sex": "female",
       "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
-      "breeder": "",
+      "sire": "Savile",
+      "dam": "Star Actress",
+      "color": "鹿毛",
+      "breeder": "米",
       "netkeibaId": "000a01800b",
       "source": "tsx_conversion",
+      "importedYear": "1910",
+      "familyNumber": "F16-g",
+      "registration": "登録なし",
       "owner": "奥羽種馬牧場→十勝種馬牧場→野村治三郎"
     },
     {
       "id": "ubiquitous",
       "name": "ユビキタス",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 19}",
-      "foaledArray": ["2005", "03", "19"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 19
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "アグネスデジタル",
@@ -84,8 +91,11 @@
     {
       "id": "paronia-crest",
       "name": "パローニアクレスト",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 5}",
-      "foaledArray": ["1994", "04", "05"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "キンググローリアス(US)",
@@ -129,8 +139,11 @@
     {
       "id": "happy-garland",
       "name": "ハッピーガーランド",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 8}",
-      "foaledArray": ["1984", "04", "08"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フリートウイング(US)",
@@ -158,8 +171,9 @@
     {
       "id": "single-one",
       "name": "シングルワン",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴィエナ",
@@ -185,8 +199,9 @@
     {
       "id": "leslie-karim",
       "name": "レスリーカリム",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "カリム(IRE)",
@@ -212,8 +227,9 @@
     {
       "id": "hatsukaze",
       "name": "ハツカゼ",
-      "foaled": "{'year': 1954}",
-      "foaledArray": ["1954"],
+      "foaled": {
+        "year": 1954
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "タカクラヤマ",
@@ -238,8 +254,9 @@
     {
       "id": "matsukaze-1950",
       "name": "マツカゼ",
-      "foaled": "{'year': 1950}",
-      "foaledArray": ["1950"],
+      "foaled": {
+        "year": 1950
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヒロサクラ",
@@ -265,8 +282,9 @@
     {
       "id": "tenkaze",
       "name": "典風",
-      "foaled": "{'year': 1935}",
-      "foaledArray": ["1935"],
+      "foaled": {
+        "year": 1935
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アデージ(GB)",
@@ -286,13 +304,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "oikaze"
+      "damId": "oikaze-1920"
     },
     {
-      "id": "oikaze",
+      "id": "oikaze-1920",
       "name": "追風",
-      "foaled": "{'year': 1920}",
-      "foaledArray": ["1920"],
+      "foaled": {
+        "year": 1920
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パーナムビユコー(GB)",
@@ -317,8 +336,11 @@
     {
       "id": "bandam-tesco",
       "name": "バンダムテスコ",
-      "foaled": "{'year': 1985, 'month': 4, 'day': 29}",
-      "foaledArray": ["1985", "04", "29"],
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 29
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "テスコボーイ(GB)",
@@ -407,8 +429,9 @@
     {
       "id": "maruzen-moutiers",
       "name": "マルゼンムーティエ",
-      "foaled": "{'year': 1977}",
-      "foaledArray": ["1977"],
+      "foaled": {
+        "year": 1977
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ムーティエ(FR)",
@@ -434,8 +457,9 @@
     {
       "id": "yamanaka-queen",
       "name": "ヤマナカクイン",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バリメライス(GB)",
@@ -461,8 +485,9 @@
     {
       "id": "ekon",
       "name": "エコン",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トシハヤ",
@@ -488,8 +513,9 @@
     {
       "id": "leslie-manna",
       "name": "レスリーマンナ",
-      "foaled": "{'year': 1955}",
-      "foaledArray": ["1955"],
+      "foaled": {
+        "year": 1955
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "シマタカ",
@@ -515,8 +541,11 @@
     {
       "id": "happy-progress",
       "name": "ハッピープログレス",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 15}",
-      "foaledArray": ["1978", "04", "15"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 15
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "フリートウイング(US)",
@@ -766,6 +795,398 @@
         "local": "0万円"
       },
       "damId": "single-one"
+    },
+    {
+      "id": "agnes-beauty",
+      "name": "アグネスビューチー",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "カバーラップ二世(US)",
+      "dam": "レスリービューチー",
+      "color": "鹿毛",
+      "breeder": "早来町",
+      "netkeibaId": "1955105249",
+      "raceStats": {
+        "total": {
+          "runs": 36,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 1,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "金杯(OP)",
+          "displayRace": "金杯（東）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 31
+          },
+          "racecourse": "中山",
+          "race": "牝馬東京タイムズ杯(OP)",
+          "displayRace": "牝馬東京タイムズ杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "函館",
+          "race": "函館記念(OP)",
+          "displayRace": "函館記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 4,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "京王杯スプリングハン(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 3,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "中山記念(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Agnes Beauty",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "leslie-beauty"
+    },
+    {
+      "id": "leslie-beauty",
+      "name": "レスリービューチー",
+      "foaled": {
+        "year": 1963
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ハクリョウ",
+      "dam": "ハツカゼ",
+      "color": "鹿毛",
+      "breeder": "三石町",
+      "netkeibaId": "000a004099",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Leslie Beauty",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hatsukaze"
+    },
+    {
+      "id": "nihonpiropawaa",
+      "name": "ニホンピロパワー",
+      "foaled": {
+        "year": 1972
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ハードリドン(GB)",
+      "dam": "レスリーカリム",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1972z00428",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1975,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(OP)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "3",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "leslie-karim"
+    },
+    {
+      "id": "mihonomatsu",
+      "name": "ミホノマツ",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "タカクラヤマ",
+      "dam": "ブルーホマレ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1961z00223",
+      "raceStats": {
+        "total": {
+          "runs": 80,
+          "wins": 14
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1967,
+            "month": 12,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "障4200",
+          "grade": "jra_grandjump",
+          "entry": "15",
+          "result": "7",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 10,
+            "day": 29
+          },
+          "racecourse": "中山",
+          "race": "障害S(OP)",
+          "displayRace": "障害S(秋)",
+          "distance": "障3100",
+          "grade": "jra_jump",
+          "entry": "10",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 5,
+            "day": 7
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(春)",
+          "distance": "障3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 12,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "芝4200",
+          "grade": "jra_grandjump",
+          "entry": "12",
+          "result": "11(9)",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1966,
+            "month": 11,
+            "day": 6
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 11,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "4",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(秋)",
+          "distance": "芝4200",
+          "grade": "jra_grandjump",
+          "entry": "10",
+          "result": "6",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      }
+    },
+    {
+      "id": "buruuhomare",
+      "name": "ブルーホマレ",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ミナミホマレ",
+      "dam": "ブルースカイ",
+      "color": "栗毛",
+      "breeder": "青森県",
+      "netkeibaId": "000a002ca7",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 3,
+            "day": 29
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞競走(OP)",
+          "displayRace": "桜花賞",
+          "distance": "芝1600",
+          "grade": "jra_big8",
+          "entry": "24",
+          "result": "20",
+          "favorite": "24"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "buruusukai"
+    },
+    {
+      "id": "buruusukai",
+      "name": "ブルースカイ",
+      "foaled": {
+        "year": 1949
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヒロサクラ",
+      "dam": "典風",
+      "color": "栗毛",
+      "breeder": "早来町",
+      "netkeibaId": "000a002828",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tenkaze"
     }
   ]
 }

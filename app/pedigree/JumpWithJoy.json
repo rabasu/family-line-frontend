@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Jump With Joy",
     "rootHorseId": "jump-with-joy",
-    "lastUpdated": "2025-09-24T04:36:42.049240Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jump-with-joy",
       "name": "Jump With Joy",
-      "foaled": "{'year': 1985}",
-      "foaledArray": ["1985"],
+      "foaled": {
+        "year": 1985
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Linkage",
@@ -31,8 +32,11 @@
     {
       "id": "washington-color",
       "name": "ワシントンカラー",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 21}",
-      "foaledArray": ["1994", "04", "21"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ブラックタイアフェアー(IRE)",

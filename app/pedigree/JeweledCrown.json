@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Jeweled Crown",
     "rootHorseId": "jeweled-crown",
-    "lastUpdated": "2025-09-25T00:56:25.772561Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "jeweled-crown",
       "name": "ジュエルドクラウン",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Seattle Slew",
@@ -32,8 +33,11 @@
     {
       "id": "ibuki-man-power",
       "name": "イブキマンパワー",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 20}",
-      "foaledArray": ["1994", "04", "20"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 20
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ポリッシュネイビー(US)",
@@ -152,8 +156,11 @@
     {
       "id": "silk-phoenix",
       "name": "シルクフェニックス",
-      "foaled": "{'year': 1993, 'month': 5, 'day': 11}",
-      "foaledArray": ["1993", "05", "11"],
+      "foaled": {
+        "year": 1993,
+        "month": 5,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アジュディケーティング(US)",

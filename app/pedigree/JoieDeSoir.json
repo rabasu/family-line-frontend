@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Joie de Soir",
     "rootHorseId": "joie-de-soir",
-    "lastUpdated": "2025-09-22T02:08:16.476191Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "joie-de-soir",
       "name": "ジョイデソアー",
-      "foaled": "{'year': 1988}",
-      "foaledArray": ["1988"],
+      "foaled": {
+        "year": 1988
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
@@ -32,8 +33,11 @@
     {
       "id": "siren",
       "name": "サイレーン",
-      "foaled": "{'year': 1993, 'month': 4, 'day': 22}",
-      "foaledArray": ["1993", "04", "22"],
+      "foaled": {
+        "year": 1993,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モガンボ(US)",
@@ -77,8 +81,11 @@
     {
       "id": "arco-senora",
       "name": "アルコセニョーラ",
-      "foaled": "{'year': 2004, 'month': 3, 'day': 17}",
-      "foaledArray": ["2004", "03", "17"],
+      "foaled": {
+        "year": 2004,
+        "month": 3,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ステイゴールド",

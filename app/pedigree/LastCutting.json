@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Last Cutting",
     "rootHorseId": "last-cutting",
-    "lastUpdated": "2025-09-21T02:48:54.474319Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "last-cutting",
       "name": "ラストカツティング",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Final Straw",
@@ -32,8 +33,11 @@
     {
       "id": "fresh-midori",
       "name": "フレッシュミドリ",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 11}",
-      "foaledArray": ["1990", "03", "11"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブレイヴェストローマン(US)",
@@ -61,8 +65,11 @@
     {
       "id": "coeur-en-fleur",
       "name": "クールアンフルール",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 9}",
-      "foaledArray": ["2006", "03", "09"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
@@ -90,8 +97,11 @@
     {
       "id": "mozu-hatsukoi",
       "name": "モズハツコイ",
-      "foaled": "{'year': 2011, 'month': 1, 'day': 25}",
-      "foaledArray": ["2011", "01", "25"],
+      "foaled": {
+        "year": 2011,
+        "month": 1,
+        "day": 25
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "クロフネ",

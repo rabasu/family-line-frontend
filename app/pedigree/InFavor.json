@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "In Favor",
     "rootHorseId": "in-favor",
-    "lastUpdated": "2025-09-18T02:51:20.504860Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "in-favor",
       "name": "インフェイヴァー",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "General Assembly",
@@ -32,8 +33,11 @@
     {
       "id": "amethyst-ring",
       "name": "アメジストリング",
-      "foaled": "{'year': 2004, 'month': 2, 'day': 1}",
-      "foaledArray": ["2004", "02", "01"],
+      "foaled": {
+        "year": 2004,
+        "month": 2,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フジキセキ",
@@ -77,8 +81,11 @@
     {
       "id": "uranus-charm",
       "name": "ウラヌスチャーム",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 27}",
-      "foaledArray": ["2015", "03", "27"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ルーラーシップ",

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady Lavery",
     "rootHorseId": "lady-lavery",
-    "lastUpdated": "2025-09-24T07:39:24.499343Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-lavery",
       "name": "レディラヴリイ",
-      "foaled": "{'year': 1983}",
-      "foaledArray": ["1983"],
+      "foaled": {
+        "year": 1983
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Northern Dancer(CAN)",
@@ -32,8 +33,11 @@
     {
       "id": "capriati",
       "name": "カプリアティ",
-      "foaled": "{'year': 1990, 'month': 3, 'day': 26}",
-      "foaledArray": ["1990", "03", "26"],
+      "foaled": {
+        "year": 1990,
+        "month": 3,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Ahonoora",
@@ -59,8 +63,11 @@
     {
       "id": "fifteen-love",
       "name": "フィフティーンラブ",
-      "foaled": "{'year': 1998, 'month': 3, 'day': 12}",
-      "foaledArray": ["1998", "03", "12"],
+      "foaled": {
+        "year": 1998,
+        "month": 3,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "コマンダーインチーフ(GB)",

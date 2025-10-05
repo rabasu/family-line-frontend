@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Lady Indy",
     "rootHorseId": "lady-indy",
-    "lastUpdated": "2025-09-18T16:46:57.659389Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "lady-indy",
       "name": "レディインディ",
-      "foaled": "{'year': 2001}",
-      "foaledArray": ["2001"],
+      "foaled": {
+        "year": 2001
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "A.P. Indy",
@@ -32,8 +33,11 @@
     {
       "id": "regent-rock",
       "name": "リーゼントロック",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 2}",
-      "foaledArray": ["2011", "03", "02"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 2
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダイワメジャー",

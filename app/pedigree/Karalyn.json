@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Karalyn",
     "rootHorseId": "karalyn",
-    "lastUpdated": "2025-09-26T08:09:46.100019Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "karalyn",
       "name": "カラリン",
-      "foaled": "{'year': 1957}",
-      "foaledArray": ["1957"],
+      "foaled": {
+        "year": 1957
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Alycidon",
@@ -32,8 +33,9 @@
     {
       "id": "joyful",
       "name": "ジョイフル",
-      "foaled": "{'year': 1967}",
-      "foaledArray": ["1967"],
+      "foaled": {
+        "year": 1967
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フロリバンダ",
@@ -210,8 +212,9 @@
     {
       "id": "erly-star",
       "name": "アーリイスター",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "イエローゴッド",
@@ -237,8 +240,11 @@
     {
       "id": "wonder-resist",
       "name": "ワンダーレジスト",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 26}",
-      "foaledArray": ["1984", "04", "26"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "トウショウボーイ",
@@ -413,6 +419,49 @@
         "local": "0万円"
       },
       "damId": "erly-star"
+    },
+    {
+      "id": "nepuchuuoo",
+      "name": "ネプチューオー",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ネプテューヌス(FR)",
+      "dam": "カラリン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1971z00382",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "3",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "karalyn"
     }
   ]
 }

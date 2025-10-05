@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Live",
     "rootHorseId": "live",
-    "lastUpdated": "2025-09-21T17:24:59.986896Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "live",
       "name": "ライヴ",
-      "foaled": "{'year': 1999, 'month': 4, 'day': 16}",
-      "foaledArray": ["1999", "04", "16"],
+      "foaled": {
+        "year": 1999,
+        "month": 4,
+        "day": 16
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Storm Cat(US)",
@@ -32,8 +35,11 @@
     {
       "id": "l-junction",
       "name": "エルジャンクション",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 22}",
-      "foaledArray": ["2006", "03", "22"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 22
+      },
       "sex": "gelding",
       "breed": "サラブレッド種",
       "sire": "シンボリクリスエス",
