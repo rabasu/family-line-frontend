@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Horizon",
     "rootHorseId": "horizon",
-    "lastUpdated": "2025-09-24T14:11:29.245466Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "horizon",
       "name": "ホライズン",
-      "foaled": "{'year': 1953}",
-      "foaledArray": ["1953"],
+      "foaled": {
+        "year": 1953
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nearco",
@@ -32,8 +33,9 @@
     {
       "id": "far-distance",
       "name": "フアーデイスタンス",
-      "foaled": "{'year': 1959}",
-      "foaledArray": ["1959"],
+      "foaled": {
+        "year": 1959
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ガーサント",
@@ -59,8 +61,9 @@
     {
       "id": "moon-fire",
       "name": "ムーンファイアー",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ボンモー(FR)",
@@ -86,8 +89,11 @@
     {
       "id": "sunflower-mammy",
       "name": "サンフラワーマミー",
-      "foaled": "{'year': 1986, 'month': 3, 'day': 10}",
-      "foaledArray": ["1986", "03", "10"],
+      "foaled": {
+        "year": 1986,
+        "month": 3,
+        "day": 10
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ダイアトム",
@@ -161,8 +167,11 @@
     {
       "id": "eishin-one-side",
       "name": "エイシンワンサイド",
-      "foaled": "{'year': 1995, 'month': 3, 'day': 31}",
-      "foaledArray": ["1995", "03", "31"],
+      "foaled": {
+        "year": 1995,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ダンシングブレーヴ(US)",
@@ -292,6 +301,36 @@
         "local": "107万円"
       },
       "damId": "sunflower-mammy"
+    },
+    {
+      "id": "moon-sire",
+      "name": "ムーンサイアー",
+      "foaled": {
+        "year": 1971,
+        "month": 6,
+        "day": 5
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "ダイハード(GB)",
+      "dam": "フアーデイスタンス",
+      "color": "鹿毛",
+      "breeder": "三石産",
+      "netkeibaId": "1971z00567",
+      "raceStats": {
+        "total": {
+          "runs": 47,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Moon Sire",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "far-distance"
     }
   ]
 }

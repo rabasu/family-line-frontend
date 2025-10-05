@@ -6,11 +6,7 @@ import pedigreeList from '.'
 
 const horseLinkMap: Map<string, HorseData> = new Map()
 
-const createHorseLinkMap = (
-  horse: Horse,
-  family: string,
-  dam: Horse
-): Map<string, { name: string; link: string; family: string }> => {
+const createHorseLinkMap = (horse: Horse, family: string, dam: Horse): Map<string, { name: string; link: string; family: string }> => {
   // HorseLink生成用のMap
   // key: リンク生成用の馬名（一意）
   // value.name: リンク文字列として表示する馬名
@@ -49,14 +45,11 @@ const createHorseLinkMap = (
       createHorseLinkMap(child, family, horse)
     })
   }
-  console.log(horseLinkMap)
   return horseLinkMap
 }
 
 // pedigreeListをhorseMapに追加
-const mergeHorseLinkMapByPedigree = (
-  pedigreeList: Map<string, Horse>
-): Map<string, { name: string; link: string; family: string }> => {
+const mergeHorseLinkMapByPedigree = (pedigreeList: Map<string, Horse>): Map<string, { name: string; link: string; family: string }> => {
   const mergedMap = new Map<string, { name: string; link: string; family: string }>()
 
   // pedigreeList をループして createHorseLinkMap を呼び出し、それぞれの結果をマージ

@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "How Ya Doon",
     "rootHorseId": "how-ya-doon",
-    "lastUpdated": "2025-09-24T23:53:40.412837Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "how-ya-doon",
       "name": "ハウヤドウーン",
-      "foaled": "{'year': 1981}",
-      "foaledArray": ["1981"],
+      "foaled": {
+        "year": 1981
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Matsadoon",
@@ -32,8 +33,11 @@
     {
       "id": "doo-wop",
       "name": "ドゥーワップ",
-      "foaled": "{'year': 1994, 'month': 4, 'day': 14}",
-      "foaledArray": ["1994", "04", "14"],
+      "foaled": {
+        "year": 1994,
+        "month": 4,
+        "day": 14
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ジェイドロバリー(US)",

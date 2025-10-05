@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Holy Moon",
     "rootHorseId": "holy-moon",
-    "lastUpdated": "2025-09-18T17:55:37.887865Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "holy-moon",
       "name": "ホーリームーン",
-      "foaled": "{'year': 2000}",
-      "foaledArray": ["2000"],
+      "foaled": {
+        "year": 2000
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "エルナンド(FR)",
@@ -32,8 +33,9 @@
     {
       "id": "cherry-collect",
       "name": "チェリーコレクト",
-      "foaled": "{'year': 2009}",
-      "foaledArray": ["2009"],
+      "foaled": {
+        "year": 2009
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Oratorio",
@@ -59,8 +61,11 @@
     {
       "id": "satono-glanz",
       "name": "サトノグランツ",
-      "foaled": "{'year': 2020, 'month': 4, 'day': 3}",
-      "foaledArray": ["2020", "04", "03"],
+      "foaled": {
+        "year": 2020,
+        "month": 4,
+        "day": 3
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サトノダイヤモンド",
@@ -239,8 +244,11 @@
     {
       "id": "wakea",
       "name": "ワーケア",
-      "foaled": "{'year': 2017, 'month': 2, 'day': 12}",
-      "foaledArray": ["2017", "02", "12"],
+      "foaled": {
+        "year": 2017,
+        "month": 2,
+        "day": 12
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ハーツクライ",
@@ -359,8 +367,11 @@
     {
       "id": "danon-grace",
       "name": "ダノングレース",
-      "foaled": "{'year': 2015, 'month': 1, 'day': 6}",
-      "foaledArray": ["2015", "01", "06"],
+      "foaled": {
+        "year": 2015,
+        "month": 1,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -479,8 +490,11 @@
     {
       "id": "noble-score",
       "name": "ノーブルスコア",
-      "foaled": "{'year': 2016, 'month': 1, 'day': 29}",
-      "foaledArray": ["2016", "01", "29"],
+      "foaled": {
+        "year": 2016,
+        "month": 1,
+        "day": 29
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ディープインパクト",
@@ -534,13 +548,16 @@
         "central": "3,366万円",
         "local": "0万円"
       },
-      "damId": "final-score"
+      "damId": "final-score-2011"
     },
     {
-      "id": "final-score",
+      "id": "final-score-2011",
       "name": "ファイナルスコア",
-      "foaled": "{'year': 2011, 'month': 4, 'day': 5}",
-      "foaledArray": ["2011", "04", "05"],
+      "foaled": {
+        "year": 2011,
+        "month": 4,
+        "day": 5
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Dylan Thomas(IRE)",

@@ -2,20 +2,20 @@
   "metadata": {
     "pedigreeName": "Hujjab",
     "rootHorseId": "hujjab",
-    "lastUpdated": "2025-09-21T08:19:55.949546Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hujjab",
       "name": "フジャブ",
-      "foaled": "{'year': 1992}",
-      "foaledArray": ["1992"],
+      "foaled": {
+        "year": 1992
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Woodman",
       "dam": "Winters' Love",
-      "dam_netkeiba_id": "",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a000188",
@@ -28,18 +28,21 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Hujjab"
+      "englishName": "Hujjab",
+      "dam_netkeiba_id": ""
     },
     {
       "id": "shimmei-minerva",
       "name": "シンメイミネルバ",
-      "foaled": "{'year': 1997, 'month': 3, 'day': 11}",
-      "foaledArray": ["1997", "03", "11"],
+      "foaled": {
+        "year": 1997,
+        "month": 3,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Caerleon(US)",
       "dam": "フジャブ",
-      "dam_netkeiba_id": "000a000188",
       "color": "黒鹿毛",
       "breeder": "タイヘイ牧場（静内町）",
       "netkeibaId": "1997109364",
@@ -58,18 +61,21 @@
         "central": "90万円",
         "local": "0万円"
       },
-      "damId": "hujjab"
+      "damId": "hujjab",
+      "dam_netkeiba_id": "000a000188"
     },
     {
       "id": "cafe-brilliant",
       "name": "カフェブリリアント",
-      "foaled": "{'year': 2010, 'month': 2, 'day': 27}",
-      "foaledArray": ["2010", "02", "27"],
+      "foaled": {
+        "year": 2010,
+        "month": 2,
+        "day": 27
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
       "dam": "シンメイミネルバ",
-      "dam_netkeiba_id": "1997109364",
       "color": "栗毛",
       "breeder": "タイヘイ牧場（新ひだか町）",
       "netkeibaId": "2010102841",
@@ -239,13 +245,17 @@
         "central": "1億7,394万円",
         "local": "0万円"
       },
-      "damId": "shimmei-minerva"
+      "damId": "shimmei-minerva",
+      "dam_netkeiba_id": "1997109364"
     },
     {
       "id": "sound-of-heart",
       "name": "サウンドオブハート",
-      "foaled": "{'year': 2009, 'month': 2, 'day': 12}",
-      "foaledArray": ["2009", "02", "12"],
+      "foaled": {
+        "year": 2009,
+        "month": 2,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "アグネスタキオン",
@@ -349,8 +359,11 @@
     {
       "id": "silport",
       "name": "シルポート",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 24}",
-      "foaledArray": ["2005", "03", "24"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 24
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ホワイトマズル(GB)",
@@ -799,8 +812,11 @@
     {
       "id": "speranza",
       "name": "スペランツァ",
-      "foaled": "{'year': 1998, 'month': 4, 'day': 17}",
-      "foaledArray": ["1998", "04", "17"],
+      "foaled": {
+        "year": 1998,
+        "month": 4,
+        "day": 17
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",

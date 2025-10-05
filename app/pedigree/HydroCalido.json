@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hydro Calido",
     "rootHorseId": "hydro-calido",
-    "lastUpdated": "2025-09-24T06:08:23.742903Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hydro-calido",
       "name": "ハイドロカリド",
-      "foaled": "{'year': 1989}",
-      "foaledArray": ["1989"],
+      "foaled": {
+        "year": 1989
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Nureyev",
@@ -32,8 +33,11 @@
     {
       "id": "shinko-calido",
       "name": "シンコウカリド",
-      "foaled": "{'year': 1998, 'month': 5, 'day': 7}",
-      "foaledArray": ["1998", "05", "07"],
+      "foaled": {
+        "year": 1998,
+        "month": 5,
+        "day": 7
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Silver Hawk",

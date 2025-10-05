@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "ホワイトシヤドウ",
     "rootHorseId": "howaitoshiyadou",
-    "lastUpdated": "2025-09-24T01:08:33.560434Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "howaitoshiyadou",
       "name": "ホワイトシヤドウ",
-      "foaled": "{'year': 1949}",
-      "foaledArray": ["1949"],
+      "foaled": {
+        "year": 1949
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Colonus",
@@ -31,8 +32,9 @@
     {
       "id": "sukatsuto",
       "name": "スカツト",
-      "foaled": "{'year': 1961}",
-      "foaledArray": ["1961"],
+      "foaled": {
+        "year": 1961
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "パールダイヴァー",
@@ -57,8 +59,11 @@
     {
       "id": "evans-city",
       "name": "エバンスシチー",
-      "foaled": "{'year': 1977, 'month': 2, 'day': 18}",
-      "foaledArray": ["1977", "02", "18"],
+      "foaled": {
+        "year": 1977,
+        "month": 2,
+        "day": 18
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファバージ(FR)",
@@ -84,8 +89,11 @@
     {
       "id": "lovely-nana",
       "name": "ラブリーナナ",
-      "foaled": "{'year': 1990, 'month': 5, 'day': 15}",
-      "foaledArray": ["1990", "05", "15"],
+      "foaled": {
+        "year": 1990,
+        "month": 5,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リヴリア(US)",
@@ -113,8 +121,11 @@
     {
       "id": "mambo-no-rhythm",
       "name": "マンボノリズム",
-      "foaled": "{'year': 1997, 'month': 5, 'day': 25}",
-      "foaledArray": ["1997", "05", "25"],
+      "foaled": {
+        "year": 1997,
+        "month": 5,
+        "day": 25
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "リズム(US)",
@@ -214,6 +225,346 @@
         "local": "0万円"
       },
       "damId": "lovely-nana"
+    },
+    {
+      "id": "fuji-express",
+      "name": "フジエクスプレス",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "アローエクスプレス",
+      "dam": "スカツト",
+      "color": "鹿毛",
+      "breeder": "静内町",
+      "netkeibaId": "1955107226",
+      "raceStats": {
+        "total": {
+          "runs": 28,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1977,
+            "month": 9,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "オータムハンデキャッ(OP)",
+          "displayRace": "京王杯オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "取",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1977,
+            "month": 4,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 12,
+            "day": 19
+          },
+          "racecourse": "中京",
+          "race": "愛知杯(OP)",
+          "displayRace": "愛知杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 11,
+            "day": 21
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(OP)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2400",
+          "grade": "jra_big10",
+          "entry": "15",
+          "result": "3",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "サンケイ賞オールカマ(OP)",
+          "displayRace": "オールカマー",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 9,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "クイーンS(OP)",
+          "displayRace": "クイーンS",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 5,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(OP)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "23",
+          "result": "11",
+          "favorite": "16"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fuji Express",
+      "prizeMoney": {
+        "total": "900万円",
+        "central": "900万円",
+        "local": "0万円"
+      },
+      "damId": "sukatsuto"
+    },
+    {
+      "id": "takedenpawaa",
+      "name": "タケデンパワー",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "パーソロン(IRE)",
+      "dam": "アクメ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1970z00311",
+      "raceStats": {
+        "total": {
+          "runs": 39,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1974,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "スティヤーズステーク(OP)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 7,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "中京",
+          "race": "高松宮杯(OP)",
+          "displayRace": "高松宮杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "スプリングハンデキャ(OP)",
+          "displayRace": "京王杯スプリングH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "8",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 3,
+            "day": 31
+          },
+          "racecourse": "中山",
+          "race": "ダイヤモンドステーク(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3200",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 3,
+            "day": 3
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 11,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "カブトヤマ記念(OP)",
+          "displayRace": "カブトヤマ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "12",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1973,
+            "month": 3,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "弥生賞(OP)",
+          "displayRace": "弥生賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "6",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "akume"
+    },
+    {
+      "id": "akume",
+      "name": "アクメ",
+      "foaled": {
+        "year": 1965
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "モンタヴァル(FR)",
+      "dam": "シヤンチリー",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a004339",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Akume",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shiyanchirih"
+    },
+    {
+      "id": "shiyanchirih",
+      "name": "シヤンチリー",
+      "foaled": {
+        "year": 1957
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ヴイーノーピユロー(AR)",
+      "dam": "ホワイトシヤドウ",
+      "color": "栃栗毛",
+      "breeder": "三石町",
+      "netkeibaId": "000a002ea4",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Shiyanchirih",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "howaitoshiyadou"
     }
   ]
 }

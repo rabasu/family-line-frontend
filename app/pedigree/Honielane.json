@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Honie-Lane",
     "rootHorseId": "honie-lane",
-    "lastUpdated": "2025-09-24T01:37:51.140187Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "honie-lane",
       "name": "ハニーレイン",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Native Dancer(US)",
@@ -27,13 +28,17 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Honie-Lane"
+      "englishName": "Honie-Lane",
+      "importedYear": "1973"
     },
     {
       "id": "taiyo-dancer",
       "name": "タイヨウダンサー",
-      "foaled": "{'year': 1978, 'month': 4, 'day': 11}",
-      "foaledArray": ["1978", "04", "11"],
+      "foaled": {
+        "year": 1978,
+        "month": 4,
+        "day": 11
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ザペイシェント",
@@ -59,8 +64,11 @@
     {
       "id": "lemon-drop",
       "name": "レモンドロップ",
-      "foaled": "{'year': 1992, 'month': 4, 'day': 26}",
-      "foaledArray": ["1992", "04", "26"],
+      "foaled": {
+        "year": 1992,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サドラーズラッド(IRE)",
@@ -88,8 +96,11 @@
     {
       "id": "teruteru-bozu",
       "name": "テルテルボウズ",
-      "foaled": "{'year': 1997, 'month': 4, 'day': 22}",
-      "foaledArray": ["1997", "04", "22"],
+      "foaled": {
+        "year": 1997,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "スターオブコジーン(US)",

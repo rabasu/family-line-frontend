@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "pedigreeName": "花宿",
+    "rootHorseId": "hanayado",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
+  },
+  "horses": [
+    {
+      "id": "hanayado",
+      "name": "花宿",
+      "foaled": {},
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "",
+      "dam": "",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01f5cc",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping"
+    },
+    {
+      "id": "natsu",
+      "name": "ナツ",
+      "foaled": {
+        "year": 1916
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "ラスバアン",
+      "dam": "花宿",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01f582",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hanayado"
+    },
+    {
+      "id": "itohana-1924",
+      "name": "イトハナ",
+      "foaled": {
+        "year": 1924
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "コーラン",
+      "dam": "ナツ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cfbf",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "natsu",
+      "linkName": "イトハナ(1924)"
+    },
+    {
+      "id": "daigokamei",
+      "name": "第五花明",
+      "foaled": {
+        "year": 1932
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "秀明",
+      "dam": "イトハナ",
+      "color": "栃栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00d9d0",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "itohana"
+    },
+    {
+      "id": "takateru",
+      "name": "タカテル",
+      "foaled": {
+        "year": 1954
+      },
+      "sex": "male",
+      "breed": "サラブレッド種",
+      "sire": "クレタケ",
+      "dam": "第五花明",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1954z00159",
+      "raceStats": {
+        "total": {
+          "runs": 63,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(春)",
+          "distance": "芝3100",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(秋)",
+          "distance": "障3800",
+          "grade": "jra_jump",
+          "entry": "7",
+          "result": "3",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daigokamei"
+    }
+  ]
+}

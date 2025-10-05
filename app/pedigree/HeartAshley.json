@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Heart Ashley",
     "rootHorseId": "heart-ashley",
-    "lastUpdated": "2025-09-18T03:21:40.062218Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "heart-ashley",
       "name": "Heart Ashley",
-      "foaled": "{'year': 2006}",
-      "foaledArray": ["2006"],
+      "foaled": {
+        "year": 2006
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Lion Heart",
@@ -31,8 +32,11 @@
     {
       "id": "fiano-romano",
       "name": "フィアーノロマーノ",
-      "foaled": "{'year': 2014, 'month': 8, 'day': 21}",
-      "foaledArray": ["2014", "08", "21"],
+      "foaled": {
+        "year": 2014,
+        "month": 8,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Fastnet Rock(AUS)",

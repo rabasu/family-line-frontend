@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hard Course",
     "rootHorseId": "hard-course",
-    "lastUpdated": "2025-09-23T23:39:34.556961Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hard-course",
       "name": "ハードコース",
-      "foaled": "{'year': 1956}",
-      "foaledArray": ["1956"],
+      "foaled": {
+        "year": 1956
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Hard Sauce",
@@ -32,8 +33,9 @@
     {
       "id": "masano-hope",
       "name": "マサノホープ",
-      "foaled": "{'year': 1966}",
-      "foaledArray": ["1966"],
+      "foaled": {
+        "year": 1966
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "モンタヴァル(FR)",
@@ -59,8 +61,9 @@
     {
       "id": "fujino-idol",
       "name": "フジノアイドル",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ホワイトファイア(FR)",
@@ -86,8 +89,11 @@
     {
       "id": "toho-point",
       "name": "トウホーポイント",
-      "foaled": "{'year': 1980, 'month': 3, 'day': 2}",
-      "foaledArray": ["1980", "03", "02"],
+      "foaled": {
+        "year": 1980,
+        "month": 3,
+        "day": 2
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヴァイスリーガル",
@@ -113,8 +119,11 @@
     {
       "id": "strong-lady",
       "name": "ストロングレディー",
-      "foaled": "{'year': 1984, 'month': 4, 'day': 26}",
-      "foaledArray": ["1984", "04", "26"],
+      "foaled": {
+        "year": 1984,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "バンブーアトラス",
@@ -338,8 +347,11 @@
     {
       "id": "strong-time",
       "name": "ストロングタイム",
-      "foaled": "{'year': 1991, 'month': 4, 'day': 15}",
-      "foaledArray": ["1991", "04", "15"],
+      "foaled": {
+        "year": 1991,
+        "month": 4,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ブライアンズタイム(US)",
@@ -367,8 +379,11 @@
     {
       "id": "tenei-wing",
       "name": "テンエイウイング",
-      "foaled": "{'year': 1999, 'month': 3, 'day': 22}",
-      "foaledArray": ["1999", "03", "22"],
+      "foaled": {
+        "year": 1999,
+        "month": 3,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ビワハヤヒデ",

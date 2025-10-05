@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hello Rachel",
     "rootHorseId": "hello-rachel",
-    "lastUpdated": "2025-09-22T15:26:55.262783Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hello-rachel",
       "name": "ハローレイチェル",
-      "foaled": "{'year': 1993}",
-      "foaledArray": ["1993"],
+      "foaled": {
+        "year": 1993
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マイニング(US)",
@@ -32,8 +33,11 @@
     {
       "id": "silk-big-time",
       "name": "シルクビッグタイム",
-      "foaled": "{'year': 2005, 'month': 3, 'day': 21}",
-      "foaledArray": ["2005", "03", "21"],
+      "foaled": {
+        "year": 2005,
+        "month": 3,
+        "day": 21
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Deputy Minister",

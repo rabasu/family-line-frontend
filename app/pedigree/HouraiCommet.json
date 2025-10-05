@@ -2,15 +2,18 @@
   "metadata": {
     "pedigreeName": "Hourai Commet",
     "rootHorseId": "hourai-commet",
-    "lastUpdated": "2025-09-21T02:50:28.038601Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hourai-commet",
       "name": "ホウライコメット",
-      "foaled": "{'year': 1993, 'month': 1, 'day': 22}",
-      "foaledArray": ["1993", "01", "22"],
+      "foaled": {
+        "year": 1993,
+        "month": 1,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Woodman",
@@ -32,8 +35,11 @@
     {
       "id": "horai-sunday",
       "name": "ホウライサンデー",
-      "foaled": "{'year': 2000, 'month': 5, 'day': 1}",
-      "foaledArray": ["2000", "05", "01"],
+      "foaled": {
+        "year": 2000,
+        "month": 5,
+        "day": 1
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サンデーサイレンス(US)",
@@ -59,8 +65,11 @@
     {
       "id": "horai-akiko",
       "name": "ホウライアキコ",
-      "foaled": "{'year': 2011, 'month': 3, 'day': 8}",
-      "foaledArray": ["2011", "03", "08"],
+      "foaled": {
+        "year": 2011,
+        "month": 3,
+        "day": 8
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ヨハネスブルグ(US)",

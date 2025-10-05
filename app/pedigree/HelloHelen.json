@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hello Helen",
     "rootHorseId": "hello-helen",
-    "lastUpdated": "2025-09-22T16:24:36.559127Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hello-helen",
       "name": "ハローヘレン",
-      "foaled": "{'year': 1986}",
-      "foaledArray": ["1986"],
+      "foaled": {
+        "year": 1986
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Secretariat(US)",
@@ -32,8 +33,11 @@
     {
       "id": "kaneyama-cicada",
       "name": "カネヤマシカダ",
-      "foaled": "{'year': 1990, 'month': 4, 'day': 20}",
-      "foaledArray": ["1990", "04", "20"],
+      "foaled": {
+        "year": 1990,
+        "month": 4,
+        "day": 20
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ミルジョージ",
@@ -61,8 +65,11 @@
     {
       "id": "able-arrow",
       "name": "エイブルアロー",
-      "foaled": "{'year': 2006, 'month': 3, 'day': 15}",
-      "foaledArray": ["2006", "03", "15"],
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 15
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "サクラバクシンオー",
@@ -90,8 +97,11 @@
     {
       "id": "charlemagne",
       "name": "シャルルマーニュ",
-      "foaled": "{'year': 2015, 'month': 3, 'day': 31}",
-      "foaledArray": ["2015", "03", "31"],
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 31
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ヴィクトワールピサ",
@@ -150,8 +160,11 @@
     {
       "id": "hello-speed",
       "name": "ハロースピード",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 19}",
-      "foaledArray": ["2004", "04", "19"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 19
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マヤノトップガン",

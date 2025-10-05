@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Heather Road",
     "rootHorseId": "heather-road",
-    "lastUpdated": "2025-09-25T23:02:37.523194Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "heather-road",
       "name": "Heather Road",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "The Axe",
@@ -31,8 +32,11 @@
     {
       "id": "music-time-j",
       "name": "ミュージックタイム",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 5}",
-      "foaledArray": ["1987", "05", "05"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 5
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "Nijinsky(CAN)",

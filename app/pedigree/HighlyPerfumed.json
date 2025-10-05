@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Highly Perfumed",
     "rootHorseId": "highly-perfumed",
-    "lastUpdated": "2025-09-25T15:56:48.553648Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "highly-perfumed",
       "name": "ハイリーパーフユームド",
-      "foaled": "{'year': 1969}",
-      "foaledArray": ["1969"],
+      "foaled": {
+        "year": 1969
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "King's Leap",
@@ -32,8 +33,9 @@
     {
       "id": "pot-crespin",
       "name": "ポツトクレスピン",
-      "foaled": "{'year': 1976}",
-      "foaledArray": ["1976"],
+      "foaled": {
+        "year": 1976
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "セントクレスピン(GB)",
@@ -59,8 +61,11 @@
     {
       "id": "pot-friendly",
       "name": "ポットフレンディ",
-      "foaled": "{'year': 1981, 'month': 6, 'day': 23}",
-      "foaledArray": ["1981", "06", "23"],
+      "foaled": {
+        "year": 1981,
+        "month": 6,
+        "day": 23
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "リィフォー(GB)",
@@ -86,8 +91,11 @@
     {
       "id": "pot-richard",
       "name": "ポットリチャード",
-      "foaled": "{'year': 1989, 'month': 3, 'day': 9}",
-      "foaledArray": ["1989", "03", "09"],
+      "foaled": {
+        "year": 1989,
+        "month": 3,
+        "day": 9
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "ターゴワイス(US)",

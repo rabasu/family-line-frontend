@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hasht Kuh",
     "rootHorseId": "hasht-kuh",
-    "lastUpdated": "2025-09-27T11:03:34.460105Z",
-    "source": "python_scraping"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hasht-kuh",
       "name": "ハツシュトクー",
-      "foaled": "{'year': 1962}",
-      "foaledArray": ["1962"],
+      "foaled": {
+        "year": 1962
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "March Past",
@@ -32,8 +33,9 @@
     {
       "id": "miss-kaname",
       "name": "ミスカナメ",
-      "foaled": "{'year': 1968}",
-      "foaledArray": ["1968"],
+      "foaled": {
+        "year": 1968
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ファラモンド",
@@ -59,8 +61,9 @@
     {
       "id": "western-three",
       "name": "ウエスタンスリー",
-      "foaled": "{'year': 1974}",
-      "foaledArray": ["1974"],
+      "foaled": {
+        "year": 1974
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "フリートウイング(US)",
@@ -86,8 +89,11 @@
     {
       "id": "western-five",
       "name": "ウエスタンファイブ",
-      "foaled": "{'year': 1982, 'month': 4, 'day': 9}",
-      "foaledArray": ["1982", "04", "09"],
+      "foaled": {
+        "year": 1982,
+        "month": 4,
+        "day": 9
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ノーザンネイティヴ(CAN)",
@@ -202,6 +208,80 @@
         "local": "0万円"
       },
       "damId": "western-three"
+    },
+    {
+      "id": "fujino-takahime",
+      "name": "フジノタカヒメ",
+      "foaled": {
+        "year": 1967
+      },
+      "sex": "female",
+      "breed": "サラブレッド種",
+      "sire": "High Treason",
+      "dam": "ハツシュトクー",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1955101757",
+      "raceStats": {
+        "total": {
+          "runs": 31,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1971,
+            "month": 12,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "阪神牝馬特別(OP)",
+          "displayRace": "阪神牝馬特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1971,
+            "month": 10,
+            "day": 31
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬特別(OP)",
+          "displayRace": "京都牝馬特別",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "21",
+          "result": "10",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1970,
+            "month": 3,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "阪神4歳牝馬特別(OP)",
+          "displayRace": "阪神4歳牝馬特別",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "2",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fujino Takahime",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hasht-kuh"
     }
   ]
 }

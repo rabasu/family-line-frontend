@@ -2,15 +2,16 @@
   "metadata": {
     "pedigreeName": "Hytania",
     "rootHorseId": "hytania",
-    "lastUpdated": "2025-09-25T23:33:14.951461Z",
-    "source": "python_scraping_updated"
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
       "id": "hytania",
       "name": "ハイタニア",
-      "foaled": "{'year': 1971}",
-      "foaledArray": ["1971"],
+      "foaled": {
+        "year": 1971
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "Buckpasser",
@@ -32,8 +33,11 @@
     {
       "id": "azuma-roman",
       "name": "アズマローマン",
-      "foaled": "{'year': 1979, 'month': 4, 'day': 22}",
-      "foaledArray": ["1979", "04", "22"],
+      "foaled": {
+        "year": 1979,
+        "month": 4,
+        "day": 22
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラディガ(US)",
@@ -59,8 +63,11 @@
     {
       "id": "el-sol",
       "name": "エルソル",
-      "foaled": "{'year': 1989, 'month': 4, 'day': 26}",
-      "foaledArray": ["1989", "04", "26"],
+      "foaled": {
+        "year": 1989,
+        "month": 4,
+        "day": 26
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ロイヤルスキー",
@@ -88,8 +95,11 @@
     {
       "id": "seraphic-romp",
       "name": "セラフィックロンプ",
-      "foaled": "{'year': 2004, 'month': 4, 'day': 12}",
-      "foaledArray": ["2004", "04", "12"],
+      "foaled": {
+        "year": 2004,
+        "month": 4,
+        "day": 12
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "マンハッタンカフェ",
@@ -388,8 +398,11 @@
     {
       "id": "azuma-east",
       "name": "アズマイースト",
-      "foaled": "{'year': 1987, 'month': 5, 'day': 22}",
-      "foaledArray": ["1987", "05", "22"],
+      "foaled": {
+        "year": 1987,
+        "month": 5,
+        "day": 22
+      },
       "sex": "male",
       "breed": "サラブレッド種",
       "sire": "サウスアトランティック(IRE)",
@@ -493,8 +506,11 @@
     {
       "id": "back-to-east",
       "name": "バックツーイースト",
-      "foaled": "{'year': 1981, 'month': 4, 'day': 6}",
-      "foaledArray": ["1981", "04", "06"],
+      "foaled": {
+        "year": 1981,
+        "month": 4,
+        "day": 6
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ハードツービート",
@@ -520,8 +536,9 @@
     {
       "id": "ban-passer",
       "name": "バンパサー",
-      "foaled": "{'year': 1975}",
-      "foaledArray": ["1975"],
+      "foaled": {
+        "year": 1975
+      },
       "sex": "female",
       "breed": "サラブレッド種",
       "sire": "ラディガ(US)",
