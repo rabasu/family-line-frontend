@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ビベロツト",
     "rootHorseId": "biberotsuto",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T16:48:19.652927Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -106,52 +106,79 @@
       "id": "kensei",
       "name": "ケンセイ",
       "foaled": {
-        "year": 1953
+        "year": 1953,
+        "month": 3,
+        "day": 14
       },
       "sex": "male",
-      "breed": "サラブレッド種",
-      "sire": "Free America",
-      "dam": "ビベロツト",
-      "color": "",
-      "breeder": "",
+      "breed": "サラ",
+      "sire": "Free America(USA)",
+      "dam": "ビベロツト(USA)",
+      "color": "黒鹿毛",
+      "breeder": "JPN",
       "netkeibaId": "1953z00036",
       "raceStats": {
         "total": {
-          "runs": 29,
-          "wins": 6
+          "runs": 79,
+          "wins": 9
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 76,
+                "wins": 8
+              },
+              "jump": {
+                "runs": 3,
+                "wins": 1
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [
         {
           "date": {
-            "year": 1956,
-            "month": 11,
-            "day": 18
+            "year": 1955,
+            "month": 12,
+            "day": 11
           },
-          "racecourse": "京都",
-          "race": "菊花賞競走(OP)",
-          "displayRace": "菊花賞",
-          "distance": "芝3000",
-          "grade": "jra_big8",
-          "entry": "14",
-          "result": "14",
-          "favorite": "13"
+          "racecourse": "中山",
+          "race": "朝日杯３歳S",
+          "grade_code": "jra_grade",
+          "result": "3",
+          "distance": "芝1100",
+          "displayRace": "朝日杯3歳S"
         },
         {
           "date": {
             "year": 1956,
-            "month": 10,
-            "day": 7
+            "month": 3,
+            "day": 21
           },
           "racecourse": "東京",
-          "race": "セントライト記念競走(OP)",
-          "displayRace": "セントライト記念",
-          "distance": "芝2400",
+          "race": "スプリング・ステーク(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1600",
           "grade": "jra_grade",
-          "entry": "8",
-          "result": "8",
-          "favorite": "5"
+          "entry": "6",
+          "result": "3",
+          "favorite": "2"
         },
         {
           "date": {
@@ -171,24 +198,42 @@
         {
           "date": {
             "year": 1956,
-            "month": 3,
-            "day": 21
+            "month": 10,
+            "day": 7
           },
           "racecourse": "東京",
-          "race": "スプリング・ステーク(OP)",
-          "displayRace": "スプリングS",
-          "distance": "芝1600",
+          "race": "セントライト記念競走(OP)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2400",
           "grade": "jra_grade",
-          "entry": "6",
-          "result": "3",
-          "favorite": "2"
+          "entry": "8",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 11,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "菊花賞競走(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "14",
+          "result": "14",
+          "favorite": "13"
         }
       ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "biberotsuto"
+      "damId": "biberotsuto",
+      "owner": "岩崎",
+      "jbisId": "0000002752",
+      "bogusId": "51624"
     }
   ]
 }

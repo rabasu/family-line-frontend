@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "アルプス",
     "rootHorseId": "alps",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T03:36:51.474997Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -160,10 +160,10 @@
       "prizeMoney": {
         "total": "9.0万円"
       },
-      "damId": "orient"
+      "damId": "orient-1948"
     },
     {
-      "id": "orient",
+      "id": "orient-1948",
       "name": "オーリエント",
       "foaled": {
         "year": 1948,
@@ -220,6 +220,53 @@
         "total": "0万円"
       },
       "damId": "alps"
+    },
+    {
+      "id": "moriaki",
+      "name": "モリアキ",
+      "pedigreeName": "岩菊",
+      "foaled": {
+        "year": 1946
+      },
+      "retired": "1951.12.30 蕃殖",
+      "sex": "female",
+      "breed": "アア",
+      "sire": "成霞",
+      "dam": "ミンドラス",
+      "color": "",
+      "breeder": "武田重四郎（新冠郡新冠村）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 80,
+          "wins": 25
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 80,
+                "wins": 25
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『国営競馬成績書 昭和26年 春季』p.22, 『国営競馬統計 昭和27年』p.170, 『サラブレッド血統書 第3巻』p.147",
+      "comment": "母名は「ミンドラス」とする誤記が多い。父・成霞は血量100%のアラブのため、本馬はアラブ血量50%のアングロアラブ。",
+      "damId": "mint-lass",
+      "linkName": "モリアキ(1946)"
     }
   ]
 }

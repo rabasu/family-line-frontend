@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ダイアナ",
     "rootHorseId": "diana",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:49:55.660569Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -1743,17 +1743,19 @@
       }
     },
     {
-      "id": "hatsupiiuingu",
+      "id": "happy-wing",
       "name": "ハツピーウヰング",
       "foaled": {
-        "year": 1944
+        "year": 1944,
+        "month": 3,
+        "day": 23
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "セフト(GB)",
+      "breed": "サラ",
+      "sire": "セフト(IRE)",
       "dam": "日昭",
       "color": "鹿毛",
-      "breeder": "青森県",
+      "breeder": "青森産",
       "netkeibaId": "000a002799",
       "raceStats": {
         "total": {
@@ -1762,13 +1764,62 @@
         },
         "divisions": []
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1947,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": null,
+          "race": "桜花賞",
+          "displayRace": "桜花賞",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1948,
+            "month": 11,
+            "day": 28
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(秋)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(秋)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "nisshou-1932",
-      "pedigreeName": "ハツピーウイング"
+      "pedigreeName": "ハツピーウイング",
+      "englishName": "Happy Wing",
+      "jbisId": "0000376649",
+      "bogusId": "42803"
     }
   ]
 }

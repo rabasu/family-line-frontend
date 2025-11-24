@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "カナデアンガール",
     "rootHorseId": "canadian-girl",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T16:17:55.523285Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -5738,26 +5738,186 @@
       "damId": "dainikanadeangaaru"
     },
     {
-      "id": "ichimonji-1952",
+      "id": "ichimonji",
       "name": "イチモンジ",
       "foaled": {
-        "year": 1952
+        "year": 1952,
+        "month": 5,
+        "day": 10
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "シマタカ",
       "dam": "ダイニクモゼキ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "JPN",
       "netkeibaId": "1952z00115",
       "raceStats": {
         "total": {
-          "runs": 12,
-          "wins": 3
+          "runs": 34,
+          "wins": 9
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 34,
+                "wins": 9
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [
+        {
+          "date": {
+            "year": 1954,
+            "month": 12,
+            "day": 12
+          },
+          "racecourse": "中山",
+          "race": "朝日杯３歳S",
+          "grade_code": "jra_grade",
+          "result": "5",
+          "distance": "芝1100",
+          "displayRace": "朝日杯3歳S"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 4,
+            "day": 24
+          },
+          "racecourse": null,
+          "race": "皐月賞",
+          "displayRace": "皐月賞",
+          "distance": null,
+          "grade": "jra_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "8"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 5,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "NHK杯",
+          "grade_code": "jra_grade",
+          "result": "1",
+          "distance": "芝2000",
+          "displayRace": "NHK杯"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "jra_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "14"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "中山4歳ステークス",
+          "displayRace": "中山4歳S",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "失格"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 10,
+            "day": 16
+          },
+          "racecourse": null,
+          "race": "オールカマー",
+          "displayRace": "オールカマー",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "9"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "菊花賞",
+          "displayRace": "菊花賞",
+          "distance": null,
+          "grade": "jra_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "6"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 12,
+            "day": 18
+          },
+          "racecourse": null,
+          "race": "クモハタ記念",
+          "displayRace": "クモハタ記念",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "12"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 4,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "ダイヤモンド・ステー(OP)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "5",
+          "favorite": "1"
+        },
         {
           "date": {
             "year": 1956,
@@ -5776,17 +5936,17 @@
         {
           "date": {
             "year": 1956,
-            "month": 4,
-            "day": 15
+            "month": 11,
+            "day": 28
           },
-          "racecourse": "東京",
-          "race": "ダイヤモンド・ステー(OP)",
-          "displayRace": "ダイヤモンドS",
-          "distance": "芝2500",
+          "racecourse": null,
+          "race": "中山改築記念",
+          "displayRace": "中山改築記念",
+          "distance": null,
           "grade": "jra_grade",
-          "entry": "8",
-          "result": "5",
-          "favorite": "1"
+          "entry": null,
+          "favorite": null,
+          "result": "7"
         }
       ],
       "source": "python_scraping",
@@ -5794,7 +5954,11 @@
         "total": "0万円"
       },
       "damId": "daini-kumozeki",
-      "linkName": "イチモンジ(1952)"
+      "linkName": "イチモンジ(1952)",
+      "englishName": "Ichimonji",
+      "owner": "吉屋",
+      "jbisId": "0000002184",
+      "bogusId": "28409"
     }
   ]
 }

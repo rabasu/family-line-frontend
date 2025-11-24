@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "A-Hunting",
     "rootHorseId": "a-hunting",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T16:19:12.208741Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -30,84 +30,126 @@
       "source": "python_scraping"
     },
     {
-      "id": "katsutaroo",
+      "id": "katsutaro",
       "name": "カツタロー",
       "foaled": {
-        "year": 1952
+        "year": 1952,
+        "month": 4,
+        "day": 22
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "Glamis",
       "dam": "A-Hunting",
       "color": "鹿毛",
-      "breeder": "米",
+      "breeder": "米国産",
       "netkeibaId": "000a002b87",
       "raceStats": {
         "total": {
-          "runs": 54,
-          "wins": 10
+          "runs": 82,
+          "wins": 16
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 82,
+                "wins": 16
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [
         {
           "date": {
-            "year": 1958,
+            "year": 1955,
             "month": 3,
-            "day": 16
+            "day": 27
           },
           "racecourse": "東京",
-          "race": "目黒記念競走(OP)",
-          "displayRace": "目黒記念(春)",
-          "distance": "芝2500",
+          "race": "スプリングS",
+          "grade_code": "jra_grade",
+          "result": "2",
+          "distance": "芝1600",
+          "displayRace": "スプリングS"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": null,
+          "race": "東京牝馬特別",
+          "displayRace": "東京牝馬特別",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "9"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 12,
+            "day": 18
+          },
+          "racecourse": null,
+          "race": "クモハタ記念",
+          "displayRace": "クモハタ記念",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "11"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 6,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "安田賞競走(OP)",
+          "displayRace": "安田賞",
+          "distance": "芝1600",
           "grade": "jra_grade",
           "entry": "9",
           "result": "9",
-          "favorite": "9"
+          "favorite": "7"
         },
         {
           "date": {
             "year": 1957,
-            "month": 12,
-            "day": 8
+            "month": 5,
+            "day": 12
           },
           "racecourse": "東京",
-          "race": "東京牝馬特別競走(OP)",
-          "displayRace": "東京牝馬特別",
-          "distance": "芝1600",
+          "race": "東京盃競走(OP)",
+          "displayRace": "東京盃",
+          "distance": "芝2400",
           "grade": "jra_grade",
-          "entry": "10",
-          "result": "4",
-          "favorite": "4"
-        },
-        {
-          "date": {
-            "year": 1957,
-            "month": 9,
-            "day": 8
-          },
-          "racecourse": "中山",
-          "race": "オータム・ハンデキャ(OP)",
-          "displayRace": "オータムH",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "4",
-          "result": "2",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 1957,
-            "month": 7,
-            "day": 14
-          },
-          "racecourse": "中山",
-          "race": "中山記念競走(OP)",
-          "displayRace": "中山記念",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "7",
-          "result": "4",
+          "entry": "6",
+          "result": "5",
           "favorite": "6"
         },
         {
@@ -128,39 +170,88 @@
         {
           "date": {
             "year": 1957,
-            "month": 5,
-            "day": 12
+            "month": 7,
+            "day": 14
           },
-          "racecourse": "東京",
-          "race": "東京盃競走(OP)",
-          "displayRace": "東京盃",
-          "distance": "芝2400",
+          "racecourse": "中山",
+          "race": "中山記念競走(OP)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
           "grade": "jra_grade",
-          "entry": "6",
-          "result": "5",
+          "entry": "7",
+          "result": "4",
           "favorite": "6"
         },
         {
           "date": {
-            "year": 1956,
-            "month": 6,
-            "day": 10
+            "year": 1957,
+            "month": 9,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "オータム・ハンデキャ(OP)",
+          "displayRace": "オータムH",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "4",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 12,
+            "day": 8
           },
           "racecourse": "東京",
-          "race": "安田賞競走(OP)",
-          "displayRace": "安田賞",
+          "race": "東京牝馬特別競走(OP)",
+          "displayRace": "東京牝馬特別",
           "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 2,
+            "day": 9
+          },
+          "racecourse": null,
+          "race": "中京競馬場開設5周年記念",
+          "displayRace": "中京競馬場開設5周年記念",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "12"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 3,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "目黒記念競走(OP)",
+          "displayRace": "目黒記念(春)",
+          "distance": "芝2500",
           "grade": "jra_grade",
           "entry": "9",
           "result": "9",
-          "favorite": "7"
+          "favorite": "9"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.48",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "a-hunting"
+      "damId": "a-hunting",
+      "englishName": "Katsutaro",
+      "owner": "小紫",
+      "jbisId": "0000002220",
+      "bogusId": "58732"
     }
   ]
 }
