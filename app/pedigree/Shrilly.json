@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "シユリリー",
     "rootHorseId": "shrilly",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:47:09.698688Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -931,35 +931,278 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "queen-narubi"
+      "damId": "queen_narbee"
     },
     {
-      "id": "queen-narubi",
+      "id": "queen_narbee",
       "name": "クインナルビー",
       "foaled": {
-        "year": 1949
+        "year": 1949,
+        "month": 4,
+        "day": 13
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "クモハタ",
-      "dam": "第一シユリリー",
-      "color": "栗毛",
-      "breeder": "浦河町",
+      "dam": "第一シュリリー",
+      "color": "黒鹿毛",
+      "breeder": "鎌田三郎（北海道浦河）",
       "netkeibaId": "000a002904",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 44,
+          "wins": 17
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 44,
+                "wins": 17
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳Ｓ",
+          "distance": "芝1200",
+          "grade": "national_grade",
+          "entry": "5",
+          "favorite": "4",
+          "result": "3",
+          "displayRace": "阪神3歳S"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "distance": "芝1600",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "2",
+          "result": "3",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿（日本ダービー）",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "31",
+          "favorite": "12",
+          "result": "3",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "5",
+          "favorite": "2",
+          "result": "4",
+          "displayRace": "優駿牝馬"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "チャレンジＣ",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "3",
+          "result": "2",
+          "displayRace": "チャレンジC"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "菊花賞",
+          "distance": "芝3000",
+          "grade": "national_big8",
+          "entry": "9",
+          "favorite": "5",
+          "result": "3",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（秋）",
+          "distance": "芝1800",
+          "grade": "national_grade",
+          "entry": "11",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "鳴尾記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "天皇賞（春）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "4",
+          "result": "2",
+          "displayRace": "天皇賞（春）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（春）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "5",
+          "favorite": "3",
+          "result": "1",
+          "displayRace": "鳴尾記念（春）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 6,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞",
+          "distance": "芝3200",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "1",
+          "result": "2",
+          "displayRace": "日本経済賞"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "天皇賞（秋）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "天皇賞（秋）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠",
+          "distance": "芝2500",
+          "grade": "national_grade",
+          "entry": "8",
+          "favorite": "7",
+          "result": "4",
+          "displayRace": "毎日王冠"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（秋）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "12",
+          "favorite": "6",
+          "result": "3",
+          "displayRace": "鳴尾記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 1,
+            "day": 17
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春杯",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "13",
+          "favorite": "3",
+          "result": "3",
+          "displayRace": "日本経済新春杯"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Queen Narubi",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichishiyuririi"
+      "damId": "daiichishiyuririi",
+      "owner": "鎌田三郎→高橋虎男",
+      "trainer": "石門虎吉（阪神）",
+      "ahonooraId": "queen_narbee"
     },
     {
       "id": "daiichishiyuririi",
@@ -2197,29 +2440,131 @@
       "id": "kunihata",
       "name": "クニハタ",
       "foaled": {
-        "year": 1945
+        "year": 1945,
+        "month": 4,
+        "day": 8
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "クモハタ",
       "dam": "第一シユリリー",
       "color": "栗毛",
-      "breeder": "浦河町",
+      "breeder": "浦河産",
       "netkeibaId": "000a00286a",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 39,
+          "wins": 17
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 39,
+                "wins": 17
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1948,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "日本ダービー",
+          "grade_code": "jrs_big8",
+          "result": "5",
+          "distance": "芝2400",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "天皇賞（秋）",
+          "displayRace": "天皇賞（秋）",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)",
+          "grade_code": "national_big8",
+          "result": "4",
+          "distance": "芝3200",
+          "displayRace": "天皇賞(春)"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(秋)",
+          "grade_code": "national_grade",
+          "result": "1",
+          "distance": "芝2500",
+          "displayRace": "目黒記念(秋)"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": null,
+          "race": "中山記念",
+          "displayRace": "中山記念(秋)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Kunihata",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichishiyuririi"
+      "damId": "daiichishiyuririi",
+      "owner": "桶谷",
+      "jbisId": "0000000256",
+      "bogusId": "17275"
     },
     {
       "id": "triumph-march",
@@ -2771,7 +3116,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "queen-narubi"
+      "damId": "queen_narbee"
     },
     {
       "id": "oguri-cap",
@@ -3880,7 +4225,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "queen-narubi"
+      "damId": "queen_narbee"
     },
     {
       "id": "hida-masaru",
@@ -4081,28 +4426,121 @@
       "id": "tosamitsuru",
       "name": "トサミツル",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 4,
+        "day": 5
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "セフト(GB)",
+      "breed": "サラ",
+      "sire": "セフト",
       "dam": "ミスハタ",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "鎌田三郎（北海道浦河）",
       "netkeibaId": "000a0027bc",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 38,
+          "wins": 14
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 38,
+                "wins": 14
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1949,
+            "month": 12,
+            "day": 18
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳Ｓ",
+          "distance": "芝1200",
+          "grade": "national_grade",
+          "entry": "8",
+          "favorite": "5",
+          "result": "2",
+          "displayRace": "阪神3歳S"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "distance": "芝1600",
+          "grade": "national_big8",
+          "entry": "14",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 6,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "東京優駿（日本ダービー）",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "26",
+          "favorite": "12",
+          "result": "22",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "15",
+          "favorite": "5",
+          "result": "6",
+          "displayRace": "優駿牝馬"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misuhata"
+      "damId": "misuhata",
+      "owner": "斎藤健二郎",
+      "trainer": "星川泉士（中京）",
+      "ahonooraId": "tosamitsuru"
     },
     {
       "id": "misuhata",
@@ -4840,7 +5278,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "queen-narubi"
+      "damId": "queen_narbee"
     },
     {
       "id": "tametomo",
