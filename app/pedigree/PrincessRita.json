@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "Princess Rita",
     "rootHorseId": "princess-rita",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:20:18.918899Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -3112,57 +3112,131 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misu-goshiyonosoo"
+      "damId": "miss-goshono-so"
     },
     {
-      "id": "misu-goshiyonosoo",
+      "id": "miss-goshono-so",
       "name": "ミスゴシヨノソオ",
       "foaled": {
-        "year": 1953
+        "year": 1953,
+        "month": 5,
+        "day": 27
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "King's Abbey",
-      "dam": "プリンセスリタ",
+      "breed": "サラ",
+      "sire": "King's Abbey(GB)",
+      "dam": "プリンセスリタ(USA)",
       "color": "鹿毛",
-      "breeder": "白老町",
+      "breeder": "白老産",
       "netkeibaId": "000a002c1a",
       "raceStats": {
         "total": {
-          "runs": 38,
-          "wins": 7
+          "runs": 46,
+          "wins": 10
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 46,
+                "wins": 10
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [
         {
           "date": {
-            "year": 1958,
-            "month": 3,
-            "day": 9
+            "year": 1955,
+            "month": 12,
+            "day": 11
           },
-          "racecourse": "阪神",
-          "race": "大阪盃競走(OP)",
-          "displayRace": "大阪盃",
-          "distance": "芝1800",
+          "racecourse": null,
+          "race": "阪神3歳ステークス",
+          "displayRace": "阪神3歳S",
+          "distance": null,
           "grade": "jra_grade",
-          "entry": "10",
-          "result": "6",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 3,
+            "day": 25
+          },
+          "racecourse": null,
+          "race": "桜花賞",
+          "displayRace": "桜花賞",
+          "distance": null,
+          "grade": "jra_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "10"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 9,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京都盃競走(OP)",
+          "displayRace": "京都盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "7",
           "favorite": "6"
         },
         {
           "date": {
-            "year": 1957,
-            "month": 5,
-            "day": 12
+            "year": 1956,
+            "month": 10,
+            "day": 7
           },
-          "racecourse": "京都",
-          "race": "京都記念競走(OP)",
-          "displayRace": "京都記念(春)",
-          "distance": "芝2000",
+          "racecourse": "阪神",
+          "race": "神戸盃競走(OP)",
+          "displayRace": "神戸盃",
+          "distance": "芝1800",
           "grade": "jra_grade",
-          "entry": "9",
-          "result": "7",
+          "entry": "10",
+          "result": "10",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "中京",
+          "race": "中京記念競走(OP)",
+          "displayRace": "中京記念",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "3",
           "favorite": "9"
         },
         {
@@ -3183,55 +3257,58 @@
         {
           "date": {
             "year": 1957,
-            "month": 2,
-            "day": 10
+            "month": 5,
+            "day": 12
           },
-          "racecourse": "中京",
-          "race": "中京記念競走(OP)",
-          "displayRace": "中京記念",
-          "distance": "ダ1800",
+          "racecourse": "京都",
+          "race": "京都記念競走(OP)",
+          "displayRace": "京都記念(春)",
+          "distance": "芝2000",
           "grade": "jra_grade",
-          "entry": "13",
-          "result": "3",
+          "entry": "9",
+          "result": "7",
           "favorite": "9"
         },
         {
           "date": {
-            "year": 1956,
-            "month": 10,
-            "day": 7
+            "year": 1958,
+            "month": 2,
+            "day": 9
+          },
+          "racecourse": null,
+          "race": "中京競馬場開設5周年記念",
+          "displayRace": "中京競馬場開設5周年記念",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "6"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 3,
+            "day": 9
           },
           "racecourse": "阪神",
-          "race": "神戸盃競走(OP)",
-          "displayRace": "神戸盃",
+          "race": "大阪盃競走(OP)",
+          "displayRace": "大阪盃",
           "distance": "芝1800",
           "grade": "jra_grade",
           "entry": "10",
-          "result": "10",
-          "favorite": "9"
-        },
-        {
-          "date": {
-            "year": 1956,
-            "month": 9,
-            "day": 23
-          },
-          "racecourse": "京都",
-          "race": "京都盃競走(OP)",
-          "displayRace": "京都盃",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "7",
-          "result": "7",
+          "result": "6",
           "favorite": "6"
         }
       ],
       "source": "python_scraping",
-      "englishName": "Misu Goshiyonosoo",
+      "englishName": "Miss Goshono So",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "princess-rita"
+      "damId": "princess-rita",
+      "owner": "谷水",
+      "jbisId": "0000002754",
+      "bogusId": "43073"
     },
     {
       "id": "tanino-tamanar",
@@ -3335,7 +3412,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misu-goshiyonosoo"
+      "damId": "miss-goshono-so"
     },
     {
       "id": "taipiiku",
