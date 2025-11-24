@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "Paradise Lost",
     "rootHorseId": "paradise-lost",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:49:55.744860Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -59,16 +59,18 @@
     },
     {
       "id": "eden",
-      "name": "エデン",
+      "name": "ハナゾノ",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 5,
+        "day": 21
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "ステーツマン(GB)",
       "dam": "第弐パラダイスロスト",
       "color": "鹿毛",
-      "breeder": "白老町",
+      "breeder": "白老産",
       "netkeibaId": "000a002792",
       "raceStats": {
         "total": {
@@ -77,12 +79,46 @@
         },
         "divisions": []
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 19
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 6,
+            "day": 17
+          },
+          "racecourse": null,
+          "race": "目黒記念",
+          "displayRace": "目黒記念(春)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "8"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiparadaisurosuto"
+      "damId": "dainiparadaisurosuto",
+      "englishName": "Eden",
+      "jbisId": "0000376645",
+      "bogusId": "41758"
     },
     {
       "id": "furorida",
@@ -567,6 +603,216 @@
         "total": "0万円"
       },
       "damId": "arasuka"
+    },
+    {
+      "id": "leda",
+      "name": "レダ",
+      "foaled": {
+        "year": 1949,
+        "month": 4,
+        "day": 19
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ステーツマン",
+      "dam": "第弐パラダイスロスト",
+      "color": "鹿毛",
+      "breeder": "社台牧場（北海道白老）",
+      "netkeibaId": "000a013053",
+      "raceStats": {
+        "total": {
+          "runs": 29,
+          "wins": 17
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 29,
+                "wins": 17
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳Ｓ",
+          "distance": "芝1200",
+          "grade": "national_grade",
+          "entry": "5",
+          "favorite": "1",
+          "result": "2",
+          "displayRace": "阪神3歳S"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "distance": "芝1600",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "1",
+          "result": "2",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿（日本ダービー）",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "31",
+          "favorite": "7",
+          "result": "10",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "チャレンジＣ",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "1",
+          "result": "6",
+          "displayRace": "チャレンジC"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "菊花賞",
+          "distance": "芝3000",
+          "grade": "national_big8",
+          "entry": "9",
+          "favorite": "4",
+          "result": "4",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "天皇賞（春）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "天皇賞（春）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（春）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "5",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "鳴尾記念（春）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 8,
+            "day": 23
+          },
+          "racecourse": "中京",
+          "race": "中京開設記念",
+          "distance": "ダ1800",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "中京開設記念"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 10,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "京都記念（秋）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "京都記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠",
+          "distance": "芝2500",
+          "grade": "national_grade",
+          "entry": "8",
+          "favorite": "2",
+          "result": "",
+          "displayRace": "毎日王冠"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dainiparadaisurosuto",
+      "owner": "熊谷新太郎",
+      "trainer": "見上恒芳（東京）→武田文吾（京都）",
+      "ahonooraId": "leda"
     }
   ]
 }

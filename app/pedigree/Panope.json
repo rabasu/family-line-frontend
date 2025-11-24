@@ -2,33 +2,95 @@
   "metadata": {
     "pedigreeName": "Panope",
     "rootHorseId": "panope",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:50:03.877077Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
       "id": "panope",
       "name": "パノープ",
       "foaled": {
-        "year": 1950
+        "year": 1950,
+        "month": 10,
+        "day": 25
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "Masthead",
-      "dam": "Erebus",
+      "breed": "サラ",
+      "sire": "Masthead(GB)",
+      "dam": "Erebus(AUS)",
       "color": "栗毛",
-      "breeder": "豪",
+      "breeder": "豪州産",
       "netkeibaId": "000a002bd6",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 31,
+          "wins": 7
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 31,
+                "wins": 7
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1955,
+            "month": 9,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(秋)",
+          "grade_code": "jra_grade",
+          "result": "2",
+          "distance": "芝2500",
+          "displayRace": "目黒記念(秋)"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 11,
+            "day": 20
+          },
+          "racecourse": null,
+          "race": "天皇賞（秋）",
+          "displayRace": "天皇賞（秋）",
+          "distance": null,
+          "grade": "jra_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "11"
+        }
+      ],
       "source": "python_scraping",
-      "englishName": "Panope"
+      "englishName": "Panope",
+      "damId": "erebus-1945",
+      "owner": "坂本",
+      "jbisId": "0000001338",
+      "bogusId": "39105"
     },
     {
       "id": "fujino-ume",
