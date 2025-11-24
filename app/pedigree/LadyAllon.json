@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "レデイアロン",
     "rootHorseId": "lady_allon",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:17:59.892568Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -147,29 +147,90 @@
       "id": "shin-nihon",
       "name": "シンニホン",
       "foaled": {
-        "year": 1944
+        "year": 1944,
+        "month": 2,
+        "day": 28
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "ミナミホマレ",
-      "dam": "レデイアロン",
+      "dam": "レデイアロン(AUS)",
       "color": "栗毛",
-      "breeder": "青森県",
+      "breeder": "青森産",
       "netkeibaId": "000a00284f",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 64,
+          "wins": 15
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 53,
+                "wins": 13
+              },
+              "jump": {
+                "runs": 11,
+                "wins": 2
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1947,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": null,
+          "race": "桜花賞",
+          "displayRace": "桜花賞",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        },
+        {
+          "date": {
+            "year": 1948,
+            "month": 11,
+            "day": 28
+          },
+          "racecourse": "京都",
+          "race": "京都記念(秋)",
+          "grade_code": "national_grade",
+          "result": "3",
+          "distance": "芝3200",
+          "displayRace": "京都記念(秋)"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Shin Nihon",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "lady_allon"
+      "damId": "lady_allon",
+      "owner": "吉田",
+      "jbisId": "0000000209",
+      "bogusId": "26287"
     },
     {
       "id": "jo-albatross",
@@ -1046,6 +1107,122 @@
         "total": "0万円"
       },
       "damId": "miss-kotamin"
+    },
+    {
+      "id": "dainanakatsufuji",
+      "name": "ダイナナカツフジ",
+      "foaled": {
+        "year": 1952,
+        "month": 4,
+        "day": 19
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "トキノチカラ",
+      "dam": "シンニホン",
+      "color": "鹿毛",
+      "breeder": "浦河産",
+      "netkeibaId": "1952z00019",
+      "raceStats": {
+        "total": {
+          "runs": 46,
+          "wins": 7
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 32,
+                "wins": 6
+              },
+              "jump": {
+                "runs": 14,
+                "wins": 1
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1955,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都４歳特別",
+          "grade_code": "jra_grade",
+          "result": "2",
+          "distance": "芝1700",
+          "displayRace": "京都4歳特別"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "jra_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "21"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 10,
+            "day": 9
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(秋)",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 12,
+            "day": 25
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典",
+          "grade_code": "jra_grade",
+          "result": "2",
+          "distance": "芝2000",
+          "displayRace": "阪神大賞典"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "shin-nihon",
+      "owner": "伊藤",
+      "jbisId": "0000002212",
+      "bogusId": "45237"
     }
   ]
 }

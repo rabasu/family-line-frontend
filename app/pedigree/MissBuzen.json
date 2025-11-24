@@ -2,33 +2,95 @@
   "metadata": {
     "pedigreeName": "Miss Buzen",
     "rootHorseId": "miss-buzen",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:20:31.751021Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
       "id": "miss-buzen",
       "name": "ミスブゼン",
       "foaled": {
-        "year": 1952
+        "year": 1952,
+        "month": 9,
+        "day": 5
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "Summertime",
-      "dam": "Imperial Gold",
+      "breed": "サラ",
+      "sire": "Summertime(GB)",
+      "dam": "Imperial Gold(NZ)",
       "color": "栗毛",
-      "breeder": "新",
+      "breeder": "新国産",
       "netkeibaId": "000a002b8c",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 56,
+          "wins": 17
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 36,
+                "wins": 12
+              },
+              "jump": {
+                "runs": 20,
+                "wins": 5
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1955,
+            "month": 11,
+            "day": 27
+          },
+          "racecourse": "京都",
+          "race": "京都牝馬特別",
+          "grade_code": "jra_grade",
+          "result": "1",
+          "distance": "芝2000",
+          "displayRace": "京都牝馬特別"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 9,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "農林省賞典京都大障害(OP)",
+          "displayRace": "京都大障害(秋)",
+          "distance": "障3100",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "3",
+          "favorite": "3"
+        }
+      ],
       "source": "python_scraping",
-      "englishName": "Miss Buzen"
+      "englishName": "Miss Buzen",
+      "damId": "imperial-gold",
+      "owner": "上田",
+      "jbisId": "0000002258",
+      "bogusId": "18109"
     },
     {
       "id": "guerlain",
