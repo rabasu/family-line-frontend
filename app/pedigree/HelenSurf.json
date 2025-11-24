@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ヘレンサーフ",
     "rootHorseId": "helen_surf",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:49:03.390093Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -9619,28 +9619,77 @@
       "id": "kikuike",
       "name": "キクイケ",
       "foaled": {
-        "year": 1948
+        "year": 1948,
+        "month": 3,
+        "day": 25
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "月友",
       "dam": "鶴池",
       "color": "鹿毛",
-      "breeder": "青森県",
+      "breeder": "青森産",
       "netkeibaId": "000a0028cc",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 48,
+          "wins": 12
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 25,
+                "wins": 3
+              },
+              "jump": {
+                "runs": 23,
+                "wins": 9
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1952,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": null,
+          "race": "中山大障害（春）",
+          "displayRace": "中山大障害（春）",
+          "distance": null,
+          "grade": "national_grandjump",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tsuruike"
+      "damId": "tsuruike",
+      "englishName": "Kikuike",
+      "owner": "菊地",
+      "jbisId": "0000000534",
+      "bogusId": "57127"
     },
     {
       "id": "riyuuyou",
@@ -10738,6 +10787,1075 @@
         "total": "0万円"
       },
       "damId": "marutatsu"
+    },
+    {
+      "id": "asafuji",
+      "name": "アサフジ",
+      "foaled": {
+        "year": 1943,
+        "month": 4,
+        "day": 14
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "プリメロ",
+      "dam": "第四ウエツデイングサーフ",
+      "color": "鹿毛",
+      "breeder": "小岩井農場（岩手県）",
+      "netkeibaId": "000a0008bf",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 3
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 9,
+                "wins": 3
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1947,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "目黒記念",
+          "distance": "芝3200",
+          "grade": "jrs_grade",
+          "entry": "12",
+          "favorite": "3",
+          "result": "1",
+          "displayRace": "目黒記念(春)"
+        },
+        {
+          "date": {
+            "year": 1947,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "天皇賞（秋）",
+          "distance": "芝3200",
+          "grade": "jrs_big8",
+          "entry": "6",
+          "favorite": "1",
+          "result": "4",
+          "displayRace": "天皇賞（秋）"
+        },
+        {
+          "date": {
+            "year": 1947,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "中山記念（秋）",
+          "distance": "芝3400",
+          "grade": "jrs_grade",
+          "entry": "8",
+          "favorite": "5",
+          "result": "3",
+          "displayRace": "中山記念（秋）"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Asafuji",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daiyonuetsudeingusaafu",
+      "owner": "林麻一",
+      "trainer": "茂木為二郎（東京）",
+      "ahonooraId": "asafuji"
+    },
+    {
+      "id": "asamine",
+      "name": "アサミネ",
+      "foaled": {
+        "year": 1949,
+        "month": 4,
+        "day": 6
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "プリメロ(GB)",
+      "dam": "峰池",
+      "color": "鹿毛",
+      "breeder": "青森産",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 42,
+          "wins": 7
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 42,
+                "wins": 7
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1953,
+            "month": 6,
+            "day": 28
+          },
+          "racecourse": null,
+          "race": "中山大障害（春）",
+          "displayRace": "中山大障害（春）",
+          "distance": null,
+          "grade": "national_grandjump",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 1
+          },
+          "racecourse": null,
+          "race": "中山大障害（秋）",
+          "displayRace": "中山大障害（秋）",
+          "distance": null,
+          "grade": "national_grandjump",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 6,
+            "day": 20
+          },
+          "racecourse": null,
+          "race": "中山大障害（春）",
+          "displayRace": "中山大障害（春）",
+          "distance": null,
+          "grade": "national_grandjump",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "中山大障害（秋）",
+          "displayRace": "中山大障害（秋）",
+          "distance": null,
+          "grade": "jra_grandjump",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 6,
+            "day": 26
+          },
+          "racecourse": null,
+          "race": "中山大障害（春）",
+          "displayRace": "中山大障害（春）",
+          "distance": null,
+          "grade": "jra_grandjump",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "owner": "酒井",
+      "jbisId": "0000000844",
+      "bogusId": "92384",
+      "damId": "mineike"
+    },
+    {
+      "id": "eva-winner",
+      "name": "エバウイナー",
+      "foaled": {
+        "year": 1949,
+        "month": 5,
+        "day": 9
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "セントライト",
+      "dam": "ゴールドウエツデイング",
+      "color": "鹿毛",
+      "breeder": "岩手産",
+      "netkeibaId": "000a002964",
+      "raceStats": {
+        "total": {
+          "runs": 55,
+          "wins": 15
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 54,
+                "wins": 15
+              },
+              "jump": {
+                "runs": 1,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1952,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": null,
+          "race": "桜花賞",
+          "displayRace": "桜花賞",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "8"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "京都記念",
+          "grade_code": "national_grade",
+          "result": "2",
+          "distance": "芝2000",
+          "displayRace": "京都記念(秋)"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": null,
+          "race": "鳴尾記念",
+          "displayRace": "鳴尾記念",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gold-wedding",
+      "englishName": "Eva Winner",
+      "owner": "岡",
+      "jbisId": "0000000855",
+      "bogusId": "42817"
+    },
+    {
+      "id": "sachifusa",
+      "name": "サチフサ",
+      "foaled": {
+        "year": 1948,
+        "month": 4,
+        "day": 26
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "クレタケ",
+      "dam": "ヘーレンフオード",
+      "color": "栗毛",
+      "breeder": "千葉産",
+      "netkeibaId": "000a000944",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1950,
+            "month": 8,
+            "day": 13
+          },
+          "racecourse": "川崎",
+          "race": "全日本３歳優駿",
+          "grade_code": "local_old_grade",
+          "result": "1",
+          "distance": "ダ1200",
+          "displayRace": "全日本3歳優駿〔川崎〕"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 12,
+            "day": 10
+          },
+          "racecourse": null,
+          "race": "朝日杯3歳ステークス",
+          "displayRace": "朝日杯3歳S",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "6"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": "OP",
+          "race": "四歳特別（東京）",
+          "displayRace": "四歳特別（東京）〔OP〕",
+          "distance": null,
+          "grade": "local_old_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 9,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "毎日王冠",
+          "displayRace": "毎日王冠",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 11,
+            "day": 25
+          },
+          "racecourse": null,
+          "race": "セントライト記念",
+          "displayRace": "セントライト記念",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": null,
+          "race": "クモハタ記念",
+          "displayRace": "クモハタ記念",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 1,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "金杯",
+          "grade_code": "national_grade",
+          "result": "1",
+          "distance": "芝2600",
+          "displayRace": "金杯"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)",
+          "grade_code": "national_big8",
+          "result": "4",
+          "distance": "芝3200",
+          "displayRace": "天皇賞(春)"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": null,
+          "race": "天皇賞（秋）",
+          "displayRace": "天皇賞（秋）",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Sachifusa",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "heerenfuoodo",
+      "owner": "加藤",
+      "jbisId": "0000000426",
+      "bogusId": "29867"
+    },
+    {
+      "id": "sachi_homare",
+      "name": "サチホマレ",
+      "foaled": {
+        "year": 1948,
+        "month": 4,
+        "day": 17
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "大鵬",
+      "dam": "鶴楓",
+      "color": "鹿毛",
+      "breeder": "サカエ牧場（北海道静内）",
+      "netkeibaId": "000a00094d",
+      "raceStats": {
+        "total": {
+          "runs": 53,
+          "wins": 15
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 53,
+                "wins": 15
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1951,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "東京優駿（日本ダービー）",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "26",
+          "favorite": "19",
+          "result": "21",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 10,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "チャレンジＣ",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "11",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "チャレンジC"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "菊花賞",
+          "distance": "芝3000",
+          "grade": "national_big8",
+          "entry": "10",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 11,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "京都記念（秋）",
+          "distance": "芝3000",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "京都記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（秋）",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "3",
+          "result": "4",
+          "displayRace": "鳴尾記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "天皇賞（春）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "7",
+          "favorite": "3",
+          "result": "3",
+          "displayRace": "天皇賞（春）"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（春）",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "5",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "鳴尾記念（春）"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 6,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "京都記念（春）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "京都記念（春）"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Sachihomare",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tsurumomiji",
+      "owner": "塚原新六→上田清次郎",
+      "trainer": "上田武司（京都）→栗田金吾（大井）",
+      "ahonooraId": "sachi_homare"
+    },
+    {
+      "id": "tsurumomiji",
+      "name": "鶴楓",
+      "foaled": {
+        "year": 1935
+      },
+      "sex": "female",
+      "breed": "アングロアラブ種",
+      "sire": "山正",
+      "dam": "朝楓",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a00260b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "asamomiji"
+    },
+    {
+      "id": "asamomiji",
+      "name": "朝楓",
+      "foaled": {
+        "year": 1929
+      },
+      "sex": "female",
+      "breed": "アングロアラブ種",
+      "sire": "トウルヌソル(GB)",
+      "dam": "華時",
+      "color": "鹿毛",
+      "breeder": "千葉県",
+      "netkeibaId": "000a002372",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hanatoki"
+    },
+    {
+      "id": "tokidenko",
+      "name": "トキデンコー",
+      "foaled": {
+        "year": 1948,
+        "month": 6,
+        "day": 17
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "トキノチカラ",
+      "dam": "第五ウヱツデイングサーフ",
+      "color": "鹿毛",
+      "breeder": "静内産",
+      "netkeibaId": "000a00094c",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1951,
+            "month": 10,
+            "day": 14
+          },
+          "racecourse": null,
+          "race": "朝日チャレンジカップ",
+          "displayRace": "朝日チャレンジC",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "9"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "菊花賞",
+          "grade_code": "national_big8",
+          "result": "5",
+          "distance": "芝3000",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 11,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "京都記念(秋)",
+          "grade_code": "national_grade",
+          "result": "2",
+          "distance": "芝3000",
+          "displayRace": "京都記念(秋)"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 6,
+            "day": 29
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(春)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "朝日チャレンジカップ",
+          "displayRace": "朝日チャレンジC",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "京都記念(秋)",
+          "grade_code": "national_grade",
+          "result": "1",
+          "distance": "芝2000",
+          "displayRace": "京都記念(秋)"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": null,
+          "race": "鳴尾記念",
+          "displayRace": "鳴尾記念",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 6
+          },
+          "racecourse": null,
+          "race": "阪神大賞典",
+          "displayRace": "阪神大賞典",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tokidenko",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daigouetsudeingusaafu",
+      "owner": "増本",
+      "jbisId": "0000000487",
+      "bogusId": "27425"
+    },
+    {
+      "id": "daigouetsudeingusaafu",
+      "name": "第五ウヱツデイングサーフ",
+      "foaled": {
+        "year": 1933
+      },
+      "sex": "female",
+      "breed": "アングロアラブ種",
+      "sire": "シアンモア(GB)",
+      "dam": "ウヱツデイングサーフ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a002580",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "uetsudeingusaafu"
+    },
+    {
+      "id": "hoshu",
+      "name": "ホウシユウ",
+      "foaled": {
+        "year": 1946,
+        "month": 5,
+        "day": 10
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "プリメロ(GB)",
+      "dam": "第四ウエツデイングサーフ",
+      "color": "鹿毛",
+      "breeder": "岩手産",
+      "netkeibaId": "000a0008c6",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1949,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "皐月賞",
+          "displayRace": "皐月賞",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "10"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 6,
+            "day": 5
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 4,
+            "day": 16
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(春)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "daiyonuetsudeingusaafu",
+      "englishName": "Hoshu",
+      "jbisId": "0000333104",
+      "bogusId": "18063"
+    },
+    {
+      "id": "yashima-apollo",
+      "name": "ヤシマアポロ",
+      "foaled": {
+        "year": 1951,
+        "month": 5,
+        "day": 11
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "月友",
+      "dam": "ゴールドウエツデイング",
+      "color": "栗毛",
+      "breeder": "浦河産",
+      "netkeibaId": "000a00093b",
+      "raceStats": {
+        "total": {
+          "runs": 15,
+          "wins": 9
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 15,
+                "wins": 9
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 13
+          },
+          "racecourse": null,
+          "race": "阪神3歳ステークス",
+          "displayRace": "阪神3歳S",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Yashima Apollo",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gold-wedding",
+      "owner": "小林",
+      "jbisId": "0000001697",
+      "bogusId": "19480"
     }
   ]
 }

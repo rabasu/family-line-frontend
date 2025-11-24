@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "星谷",
     "rootHorseId": "hoshitani",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:50:06.373784Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -333,29 +333,137 @@
       "id": "tsukikawa",
       "name": "ツキカワ",
       "foaled": {
-        "year": 1948
+        "year": 1948,
+        "month": 4,
+        "day": 4
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "月友",
       "dam": "波川",
       "color": "鹿毛",
-      "breeder": "青森県",
+      "breeder": "奥羽種蓄牧場（青森県）",
       "netkeibaId": "000a00282c",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 48,
+          "wins": 13
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 48,
+                "wins": 13
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳Ｓ",
+          "distance": "芝1200",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "3",
+          "result": "8",
+          "displayRace": "阪神3歳S"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "distance": "芝1600",
+          "grade": "national_big8",
+          "entry": "11",
+          "favorite": "3",
+          "result": "1",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（秋）",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "4",
+          "result": "5",
+          "displayRace": "鳴尾記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "チャレンジＣ",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "6",
+          "result": "8",
+          "displayRace": "チャレンジC"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "京都記念（秋）",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "5",
+          "result": "7",
+          "displayRace": "京都記念（秋）"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Tsukikawa",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "namikawa"
+      "damId": "namikawa",
+      "owner": "仁木清七",
+      "trainer": "伊藤勝吉（京都）→松田由太郎（京都）",
+      "ahonooraId": "tsukikawa"
     },
     {
       "id": "namikawa",
@@ -1183,6 +1291,133 @@
         "total": "0万円"
       },
       "damId": "hoshitani"
+    },
+    {
+      "id": "toyokuni",
+      "name": "トヨクニ",
+      "foaled": {
+        "year": "1943"
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "ダイオライト(GB)",
+      "dam": "波川",
+      "color": "鹿毛",
+      "breeder": "JPN",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "bogusId": "74897",
+      "damId": "namikawa"
+    },
+    {
+      "id": "hamauta",
+      "name": "ハマウタ",
+      "foaled": {
+        "year": 1951
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "プリメロ(GB)",
+      "dam": "年谷",
+      "color": "黒鹿毛",
+      "breeder": "青森産",
+      "netkeibaId": "000a00098a",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 1
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 5,
+                "wins": 1
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 13
+          },
+          "racecourse": null,
+          "race": "朝日杯3歳ステークス",
+          "displayRace": "朝日杯3歳S",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "スプリングS",
+          "grade_code": "national_grade",
+          "result": "2",
+          "distance": "芝1800",
+          "displayRace": "スプリングS"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 5,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "取消"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Hamauta",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nentani",
+      "owner": "吉川",
+      "jbisId": "0000001562",
+      "bogusId": "42466"
     }
   ]
 }

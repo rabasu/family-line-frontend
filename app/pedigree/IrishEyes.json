@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "Irish Eyes",
     "rootHorseId": "irish-eyes",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T16:48:09.338795Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -29,7 +29,7 @@
       "comments": "サラブレッド血統書 第3巻 p.1; 血統書データベース; 凪的電脳賽馬; 血統書データベース; 血統書データサービス; JBIS; 血統書データサービス; サラブレッド血統書 10巻 p.525; JBIS; 血統書データサービス; JBIS; JBIS; 血統書データサービス; 日付はJRA競走馬情報; JBIS"
     },
     {
-      "id": "ohohikari",
+      "id": "oho-hikari",
       "name": "オホヒカリ",
       "foaled": {
         "year": 1943,
@@ -37,11 +37,11 @@
         "day": 15
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "月友",
-      "dam": "アイリツシユアイズ",
-      "color": "",
-      "breeder": "",
+      "dam": "アイリツシユアイズ(AUS)",
+      "color": "栗毛",
+      "breeder": "浦河産",
       "netkeibaId": "000a002645",
       "raceStats": {
         "total": {
@@ -135,13 +135,16 @@
           "result": "5"
         }
       ],
-      "source": "tsx_conversion",
+      "source": "python_scraping",
       "damId": "irish-eyes",
       "trainer": "尾形藤吉",
       "owner": "栗林友二（大東牧場）",
       "died": "1967.04.27 死亡",
       "formerPedigreeName": "第参アイリツシユアイズ",
-      "jockey": "野平祐二"
+      "jockey": "野平祐二",
+      "englishName": "Oho Hikari",
+      "jbisId": "0000376384",
+      "bogusId": "15250"
     },
     {
       "id": "kurinohana",
@@ -152,11 +155,11 @@
         "day": 18
       },
       "sex": "male",
-      "breed": "サラブレッド種",
-      "sire": "プリメロ(GB)",
+      "breed": "サラ",
+      "sire": "プリメロ",
       "dam": "オホヒカリ",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "大東牧場（千葉県）",
       "netkeibaId": "000a0008d8",
       "raceStats": {
         "total": {
@@ -250,18 +253,19 @@
           "result": "7"
         }
       ],
-      "source": "tsx_conversion",
+      "source": "python_scraping",
       "prizeMoney": {
         "total": "3,169,500円"
       },
-      "damId": "ohohikari",
-      "trainer": "尾形藤吉",
+      "damId": "oho-hikari",
+      "trainer": "尾形藤吉（東京）",
       "owner": "栗林友二",
       "died": "1965.09.29 敗血症",
       "formerName": "デンコウ",
       "formerPedigreeName": "オレゴン",
       "retired": "1953.03.05 蕃殖",
-      "jockey": "八木沢勝美"
+      "jockey": "八木沢勝美",
+      "ahonooraId": "kurinohana"
     },
     {
       "id": "kurinohoshi",
@@ -286,7 +290,7 @@
         "divisions": []
       },
       "source": "tsx_conversion",
-      "damId": "ohohikari",
+      "damId": "oho-hikari",
       "owner": "栗林友二",
       "died": "1977.11 死亡",
       "formerName": "クリノカワ",
