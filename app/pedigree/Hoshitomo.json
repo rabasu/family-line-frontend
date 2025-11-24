@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "星友",
     "rootHorseId": "hoshitomo-1923",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:49:09.627965Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -2699,34 +2699,84 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suteetsuniita"
+      "damId": "states-nita",
+      "linkName": "モリアキ(1958)"
     },
     {
-      "id": "suteetsuniita",
-      "name": "ステーツニータ",
+      "id": "states-nita",
+      "name": "トリフネ",
       "foaled": {
-        "year": 1949
+        "year": 1949,
+        "month": 5,
+        "day": 8
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "黒鹿毛",
+      "breed": "サラ",
+      "sire": "イブキヤマ",
       "dam": "ダイオニータ",
       "color": "黒鹿毛",
-      "breeder": "千葉県",
+      "breeder": "千葉産",
       "netkeibaId": "000a0028a0",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 50,
+          "wins": 4
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 34,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 16,
+                "wins": 4
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1953,
+            "month": 10,
+            "day": 18
+          },
+          "racecourse": null,
+          "race": "京都大障害（秋）",
+          "displayRace": "京都大障害（秋）",
+          "distance": null,
+          "grade": "national_jump",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daioniita"
+      "damId": "daioniita",
+      "englishName": "States Nita",
+      "owner": "森口",
+      "jbisId": "0000000810",
+      "bogusId": "25320"
     },
     {
       "id": "daioniita",
@@ -3036,7 +3086,7 @@
       "damId": "midori-hime"
     },
     {
-      "id": "amatsukaze",
+      "id": "amatsukaze-1970",
       "name": "アマツカゼ",
       "foaled": {
         "year": 1970
@@ -3444,7 +3494,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suteetsuniita"
+      "damId": "states-nita"
     },
     {
       "id": "miyajihikari",
