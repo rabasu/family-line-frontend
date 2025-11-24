@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "種正",
     "rootHorseId": "tanemasa",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:49:09.073526Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -502,29 +502,75 @@
       "id": "yashima-temple",
       "name": "ヤシマテンプル",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 5,
+        "day": 22
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "セフト(GB)",
+      "breed": "サラ",
+      "sire": "セフト(IRE)",
       "dam": "神正",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "浦河産",
       "netkeibaId": "000a0027c4",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 49,
+          "wins": 8
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 48,
+                "wins": 8
+              },
+              "jump": {
+                "runs": 1,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1950,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "grade_code": "national_big8",
+          "result": "2",
+          "distance": "芝1600",
+          "displayRace": "桜花賞"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Yashima Temple",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kamisei"
+      "damId": "kamisei",
+      "owner": "眞砂",
+      "jbisId": "0000000357",
+      "bogusId": "16642"
     },
     {
       "id": "kamisei",
@@ -5947,6 +5993,625 @@
         "total": "0万円"
       },
       "damId": "yashima-jet"
+    },
+    {
+      "id": "bostonian",
+      "name": "ボストニアン",
+      "foaled": {
+        "year": 1950,
+        "month": 5,
+        "day": 13
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "セフト",
+      "dam": "神正",
+      "color": "栗毛",
+      "breeder": "ヤシマ牧場（北海道浦河）",
+      "netkeibaId": "000a000937",
+      "raceStats": {
+        "total": {
+          "runs": 28,
+          "wins": 16
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 28,
+                "wins": 16
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1953,
+            "month": 4,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "皐月賞",
+          "distance": "芝2000",
+          "grade": "national_big8",
+          "entry": "17",
+          "favorite": "7",
+          "result": "1",
+          "displayRace": "皐月賞"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "ＮＨＫ杯",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "10",
+          "favorite": "4",
+          "result": "1",
+          "displayRace": "NHK杯"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "東京優駿（日本ダービー）",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "33",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "菊花賞",
+          "distance": "芝3000",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "1",
+          "result": "2",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "16",
+          "favorite": "3",
+          "result": "6",
+          "displayRace": "阪神大賞典"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念（秋）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "12",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "鳴尾記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 1,
+            "day": 17
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春杯",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "13",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "日本経済新春杯"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 4,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "京都記念（春）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "5",
+          "favorite": "1",
+          "result": "2",
+          "displayRace": "京都記念（春）"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "天皇賞（春）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "6",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "天皇賞（春）"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 6,
+            "day": 20
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "1",
+          "result": "3",
+          "displayRace": "鳴尾記念"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "5",
+          "favorite": "3",
+          "result": "4",
+          "displayRace": "毎日王冠"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "目黒記念（秋）",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "9",
+          "favorite": "7",
+          "result": "5",
+          "displayRace": "目黒記念（秋）"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Bostonian",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kamisei",
+      "owner": "岡本治一",
+      "trainer": "増本勇（京都）",
+      "ahonooraId": "bostonian"
+    },
+    {
+      "id": "masa-taka",
+      "name": "マサタカ",
+      "foaled": {
+        "year": 1949,
+        "month": 4,
+        "day": 9
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "シゲハヤ",
+      "dam": "豊正",
+      "color": "鹿毛",
+      "breeder": "新冠産",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 53,
+          "wins": 9
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 53,
+                "wins": 9
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1952,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": null,
+          "race": "セントライト記念",
+          "displayRace": "セントライト記念",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 3,
+            "day": 29
+          },
+          "racecourse": null,
+          "race": "東京盃",
+          "displayRace": "東京盃",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "6"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": null,
+          "race": "目黒記念",
+          "displayRace": "目黒記念(秋)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "6"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": null,
+          "race": "天皇賞（秋）",
+          "displayRace": "天皇賞（秋）",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "8"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": null,
+          "race": "ダイヤモンドステークス",
+          "displayRace": "ダイヤモンドS",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Masa Taka",
+      "owner": "山口",
+      "jbisId": "0000000787",
+      "bogusId": "53501",
+      "damId": "yutakasei"
+    },
+    {
+      "id": "minemasa",
+      "name": "ミネマサ",
+      "foaled": {
+        "year": 1951,
+        "month": 5,
+        "day": 4
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "シマタカ",
+      "dam": "豊正",
+      "color": "栗毛",
+      "breeder": "新冠産",
+      "netkeibaId": "1951z00020",
+      "raceStats": {
+        "total": {
+          "runs": 44,
+          "wins": 14
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 44,
+                "wins": 14
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1954,
+            "month": 3,
+            "day": 21
+          },
+          "racecourse": null,
+          "race": "スプリングステークス",
+          "displayRace": "スプリングS",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 4,
+            "day": 18
+          },
+          "racecourse": null,
+          "race": "皐月賞",
+          "displayRace": "皐月賞",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "8"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "NHK杯",
+          "grade_code": "national_grade",
+          "result": "2",
+          "distance": "芝2000",
+          "displayRace": "NHK杯"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 5,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": null,
+          "race": "安田賞",
+          "displayRace": "安田賞",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "8"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 6,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯",
+          "grade_code": "national_grade",
+          "result": "1",
+          "distance": "芝2000",
+          "displayRace": "毎日杯"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 8,
+            "day": 22
+          },
+          "racecourse": "中京",
+          "race": "中京記念",
+          "grade_code": "national_grade",
+          "result": "3",
+          "distance": "芝1800",
+          "displayRace": "中京記念"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 10,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "京都盃",
+          "grade_code": "jra_grade",
+          "result": "1",
+          "distance": "芝2400",
+          "displayRace": "京都盃"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 10,
+            "day": 31
+          },
+          "racecourse": null,
+          "race": "朝日チャレンジカップ",
+          "displayRace": "朝日チャレンジC",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "菊花賞",
+          "grade_code": "jra_big8",
+          "result": "2",
+          "distance": "芝3000",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 8,
+            "day": 25
+          },
+          "racecourse": null,
+          "race": "中京記念",
+          "displayRace": "中京記念",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "10"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 8,
+            "day": 26
+          },
+          "racecourse": "中京",
+          "race": "中京記念競走(OP)",
+          "displayRace": "中京記念",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "10",
+          "favorite": "11"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "yutakasei",
+      "owner": "峰岸",
+      "jbisId": "0000001706",
+      "bogusId": "30727"
     }
   ]
 }
