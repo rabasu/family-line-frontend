@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "フライアースメードン",
     "rootHorseId": "friars_maiden",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:20:09.120801Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -404,29 +404,105 @@
       "id": "tosano-surusumi",
       "name": "トサノスルスミ",
       "foaled": {
-        "year": 1951
+        "year": 1951,
+        "month": 3,
+        "day": 16
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "クモハタ",
       "dam": "第弐フライアースメードン",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "浦河産",
       "netkeibaId": "000a002a24",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 28,
+          "wins": 8
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 28,
+                "wins": 8
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1954,
+            "month": 4,
+            "day": 30
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "grade_code": "national_big8",
+          "result": "2",
+          "distance": "芝1600",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 5,
+            "day": 22
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "8"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 10,
+            "day": 10
+          },
+          "racecourse": null,
+          "race": "クイーンステークス",
+          "displayRace": "クイーンS",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "12"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Tosano Surusumi",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainifuraiaasumeedon"
+      "damId": "dainifuraiaasumeedon",
+      "owner": "斉藤",
+      "jbisId": "0000001650",
+      "bogusId": "27903"
     },
     {
       "id": "dainifuraiaasumeedon",
@@ -1272,6 +1348,83 @@
         "total": "0万円"
       },
       "damId": "tosano-surusumi"
+    },
+    {
+      "id": "azuma_rai",
+      "name": "アヅマライ",
+      "foaled": {
+        "year": 1943,
+        "month": 4,
+        "day": 22
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "プリメロ",
+      "dam": "*フライアースメードン",
+      "color": "栗毛",
+      "breeder": "小岩井農場（岩手県）",
+      "netkeibaId": "000a000924",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 3
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 6,
+                "wins": 3
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1946,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "農林省賞典4歳馬",
+          "distance": "芝3000",
+          "grade": "jrs_grade",
+          "entry": "5",
+          "favorite": "5",
+          "result": "1",
+          "displayRace": "農林省賞典4歳馬"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Azumarai",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "friars_maiden",
+      "owner": "熊谷新太郎",
+      "trainer": "高橋直三（京都）",
+      "ahonooraId": "azuma_rai",
+      "bogusId": "18516"
     }
   ]
 }
