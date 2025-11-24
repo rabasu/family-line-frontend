@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "アステリヤ",
     "rootHorseId": "asteria",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:47:27.903103Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -391,28 +391,92 @@
       "id": "shirayoshi",
       "name": "シラヨシ",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 3,
+        "day": 22
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "ダイオライト",
+      "breed": "サラ",
+      "sire": "ダイオライト(GB)",
       "dam": "アステリモア",
       "color": "黒鹿毛",
-      "breeder": "青森県",
+      "breeder": "青森産",
       "netkeibaId": "000a002865",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 53,
+          "wins": 10
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 53,
+                "wins": 10
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1949,
+            "month": 12,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "朝日杯3歳ステークス",
+          "displayRace": "朝日杯3歳S",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 19
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "asuterimoa"
+      "damId": "asuterimoa",
+      "englishName": "Shirayoshi",
+      "owner": "眞砂",
+      "jbisId": "0000000356",
+      "bogusId": "41741"
     },
     {
       "id": "asuterimoa",
@@ -3961,34 +4025,277 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidehikari"
+      "damId": "hide_hikari"
     },
     {
-      "id": "hidehikari",
+      "id": "hide_hikari",
       "name": "ヒデヒカリ",
       "foaled": {
-        "year": 1945
+        "year": 1945,
+        "month": 4,
+        "day": 14
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "ダイオライト",
       "dam": "アステリモア",
       "color": "鹿毛",
-      "breeder": "青森県",
+      "breeder": "大平牧場（青森県）",
       "netkeibaId": "000a002853",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 55,
+          "wins": 11
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 55,
+                "wins": 11
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1948,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "農林省賞典",
+          "distance": "芝2000",
+          "grade": "jrs_big8",
+          "entry": "7",
+          "favorite": "6",
+          "result": "1",
+          "displayRace": "皐月賞"
+        },
+        {
+          "date": {
+            "year": 1948,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "優駿競走",
+          "distance": "芝2400",
+          "grade": "jrs_big8",
+          "entry": "23",
+          "favorite": "2",
+          "result": "12",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1948,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "カブトヤマ記念",
+          "distance": "芝1950",
+          "grade": "national_grade",
+          "entry": "10",
+          "favorite": "1",
+          "result": "9",
+          "displayRace": "カブトヤマ記念"
+        },
+        {
+          "date": {
+            "year": 1948,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "6",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "優駿牝馬"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "中山記念（春）",
+          "distance": "芝2600",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "2",
+          "result": "5",
+          "displayRace": "中山記念（春）"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "目黒記念（春）",
+          "distance": "芝3200",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "9",
+          "result": "9",
+          "displayRace": "目黒記念（春）"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "天皇賞（秋）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "13",
+          "favorite": "4",
+          "result": "3",
+          "displayRace": "天皇賞（秋）"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "目黒記念（秋）",
+          "distance": "芝2600",
+          "grade": "national_grade",
+          "entry": "11",
+          "favorite": "5",
+          "result": "2",
+          "displayRace": "目黒記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 12,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "中山記念（秋）",
+          "distance": "芝3200",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "中山記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 4,
+            "day": 16
+          },
+          "racecourse": "中山",
+          "race": "中山記念（春）",
+          "distance": "芝2600",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "1",
+          "result": "6",
+          "displayRace": "中山記念（春）"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "天皇賞（春）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "9",
+          "favorite": "7",
+          "result": "5",
+          "displayRace": "天皇賞（春）"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "天皇賞（秋）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "10",
+          "favorite": "3",
+          "result": "5",
+          "displayRace": "天皇賞（秋）"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "目黒記念（秋）",
+          "distance": "芝2500",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "",
+          "result": "取消",
+          "displayRace": "目黒記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": "中山",
+          "race": "中山記念（秋）",
+          "distance": "芝3200",
+          "grade": "national_grade",
+          "entry": "8",
+          "favorite": "5",
+          "result": "6",
+          "displayRace": "中山記念（秋）"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "asuterimoa"
+      "damId": "asuterimoa",
+      "owner": "木村福太郎",
+      "trainer": "藤本冨良（東京）",
+      "ahonooraId": "hide_hikari"
     },
     {
       "id": "ootajima",
@@ -4046,7 +4353,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidehikari"
+      "damId": "hide_hikari"
     },
     {
       "id": "asuteoo",
@@ -4158,11 +4465,11 @@
         "year": 1971
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "アア",
       "sire": "リキスユリ",
       "dam": "スズイサミ",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "種市満夫（青森県）",
       "netkeibaId": "1955501975",
       "raceStats": {
         "total": {
@@ -4460,9 +4767,80 @@
       ],
       "source": "python_scraping 血統データ:1972z01425, 『優駿達の蹄跡』",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "154,334,400円"
       },
       "damId": "suzuisami"
+    },
+    {
+      "id": "meijihomare",
+      "name": "メイヂホマレ",
+      "foaled": {
+        "year": 1951,
+        "month": 5,
+        "day": 3
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "クモハタ",
+      "dam": "プレツテイモア",
+      "color": "鹿毛",
+      "breeder": "三石産",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 6
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 30,
+                "wins": 6
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1954,
+            "month": 8,
+            "day": 22
+          },
+          "racecourse": "中京",
+          "race": "中京記念",
+          "grade_code": "national_grade",
+          "result": "1",
+          "distance": "芝1800",
+          "displayRace": "中京記念"
+        }
+      ],
+      "source": "python_scraping",
+      "owner": "新田",
+      "jbisId": "0000001643",
+      "bogusId": "30522",
+      "damId": "puretsuteimoa",
+      "comment": "1954/05/23の四歳特別（東京）を勝っている。bogus上ではOPとして記載があるが、重賞ではない"
     }
   ]
 }

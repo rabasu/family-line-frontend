@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "By Gracious",
     "rootHorseId": "by-gracious",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:20:34.149652Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -658,31 +658,209 @@
       }
     },
     {
-      "id": "misumeiji",
+      "id": "miss-meiji",
       "name": "ミスメイヂ",
       "foaled": {
-        "year": 1948
+        "year": 1948,
+        "month": 5,
+        "day": 9
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "ステーツマン(GB)",
-      "dam": "バイグレーシアス",
+      "dam": "バイグレーシアス(USA)",
       "color": "鹿毛",
-      "breeder": "白老町",
+      "breeder": "白老産",
       "netkeibaId": "000a00281f",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 53,
+          "wins": 9
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 53,
+                "wins": 9
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1951,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "11"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 10,
+            "day": 21
+          },
+          "racecourse": null,
+          "race": "中山記念",
+          "displayRace": "中山記念(秋)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 11,
+            "day": 18
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": null,
+          "race": "クモハタ記念",
+          "displayRace": "クモハタ記念",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "6"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 1,
+            "day": 20
+          },
+          "racecourse": null,
+          "race": "金杯（東）",
+          "displayRace": "金杯（東）",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": null,
+          "race": "ダイヤモンドステークス",
+          "displayRace": "ダイヤモンドS",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(秋)",
+          "grade_code": "national_grade",
+          "result": "2",
+          "distance": "芝2500",
+          "displayRace": "目黒記念(秋)"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 10,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "中山記念",
+          "grade_code": "national_grade",
+          "result": "2",
+          "distance": "芝2400",
+          "displayRace": "中山記念"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(秋)",
+          "grade_code": "national_big8",
+          "result": "4",
+          "distance": "芝3200",
+          "displayRace": "天皇賞(秋)"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": null,
+          "race": "金杯（東）",
+          "displayRace": "金杯（東）",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "9"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "by-gracious"
+      "damId": "by-gracious",
+      "englishName": "Miss Meiji",
+      "owner": "新田",
+      "jbisId": "0000000445",
+      "bogusId": "39516"
     },
     {
       "id": "baburingukehto",
@@ -741,7 +919,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misumeiji"
+      "damId": "miss-meiji"
     }
   ]
 }

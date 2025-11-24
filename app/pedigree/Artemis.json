@@ -1,23 +1,25 @@
 {
   "metadata": {
     "pedigreeName": "アルテミス",
-    "rootHorseId": "arutemisu",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "rootHorseId": "artemis",
+    "lastUpdated": "2025-11-23T17:49:53.213433Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
-      "id": "arutemisu",
+      "id": "artemis",
       "name": "アルテミス",
       "foaled": {
-        "year": 1898
+        "year": 1903
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "breed": "サラ系",
+      "sire": "Holbrook(AUS)",
+      "dam": "Pet Girl",
+      "color": "鹿毛",
       "breeder": "豪",
+      "importedYear": "1908",
+      "importedBy": "関西競馬倶楽部",
       "netkeibaId": "000a01c0f2",
       "raceStats": {
         "total": {
@@ -27,7 +29,8 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』",
+      "comment": "netkeibaでは生年1898、凪的では2頭に分離していて1887 / 1903。産駒の生年から1903と推定。凪的でトライミーの母とされているアルテミス(1887, FR)はPedigreeQueryに登録はあるが、日本に輸出された形跡がない。『明治・大正・昭和初期の輸入馬』にも記載がないためこれは誤りと思われる。"
     },
     {
       "id": "toraimii",
@@ -36,7 +39,7 @@
         "year": 1916
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ピユアークリスタル(GB)",
       "dam": "アルテミス",
       "color": "",
@@ -54,7 +57,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "arutemisu"
+      "damId": "artemis"
     },
     {
       "id": "toraimiinoshichi",
@@ -63,7 +66,7 @@
         "year": 1932
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "クラツクマンナン(GB)",
       "dam": "トライミー",
       "color": "黒鹿毛",
@@ -90,7 +93,7 @@
         "year": 1942
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "トキノチカラ",
       "dam": "トライミーノ七",
       "color": "黒鹿毛",
@@ -114,29 +117,105 @@
       "id": "olympia",
       "name": "オリンピア",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 4,
+        "day": 11
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "月友",
       "dam": "ウネビノ二",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "JPN",
       "netkeibaId": "000a00b7ab",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 55,
+          "wins": 17
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 55,
+                "wins": 17
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1950,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "grade_code": "national_big8",
+          "result": "3",
+          "distance": "芝1600",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 26
+          },
+          "racecourse": null,
+          "race": "朝日チャレンジカップ",
+          "displayRace": "朝日チャレンジC",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "9"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(春)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Olympia",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "unebinoni"
+      "damId": "unebinoni",
+      "owner": "大木",
+      "jbisId": "0000000395",
+      "bogusId": "35064"
     },
     {
       "id": "koshun",
@@ -145,7 +224,7 @@
         "year": 1956
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ライジングフレーム(IRE)",
       "dam": "オリンピア",
       "color": "",
@@ -173,7 +252,7 @@
         "year": 1975
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "スカイマスター(IRE)",
       "dam": "コウシユン",
       "color": "鹿毛",
@@ -203,7 +282,7 @@
         "day": 31
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "トウショウボーイ",
       "dam": "ファインタガミ",
       "color": "鹿毛",
@@ -233,7 +312,7 @@
         "day": 21
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "トニービン(IRE)",
       "dam": "ストームクイン",
       "color": "鹿毛",
@@ -244,7 +323,34 @@
           "runs": 22,
           "wins": 6
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 7,
+                "wins": 2
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 15,
+                "wins": 4
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [
         {
@@ -431,7 +537,7 @@
         "day": 16
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ロイヤルスキー",
       "dam": "ゴールドブィミー",
       "color": "鹿毛",
@@ -537,7 +643,7 @@
         "year": 1971
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ヴィミー",
       "dam": "リカ",
       "color": "黒鹿毛",
@@ -565,7 +671,7 @@
         "year": 1962
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ハクリョウ",
       "dam": "コウシユン",
       "color": "",
@@ -595,7 +701,7 @@
         "day": 23
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "キタノカチドキ",
       "dam": "ゴールドブィミー",
       "color": "黒鹿毛",
@@ -671,7 +777,7 @@
         "day": 13
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ダイアトム",
       "dam": "ミスウインサム",
       "color": "黒鹿毛",
@@ -730,7 +836,7 @@
         "year": 1969
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ダイハード(GB)",
       "dam": "コウシユン",
       "color": "鹿毛",
@@ -760,7 +866,7 @@
         "day": 8
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ハイセイコー",
       "dam": "ランマイ",
       "color": "栃栗毛",
@@ -803,7 +909,7 @@
         "year": 1972
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "エタン(US)",
       "dam": "ミネビ",
       "color": "",
@@ -831,7 +937,7 @@
         "year": 1956
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "シマタカ",
       "dam": "ミスウネビ",
       "color": "鹿毛",
@@ -859,7 +965,7 @@
         "year": 1945
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "セフト(GB)",
       "dam": "トライミーノ七",
       "color": "栗毛",
@@ -886,7 +992,7 @@
         "year": 1960
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ライジングフレーム(IRE)",
       "dam": "ハツピーウネビ",
       "color": "",
@@ -967,17 +1073,19 @@
       }
     },
     {
-      "id": "hatsupiiunebi",
+      "id": "happy-unebi",
       "name": "ハツピーウネビ",
       "foaled": {
-        "year": 1948
+        "year": 1948,
+        "month": 4,
+        "day": 16
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "セフト(GB)",
+      "breed": "サラ系",
+      "sire": "セフト(IRE)",
       "dam": "トライミーノ七",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "JPN",
       "netkeibaId": "000a00b7a6",
       "raceStats": {
         "total": {
@@ -986,12 +1094,105 @@
         },
         "divisions": []
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1951,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "grade_code": "national_big8",
+          "result": "3",
+          "distance": "芝1600",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": null,
+          "race": "皐月賞",
+          "displayRace": "皐月賞",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 6,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "19"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 11,
+            "day": 18
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": null,
+          "race": "クモハタ記念",
+          "displayRace": "クモハタ記念",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 1,
+            "day": 20
+          },
+          "racecourse": null,
+          "race": "金杯（東）",
+          "displayRace": "金杯（東）",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "toraimiinoshichi"
+      "damId": "toraimiinoshichi",
+      "englishName": "Happy Unebi",
+      "owner": "富岡",
+      "jbisId": "0000000567",
+      "bogusId": "19693"
     },
     {
       "id": "unebi-hikari",
@@ -1000,7 +1201,7 @@
         "year": 1956
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ライジングフレーム(IRE)",
       "dam": "ハツピーウネビ",
       "color": "黒鹿毛",
@@ -1200,7 +1401,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hatsupiiunebi"
+      "damId": "happy-unebi"
     },
     {
       "id": "dankan",
@@ -1209,7 +1410,7 @@
         "year": 1954
       },
       "sex": "male",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "ヴイーノーピユロー(AR)",
       "dam": "ハツピーウネビ",
       "color": "栗毛",
@@ -1273,7 +1474,70 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hatsupiiunebi"
+      "damId": "happy-unebi"
+    },
+    {
+      "id": "asukayama",
+      "name": "アスカヤマ",
+      "foaled": {
+        "year": 1944,
+        "month": 5,
+        "day": 10
+      },
+      "sex": "male",
+      "breed": "サラ系",
+      "sire": "セフト(IRE)",
+      "dam": "トライミーノ七",
+      "color": "栗毛",
+      "breeder": "JPN",
+      "netkeibaId": "000a00b6d8",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1947,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": null,
+          "race": "農林省賞典四歳馬",
+          "displayRace": "菊花賞",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1948,
+            "month": 11,
+            "day": 28
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(秋)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Asukayama",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "toraimiinoshichi",
+      "jbisId": "0000453047",
+      "bogusId": "27033"
     }
   ]
 }

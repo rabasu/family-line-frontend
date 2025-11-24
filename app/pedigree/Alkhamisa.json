@@ -1,21 +1,27 @@
 {
   "metadata": {
     "pedigreeName": "アルカアミサ",
-    "rootHorseId": "arukaamisa",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "rootHorseId": "alkhamisa",
+    "lastUpdated": "2025-11-24T10:53:00.000Z",
     "source": "attribute_mapping_reverted"
   },
   "horses": [
     {
-      "id": "arukaamisa",
+      "id": "alkhamisa",
       "name": "アルカアミサ",
-      "foaled": {},
+      "foaled": {
+        "year": 1923
+      },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "",
-      "dam": "",
-      "color": "",
-      "breeder": "",
+      "breed": "アラ",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "鹿毛",
+      "breeder": "アラビヤ",
+      "importedYear": "1928",
+      "importedBy": "米澤太八",
+      "owner": "松木啓三（鹿児島郡中郡字村）",
+      "registration": "7巻路119号",
       "netkeibaId": "000a01c822",
       "raceStats": {
         "total": {
@@ -25,16 +31,16 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『馬匹血統登録書 第7巻』p.69"
     },
     {
-      "id": "nichinoshutsu",
+      "id": "hinode-1938",
       "name": "日ノ出",
       "foaled": {
         "year": 1938
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "アラ",
       "sire": "デマス",
       "dam": "アルカアミサ",
       "color": "栗毛",
@@ -48,11 +54,12 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1227",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "arukaamisa"
+      "damId": "alkhamisa",
+      "linkName": "日ノ出(1938)"
     },
     {
       "id": "hina",
@@ -61,7 +68,7 @@
         "year": 1942
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "アア",
       "sire": "雪時",
       "dam": "日ノ出",
       "color": "鹿毛",
@@ -79,7 +86,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nichinoshutsu"
+      "damId": "hinode-1938"
     },
     {
       "id": "tokuhime",
@@ -109,7 +116,7 @@
       "damId": "hina"
     },
     {
-      "id": "neon",
+      "id": "neon-1955",
       "name": "ネオン",
       "foaled": {
         "year": 1955
@@ -133,7 +140,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tokuhime"
+      "damId": "tokuhime",
+      "linkName": "ネオン(1955)"
     },
     {
       "id": "gooruden-ooza",
@@ -251,7 +259,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "neon"
+      "damId": "neon-1955"
     }
   ]
 }

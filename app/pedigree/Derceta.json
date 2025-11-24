@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "Derceta",
     "rootHorseId": "derceta",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:47:44.902708Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -677,34 +677,113 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "monakooo"
+      "damId": "monaco-o"
     },
     {
-      "id": "monakooo",
+      "id": "monaco-o",
       "name": "モナコオー",
       "foaled": {
-        "year": 1950
+        "year": 1950,
+        "month": 5,
+        "day": 24
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "シーマー",
       "dam": "カザン",
       "color": "鹿毛",
-      "breeder": "豊浦町",
+      "breeder": "豊浦産",
       "netkeibaId": "000a0029df",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 85,
+          "wins": 24
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 40,
+                "wins": 5
+              },
+              "jump": {
+                "runs": 45,
+                "wins": 19
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1953,
+            "month": 5,
+            "day": 17
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "national_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 5,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "京都大障害（春）",
+          "displayRace": "京都大障害（春）",
+          "distance": null,
+          "grade": "national_jump",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 6,
+            "day": 26
+          },
+          "racecourse": null,
+          "race": "中山大障害（春）",
+          "displayRace": "中山大障害（春）",
+          "distance": null,
+          "grade": "jra_grandjump",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kazan"
+      "damId": "kazan",
+      "englishName": "Monaco O",
+      "owner": "飯原",
+      "jbisId": "0000001109",
+      "bogusId": "40000"
     },
     {
       "id": "akisan",

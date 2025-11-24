@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "デユランゴ",
     "rootHorseId": "durango",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:49:25.233414Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -283,6 +283,110 @@
         "total": "0万円"
       },
       "damId": "okikaze"
+    },
+    {
+      "id": "neon",
+      "name": "ネオン",
+      "foaled": {
+        "year": 1944,
+        "month": 3,
+        "day": 25
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ダツシング",
+      "dam": "アクロン",
+      "color": "鹿毛",
+      "breeder": "青森産",
+      "netkeibaId": "000a00279d",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 12
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 30,
+                "wins": 12
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1947,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "linkName": "ネオン(1944)",
+      "damId": "akuron",
+      "englishName": "Neon",
+      "owner": "吉田",
+      "jbisId": "0000000204",
+      "bogusId": "39125"
+    },
+    {
+      "id": "akuron",
+      "name": "アクロン",
+      "foaled": {
+        "year": 1935
+      },
+      "sex": "female",
+      "breed": "アングロアラブ種",
+      "sire": "アスフオード(GB)",
+      "dam": "デユランゴ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00247a",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "durango"
     }
   ]
 }

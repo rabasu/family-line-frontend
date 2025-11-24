@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "バイカ",
     "rootHorseId": "baika-1904",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:50:22.688675Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -111,32 +111,185 @@
       "damId": "yutaka"
     },
     {
-      "id": "wakakusa-1950",
+      "id": "wakakusa",
       "name": "ワカクサ",
       "foaled": {
-        "year": 1950
+        "year": 1950,
+        "month": 3,
+        "day": 25
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ",
       "sire": "クモハタ",
       "dam": "豊姫",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "上田仁松（北海道浦河）",
       "netkeibaId": "000a00b7c5",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 46,
+          "wins": 28
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 46,
+                "wins": 28
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "阪神3歳Ｓ",
+          "distance": "芝1200",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "阪神3歳S"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "クイーンＳ",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "8",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "クイーンS"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 10,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "京都記念（秋）",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "京都記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "神戸杯",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "神戸杯"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "阪神大賞典",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "16",
+          "favorite": "4",
+          "result": "4",
+          "displayRace": "阪神大賞典"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 1,
+            "day": 17
+          },
+          "racecourse": "京都",
+          "race": "日本経済新春杯",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "13",
+          "favorite": "4",
+          "result": "9",
+          "displayRace": "日本経済新春杯"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "天皇賞（春）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "6",
+          "favorite": "3",
+          "result": "5",
+          "displayRace": "天皇賞（春）"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 6,
+            "day": 20
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念",
+          "distance": "芝2200",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "3",
+          "result": "2",
+          "displayRace": "鳴尾記念"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "toyohime",
-      "linkName": "ワカクサ(1950)"
+      "linkName": "ワカクサ(1950)",
+      "owner": "宇治田泰次郎",
+      "trainer": "石門虎吉（阪神）",
+      "ahonooraId": "wakakusa"
     },
     {
       "id": "misuhougetsu",
@@ -164,7 +317,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "wakakusa-1950"
+      "damId": "wakakusa"
     },
     {
       "id": "cardinal",
@@ -978,7 +1131,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "wakakusa-1950"
+      "damId": "wakakusa"
     },
     {
       "id": "terunoeito",
@@ -1389,11 +1542,11 @@
         "year": 1945
       },
       "sex": "female",
-      "breed": "サラブレッド種",
+      "breed": "サラ系",
       "sire": "セフト(GB)",
       "dam": "豊花",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "JPN",
       "netkeibaId": "000a00b75f",
       "raceStats": {
         "total": {
@@ -1402,12 +1555,30 @@
         },
         "divisions": []
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1948,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": null,
+          "race": "桜花賞",
+          "displayRace": "桜花賞",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yutaka"
+      "damId": "yutaka",
+      "jbisId": "0000626167",
+      "bogusId": "29703"
     },
     {
       "id": "furookanbooi",
@@ -1538,7 +1709,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "wakakusa-1950"
+      "damId": "wakakusa"
     },
     {
       "id": "senko-midori",
@@ -2098,6 +2269,65 @@
         "total": "0万円"
       },
       "damId": "totsupufuraito"
+    },
+    {
+      "id": "takehiro",
+      "name": "タケヒロ",
+      "foaled": {
+        "year": 1948,
+        "month": 4,
+        "day": 20
+      },
+      "sex": "male",
+      "breed": "サラ系",
+      "sire": "セフト(IRE)",
+      "dam": "豊姫",
+      "color": "鹿毛",
+      "breeder": "浦河産",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "阪神3歳ステークス",
+          "displayRace": "阪神3歳S",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        },
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(秋)",
+          "grade_code": "national_grade",
+          "result": "3",
+          "distance": "芝2400",
+          "displayRace": "鳴尾記念(秋)"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Takehiro",
+      "owner": "齊藤",
+      "jbisId": "0000000566",
+      "bogusId": "59491",
+      "damId": "toyohime"
     }
   ]
 }
