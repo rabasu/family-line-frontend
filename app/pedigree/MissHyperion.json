@@ -2,33 +2,97 @@
   "metadata": {
     "pedigreeName": "Miss Hyperion",
     "rootHorseId": "miss-hyperion",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T18:20:26.171657Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
       "id": "miss-hyperion",
       "name": "ミスハイペリオン",
       "foaled": {
-        "year": 1950
+        "year": 1950,
+        "month": 4,
+        "day": 8
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "Khaled",
-      "dam": "Mad Joss",
+      "breed": "サラ",
+      "sire": "Khaled(GB)",
+      "dam": "Mad Joss(USA)",
       "color": "栗毛",
-      "breeder": "米",
+      "breeder": "米国産",
       "netkeibaId": "000a002a1d",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 73,
+          "wins": 15
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 73,
+                "wins": 15
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1953,
+            "month": 12,
+            "day": 6
+          },
+          "racecourse": null,
+          "race": "阪神大賞典",
+          "displayRace": "阪神大賞典",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "12"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 12,
+            "day": 25
+          },
+          "racecourse": null,
+          "race": "阪神大賞典",
+          "displayRace": "阪神大賞典",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        }
+      ],
       "source": "python_scraping",
-      "englishName": "Miss Hyperion"
+      "englishName": "Miss Hyperion",
+      "damId": "mad-joss",
+      "owner": "土井",
+      "jbisId": "0000001267",
+      "bogusId": "18690"
     },
     {
       "id": "eos",

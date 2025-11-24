@@ -1,33 +1,141 @@
 {
   "metadata": {
     "pedigreeName": "オパールオーキツド",
-    "rootHorseId": "opaaruookitsudo",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "rootHorseId": "opal_orchid",
+    "lastUpdated": "2025-11-23T16:18:54.529786Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
-      "id": "opaaruookitsudo",
-      "name": "オパールオーキツド",
+      "id": "opal_orchid",
+      "name": "オパールオーキツト",
       "foaled": {
-        "year": 1950
+        "year": 1950,
+        "month": 10,
+        "day": 23
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "MacArthur",
+      "breed": "サラ",
+      "sire": "Mac Arthur",
       "dam": "Bronze Orchid",
       "color": "栗毛",
-      "breeder": "豪",
+      "breeder": "E. R. バーシュ夫人（オーストラリア）",
       "netkeibaId": "000a0029db",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 76,
+          "wins": 23
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 9,
+                "wins": 4
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 67,
+                "wins": 19
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
-      "source": "python_scraping"
+      "raceResults": [
+        {
+          "date": {
+            "year": 1954,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "目黒記念（秋）",
+          "distance": "芝2500",
+          "grade": "jra_grade",
+          "entry": "9",
+          "favorite": "3",
+          "result": "9",
+          "displayRace": "目黒記念（秋）"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 11,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "中山記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "9",
+          "favorite": "6",
+          "result": "9",
+          "displayRace": "中山記念"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 11,
+            "day": 21
+          },
+          "racecourse": "東京",
+          "race": "天皇賞（秋）",
+          "distance": "芝3200",
+          "grade": "jra_big8",
+          "entry": "10",
+          "favorite": "4",
+          "result": "1",
+          "displayRace": "天皇賞（秋）"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 12,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "中山特別",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "11",
+          "favorite": "9",
+          "result": "8",
+          "displayRace": "中山特別"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 1,
+            "day": 16
+          },
+          "racecourse": "中山",
+          "race": "金杯",
+          "distance": "芝2600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "favorite": "2",
+          "result": "8",
+          "displayRace": "金杯"
+        }
+      ],
+      "source": "python_scraping",
+      "owner": "都築寿雄→三坂成行",
+      "trainer": "稲葉幸夫（東京）",
+      "ahonooraId": "opal_orchid"
     },
     {
       "id": "sansei-midori",
@@ -101,7 +209,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "opaaruookitsudo"
+      "damId": "opal_orchid"
     },
     {
       "id": "miss-choshu",

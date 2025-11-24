@@ -1,33 +1,127 @@
 {
   "metadata": {
     "pedigreeName": "ミスカリフオルニア",
-    "rootHorseId": "misukarifuorunia",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "rootHorseId": "fiesta-rose",
+    "lastUpdated": "2025-11-23T18:20:16.143048Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
-      "id": "misukarifuorunia",
+      "id": "fiesta-rose",
       "name": "ミスカリフオルニア",
       "foaled": {
-        "year": 1950
+        "year": 1950,
+        "month": 3,
+        "day": 14
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "Dogaway",
-      "dam": "Quality Shot",
+      "breed": "サラ",
+      "sire": "Dogaway(USA)",
+      "dam": "Quality Shot(USA)",
       "color": "黒鹿毛",
-      "breeder": "米",
+      "breeder": "米国産",
       "netkeibaId": "000a00296f",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 40,
+          "wins": 13
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 40,
+                "wins": 13
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
-      "source": "python_scraping"
+      "raceResults": [
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": null,
+          "race": "朝日杯3歳ステークス",
+          "displayRace": "朝日杯3歳S",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 6,
+            "day": 14
+          },
+          "racecourse": null,
+          "race": "安田賞",
+          "displayRace": "安田賞",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "4"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": null,
+          "race": "安田賞",
+          "displayRace": "安田賞",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "11"
+        },
+        {
+          "date": {
+            "year": 1954,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "東京牝馬特別",
+          "displayRace": "東京牝馬特別",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Fiesta Rose",
+      "owner": "河野",
+      "jbisId": "0000001293",
+      "bogusId": "28301"
     },
     {
       "id": "petunia",
@@ -55,7 +149,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misukarifuorunia"
+      "damId": "fiesta-rose"
     },
     {
       "id": "taninoanna",
@@ -277,7 +371,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misukarifuorunia"
+      "damId": "fiesta-rose"
     },
     {
       "id": "shozan",
@@ -426,7 +520,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misukarifuorunia"
+      "damId": "fiesta-rose"
     }
   ]
 }
