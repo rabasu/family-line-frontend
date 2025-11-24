@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ライン",
     "rootHorseId": "rhine",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2025-11-23T17:17:15.363421Z",
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -251,35 +251,190 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suiitohaato"
+      "damId": "sweet-heart"
     },
     {
-      "id": "suiitohaato",
+      "id": "sweet-heart",
       "name": "スヰートハート",
       "foaled": {
-        "year": 1950
+        "year": 1950,
+        "month": 5,
+        "day": 20
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "セフト(GB)",
+      "breed": "サラ",
+      "sire": "セフト(IRE)",
       "dam": "武兆",
       "color": "鹿毛",
-      "breeder": "静内町",
+      "breeder": "静内産",
       "netkeibaId": "000a002b47",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 50,
+          "wins": 13
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 50,
+                "wins": 13
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1954,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "東京牝馬特別",
+          "displayRace": "東京牝馬特別",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 3,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(春)",
+          "grade_code": "jra_grade",
+          "result": "3",
+          "distance": "芝2500",
+          "displayRace": "目黒記念(春)"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 4,
+            "day": 17
+          },
+          "racecourse": null,
+          "race": "ダイヤモンドステークス",
+          "displayRace": "ダイヤモンドS",
+          "distance": null,
+          "grade": "jra_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "5"
+        },
+        {
+          "date": {
+            "year": 1955,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "船橋",
+          "race": "クイーン賞",
+          "grade_code": "local_old_grade",
+          "result": "3",
+          "distance": "ダ1800",
+          "displayRace": "クイーン賞〔船橋〕"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 2,
+            "day": 8
+          },
+          "racecourse": "川崎",
+          "race": "開設六周年記念",
+          "grade_code": "local_old_grade",
+          "result": "3",
+          "distance": "ダ2000",
+          "displayRace": "開設六周年記念〔川崎〕"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 3,
+            "day": 4
+          },
+          "racecourse": "川崎",
+          "race": "キヨフジ記念",
+          "grade_code": "local_old_grade",
+          "result": "2",
+          "distance": "ダ1700",
+          "displayRace": "キヨフジ記念〔川崎〕"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 8,
+            "day": 8
+          },
+          "racecourse": "船橋",
+          "race": "NTV盃",
+          "grade_code": "local_old_grade",
+          "result": "3",
+          "distance": "ダ2000",
+          "displayRace": "NTV盃〔船橋〕"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "船橋",
+          "race": "クイーン賞",
+          "grade_code": "local_old_grade",
+          "result": "2",
+          "distance": "ダ1800",
+          "displayRace": "クイーン賞〔船橋〕"
+        },
+        {
+          "date": {
+            "year": 1957,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "川崎",
+          "race": "開設七周年記念",
+          "grade_code": "local_old_grade",
+          "result": "1",
+          "distance": "ダ2200",
+          "displayRace": "開設七周年記念〔川崎〕"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "takeshichou",
-      "pedigreeName": "スイートハート"
+      "pedigreeName": "スイートハート",
+      "englishName": "Sweet Heart",
+      "owner": "鈴木",
+      "jbisId": "0000001149",
+      "bogusId": "24215"
     },
     {
       "id": "takeshichou",
@@ -714,36 +869,264 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suuiisuu",
+      "damId": "sweet_sue",
       "linkName": "スイフトクイン(1961)"
     },
     {
-      "id": "suuiisuu",
+      "id": "sweet_sue",
       "name": "スウヰイスー",
       "foaled": {
-        "year": 1949
+        "year": 1949,
+        "month": 5,
+        "day": 3
       },
       "sex": "female",
-      "breed": "サラブレッド種",
-      "sire": "セフト(GB)",
+      "breed": "サラ",
+      "sire": "セフト",
       "dam": "武兆",
       "color": "栗毛",
-      "breeder": "静内町",
+      "breeder": "荻野守之（北海道静内）",
       "netkeibaId": "000a002925",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 62,
+          "wins": 29
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 35,
+                "wins": 18
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 27,
+                "wins": 11
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "朝日杯3歳Ｓ",
+          "distance": "芝1100",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "2",
+          "result": "5",
+          "displayRace": "朝日杯3歳S"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 3,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "スプリングＳ",
+          "distance": "芝1800",
+          "grade": "national_grade",
+          "entry": "8",
+          "favorite": "4",
+          "result": "5",
+          "displayRace": "スプリングS"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 4,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "桜花賞",
+          "distance": "芝1600",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "5",
+          "result": "1",
+          "displayRace": "桜花賞"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 5,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "東京優駿（日本ダービー）",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "31",
+          "favorite": "4",
+          "result": "8",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 7,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "安田賞",
+          "distance": "芝1600",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "4",
+          "result": "1",
+          "displayRace": "安田賞"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "5",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "優駿牝馬"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "菊花賞",
+          "distance": "芝3000",
+          "grade": "national_big8",
+          "entry": "9",
+          "favorite": "3",
+          "result": "2",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "クモハタ記念",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "2",
+          "result": "2",
+          "displayRace": "クモハタ記念"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 3,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "東京杯",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "2",
+          "result": "5",
+          "displayRace": "東京杯"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 6,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "安田賞",
+          "distance": "芝1600",
+          "grade": "national_grade",
+          "entry": "9",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "安田賞"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 6,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "日本経済賞",
+          "distance": "芝3200",
+          "grade": "national_grade",
+          "entry": "6",
+          "favorite": "3",
+          "result": "4",
+          "displayRace": "日本経済賞"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "中山記念",
+          "distance": "芝2400",
+          "grade": "national_grade",
+          "entry": "11",
+          "favorite": "5",
+          "result": "4",
+          "displayRace": "中山記念"
+        },
+        {
+          "date": {
+            "year": 1953,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "東京",
+          "race": "天皇賞（秋）",
+          "distance": "芝3200",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "5",
+          "result": "5",
+          "displayRace": "天皇賞（秋）"
+        }
+      ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "takeshichou",
-      "pedigreeName": "スウイイスー"
+      "pedigreeName": "スウイイスー",
+      "owner": "高峰三枝子→鈴木健之→井門昭二",
+      "trainer": "松山吉三郎（東京）→尾形藤吉（東京）→勝又衛（南関東）",
+      "ahonooraId": "sweet_sue"
     },
     {
       "id": "daikatsu-bland",
@@ -894,7 +1277,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suiitohaato"
+      "damId": "sweet-heart"
     },
     {
       "id": "kyowa-shinzan",
@@ -1221,7 +1604,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suuiisuu"
+      "damId": "sweet_sue"
     },
     {
       "id": "bell-lenker",
@@ -1384,7 +1767,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suuiisuu",
+      "damId": "sweet_sue",
       "linkName": "コウチヨウ(1959)"
     },
     {
@@ -1636,7 +2019,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suiitohaato"
+      "damId": "sweet-heart"
     },
     {
       "id": "noto-diver",
@@ -2055,7 +2438,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suiitohaato"
+      "damId": "sweet-heart"
     },
     {
       "id": "sanchaina",
@@ -2558,7 +2941,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suiitohaato"
+      "damId": "sweet-heart"
     },
     {
       "id": "kurosuoo",
@@ -2646,7 +3029,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suiitohaato"
+      "damId": "sweet-heart"
     },
     {
       "id": "harrow-more",
