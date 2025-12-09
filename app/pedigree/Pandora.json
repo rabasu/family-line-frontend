@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "Pandora",
     "rootHorseId": "pandora",
-    "lastUpdated": "2025-11-23T16:47:41.647738Z",
+    "lastUpdated": "2025-12-08T00:53:11.589279Z",
     "source": "python_scraping_updated"
   },
   "horses": [
@@ -58,32 +58,96 @@
       "damId": "pandora"
     },
     {
-      "id": "king-knight",
+      "id": "king_knight",
       "name": "キングナイト",
       "foaled": {
-        "year": 1946
+        "year": 1946,
+        "month": 4,
+        "day": 29
       },
       "sex": "female",
       "breed": "サラ",
-      "sire": "セフト(GB)",
+      "sire": "*セフト",
       "dam": "ブラツクモント",
       "color": "鹿毛",
-      "breeder": "門別町",
+      "breeder": "飯田外次郎（北海道門別）",
+      "retired": "1950.01.23 地方競馬",
       "netkeibaId": "000a002a08",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 26,
+          "wins": 12
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 26,
+                "wins": 12
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1949,
+            "month": 10,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "カブトヤマ記念",
+          "distance": "芝1950",
+          "grade": "national_grade",
+          "entry": "11",
+          "favorite": "3",
+          "result": "5",
+          "displayRace": "カブトヤマ記念"
+        },
+        {
+          "date": {
+            "year": 1949,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "national_big8",
+          "entry": "8",
+          "favorite": "4",
+          "result": "1",
+          "displayRace": "優駿牝馬"
+        }
+      ],
+      "source": "python_scraping, 『軽種馬生産者要覧 昭和47年1月1日現在』p.156, 『国営競馬統計 昭和26年』p.171",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "504万3,200円（国営のみ）"
       },
       "damId": "buratsukumonto",
-      "ahonooraId": "king_knight"
+      "ahonooraId": "king_knight",
+      "owner": "浜谷年雄→山口金太郎",
+      "trainer": "函館孫作（中山）",
+      "comment": "生産地はJBIS・ahonooraでは門別、「軽種馬生産者要覧」では千葉県印旛郡印旛村平賀の千葉飯田牧場とする。1950.01.23をもって抹消、地方競馬へ移籍したが戦績詳細不明。ahonooraでは「13勝以上」の記載あり。"
     },
     {
       "id": "harrow-night",
@@ -111,7 +175,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "king-knight"
+      "damId": "king_knight"
     },
     {
       "id": "kinko-arrow",
