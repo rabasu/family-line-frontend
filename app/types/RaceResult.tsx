@@ -1,4 +1,4 @@
-import { Grade, GradeCode } from './Grade'
+import { Grade, GradeCode } from '@/types/Grade'
 
 // 増やしすぎると情報量不足の際に困る
 // 細かいデータは各馬のページで補完・調整すればよいので、あくまでざっくりレベル
@@ -10,7 +10,8 @@ interface RaceResult {
   racecourse?: string //競馬場
   distance?: string // 距離(m)
   entry?: string // 頭数
-  result: string // 順位 stringへ移行途中
+  favorite?: string // 人気
+  result: string // 着順
 }
 
 export default RaceResult
