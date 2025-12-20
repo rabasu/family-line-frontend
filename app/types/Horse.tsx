@@ -1,4 +1,4 @@
-import RaceResult from './RaceResult'
+import RaceResult from '@/types/RaceResult'
 import { Award } from './Award'
 import { Foaled } from './Foaled'
 import { AggregatedRaceStats } from './AggregatedRaceStats'
@@ -32,6 +32,7 @@ interface Horse {
   formerPedigreeName?: string // 出生時の血統名など（繁殖入り時に使われなかったもの）
   linkName?: string // 競走名が重複する場合、馬名({生年YYYY})の形式で一意の値を設定する
   linkPedigreeName?: string // 血統名が重複する場合、血統名({生年YYYY})の形式で一意の値を設定する
+  englishName?: string // 英語名
   id: string
   foaled: Foaled // 生年月日
   sex: Sex // 性別
@@ -57,6 +58,14 @@ interface Horse {
   trainer?: string // 調教師
   jockey?: string // 騎手
   netkeibaId?: string // Netkeiba ID
+  ahonooraId?: string // Ahonoora(優駿達の蹄跡)ID
+  jbisId?: string // JBIS ID
+  bogusId?: string // Bogus(血統表検索) ID
+  source?: string // 情報源 コメント代わりに使用
+
+  // 牝祖用
+  importedYear?: string // 輸入年
+  importedBy?: string // 輸入者
 }
 
 export type { Horse }
