@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "start": "next dev -p 3001",
-    "dev": "cross-env INIT_CWD=$PWD next dev -p 3001",
-    "build": "cross-env INIT_CWD=$PWD next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
+    "predev": "node scripts/generate-pedigree-metadata.js && node scripts/generate-horse-link-map.js",
+    "dev": "cross-env INIT_CWD=$PWD NODE_OPTIONS=--max-old-space-size=12288 next dev -p 3001",
+    "prebuild": "node scripts/generate-pedigree-metadata.js && node scripts/generate-horse-link-map.js",
+    "build": "cross-env INIT_CWD=$PWD NODE_OPTIONS=--max-old-space-size=12288 next build && cross-env NODE_OPTIONS=--experimental-json-modules node ./scripts/postbuild.mjs",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",

@@ -6,6 +6,7 @@ import Image from './Image'
 import CustomLink from './Link'
 import TableWrapper from './TableWrapper'
 import ProfileTable from './ProfileTable'
+import RaceResultsTable from './RaceResultsTable'
 // import type Horse from '@/types/Horse'
 // import { HorseCard } from './HorseCard'
 import FamilyTree from './FamilyTree'
@@ -19,6 +20,7 @@ export const components: MDXComponents = {
   table: TableWrapper,
   BlogNewsletterForm,
   ProfileTable,
+  RaceResultsTable,
   // HorseCard,
   FamilyTree,
   HL,

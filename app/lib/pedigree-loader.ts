@@ -15,6 +15,7 @@ export interface PedigreeJsonData {
     rootHorseId: string
     lastUpdated: string
     source: string
+    isTraditionalFamily?: boolean
   }
   horses: HorseJsonData[]
 }
@@ -32,8 +33,7 @@ export interface HorseJsonData {
   linkName?: string
   linkPedigreeName?: string
   englishName?: string
-  foaled: string
-  foaledArray: string[]
+  foaled: { year: number; month?: number; day?: number }
   sex: string
   breed: string
   sire: string
@@ -78,6 +78,11 @@ export interface HorseJsonData {
   jockey?: string
   comments?: string // コメントアウトされていた情報
   source: string
+  // 牝祖用
+  importedYear?: string // 輸入年
+  importedBy?: string // 輸入者
+  familyNumber?: string // 系統番号
+  registration?: string // 馬匹血統登録書における登録番号
 }
 
 /**
@@ -86,8 +91,20 @@ export interface HorseJsonData {
 export function convertJsonToHorse(pedigreeData: PedigreeJsonData): Horse {
   const { metadata, horses } = pedigreeData
 
-  // 牝祖を特定
-  const rootHorse = horses.find((horse) => horse.id === metadata.rootHorseId)
+  // データの基本検証
+  if (!metadata || !metadata.rootHorseId) {
+    throw new Error('metadata.rootHorseIdが存在しません')
+  }
+  if (!horses || !Array.isArray(horses) || horses.length === 0) {
+    throw new Error('horsesデータが存在しないか空です')
+  }
+
+  // 牝祖を特定（完全一致または部分一致で検索）
+  let rootHorse = horses.find((horse) => horse && horse.id === metadata.rootHorseId)
+  if (!rootHorse) {
+    // 部分一致で検索（例: "hoshitomo" で "hoshitomo-1923" を検索）
+    rootHorse = horses.find((horse) => horse && horse.id && horse.id.includes(metadata.rootHorseId))
+  }
   if (!rootHorse) {
     throw new Error(`牝祖が見つかりません: ${metadata.rootHorseId}`)
   }
@@ -100,18 +117,18 @@ export function convertJsonToHorse(pedigreeData: PedigreeJsonData): Horse {
  * 馬データをHorse型に変換し、子孫を再帰的に構築する
  */
 function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): Horse {
-  // 基本データをHorse型に変換
+  // 基本データをHorse型に変換（安全な処理）
   const horse: Horse = {
-    id: horseData.id,
-    name: horseData.name,
-    foaled: convertFoaled(horseData.foaled, horseData.foaledArray),
-    sex: horseData.sex as 'male' | 'female' | 'gelding',
-    breed: horseData.breed as Breed,
-    sire: horseData.sire,
-    dam: horseData.dam,
-    color: horseData.color,
-    breeder: horseData.breeder,
-    netkeibaId: horseData.netkeibaId,
+    id: horseData.id || 'unknown',
+    name: horseData.name || '不明',
+    foaled: convertFoaledFromObject(horseData.foaled),
+    sex: (horseData.sex as 'male' | 'female' | 'gelding') || 'male',
+    breed: (horseData.breed as Breed) || 'サラブレッド種',
+    sire: horseData.sire || '',
+    dam: horseData.dam || '',
+    color: horseData.color || '',
+    breeder: horseData.breeder || '',
+    netkeibaId: horseData.netkeibaId || '',
     children: [],
   }
 
@@ -137,6 +154,11 @@ function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): H
   if (horseData.trainer) horse.trainer = horseData.trainer
   if (horseData.jockey) horse.jockey = horseData.jockey
   if (horseData.source) horse.source = horseData.source
+  if (horseData.comments) horse.comments = horseData.comments
+  if (horseData.importedYear) horse.importedYear = horseData.importedYear
+  if (horseData.importedBy) horse.importedBy = horseData.importedBy
+  if (horseData.familyNumber) horse.familyNumber = horseData.familyNumber
+  if (horseData.registration) horse.registration = horseData.registration
   if (horseData.raceResults) {
     // raceResultsのdateフィールドをDate型に変換
     horse.raceResults = horseData.raceResults.map((result) => ({
@@ -153,9 +175,30 @@ function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): H
 }
 
 /**
- * 日付文字列をFoaled型に変換する
+ * foaledオブジェクトをFoaled型に変換する
  */
-function convertFoaled(foaledString: string, foaledArray: string[]): Foaled {
+function convertFoaledFromObject(foaledObj: { year: number; month?: number; day?: number }): Foaled {
+  if (!foaledObj || typeof foaledObj.year !== 'number') {
+    // foaledデータが不正な場合はデフォルト値を返す
+    return new Foaled('不明')
+  }
+
+  if (foaledObj.month && foaledObj.day) {
+    // 年月日
+    return new Foaled(newDate(foaledObj.year, foaledObj.month, foaledObj.day))
+  } else if (foaledObj.month) {
+    // 年月
+    return new Foaled(newDate(foaledObj.year, foaledObj.month, 1))
+  } else {
+    // 年のみ
+    return new Foaled(foaledObj.year.toString())
+  }
+}
+
+/**
+ * 古い文字列形式のfoaledをFoaled型に変換する（後方互換性用）
+ */
+function convertFoaledFromString(foaledString: string, foaledArray: string[]): Foaled {
   if (foaledArray.length === 1) {
     // 年のみ
     return new Foaled(foaledArray[0])
@@ -173,11 +216,18 @@ function convertFoaled(foaledString: string, foaledArray: string[]): Foaled {
 
 /**
  * 牝系JSONファイルを読み込んでHorse型に変換する
+ * 在来牝系のみを対象とする
  */
 export async function loadPedigreeFromJson(filePath: string): Promise<Horse> {
   try {
     // 動的インポートでJSONファイルを読み込み
     const pedigreeData = (await import(filePath)) as PedigreeJsonData
+
+    // 在来牝系チェック
+    if (pedigreeData?.metadata?.isTraditionalFamily !== true) {
+      throw new Error(`在来牝系ではないためスキップ: ${filePath}`)
+    }
+
     return convertJsonToHorse(pedigreeData)
   } catch (error) {
     console.error(`牝系JSONファイルの読み込みに失敗: ${filePath}`, error)

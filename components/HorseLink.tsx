@@ -1,6 +1,7 @@
 'use client'
 
 import NameList from '@/pedigree/HorseList'
+import type { HorseLinkData } from '@/types/HorseLinkData'
 import React from 'react'
 import NextLink from 'next/link'
 import { useEffect, useState } from 'react'
@@ -18,8 +19,9 @@ const HorseLink: React.FC<LinkProps> = ({ name }) => {
       setCurrentPath(window.location.pathname) // パスをセット
     }
   }, [])
-  // Anchors のキーをループし、該当するページとIDを見つける
-  const result = NameList.get(name)
+  // 軽量マップから馬リンク情報を取得
+  const map = NameList.get()
+  const result: HorseLinkData | undefined = map.get(name)
 
   if (!result) {
     return <span className="font-medium">{name}</span>

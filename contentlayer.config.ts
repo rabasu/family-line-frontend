@@ -1,5 +1,5 @@
 import { defineDocumentType, ComputedFields, makeSource } from 'contentlayer2/source-files'
-import { writeFileSync } from 'fs'
+import { writeFileSync, readFileSync } from 'fs'
 import readingTime from 'reading-time'
 import { slug } from 'github-slugger'
 import path from 'path'
@@ -7,12 +7,7 @@ import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic'
 // Remark packages
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
-import {
-  remarkExtractFrontmatter,
-  remarkCodeTitles,
-  remarkImgToJsx,
-  extractTocHeadings,
-} from 'pliny/mdx-plugins/index.js'
+import { remarkExtractFrontmatter, remarkCodeTitles, remarkImgToJsx, extractTocHeadings } from 'pliny/mdx-plugins/index.js'
 // Rehype packages
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -78,14 +73,8 @@ function createTagCount(allBlogs) {
 }
 
 function createSearchIndex(allBlogs) {
-  if (
-    siteMetadata?.search?.provider === 'kbar' &&
-    siteMetadata.search.kbarConfig.searchDocumentsPath
-  ) {
-    writeFileSync(
-      `public/${siteMetadata.search.kbarConfig.searchDocumentsPath}`,
-      JSON.stringify(allCoreContent(sortPosts(allBlogs)))
-    )
+  if (siteMetadata?.search?.provider === 'kbar' && siteMetadata.search.kbarConfig.searchDocumentsPath) {
+    writeFileSync(`public/${siteMetadata.search.kbarConfig.searchDocumentsPath}`, JSON.stringify(allCoreContent(sortPosts(allBlogs))))
     console.log('Local search index generated...')
   }
 }
@@ -159,6 +148,11 @@ export const Family = defineDocumentType(() => ({
     layout: { type: 'string' },
     bibliography: { type: 'string' },
     canonicalUrl: { type: 'string' },
+    // 牝系情報
+    country: { type: 'string' }, // 生産国
+    importedYear: { type: 'string' }, // 輸入年
+    importedBy: { type: 'string' }, // 輸入者
+    mainOwner: { type: 'string' }, // 主な繋養地
   },
   computedFields: {
     ...computedFields,
@@ -218,14 +212,7 @@ export default makeSource({
   documentTypes: [Blog, Authors, Family, Horse],
   mdx: {
     cwd: process.cwd(),
-    remarkPlugins: [
-      remarkExtractFrontmatter,
-      remarkGfm,
-      remarkCodeTitles,
-      remarkMath,
-      remarkImgToJsx,
-      remarkBreaks,
-    ],
+    remarkPlugins: [remarkExtractFrontmatter, remarkGfm, remarkCodeTitles, remarkMath, remarkImgToJsx, remarkBreaks],
     rehypePlugins: [
       rehypeSlug,
       [
@@ -244,8 +231,11 @@ export default makeSource({
       rehypePresetMinify,
     ],
   },
-  onSuccess: async (importData) => {
-    const { allBlogs } = await importData()
+  onSuccess: async (_importData) => {
+    // Node.js 22+ では import assert 構文がサポートされないため、
+    // importData() を使わずに JSON ファイルを直接読み込む
+    const blogIndexPath = path.join(root, '.contentlayer/generated/Blog/_index.json')
+    const allBlogs = JSON.parse(readFileSync(blogIndexPath, 'utf-8'))
     createTagCount(allBlogs)
     createSearchIndex(allBlogs)
   },

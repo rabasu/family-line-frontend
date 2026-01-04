@@ -43,5 +43,41 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# scraping login config
+scraping/login_config.py
+
 # Contentlayer
 .contentlayer
+
+# backup
+app/pedigree/backup
+app/pedigree/problematic_backup
+
+# IDE
+.cursor/
+.vscode/
+*.code-workspace
+
+# temporary files
+*.backup
+*.backup.json
+temp_test/
+gumma-takemi-queen
+itsunyuu
+itsushin
+kohairan-etsuchi
+mizukin
+obajan-5-7
+ootsuisami
+horse_data_*.json
+
+# scripts and docs (if not needed in repo)
+docs/
+scripts/*.py
+scripts/*.json
+scripts/*.json.backup
+scripts/test-*.js
+scripts/test-*.json
+
+# scraping
+scraping/*

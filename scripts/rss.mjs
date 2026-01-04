@@ -1,11 +1,17 @@
-import { writeFileSync, mkdirSync } from 'fs'
+import { writeFileSync, mkdirSync, readFileSync } from 'fs'
 import path from 'path'
+import { fileURLToPath } from 'url'
 import { slug } from 'github-slugger'
 import { escape } from 'pliny/utils/htmlEscaper.js'
 import siteMetadata from '../data/siteMetadata.js'
-import tagData from '../app/tag-data.json' assert { type: 'json' }
-import { allBlogs } from '../.contentlayer/generated/index.mjs'
 import { sortPosts } from 'pliny/utils/contentlayer.js'
+
+// Node.js 22+ では import assert 構文がサポートされないため、
+// JSON ファイルを fs で直接読み込む
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const tagData = JSON.parse(readFileSync(path.join(__dirname, '../app/tag-data.json'), 'utf-8'))
+const allBlogs = JSON.parse(readFileSync(path.join(__dirname, '../.contentlayer/generated/Blog/_index.json'), 'utf-8'))
 
 const generateRssItem = (config, post) => `
   <item>

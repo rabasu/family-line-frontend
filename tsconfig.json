@@ -2,11 +2,7 @@
   "compilerOptions": {
     "incremental": true,
     "target": "ES6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,27 +17,13 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/components/*": [
-        "components/*"
-      ],
-      "@/data/*": [
-        "data/*"
-      ],
-      "@/layouts/*": [
-        "layouts/*"
-      ],
-      "@/css/*": [
-        "css/*"
-      ],
-      "@/types/*": [
-        "app/types/*"
-      ],
-      "@/pedigree/*": [
-        "app/pedigree/*"
-      ],
-      "contentlayer/generated": [
-        "./.contentlayer/generated"
-      ]
+      "@/components/*": ["components/*"],
+      "@/data/*": ["data/*"],
+      "@/layouts/*": ["layouts/*"],
+      "@/css/*": ["css/*"],
+      "@/types/*": ["app/types/*"],
+      "@/pedigree/*": ["app/pedigree/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "plugins": [
       {
@@ -50,20 +32,8 @@
     ],
     "strictNullChecks": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.js",
-    "**/*.mjs",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.json",
-    ".contentlayer/generated",
-    ".contentlayer/generated/**/*.json",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["**/*", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"],
   "mdx": {
     // Enable strict type checking in MDX files.
     "checkMdx": true

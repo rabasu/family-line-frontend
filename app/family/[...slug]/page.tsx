@@ -21,11 +21,7 @@ const layouts = {
   PostBanner,
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string[] }
-}): Promise<Metadata | undefined> {
+export async function generateMetadata({ params }: { params: { slug: string[] } }): Promise<Metadata | undefined> {
   const slug = decodeURI(params.slug.join('/'))
   const post = allFamilies.find((p) => p.slug === slug)
   const authorList = post?.authors || ['default']
@@ -75,9 +71,13 @@ export async function generateMetadata({
 }
 
 export const generateStaticParams = async () => {
-  const paths = allFamilies.map((p) => ({ slug: p.slug.split('/') }))
+  // 静的生成を無効化（メモリ不足を回避）
+  // 代わりに各ページはリクエスト時に動的に生成される
+  return []
 
-  return paths
+  // 元のコード（メモリ不足のため無効化）
+  // const paths = allFamilies.map((p) => ({ slug: p.slug.split('/') }))
+  // return paths
 }
 
 export default async function Page({ params }: { params: { slug: string[] } }) {
@@ -110,10 +110,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
       </Layout>
