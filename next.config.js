@@ -82,10 +82,27 @@ module.exports = () => {
       ]
     },
     webpack: (config, options) => {
+      const { IgnorePlugin } = require('webpack')
+
       config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       })
+
+      // 動的インポートの警告を抑制
+      config.module.exprContextCritical = false
+      config.module.exprContextRecursive = false
+
+      // .backup.jsonファイルとbackup/ディレクトリ内のファイルを除外（二重の保護）
+      // require.contextの正規表現でも除外しているが、念のためIgnorePluginも追加
+      config.plugins.push(
+        new IgnorePlugin({
+          resourceRegExp: /\.backup\.json$/,
+        }),
+        new IgnorePlugin({
+          resourceRegExp: /backup\//,
+        })
+      )
 
       return config
     },

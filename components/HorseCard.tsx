@@ -10,6 +10,11 @@ import remarkBreaks from 'remark-breaks'
 import HorseLink from './HorseLink'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
+import Link from 'next/link'
+import { allHorses } from 'contentlayer/generated'
+
+// 個別ページが存在する馬のIDセット（ビルド時に生成）
+const horseArticleSlugs = new Set(allHorses.map((horse) => horse.slug))
 
 const summary = tv({
   base: 'px-5 py-1',
@@ -33,9 +38,7 @@ const filterRecords = (records: RaceRecord[], number: number) => {
     return records
   }
   // 重賞勝利を抽出
-  const won_grade_races = records.filter(
-    (record) => record.result === '1' && grades[record.grade].isJusho
-  )
+  const won_grade_races = records.filter((record) => record.result === '1' && grades[record.grade].isJusho)
   // 重賞勝利数が{number}以上の場合、グレード→日付 の条件でソートし、重賞勝利のみを返す
   if (won_grade_races.length >= number) {
     return won_grade_races.sort((a, b) => {
@@ -66,19 +69,38 @@ const filterRecords = (records: RaceRecord[], number: number) => {
   // 重賞成績が{number}未満の場合、{number}件になるまで重賞以外の勝利も追加する
   if (all_grade_races.length < number) {
     const rest = number - all_grade_races.length
-    const rest_races = records.filter(
-      (record) => record.result === '1' && grades[record.grade].rank > 6
-    )
+    const rest_races = records.filter((record) => record.result === '1' && grades[record.grade].rank > 6)
     return [...all_grade_races, ...rest_races.slice(0, rest)]
   } else {
     return all_grade_races
   }
 }
 
+// 詳細ページリンクアイコン
+const DetailLinkIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4">
+    <path
+      fillRule="evenodd"
+      d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+      clipRule="evenodd"
+    />
+    <path
+      fillRule="evenodd"
+      d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+      clipRule="evenodd"
+    />
+  </svg>
+)
+
 const BaseInfo = (horse: Horse): JSX.Element => {
   return (
     <div className="flex flex-nowrap items-baseline gap-x-1 whitespace-nowrap">
       <span className="font-bold">{displayHorseName(horse)}</span>
+      {horseArticleSlugs.has(horse.id) && (
+        <Link href={`/horse/${horse.id}`} className="ml-1 text-primary-500 hover:text-primary-600" title="詳細ページを見る">
+          <DetailLinkIcon />
+        </Link>
+      )}
       <span className="text-sm">
         （{horse.foaled.year}） by <HorseLink name={horse.sire} />
       </span>
@@ -101,13 +123,9 @@ function raceStatsSummary(raceStats: AggregatedRaceStats | undefined) {
 }
 
 function HorseCard(horse: Horse) {
-  const won_races: RaceRecord[] | undefined = horse.raceResults?.filter(
-    (record) => record.result === '1'
-  )
+  const won_races: RaceRecord[] | undefined = horse.raceResults?.filter((record) => record.result === '1')
   // 勝ち鞍の最高格付け 重賞勝ち鞍がない場合は0
-  const horse_rank = won_races
-    ? Math.max(...won_races.map((record) => grades[record.grade].rank))
-    : 0
+  const horse_rank = won_races ? Math.max(...won_races.map((record) => grades[record.grade].rank)) : 0
   return (
     <div className="horse-card w-[40rem] text-sm md:text-base">
       <div className="-ml-2 pt-3 ">
@@ -171,15 +189,8 @@ const HorseDetails = (horse: Horse) => {
 // 馬名を整形する
 // 競走名 / 血統名 (旧名 or 地方名)
 function displayHorseName(horse: Horse): string {
-  const base =
-    horse.name && horse.pedigreeName
-      ? `${horse.name} / ${horse.pedigreeName}`
-      : `${horse.name ?? horse.pedigreeName}`
-  const display_name = horse.formerName
-    ? `${base} ［${horse.formerName}］`
-    : horse.localName
-      ? `${base} ［${horse.localName}］`
-      : base
+  const base = horse.name && horse.pedigreeName ? `${horse.name} / ${horse.pedigreeName}` : `${horse.name ?? horse.pedigreeName}`
+  const display_name = horse.formerName ? `${base} ［${horse.formerName}］` : horse.localName ? `${base} ［${horse.localName}］` : base
   return display_name
 }
 
@@ -226,11 +237,7 @@ const RecordFormatter = (record: RaceRecord): JSX.Element => {
   return (
     <>
       {record.result !== '1' && <span>（{record.result}着）</span>}
-      <span
-        className={`mr-1 ${getRaceStyle(grades[record.grade].rank)} ${record.result === '1' ? 'font-bold' : ''}`}
-      >
-        {record.displayRace}
-      </span>
+      <span className={`mr-1 ${getRaceStyle(grades[record.grade].rank)} ${record.result === '1' ? 'font-bold' : ''}`}>{record.displayRace}</span>
     </>
   )
 }

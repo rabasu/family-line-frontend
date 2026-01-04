@@ -66,6 +66,9 @@ interface Horse {
   // 牝祖用
   importedYear?: string // 輸入年
   importedBy?: string // 輸入者
+  familyNumber?: string // 系統番号
+  registration?: string // 馬匹血統登録書における登録番号
+  comments?: string // コメント
 }
 
 export type { Horse }
