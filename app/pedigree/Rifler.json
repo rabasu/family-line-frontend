@@ -1,43 +1,62 @@
 {
   "metadata": {
     "pedigreeName": "ライフラー",
-    "rootHorseId": "raifuraa",
+    "rootHorseId": "rifler",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
     "source": "attribute_mapping_reverted",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "raifuraa",
+      "id": "rifler",
       "name": "ライフラー",
+      "pedigreeName": "Rifler",
       "foaled": {
-        "year": 1922
+        "year": 1923
       },
+      "importedYear": "1926",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "Cardinal Beaufort",
       "dam": "Rifleine",
       "color": "黒鹿毛",
       "breeder": "豪",
+      "importedBy": "函館競馬倶楽部",
+      "owner": "古旗耕（函館市西川町）",
       "netkeibaId": "000a01c107",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 55,
+          "wins": 17
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 48,
+                "wins": 12
+              },
+              "jump": {
+                "runs": 7,
+                "wins": 5
+              }
+            }
+          }
+        ]
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『名牝の系譜』p.253, 『馬匹血統登録書 第6巻』p.147, pedigreequery.com",
+      "comment": "生年は1922か1923か不明。馬匹血統登録書では1923年、競馬成績書の年齢は1922年。乙種血統登録のほか「能力登録」もなされている。『名牝の系譜』曰く、大正15年秋函館抽籤馬。駈12勝、障5勝。昭和3年春・札幌、函館豪抽優勝戦。昭和4年春・阪神障害優勝戦。"
     },
     {
-      "id": "raifuraahime",
+      "id": "rifler-hime",
       "name": "ライフラーヒメ",
       "foaled": {
         "year": 1936
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ペリオン(GB)",
       "dam": "ライフラー",
       "color": "鹿毛",
@@ -55,7 +74,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "raifuraa"
+      "damId": "rifler"
     },
     {
       "id": "yukiteru",
@@ -64,7 +83,7 @@
         "year": 1956
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "タカクラヤマ",
       "dam": "ライフラーヒメ",
       "color": "",
@@ -128,7 +147,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "raifuraahime"
+      "damId": "rifler-hime"
     }
   ]
 }
