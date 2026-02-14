@@ -88,33 +88,52 @@ for (const jsonFile of jsonFiles) {
     continue
   }
 
+  // metadata.isTraditionalFamilyが明示的に定義されているかチェック
+  const explicitValue = pedigreeData.metadata.isTraditionalFamily
+
+  // 明示的にfalseと定義されている場合はスキップ
+  if (explicitValue === false) {
+    console.log(`Skipping ${jsonFile}: explicitly set as non-traditional family`)
+    continue
+  }
+
+  // pedigreeNameを取得（後で使用するため）
+  const pedigreeName = pedigreeData.metadata.pedigreeName
+
   // 在来牝系かどうかを判定
   let isTraditional = false
   let reason = ''
 
-  // (1) familyList.tsxに記載があるか
-  const pedigreeName = pedigreeData.metadata.pedigreeName
-  const normalizedId = pedigreeNameToSnakeCase(pedigreeName)
-  if (importedMaresIds.includes(normalizedId)) {
+  // 明示的にtrueと定義されている場合は判定不要で対象とする
+  if (explicitValue === true) {
     isTraditional = true
-    reason = 'familyList.tsx'
-  }
+    reason = 'explicitly set as traditional'
+  } else {
+    // 未定義の場合は既存の条件で判定
 
-  // (2) importedYearが1944年以前
-  if (!isTraditional && rootHorse.importedYear) {
-    const importedYear = parseInt(rootHorse.importedYear)
-    if (!isNaN(importedYear) && importedYear <= 1944) {
+    // (1) familyList.tsxに記載があるか
+    const normalizedId = pedigreeNameToSnakeCase(pedigreeName)
+    if (importedMaresIds.includes(normalizedId)) {
       isTraditional = true
-      reason = `importedYear ${importedYear}`
+      reason = 'familyList.tsx'
     }
-  }
 
-  // (3) foaled.yearが1935年以前
-  if (!isTraditional && rootHorse.foaled?.year) {
-    const foaledYear = parseInt(rootHorse.foaled.year)
-    if (!isNaN(foaledYear) && foaledYear <= 1935) {
-      isTraditional = true
-      reason = `foaled.year ${foaledYear}`
+    // (2) importedYearが1944年以前
+    if (!isTraditional && rootHorse.importedYear) {
+      const importedYear = parseInt(rootHorse.importedYear)
+      if (!isNaN(importedYear) && importedYear <= 1944) {
+        isTraditional = true
+        reason = `importedYear ${importedYear}`
+      }
+    }
+
+    // (3) foaled.yearが1935年以前
+    if (!isTraditional && rootHorse.foaled?.year) {
+      const foaledYear = parseInt(rootHorse.foaled.year)
+      if (!isNaN(foaledYear) && foaledYear <= 1935) {
+        isTraditional = true
+        reason = `foaled.year ${foaledYear}`
+      }
     }
   }
 

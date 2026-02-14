@@ -2,16 +2,18 @@
   "metadata": {
     "pedigreeName": "上帯",
     "rootHorseId": "uwaobi",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "lastUpdated": "2026-02-01T20:19:25.956465Z",
+    "source": "python_scraping_updated",
+    "isTraditionalFamily": true
   },
   "horses": [
     {
       "id": "uwaobi",
       "name": "上帯",
       "foaled": {},
+      "importedYear": "1905",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "",
       "dam": "",
       "color": "",
@@ -25,7 +27,8 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『名牝の系譜』pp.255-256",
+      "comment": "読みは『名牝の系譜』ではジョウタイ、『明治・大正・昭和初期の輸入馬』ではウワオビ（典拠不明）。"
     },
     {
       "id": "toyohashi",
@@ -34,7 +37,7 @@
         "year": 1910
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "中半",
       "sire": "豊平",
       "dam": "上帯",
       "color": "",
@@ -61,7 +64,7 @@
         "year": 1918
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "イボア(GB)",
       "dam": "豊橋",
       "color": "鹿毛",
@@ -85,10 +88,12 @@
       "id": "yomogiyama",
       "name": "蓬山",
       "foaled": {
-        "year": 1941
+        "year": 1941,
+        "month": 4,
+        "day": 8
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "第六シアンモア",
       "dam": "ベバウ",
       "color": "鹿毛",
@@ -102,7 +107,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.635",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -115,7 +120,7 @@
         "year": 1957
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ブツフラー(GB)",
       "dam": "蓬山",
       "color": "栗毛",
@@ -174,7 +179,7 @@
         "year": 1972
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "タニノムーティエ",
       "dam": "タイセイゴクー",
       "color": "栗毛",
@@ -267,7 +272,7 @@
         "day": 29
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ロングファスト",
       "dam": "タニノサイアス",
       "color": "青毛",
@@ -352,221 +357,13 @@
       "damId": "tanino-saiasu"
     },
     {
-      "id": "hoorai",
-      "name": "ホーライ",
-      "foaled": {
-        "year": 1957
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "アシヤガワ",
-      "dam": "メイゲキ",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "1957z00242",
-      "raceStats": {
-        "total": {
-          "runs": 78,
-          "wins": 11
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1963,
-            "month": 6,
-            "day": 2
-          },
-          "racecourse": "阪神",
-          "race": "アラブ大障害競走(OP)",
-          "displayRace": "アラブ大障害(春)",
-          "distance": "芝3870",
-          "grade": "jra_jump",
-          "entry": "7",
-          "result": "2",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 1962,
-            "month": 10,
-            "day": 28
-          },
-          "racecourse": "阪神",
-          "race": "アラブ大障害競走(OP)",
-          "displayRace": "アラブ大障害(秋)",
-          "distance": "芝3870",
-          "grade": "jra_jump",
-          "entry": "6",
-          "result": "2",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 1962,
-            "month": 6,
-            "day": 24
-          },
-          "racecourse": "阪神",
-          "race": "アラブ大障害競走(OP)",
-          "displayRace": "アラブ大障害(春)",
-          "distance": "芝3870",
-          "grade": "jra_jump",
-          "entry": "6",
-          "result": "3",
-          "favorite": "1"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "meigeki"
-    },
-    {
-      "id": "meigeki",
-      "name": "メイゲキ",
-      "foaled": {
-        "year": 1948
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ハヤタケ",
-      "dam": "第二高田",
-      "color": "鹿毛",
-      "breeder": "",
-      "netkeibaId": "000a00cab0",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "dainitakada"
-    },
-    {
-      "id": "dainitakada",
-      "name": "第二高田",
-      "foaled": {
-        "year": 1939
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ニグリス(SYR)",
-      "dam": "第三アバンドン",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a00c7a1",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "daisanabandon"
-    },
-    {
-      "id": "daisanabandon",
-      "name": "第三アバンドン",
-      "foaled": {
-        "year": 1921
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "第三サツパーダンス",
-      "dam": "アバンドン",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a01cc29",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "abandon"
-    },
-    {
-      "id": "abandon",
-      "name": "アバンドン",
-      "foaled": {
-        "year": 1914
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ハアリー",
-      "dam": "第四ハツピネス",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a01c99c",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "daiyonhatsupinesu"
-    },
-    {
-      "id": "daiyonhatsupinesu",
-      "name": "第四ハツピネス",
-      "foaled": {
-        "year": 1908
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ミグノン",
-      "dam": "ハツピネス",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a01c99b",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "hatsupinesu-1955"
-    },
-    {
       "id": "hatsupinesu-1955",
       "name": "ハツピネス",
       "foaled": {
         "year": 1955
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ハタカゼ",
       "dam": "蓬山",
       "color": "栗毛",
@@ -586,6 +383,147 @@
       },
       "damId": "yomogiyama",
       "linkName": "ハツピネス(1955)"
+    },
+    {
+      "id": "dainibebau",
+      "name": "ロンプ",
+      "pedigreeName": "第二ベバウ",
+      "foaled": {
+        "year": 1927
+      },
+      "sex": "female",
+      "breed": "軽半",
+      "sire": "ペリオン(GB)",
+      "dam": "ベバウ",
+      "color": "鹿毛",
+      "breeder": "日高三石村",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 12
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1931,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "帝室御賞典（阪神）",
+          "displayRace": "帝室御賞典（阪神）",
+          "distance": "芝2000",
+          "grade": "empire_cup",
+          "entry": "5",
+          "favorite": "4",
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1931,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "小倉",
+          "race": "帝室御賞典（小倉）",
+          "displayRace": "帝室御賞典（小倉）",
+          "distance": "芝1800",
+          "grade": "empire_cup",
+          "entry": "7",
+          "favorite": "1",
+          "result": "1"
+        }
+      ],
+      "source": "python_scraping, 『競馬成績書 昭和6年春季』pp.30,106-107, 『競馬成績書 昭和7年 春季』p.13",
+      "bogusId": "18802",
+      "damId": "bebau"
+    },
+    {
+      "id": "kaisou",
+      "name": "カイソウ",
+      "foaled": {
+        "year": 1941
+      },
+      "sex": "male",
+      "breed": "サラ系",
+      "sire": "月友",
+      "dam": "第二ベバウ",
+      "color": "栗毛",
+      "breeder": "錦多峯牧場（北海道）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 8
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 13,
+                "wins": 8
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 6,
+            "day": 18
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走",
+          "distance": "芝2400",
+          "grade": "jrs_big8",
+          "entry": "18",
+          "favorite": "能検",
+          "result": "1",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1944,
+            "month": 12,
+            "day": 8
+          },
+          "racecourse": "京都",
+          "race": "長距離特殊競走",
+          "distance": "芝3000",
+          "grade": "jrs_big8",
+          "entry": "6",
+          "favorite": "能検",
+          "result": "失格",
+          "displayRace": "菊花賞（長距離特殊競走）"
+        }
+      ],
+      "source": "python_scraping",
+      "owner": "有松鉄三",
+      "trainer": "久保田金造（京都）",
+      "damId": "dainibebau"
     }
   ]
 }
