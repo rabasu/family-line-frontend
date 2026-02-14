@@ -51,6 +51,8 @@ export const grades = {
   empire_derby: new Grade('東京優駿大競走', 5, '日本ダービー(~1937/08/06)'),
   empire_2m1f: new Grade('濠抽混合', 5, '所謂二哩一分(~1937/08/06)'),
   empire_grade: new Grade('特別競走', 6, '重賞級特別競走(~1937/08/06)'),
+  empire_grandjump: new Grade('大障害競走', 5, '中山大障害(~1937/08/06)'),
+  empire_jump: new Grade('障害特別競走', 6, '重賞級障害特別競走(~1937/08/06)'),
   empire_cs: new Grade('優勝・特ハン', 7, '優勝および特ハン競走(~1937/08/06)'),
   abroad_g1: new Grade('GI', 1, '海外 G1'),
   abroad_g2: new Grade('GII', 2, '海外 G2'),

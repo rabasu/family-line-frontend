@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "pedigreeName": "田霞",
+    "rootHorseId": "tagasumi",
+    "lastUpdated": "2026-02-01T20:19:51.394443Z",
+    "source": "python_scraping_updated",
+    "isTraditionalFamily": true
+  },
+  "horses": [
+    {
+      "id": "tagasumi",
+      "name": "田霞",
+      "foaled": {
+        "year": 1892
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "",
+      "dam": "",
+      "color": "",
+      "breeder": "豪",
+      "netkeibaId": "000a01c24d",
+      "owner": "広沢牧場",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』, 『アラブ系牝馬系統大鑑』p.211"
+    },
+    {
+      "id": "tagoto",
+      "name": "田毎",
+      "foaled": {
+        "year": 1910
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "アメール(FR)",
+      "dam": "田霞",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cb61",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ系種血統書』p.178, 『アラブ系牝馬系統大鑑』p.211",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tagasumi",
+      "comment": "父アメールは『新撰産馬図譜 続編 種馬集』馬匹一覧表によれば、明治三十年度第一回輸入馬の純血アングロアラブ。輸入時三歳。流星栗毛。フランス・オートピレネー県タルプ市産。奥羽種馬牧場で繋養。"
+    },
+    {
+      "id": "takada",
+      "name": "高田",
+      "foaled": {
+        "year": 1925
+      },
+      "sex": "female",
+      "breed": "アラ系",
+      "sire": "ダイナマイト(SYR)",
+      "dam": "田毎",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cc2a",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tagoto"
+    },
+    {
+      "id": "sentomasaru",
+      "name": "セントマサル",
+      "foaled": {
+        "year": 1940
+      },
+      "sex": "male",
+      "breed": "アラ系",
+      "sire": "ワカタカ",
+      "dam": "高田",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "京都",
+          "race": "農商省典抽障",
+          "displayRace": "京都農商省賞典抽籤馬障碍",
+          "distance": "3700",
+          "grade": "jrs_jump",
+          "entry": "8",
+          "result": "1"
+        }
+      ],
+      "source": "『日本競馬の歩み 資料編』p.1065, 『日本競馬史 第6巻』pp.716-719, 『日本ダービー25年史』p.109, 『アラブ系牝馬系統大鑑』p.211",
+      "damId": "takada",
+      "comment": "bogus・JBIS・netkeibaにデータなし。血統は『日本競馬の歩み 資料編』を元に『アラブ系牝馬系統大鑑』と照合。1943年春季弐は出走なし。1943年秋季は未調査。1944年春季は『日本競馬史』で確認できた範囲で7戦5勝(5-1-1-0)。『日本ダービー25年史』に6勝と記載があるため、出走数不明・6勝として記録する。"
+    }
+  ]
+}
