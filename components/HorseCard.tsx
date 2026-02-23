@@ -12,6 +12,7 @@ import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import Link from 'next/link'
 import { allHorses } from 'contentlayer/generated'
+import { PrizeMoney } from '@/types/PrizeMoney'
 
 // 個別ページが存在する馬のIDセット（ビルド時に生成）
 const horseArticleSlugs = new Set(allHorses.map((horse) => horse.slug))
@@ -105,7 +106,7 @@ const BaseInfo = (horse: Horse): JSX.Element => {
         （{horse.foaled.year}） by <HorseLink name={horse.sire} />
       </span>
       <span>
-        {raceStatsSummary(horse.raceStats)} {horse.prizeMoney?.total ?? ''}
+        {raceStatsSummary(horse.raceStats)} {prizeMoneySummary(horse.prizeMoney)}
       </span>
     </div>
   )
@@ -117,9 +118,22 @@ function raceStatsSummary(raceStats: AggregatedRaceStats | undefined) {
   }
   const summary = `${raceStats.total.runs ?? '?'}戦${raceStats.total.wins ?? '?'}勝`
   if (summary === '0戦0勝') {
-    return '不出走'
+    // 現状「0戦0勝」にはデータ不足が含まれるため、不出走ではなく空欄とする
+    return ''
   }
   return summary
+}
+
+function prizeMoneySummary(prizeMoney: PrizeMoney | undefined): string {
+  if (!prizeMoney) {
+    return ''
+  }
+  if (prizeMoney.total == '0.0万円' || prizeMoney.total == '0万円') {
+    // 現状「0.0万円」「0万円」にはデータ不足が含まれるため、空欄とする
+    return ''
+  } else {
+    return prizeMoney.total
+  }
 }
 
 function HorseCard(horse: Horse) {
