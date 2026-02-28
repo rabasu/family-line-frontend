@@ -29,68 +29,81 @@ function formatValue(value: string | undefined): string {
 
 const SCROLL_THRESHOLD = 10
 
-function useScrollingDown() {
-  const [down, setDown] = useState(false)
-  const lastY = useRef(0)
+export default function Home({ families }: { families: TraditionalFamily[] }) {
+  const [sortKey, setSortKey] = useState<SortKey>('name')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [filter, setFilter] = useState<FilterState>(EMPTY_FILTER)
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const activeFilterCount = countActiveFilters(filter)
+
+  const barRef = useRef<HTMLDivElement>(null)
+  const [barHeight, setBarHeight] = useState(0)
+  const barNaturalBottomRef = useRef(0)
+  const floatingRef = useRef(false)
+
+  const [scrollingDown, setScrollingDown] = useState(false)
+  const [barPastViewport, setBarPastViewport] = useState(false)
+
+  const lastScrollY = useRef(0)
   const ticking = useRef(false)
 
-  const update = useCallback(() => {
-    const y = window.scrollY
-    if (y < SCROLL_THRESHOLD) {
-      setDown(false)
-    } else if (y - lastY.current > SCROLL_THRESHOLD) {
-      setDown(true)
-    } else if (lastY.current - y > SCROLL_THRESHOLD) {
-      setDown(false)
+  useEffect(() => {
+    const el = barRef.current
+    if (!el) return
+    const measure = () => {
+      setBarHeight(el.offsetHeight)
+      if (!floatingRef.current) {
+        barNaturalBottomRef.current = el.getBoundingClientRect().bottom + window.scrollY
+      }
     }
-    lastY.current = Math.max(0, y)
+    measure()
+    const ro = new ResizeObserver(measure)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+
+  const onFrame = useCallback(() => {
+    const y = window.scrollY
+
+    if (y < SCROLL_THRESHOLD) {
+      setScrollingDown(false)
+    } else if (y - lastScrollY.current > SCROLL_THRESHOLD) {
+      setScrollingDown(true)
+    } else if (lastScrollY.current - y > SCROLL_THRESHOLD) {
+      setScrollingDown(false)
+    }
+
+    const bottom = barNaturalBottomRef.current
+    const height = barRef.current?.offsetHeight ?? 0
+    const shouldFloat = floatingRef.current ? y > bottom - height : y > bottom
+    if (shouldFloat !== floatingRef.current) {
+      floatingRef.current = shouldFloat
+      setBarPastViewport(shouldFloat)
+    }
+
+    lastScrollY.current = Math.max(0, y)
     ticking.current = false
   }, [])
 
   useEffect(() => {
     const onScroll = () => {
       if (!ticking.current) {
-        window.requestAnimationFrame(update)
+        window.requestAnimationFrame(onFrame)
         ticking.current = true
       }
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [update])
-
-  return down
-}
-
-export default function Home({ families }: { families: TraditionalFamily[] }) {
-  const [sortKey, setSortKey] = useState<SortKey>('name')
-  const [searchQuery, setSearchQuery] = useState('')
-  const [filter, setFilter] = useState<FilterState>(EMPTY_FILTER)
-  const [isFilterOpen, setIsFilterOpen] = useState(false)
-
-  const scrollingDown = useScrollingDown()
-  const activeFilterCount = countActiveFilters(filter)
-
-  const sentinelRef = useRef<HTMLDivElement>(null)
-  const barRef = useRef<HTMLDivElement>(null)
-  const [barPastViewport, setBarPastViewport] = useState(false)
-  const [barHeight, setBarHeight] = useState(0)
+  }, [onFrame])
 
   useEffect(() => {
-    const el = sentinelRef.current
-    if (!el) return
-    const obs = new IntersectionObserver(([e]) => setBarPastViewport(!e.isIntersecting), {
-      threshold: 0,
-    })
-    obs.observe(el)
-    return () => obs.disconnect()
-  }, [])
-
-  useEffect(() => {
-    const el = barRef.current
-    if (!el) return
-    const ro = new ResizeObserver(() => setBarHeight(el.offsetHeight))
-    ro.observe(el)
-    return () => ro.disconnect()
+    const handleResize = () => {
+      if (!floatingRef.current && barRef.current) {
+        barNaturalBottomRef.current = barRef.current.getBoundingClientRect().bottom + window.scrollY
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   const shouldScrollRef = useRef(false)
@@ -131,9 +144,10 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
   useEffect(() => {
     if (shouldScrollRef.current) {
       shouldScrollRef.current = false
-      sentinelRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const barTop = barNaturalBottomRef.current - barHeight
+      window.scrollTo({ top: Math.max(0, barTop), behavior: 'smooth' })
     }
-  }, [filteredAndSorted])
+  }, [filteredAndSorted, barHeight])
 
   const handleSortChange = (key: SortKey) => {
     if (key === sortKey) return
@@ -226,13 +240,10 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.description}</p>
         </div>
 
-        {/* Sentinel: marks the bar's natural position for IntersectionObserver */}
-        <div ref={sentinelRef} className="h-0" />
-
         {/* Spacer: preserves layout when bar is floating */}
         {isFloating && <div style={{ height: barHeight }} aria-hidden="true" />}
 
-        {/* Filter bar — in-flow normally, fixed overlay when scrolled past */}
+        {/* Filter bar — in-flow normally, fixed overlay when scrolled completely past */}
         <div
           className={
             isFloating
