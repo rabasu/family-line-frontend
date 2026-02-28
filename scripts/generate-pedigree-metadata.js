@@ -4,14 +4,15 @@
  * generate-pedigree-metadata.js
  *
  * 在来牝系（isTraditionalFamily === true）のJSONファイルから rootHorseId → ファイル名 のマッピングを生成
- * 出力: app/pedigree/pedigree-metadata.json
+ * 出力: data/pedigree/pedigree-metadata.json
  */
 
 const fs = require('fs')
 const path = require('path')
 
 const PEDIGREE_DIR = path.join(__dirname, '../app/pedigree')
-const OUTPUT_FILE = path.join(PEDIGREE_DIR, 'pedigree-metadata.json')
+const OUTPUT_DIR = path.join(__dirname, '../data/pedigree')
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'pedigree-metadata.json')
 
 console.log('🔍 Scanning JSON files in:', PEDIGREE_DIR)
 
@@ -19,7 +20,7 @@ console.log('🔍 Scanning JSON files in:', PEDIGREE_DIR)
 const files = fs
   .readdirSync(PEDIGREE_DIR)
   .filter((file) => file.endsWith('.json') && !file.includes('.backup'))
-  .filter((file) => file !== 'pedigree-metadata.json' && file !== 'horse-link-map.json')
+  .filter((file) => file !== 'pedigree-metadata.json' && file !== 'horse-link-map.json' && file !== 'traditional-family-index.json')
 
 console.log(`📁 Found ${files.length} JSON files`)
 
@@ -57,6 +58,11 @@ files.forEach((fileName, index) => {
     errorCount++
   }
 })
+
+// 出力ディレクトリが存在しない場合は作成
+if (!fs.existsSync(OUTPUT_DIR)) {
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true })
+}
 
 // 結果を書き込み
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(metadata, null, 2), 'utf8')

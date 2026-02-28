@@ -1,6 +1,6 @@
 'use client'
 
-import NameList from '@/pedigree/HorseList'
+import NameList from '@/data/pedigree/HorseList'
 import type { HorseLinkData } from '@/types/HorseLinkData'
 import React from 'react'
 import NextLink from 'next/link'
