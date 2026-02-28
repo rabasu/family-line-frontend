@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants'
 import HorseCard from './HorseCard'
 import type { Horse } from '@/types/Horse'
-import pedigreeList from '@/pedigree/index'
+import pedigreeList from '@/data/pedigree/index'
 import { compareDate, toDate } from 'app/lib/utils'
 import { Foaled } from '@/types/Foaled'
 
@@ -32,19 +32,12 @@ const branch = tv({
   },
 })
 function Branch({ horse, id, border }) {
-  const children = horse.children
-    ? horse.children.toSorted((a, b) => Foaled.compare(a.foaled, b.foaled))
-    : []
+  const children = horse.children ? horse.children.toSorted((a, b) => Foaled.compare(a.foaled, b.foaled)) : []
   return (
     <div className={branch({ border })} id={id}>
       {HorseCard(horse)}
       {children.map((child: Horse, index: number) => (
-        <Branch
-          horse={child}
-          key={`${child.id}`}
-          id={`${child.id}`}
-          border={`${index === children.length - 1 ? 'last' : 'default'}`}
-        />
+        <Branch horse={child} key={`${child.id}`} id={`${child.id}`} border={`${index === children.length - 1 ? 'last' : 'default'}`} />
       ))}
     </div>
   )

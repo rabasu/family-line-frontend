@@ -1,6 +1,6 @@
 'use client'
 
-import { findHorseByIdOnDemand } from '@/pedigree/index'
+import { findHorseByIdOnDemand } from '@/data/pedigree/index'
 import { sex } from '@/types/Horse'
 import { useEffect, useState } from 'react'
 import type { Horse } from '@/types/Horse'

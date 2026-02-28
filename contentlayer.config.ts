@@ -209,6 +209,7 @@ export const Horse = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
+  contentDirExclude: ['pedigree'],
   documentTypes: [Blog, Authors, Family, Horse],
   mdx: {
     cwd: process.cwd(),

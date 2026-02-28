@@ -127,7 +127,13 @@ for (const jsonFile of jsonFiles) {
       }
     }
 
-    // (3) foaled.yearが1935年以前
+    // (3) foaled.yearが不明
+    if (!isTraditional && !rootHorse.foaled?.year) {
+      isTraditional = true
+      reason = 'foaled.year is unknown'
+    }
+
+    // (4) foaled.yearが1935年以前
     if (!isTraditional && rootHorse.foaled?.year) {
       const foaledYear = parseInt(rootHorse.foaled.year)
       if (!isNaN(foaledYear) && foaledYear <= 1935) {

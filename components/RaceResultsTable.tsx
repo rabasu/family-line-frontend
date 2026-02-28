@@ -2,7 +2,7 @@
 
 import RaceResult from '@/types/RaceResult'
 import { grades } from '@/types/Grade'
-import { findHorseByIdOnDemand } from '@/pedigree/index'
+import { findHorseByIdOnDemand } from '@/data/pedigree/index'
 import { useEffect, useState } from 'react'
 import type { Horse } from '@/types/Horse'
 
