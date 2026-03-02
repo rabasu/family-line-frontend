@@ -11,6 +11,7 @@ import RaceResultsTable from './RaceResultsTable'
 // import { HorseCard } from './HorseCard'
 import FamilyTree from './FamilyTree'
 import HL from './HorseLink'
+import GlossaryLink from './GlossaryLink'
 
 export const components: MDXComponents = {
   Image,
@@ -24,5 +25,7 @@ export const components: MDXComponents = {
   // HorseCard,
   FamilyTree,
   HL,
+  GlossaryLink,
+  GL: GlossaryLink,
   strong: ({ children }) => <HL name={children as string} />,
 }
