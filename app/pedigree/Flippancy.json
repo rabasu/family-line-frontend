@@ -676,12 +676,28 @@
       "netkeibaId": "000a0026ca",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 2
         },
         "divisions": []
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "中山4歳牝馬特別",
+          "distance": "芝1800",
+          "grade": "jrs_big8",
+          "entry": "21",
+          "favorite": "能検",
+          "result": "2",
+          "displayRace": "桜花賞"
+        }
+      ],
       "source": "python_scraping",
       "englishName": "Kimikage",
       "prizeMoney": {
@@ -2321,12 +2337,12 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfuritsupanshii",
+      "damId": "dai3-flippancy",
       "jbisId": "0000333170",
       "bogusId": "16137"
     },
     {
-      "id": "daisanfuritsupanshii",
+      "id": "dai3-flippancy",
       "name": "第参フリツパンシー",
       "foaled": {
         "year": 1933,
@@ -2848,10 +2864,84 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfuritsupanshii",
+      "damId": "dai3-flippancy",
       "owner": "小林庄平",
       "trainer": "大久保房松（中山）",
       "ahonooraId": "yashima_hime"
+    },
+    {
+      "id": "dai3-flippancy-2",
+      "pedigreeName": "第参フリツパンシーの二",
+      "name": "ゲキリユウ",
+      "foaled": {
+        "year": 1941,
+        "month": 4,
+        "day": 20
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ワカマサ",
+      "dam": "第参フリツパンシー",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a002621",
+      "jbisId": "0000376359",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 2
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": null,
+                "wins": 2
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "東京",
+          "race": "中山4歳牝馬特別",
+          "distance": "芝1800",
+          "grade": "jrs_big8",
+          "entry": "21",
+          "favorite": "能検",
+          "result": "3",
+          "displayRace": "桜花賞"
+        }
+      ],
+      "source": "python_scraping, 『母馬別競走成績書』p.555",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dai3-flippancy"
     }
   ]
 }
