@@ -17,8 +17,8 @@
       "breed": "トロ",
       "sire": "ウイツブルトン",
       "dam": "カリホルニヤパツチエン",
-      "color": "",
-      "breeder": "",
+      "color": "黒鹿毛",
+      "breeder": "米",
       "netkeibaId": "000a01c18a",
       "raceStats": {
         "total": {
@@ -41,8 +41,8 @@
       "breed": "トロ",
       "sire": "グランドエムペロー",
       "dam": "キツチオー",
-      "color": "",
-      "breeder": "",
+      "color": "青毛",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a01c18e",
       "raceStats": {
         "total": {
@@ -68,8 +68,8 @@
       "breed": "トロ",
       "sire": "第二ブラツクホーク",
       "dam": "第三キツチオー",
-      "color": "",
-      "breeder": "",
+      "color": "青毛",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a01c18f",
       "raceStats": {
         "total": {
@@ -95,7 +95,7 @@
       "breed": "中半",
       "sire": "シヤイヤー",
       "dam": "モーニングスター",
-      "color": "",
+      "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a01cafc",
       "raceStats": {
@@ -110,7 +110,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "morning-star"
+      "damId": "morning-star",
+      "comment": "『農事雑報 (101)』p.45には「第三モーニングスター」が2頭掲載されている（明治35年鹿毛・37年黒鹿毛）。ここでは公的な資料である『総馬匹名簿 新冠御料牧場 明治40年5月現在』に基づき、「明治37年生・鹿毛」を採用した。"
     },
     {
       "id": "dai3-morning-star-1",
@@ -634,10 +635,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainimooningusutaa"
+      "damId": "dainimorning-star"
     },
     {
-      "id": "dainimooningusutaa",
+      "id": "dainimorning-star",
       "name": "第二モーニングスター",
       "foaled": {
         "year": 1902
@@ -1051,10 +1052,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainimooningusutaanoichi"
+      "damId": "dai2-morning-star-1"
     },
     {
-      "id": "dainimooningusutaanoichi",
+      "id": "dai2-morning-star-1",
       "name": "第二モーニングスターノ一",
       "foaled": {
         "year": 1917
@@ -1078,7 +1079,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainimooningusutaa"
+      "damId": "dainimorning-star"
     },
     {
       "id": "ginkazu",
@@ -1270,10 +1271,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daijuuichimooningusutaa"
+      "damId": "dai11-morning-star"
     },
     {
-      "id": "daijuuichimooningusutaa",
+      "id": "dai11-morning-star",
       "name": "第十一モーニングスター",
       "foaled": {
         "year": 1914
@@ -1324,7 +1325,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainimooningusutaanoichi"
+      "damId": "dai2-morning-star-1"
     },
     {
       "id": "kinpou",
@@ -1366,6 +1367,105 @@
       "source": "python_scraping",
       "bogusId": "119859",
       "damId": "eichi"
+    },
+    {
+      "id": "dai4-morning-star",
+      "name": "第四モーニングスター",
+      "foaled": {
+        "year": 1905
+      },
+      "sex": "female",
+      "breed": "オロ",
+      "sire": "チエルバツク（オロ）",
+      "dam": "モーニングスター",
+      "color": "鹿毛",
+      "breeder": "新冠御料牧場",
+      "source": "『総馬匹名簿 新冠御料牧場 明治40年5月現在』p.24/62, 『競馬成績書 昭和4年秋季』p.377",
+      "damId": "morning-star",
+      "comment": "『アラブ系牝馬系統大鑑』には「第四モーニングスター」として昭和6年生まれ・父ロングトム・母第三モーニングスターの馬が掲載されている。しかし、第四モーニングスターの孫であるアジヤツクカードが1926（昭和元年）生まれであることと矛盾する。よって、ここでは新冠御料牧場の『総馬匹名簿』を参照し、1905（明治38）年生まれ・鹿毛の第四モーニングスターを採用した。"
+    },
+    {
+      "id": "card",
+      "name": "カード",
+      "foaled": {},
+      "sex": "female",
+      "breed": "オロ",
+      "sire": "ボドカー（トロ）",
+      "dam": "第四モーニングスター",
+      "color": "",
+      "breeder": "",
+      "source": "『競馬成績書 昭和4年秋季』p.377",
+      "damId": "dai4-morning-star"
+    },
+    {
+      "id": "keishuku",
+      "name": "慶祝",
+      "foaled": {},
+      "sex": "female",
+      "breed": "中半",
+      "sire": "アジヤツクス（トロ）",
+      "dam": "カード",
+      "color": "",
+      "breeder": "",
+      "source": "『競馬成績書 昭和6年春季』p.278",
+      "damId": "card"
+    },
+    {
+      "id": "k-port",
+      "name": "ケーポート",
+      "formerName": "ケイポート",
+      "foaled": {},
+      "sex": "female",
+      "breed": "中半",
+      "sire": "マスボート",
+      "dam": "慶祝",
+      "color": "",
+      "breeder": "",
+      "source": "『登録馬名簿 昭和16年』p.85",
+      "damId": "keishuku"
+    },
+    {
+      "id": "sage",
+      "name": "セイジー",
+      "foaled": {
+        "year": 1939
+      },
+      "sex": "male",
+      "breed": "軽半",
+      "sire": "善栄",
+      "dam": "ケーポート",
+      "color": "",
+      "breeder": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "京都",
+          "race": "農商省典抽障",
+          "displayRace": "京都農商省賞典抽籤馬障碍",
+          "distance": "3700",
+          "grade": "jrs_jump",
+          "entry": "8",
+          "favorite": "能検",
+          "result": "2"
+        }
+      ],
+      "prizeMoney": {
+        "total": "2,850円以上"
+      },
+      "source": "『競馬成績書 昭和18年春季版』p.7, 『馬事年鑑 [昭和]18年 秋季』p.59, 『日本競馬史 第6巻』pp.716-719",
+      "damId": "k-port",
+      "comment": "『馬事年鑑 [昭和]18年 秋季』によれば、S18年春季に8戦2勝[2-0-2-4]、受賞金2850円。能力検定では1着なし。"
     }
   ]
 }

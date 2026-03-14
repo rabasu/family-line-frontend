@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "エナモールド",
     "rootHorseId": "enamoured",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted",
+    "lastUpdated": "2026-03-08T19:09:02.470176Z",
+    "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
@@ -418,9 +418,12 @@
     },
     {
       "id": "daisaniigurukuin",
-      "name": "第三イーグルクイン",
+      "pedigreeName": "第三イーグルクイン",
+      "name": "ホウテン",
       "foaled": {
-        "year": 1925
+        "year": 1925,
+        "month": 5,
+        "day": 23
       },
       "sex": "female",
       "breed": "サラ",
@@ -431,13 +434,13 @@
       "netkeibaId": "000a0023d4",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 6
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.499, 『サラブレッド血統書 第1巻』p.135",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2619,6 +2622,79 @@
         "total": "0万円"
       },
       "damId": "daisanenamoorudo"
+    },
+    {
+      "id": "taiun",
+      "name": "タイウン",
+      "formerPedigreeName": "セイリユー",
+      "foaled": {
+        "year": 1940
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "セフト(GB)",
+      "dam": "第三イーグルクイン",
+      "color": "鹿毛",
+      "breeder": "古川嘉平（北海道沙流郡門別村）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1943,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jrs_big8",
+          "entry": "25",
+          "result": "4",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1943,
+            "month": 11,
+            "day": 14
+          },
+          "racecourse": "京都",
+          "race": "京都農商省賞典4歳呼馬",
+          "distance": "芝3000",
+          "grade": "jrs_big8",
+          "entry": "8",
+          "favorite": "3",
+          "result": "8",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1944,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "呼駈五歳（特）",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "7",
+          "favorite": "能検",
+          "result": "3",
+          "displayRace": "阪神記念"
+        }
+      ],
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.135, 『母馬別競走成績書』pp.499-500, 『競馬成績書 昭和18年春季版』p.14",
+      "bogusId": "53466",
+      "damId": "daisaniigurukuin",
+      "comment": "『母馬別競走成績書』によればS18に8戦3勝。"
     }
   ]
 }
