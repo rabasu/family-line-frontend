@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "アントルソール",
     "rootHorseId": "entresol",
-    "lastUpdated": "2025-11-23T17:48:22.606297Z",
+    "lastUpdated": "2026-03-14T16:24:19.854837Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -800,10 +800,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "purinsesu"
+      "damId": "princess"
     },
     {
-      "id": "purinsesu",
+      "id": "princess",
       "name": "プリンセス",
       "foaled": {
         "year": 1936
@@ -985,7 +985,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "purinsesu"
+      "damId": "princess"
     },
     {
       "id": "katsurabaratsukee",
@@ -1109,28 +1109,48 @@
       "id": "himemindo",
       "name": "ヒメミンド",
       "foaled": {
-        "year": 1941
+        "year": 1941,
+        "month": 3,
+        "day": 27
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第弐イブンヂアド",
       "dam": "プリンセス",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "JPN",
       "netkeibaId": "000a00c8ed",
+      "jbisId": "0000456708",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 3
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "阪神",
+          "race": "1級種牝馬選定",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "6",
+          "favorite": "能検",
+          "result": "1",
+          "displayRace": "種牝馬選定（阪神）"
+        }
+      ],
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.167, 『アラブ・アングロアラブ・準サラブレッド血統書 第一巻』p.491, 『日本競馬史 第6巻』pp.712-715,800-802",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "purinsesu"
+      "damId": "princess",
+      "bogusId": "128341"
     },
     {
       "id": "tsurumi-o",

@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "ソートウエーヴ",
     "rootHorseId": "thought-wave",
-    "lastUpdated": "2025-11-23T18:19:17.912541Z",
+    "lastUpdated": "2026-03-14T16:23:59.635120Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -1678,34 +1678,56 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suurei"
+      "damId": "shurei"
     },
     {
-      "id": "suurei",
-      "name": "崇麗",
+      "id": "shurei",
+      "pedigreeName": "崇麗",
+      "name": "ナミノオト",
       "foaled": {
-        "year": 1941
+        "year": 1941,
+        "month": 5,
+        "day": 16
       },
+      "died": "1968.1. 用途変更",
       "sex": "female",
       "breed": "サラ",
       "sire": "トウルヌソル(GB)",
       "dam": "ソートウエーヴ",
       "color": "鹿毛",
-      "breeder": "静内町",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a0025fc",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 2
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 12,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "1級種牝馬選定",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "5",
+          "favorite": "能検",
+          "result": "1",
+          "displayRace": "種牝馬選定（京都）"
+        }
+      ],
+      "source": "python_scraping, 『日本競馬史 第6巻』pp.712-715,800-802, 『母馬別競走成績書』p.533, 『馬匹血統登録書 第拾八卷』p.93, 『血統書サービス』",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "thought-wave"
+      "damId": "thought-wave",
+      "bogusId": "34638",
+      "comment": "血統名の読みは「シユウレイ」。"
     },
     {
       "id": "mejironagoya",
@@ -3767,7 +3789,7 @@
       "owner": "吉屋",
       "jbisId": "0000001579",
       "bogusId": "49950",
-      "damId": "suurei"
+      "damId": "shurei"
     },
     {
       "id": "ford-light",
@@ -3894,7 +3916,7 @@
       "owner": "澤田",
       "jbisId": "0000000433",
       "bogusId": "42383",
-      "damId": "suurei"
+      "damId": "shurei"
     },
     {
       "id": "homare-o",

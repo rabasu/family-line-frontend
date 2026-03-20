@@ -382,20 +382,22 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigohoosoon"
+      "damId": "dai5-hawthorne"
     },
     {
-      "id": "daigohoosoon",
+      "id": "dai5-hawthorne",
       "name": "第五ホーソーン",
       "foaled": {
-        "year": 1905
+        "year": 1905,
+        "month": 5,
+        "day": 2
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第七ガイヨル",
       "dam": "ホーソーン",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "下総御料牧場（千葉県印旛郡遠山村）",
       "netkeibaId": "000a0191a6",
       "raceStats": {
         "total": {
@@ -405,14 +407,14 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第一巻』p.1069",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hoosoon"
+      "damId": "hawthorne"
     },
     {
-      "id": "hoosoon",
+      "id": "hawthorne",
       "name": "ホーソーン",
       "foaled": {
         "year": 1895
@@ -833,7 +835,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigohoosoon"
+      "damId": "dai5-hawthorne"
     },
     {
       "id": "yoshifusa",
@@ -1197,6 +1199,137 @@
       "owner": "相原",
       "jbisId": "0000002296",
       "bogusId": "19005"
+    },
+    {
+      "id": "darb",
+      "name": "ダーブ",
+      "foaled": {
+        "year": 1917,
+        "month": 3,
+        "day": 21
+      },
+      "died": "1922.11.18. 鹿児島県姶良郡北原健氏へ売却後不明",
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ダイヤモンドウエツデイング(GB)",
+      "dam": "第五ホーソーン",
+      "color": "栗毛",
+      "breeder": "下総御料牧場（千葉県印旛郡遠山村）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『アラブ・アングロアラブ・準サラブレッド血統書 第一巻』p.990",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dai5-hawthorne"
+    },
+    {
+      "id": "mont-blanc",
+      "name": "モンブラン",
+      "formerPedigreeName": "第二ダーブ",
+      "foaled": {
+        "year": 1921,
+        "month": 4,
+        "day": 14
+      },
+      "died": "1922.11.18. 鹿児島県姶良郡北原健氏へ売却後不明",
+      "sex": "female",
+      "breed": "準サラ",
+      "sire": "チヤペルブラムプトン(GB)",
+      "dam": "ダーブ",
+      "color": "栗毛",
+      "breeder": "下総御料牧場（千葉県印旛郡遠山村）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『アラブ・アングロアラブ・準サラブレッド血統書 第一巻』p.1182",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "darb"
+    },
+    {
+      "id": "bandai",
+      "name": "バンダイ",
+      "foaled": {
+        "year": 1929
+      },
+      "sex": "female",
+      "breed": "準サラ",
+      "sire": "シヤイニングスピヤー(GB)",
+      "dam": "モンブラン",
+      "color": "鹿毛",
+      "breeder": "伊佐早勉（青森県上北郡七戸町）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『アラブ・アングロアラブ・準サラブレッド血統書 第一巻』p.1182",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "mont-blanc"
+    },
+    {
+      "id": "dosa",
+      "name": "ドーサ",
+      "foaled": {
+        "year": 1941
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "帛軍",
+      "dam": "バンダイ",
+      "color": "鹿毛",
+      "breeder": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 12,
+            "day": 17
+          },
+          "racecourse": "修錬場",
+          "race": "1級種牝馬選定",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "5",
+          "favorite": "能検",
+          "result": "1",
+          "displayRace": "種牝馬選定（修錬場）"
+        }
+      ],
+      "source": "『日本競馬の歩み 資料編』p.1104, 『日本競馬史 第6巻』pp.712-715,800-802",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "bandai",
+      "comment": "1944年の能力検定競走に出場し、春季東京2勝、秋季修錬場3戦2勝。"
     }
   ]
 }
