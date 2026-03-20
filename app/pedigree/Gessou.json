@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "pedigreeName": "月窓",
+    "rootHorseId": "gessou",
+    "lastUpdated": "2026-03-14T16:24:28.628402Z",
+    "source": "python_scraping_updated"
+  },
+  "horses": [
+    {
+      "id": "gessou",
+      "name": "月窓",
+      "foaled": null,
+      "importedYear": "1905",
+      "sex": "female",
+      "breed": "豪洋",
+      "sire": "",
+      "dam": "",
+      "color": "",
+      "breeder": "豪",
+      "owner": "北海道三石郡貸下",
+      "netkeibaId": "000a01cfd1",
+      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』"
+    },
+    {
+      "id": "oohoshi",
+      "name": "大星",
+      "foaled": {
+        "year": 1917
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "ウイリアム",
+      "dam": "月窓",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cfd2",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "gessou"
+    },
+    {
+      "id": "kansei-1931",
+      "name": "カンセイ",
+      "foaled": {
+        "year": 1931
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "ミンドアー(GB)",
+      "dam": "大星",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a01cfd3",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "oohoshi",
+      "linkName": "カンセイ(1931)"
+    },
+    {
+      "id": "ibundoaa",
+      "name": "イブンドアー",
+      "foaled": {
+        "year": 1941
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "第弐イブンヂアド",
+      "dam": "カンセイ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "阪神",
+          "race": "1級種牝馬選定",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "6",
+          "favorite": "能検",
+          "result": "2",
+          "displayRace": "種牝馬選定（阪神）"
+        }
+      ],
+      "source": "『アラブ系牝馬系統大鑑』p.214, 『日本競馬史 第6巻』pp.712-715,800-802",
+      "damId": "kansei-1931",
+      "comment": "能力検定競走で1勝。"
+    }
+  ]
+}
