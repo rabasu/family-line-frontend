@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "エナモールド",
     "rootHorseId": "enamoured",
-    "lastUpdated": "2026-03-08T19:09:02.470176Z",
+    "lastUpdated": "2026-03-21T05:31:05.237257Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -414,10 +414,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisaniigurukuin"
+      "damId": "dai3-eagle-queen"
     },
     {
-      "id": "daisaniigurukuin",
+      "id": "dai3-eagle-queen",
       "pedigreeName": "第三イーグルクイン",
       "name": "ホウテン",
       "foaled": {
@@ -444,10 +444,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "iigurukuin"
+      "damId": "eagle-queen"
     },
     {
-      "id": "iigurukuin",
+      "id": "eagle-queen",
       "name": "イーグルクイン",
       "foaled": {
         "year": 1918
@@ -471,10 +471,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanenamoorudo"
+      "damId": "dai3-enamoured"
     },
     {
-      "id": "daisanenamoorudo",
+      "id": "dai3-enamoured",
       "name": "第三エナモールド",
       "foaled": {
         "year": 1912
@@ -875,34 +875,86 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yutakashun"
+      "damId": "hoshun"
     },
     {
-      "id": "yutakashun",
-      "name": "豊俊",
+      "id": "hoshun",
+      "pedigreeName": "豊俊",
+      "name": "ワシトシ",
       "foaled": {
-        "year": 1942
+        "year": 1942,
+        "month": 4,
+        "day": 12
       },
+      "died": "1967.08.04 死亡",
       "sex": "female",
       "breed": "サラ",
-      "sire": "セフト(GB)",
+      "sire": "セフト(IRE)",
       "dam": "第三イーグルクイン",
       "color": "鹿毛",
-      "breeder": "静内町",
+      "breeder": "伊藤繁太郎（北海道静内郡静内町）",
       "netkeibaId": "000a0025bf",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 4,
+          "wins": 1
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 4,
+                "wins": 1
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1945,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "北海道支所",
+          "race": "サラ種牝馬選定競走",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "3",
+          "favorite": "能検",
+          "result": "3",
+          "displayRace": "サラ種牝馬選定競走"
+        }
+      ],
+      "source": "python_scraping, 『日本競馬史 第6巻』pp.852-861, 『母馬別競走成績書』p.500, 『サラブレッド血統書 第3巻』p.95, 『血統書サービス』",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "0.0万円",
+        "central": "0.0万円"
       },
-      "damId": "daisaniigurukuin"
+      "damId": "dai3-eagle-queen",
+      "englishName": "Hoshun",
+      "owner": "平岡諭（北海道勇払郡鵡川村）",
+      "jbisId": "0000000152",
+      "comment": "15,000円で購買。4,500円で鵡川・平岡諭に還元（売却）。JBISでは馬主「大井」。"
     },
     {
       "id": "meisho-thunder",
@@ -1273,7 +1325,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yutakashun",
+      "damId": "hoshun",
       "linkName": "ワカクサ(1956)"
     },
     {
@@ -2078,10 +2130,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainienamoorudo"
+      "damId": "dainienamoured"
     },
     {
-      "id": "dainienamoorudo",
+      "id": "dainienamoured",
       "name": "第二エナモールド",
       "foaled": {
         "year": 1911
@@ -2621,7 +2673,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanenamoorudo"
+      "damId": "dai3-enamoured"
     },
     {
       "id": "taiun",
@@ -2693,7 +2745,7 @@
       ],
       "source": "python_scraping, 『サラブレッド血統書 第1巻』p.135, 『母馬別競走成績書』pp.499-500, 『競馬成績書 昭和18年春季版』p.14",
       "bogusId": "53466",
-      "damId": "daisaniigurukuin",
+      "damId": "dai3-eagle-queen",
       "comment": "『母馬別競走成績書』によればS18に8戦3勝。"
     }
   ]

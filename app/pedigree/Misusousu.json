@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "ミスソウス",
     "rootHorseId": "misusousu",
-    "lastUpdated": "2025-11-23T17:49:36.733996Z",
+    "lastUpdated": "2026-03-21T05:31:14.933202Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -28,7 +28,8 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『競馬成績書 昭和8年 春季』p.96"
+      "source": "python_scraping, 『競馬成績書 昭和8年 春季』p.96, 『アラブ血統是々非々 : 昭和種牝馬総覧 別巻』p.277, 『アラブ系牝馬系統大鑑』p.236",
+      "comment": "『アラブ系牝馬系統大鑑』では明治38年豪州産。各競馬成績書では父サニーサウス・母ベイメースと記載。よく似た名前の「ミスサウス」号が『馬匹血統登録書 第6巻』仁399号に登録されている（父サニーサウス、母不詳、1915年豪州産、青森県三戸郡大舘村・武部孫蔵氏所有）。唯一のミスソウス産駒・ヨツト（ミスソウスノ一）は各競馬成績書で「青森県大舘村」が産地と記載されており、ミスサウスと矛盾はしない。"
     },
     {
       "id": "misusousunoichi",
@@ -60,30 +61,80 @@
     },
     {
       "id": "shoukou",
-      "name": "昭晃",
+      "pedigreeName": "昭晃",
+      "name": "カゲミツ",
       "foaled": {
-        "year": 1942
+        "year": 1942,
+        "month": 4,
+        "day": 1
       },
+      "died": "1965.07. 死亡",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "方景",
       "dam": "ミスソウスノ一",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "村田岩太（北海道新冠村）",
+      "owner": "村田岩太（北海道新冠村）",
       "netkeibaId": "000a00f0df",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 4,
+          "wins": 2
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 4,
+                "wins": 2
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1945,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "北海道支所",
+          "race": "アラブ種馬選定競走",
+          "distance": "芝2000",
+          "grade": "jrs_grade",
+          "entry": "4",
+          "favorite": "能検",
+          "result": "2",
+          "displayRace": "アラブ種馬選定競走"
+        }
+      ],
+      "source": "python_scraping, 『日本競馬史 第6巻』pp.852-861, 『アラブ系牝馬系統大鑑』pp.233,236, 『アラブ系種血統書 第1巻』p.136",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "0.0万円"
       },
-      "damId": "misusousunoichi"
+      "damId": "misusousunoichi",
+      "jbisId": "0000465127",
+      "comment": "2,100円で購買。630円で新冠村・村田岩太に売却（買い戻し）。"
     },
     {
       "id": "hitsutaraito",

@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "アルテミス",
     "rootHorseId": "artemis",
-    "lastUpdated": "2025-11-23T17:49:53.213433Z",
+    "lastUpdated": "2026-03-21T05:30:59.633238Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -34,7 +34,7 @@
       "comment": "netkeibaでは生年1898、凪的では2頭に分離していて1887 / 1903。産駒の生年から1903と推定。凪的でトライミーの母とされているアルテミス(1887, FR)はPedigreeQueryに登録はあるが、日本に輸出された形跡がない。『明治・大正・昭和初期の輸入馬』にも記載がないためこれは誤りと思われる。"
     },
     {
-      "id": "toraimii",
+      "id": "try-me",
       "name": "トライミー",
       "foaled": {
         "year": 1916
@@ -61,7 +61,7 @@
       "damId": "artemis"
     },
     {
-      "id": "toraimiinoshichi",
+      "id": "try-me-7",
       "name": "トライミーノ七",
       "foaled": {
         "year": 1932
@@ -85,13 +85,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "toraimii"
+      "damId": "try-me"
     },
     {
-      "id": "unebinoni",
-      "name": "ウネビノ二",
+      "id": "unebino-ni",
+      "pedigreeName": "ウネビノ二",
+      "name": "ウネビガワ",
       "foaled": {
-        "year": 1942
+        "year": 1942,
+        "month": 5,
+        "day": 6
       },
       "sex": "female",
       "breed": "サラ系",
@@ -102,17 +105,63 @@
       "netkeibaId": "000a00b722",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 4,
+          "wins": 1
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 4,
+                "wins": 1
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1945,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "北海道支所",
+          "race": "サラ種牝馬選定競走",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "3",
+          "favorite": "能検",
+          "result": "2",
+          "displayRace": "サラ種牝馬選定競走"
+        }
+      ],
+      "source": "python_scraping, 『日本競馬史 第6巻』pp.852-861, 『国営競馬成績書 昭和26年 春季』p.29",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "0.0万円"
       },
-      "damId": "toraimiinoshichi"
+      "damId": "try-me-7",
+      "englishName": "Unebino Ni",
+      "jbisId": "0000453115",
+      "comment": "16,000円で購買。3,050円で荻伏村・伏木田善作に還元（売却・標準価格未達）。"
     },
     {
       "id": "olympia",
@@ -213,7 +262,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "unebinoni",
+      "damId": "unebino-ni",
       "owner": "大木",
       "jbisId": "0000000395",
       "bogusId": "35064"
@@ -984,7 +1033,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "toraimiinoshichi"
+      "damId": "try-me-7"
     },
     {
       "id": "chitosetaikoo",
@@ -1190,7 +1239,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "toraimiinoshichi",
+      "damId": "try-me-7",
       "englishName": "Happy Unebi",
       "owner": "富岡",
       "jbisId": "0000000567",
@@ -1537,7 +1586,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "toraimiinoshichi",
+      "damId": "try-me-7",
       "jbisId": "0000453047",
       "bogusId": "27033"
     }
