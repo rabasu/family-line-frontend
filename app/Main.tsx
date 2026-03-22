@@ -17,6 +17,11 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
 
 function sortFamilies(families: TraditionalFamily[], sortKey: SortKey): TraditionalFamily[] {
   return [...families].sort((a, b) => {
+    // 【血統不明】はあらゆるソートで常に最後尾
+    if (a.slug === '_unknown' && b.slug !== '_unknown') return 1
+    if (a.slug !== '_unknown' && b.slug === '_unknown') return -1
+    if (a.slug === '_unknown' && b.slug === '_unknown') return 0
+
     const valA = (a[sortKey] ?? '') as string
     const valB = (b[sortKey] ?? '') as string
     return valA.localeCompare(valB, 'ja')
@@ -258,46 +263,62 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
 
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!filteredAndSorted.length && <li className="py-8 text-center text-gray-500 dark:text-gray-400">条件に一致する牝系が見つかりません。</li>}
-          {filteredAndSorted.map((family) => (
-            <li key={family.slug} className="py-4">
-              <article className="min-w-0 overflow-hidden">
-                <div className="space-y-2">
-                  <h2 className="text-xl font-bold leading-8 tracking-tight">
-                    <Link href={`/family/${family.slug}`} className="text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400">
-                      {formatValue(family.name)}
-                    </Link>
-                  </h2>
-                  <dl className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 md:grid-cols-4">
-                    <div className="min-w-0 break-words">
-                      <dt className="inline font-medium">品種: </dt>
-                      <dd className="inline">{formatValue(family.breed)}</dd>
+          {filteredAndSorted.map((family) => {
+            const isPlaceholder = family.slug === '_unknown'
+            return (
+              <li key={family.slug} className={`py-4 ${isPlaceholder ? 'opacity-75' : ''}`}>
+                <article className={`min-w-0 overflow-hidden ${isPlaceholder ? 'text-gray-500 dark:text-gray-500' : ''}`}>
+                  <div className="space-y-2">
+                    <h2 className={`text-xl leading-8 tracking-tight ${isPlaceholder ? 'font-medium' : 'font-bold'}`}>
+                      <Link
+                        href={`/family/${family.slug}`}
+                        className={
+                          isPlaceholder
+                            ? 'text-gray-500 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400'
+                            : 'text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400'
+                        }
+                      >
+                        {formatValue(family.name)}
+                      </Link>
+                    </h2>
+                    <dl className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 md:grid-cols-4">
+                      <div className="min-w-0 break-words">
+                        <dt className="inline font-medium">品種: </dt>
+                        <dd className="inline">{formatValue(family.breed)}</dd>
+                      </div>
+                      <div className="min-w-0 break-words">
+                        <dt className="inline font-medium">生年: </dt>
+                        <dd className="inline">{formatValue(family.foaled)}</dd>
+                      </div>
+                      <div className="min-w-0 break-words">
+                        <dt className="inline font-medium">輸入年: </dt>
+                        <dd className="inline">{formatValue(family.importedYear)}</dd>
+                      </div>
+                      <div className="min-w-0 break-words">
+                        <dt className="inline font-medium">生産: </dt>
+                        <dd className="inline">{formatValue(family.breeder)}</dd>
+                      </div>
+                      <div className="col-span-2 min-w-0 break-words md:col-span-4">
+                        <dt className="inline font-medium">所有者: </dt>
+                        <dd className="inline">{formatValue(family.owner)}</dd>
+                      </div>
+                    </dl>
+                    <div className="text-base font-medium leading-6">
+                      <Link
+                        href={`/family/${family.slug}`}
+                        className={
+                          isPlaceholder ? 'text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400' : 'text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
+                        }
+                        aria-label={`${family.name}の牝系ページへ`}
+                      >
+                        詳細を見る →
+                      </Link>
                     </div>
-                    <div className="min-w-0 break-words">
-                      <dt className="inline font-medium">生年: </dt>
-                      <dd className="inline">{formatValue(family.foaled)}</dd>
-                    </div>
-                    <div className="min-w-0 break-words">
-                      <dt className="inline font-medium">輸入年: </dt>
-                      <dd className="inline">{formatValue(family.importedYear)}</dd>
-                    </div>
-                    <div className="min-w-0 break-words">
-                      <dt className="inline font-medium">生産: </dt>
-                      <dd className="inline">{formatValue(family.breeder)}</dd>
-                    </div>
-                    <div className="col-span-2 min-w-0 break-words md:col-span-4">
-                      <dt className="inline font-medium">所有者: </dt>
-                      <dd className="inline">{formatValue(family.owner)}</dd>
-                    </div>
-                  </dl>
-                  <div className="text-base font-medium leading-6">
-                    <Link href={`/family/${family.slug}`} className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400" aria-label={`${family.name}の牝系ページへ`}>
-                      詳細を見る →
-                    </Link>
                   </div>
-                </div>
-              </article>
-            </li>
-          ))}
+                </article>
+              </li>
+            )
+          })}
         </ul>
       </div>
 
