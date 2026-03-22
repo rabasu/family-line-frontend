@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "next dev -p 3001",
-    "predev": "node scripts/generate-pedigree-metadata.js && node scripts/generate-traditional-family-index.js && node scripts/generate-horse-link-map.js",
+    "predev": "node scripts/generate-pedigree-metadata.js && node scripts/generate-traditional-family-index.js && node scripts/generate-horse-link-map.js && npx contentlayer2 build",
     "dev": "cross-env INIT_CWD=$PWD NODE_OPTIONS=--max-old-space-size=12288 next dev -p 3001",
     "prebuild": "node scripts/generate-pedigree-metadata.js && node scripts/generate-traditional-family-index.js && node scripts/generate-horse-link-map.js",
     "build": "cross-env INIT_CWD=$PWD NODE_OPTIONS=--max-old-space-size=12288 next build && cross-env NODE_OPTIONS=--experimental-json-modules node ./scripts/postbuild.mjs",
