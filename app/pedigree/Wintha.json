@@ -1,32 +1,41 @@
 {
   "metadata": {
     "pedigreeName": "ウインザ",
-    "rootHorseId": "uinza",
+    "rootHorseId": "wintha",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
     "source": "attribute_mapping_reverted",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "uinza",
-      "name": "ウインザ",
-      "foaled": {},
+      "id": "wintha",
+      "pedigreeName": "ウインザ",
+      "name": "ニビキ",
+      "formerPedigreeName": "ウインサ",
+      "foaled": {
+        "year": 1922
+      },
+      "importedYear": "1926",
+      "importedBy": "京都競馬倶楽部",
+      "owner": "武井金五郎（北海道茅部郡森町）",
+      "registration": "5巻仁334号",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "Eclipse系",
-      "dam": "",
-      "color": "",
+      "breed": "サラ系",
+      "sire": "Sunny South",
+      "dam": "Kensington Mare",
+      "color": "栗毛",
       "breeder": "豪",
       "netkeibaId": "000a01c570",
       "raceStats": {
         "total": {
-          "runs": 0,
+          "runs": 1,
           "wins": 0
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『馬匹血統登録書 第5巻』p.116, 『明治・大正・昭和初期の輸入馬』, PedigreeQuery, 『サラブレッド系種血統書 第1巻』p.24, 『アラブ系牝馬系統大鑑』p.185",
+      "comment": "『明治・大正・昭和初期の輸入馬』およびPedigree Queryによれば、大正15年秋季京都競馬場抽籤馬。「ニビキ」の競走名で1戦0勝。『馬匹血統登録書』では「ウインサ」の名だが、『サラブレッド系種血統書 第1巻』p.24 で「ウインザ」と書かれたことから「ウインザ」の表記が定着したらしい。"
     },
     {
       "id": "himeshou",
@@ -53,7 +62,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "uinza"
+      "damId": "wintha"
     },
     {
       "id": "sakura-1941",
