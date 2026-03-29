@@ -9,26 +9,47 @@
   "horses": [
     {
       "id": "blue-bonnet",
-      "name": "ブルーボンネツト",
+      "pedigreeName": "ブルーボンネツト",
+      "name": "ブルー・ボンネツツ",
+      "formerName": "ミデネツト",
       "foaled": {
         "year": 1903
       },
+      "importedYear": "不明",
       "sex": "female",
       "breed": "サラ系",
       "sire": "",
       "dam": "",
       "color": "黒鹿毛",
       "breeder": "豪",
+      "owner": "カナツク氏",
       "netkeibaId": "000a01c0ef",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping"
+      "raceResults": [
+        {
+          "date": {
+            "year": 1911,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": "横浜",
+          "race": "帝室御賞典（横浜・春）",
+          "distance": "芝8f",
+          "grade": "empire_cup",
+          "entry": "5",
+          "favorite": null,
+          "result": "1",
+          "displayRace": "帝室御賞典（横浜・春）"
+        }
+      ],
+      "source": "python_scraping, 『馬匹世界 第5年(5月號)』p.36-38, 『馬匹世界 第5年(6月號)』pp.35-36,57-58, 『明治・大正・昭和初期の輸入馬』",
+      "comment": "明治44年春季の日本レース倶楽部にて帝室御賞典に優勝。しかしここで本馬と鞍上・朝日吉之助に疑いの目が向けられた。『馬匹世界』の報じるところによれば、初日の朝日騎手は蹄鉄の打ち換えも鞭すら持たない無気力騎乗。「C級各抽籤豪州産馬競走（除当春季抽籤）」に出走したブルーボンネツツは本来の力を発揮できないまま大差の3着に敗れた。しかし翌日の朝日騎手は打って変わってやる気十分。ブルーボンネツツは帝室御賞典を勝利したわけだが、翌三日目には「春季抽籤豪州産馬ハンデキヤツプ競走」で1着入線（後失格）、四日目「C級各抽籤豪州産馬優勝競走」をレコード勝ち。これが不正競走ではないかと問題になり日本レース倶楽部は理事会を開催。審議の結果、朝日騎手には来年秋季競馬の終了まで全競馬場での騎乗停止。そして馬主カナツク氏に対し、ブルーボンネツツ号の終生競馬出場禁止が命じられた。"
     },
     {
       "id": "satsuki",
@@ -99,6 +120,147 @@
       ],
       "source": "『馬匹血統登録書 第18巻』p.290, 『日本競馬史 第6巻』p.712",
       "damId": "satsuki"
+    },
+    {
+      "id": "tokonatsu",
+      "name": "トコナツ",
+      "pedigreeName": "常夏",
+      "formerName": "トキワ",
+      "foaled": {
+        "year": 1914,
+        "month": 3,
+        "day": 25
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "ダイヤモンドウエツデイング(GB)",
+      "dam": "ブルーボンネツト",
+      "color": "鹿毛",
+      "breeder": "千本松牧場（栃木県那須郡西那須野村）",
+      "owner": "松方巌（東京市芝区三田一丁目）",
+      "registration": "4巻仁154号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『馬匹血統登録書 第2巻』p.220, 『名牝の系譜』p.248, 『明治・大正・昭和初期の輸入馬』",
+      "bogusId": "18660",
+      "damId": "blue-bonnet"
+    },
+    {
+      "id": "peony",
+      "name": "ナスラン",
+      "pedigreeName": "ピオニー",
+      "foaled": {
+        "year": 1927
+      },
+      "retired": "昭和10年 春季",
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "ガロン(GB)",
+      "dam": "常夏",
+      "color": "栗毛",
+      "breeder": "千本松牧場（栃木県那須郡西那須野村）",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『競馬成績書 昭和9年』p.120, 『競馬成績書 昭和10年 春季』p.356, 『名牝の系譜』p.248",
+      "bogusId": "18659",
+      "damId": "tokonatsu"
+    },
+    {
+      "id": "rock-park",
+      "name": "ロツクパーク",
+      "foaled": {
+        "year": 1936
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "プライオリーパーク",
+      "dam": "ピオニー",
+      "color": "栗毛",
+      "breeder": "千本松農場（栃木県）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 3
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 16,
+                "wins": 3
+              },
+              "jump": {
+                "runs": 1,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1939,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "横浜",
+          "race": "横浜農林省賞典4歳呼馬",
+          "distance": "芝1850",
+          "grade": "jrs_big8",
+          "entry": "8",
+          "favorite": "8",
+          "result": "1",
+          "displayRace": "皐月賞"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走",
+          "distance": "芝2400",
+          "grade": "jrs_big8",
+          "entry": "20",
+          "favorite": "",
+          "result": "",
+          "displayRace": "東京優駿"
+        }
+      ],
+      "source": "python_scraping",
+      "owner": "伊藤桂蔵",
+      "trainer": "稲葉秀男（中山）",
+      "ahonooraId": "rock_park",
+      "damId": "peony"
     }
   ]
 }

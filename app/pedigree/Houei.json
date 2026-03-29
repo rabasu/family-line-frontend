@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "宝永",
     "rootHorseId": "houei",
-    "lastUpdated": "2025-11-23T16:48:49.298191Z",
+    "lastUpdated": "2026-03-23T02:49:20.723804Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -10,7 +10,9 @@
     {
       "id": "houei",
       "name": "宝永",
-      "foaled": null,
+      "foaled": {
+        "year": 1907
+      },
       "sex": "female",
       "breed": "サラ",
       "sire": "Loombah",
@@ -164,6 +166,185 @@
       "source": "python_scraping",
       "bogusId": "53538",
       "damId": "wakamidori"
+    },
+    {
+      "id": "sugenuma",
+      "name": "スゲヌマ",
+      "foaled": {
+        "year": 1935,
+        "month": 4,
+        "day": 7
+      },
+      "sex": "male",
+      "breed": "サラ系",
+      "sire": "プライオリーパーク",
+      "dam": "国宝",
+      "color": "黒鹿毛",
+      "breeder": "千明牧場（群馬県）",
+      "netkeibaId": "000a00b6d9",
+      "raceStats": {
+        "total": {
+          "runs": 23,
+          "wins": 12
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 23,
+                "wins": 12
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1938,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走",
+          "distance": "芝2400",
+          "grade": "jrs_big8",
+          "entry": "14",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 4,
+            "day": 30
+          },
+          "racecourse": null,
+          "race": "横浜特別",
+          "displayRace": "横浜特別",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 5,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "帝室御賞典（春）",
+          "distance": "ダ3200",
+          "grade": "jrs_big8",
+          "entry": "5",
+          "favorite": "1",
+          "result": "1",
+          "displayRace": "帝室御賞典（春）"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 5,
+            "day": 26
+          },
+          "racecourse": null,
+          "race": "五歳古呼馬特別",
+          "displayRace": "五歳古呼馬特別",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 10,
+            "day": 17
+          },
+          "racecourse": null,
+          "race": "横浜農林省賞典四・五歳呼馬",
+          "displayRace": "横浜農林省賞典四・五歳呼馬",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": null,
+          "race": "目黒記念",
+          "displayRace": "目黒記念(秋)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "失格"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Sugenuma",
+      "prizeMoney": {
+        "total": "8万5,154円"
+      },
+      "damId": "kokuhou",
+      "owner": "千明賢治",
+      "trainer": "中村広（東京）",
+      "ahonooraId": "sugenuma",
+      "bogusId": "18810"
+    },
+    {
+      "id": "kokuhou",
+      "name": "国宝",
+      "foaled": {
+        "year": 1922
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ガロン(GB)",
+      "dam": "宝永",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a00b6f0",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "houei"
     }
   ]
 }

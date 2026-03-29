@@ -1,18 +1,22 @@
 {
   "metadata": {
     "pedigreeName": "レプリカ",
-    "rootHorseId": "repurika",
+    "rootHorseId": "replica",
     "lastUpdated": "2025-11-23T17:50:57.532914Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "repurika",
+      "id": "replica",
       "name": "レプリカ",
       "foaled": {
         "year": 1934
       },
+      "importedYear": "1941",
+      "died": "1961.01.09. 斃死",
+      "importedBy": "布野皓三",
+      "owner": "東牧場（北海道静内郡静内町）",
       "sex": "female",
       "breed": "サラ",
       "sire": "Dunnottar",
@@ -20,6 +24,7 @@
       "color": "黒鹿毛",
       "breeder": "豪",
       "netkeibaId": "000a0026e5",
+      "registration": "サラブレッド血統書2巻414頁",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -28,10 +33,10 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『サラブレッド血統書 第2巻』p.414, 『サラブレッド血統書 第6巻』p.589, 『明治・大正・昭和初期の輸入馬』"
     },
     {
-      "id": "tairei",
+      "id": "tairei-1944",
       "name": "タイレイ",
       "foaled": {
         "year": 1944
@@ -55,7 +60,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "repurika"
+      "damId": "replica",
+      "linkName": "タイレイ(1944)"
     },
     {
       "id": "kikumasaru",
@@ -83,7 +89,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tairei"
+      "damId": "tairei-1944"
     },
     {
       "id": "katsu-long-hit",
@@ -317,7 +323,7 @@
       "owner": "福永",
       "jbisId": "0000000164",
       "bogusId": "39155",
-      "damId": "repurika"
+      "damId": "replica"
     }
   ]
 }
