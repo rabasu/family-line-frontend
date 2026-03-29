@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "pedigreeName": "北洋",
+    "rootHorseId": "hokuyou",
+    "lastUpdated": "2026-03-27T00:41:18.956509Z",
+    "source": "python_scraping",
+    "isTraditionalFamily": true
+  },
+  "horses": [
+    {
+      "id": "hokuyou",
+      "name": "北洋",
+      "foaled": {},
+      "sex": "female",
+      "breed": "雑",
+      "sire": "",
+      "dam": "",
+      "color": "",
+      "breeder": "",
+      "owner": "",
+      "netkeibaId": "",
+      "source": "『優駿達の蹄跡』, 『日本サラブレッド配合史 : 日本百名馬と世界の名血の探究』p.28",
+      "comment": "トロ・第四初蕾との仔である小鷹が「トロ雑」表記のため、本馬の品種は何らかの雑種（和種と洋種の混血）と推測される。『名牝の系譜』でも雑種と記載。『セピアの館』『bogus』では父ジヨンアール・母香月とされているが、その場合は内洋・内トロ等の表記となるはず。よってこの北洋は血統不詳とする。"
+    },
+    {
+      "id": "kotaka",
+      "name": "小鷹",
+      "foaled": {},
+      "sex": "female",
+      "breed": "中半",
+      "sire": "第四初蕾",
+      "dam": "北洋",
+      "color": "",
+      "breeder": "",
+      "owner": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『馬匹血統登録書 第2巻』p.219, 『優駿達の蹄跡』",
+      "damId": "hokuyou",
+      "comment": "品種は古くは「トロ雑」表記。"
+    },
+    {
+      "id": "misono",
+      "name": "美園",
+      "foaled": {
+        "year": 1912
+      },
+      "sex": "female",
+      "breed": "中半",
+      "sire": "ダルゲチー(GB)",
+      "dam": "小鷹",
+      "color": "鹿毛",
+      "breeder": "浦河",
+      "owner": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『馬匹血統登録書 第2巻』p.219, 『優駿達の蹄跡』, 『第二次競馬連合会報告書 後半』",
+      "damId": "kotaka"
+    },
+    {
+      "id": "extra",
+      "name": "ヱキストラ",
+      "formerPedigreeName": "羽衣",
+      "foaled": {
+        "year": 1922,
+        "month": 4,
+        "day": 27
+      },
+      "sex": "female",
+      "breed": "軽半",
+      "sire": "イボア(GB)",
+      "dam": "美園",
+      "color": "鹿毛",
+      "breeder": "三好佐吉（北海道浦河郡浦河町西幌別）",
+      "owner": "橋本徳次郎（東京市京橋区築地一丁目）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 14
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『名牝の系譜』p.256, 『わたしの競馬研究ノートの4』pp.88-89, 『馬匹血統登録書 第2巻』p.219",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "registration": "2巻仁151号",
+      "damId": "misono",
+      "comment": "『名牝の系譜』によれば、大正14年目黒抽籤馬、六歳まで走って14勝、千本松農場産。重馬場巧者であるのみならず「雨好き」だったといわれ、レース前の入れ込む時期であってもバケツで屋根に水をかけて雨音を利かせれば食欲が戻ったという。"
+    },
+    {
+      "id": "tetsumon",
+      "name": "テツモン",
+      "foaled": {
+        "year": 1935
+      },
+      "sex": "male",
+      "breed": "軽半",
+      "sire": "シヤイニングスピヤー",
+      "dam": "エキストラ",
+      "color": "鹿毛",
+      "breeder": "那須野牧場（栃木県）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 32,
+          "wins": 10
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 32,
+                "wins": 10
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1938,
+            "month": 12,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "京都農林省賞典4歳呼馬",
+          "distance": "芝3000",
+          "grade": "jrs_big8",
+          "entry": "8",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 4,
+            "day": 14
+          },
+          "racecourse": null,
+          "race": "中山記念",
+          "displayRace": "中山記念(春)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "帝室御賞典（秋）",
+          "distance": "芝3200",
+          "grade": "jrs_grade",
+          "entry": "13",
+          "favorite": "4",
+          "result": "1",
+          "displayRace": "帝室御賞典（秋）"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "中山記念",
+          "displayRace": "中山記念(秋)",
+          "distance": "芝3400",
+          "grade": "jrs_grade",
+          "entry": "12",
+          "favorite": null,
+          "result": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "owner": "松山陸郎",
+      "trainer": "尾形景造（東京）",
+      "ahonooraId": "tetsumon",
+      "bogusId": "18518"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "種正",
     "rootHorseId": "tanemasa",
-    "lastUpdated": "2025-11-23T18:49:09.073526Z",
+    "lastUpdated": "2026-03-23T02:49:36.353702Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -20,11 +20,23 @@
       "color": "鹿毛",
       "breeder": "英",
       "netkeibaId": "000a0024a6",
-      "source": "tsx_conversion",
+      "source": "python_scraping",
       "importedYear": "1926",
       "familyNumber": "F5-h",
       "registration": "4巻477号",
-      "owner": "下総御料牧場"
+      "owner": "下総御料牧場",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "englishName": "Young Man's Fancy",
+      "prizeMoney": {
+        "total": "0万円"
+      }
     },
     {
       "id": "rapier",
@@ -6613,6 +6625,143 @@
       "owner": "峰岸",
       "jbisId": "0000001706",
       "bogusId": "30727"
+    },
+    {
+      "id": "tokumasa",
+      "name": "トクマサ",
+      "pedigreeName": "得正",
+      "formerPedigreeName": "波正",
+      "foaled": {
+        "year": 1933
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "トウルヌソル",
+      "dam": "種正",
+      "color": "栗毛",
+      "breeder": "下総御料牧場（千葉県）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 27,
+          "wins": 9
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 27,
+                "wins": 9
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1936,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "東京",
+          "race": "東京優駿大競走",
+          "distance": "芝2400",
+          "grade": "empire_derby",
+          "entry": "13",
+          "favorite": "5",
+          "result": "1",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1936,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": null,
+          "race": "帝室御賞典（横浜）",
+          "displayRace": "帝室御賞典（横浜）",
+          "distance": null,
+          "grade": "empire_cup",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1937,
+            "month": 4,
+            "day": 24
+          },
+          "racecourse": null,
+          "race": "目黒記念",
+          "displayRace": "目黒記念(春)",
+          "distance": null,
+          "grade": "empire_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1937,
+            "month": 10,
+            "day": 16
+          },
+          "racecourse": null,
+          "race": "中山記念",
+          "displayRace": "中山記念(秋)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1937,
+            "month": 11,
+            "day": 28
+          },
+          "racecourse": null,
+          "race": "目黒記念",
+          "displayRace": "目黒記念(秋)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        }
+      ],
+      "source": "python_scraping, 『サラブレツド系統種牡馬名簿 第1巻』pp.163-164",
+      "formerName": "トクマサ",
+      "prizeMoney": {
+        "total": "6万3,602円75銭"
+      },
+      "owner": "山中清兵衛",
+      "trainer": "尾形景造（東京）",
+      "ahonooraId": "tokumasa",
+      "bogusId": "18860",
+      "damId": "tanemasa"
     }
   ]
 }

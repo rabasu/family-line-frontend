@@ -1,18 +1,20 @@
 {
   "metadata": {
     "pedigreeName": "オーフロラ",
-    "rootHorseId": "oofurora",
-    "lastUpdated": "2025-11-23T18:49:54.590665Z",
+    "rootHorseId": "o-flora",
+    "lastUpdated": "2026-03-23T02:50:20.272663Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "oofurora",
+      "id": "o-flora",
       "name": "オーフロラ",
+      "englishName": "O'Flora",
       "foaled": {
         "year": 1919
       },
+      "importedYear": "1924",
       "sex": "female",
       "breed": "サラ",
       "sire": "Patrobas",
@@ -20,6 +22,7 @@
       "color": "栗毛",
       "breeder": "豪",
       "netkeibaId": "000a0023e1",
+      "registration": "3巻322号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -28,7 +31,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』, 『馬匹血統登録書 第3巻』p.36"
     },
     {
       "id": "hiryuu",
@@ -55,7 +58,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "oofurora"
+      "damId": "o-flora"
     },
     {
       "id": "kenzan-1941",
@@ -942,6 +945,171 @@
       },
       "damId": "kenzan-1941",
       "comment": "netkeibaでは母馬が同名の, シドニー系・ケンザン(1954)になっている。正しい母はオーフロラ系のケンザン(1941)。"
+    },
+    {
+      "id": "hayatake",
+      "name": "ハヤタケ",
+      "foaled": {
+        "year": 1939
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "セフト",
+      "dam": "飛竜",
+      "color": "鹿毛",
+      "breeder": "飯原盛作（北海道豊浦）",
+      "netkeibaId": "000a0008e2",
+      "raceStats": {
+        "total": {
+          "runs": 20,
+          "wins": 9
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 20,
+                "wins": 9
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1942,
+            "month": 5,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "東京優駿競走",
+          "distance": "芝2400",
+          "grade": "jrs_big8",
+          "entry": "17",
+          "favorite": "4",
+          "result": "3",
+          "displayRace": "東京優駿"
+        },
+        {
+          "date": {
+            "year": 1942,
+            "month": 11,
+            "day": 8
+          },
+          "racecourse": "京都",
+          "race": "京都農林省賞典4歳呼馬",
+          "distance": "芝3000",
+          "grade": "jrs_big8",
+          "entry": "6",
+          "favorite": "2",
+          "result": "1",
+          "displayRace": "菊花賞"
+        },
+        {
+          "date": {
+            "year": 1943,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "帝室御賞典（春）",
+          "distance": "ダ3200",
+          "grade": "jrs_big8",
+          "entry": "13",
+          "favorite": "1",
+          "result": "9",
+          "displayRace": "帝室御賞典（春）"
+        },
+        {
+          "date": {
+            "year": 1943,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": "鳴尾",
+          "race": "帝室御賞典（春）",
+          "displayRace": "帝室御賞典（春）",
+          "distance": "芝3200",
+          "grade": "jrs_big8",
+          "entry": "13",
+          "favorite": null,
+          "result": "9"
+        },
+        {
+          "date": {
+            "year": 1943,
+            "month": 5,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(春)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "1"
+        },
+        {
+          "date": {
+            "year": 1943,
+            "month": 11,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "帝室御賞典（秋）",
+          "distance": "芝3200",
+          "grade": "jrs_big8",
+          "entry": "9",
+          "favorite": "3",
+          "result": "3",
+          "displayRace": "帝室御賞典（秋）"
+        },
+        {
+          "date": {
+            "year": 1943,
+            "month": 12,
+            "day": 5
+          },
+          "racecourse": null,
+          "race": "中山記念",
+          "displayRace": "中山記念(秋)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "6万1,900円"
+      },
+      "damId": "hiryuu",
+      "linkName": "ハヤタケ(1939)",
+      "owner": "伊藤祐之",
+      "trainer": "岩井健吉（京都）",
+      "ahonooraId": "hayatake",
+      "bogusId": "13494"
     }
   ]
 }

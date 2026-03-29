@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "ビラーリケーベル",
     "rootHorseId": "billericay-belle",
-    "lastUpdated": "2025-11-23T17:18:46.489932Z",
+    "lastUpdated": "2026-03-23T02:19:43.781404Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -18,13 +18,25 @@
       "sire": "Samphire",
       "dam": "Lingy Heath",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "英",
       "netkeibaId": "000a0024fc",
-      "source": "tsx_conversion",
+      "source": "python_scraping",
       "importedYear": "1936",
       "familyNumber": "F8-f",
       "registration": "14巻1666号",
-      "owner": "小岩井農場"
+      "owner": "小岩井農場",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "englishName": "Billericay Belle",
+      "prizeMoney": {
+        "total": "0万円"
+      }
     },
     {
       "id": "chestnut-valley",
@@ -574,6 +586,62 @@
       "damId": "billericay-belle",
       "jbisId": "0000333183",
       "bogusId": "26892"
+    },
+    {
+      "id": "fujihaya",
+      "name": "フジハヤ",
+      "foaled": {
+        "year": 1940
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "シアンモア(GB)",
+      "dam": "ビラーリケーベル",
+      "color": "鹿毛",
+      "breeder": "JPN",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1943,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": null,
+          "race": "横浜農林省賞典四歳呼馬",
+          "displayRace": "皐月賞",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1943,
+            "month": 6,
+            "day": 6
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "bogusId": "53384",
+      "damId": "billericay-belle"
     }
   ]
 }
