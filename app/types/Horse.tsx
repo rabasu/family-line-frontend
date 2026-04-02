@@ -33,6 +33,8 @@ interface Horse {
   linkName?: string // 競走名が重複する場合、馬名({生年YYYY})の形式で一意の値を設定する
   linkPedigreeName?: string // 血統名が重複する場合、血統名({生年YYYY})の形式で一意の値を設定する
   englishName?: string // 英語名
+  /** 馬名の読み（カタカナ）。漢字馬名のソート・検索用。在来牝系データでは id のローマ字表記から付与する */
+  furigana?: string
   id: string
   foaled: Foaled // 生年月日
   sex: Sex // 性別
