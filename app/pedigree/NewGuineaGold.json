@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "pedigreeName": "ニユウギニアゴールド",
-    "rootHorseId": "niyuuginiagoorudo",
-    "lastUpdated": "2025-11-23T17:49:20.322743Z",
+    "pedigreeName": "ニユーギニアゴールド",
+    "rootHorseId": "new-guinea-gold",
+    "lastUpdated": "2026-04-01T00:16:43.248393Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "niyuuginiagoorudo",
+      "id": "new-guinea-gold",
       "name": "ニユウギニアゴールド",
       "foaled": {
         "year": 1925
@@ -22,13 +22,14 @@
       "netkeibaId": "000a0023a7",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping",
+      "pedigreeName": "ニユーギニアゴールド"
     },
     {
       "id": "asushiibii",
@@ -55,7 +56,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "niyuuginiagoorudo"
+      "damId": "new-guinea-gold"
     },
     {
       "id": "all-weather",
@@ -177,6 +178,48 @@
       },
       "damId": "asushiibii",
       "ahonooraId": "new_ford"
+    },
+    {
+      "id": "goshikinuma",
+      "name": "ゴシキヌマ",
+      "foaled": {
+        "year": 1936
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "レイモンド(GB)",
+      "dam": "ニユウギニアゴールド",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 6,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1939,
+            "month": 10,
+            "day": 1
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
+      "pedigreeName": "モンドシービー",
+      "bogusId": "42406",
+      "damId": "new-guinea-gold",
+      "source": "python_scraping, 『母馬別競走成績書』p.543"
     }
   ]
 }

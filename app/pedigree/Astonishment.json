@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "アストニシメント",
     "rootHorseId": "astonishment",
-    "lastUpdated": "2026-03-23T02:51:53.716453Z",
+    "lastUpdated": "2026-04-01T00:45:00.444284Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -438,34 +438,97 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tsurufuji-1935"
+      "damId": "tsurufuji"
     },
     {
-      "id": "tsurufuji-1935",
-      "name": "鶴藤",
+      "id": "tsurufuji",
+      "name": "ワルド",
       "foaled": {
-        "year": 1935
+        "year": 1935,
+        "month": 3,
+        "day": 6
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "トウルヌソル(GB)",
       "dam": "賢藤",
       "color": "鹿毛",
-      "breeder": "千葉県",
+      "breeder": "宮内省下総牧場",
       "netkeibaId": "000a0026e3",
+      "registration": "12巻1321号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 17,
+          "wins": 3
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 17,
+                "wins": 3
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "satoshifuji"
+      "raceResults": [
+        {
+          "date": {
+            "year": 1938,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "6"
+        },
+        {
+          "date": {
+            "year": 1938,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        }
+      ],
+      "source": "python_scraping, 『母馬別競走成績書』p.520",
+      "prizeMoney": null,
+      "damId": "satoshifuji",
+      "pedigreeName": "鶴藤",
+      "englishName": "Tsurufuji",
+      "jbisId": "0000376510",
+      "bogusId": "20101"
     },
     {
       "id": "satoshifuji",
@@ -3325,28 +3388,29 @@
       "id": "augment",
       "name": "オーグメント",
       "foaled": {
-        "year": 1923
+        "year": 1923,
+        "month": 4,
+        "day": 9
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ガロン(GB)",
       "dam": "第弐アストニシメント",
       "color": "黒鹿毛",
-      "breeder": "岩手県",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a00233f",
+      "registration": "1巻91号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 12
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.494, 『馬匹血統登録書 第1巻』p.123",
       "englishName": "Augment",
-      "prizeMoney": {
-        "total": "0万円"
-      },
+      "prizeMoney": null,
       "damId": "dainiasutonishimento"
     },
     {
@@ -20022,34 +20086,96 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainioogumento"
+      "damId": "dai2-augment"
     },
     {
-      "id": "dainioogumento",
-      "name": "第弐オーグメント",
+      "id": "dai2-augment",
+      "name": "テーモア",
       "foaled": {
-        "year": 1931
+        "year": 1931,
+        "month": 3,
+        "day": 5
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "シアンモア(GB)",
       "dam": "オーグメント",
       "color": "鹿毛",
-      "breeder": "岩手県",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a0024fb",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 7
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": null,
+                "wins": 7
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1934,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "empire_derby",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1934,
+            "month": 5,
+            "day": 6
+          },
+          "racecourse": null,
+          "race": "帝室御賞典（横浜）",
+          "displayRace": "帝室御賞典（横浜）",
+          "distance": null,
+          "grade": "empire_cup",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
       "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "augment"
+      "prizeMoney": null,
+      "damId": "augment",
+      "pedigreeName": "第弐オーグメント",
+      "englishName": "Dai-2 Augment",
+      "jbisId": "0000000063",
+      "bogusId": "17231"
     },
     {
       "id": "cosmo-blazer",
@@ -34205,7 +34331,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tsurufuji-1935",
+      "damId": "tsurufuji",
       "owner": "福永",
       "jbisId": "0000000168",
       "bogusId": "26799"
@@ -41540,7 +41666,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainioogumento"
+      "damId": "dai2-augment"
     },
     {
       "id": "yukifukuoo",
@@ -43020,7 +43146,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainioogumento"
+      "damId": "dai2-augment"
     },
     {
       "id": "tamanokanzan",
@@ -53329,7 +53455,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainioogumento"
+      "damId": "dai2-augment"
     },
     {
       "id": "senari",
@@ -56245,7 +56371,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainioogumento",
+      "damId": "dai2-augment",
       "owner": "桶谷辰造",
       "trainer": "松田由太郎（京都）",
       "ahonooraId": "owens"
@@ -56940,7 +57066,7 @@
       ],
       "source": "python_scraping",
       "bogusId": "39239",
-      "damId": "dainioogumento"
+      "damId": "dai2-augment"
     },
     {
       "id": "hatakaze",
@@ -58798,6 +58924,216 @@
       },
       "damId": "satoshifuji",
       "bogusId": "19974"
+    },
+    {
+      "id": "hatsupiiraito",
+      "name": "ハツピーライト",
+      "foaled": {
+        "year": 1933
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "トウルヌソル(GB)",
+      "dam": "種光",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1936,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "empire_derby",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1936,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": null,
+          "race": "帝室御賞典（横浜）",
+          "displayRace": "帝室御賞典（横浜）",
+          "distance": null,
+          "grade": "empire_cup",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1936,
+            "month": 11,
+            "day": 1
+          },
+          "racecourse": null,
+          "race": "帝室御賞典（横浜）",
+          "displayRace": "帝室御賞典（横浜）",
+          "distance": null,
+          "grade": "empire_cup",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1937,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": null,
+          "race": "帝室御賞典（横浜）",
+          "displayRace": "帝室御賞典（横浜）",
+          "distance": null,
+          "grade": "empire_cup",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
+      "bogusId": "53717",
+      "damId": "tanehikari"
+    },
+    {
+      "id": "katsuihai",
+      "name": "カツイハイ",
+      "foaled": {
+        "year": 1939
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "プリメロ(GB)",
+      "dam": "テーモア",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1942,
+            "month": 10,
+            "day": 11
+          },
+          "racecourse": null,
+          "race": "優駿牝馬",
+          "displayRace": "優駿牝馬",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        }
+      ],
+      "bogusId": "42441",
+      "damId": "dai2-augment"
+    },
+    {
+      "id": "konpataa",
+      "name": "コンパター",
+      "foaled": {
+        "year": 1935
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "シアンモア(GB)",
+      "dam": "アスベル",
+      "color": "黒鹿毛",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1938,
+            "month": 5,
+            "day": 29
+          },
+          "racecourse": null,
+          "race": "東京優駿",
+          "displayRace": "東京優駿",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "11"
+        },
+        {
+          "date": {
+            "year": 1938,
+            "month": 12,
+            "day": 11
+          },
+          "racecourse": null,
+          "race": "京都農林省賞典四歳呼馬",
+          "displayRace": "菊花賞",
+          "distance": null,
+          "grade": "jrs_big8",
+          "entry": null,
+          "favorite": null,
+          "result": "2"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": null,
+          "race": "目黒記念",
+          "displayRace": "目黒記念(秋)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "7"
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": null,
+          "race": "中山記念",
+          "displayRace": "中山記念(秋)",
+          "distance": null,
+          "grade": "jrs_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "10"
+        }
+      ],
+      "bogusId": "53472",
+      "damId": "augment"
     }
   ]
 }
