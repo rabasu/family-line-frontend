@@ -11,22 +11,17 @@
       "id": "takasago",
       "name": "高砂",
       "foaled": {},
+      "importedYear": "1867",
+      "died": "1887.02. 老衰斃死",
       "sex": "female",
       "breed": "アラ",
-      "sire": "",
-      "dam": "",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "芦毛",
       "breeder": "仏",
+      "owner": "国有（徳川幕府→明治政府）",
       "netkeibaId": "000a01c143",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『明治期の馬辞典 Wiki』"
     },
     {
       "id": "azuma-1870",
@@ -36,10 +31,10 @@
       },
       "sex": "female",
       "breed": "アラ",
-      "sire": "",
+      "sire": "不詳",
       "dam": "高砂",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "雉子橋御厩",
       "netkeibaId": "000a01c145",
       "raceStats": {
         "total": {
@@ -66,7 +61,7 @@
       "sire": "第二モンマース",
       "dam": "吾妻",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c73b",
       "raceStats": {
         "total": {
@@ -85,7 +80,7 @@
       "linkName": "プリンセス(1886)"
     },
     {
-      "id": "kuraudoretsusu",
+      "id": "cloudless",
       "name": "クラウドレツス",
       "foaled": {
         "year": 1900
@@ -95,7 +90,7 @@
       "sire": "キユーバス",
       "dam": "プリンセス",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a01c28d",
       "raceStats": {
         "total": {
@@ -105,14 +100,14 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.925",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "princess-1886"
     },
     {
-      "id": "kuraudoretsusubii",
+      "id": "cloudless-b",
       "name": "クラウドレツスビー",
       "foaled": {
         "year": 1906
@@ -136,7 +131,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kuraudoretsusu"
+      "damId": "cloudless"
     },
     {
       "id": "kurenai",
@@ -163,20 +158,22 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kuraudoretsusubii"
+      "damId": "cloudless-b"
     },
     {
       "id": "kinsei-1926",
       "name": "金静",
       "foaled": {
-        "year": 1926
+        "year": 1926,
+        "month": 5,
+        "day": 4
       },
       "sex": "female",
-      "breed": "アア",
+      "breed": "準サラ",
       "sire": "第二ホーンビーム",
       "dam": "紅",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "田村久太郎（北海道新冠郡新冠村）",
       "netkeibaId": "000a01cb5f",
       "raceStats": {
         "total": {
@@ -186,7 +183,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1140",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -194,16 +191,19 @@
     },
     {
       "id": "housei",
-      "name": "芳静",
+      "pedigreeName": "芳静",
+      "name": "ワンミリオン",
       "foaled": {
-        "year": 1935
+        "year": 1935,
+        "month": 3,
+        "day": 14
       },
       "sex": "female",
       "breed": "アア",
       "sire": "芳淙",
       "dam": "金静",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "佐々木末太郎（北海道沙流郡門別町）",
       "netkeibaId": "000a00c652",
       "raceStats": {
         "total": {
@@ -213,7 +213,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1073",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -442,7 +442,7 @@
         "day": 1
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ホクトライデン",
       "dam": "アオイツキクモ",
       "color": "鹿毛",
@@ -486,7 +486,7 @@
         "year": 1974
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "キクマサ",
       "dam": "ツキクモ",
       "color": "鹿毛",
@@ -516,7 +516,7 @@
         "day": 25
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "タガミホマレ",
       "dam": "ユウシユン",
       "color": "栗毛",
@@ -646,14 +646,16 @@
       "id": "yuushiyun-1963",
       "name": "ユウシユン",
       "foaled": {
-        "year": 1963
+        "year": 1963,
+        "month": 4,
+        "day": 4
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "セイユウ",
       "dam": "キントビ",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "白瀬鶴一（北海道平取町）",
       "netkeibaId": "000a00d703",
       "raceStats": {
         "total": {
@@ -663,7 +665,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2277",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -676,7 +678,7 @@
         "year": 1950
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ラミー(FR)",
       "dam": "ソノハナ",
       "color": "栗毛",
@@ -703,7 +705,7 @@
         "year": 1943
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "露越",
       "dam": "花園",
       "color": "栃栗毛",
@@ -731,7 +733,7 @@
         "year": 1934
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ベルアミ(AR)",
       "dam": "ブローベル",
       "color": "鹿毛",
@@ -755,14 +757,16 @@
       "id": "burooberu",
       "name": "ブローベル",
       "foaled": {
-        "year": 1915
+        "year": 1915,
+        "month": 5,
+        "day": 23
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ブラマンテー",
       "dam": "第二ウエールス",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c187",
       "raceStats": {
         "total": {
@@ -772,24 +776,24 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.1056-1057",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiueerusu"
+      "damId": "dai2-wales"
     },
     {
-      "id": "dainiueerusu",
+      "id": "dai2-wales",
       "name": "第二ウエールス",
       "foaled": {
         "year": 1903
       },
       "sex": "female",
-      "breed": "サラ",
-      "sire": "チロツク",
+      "breed": "アア",
+      "sire": "チロツク(RUS)",
       "dam": "ウエールス",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c186",
       "raceStats": {
         "total": {
@@ -803,20 +807,20 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ueerusu"
+      "damId": "wales"
     },
     {
-      "id": "ueerusu",
+      "id": "wales",
       "name": "ウエールス",
       "foaled": {
         "year": 1899
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ユスーフ",
       "dam": "第六高千穂",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c185",
       "raceStats": {
         "total": {
@@ -826,7 +830,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.854-855",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -839,7 +843,7 @@
         "year": 1894
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "シルベル",
       "dam": "高千穂",
       "color": "鹿毛",
@@ -866,7 +870,7 @@
         "year": 1883
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "スイロン",
       "dam": "第二高砂",
       "color": "芦毛",
@@ -893,7 +897,7 @@
         "year": 1879
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ブラドレー",
       "dam": "高砂",
       "color": "芦毛",
@@ -920,7 +924,7 @@
         "year": 1975
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "リキスベビー",
       "dam": "ミキノシューホー",
       "color": "",
@@ -963,7 +967,7 @@
         "year": 1968
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ミヤマシユーホー",
       "dam": "ラツキーバラッケー",
       "color": "鹿毛",
@@ -991,7 +995,7 @@
         "year": 1962
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ミキノヒカリ",
       "dam": "オミナヘシ",
       "color": "黒鹿毛",
@@ -1019,7 +1023,7 @@
         "year": 1973
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "マルブツセンター",
       "dam": "ゲツトアロング",
       "color": "",
@@ -1062,7 +1066,7 @@
         "year": 1968
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "リユウユウ",
       "dam": "カタソノ",
       "color": "鹿毛",
@@ -1090,7 +1094,7 @@
         "year": 1960
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ホースニユース",
       "dam": "カタオー",
       "color": "鹿毛",
@@ -1117,7 +1121,7 @@
         "year": 1953
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "シゲハヤ",
       "dam": "ハナパーク",
       "color": "",
@@ -1144,7 +1148,7 @@
         "year": 1946
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ラツキーパーク",
       "dam": "花園",
       "color": "鹿毛",
@@ -1171,9 +1175,9 @@
         "year": 1969
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ヘリオス",
-      "dam": "ホーレスクイン",
+      "dam": "ボーレスクイン",
       "color": "栗毛",
       "breeder": "",
       "netkeibaId": "000a010228",
@@ -1957,21 +1961,22 @@
         "central": "480万円",
         "local": "0万円"
       },
-      "damId": "hooresukuin"
+      "damId": "boreas-queen",
+      "comment": "netkeibaでは母が存在しないホーレスクイン(1969)になっているが、正しくはボーレスクイン(1960)。"
     },
     {
-      "id": "hooresukuin",
-      "name": "ホーレスクイン",
+      "id": "boreas-queen",
+      "name": "ボーレスクイン",
       "foaled": {
-        "year": 1969
+        "year": 1960
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "カバーラップ二世(US)",
       "dam": "ハツピウイン",
       "color": "黒鹿毛",
       "breeder": "",
-      "netkeibaId": "000a010227",
+      "netkeibaId": "000a00bab0",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -1993,11 +1998,11 @@
         "year": 1952
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "タチカゼ",
       "dam": "月盛",
       "color": "栃栗毛",
-      "breeder": "浦河町",
+      "breeder": "斎藤善太郎（北海道浦河郡荻伏村）",
       "netkeibaId": "000a00ba6b",
       "raceStats": {
         "total": {
@@ -2007,26 +2012,31 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.741",
       "englishName": "Hatsupiuin",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gatsujou"
+      "damId": "tsukimori"
     },
     {
-      "id": "gatsujou",
-      "name": "月盛",
+      "id": "tsukimori",
+      "pedigreeName": "月盛",
+      "name": "ラツキーウイン",
       "foaled": {
-        "year": 1932
+        "year": 1932,
+        "month": 3,
+        "day": 12
       },
+      "died": "1952. 斃死",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ハクシヨウ",
       "dam": "瑞盛",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a00ba02",
+      "registration": "9巻仁499号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -2035,7 +2045,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第9巻』p.199, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.737",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2045,14 +2055,16 @@
       "id": "zuijou",
       "name": "瑞盛",
       "foaled": {
-        "year": 1923
+        "year": 1923,
+        "month": 3,
+        "day": 14
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "第四ベラドンナ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c180",
       "raceStats": {
         "total": {
@@ -2062,7 +2074,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.1151-1152",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2072,14 +2084,16 @@
       "id": "dai4-beradonna",
       "name": "第四ベラドンナ",
       "foaled": {
-        "year": 1916
+        "year": 1916,
+        "month": 4,
+        "day": 21
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "サツパーダンス",
       "dam": "ベラドンナ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c17f",
       "raceStats": {
         "total": {
@@ -2089,7 +2103,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1066",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2099,14 +2113,16 @@
       "id": "beradonna",
       "name": "ベラドンナ",
       "foaled": {
-        "year": 1904
+        "year": 1904,
+        "month": 3,
+        "day": 26
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "チロツク",
       "dam": "第四ミユージツク",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c17e",
       "raceStats": {
         "total": {
@@ -2116,24 +2132,26 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.1065-1066",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai4-miyuujitsuku"
+      "damId": "dai4-music"
     },
     {
-      "id": "dai4-miyuujitsuku",
+      "id": "dai4-music",
       "name": "第四ミユージツク",
       "foaled": {
-        "year": 1900
+        "year": 1900,
+        "month": 3,
+        "day": 23
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ガズラン",
       "dam": "ミユージツク",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c17c",
       "raceStats": {
         "total": {
@@ -2143,20 +2161,20 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.1080-1081",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "miyuujitsuku"
+      "damId": "music"
     },
     {
-      "id": "miyuujitsuku",
+      "id": "music",
       "name": "ミユージツク",
       "foaled": {
         "year": 1889
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第三ローストン",
       "dam": "第五吾妻",
       "color": "栗毛",
@@ -2183,7 +2201,7 @@
         "year": 1885
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "モンマース",
       "dam": "吾妻",
       "color": "栗毛",
@@ -2210,7 +2228,7 @@
         "year": 1967
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "テツカントウ",
       "dam": "セイジエツト",
       "color": "鹿毛",
@@ -2320,16 +2338,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "seijietsuto"
+      "damId": "sei-jet"
     },
     {
-      "id": "seijietsuto",
+      "id": "sei-jet",
       "name": "セイジエツト",
       "foaled": {
         "year": 1958
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "アヅマライ",
       "dam": "セイトー",
       "color": "栗毛",
@@ -2344,7 +2362,7 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "englishName": "Seijietsuto",
+      "englishName": "Sei-jet",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2357,7 +2375,7 @@
         "year": 1942
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "有島",
       "dam": "クノイチ",
       "color": "栗毛",
@@ -2384,12 +2402,13 @@
         "year": 1934
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ヨツケル",
       "dam": "フレーム",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "木下末太郎（宮崎県東諸県郡本庄町）",
       "netkeibaId": "000a00ba10",
+      "registration": "17巻波2010号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -2411,7 +2430,7 @@
         "year": 1919
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ダイヤモンドウエツデイング(GB)",
       "dam": "種頼",
       "color": "",
@@ -2438,7 +2457,7 @@
         "year": 1914
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "サツパーダンス",
       "dam": "カラブリア",
       "color": "鹿毛",
@@ -2465,11 +2484,11 @@
         "year": 1908
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ハアリー",
       "dam": "第七吾妻",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c246",
       "raceStats": {
         "total": {
@@ -2492,7 +2511,7 @@
         "year": 1887
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第二モンマース",
       "dam": "吾妻",
       "color": "栗毛",
@@ -2519,7 +2538,7 @@
         "year": 1967
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "シユウボー",
       "dam": "タカオー",
       "color": "",
@@ -2607,11 +2626,11 @@
         "year": 1958
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "タカミドリ",
       "dam": "オーリユウ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "斉藤文左衛門（山形県余目町）",
       "netkeibaId": "000a00cff0",
       "raceStats": {
         "total": {
@@ -2621,7 +2640,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.932",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2635,9 +2654,9 @@
         "year": 1951
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "オーライト",
-      "dam": "竜明",
+      "dam": "龍明",
       "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a00ba4b",
@@ -2657,14 +2676,14 @@
     },
     {
       "id": "ryuumei",
-      "name": "竜明",
+      "name": "龍明",
       "foaled": {
         "year": 1935
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ミンドアー(GB)",
-      "dam": "竜瑞",
+      "dam": "龍瑞",
       "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a00ba16",
@@ -2684,17 +2703,18 @@
     },
     {
       "id": "ryuuzui",
-      "name": "竜瑞",
+      "name": "龍瑞",
       "foaled": {
         "year": 1928
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "ブローベル",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a01c1fd",
+      "registration": "15巻波1772号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -2703,7 +2723,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第15巻』p.237",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2716,7 +2736,7 @@
         "year": 1964
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "セントモレナ",
       "dam": "コトブキズル",
       "color": "鹿毛",
@@ -2790,7 +2810,7 @@
         "year": 1954
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "マルタケ",
       "dam": "ミスフタセ",
       "color": "栗毛",
@@ -2817,7 +2837,7 @@
         "year": 1947
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "フアインモア",
       "dam": "久鶴",
       "color": "栗毛",
@@ -2844,11 +2864,11 @@
         "year": 1934
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "トウルヌソル(GB)",
       "dam": "雲鶴",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a00b6f3",
       "raceStats": {
         "total": {
@@ -2871,11 +2891,11 @@
         "year": 1922
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "第三アブリアル",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c1ef",
       "raceStats": {
         "total": {
@@ -2885,24 +2905,24 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.1143-1144",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanaburiaru"
+      "damId": "dai3-aburiaru"
     },
     {
-      "id": "daisanaburiaru",
+      "id": "dai3-aburiaru",
       "name": "第三アブリアル",
       "foaled": {
         "year": 1917
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ハアリー",
       "dam": "アブリアル",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c1ee",
       "raceStats": {
         "total": {
@@ -2925,11 +2945,11 @@
         "year": 1911
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "サツパーダンス",
       "dam": "第七パンジー",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c1ed",
       "raceStats": {
         "total": {
@@ -2943,20 +2963,20 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainanapanjii"
+      "damId": "dai7-pansy"
     },
     {
-      "id": "dainanapanjii",
+      "id": "dai7-pansy",
       "name": "第七パンジー",
       "foaled": {
         "year": 1907
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ボイターギドラン",
       "dam": "パンジー",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c1e9",
       "raceStats": {
         "total": {
@@ -2970,20 +2990,20 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "panjii"
+      "damId": "pansy"
     },
     {
-      "id": "panjii",
+      "id": "pansy",
       "name": "パンジー",
       "foaled": {
         "year": 1891
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第五ブラドレー",
       "dam": "第五吾妻",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c151",
       "raceStats": {
         "total": {
@@ -3006,7 +3026,7 @@
         "year": 1961
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "パールダイヴァー",
       "dam": "オーヒ",
       "color": "鹿毛",
@@ -3065,7 +3085,7 @@
         "year": 1954
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ヒロサクラ",
       "dam": "十九雪",
       "color": "栃栗毛",
@@ -3088,16 +3108,19 @@
     },
     {
       "id": "juukyuuyuki",
-      "name": "十九雪",
+      "pedigreeName": "十九雪",
+      "name": "トクエイ",
       "foaled": {
-        "year": 1944
+        "year": 1944,
+        "month": 5,
+        "day": 2
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "昭慶",
       "dam": "雪真",
       "color": "栃栗毛",
-      "breeder": "",
+      "breeder": "吉田英男（北海道勇払郡安平町）",
       "netkeibaId": "000a00ba01",
       "raceStats": {
         "total": {
@@ -3107,7 +3130,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.760",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3120,7 +3143,7 @@
         "year": 1939
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "真驍",
       "dam": "暁駿",
       "color": "栃栗毛",
@@ -3147,7 +3170,7 @@
         "year": 1933
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "アデージ(GB)",
       "dam": "ウイン",
       "color": "栗毛",
@@ -3174,7 +3197,7 @@
         "year": 1921
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "第十九インタグリオー",
       "dam": "チャーム",
       "color": "黒鹿毛",
@@ -3201,7 +3224,7 @@
         "year": 1916
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "サツパーダンス",
       "dam": "第三バソープ",
       "color": "黒鹿毛",
@@ -3219,16 +3242,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanbasoopu"
+      "damId": "dai3-basoopu"
     },
     {
-      "id": "daisanbasoopu",
+      "id": "dai3-basoopu",
       "name": "第三バソープ",
       "foaled": {
         "year": 1912
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ブラマンテー",
       "dam": "バソープ",
       "color": "鹿毛",
@@ -3255,7 +3278,7 @@
         "year": 1904
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第四ユスーフ",
       "dam": "第二ミユージツク",
       "color": "鹿毛",
@@ -3273,16 +3296,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainimiyuujitsuku"
+      "damId": "dai2-music"
     },
     {
-      "id": "dainimiyuujitsuku",
+      "id": "dai2-music",
       "name": "第二ミユージツク",
       "foaled": {
         "year": 1894
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "フラミンゴー",
       "dam": "ミユージツク",
       "color": "栗毛",
@@ -3300,188 +3323,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "miyuujitsuku"
-    },
-    {
-      "id": "hishigashin",
-      "name": "ヒシガシン",
-      "foaled": {
-        "year": 1961
-      },
-      "sex": "male",
-      "breed": "サラ",
-      "sire": "ハロウエー(GB)",
-      "dam": "スズラン",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "1961z00452",
-      "raceStats": {
-        "total": {
-          "runs": 41,
-          "wins": 9
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1966,
-            "month": 4,
-            "day": 24
-          },
-          "racecourse": "中山",
-          "race": "中山大障害(OP)",
-          "displayRace": "中山大障害(春)",
-          "distance": "芝4200",
-          "grade": "jra_grandjump",
-          "entry": "10",
-          "result": "10",
-          "favorite": "9"
-        },
-        {
-          "date": {
-            "year": 1965,
-            "month": 11,
-            "day": 7
-          },
-          "racecourse": "東京",
-          "race": "東京障害特別(OP)",
-          "displayRace": "東京障害特別(秋)",
-          "distance": "ダ3300",
-          "grade": "jra_jump",
-          "entry": "6",
-          "result": "3",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 1964,
-            "month": 3,
-            "day": 1
-          },
-          "racecourse": "中山",
-          "race": "弥生賞(OP)",
-          "displayRace": "弥生賞",
-          "distance": "芝1600",
-          "grade": "jra_grade",
-          "entry": "10",
-          "result": "9",
-          "favorite": "9"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "suzuran"
-    },
-    {
-      "id": "suzuran",
-      "name": "スズラン",
-      "foaled": {
-        "year": 1953
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "イーストパレード",
-      "dam": "第二カチフヂ",
-      "color": "鹿毛",
-      "breeder": "",
-      "netkeibaId": "000a00db0d",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "dainikachifuji"
-    },
-    {
-      "id": "dainikachifuji",
-      "name": "第二カチフヂ",
-      "foaled": {
-        "year": 1943
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "第弐イブンヂアド",
-      "dam": "勝藤",
-      "color": "鹿毛",
-      "breeder": "",
-      "netkeibaId": "000a00c94a",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "kachifuji"
-    },
-    {
-      "id": "kachifuji",
-      "name": "勝藤",
-      "foaled": {
-        "year": 1936
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ハクシヨウ",
-      "dam": "博勝",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "000a01c189",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "hirokatsu"
-    },
-    {
-      "id": "hirokatsu",
-      "name": "博勝",
-      "foaled": {
-        "year": 1925
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "チヤペルブラムプトン(GB)",
-      "dam": "ブローベル",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "000a01c188",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "burooberu"
+      "damId": "music"
     },
     {
       "id": "ratsukiikingu",
@@ -3490,11 +3332,11 @@
         "year": 1961
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ホースニユース",
       "dam": "白銀",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "吉田勇（北海道新冠町）",
       "netkeibaId": "1961z00368",
       "raceStats": {
         "total": {
@@ -3535,7 +3377,7 @@
           "favorite": "1"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1521",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3548,11 +3390,11 @@
         "year": 1943
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "開銀",
       "dam": "朗月",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "石倉佐太郎（青森県上北郡四和村）",
       "netkeibaId": "000a00c86e",
       "raceStats": {
         "total": {
@@ -3562,7 +3404,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.462",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3575,7 +3417,7 @@
         "year": 1937
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "朗光",
       "dam": "柳月",
       "color": "栗毛",
@@ -3602,7 +3444,7 @@
         "year": 1931
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "オーバーヤン七",
       "dam": "川柳",
       "color": "栗毛",
@@ -3629,7 +3471,7 @@
         "year": 1924
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第十三インタグリオー",
       "dam": "ブルーム",
       "color": "栗毛",
@@ -3647,16 +3489,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "buruumu"
+      "damId": "bloom"
     },
     {
-      "id": "buruumu",
+      "id": "bloom",
       "name": "ブルーム",
       "foaled": {
         "year": 1901
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ミグノン",
       "dam": "第九吾妻",
       "color": "栗毛",
@@ -3683,7 +3525,7 @@
         "year": 1890
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第三スイロン",
       "dam": "吾妻",
       "color": "栗毛",
@@ -3710,11 +3552,11 @@
         "year": 1960
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "タカラボシ",
       "dam": "ミエヒカリ",
       "color": "黒鹿毛",
-      "breeder": "",
+      "breeder": "谷岡正次（北海道静内町）",
       "netkeibaId": "000a00dfc0",
       "raceStats": {
         "total": {
@@ -3770,7 +3612,7 @@
           "favorite": "16"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.952",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3783,11 +3625,11 @@
         "year": 1954
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ミキノヒカリ",
       "dam": "高天",
       "color": "鹿毛",
-      "breeder": "門別町",
+      "breeder": "天羽実太郎（北海道門別町）",
       "netkeibaId": "000a00dcc6",
       "raceStats": {
         "total": {
@@ -3797,7 +3639,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1888",
       "englishName": "Miehikari",
       "prizeMoney": {
         "total": "0万円"
@@ -3808,14 +3650,16 @@
       "id": "takaten",
       "name": "高天",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 4,
+        "day": 3
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "大鵬",
       "dam": "明宜",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠種畜牧場",
       "netkeibaId": "000a00c783",
       "raceStats": {
         "total": {
@@ -3825,7 +3669,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.349",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3835,14 +3679,16 @@
       "id": "meigi",
       "name": "明宜",
       "foaled": {
-        "year": 1935
+        "year": 1935,
+        "month": 4,
+        "day": 9
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ベルアミ(AR)",
       "dam": "天慶",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a00c700",
       "raceStats": {
         "total": {
@@ -3852,7 +3698,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.627",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3862,15 +3708,18 @@
       "id": "tengyou",
       "name": "天慶",
       "foaled": {
-        "year": 1929
+        "year": 1929,
+        "month": 4,
+        "day": 26
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ブラツクスミス(GB)",
       "dam": "華麗",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a00b6f5",
+      "registration": "2巻波103号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -3879,7 +3728,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1161, 『馬匹血統登録書 第2巻』p.179",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3889,14 +3738,16 @@
       "id": "karei",
       "name": "華麗",
       "foaled": {
-        "year": 1918
+        "year": 1924,
+        "month": 3,
+        "day": 23
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "第四ツレージユア",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a018fd9",
       "raceStats": {
         "total": {
@@ -3906,25 +3757,29 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1138",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai4-tsureejiyua"
+      "damId": "dai4-tsureejiyua",
+      "comment": "netkeiba, bogusでは生年が1918となっているが、馬匹血統登録書などでは1924年生となっている。"
     },
     {
       "id": "dai4-tsureejiyua",
       "name": "第四ツレージユア",
       "foaled": {
-        "year": 1911
+        "year": 1911,
+        "month": 4,
+        "day": 9
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "サツパーダンス",
       "dam": "ツレージユア",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "下総御料牧場",
       "netkeibaId": "000a01c0fa",
+      "registration": "2巻波94号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -3933,7 +3788,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1159, 『馬匹血統登録書 第2巻』p.175",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -3946,7 +3801,7 @@
         "year": 1901
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "八声",
       "dam": "第三ミユージツク",
       "color": "栗毛",
@@ -3964,16 +3819,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmiyuujitsuku"
+      "damId": "dai3-music"
     },
     {
-      "id": "daisanmiyuujitsuku",
+      "id": "dai3-music",
       "name": "第三ミユージツク",
       "foaled": {
         "year": 1897
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ユスーフ",
       "dam": "ミユージツク",
       "color": "鹿毛",
@@ -3991,186 +3846,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "miyuujitsuku"
-    },
-    {
-      "id": "hotsukai",
-      "name": "ホツカイ",
-      "foaled": {
-        "year": 1958
-      },
-      "sex": "male",
-      "breed": "サラ",
-      "sire": "サチミノリ",
-      "dam": "スズラン",
-      "color": "鹿毛",
-      "breeder": "",
-      "netkeibaId": "000a00c421",
-      "raceStats": {
-        "total": {
-          "runs": 84,
-          "wins": 20
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1964,
-            "month": 4,
-            "day": 29
-          },
-          "racecourse": "東京",
-          "race": "東京アラブ障害特別(OP)",
-          "displayRace": "東京アラブ障害特別",
-          "distance": "芝3300",
-          "grade": "jra_jump",
-          "entry": "7",
-          "result": "4",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 1963,
-            "month": 11,
-            "day": 24
-          },
-          "racecourse": "東京",
-          "race": "東京アラブ障害特別競(OP)",
-          "displayRace": "東京アラブ障害特別",
-          "distance": "芝3300",
-          "grade": "jra_jump",
-          "entry": "6",
-          "result": "5",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 1963,
-            "month": 5,
-            "day": 5
-          },
-          "racecourse": "東京",
-          "race": "アラブ王冠競走(OP)",
-          "displayRace": "アラブ王冠(春)",
-          "distance": "芝2300",
-          "grade": "jra_grade",
-          "entry": "13",
-          "result": "3",
-          "favorite": "6"
-        },
-        {
-          "date": {
-            "year": 1963,
-            "month": 3,
-            "day": 3
-          },
-          "racecourse": "中京",
-          "race": "アラブ大賞典競走(OP)",
-          "displayRace": "アラブ大賞典",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "8",
-          "result": "2",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 1962,
-            "month": 10,
-            "day": 7
-          },
-          "racecourse": "中山",
-          "race": "アラブ王冠競走(OP)",
-          "displayRace": "アラブ王冠(秋)",
-          "distance": "芝2400",
-          "grade": "jra_grade",
-          "entry": "12",
-          "result": "7",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 1962,
-            "month": 5,
-            "day": 5
-          },
-          "racecourse": "東京",
-          "race": "アラブ王冠競走(OP)",
-          "displayRace": "アラブ王冠(春)",
-          "distance": "芝2300",
-          "grade": "jra_grade",
-          "entry": "14",
-          "result": "4",
-          "favorite": "4"
-        },
-        {
-          "date": {
-            "year": 1962,
-            "month": 3,
-            "day": 4
-          },
-          "racecourse": "中京",
-          "race": "アラブ大賞典競走(OP)",
-          "displayRace": "アラブ大賞典",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "10",
-          "result": "1",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 1961,
-            "month": 11,
-            "day": 23
-          },
-          "racecourse": "京都",
-          "race": "タマツバキ記念競走(OP)",
-          "displayRace": "タマツバキ記念(秋)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "16",
-          "result": "5",
-          "favorite": "8"
-        },
-        {
-          "date": {
-            "year": 1961,
-            "month": 10,
-            "day": 14
-          },
-          "racecourse": "中山",
-          "race": "アラブ王冠競走(OP)",
-          "displayRace": "アラブ王冠(秋)",
-          "distance": "芝2400",
-          "grade": "jra_grade",
-          "entry": "11",
-          "result": "6",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 1961,
-            "month": 5,
-            "day": 5
-          },
-          "racecourse": "東京",
-          "race": "アラブ王冠競走(OP)",
-          "displayRace": "アラブ王冠(春)",
-          "distance": "芝2300",
-          "grade": "jra_grade",
-          "entry": "11",
-          "result": "7",
-          "favorite": "4"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "suzuran",
-      "linkName": "ホツカイ(1958)"
+      "damId": "music"
     },
     {
       "id": "hiroin",
@@ -4179,7 +3855,7 @@
         "year": 1958
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "サチミノリ",
       "dam": "ミエハタ",
       "color": "鹿毛",
@@ -4219,15 +3895,16 @@
     {
       "id": "miehata",
       "name": "ミエハタ",
+      "formerName": "イスズガワ",
       "foaled": {
         "year": 1944
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "方景",
       "dam": "五十鈴ノ一",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "中村作太郎（北海道浦河郡荻伏村）",
       "netkeibaId": "000a00c819",
       "raceStats": {
         "total": {
@@ -4237,7 +3914,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.579",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4250,7 +3927,7 @@
         "year": 1935
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "嘉栄",
       "dam": "イサワキ",
       "color": "栗毛",
@@ -4277,7 +3954,7 @@
         "year": 1925
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "清駒",
       "dam": "ボンフワイアー",
       "color": "",
@@ -4304,7 +3981,7 @@
         "year": 1915
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "サツパーダンス",
       "dam": "第三ミユージツク",
       "color": "鹿毛",
@@ -4322,7 +3999,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmiyuujitsuku"
+      "damId": "dai3-music"
     },
     {
       "id": "yamakaze",
@@ -4331,11 +4008,11 @@
         "year": 1958
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ボストニアン",
       "dam": "ハナパーク",
       "color": "黒鹿毛",
-      "breeder": "",
+      "breeder": "加田幹男（北海道静内郡静内町）",
       "netkeibaId": "000a00c3b9",
       "raceStats": {
         "total": {
@@ -4361,7 +4038,7 @@
           "favorite": "10"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.440",
       "englishName": "Yamakaze",
       "prizeMoney": {
         "total": "0万円"
@@ -4372,14 +4049,16 @@
       "id": "miwahikari",
       "name": "ミワヒカリ",
       "foaled": {
-        "year": 1955
+        "year": 1955,
+        "month": 4,
+        "day": 4
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ミキノヒカリ",
       "dam": "オミナヘシ",
       "color": "黒鹿毛",
-      "breeder": "門別町",
+      "breeder": "三輪久蔵（北海道門別町）",
       "netkeibaId": "000a00dd4f",
       "raceStats": {
         "total": {
@@ -4420,7 +4099,7 @@
           "favorite": "2"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2181",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4433,11 +4112,11 @@
         "year": 1957
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "トラツクオー",
       "dam": "クラツクスマート",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "三浦源治（宮城県加美郡宮崎町）",
       "netkeibaId": "1957z00220",
       "raceStats": {
         "total": {
@@ -4463,7 +4142,7 @@
           "favorite": "4"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.208",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4476,11 +4155,11 @@
         "year": 1947
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ニーフアン(FR)",
       "dam": "万宜",
       "color": "栃栗毛",
-      "breeder": "",
+      "breeder": "新冠種畜牧場",
       "netkeibaId": "000a00ca62",
       "raceStats": {
         "total": {
@@ -4490,7 +4169,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.208",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4503,7 +4182,7 @@
         "year": 1934
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "レヴユーオーダー(GB)",
       "dam": "天慶",
       "color": "",
@@ -4526,15 +4205,16 @@
     {
       "id": "metorobanzai",
       "name": "メトロバンザイ",
+      "formerPedigreeName": "セカイホマレ",
       "foaled": {
         "year": 1957
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ヒロサクラ",
       "dam": "十九雪",
-      "color": "",
-      "breeder": "",
+      "color": "栃栗毛",
+      "breeder": "吉田英男（北海道勇払郡安平町）",
       "netkeibaId": "1957z00344",
       "raceStats": {
         "total": {
@@ -4590,7 +4270,7 @@
           "favorite": "4"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.760-761",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4603,11 +4283,11 @@
         "year": 1956
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ダイニホウシユウ",
       "dam": "テンラク",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "牧園牧場（鹿児島県姶良郡牧園町）",
       "netkeibaId": "1956z00195",
       "raceStats": {
         "total": {
@@ -4633,7 +4313,7 @@
           "favorite": "4"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.379",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4647,11 +4327,11 @@
         "year": 1946
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "伯優",
       "dam": "明銀",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠種畜牧場",
       "netkeibaId": "000a00c89a",
       "raceStats": {
         "total": {
@@ -4661,7 +4341,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.379",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4674,7 +4354,7 @@
         "year": 1935
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ベルアミ(AR)",
       "dam": "昭金",
       "color": "鹿毛",
@@ -4701,7 +4381,7 @@
         "year": 1927
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "アブランテス",
       "color": "栗毛",
@@ -4728,7 +4408,7 @@
         "year": 1911
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ブラマンテー",
       "dam": "第四プリムローズ",
       "color": "栗毛",
@@ -4755,7 +4435,7 @@
         "year": 1904
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第七ガイヨル",
       "dam": "プリムローズ",
       "color": "栗毛",
@@ -4782,7 +4462,7 @@
         "year": 1891
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ユスーフ",
       "dam": "第四吾妻",
       "color": "",
@@ -4809,7 +4489,7 @@
         "year": 1884
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ローストン",
       "dam": "吾妻",
       "color": "鹿毛",
@@ -4838,7 +4518,7 @@
         "day": 7
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "ヒロサクラ",
       "dam": "十九雪",
       "color": "栗毛",
@@ -5122,11 +4802,11 @@
         "year": 1954
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ライジングフレーム(IRE)",
       "dam": "梅剛",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "日高種畜牧場",
       "netkeibaId": "000a00c36b",
       "raceStats": {
         "total": {
@@ -5197,7 +4877,7 @@
           "favorite": "1"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.91",
       "englishName": "Hamano O",
       "prizeMoney": {
         "total": "0万円"
@@ -5208,14 +4888,16 @@
       "id": "umetsuyoshi",
       "name": "梅剛",
       "foaled": {
-        "year": 1945
+        "year": 1945,
+        "month": 3,
+        "day": 29
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ニーフアン(FR)",
       "dam": "万宜",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a00c703",
       "raceStats": {
         "total": {
@@ -5225,7 +4907,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.91",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -5244,7 +4926,7 @@
       "sire": "タツクモ",
       "dam": "トモツル",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "黒崎利平（宮城県玉造郡岩出山村）",
       "netkeibaId": "000a00c34c",
       "raceStats": {
         "total": {
@@ -5260,13 +4942,13 @@
             "month": 7,
             "day": 3
           },
-          "racecourse": null,
-          "race": "読売カップ（春）",
+          "racecourse": "中山",
+          "race": "読売カップ",
           "displayRace": "読売カップ（春）",
-          "distance": null,
+          "distance": "芝2000",
           "grade": "jra_grade",
-          "entry": null,
-          "favorite": null,
+          "entry": "10",
+          "favorite": "2",
           "result": "1"
         },
         {
@@ -5300,7 +4982,7 @@
           "favorite": "2"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.739",
       "englishName": "Tatsutomo",
       "prizeMoney": {
         "total": "0万円"
@@ -5314,14 +4996,16 @@
       "id": "tomotsuru",
       "name": "トモツル",
       "foaled": {
-        "year": 1946
+        "year": 1946,
+        "month": 5,
+        "day": 2
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "月友",
       "dam": "久鶴",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "柴田侃（千葉県印旛郡遠山村）",
       "netkeibaId": "000a00ba11",
       "raceStats": {
         "total": {
@@ -5331,7 +5015,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.739",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -5350,7 +5034,7 @@
       "sire": "グレートリング",
       "dam": "崇助",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "猪股よどみ（宮城県加美郡宮崎村）",
       "netkeibaId": "1952z00061",
       "raceStats": {
         "total": {
@@ -5359,8 +5043,24 @@
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1955,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": "中山",
+          "race": "読売カップ",
+          "displayRace": "読売カップ（春）",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "favorite": "8",
+          "result": "3"
+        }
+      ],
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.300",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -5647,20 +5347,22 @@
       "owner": "吉田",
       "jbisId": "0000000218",
       "bogusId": "27749",
-      "damId": "gatsujou"
+      "damId": "tsukimori"
     },
     {
-      "id": "tsuwairaito",
+      "id": "twilight",
       "name": "ツワイライト",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 4,
+        "day": 18
       },
       "sex": "female",
-      "breed": "アア",
+      "breed": "サラ系",
       "sire": "ダイオライト",
       "dam": "岩豊",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "九美上牧場（千葉県香取郡香取村）",
       "netkeibaId": "000a00b714",
       "raceStats": {
         "total": {
@@ -5670,7 +5372,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.50",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -5683,7 +5385,7 @@
         "year": 1930
       },
       "sex": "female",
-      "breed": "アア",
+      "breed": "サラ系",
       "sire": "トウルヌソル(GB)",
       "dam": "銀豊",
       "color": "",
@@ -5710,7 +5412,7 @@
         "year": 1925
       },
       "sex": "female",
-      "breed": "アア",
+      "breed": "サラ系",
       "sire": "キープセーク",
       "dam": "種頼",
       "color": "",
@@ -5734,14 +5436,14 @@
       "id": "kiyomasa",
       "name": "キヨマサ",
       "foaled": {
-        "year": "1945"
+        "year": 1945
       },
       "sex": "male",
       "breed": "サラ系",
       "sire": "山正",
       "dam": "ツワイライト",
-      "color": "不明",
-      "breeder": "JPN",
+      "color": "栗毛",
+      "breeder": "九美上牧場（千葉県佐原市）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -5917,9 +5619,9 @@
           "result": "5"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.50",
       "bogusId": "29220",
-      "damId": "tsuwairaito"
+      "damId": "twilight"
     },
     {
       "id": "zarusokain",
@@ -6185,10 +5887,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanabandon"
+      "damId": "dai3-abandon"
     },
     {
-      "id": "daisanabandon",
+      "id": "dai3-abandon",
       "name": "第三アバンドン",
       "foaled": {
         "year": 1921
@@ -6329,10 +6031,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai8-panjii"
+      "damId": "dai8-pansy"
     },
     {
-      "id": "dai8-panjii",
+      "id": "dai8-pansy",
       "name": "第八パンジー",
       "foaled": {
         "year": 1908
@@ -6356,7 +6058,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "panjii"
+      "damId": "pansy"
     },
     {
       "id": "hopton",
@@ -6591,6 +6293,81 @@
       "source": "『登録馬名簿 昭和16年8月10日現在』p.59, 『登録馬名簿 昭和17年1月20日現在』p.176, 『馬匹血統登録書 第拾四卷』p.262",
       "comment": "産地：鹿児島県姶良郡牧園村、生産者：李王職蘭谷牧場と記載されているが、蘭谷牧場は朝鮮にあるため矛盾している。同様の矛盾があるグリンライトの母ミント（9巻974号）の繁殖成績を調べると、『サラブレッド血統書 第1巻』p.518で所有・生産共に蘭谷牧場としつつも「グリーンライト及芳明ハ鹿児島県姶良郡牧園村産ナリ」の註を付しており、単純な誤記ではなさそう。芳明の次に生まれた芳正は父アスフオード（芳明と同じ）で蘭谷牧場産。その次の明勝は父ハクシヨウ（蘭谷牧場供用種牡馬）であるため、芳正は日本（牧園村）で種付け後に蘭谷牧場に移動・出産したと思われる。",
       "damId": "asatame"
+    },
+    {
+      "id": "tameaki",
+      "name": "タメアキ",
+      "pedigreeName": "為昭",
+      "foaled": {
+        "year": 1940,
+        "month": 3,
+        "day": 8
+      },
+      "sex": "female",
+      "breed": "準サラ",
+      "sire": "ハクシヨウ",
+      "dam": "朝為",
+      "color": "栗毛",
+      "breeder": "李王職蘭谷牧場",
+      "netkeibaId": "",
+      "registration": "18巻波2098号",
+      "raceStats": {
+        "total": {
+          "runs": 9,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1944,
+            "month": 5,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "呼駈五歳（特）",
+          "distance": "芝2400",
+          "grade": "jrs_grade",
+          "entry": "7",
+          "favorite": "能検",
+          "result": "2",
+          "displayRace": "阪神記念(能検)"
+        },
+        {
+          "date": {
+            "year": 1944,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "京都",
+          "race": "帝室御賞典（春）",
+          "distance": "芝3200",
+          "grade": "jrs_big8",
+          "entry": "10",
+          "favorite": "能検",
+          "result": "着外",
+          "displayRace": "帝室御賞典（春）"
+        },
+        {
+          "date": {
+            "year": 1944,
+            "month": 6,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "京都記念五・六歳",
+          "displayRace": "京都記念(能検)",
+          "distance": "芝3400",
+          "grade": "jrs_grade",
+          "entry": "10",
+          "favorite": "能検",
+          "result": "2"
+        }
+      ],
+      "source": "『馬匹血統登録書 第拾八卷』p.208, 『日本競馬史 第6巻』pp.712-715,800-802, 『優駿』（1944年8月号）p.20",
+      "damId": "_unknown",
+      "comment": "能力検定競走の京都記念・阪神記念で2着、帝室御賞典(春)着外など、少なくとも9戦4勝（4-4-0-1）。各種DB, PedigreeQuery, bogus, 馬匹血統登録書, 各競走成績書などにも血統の記録が一切ない。優駿で競走名・血統名・父母の照合ができたため、タメアキ=為昭は確定した。以下は優駿確認前の考察。【当時の考察】1944/04/20の呼駈五歳に58.5kgで出走していることから「1940年生」「牝馬」「アラブ血量50%未満」であることは推定できる。また各種資料に記載がないことから、純粋なサラブレッドではないことが推測できる。条件を満たす馬の1頭が「為昭（イショウ）」。馬匹血統登録書18巻・波2098号、1940/03/08生まれの準サラブレッド牝馬。父ハクシヨウ、母朝為。母（アサタメ）、兄弟に為勝（タメカツ）などがおり、為昭を「タメアキ」と呼んでも不思議ではなさそう。1943時点では「タメアキ」「為昭（にあたる血統の馬）」「イショウ」どれも出走していないため、おそらく1944年が初出走。この時に競走名タメアキで登録された、その後繁殖入りしなかったため競走名・成績が血統名と結びつけられず散逸した、と考えれば一応矛盾はない。"
     }
   ]
 }

@@ -20,17 +20,45 @@
       "color": "黒鹿毛",
       "breeder": "豪",
       "netkeibaId": "000a0023b0",
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『明治・大正・昭和初期の輸入馬』, 『馬匹血統登録書 第4巻』p.60, 『サラブレッド血統書 第1巻』p.182",
       "importedYear": "1924",
+      "importedBy": "札幌競馬倶楽部（大正13年秋季豪州産抽籤馬）",
       "familyNumber": "F13-a",
       "registration": "4巻495号",
-      "owner": "本間牧場",
+      "owner": "本間牧場（北海道静内郡静内町）",
       "raceStats": {
         "total": {
-          "runs": null,
-          "wins": null
+          "runs": 43,
+          "wins": 14
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 31,
+                "wins": 10
+              },
+              "jump": {
+                "runs": 12,
+                "wins": 4
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [],
       "englishName": "Queen Dellie"
@@ -248,24 +276,26 @@
       "id": "fujiyoshi-1943",
       "name": "フジヨシ",
       "foaled": {
-        "year": 1943
+        "year": 1943,
+        "month": 5,
+        "day": 1
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ハクリユウ",
       "dam": "本睦",
       "color": "黒鹿毛",
-      "breeder": "静内町",
+      "breeder": "本間牧場（北海道静内郡静内町）",
       "netkeibaId": "000a002850",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 27,
+          "wins": 2
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第4巻』p.180, 『母馬別競走成績書』p.378",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -276,15 +306,19 @@
       "id": "honmutsumi",
       "name": "本睦",
       "foaled": {
-        "year": 1935
+        "year": 1935,
+        "month": 5,
+        "day": 1
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "クラツクマンナン(GB)",
       "dam": "オシマ",
       "color": "黒鹿毛",
-      "breeder": "静内町",
+      "breeder": "田辺平五郎（北海道静内郡静内町）",
+      "owner": "本間牧場（北海道静内郡静内町）",
       "netkeibaId": "000a00257e",
+      "registration": "15巻1784号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -293,7 +327,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.500",
       "prizeMoney": {
         "total": "0万円"
       },

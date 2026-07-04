@@ -10,13 +10,16 @@
     {
       "id": "kawara",
       "name": "河原",
-      "foaled": {},
+      "foaled": {
+        "year": 1900
+      },
+      "importedYear": "（内国産）",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
-      "color": "",
-      "breeder": "",
+      "breed": "中半",
+      "sire": "ガズラン",
+      "dam": "藤原",
+      "color": "鹿毛",
+      "breeder": "奥羽種馬牧場",
       "netkeibaId": "000a01cbaa",
       "raceStats": {
         "total": {
@@ -26,14 +29,15 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『種馬牧場種馬所馬匹一覧(1905)』p.65",
+      "comment": "詳細不明。生年及び各種情報は、奥羽種馬牧場生産・九州種馬牧場繋養のアラブ雑種牝馬「河原」のもの。娘である龍河の父・アルビオンも九州種馬牧場繋養であるのが主な根拠。九州種馬牧場が廃止される前年の1906年時点では龍河は確認できないが、その後の2年間、またはアルビオンが鹿児島種馬所に戻って以降に配合されたという仮説も立てられそう。"
     },
     {
       "id": "ryuukawa",
-      "name": "竜河",
+      "name": "龍河",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "中半",
       "sire": "アルビオン",
       "dam": "河原",
       "color": "",
@@ -47,20 +51,21 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』pp.188-189",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kawara"
+      "damId": "kawara",
+      "comment": "競馬成績書等では品種は「雑」表記。"
     },
     {
       "id": "manryuu",
-      "name": "万竜",
+      "name": "万龍",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "スコツチウエース",
-      "dam": "竜河",
+      "dam": "龍河",
       "color": "",
       "breeder": "",
       "netkeibaId": "000a01cbbd",
@@ -72,18 +77,20 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』pp.188-189",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuukawa"
+      "damId": "ryuukawa",
+      "furigana": "マンリュウ",
+      "comment": "競馬成績書等では品種は「サラ雑」表記。"
     },
     {
       "id": "makusu",
       "name": "マクス",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "マラジヤツクス",
       "dam": "万竜",
       "color": "",
@@ -97,18 +104,19 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』pp.188-189, 『競馬成績書 昭和8年 春季』p.156",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "manryuu"
+      "damId": "manryuu",
+      "comment": "1928年生の牝馬（競走名・マクスメリー）がこの馬かもしれない。"
     },
     {
       "id": "ouryuu",
       "name": "旺竜",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "オールマイン",
       "dam": "マクス",
       "color": "",
@@ -122,36 +130,40 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』pp.188-189, 『地方競馬年鑑 昭和14年版』p.159",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "makusu"
+      "damId": "makusu",
+      "comment": "1936年生の牝馬（競走名・オールマツクス）がこの馬かもしれない。"
     },
     {
       "id": "tsutae",
-      "name": "ツタエ",
+      "pedigreeName": "ツタエ",
+      "name": "ヒメハル",
       "foaled": {
-        "year": 1944
+        "year": 1944,
+        "month": 3,
+        "day": 17
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "有島",
       "dam": "旺竜",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "輿倉多守（宮崎県本庄町）",
       "netkeibaId": "000a00f24d",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』pp.188-189",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "ouryuu"
     },
@@ -159,26 +171,29 @@
       "id": "misutsutae",
       "name": "ミスツタエ",
       "foaled": {
-        "year": 1955
+        "year": 1955,
+        "month": 4,
+        "day": 12
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "シゲハヤ",
       "dam": "ツタエ",
       "color": "鹿毛",
-      "breeder": "新冠町",
+      "breeder": "吉田勇（北海道新冠村）",
       "netkeibaId": "000a00f3cb",
+      "registration": "繫殖登録番号2038号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』p.344",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "tsutae"
     },
@@ -189,11 +204,11 @@
         "year": 1971
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ビンゴ",
       "dam": "ミスツタエ",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "浜瀬ひで（北海道平取町）",
       "netkeibaId": "1971z00747",
       "raceStats": {
         "total": {
@@ -234,7 +249,7 @@
           "favorite": "7"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』p.344",
       "prizeMoney": {
         "total": "0万円"
       },

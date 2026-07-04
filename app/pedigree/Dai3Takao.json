@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "pedigreeName": "第三高雄",
+    "rootHorseId": "dai3-takao",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted",
+    "isTraditionalFamily": true
+  },
+  "horses": [
+    {
+      "id": "dai3-takao",
+      "name": "第三高雄",
+      "foaled": {},
+      "sex": "female",
+      "breed": "中半",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01f7a3",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.587, 『アラブ系牝馬系統大鑑』p.210",
+      "comment": "アラブ系牝馬系統大鑑では「サラ系」。競馬成績書では「サラ雑」。ただ、本馬を3代母にもつミハラミが血統書サービスでも「軽半」で登録されていることから逆算しても本馬は中半だと思われる。"
+    },
+    {
+      "id": "gayu",
+      "name": "賀雄",
+      "foaled": {
+        "year": 1924
+      },
+      "sex": "female",
+      "breed": "中半",
+      "sire": "追風",
+      "dam": "第三高雄",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01f7a5",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dai3-takao"
+    },
+    {
+      "id": "haiyu",
+      "pedigreeName": "拝雄",
+      "name": "ブラウネワルド",
+      "foaled": {
+        "year": 1934,
+        "month": 4,
+        "day": 24
+      },
+      "sex": "female",
+      "breed": "軽半",
+      "sire": "ハイラン(AR)",
+      "dam": "賀雄",
+      "color": "鹿毛",
+      "breeder": "北村直枝（青森県三沢町）",
+      "netkeibaId": "000a01ce9b",
+      "registration": "繁殖登録番号104号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.587, 『登録馬名簿 昭和13年8月』p.190",
+      "prizeMoney": {
+        "total": "480円"
+      },
+      "damId": "gayu"
+    },
+    {
+      "id": "miharami",
+      "name": "ミハラミ",
+      "foaled": {
+        "year": 1943,
+        "month": 5,
+        "day": 8
+      },
+      "died": "1960.07 死亡",
+      "sex": "female",
+      "breed": "軽半",
+      "sire": "ラミー(FR)",
+      "dam": "拝雄",
+      "color": "鹿毛",
+      "breeder": "矢野春人（北海道静内町）",
+      "netkeibaId": "000a00bda1",
+      "registration": "繁殖登録番号257号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.661",
+      "prizeMoney": {
+        "total": null
+      },
+      "damId": "haiyu"
+    },
+    {
+      "id": "tooyooichi",
+      "name": "トーヨーイチ",
+      "foaled": {
+        "year": 1954
+      },
+      "sex": "female",
+      "breed": "アラ系",
+      "sire": "ニユーバラツケー",
+      "dam": "ミハラミ",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00f3af",
+      "raceStats": {
+        "total": {
+          "runs": 88,
+          "wins": 16
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(秋)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "9",
+          "result": "6",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1959,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "京都",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(春)",
+          "distance": "芝3100",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "3",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "miharami"
+    }
+  ]
+}

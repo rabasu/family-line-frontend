@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "スクールベル",
     "rootHorseId": "school-bell",
-    "lastUpdated": "2025-11-23T17:18:16.692719Z",
+    "lastUpdated": "2026-05-23T15:26:38.239501Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -13,18 +13,19 @@
       "foaled": {
         "year": 1904
       },
+      "died": "1926.11.25. 斃死",
       "sex": "female",
       "breed": "サラ",
       "sire": "Bassetlaw",
       "dam": "Amelia Fonso",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "米",
       "netkeibaId": "000a002364",
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.298",
       "importedYear": "1916",
       "familyNumber": "A39",
       "registration": "3巻361号",
-      "owner": "S.アイザックス（中倉保）"
+      "owner": "S.アイザックス【中倉保】"
     },
     {
       "id": "happy-chateau",
@@ -430,15 +431,19 @@
       "id": "chierokii",
       "name": "チエロキー",
       "foaled": {
-        "year": 1925
+        "year": 1925,
+        "month": 4,
+        "day": 16
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ダイヤモンドウエツデイング(GB)",
       "dam": "スクールベル",
       "color": "鹿毛",
-      "breeder": "栃木県",
+      "breeder": "中倉保（栃木県河内郡姿川村）",
+      "owner": "S.アイザックス",
       "netkeibaId": "000a002363",
+      "registration": "3巻364号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -447,7 +452,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.338",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -460,11 +465,11 @@
         "year": 1968
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ミトタカラ",
       "dam": "セカイベル",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "甲斐伝（宮崎県延岡市）",
       "netkeibaId": "1968z00733",
       "raceStats": {
         "total": {
@@ -520,7 +525,7 @@
           "favorite": "8"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第5巻』p.61",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -530,14 +535,16 @@
       "id": "sekaiberu",
       "name": "セカイベル",
       "foaled": {
-        "year": 1962
+        "year": 1962,
+        "month": 4,
+        "day": 1
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "セカイオー",
       "dam": "ミナミベル",
-      "color": "",
-      "breeder": "浦河町",
+      "color": "鹿毛",
+      "breeder": "斉藤鶴松（宮崎県延岡市）",
       "netkeibaId": "000a00bab3",
       "raceStats": {
         "total": {
@@ -547,7 +554,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第5巻』p.61",
       "englishName": "Sekaiberu",
       "prizeMoney": {
         "total": "0万円"
@@ -1313,145 +1320,6 @@
         "total": "0万円"
       },
       "damId": "saint-bell"
-    },
-    {
-      "id": "harutakara",
-      "name": "ハルタカラ",
-      "foaled": {
-        "year": 1954
-      },
-      "sex": "male",
-      "breed": "サラ",
-      "sire": "ホウシユウ",
-      "dam": "ミスカブト",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "1954z00175",
-      "raceStats": {
-        "total": {
-          "runs": 46,
-          "wins": 14
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1957,
-            "month": 11,
-            "day": 24
-          },
-          "racecourse": "京都",
-          "race": "タマツバキ記念競走(OP)",
-          "displayRace": "タマツバキ記念(秋)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "9",
-          "result": "3",
-          "favorite": "6"
-        },
-        {
-          "date": {
-            "year": 1957,
-            "month": 5,
-            "day": 19
-          },
-          "racecourse": "京都",
-          "race": "タマツバキ記念競走(OP)",
-          "displayRace": "タマツバキ記念(春)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "10",
-          "result": "4",
-          "favorite": "6"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "misukabuto"
-    },
-    {
-      "id": "misukabuto",
-      "name": "ミスカブト",
-      "foaled": {
-        "year": 1952
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "クレタケ",
-      "dam": "松甲",
-      "color": "鹿毛",
-      "breeder": "千葉県",
-      "netkeibaId": "000a002a6a",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "matsukabuto"
-    },
-    {
-      "id": "matsukabuto",
-      "name": "松甲",
-      "foaled": {
-        "year": 1937
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "カブトヤマ",
-      "dam": "クワーダレン",
-      "color": "鹿毛",
-      "breeder": "青森県",
-      "netkeibaId": "000a002648",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "kuwaadaren"
-    },
-    {
-      "id": "kuwaadaren",
-      "name": "クワーダレン",
-      "foaled": {
-        "year": 1919
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ダイヤモンドウエツデイング(GB)",
-      "dam": "スクールベル",
-      "color": "鹿毛",
-      "breeder": "",
-      "netkeibaId": "000a01c97b",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "school-bell"
     },
     {
       "id": "doonan-oo",

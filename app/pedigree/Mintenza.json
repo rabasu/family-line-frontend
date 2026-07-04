@@ -13,6 +13,7 @@
       "foaled": {
         "year": 1905
       },
+      "importedYear": "1912",
       "sex": "female",
       "breed": "サラ",
       "sire": "Minting",
@@ -20,25 +21,29 @@
       "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "000a01b557",
-      "source": "tsx_conversion",
-      "importedYear": "1912",
       "familyNumber": "F6-b",
       "registration": "登録なし",
-      "owner": "奥羽種畜場"
+      "owner": "奥羽種馬牧場",
+      "source": "tsx_conversion, 『輸入サラブレツド血統簿 全』p.90"
     },
     {
       "id": "tsuusan-itsu",
       "name": "ツウサンイツ",
+      "formerPedigreeName": "ハツフジ",
       "foaled": {
-        "year": 1960
+        "year": 1960,
+        "month": 5,
+        "day": 4
       },
+      "died": "1970.04. 死亡",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "フジミナト",
       "dam": "フクカツフジ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "仮屋カオ（鹿児島県囎唹郡有明町）",
       "netkeibaId": "000a00d324",
+      "registration": "繫殖登録番号3258号",
       "raceStats": {
         "total": {
           "runs": 54,
@@ -108,7 +113,7 @@
           "favorite": "8"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第6巻』p.408, 『アラブ・アングロアラブ血統書 第2巻』p.1146",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -117,15 +122,18 @@
     {
       "id": "fukukatsufuji",
       "name": "フクカツフジ",
+      "formerPedigreeName": "フク",
       "foaled": {
-        "year": 1955
+        "year": 1955,
+        "month": 5,
+        "day": 17
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "アサフジ",
       "dam": "藤姫",
       "color": "鹿毛",
-      "breeder": "鹿児島県",
+      "breeder": "仮屋カオ（鹿児島県囎唹郡西志布志村）",
       "netkeibaId": "000a002c72",
       "raceStats": {
         "total": {
@@ -135,7 +143,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第6巻』p.408",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -145,15 +153,20 @@
       "id": "fujihime",
       "name": "藤姫",
       "foaled": {
-        "year": 1936
+        "year": 1936,
+        "month": 4,
+        "day": 10
       },
+      "died": "1956.02.15. 斃死",
       "sex": "female",
       "breed": "サラ",
-      "sire": "ミツシヨン",
+      "sire": "ミンドアー",
       "dam": "ミンテン",
       "color": "鹿毛",
-      "breeder": "静内町",
+      "breeder": "藤原俊三（北海道静内郡静内町）",
+      "owner": "大籔又一（福岡県八女郡古川村）",
       "netkeibaId": "000a0027e1",
+      "registration": "18巻2471号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -162,61 +175,70 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第18巻』p.110, 『サラブレッド血統書 第5巻』p.281",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "minten"
+      "damId": "minten",
+      "furigana": "フヂヒメ"
     },
     {
       "id": "minten",
-      "name": "ミンテン",
+      "pedigreeName": "ミンテン",
+      "name": "ミンテントツプ",
       "foaled": {
-        "year": 1928
+        "year": 1928,
+        "month": 4,
+        "day": 10
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ペリオン(GB)",
       "dam": "第三ミンテンザ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "藤原俊三（北海道静内郡静内町）",
       "netkeibaId": "000a002487",
+      "registration": "11巻1563号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 4
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.514, 『母馬別競走成績書』p.570",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmintenza"
+      "damId": "dai3-mintenza"
     },
     {
-      "id": "daisanmintenza",
-      "name": "第三ミンテンザ",
+      "id": "dai3-mintenza",
+      "pedigreeName": "第三ミンテンザ",
+      "name": "ミンテンザ",
       "foaled": {
-        "year": 1918
+        "year": 1918,
+        "month": 4,
+        "day": 4
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ビリーゼヴエルガー",
       "dam": "ミンテンザ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "十勝種馬牧場",
       "netkeibaId": "000a0023b1",
+      "registration": "1巻19号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 18
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』pp.515-516, 『母馬別競走成績書』p.570",
       "prizeMoney": {
         "total": "0万円"
       },

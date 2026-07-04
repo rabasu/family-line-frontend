@@ -1,22 +1,29 @@
 {
   "metadata": {
     "pedigreeName": "ネルソン",
-    "rootHorseId": "neruson",
+    "rootHorseId": "nielsen",
     "lastUpdated": "2025-11-23T18:49:20.187194Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "neruson",
-      "name": "ネルソン",
-      "foaled": null,
+      "id": "nielsen",
+      "name": "ネイルソン",
+      "pedigreeName": "ネルソン",
+      "formerName": "アリスネイルソン",
+      "foaled": {
+        "year": 1899
+      },
+      "importedYear": "1902",
+      "importedBy": "馬政局",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
-      "color": "",
-      "breeder": "",
+      "breed": "トロ",
+      "sire": "キングランセロ",
+      "dam": "オルメート",
+      "color": "栗",
+      "breeder": "米",
+      "owner": "奥羽種馬牧場",
       "netkeibaId": "000a01c81a",
       "raceStats": {
         "total": {
@@ -26,20 +33,21 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『馬匹血統登録書 第7巻』(正誤追加), 『牧畜雑誌 (204)』p.407, 『種馬牧場種馬所馬匹一覧(1905)』p.28, 『アラブ系牝馬系統大鑑』p.218",
+      "comment": "米国産トロッター。毛色は輸入時の記事では「紅栗毛」、後に栗毛。元馬名から推測すると、当時アメリカで人気だった歌手「Alice Nielsen」に由来すると思われる。"
     },
     {
-      "id": "daiichineruson",
+      "id": "dai1-nielsen",
       "name": "第一ネルソン",
       "foaled": {
         "year": 1904
       },
       "sex": "female",
-      "breed": "サラ",
-      "sire": "アメール",
+      "breed": "中半",
+      "sire": "アメール(FR)",
       "dam": "ネルソン",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "奥羽種馬牧場",
       "netkeibaId": "000a01c81b",
       "raceStats": {
         "total": {
@@ -49,20 +57,18 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『種馬牧場種馬所馬匹一覧(1905)』p.40",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "neruson"
+      "damId": "nielsen"
     },
     {
-      "id": "daiichinerusonnoichi",
+      "id": "dai1-nielsen-no-1",
       "name": "第一ネルソンノ一",
-      "foaled": {
-        "year": 1904
-      },
+      "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "ツーウムバ",
       "dam": "第一ネルソン",
       "color": "",
@@ -80,16 +86,17 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichineruson"
+      "damId": "dai1-nielsen",
+      "comment": "netkeiba, 『アラブ系牝馬系統大鑑』では1904年生となっているが、母馬と同い年になってしまうため矛盾する。生年は不詳とする。"
     },
     {
-      "id": "shouhime",
+      "id": "kohime",
       "name": "小姫",
       "foaled": {
         "year": 1918
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "ギドラン四二ノ三",
       "dam": "第一ネルソンノ一",
       "color": "栗毛",
@@ -107,20 +114,24 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichinerusonnoichi"
+      "damId": "dai1-nielsen-no-1"
     },
     {
-      "id": "daihachikobana",
-      "name": "第八小花",
+      "id": "dai8-kohana",
+      "pedigreeName": "第八小花",
+      "name": "マツコハナ",
       "foaled": {
-        "year": 1939
+        "year": 1939,
+        "month": 4,
+        "day": 15
       },
+      "died": "1961.01. 死亡",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "緑鳴",
       "dam": "小姫",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "細道市松（北海道浦河町）",
       "netkeibaId": "000a00f0d2",
       "raceStats": {
         "total": {
@@ -130,14 +141,14 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』p.107",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shouhime"
+      "damId": "kohime"
     },
     {
-      "id": "yuuratsupu",
+      "id": "yu-rap",
       "name": "ユウラツプ",
       "foaled": {
         "year": 1951,
@@ -149,20 +160,40 @@
       "sire": "方景",
       "dam": "第八小花",
       "color": "栗毛",
-      "breeder": "富山産",
+      "breeder": "北俣𭤖吉（北海道荻伏村）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 24,
+          "wins": 8
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1954,
+            "month": 7,
+            "day": 4
+          },
+          "racecourse": null,
+          "race": "読売カップ（春）",
+          "displayRace": "読売カップ（春）",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        }
+      ],
+      "prizeMoney": {
+        "total": "152.5万円"
+      },
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』p.107, 『全国国営競馬場競馬成績書 昭和30年春』p.30",
       "owner": "藤野",
       "jbisId": "0000001915",
-      "damId": "daihachikobana"
+      "damId": "dai8-kohana",
+      "comment": "馬名の由来は八雲町の地名・河川名の「遊楽部（ゆうらっぷ）」か。JBISでは富山産となっているが、アラブ系種血統書や当時の競馬成績書では日高荻伏産となっている。自然なのは荻伏。戦績・賞金は昭和30年春季まで。昭和30年秋季競馬成績書の登録馬リストに記載なし、31年以降出走なし。"
     }
   ]
 }

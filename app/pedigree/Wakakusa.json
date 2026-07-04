@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "pedigreeName": "若草",
+    "rootHorseId": "wakakusa",
+    "lastUpdated": "2025-11-23T16:48:47.533270Z",
+    "source": "python_scraping_updated",
+    "isTraditionalFamily": true
+  },
+  "horses": [
+    {
+      "id": "wakakusa",
+      "name": "若草",
+      "foaled": {},
+      "importedYear": "（内国産）",
+      "sex": "female",
+      "breed": "中半",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.424",
+      "comment": "netkeibaに登録がない。基本的に軽半血種血統書に記載のある馬は大体netkeibaに含まれているので、本馬だけ漏れていた理由は不明。また産駒の生年の典拠も不明。"
+    },
+    {
+      "id": "hinode",
+      "name": "日ノ出",
+      "foaled": {},
+      "sex": "female",
+      "breed": "中半",
+      "sire": "ギドラン四二ノ三(HUN)",
+      "dam": "若草",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01c927",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "damId": "wakakusa"
+    },
+    {
+      "id": "dai2-hinode",
+      "name": "第二日ノ出",
+      "foaled": {
+        "year": 1925
+      },
+      "sex": "female",
+      "breed": "軽半",
+      "sire": "ジヤコブ(FR)",
+      "dam": "日ノ出",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a00bcaf",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hinode",
+      "comment": "父・ジヤコブはアラブ種牡馬で、1925時点ではおそらく長野種馬所繋養。かなり珍しい種牡馬なので特定できそうな気もするが、現時点ではわからず。"
+    },
+    {
+      "id": "akebono",
+      "pedigreeName": "アケボノ",
+      "name": "メツセージ",
+      "foaled": {
+        "year": 1934,
+        "month": 4,
+        "day": 27
+      },
+      "died": "1960.09. 死亡",
+      "sex": "female",
+      "breed": "軽半",
+      "sire": "バラツケー(FR)",
+      "dam": "第二日ノ出",
+      "color": "鹿毛",
+      "breeder": "小野寺芳一（北海道門別村）",
+      "netkeibaId": "000a00bdd8",
+      "registration": "登録番号319号",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.424",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "dai2-hinode"
+    },
+    {
+      "id": "kometsutowai",
+      "name": "コメツトワイ",
+      "foaled": {
+        "year": 1949,
+        "month": 5,
+        "day": 7
+      },
+      "died": "1971. 転売不明",
+      "sex": "female",
+      "breed": "アラ系",
+      "sire": "方景",
+      "dam": "アケボノ",
+      "color": "鹿毛",
+      "breeder": "赤田豊吉（北海道浦河町）",
+      "netkeibaId": "000a00f2c0",
+      "registration": "登録番号1249号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1952,
+            "month": 6,
+            "day": 15
+          },
+          "racecourse": "中山",
+          "race": "読売カップ（春）",
+          "displayRace": "読売カップ（春）",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "10",
+          "favorite": "6",
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 14
+          },
+          "racecourse": "中山",
+          "race": "読売カップ（秋）",
+          "displayRace": "読売カップ（秋）",
+          "distance": "芝2000",
+          "grade": "national_grade",
+          "entry": "10",
+          "favorite": "4",
+          "result": "9"
+        }
+      ],
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』p.103",
+      "prizeMoney": {
+        "total": null
+      },
+      "damId": "akebono",
+      "owner": "横田",
+      "jbisId": "0000001025"
+    }
+  ]
+}

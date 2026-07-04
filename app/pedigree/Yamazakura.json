@@ -10,13 +10,15 @@
     {
       "id": "yamazakura",
       "name": "山桜",
+      "importedYear": "~1916",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "",
-      "breeder": "",
+      "breeder": "豪",
+      "owner": "（宮崎県）",
       "netkeibaId": "000a01f990",
       "raceStats": {
         "total": {
@@ -26,14 +28,15 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1522, 『競馬成績書 昭和9年春季・秋季』p.87",
+      "comment": "輸入年は白藤（の1929・ガンヂー）の生年から逆算。確認できる子孫の大半が宮崎県産であり、第五ツランクイールの子孫も宮崎県でのみ確認されていることから、おそらく宮崎県の貸下牝馬。"
     },
     {
       "id": "tomikawa",
       "name": "富川",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "第五ツランクイール",
       "dam": "山桜",
       "color": "",
@@ -54,11 +57,11 @@
       "damId": "yamazakura"
     },
     {
-      "id": "dainitoyama",
+      "id": "dai2-toyama",
       "name": "第二富山",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "富鳥",
       "dam": "富川",
       "color": "",
@@ -83,7 +86,7 @@
       "name": "白藤",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "総統",
       "dam": "第二富山",
       "color": "",
@@ -101,14 +104,15 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainitoyama"
+      "damId": "dai2-toyama",
+      "comment": "確認できる最初の産駒がガンヂー（1929年、父・永朝、宮崎県恒富村産）のため、生年は1925年以前か。"
     },
     {
-      "id": "daihappakufuji",
+      "id": "dai8-shirafuji",
       "name": "第八白藤",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "ジヤツカード",
       "dam": "白藤",
       "color": "",
@@ -132,14 +136,16 @@
       "id": "shirahama",
       "name": "白浜",
       "foaled": {
-        "year": 1939
+        "year": 1939,
+        "month": 3,
+        "day": 7
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "玻雅",
       "dam": "第八白藤",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "浜田薫（宮崎県門川村）",
       "netkeibaId": "000a00d8e4",
       "raceStats": {
         "total": {
@@ -149,24 +155,27 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1522",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daihappakufuji"
+      "damId": "dai8-shirafuji"
     },
     {
       "id": "misumarumasa",
       "name": "ミスマルマサ",
       "foaled": {
-        "year": 1954
+        "year": 1954,
+        "month": 4,
+        "day": 5
       },
+      "died": "1975.03. 死亡",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ウイザード",
       "dam": "白浜",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "甲斐精兵衛（宮崎県延岡市）",
       "netkeibaId": "000a00dcdd",
       "raceStats": {
         "total": {
@@ -176,7 +185,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2081",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -189,11 +198,11 @@
         "year": 1962
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "タカラボシ",
       "dam": "ミスマルマサ",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "赤坂武夫（北海道新冠村）",
       "netkeibaId": "000a00e01b",
       "raceStats": {
         "total": {
@@ -249,11 +258,295 @@
           "favorite": "12"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2081",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "misumarumasa"
+    },
+    {
+      "id": "ariakekingu",
+      "name": "アリアケキング",
+      "foaled": {
+        "year": 1976,
+        "month": 3,
+        "day": 20
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "サトホース",
+      "dam": "エバーライト",
+      "color": "鹿毛",
+      "breeder": "重田香（鹿児島県）",
+      "netkeibaId": "1976z00797",
+      "raceStats": {
+        "total": {
+          "runs": 41,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1981,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "新潟",
+          "race": "アラブ王冠(OP)",
+          "displayRace": "アラブ王冠",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "6",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 1981,
+            "month": 2,
+            "day": 14
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(春)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(秋)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "阪神",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "18",
+          "result": "8",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "阪神",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1980,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "小倉",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(春)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "3",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 12,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(秋)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "2",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 10,
+            "day": 27
+          },
+          "racecourse": "中京",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "中京",
+          "race": "シュンエイ記念(OP)",
+          "displayRace": "シュンエイ記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "10",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1979,
+            "month": 1,
+            "day": 28
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(春)",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "ever-right"
+    },
+    {
+      "id": "ever-right",
+      "name": "エバーライト",
+      "foaled": {
+        "year": 1971,
+        "month": 4,
+        "day": 15
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "チカライチ",
+      "dam": "ミフネヒメ",
+      "color": "鹿毛",
+      "breeder": "重田香（鹿児島県有明町）",
+      "netkeibaId": "000a00ea39",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.210",
+      "englishName": "Ever Right",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "mifunehime"
+    },
+    {
+      "id": "mifunehime",
+      "name": "ミフネヒメ",
+      "foaled": {
+        "year": 1961,
+        "month": 5,
+        "day": 20
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ミフネ",
+      "dam": "ミスフタマタ",
+      "color": "鹿毛",
+      "breeder": "土井昭徳（北海道新冠町）",
+      "netkeibaId": "000a00e282",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2152",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "misufutamata",
+      "comment": "母ミスフタマタが横浜系(1950)になっているが、正しくは山桜系(1954)。横浜系のミスフタマタに産駒はない。"
+    },
+    {
+      "id": "misufutamata",
+      "name": "ミスフタマタ",
+      "foaled": {
+        "year": 1954,
+        "month": 4,
+        "day": 22
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ウイザート",
+      "dam": "第五国光",
+      "color": "栗毛",
+      "breeder": "甲斐勝利（宮崎県延岡市）",
+      "netkeibaId": "000a00dba2",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2059",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "robinhoosan"
     }
   ]
 }

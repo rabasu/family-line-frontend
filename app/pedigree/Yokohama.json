@@ -1,24 +1,26 @@
 {
   "metadata": {
     "pedigreeName": "横浜",
-    "rootHorseId": "yokohama-1880",
+    "rootHorseId": "yokohama",
     "lastUpdated": "2025-11-23T17:18:58.913085Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "yokohama-1880",
+      "id": "yokohama",
       "name": "横浜",
       "foaled": {
         "year": 1880
       },
+      "importedYear": "1888",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "栃栗毛",
       "breeder": "豪",
+      "owner": "新冠御料牧場",
       "netkeibaId": "000a01c114",
       "raceStats": {
         "total": {
@@ -28,20 +30,21 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.243, 『新冠御料牧場沿革誌』p.25",
+      "comment": "『アラブ系牝馬系統大鑑』によれば明治13(1880)年生、明治21(1888)年輸入。『新冠御料牧場沿革史』によれば主馬寮にて繋養。同年10月、新冠牧馬場が主馬寮の管轄に移り、新冠御料牧場と改称され、同時に新冠御料牧場へ導入された。毛色の「栃栗毛」はソース不明、何らかの御料牧場関連資料か。"
     },
     {
-      "id": "dainiyokohama",
+      "id": "dai2-yokohama",
       "name": "第二横浜",
       "foaled": {
         "year": 1896
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "スプーネー",
       "dam": "横浜",
-      "color": "栗毛",
-      "breeder": "",
+      "color": "栃栗毛",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a01c115",
       "raceStats": {
         "total": {
@@ -51,20 +54,21 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『総馬匹名簿 新冠御料牧場 明治40年5月現在』(23/62)",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yokohama-1880"
+      "damId": "yokohama",
+      "comment": "netkeibaでは栗毛。『総馬匹名簿』では毛色「橡」。おそらく栃栗毛。"
     },
     {
-      "id": "kosumosu",
+      "id": "cosmos",
       "name": "コスモス",
       "foaled": {
         "year": 1913
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ウイリアム",
       "dam": "第二横浜",
       "color": "",
@@ -82,7 +86,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiyokohama"
+      "damId": "dai2-yokohama"
     },
     {
       "id": "genhana",
@@ -91,7 +95,7 @@
         "year": 1932
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "コスモス",
       "color": "",
@@ -109,20 +113,24 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kosumosu"
+      "damId": "cosmos"
     },
     {
-      "id": "anhana",
-      "name": "安華",
+      "id": "yasuhana",
+      "pedigreeName": "安華",
+      "name": "キンキヒメ",
       "foaled": {
-        "year": 1939
+        "year": 1939,
+        "month": 3,
+        "day": 13
       },
+      "died": "1957.03.03. 斃死",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "伯優",
       "dam": "玄華",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a00b78a",
       "raceStats": {
         "total": {
@@ -132,29 +140,32 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.5",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "genhana"
+      "damId": "genhana",
+      "comment": "1944～1946まで新冠御料牧場で、1922～1923まで民間で繁殖牝馬として繋養。その後なぜか1949～1951まで「キンキヒメ」の名で三重・愛知の地方競馬に出走。その後別の民間牧場で繋養されたが、流産・不受胎のみに終わった。"
     },
     {
       "id": "tsukiyasu",
       "name": "ツキヤス",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 6,
+        "day": 16
       },
       "sex": "female",
       "breed": "サラ系",
       "sire": "月友",
       "dam": "安華",
       "color": "栗毛",
-      "breeder": "JPN",
+      "breeder": "徳永忠男（北海道浦河郡浦河町）",
       "netkeibaId": "000a00b7aa",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 56,
+          "wins": 10
         },
         "divisions": []
       },
@@ -175,11 +186,11 @@
           "result": "1"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.50, 『母馬別競走成績書』p.19",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "anhana",
+      "damId": "yasuhana",
       "bogusId": "31853"
     },
     {
@@ -189,7 +200,7 @@
         "year": 1956
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "シマタカ",
       "dam": "ツキヤス",
       "color": "栃栗毛",
@@ -232,7 +243,7 @@
         "year": 1965
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "モンタヴァル(FR)",
       "dam": "ツキノヒカリ",
       "color": "鹿毛",
@@ -260,7 +271,7 @@
         "year": 1972
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "バルダスト(GB)",
       "dam": "ウルワシハヤブサ",
       "color": "鹿毛",
@@ -290,7 +301,7 @@
         "day": 29
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "モンクール(FR)",
       "dam": "パールハヤブサ",
       "color": "鹿毛",
@@ -358,294 +369,20 @@
       "damId": "pearl-hayabusa"
     },
     {
-      "id": "ariakekingu",
-      "name": "アリアケキング",
-      "foaled": {
-        "year": 1976,
-        "month": 3,
-        "day": 20
-      },
-      "sex": "male",
-      "breed": "サラ",
-      "sire": "サトホース",
-      "dam": "エバーライト",
-      "color": "鹿毛",
-      "breeder": "重田香（鹿児島県）",
-      "netkeibaId": "1976z00797",
-      "raceStats": {
-        "total": {
-          "runs": 41,
-          "wins": 6
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1981,
-            "month": 5,
-            "day": 3
-          },
-          "racecourse": "新潟",
-          "race": "アラブ王冠(OP)",
-          "displayRace": "アラブ王冠",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "13",
-          "result": "6",
-          "favorite": "12"
-        },
-        {
-          "date": {
-            "year": 1981,
-            "month": 2,
-            "day": 14
-          },
-          "racecourse": "中京",
-          "race": "アラブ大賞典(OP)",
-          "displayRace": "アラブ大賞典(春)",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "13",
-          "result": "9",
-          "favorite": "10"
-        },
-        {
-          "date": {
-            "year": 1980,
-            "month": 12,
-            "day": 7
-          },
-          "racecourse": "中京",
-          "race": "アラブ大賞典(OP)",
-          "displayRace": "アラブ大賞典(秋)",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "16",
-          "result": "6",
-          "favorite": "7"
-        },
-        {
-          "date": {
-            "year": 1980,
-            "month": 10,
-            "day": 25
-          },
-          "racecourse": "阪神",
-          "race": "タマツバキ記念(OP)",
-          "displayRace": "タマツバキ記念(秋)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "18",
-          "result": "8",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 1980,
-            "month": 5,
-            "day": 4
-          },
-          "racecourse": "阪神",
-          "race": "タマツバキ記念(OP)",
-          "displayRace": "タマツバキ記念(春)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "14",
-          "result": "1",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 1980,
-            "month": 3,
-            "day": 2
-          },
-          "racecourse": "小倉",
-          "race": "アラブ大賞典(OP)",
-          "displayRace": "アラブ大賞典(春)",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "14",
-          "result": "3",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 1979,
-            "month": 12,
-            "day": 2
-          },
-          "racecourse": "中京",
-          "race": "アラブ大賞典(OP)",
-          "displayRace": "アラブ大賞典(秋)",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "14",
-          "result": "2",
-          "favorite": "7"
-        },
-        {
-          "date": {
-            "year": 1979,
-            "month": 10,
-            "day": 27
-          },
-          "racecourse": "中京",
-          "race": "タマツバキ記念(OP)",
-          "displayRace": "タマツバキ記念(秋)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "13",
-          "result": "4",
-          "favorite": "7"
-        },
-        {
-          "date": {
-            "year": 1979,
-            "month": 9,
-            "day": 16
-          },
-          "racecourse": "中京",
-          "race": "シュンエイ記念(OP)",
-          "displayRace": "シュンエイ記念",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "10",
-          "result": "4",
-          "favorite": "6"
-        },
-        {
-          "date": {
-            "year": 1979,
-            "month": 5,
-            "day": 5
-          },
-          "racecourse": "京都",
-          "race": "タマツバキ記念(OP)",
-          "displayRace": "タマツバキ記念(春)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "11",
-          "result": "10",
-          "favorite": "8"
-        },
-        {
-          "date": {
-            "year": 1979,
-            "month": 1,
-            "day": 28
-          },
-          "racecourse": "中京",
-          "race": "アラブ大賞典(OP)",
-          "displayRace": "アラブ大賞典(春)",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "12",
-          "result": "9",
-          "favorite": "8"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "ever-right"
-    },
-    {
-      "id": "ever-right",
-      "name": "エバーライト",
-      "foaled": {
-        "year": 1971
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "チカライチ",
-      "dam": "ミフネヒメ",
-      "color": "鹿毛",
-      "breeder": "浦河町",
-      "netkeibaId": "000a00ea39",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "englishName": "Ever Right",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "mifunehime"
-    },
-    {
-      "id": "mifunehime",
-      "name": "ミフネヒメ",
-      "foaled": {
-        "year": 1961
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ミフネ",
-      "dam": "ミスフタマタ",
-      "color": "鹿毛",
-      "breeder": "",
-      "netkeibaId": "000a00e282",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "misufutamata"
-    },
-    {
-      "id": "misufutamata",
-      "name": "ミスフタマタ",
-      "foaled": {
-        "year": 1950
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "トキノチカラ",
-      "dam": "ロビンホーサン",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a00b7b0",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "robinhoosan"
-    },
-    {
       "id": "robinhoosan",
-      "name": "ロビンホーサン",
+      "pedigreeName": "ロビンホーサン",
+      "name": "イサムフジ",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 6,
+        "day": 15
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ミンドアー(GB)",
       "dam": "トレビアン",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "岡田康平（北海道静内郡静内町）",
       "netkeibaId": "000a00b73a",
       "raceStats": {
         "total": {
@@ -668,7 +405,7 @@
         "year": 1927
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "第二コスモス",
       "color": "",
@@ -686,16 +423,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainikosumosu"
+      "damId": "dai2-cosmos"
     },
     {
-      "id": "dainikosumosu",
+      "id": "dai2-cosmos",
       "name": "第二コスモス",
       "foaled": {
         "year": 1922
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ポートランドベー",
       "dam": "コスモス",
       "color": "",
@@ -713,20 +450,20 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kosumosu"
+      "damId": "cosmos"
     },
     {
-      "id": "oopuntsubame",
+      "id": "open-tsubame",
       "name": "オープンツバメ",
       "foaled": {
         "year": 1967
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ダイハード(GB)",
       "dam": "ヒサマツ",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "磯野貞五郎（北海道浦河郡浦河町）",
       "netkeibaId": "1967z00072",
       "raceStats": {
         "total": {
@@ -827,7 +564,7 @@
           "favorite": "11"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第4巻』p.79",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -837,14 +574,16 @@
       "id": "hisamatsu",
       "name": "ヒサマツ",
       "foaled": {
-        "year": 1958
+        "year": 1958,
+        "month": 6,
+        "day": 5
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ライジングフレーム(IRE)",
       "dam": "ツキヤス",
-      "color": "",
-      "breeder": "浦河町",
+      "color": "鹿毛",
+      "breeder": "徳永忠男（北海道浦河郡浦河町）",
       "netkeibaId": "000a00b8a6",
       "raceStats": {
         "total": {
@@ -854,7 +593,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第2巻』p.39, 『サラブレッド系種血統書 第3巻』p.77,",
       "englishName": "Hisamatsu",
       "prizeMoney": {
         "total": "0万円"
@@ -868,11 +607,11 @@
         "year": 1959
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ライジングフレーム(IRE)",
       "dam": "ツキヤス",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "徳永忠男（北海道浦河郡浦河町）",
       "netkeibaId": "1959z00098",
       "raceStats": {
         "total": {
@@ -1093,7 +832,7 @@
           "favorite": "7"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第2巻』p.39",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -1106,11 +845,11 @@
         "year": 1960
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ホースニユース",
       "dam": "カンパクヒメ",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "藤平盛夫（北海道静内町）",
       "netkeibaId": "1960z00279",
       "raceStats": {
         "total": {
@@ -1145,11 +884,12 @@
     {
       "id": "kanpakuhime",
       "name": "カンパクヒメ",
+      "formerPedigreeName": "ハナホマレ",
       "foaled": {
         "year": 1953
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "マヤホマレ",
       "dam": "第二玄華",
       "color": "鹿毛",
@@ -1168,20 +908,23 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainigenhana"
+      "damId": "dai2-genhana"
     },
     {
-      "id": "dainigenhana",
-      "name": "第二玄華",
+      "id": "dai2-genhana",
+      "pedigreeName": "第二玄華",
+      "name": "イロハ",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 4,
+        "day": 24
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "クモハタ",
       "dam": "玄華",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "田村信雄（北海道新冠郡新冠村）",
       "netkeibaId": "000a00b771",
       "raceStats": {
         "total": {
@@ -1191,7 +934,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.28",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -1204,11 +947,11 @@
         "year": 1956
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "クモキク",
       "dam": "成華",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "松本寛（福島県葛尾村）",
       "netkeibaId": "1956z00288",
       "raceStats": {
         "total": {
@@ -1234,7 +977,7 @@
           "favorite": "6"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.906",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -1244,14 +987,16 @@
       "id": "seihana-1937",
       "name": "成華",
       "foaled": {
-        "year": 1937
+        "year": 1937,
+        "month": 4,
+        "day": 7
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ベルアミ(AR)",
       "dam": "玄華",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場",
       "netkeibaId": "000a00d856",
       "raceStats": {
         "total": {
@@ -1261,7 +1006,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.905",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -1274,7 +1019,7 @@
         "year": 1954
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "クモハタ",
       "dam": "ツキヤス",
       "color": "",

@@ -17,14 +17,15 @@
       "breed": "サラ",
       "sire": "Ballyeaston",
       "dam": "The Shrew",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "英",
       "netkeibaId": "000a0024aa",
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.315",
       "importedYear": "1929",
       "familyNumber": "F1-b",
       "registration": "5巻616号",
-      "owner": "羽田牧場"
+      "owner": "羽田牧場（千葉県印旛郡遠山村）",
+      "importedBy": "羽田謹一郎"
     },
     {
       "id": "don-amitie",
@@ -38,8 +39,9 @@
       "breed": "サラ",
       "sire": "アジアエクスプレス",
       "dam": "クラシックス",
-      "color": "",
-      "breeder": "",
+      "color": "黒鹿毛",
+      "breeder": "村田牧場（新冠町）",
+      "owner": "山田貢一",
       "netkeibaId": "2020106006",
       "raceStats": {
         "total": {
@@ -86,8 +88,9 @@
       "breed": "サラ",
       "sire": "キングヘイロー",
       "dam": "モガミヒメ",
-      "color": "",
-      "breeder": "",
+      "color": "青鹿毛",
+      "breeder": "村田牧場（新冠町）",
+      "owner": "木村直樹",
       "netkeibaId": "2013102089",
       "raceStats": {
         "total": {
@@ -181,8 +184,9 @@
       "breed": "サラ",
       "sire": "マルゼンスキー",
       "dam": "ポイントメーカー",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "橋本牧場（早来町）",
+      "owner": "最上ホースクラブ",
       "netkeibaId": "1985103227",
       "raceStats": {
         "total": {
@@ -281,15 +285,19 @@
       "id": "kurihide",
       "name": "クリヒデ",
       "foaled": {
-        "year": 1958
+        "year": 1958,
+        "month": 3,
+        "day": 6
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "クリノハナ",
       "dam": "ケンタツキー",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "大東牧場（千葉県成田市東三里塚）",
+      "owner": "栗林友二",
       "netkeibaId": "1958100129",
+      "jbisId": "0000005726",
       "raceStats": {
         "total": {
           "runs": 31,
@@ -404,38 +412,41 @@
           "favorite": "3"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第7巻』p.242",
       "englishName": "Kurihide",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "1311.0万円"
       },
       "damId": "kentucky"
     },
     {
       "id": "kentucky",
       "name": "ケンタツキー",
+      "formerPedigreeName": "栄花",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 4,
+        "day": 9
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ダイオライト",
       "dam": "英月",
       "color": "栃栗毛",
-      "breeder": "千葉県",
+      "breeder": "大東牧場（千葉県印旛郡遠山村）",
       "netkeibaId": "000a002791",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 42,
+          "wins": 4
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第4巻』p.63, 『全国国営競馬場競馬成績書 昭和27年 春季』p.43, 『母馬別競走成績書』p.48",
       "englishName": "Kentucky",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "54.0万円"
       },
       "damId": "eigetsu"
     },
@@ -444,19 +455,22 @@
       "pedigreeName": "英月",
       "name": "テツバンザイ",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 2,
+        "day": 8
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "トウルヌソル(GB)",
       "dam": "セレタ",
       "color": "鹿毛",
-      "breeder": "千葉県",
+      "breeder": "羽田牧場（千葉県印旛郡遠山村）",
       "netkeibaId": "000a002646",
+      "registration": "16巻1989号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 36,
+          "wins": 7
         },
         "divisions": []
       },
@@ -627,7 +641,7 @@
           "result": "5"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第16巻』p.101, 『母馬別競走成績書』p.532",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -969,7 +983,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kurigen"
+      "damId": "kurigen",
+      "furigana": "クリゲニチ"
     },
     {
       "id": "kurigen",
@@ -5359,10 +5374,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kurihomare-ichi"
+      "damId": "kurihomare-no-1"
     },
     {
-      "id": "kurihomare-ichi",
+      "id": "kurihomare-no-1",
       "name": "クリホマレの壱",
       "foaled": {
         "year": 1958
@@ -6080,7 +6095,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kurihomare-ichi"
+      "damId": "kurihomare-no-1"
     },
     {
       "id": "scheat-stone",
@@ -6517,7 +6532,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kurihomare-ichi"
+      "damId": "kurihomare-no-1"
     },
     {
       "id": "flight-pier",
@@ -9454,10 +9469,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kentatsukii-shichi"
+      "damId": "kentacky-no-7"
     },
     {
-      "id": "kentatsukii-shichi",
+      "id": "kentacky-no-7",
       "name": "ケンタツキーの七",
       "foaled": {
         "year": 1959
@@ -10467,7 +10482,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kurihomare-ichi"
+      "damId": "kurihomare-no-1"
     },
     {
       "id": "suupaafuirudo",
@@ -11807,7 +11822,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kurihomare-ichi"
+      "damId": "kurihomare-no-1"
     },
     {
       "id": "kuridei",
@@ -12772,7 +12787,7 @@
       "id": "kuritsubame",
       "name": "クリツバメ",
       "foaled": {
-        "year": "1945"
+        "year": 1945
       },
       "sex": "female",
       "breed": "サラ",

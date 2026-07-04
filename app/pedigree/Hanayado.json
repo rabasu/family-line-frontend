@@ -10,13 +10,17 @@
     {
       "id": "hanayado",
       "name": "花宿",
-      "foaled": {},
+      "foaled": {
+        "year": 1901
+      },
+      "importedYear": "1905",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
-      "color": "",
-      "breeder": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "栗毛",
+      "breeder": "豪",
+      "owner": "鹿児島県貸下：岡本辰之助（囎唹郡産馬組合管理者財部村）",
       "netkeibaId": "000a01f5cc",
       "raceStats": {
         "total": {
@@ -26,7 +30,8 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『鹿児島県畜産史 下巻』p.61",
+      "comment": "豪洋。鹿児島県の貸下牝馬。"
     },
     {
       "id": "natsu",
@@ -35,23 +40,23 @@
         "year": 1916
       },
       "sex": "female",
-      "breed": "サラ",
-      "sire": "ラスバアン",
+      "breed": "サラ系",
+      "sire": "ラスバアン(英)",
       "dam": "花宿",
       "color": "",
       "breeder": "",
       "netkeibaId": "000a01f582",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.224, 『アラブ・アングロアラブ血統書 第2巻』p.1531",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "hanayado"
     },
@@ -62,7 +67,7 @@
         "year": 1924
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "ア系",
       "sire": "コーラン",
       "dam": "ナツ",
       "color": "",
@@ -70,45 +75,51 @@
       "netkeibaId": "000a01cfbf",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.224, 『アラブ・アングロアラブ血統書 第2巻』p.1531",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "natsu",
       "linkName": "イトハナ(1924)"
     },
     {
-      "id": "daigokamei",
-      "name": "第五花明",
+      "id": "dai5-hanaaki",
+      "pedigreeName": "第五花明",
+      "name": "ダイゴハナアキ",
+      "localName": "ラツキーフラワー",
       "foaled": {
-        "year": 1932
+        "year": 1932,
+        "month": 4,
+        "day": 11
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "秀明",
       "dam": "イトハナ",
       "color": "栃栗毛",
-      "breeder": "",
+      "breeder": "山下政吉（鹿児島県野方村）",
       "netkeibaId": "000a00d9d0",
+      "registration": "本登録番号5154号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1531",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "itohana-1924"
+      "damId": "itohana-1924",
+      "furigana": "ダイゴカメイ"
     },
     {
       "id": "takateru",
@@ -120,8 +131,8 @@
       "breed": "サラ",
       "sire": "クレタケ",
       "dam": "第五花明",
-      "color": "",
-      "breeder": "",
+      "color": "栃栗毛",
+      "breeder": "大和田源作（福島県滝根町）",
       "netkeibaId": "1954z00159",
       "raceStats": {
         "total": {
@@ -162,11 +173,11 @@
           "favorite": "3"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1531",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "daigokamei"
+      "damId": "dai5-hanaaki"
     }
   ]
 }

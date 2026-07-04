@@ -10,6 +10,7 @@
     {
       "id": "astonishment",
       "name": "アストニシメント",
+      "englishName": "Astonishment",
       "foaled": {
         "year": 1902
       },
@@ -24,7 +25,7 @@
       "importedYear": "1907",
       "familyNumber": "F7-c",
       "registration": "登録なし",
-      "owner": "小岩井農場"
+      "owner": "小岩井農場（岩手県岩手郡雫石村）"
     },
     {
       "id": "nihonpiro-kyiv",
@@ -524,68 +525,78 @@
       ],
       "source": "python_scraping, 『母馬別競走成績書』p.520",
       "prizeMoney": null,
-      "damId": "satoshifuji",
+      "damId": "kenfuji",
       "pedigreeName": "鶴藤",
       "englishName": "Tsurufuji",
       "jbisId": "0000376510",
       "bogusId": "20101"
     },
     {
-      "id": "satoshifuji",
+      "id": "kenfuji",
       "name": "賢藤",
+      "formerPedigreeName": "賢優",
       "foaled": {
-        "year": 1926
+        "year": 1926,
+        "month": 5,
+        "day": 31
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "種光",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "宮内省新冠牧場（北海道静内郡）",
       "netkeibaId": "000a0024a8",
+      "registration": "4巻481号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第4巻』p.53, 『馬匹血統登録書 第11巻』pp.422,445",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "tanehikari"
+      "damId": "tanemitsu",
+      "furigana": "ケンフジ"
     },
     {
-      "id": "tanehikari",
-      "name": "種光",
+      "id": "tanemitsu",
+      "pedigreeName": "種光",
+      "name": "アストリイア",
       "foaled": {
-        "year": 1919
+        "year": 1919,
+        "month": 4,
+        "day": 18
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ラシカツター(GB)",
       "dam": "第弐アストニシメント",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a0024c2",
+      "registration": "2巻242号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第2巻』p.90, 『馬匹血統登録書 第11巻』pp.455",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "dainiasutonishimento"
+      "damId": "dai2-astonishment",
+      "furigana": "タネミツ"
     },
     {
-      "id": "dainiasutonishimento",
+      "id": "dai2-astonishment",
       "name": "第弐アストニシメント",
       "foaled": {
         "year": 1909
@@ -1415,11 +1426,11 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigoasutonishimento",
+      "damId": "dai5-astonishment",
       "linkName": "デヤレスト(1928)"
     },
     {
-      "id": "daigoasutonishimento",
+      "id": "dai5-astonishment",
       "name": "第五アストニシメント",
       "foaled": {
         "year": 1913
@@ -3355,10 +3366,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dairokuoogumento"
+      "damId": "dai6-augment"
     },
     {
-      "id": "dairokuoogumento",
+      "id": "dai6-augment",
       "name": "第六オーグメント",
       "foaled": {
         "year": 1937
@@ -3411,7 +3422,7 @@
       "source": "python_scraping, 『母馬別競走成績書』p.494, 『馬匹血統登録書 第1巻』p.123",
       "englishName": "Augment",
       "prizeMoney": null,
-      "damId": "dainiasutonishimento"
+      "damId": "dai2-astonishment"
     },
     {
       "id": "triomphe",
@@ -4907,10 +4918,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanasutonishimento"
+      "damId": "dai3-astonishment"
     },
     {
-      "id": "daisanasutonishimento",
+      "id": "dai3-astonishment",
       "name": "第三アストニシメント",
       "foaled": {
         "year": 1911
@@ -9674,35 +9685,39 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shindou",
+      "damId": "kamifuji",
       "linkName": "フジトモ(1948)"
     },
     {
-      "id": "shindou",
+      "id": "kamifuji",
       "name": "神藤",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 1,
+        "day": 31
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "トウルヌソル(GB)",
       "dam": "賢藤",
       "color": "鹿毛",
-      "breeder": "千葉県",
+      "breeder": "宮内庁下総牧場",
       "netkeibaId": "000a00264a",
+      "registration": "15巻1817号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第拾五卷』p.107",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "satoshifuji"
+      "damId": "kenfuji",
+      "furigana": "カミフジ"
     },
     {
       "id": "nihonpillow-regalo",
@@ -11145,10 +11160,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonoogumento"
+      "damId": "dai4-augment"
     },
     {
-      "id": "daiyonoogumento",
+      "id": "dai4-augment",
       "name": "第四オーグメント",
       "foaled": {
         "year": 1934
@@ -11778,10 +11793,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanoogumento"
+      "damId": "dai3-augment"
     },
     {
-      "id": "daisanoogumento",
+      "id": "dai3-augment",
       "name": "第参オーグメント",
       "foaled": {
         "year": 1932
@@ -18512,10 +18527,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tajima-1955"
+      "damId": "tajima"
     },
     {
-      "id": "tajima-1955",
+      "id": "tajima",
       "name": "タジマ",
       "foaled": {
         "year": 1955
@@ -18948,7 +18963,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tajima-1955"
+      "damId": "tajima"
     },
     {
       "id": "silent-hunter",
@@ -21041,7 +21056,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigoasutonishimento"
+      "damId": "dai5-astonishment"
     },
     {
       "id": "godspeed",
@@ -23676,34 +23691,38 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shirowashi"
+      "damId": "hakushu"
     },
     {
-      "id": "shirowashi",
+      "id": "hakushu",
       "name": "白鷲",
       "foaled": {
-        "year": 1932
+        "year": 1932,
+        "month": 4,
+        "day": 8
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "オールグリーン(GB)",
       "dam": "ピユーアブルート",
-      "color": "",
-      "breeder": "",
+      "color": "黒鹿毛",
+      "breeder": "早田伝之助（福島県伊達郡半田村）",
       "netkeibaId": "000a002562",
+      "registration": "15巻1760号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第拾五卷』p.78",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "piyuuaburuuto"
+      "damId": "piyuuaburuuto",
+      "furigana": "ハクシュウ"
     },
     {
       "id": "piyuuaburuuto",
@@ -23730,10 +23749,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dairokuasutonishimento"
+      "damId": "dai6-astonishment"
     },
     {
-      "id": "dairokuasutonishimento",
+      "id": "dai6-astonishment",
       "name": "第六アストニシメント",
       "foaled": {
         "year": 1914
@@ -25363,10 +25382,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigogariasu"
+      "damId": "dai5-galleass"
     },
     {
-      "id": "daigogariasu",
+      "id": "dai5-galleass",
       "name": "第五ガリアス",
       "foaled": {
         "year": 1940
@@ -25390,11 +25409,12 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gariasu"
+      "damId": "galleass"
     },
     {
-      "id": "gariasu",
+      "id": "galleass",
       "name": "ガリアス",
+      "englishName": "Galleass",
       "foaled": {
         "year": 1928
       },
@@ -25403,8 +25423,9 @@
       "sire": "ガロン(GB)",
       "dam": "第弐アストニシメント",
       "color": "栗毛",
-      "breeder": "岩手県",
+      "breeder": "小岩井農場",
       "netkeibaId": "000a002382",
+      "registration": "5巻574号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -25413,11 +25434,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第5巻』p.50",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiasutonishimento"
+      "damId": "dai2-astonishment"
     },
     {
       "id": "fight-gulliver",
@@ -27110,10 +27131,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tsukikage-1958"
+      "damId": "tsukikage"
     },
     {
-      "id": "tsukikage-1958",
+      "id": "tsukikage",
       "name": "ツキカゲ",
       "foaled": {
         "year": 1958
@@ -27138,8 +27159,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ichijo",
-      "linkName": "ツキカゲ(1958)"
+      "damId": "ichijo"
     },
     {
       "id": "ichijo",
@@ -27295,25 +27315,28 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nenfuji",
+      "damId": "toshifuji",
       "englishName": "Ichijo",
       "owner": "遠田",
       "jbisId": "0000001136",
       "bogusId": "18991"
     },
     {
-      "id": "nenfuji",
+      "id": "toshifuji",
       "name": "年藤",
       "foaled": {
-        "year": 1940
+        "year": 1940,
+        "month": 3,
+        "day": 12
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "トウルヌソル(GB)",
       "dam": "賢藤",
       "color": "栗毛",
-      "breeder": "千葉県",
+      "breeder": "宮内庁下総牧場",
       "netkeibaId": "000a00263a",
+      "registration": "17巻2229号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -27322,11 +27345,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第拾七卷』p.105",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "satoshifuji"
+      "damId": "kenfuji"
     },
     {
       "id": "makino-tosho",
@@ -28140,10 +28163,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonareguro"
+      "damId": "dai4-areguro"
     },
     {
-      "id": "daiyonareguro",
+      "id": "dai4-areguro",
       "name": "第四アレグロ",
       "foaled": {
         "year": 1961
@@ -28680,10 +28703,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misuhoushuu-1956"
+      "damId": "miss-houshu"
     },
     {
-      "id": "misuhoushuu-1956",
+      "id": "miss-houshu",
       "name": "ミスホウシュウ",
       "foaled": {
         "year": 1956
@@ -30894,10 +30917,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiakiyuumen"
+      "damId": "dai2-acumen"
     },
     {
-      "id": "dainiakiyuumen",
+      "id": "dai2-acumen",
       "name": "第弐アキユーメン",
       "foaled": {
         "year": 1939
@@ -31747,7 +31770,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiakiyuumen"
+      "damId": "dai2-acumen"
     },
     {
       "id": "eagle-chateau",
@@ -36833,7 +36856,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanasutonishimento"
+      "damId": "dai3-astonishment"
     },
     {
       "id": "makihata-big",
@@ -38367,7 +38390,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dairokuasutonishimento"
+      "damId": "dai6-astonishment"
     },
     {
       "id": "boeing-lumber",
@@ -40723,7 +40746,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonareguro"
+      "damId": "dai4-areguro"
     },
     {
       "id": "taishin-beauty",
@@ -41020,10 +41043,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daihachioogumento"
+      "damId": "dai8-augment"
     },
     {
-      "id": "daihachioogumento",
+      "id": "dai8-augment",
       "name": "第八オーグメント",
       "foaled": {
         "year": 1941
@@ -43340,7 +43363,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tsukikage-1958"
+      "damId": "tsukikage"
     },
     {
       "id": "kaminohayabusa",
@@ -44017,10 +44040,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanasutoragaru"
+      "damId": "dai3-asutoragaru"
     },
     {
-      "id": "daisanasutoragaru",
+      "id": "dai3-asutoragaru",
       "name": "第参アストラガル",
       "foaled": {
         "year": 1934
@@ -44071,7 +44094,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigoasutonishimento"
+      "damId": "dai5-astonishment"
     },
     {
       "id": "sentaaguddo",
@@ -44418,10 +44441,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiasupaamitsusairu"
+      "damId": "dai2-asper-missile"
     },
     {
-      "id": "dainiasupaamitsusairu",
+      "id": "dai2-asper-missile",
       "name": "第弐アスパーミツサイル",
       "foaled": {
         "year": 1932
@@ -45625,10 +45648,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidakayo"
+      "damId": "hidakahomare"
     },
     {
-      "id": "hidakayo",
+      "id": "hidakahomare",
       "name": "日高誉",
       "foaled": {
         "year": 1949
@@ -45706,10 +45729,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainigariasu"
+      "damId": "dai2-galleass"
     },
     {
-      "id": "dainigariasu",
+      "id": "dai2-galleass",
       "name": "第弐ガリアス",
       "foaled": {
         "year": 1932
@@ -45733,7 +45756,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gariasu"
+      "damId": "galleass"
     },
     {
       "id": "masa-eishun",
@@ -46531,7 +46554,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidakayo"
+      "damId": "hidakahomare"
     },
     {
       "id": "shuaauin",
@@ -46871,7 +46894,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidakayo"
+      "damId": "hidakahomare"
     },
     {
       "id": "seven-arrow",
@@ -47582,7 +47605,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonoogumento"
+      "damId": "dai4-augment"
     },
     {
       "id": "kishuurooreru",
@@ -49576,7 +49599,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misuhoushuu-1956"
+      "damId": "miss-houshu"
     },
     {
       "id": "mejirodake",
@@ -50259,7 +50282,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shindou"
+      "damId": "kamifuji"
     },
     {
       "id": "ryuzuki",
@@ -50631,7 +50654,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidakayo"
+      "damId": "hidakahomare"
     },
     {
       "id": "masafaitaa",
@@ -51293,7 +51316,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigogariasu"
+      "damId": "dai5-galleass"
     },
     {
       "id": "yuuyuu",
@@ -51553,7 +51576,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainigariasu"
+      "damId": "dai2-galleass"
     },
     {
       "id": "horan",
@@ -52173,7 +52196,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiakiyuumen"
+      "damId": "dai2-acumen"
     },
     {
       "id": "tokinotaimu",
@@ -52291,7 +52314,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tajima-1955"
+      "damId": "tajima"
     },
     {
       "id": "shimofusa-homare",
@@ -53150,7 +53173,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanoogumento"
+      "damId": "dai3-augment"
     },
     {
       "id": "homaretaikou",
@@ -53662,10 +53685,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hotomo"
+      "damId": "yasutomo"
     },
     {
-      "id": "hotomo",
+      "id": "yasutomo",
       "name": "保友",
       "foaled": {
         "year": 1948
@@ -53928,7 +53951,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hotomo"
+      "damId": "yasutomo"
     },
     {
       "id": "hakutomoe",
@@ -54283,7 +54306,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidakayo"
+      "damId": "hidakahomare"
     },
     {
       "id": "kizenchikara",
@@ -54461,7 +54484,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidakayo"
+      "damId": "hidakahomare"
     },
     {
       "id": "katsura-shuho",
@@ -54715,13 +54738,13 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigooogumento",
+      "damId": "dai5-augment",
       "englishName": "Mineno Matsu",
       "jbisId": "0000376593",
       "bogusId": "19698"
     },
     {
-      "id": "daigooogumento",
+      "id": "dai5-augment",
       "name": "第五オーグメント",
       "foaled": {
         "year": 1936
@@ -55412,7 +55435,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nenfuji"
+      "damId": "toshifuji"
     },
     {
       "id": "takakuraoo",
@@ -55485,7 +55508,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hidakayo"
+      "damId": "hidakahomare"
     },
     {
       "id": "shinsekaiichi",
@@ -56084,7 +56107,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigogariasu",
+      "damId": "dai5-galleass",
       "owner": "戸谷",
       "jbisId": "0000001998",
       "bogusId": "26901"
@@ -56204,7 +56227,7 @@
       "prizeMoney": {
         "total": "8万7,500円"
       },
-      "damId": "satoshifuji",
+      "damId": "kenfuji",
       "pedigreeName": "年藤",
       "owner": "栗林友二",
       "trainer": "尾形藤吉（東京）",
@@ -56428,11 +56451,11 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daihachiasutonishimento",
+      "damId": "dai8-astonishment",
       "linkName": "サンシャイン(1926)"
     },
     {
-      "id": "daihachiasutonishimento",
+      "id": "dai8-astonishment",
       "name": "第八アストニシメント",
       "foaled": {
         "year": 1916
@@ -56962,7 +56985,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nenfuji",
+      "damId": "toshifuji",
       "owner": "前田",
       "jbisId": "0000000294",
       "bogusId": "66342"
@@ -56971,7 +56994,7 @@
       "id": "niyuujiyapan",
       "name": "ニユージヤパン",
       "foaled": {
-        "year": "1943"
+        "year": 1943
       },
       "sex": "male",
       "breed": "サラ",
@@ -57289,7 +57312,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonoogumento",
+      "damId": "dai4-augment",
       "owner": "癸生川善松",
       "trainer": "尾形藤吉（東京）",
       "ahonooraId": "hatakaze"
@@ -57455,7 +57478,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daihachioogumento",
+      "damId": "dai8-augment",
       "englishName": "Hoshu Takara",
       "owner": "上田",
       "jbisId": "0000002666",
@@ -57674,7 +57697,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigogariasu",
+      "damId": "dai5-galleass",
       "owner": "眞砂",
       "jbisId": "0000000362",
       "bogusId": "27753"
@@ -58390,7 +58413,7 @@
         }
       ],
       "source": "python_scraping",
-      "damId": "nenfuji",
+      "damId": "toshifuji",
       "englishName": "Yamaichi",
       "owner": "永田雅一",
       "trainer": "尾形藤吉（東京）",
@@ -58453,7 +58476,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanasutoragaru",
+      "damId": "dai3-asutoragaru",
       "bogusId": "53602"
     },
     {
@@ -58515,7 +58538,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonoogumento",
+      "damId": "dai4-augment",
       "comment": "『母馬別競走成績書』によれば、S18に17戦4勝。S19の成績は記載がないが、日本競馬史には入着が記録されている。"
     },
     {
@@ -58695,7 +58718,7 @@
       "prizeMoney": {
         "total": "0.0万円"
       },
-      "damId": "daisanoogumento",
+      "damId": "dai3-augment",
       "englishName": "Kuretake",
       "jbisId": "0000333047",
       "bogusId": "16792"
@@ -58922,7 +58945,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "satoshifuji",
+      "damId": "kenfuji",
       "bogusId": "19974"
     },
     {
@@ -59008,7 +59031,7 @@
         }
       ],
       "bogusId": "53717",
-      "damId": "tanehikari"
+      "damId": "tanemitsu"
     },
     {
       "id": "katsuihai",
@@ -59134,6 +59157,422 @@
       ],
       "bogusId": "53472",
       "damId": "augment"
+    },
+    {
+      "id": "suzukahaado",
+      "name": "スズカハード",
+      "foaled": {
+        "year": 1970
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "ハードリドン(GB)",
+      "dam": "ツキカゲ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1970z00256",
+      "raceStats": {
+        "total": {
+          "runs": 43,
+          "wins": 11
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 29
+          },
+          "racecourse": "小倉",
+          "race": "小倉記念(OP)",
+          "displayRace": "小倉記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 8,
+            "day": 8
+          },
+          "racecourse": "小倉",
+          "race": "北九州記念(OP)",
+          "displayRace": "北九州記念",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "7",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 7,
+            "day": 11
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 29
+          },
+          "racecourse": "中京",
+          "race": "中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(OP)",
+          "displayRace": "CBC賞",
+          "distance": "芝1400",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "4",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "11",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 7,
+            "day": 13
+          },
+          "racecourse": "中京",
+          "race": "東海テレビ杯金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "中京",
+          "race": "トヨタ賞中京記念(OP)",
+          "displayRace": "中京記念",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "京都",
+          "race": "京阪杯(OP)",
+          "displayRace": "京阪杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "3",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "阪神",
+          "race": "朝日チャレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 7,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 6,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "阪急杯(OP)",
+          "displayRace": "阪急杯",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "5",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1974,
+            "month": 3,
+            "day": 31
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "10",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tsukikage"
+    },
+    {
+      "id": "masayuki",
+      "name": "マサユキ",
+      "foaled": {
+        "year": 1962
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "トサミドリ",
+      "dam": "ミスホウシュウ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1962z00260",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 5,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(OP)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_big8",
+          "entry": "22",
+          "result": "8",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 4,
+            "day": 18
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(OP)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_big8",
+          "entry": "20",
+          "result": "13",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 3,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "スプリングS(OP)",
+          "displayRace": "スプリングS",
+          "distance": "芝1800",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "6",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 2,
+            "day": 28
+          },
+          "racecourse": "中京",
+          "race": "きさらぎ賞(OP)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1700",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "miss-houshu",
+      "comment": "netkeibaでは母ミスホウシュウがオーバーヤン五ノ七系(1958)になっているが、正しくはアストニシメント系(1956)。"
+    },
+    {
+      "id": "erimotenryuu",
+      "name": "エリモテンリュウ",
+      "foaled": {
+        "year": 1973
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "セダン(FR)",
+      "dam": "タジマ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1973z00069",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1976,
+            "month": 2,
+            "day": 29
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(OP)",
+          "displayRace": "毎日杯",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "13",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1976,
+            "month": 1,
+            "day": 11
+          },
+          "racecourse": "京都",
+          "race": "シンザン記念(OP)",
+          "displayRace": "シンザン記念",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "15",
+          "result": "13",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "農林省賞典阪神3歳ス(OP)",
+          "displayRace": "阪神3歳S",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1975,
+            "month": 9,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "デイリー杯3歳ステー(OP)",
+          "displayRace": "デイリー杯3歳S",
+          "distance": "芝1200",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tajima",
+      "comment": "netkeibaでは母タジマがオーバーヤン五ノ七系(1964)になっているが、正しくはアストニシメント系(1955)。"
     }
   ]
 }

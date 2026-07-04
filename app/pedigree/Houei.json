@@ -9,62 +9,115 @@
   "horses": [
     {
       "id": "houei",
-      "name": "宝永",
+      "pedigreeName": "宝永",
+      "name": "ホーエイ",
       "foaled": {
         "year": 1907
       },
+      "importedYear": "1913",
+      "importedBy": "阪神競馬倶楽部（大正二年秋季抽籤馬）",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "Loombah",
       "dam": "Appearance",
-      "color": "",
+      "color": "鹿毛",
       "breeder": "豪",
       "netkeibaId": "000a00b70c",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping"
+      "raceResults": [
+        {
+          "date": {
+            "year": 1914,
+            "month": 6,
+            "day": 1
+          },
+          "racecourse": "阪神",
+          "race": "帝室御賞典（阪神・春）",
+          "distance": "1mile",
+          "grade": "empire_cup",
+          "entry": "",
+          "favorite": "",
+          "result": "1",
+          "displayRace": "帝室御賞典（東京・春）"
+        }
+      ],
+      "source": "python_scraping, 『日本競馬の歩み 資料編』p.303, 『日本之産馬 4(8)』p.50",
+      "furigana": "ホウエイ",
+      "comment": "『日本之産馬 4(8)』によれば大正二年秋季の阪神抽籤馬。競走馬「ホーエイ」と繁殖牝馬「宝永」は公的には同一馬とされていないが、昭和年間から同一視されることが多いため、ここでも同一とする。"
     },
     {
-      "id": "piyuagoorudo",
-      "name": "ピユアゴールド",
+      "id": "pure-gold",
+      "pedigreeName": "ピユアゴールド",
+      "name": "ピユーアゴウルド",
       "foaled": {
         "year": 1919
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ガロン(GB)",
       "dam": "宝永",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "千本松農場",
       "netkeibaId": "000a01c240",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 10,
+          "wins": 9
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1923,
+            "month": 4,
+            "day": 29
+          },
+          "racecourse": "目黒",
+          "race": "帝室御賞典（東京・春）",
+          "distance": "9furlong",
+          "grade": "empire_cup",
+          "entry": "",
+          "favorite": "",
+          "result": "1",
+          "displayRace": "帝室御賞典（東京・春）"
+        },
+        {
+          "date": {
+            "year": 1923,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "目黒",
+          "race": "優勝内国産馬聯合",
+          "distance": "2mile",
+          "grade": "empire_2mile",
+          "entry": "6",
+          "favorite": "",
+          "result": "1",
+          "displayRace": "連合二哩（秋）"
+        }
+      ],
+      "source": "python_scraping, 『日本競馬の歩み 資料編』p.66, 『中央獣医会雑誌 37(1)』p.90",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "8,201円"
       },
       "damId": "houei"
     },
     {
-      "id": "atsupiiaransu",
+      "id": "appearance",
       "name": "アツピーアランス",
       "foaled": {
         "year": 1926
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ダイヤモンドウエツデイング(GB)",
       "dam": "ピユアゴールド",
       "color": "鹿毛",
@@ -82,7 +135,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "piyuagoorudo"
+      "damId": "pure-gold"
     },
     {
       "id": "wakamidori",
@@ -91,7 +144,7 @@
         "year": 1938
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "レイモンド(IRE)",
       "dam": "アツピーアランス",
       "color": "鹿毛",
@@ -109,13 +162,13 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "atsupiiaransu"
+      "damId": "appearance"
     },
     {
-      "id": "koronbusu",
+      "id": "columbus",
       "name": "コロンブス",
       "foaled": {
-        "year": "1946"
+        "year": 1946
       },
       "sex": "male",
       "breed": "サラ系",
@@ -326,7 +379,7 @@
         "year": 1922
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ガロン(GB)",
       "dam": "宝永",
       "color": "",

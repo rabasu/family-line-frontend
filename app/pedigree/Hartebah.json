@@ -10,6 +10,7 @@
     {
       "id": "hartebah",
       "name": "ハーテバ",
+      "englishName": "Hartebah",
       "foaled": {
         "year": 1913
       },
@@ -17,7 +18,7 @@
       "breed": "アラ",
       "sire": "El Bulod",
       "dam": "Haffia",
-      "color": "",
+      "color": "芦毛",
       "breeder": "米",
       "netkeibaId": "000a01c81f",
       "raceStats": {
@@ -28,34 +29,37 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.86-87",
-      "importedYear": "1918?",
-      "owner": "成驩牧場（朝鮮）"
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』pp.86-87, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.805, 『陸軍獣医団報 (164)』pp.111-115, 『朝鮮農会報 13(1)』口絵, 『The Forgotten Man: Peter Bradley’s Role in Early American Breeding (Part II)』",
+      "importedYear": "1917",
+      "owner": "成驩牧場（朝鮮忠清南道天安郡成驩面）",
+      "comment": "成驩牧場の繁殖数記録より、1919年に生産された馬は全て1917年に輸入された牝馬の産駒であると考えられる（1918年に輸入されたサラ牝馬が1919年に持込馬を出産しているため）。また、1918年1月の『朝鮮農会報 13(1)』に写真が掲載されているため、撮影時期を考えれば1917年の輸入が自然か。よって1919年にナヤバを産んでいる本馬は1917年輸入と推定。毛色はAll Pedigreeおよび英字記事より。"
     },
     {
       "id": "nayaba",
       "name": "ナヤバ",
       "foaled": {
-        "year": 1919
+        "year": 1919,
+        "month": 5,
+        "day": 3
       },
       "sex": "female",
       "breed": "アア",
-      "sire": "ザミール",
+      "sire": "ザミール(US)",
       "dam": "ハーテバ",
-      "color": "",
-      "breeder": "",
+      "color": "芦毛",
+      "breeder": "成驩牧場",
       "netkeibaId": "000a00f86d",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.803",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "hartebah"
     },
@@ -63,26 +67,28 @@
       "id": "kazaaru",
       "name": "カザール",
       "foaled": {
-        "year": 1926
+        "year": 1926,
+        "month": 5,
+        "day": 4
       },
       "sex": "female",
-      "breed": "アア",
+      "breed": "アラ",
       "sire": "シヤーマー(US)",
       "dam": "ナヤバ",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "成驩牧場",
       "netkeibaId": "000a0004f8",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.10",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "nayaba"
     },
@@ -90,28 +96,31 @@
       "id": "kaika-1943",
       "name": "開華",
       "foaled": {
-        "year": 1943
+        "year": 1943,
+        "month": 4,
+        "day": 1
       },
       "sex": "female",
       "breed": "アア",
       "sire": "開銀",
       "dam": "カザール",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "北村直枝（青森県上北郡三沢村）",
       "netkeibaId": "000a00c71f",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.161-162",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "kazaaru"
+      "damId": "kazaaru",
+      "furigana": "カイカ"
     },
     {
       "id": "ginhana",
@@ -692,7 +701,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kazaaru"
+      "damId": "kazaaru",
+      "furigana": "ハナイツ"
     }
   ]
 }

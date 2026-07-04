@@ -10,17 +10,19 @@
     {
       "id": "rhine",
       "name": "ライン",
+      "englishName": "Rhine",
       "foaled": {
         "year": 1900
       },
+      "died": "1921. 以降不明",
       "sex": "female",
       "breed": "サラ",
       "sire": "Suspender",
       "dam": "Revelry",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "英",
       "netkeibaId": "000a018482",
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『サラブレッド血統書 第3巻』p.246",
       "importedYear": "1907",
       "familyNumber": "F5-e",
       "registration": "登録なし",
@@ -224,10 +226,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "suihto-pahru"
+      "damId": "sweet-pearl"
     },
     {
-      "id": "suihto-pahru",
+      "id": "sweet-pearl",
       "name": "スイートパール",
       "foaled": {
         "year": 1961
@@ -430,7 +432,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takeshichou",
+      "damId": "buchou",
       "pedigreeName": "スイートハート",
       "englishName": "Sweet Heart",
       "owner": "鈴木",
@@ -438,8 +440,9 @@
       "bogusId": "24215"
     },
     {
-      "id": "takeshichou",
-      "name": "武兆",
+      "id": "buchou",
+      "pedigreeName": "武兆",
+      "name": "ミツアキ",
       "foaled": {
         "year": 1938
       },
@@ -448,17 +451,17 @@
       "sire": "月友",
       "dam": "光風",
       "color": "栗毛",
-      "breeder": "静内町",
+      "breeder": "帝室林野局札幌支局新冠出張所",
       "netkeibaId": "000a002589",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 8,
+          "wins": 2
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.255, 『母馬別競走成績書』p.522",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -468,15 +471,18 @@
       "id": "koufuu",
       "name": "光風",
       "foaled": {
-        "year": 1933
+        "year": 1933,
+        "month": 3,
+        "day": 2
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ブラツクスミス(GB)",
       "dam": "華栄",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "帝室林野局札幌支局新冠出張所",
       "netkeibaId": "000a0023ab",
+      "registration": "9巻1070号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -485,7 +491,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.254",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -495,15 +501,18 @@
       "id": "kaei",
       "name": "華栄",
       "foaled": {
-        "year": 1924
+        "year": 1924,
+        "month": 4,
+        "day": 4
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "リツツルフエーム",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "新冠御料牧場（北海道静内郡静内町）",
       "netkeibaId": "000a0194b9",
+      "registration": "2巻247号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -512,25 +521,30 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.210",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ritsutsurufueemu"
+      "damId": "little-fame",
+      "furigana": "カエイ"
     },
     {
-      "id": "ritsutsurufueemu",
+      "id": "little-fame",
       "name": "リツツルフエーム",
       "foaled": {
-        "year": 1915
+        "year": 1915,
+        "month": 2,
+        "day": 24
       },
+      "died": "1937. 斃死",
       "sex": "female",
       "breed": "サラ",
       "sire": "ルーヂゲーア(GB)",
       "dam": "第二ライン",
       "color": "黒鹿毛",
-      "breeder": "",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a018484",
+      "registration": "2巻239号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -539,24 +553,28 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.552",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainirain"
+      "damId": "dai2-rhine"
     },
     {
-      "id": "dainirain",
+      "id": "dai2-rhine",
       "name": "第二ライン",
       "foaled": {
-        "year": 1910
+        "year": 1910,
+        "month": 5,
+        "day": 2
       },
+      "died": "1931.03. 斃死",
       "sex": "female",
       "breed": "サラ",
       "sire": "インタグリオー(GB)",
       "dam": "ライン",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
+      "registration": "1巻71号",
       "netkeibaId": "000a018483",
       "raceStats": {
         "total": {
@@ -1123,7 +1141,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takeshichou",
+      "damId": "buchou",
       "pedigreeName": "スウイイスー",
       "owner": "高峰三枝子→鈴木健之→井門昭二",
       "trainer": "松山吉三郎（東京）→尾形藤吉（東京）→勝又衛（南関東）",
@@ -3240,7 +3258,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takeshichou"
+      "damId": "buchou"
     },
     {
       "id": "minshiyuu",
@@ -3614,10 +3632,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiritsutsurufueemu"
+      "damId": "dai2-little-fame"
     },
     {
-      "id": "dainiritsutsurufueemu",
+      "id": "dai2-little-fame",
       "name": "第貮リツツルフエーム",
       "foaled": {
         "year": 1920
@@ -3641,7 +3659,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ritsutsurufueemu"
+      "damId": "little-fame"
     },
     {
       "id": "mihopegasasu",
@@ -3731,6 +3749,114 @@
       },
       "damId": "kouchiyou-1959",
       "comment": "netkeibaでは母がニンプ系のコウチヨウ(1962)になっているが、正しくはライン系のコウチヨウ(1959)。"
+    },
+    {
+      "id": "take-homare",
+      "name": "タケホマレ",
+      "foaled": {
+        "year": 1955,
+        "month": 6,
+        "day": 4
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "タカクラヤマ",
+      "dam": "武兆",
+      "color": "栗毛",
+      "breeder": "静内",
+      "netkeibaId": "",
+      "jbisId": "0000003928",
+      "raceStats": {
+        "total": {
+          "runs": 32,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1958,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "朝日チヤレンジC(OP)",
+          "displayRace": "朝日チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "京都",
+          "race": "京都記念競走(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "2",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "菊花賞競走(OP)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_big8",
+          "entry": "9",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "阪神",
+          "race": "神戸盃競走(OP)",
+          "displayRace": "神戸盃",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1958,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都特別競走(OP)",
+          "displayRace": "京都特別",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "8",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Take Homare",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "buchou",
+      "comment": "netkeibaではソートウエーヴ系（父クモノハナ・母ピンアップ）となっているが、正しくはライン系（父タカクラヤマ・母武兆）。"
     }
   ]
 }

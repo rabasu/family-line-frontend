@@ -13,6 +13,9 @@
       "foaled": {
         "year": 1921
       },
+      "died": "1937.04.16. 斃死",
+      "importedYear": "1929",
+      "importedBy": "一條友吉",
       "sex": "female",
       "breed": "サラ",
       "sire": "Royal",
@@ -20,9 +23,9 @@
       "color": "栗毛",
       "breeder": "米",
       "netkeibaId": "",
-      "source": "『明治・大正・昭和初期の輸入馬』",
+      "source": "『明治・大正・昭和初期の輸入馬』, 『馬匹血統登録書 第8巻』p.43, 『サラブレッド血統書 第1巻』p.513",
       "registration": "8巻853号",
-      "owner": "松宮清",
+      "owner": "松宮清【東北牧場】",
       "comment": "netkeibaでは同名の豪サラ・ミラ(1894)と混同されている。福甲→ブランドキングの系統はこちらのミラ(1921)の系統。",
       "linkName": "ミラ(1921)"
     },
@@ -30,15 +33,18 @@
       "id": "fukukabuto",
       "name": "福甲",
       "foaled": {
-        "year": 1937
+        "year": 1937,
+        "month": 4,
+        "day": 15
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "カブトヤマ",
       "dam": "ミラ",
       "color": "栗毛",
-      "breeder": "青森県",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "000a00266d",
+      "registration": "14巻1688号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -47,29 +53,30 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第14巻』p.183",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "milla"
+      "damId": "milla",
+      "furigana": "フクカブト"
     },
     {
-      "id": "burandokingu",
+      "id": "brand-king",
       "name": "ブランドキング",
       "foaled": {
-        "year": "1943"
+        "year": 1943
       },
       "sex": "gelding",
       "breed": "サラ",
       "sire": "アヅマダケ",
       "dam": "福甲",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 33,
+          "wins": 9
         },
         "divisions": []
       },
@@ -105,7 +112,7 @@
           "result": "3"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.358",
       "bogusId": "93267",
       "damId": "fukukabuto"
     }

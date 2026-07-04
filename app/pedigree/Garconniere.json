@@ -13,13 +13,16 @@
       "foaled": {
         "year": 1921
       },
+      "importedYear": "1927",
       "sex": "female",
       "breed": "サラ",
       "sire": "Trompe la Mort",
       "dam": "Bradamante",
       "color": "栗毛",
       "breeder": "米",
+      "owner": "東北牧場",
       "netkeibaId": "000a0192ef",
+      "registration": "8巻878号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -28,29 +31,34 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第8巻』p.56, 『サラブレッド血統書 第1巻』p.204",
       "englishName": "Garconniere",
       "prizeMoney": {
         "total": "0万円"
-      }
+      },
+      "comment": "所有者は松宮清名義。松宮は東北牧場副社長なので「東北牧場」表記でまとめる。"
     },
     {
-      "id": "hatsukaminari",
+      "id": "hatsurai",
       "name": "初雷",
       "foaled": {
-        "year": 1931
+        "year": 1931,
+        "month": 2,
+        "day": 26
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "タラツプ(GB)",
       "dam": "ガアコニア",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
+      "owner": "東北牧場",
       "netkeibaId": "000a0023d2",
+      "registration": "8巻895号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 9
         },
         "divisions": []
       },
@@ -63,9 +71,9 @@
           },
           "racecourse": null,
           "race": "阪神四歳牝馬",
-          "displayRace": "阪神四歳牝馬",
+          "displayRace": "阪神四歳牝馬（春）",
           "distance": null,
-          "grade": "jrs_grade",
+          "grade": "empire_grade",
           "entry": null,
           "favorite": null,
           "result": "1"
@@ -78,39 +86,42 @@
           },
           "racecourse": null,
           "race": "牝馬連合競走",
-          "displayRace": "牝馬連合",
+          "displayRace": "牝馬連合（春）",
           "distance": null,
-          "grade": "jrs_grade",
+          "grade": "empire_2mile",
           "entry": null,
           "favorite": null,
           "result": "1"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第8巻』p.64, 『母馬別競走成績書』p.pp.512-513",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "garconniere",
       "bogusId": "42791",
-      "formerName": "グロリア"
+      "formerName": "グロリア",
+      "furigana": "ハツライ"
     },
     {
       "id": "hatsunobori",
-      "name": "初幟",
+      "pedigreeName": "初幟",
+      "name": "セントソール",
       "foaled": {
-        "year": "1939"
+        "year": 1939
       },
+      "died": "1948.08.15. 斃死",
       "sex": "female",
       "breed": "サラ",
       "sire": "プライオリーパーク(GB)",
       "dam": "初雷",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 23,
+          "wins": 6
         },
         "divisions": []
       },
@@ -131,27 +142,29 @@
           "result": "8"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.403, 『母馬別競走成績書』p.548, 『サラブレッド血統書 第3巻』p.108",
       "bogusId": "42790",
-      "damId": "hatsukaminari"
+      "damId": "hatsurai",
+      "furigana": "ハツノボリ"
     },
     {
       "id": "kimigayo",
       "name": "キミガヨ",
+      "formerPedigreeName": "初優",
       "foaled": {
-        "year": "1947"
+        "year": 1947
       },
       "sex": "male",
       "breed": "サラ",
       "sire": "カブトヤマ",
       "dam": "初幟",
       "color": "黒鹿毛",
-      "breeder": "JPN",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 33,
+          "wins": 8
         },
         "divisions": []
       },
@@ -234,20 +247,20 @@
       ],
       "damId": "hatsunobori",
       "bogusId": "53428",
-      "source": "python_scraping"
+      "source": "python_scraping, 『サラブレッド血統書 第3巻』p.108, 『母馬別競走成績書』p.306"
     },
     {
       "id": "hatsukabuto",
       "name": "初甲",
       "foaled": {
-        "year": "1936"
+        "year": 1936
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "カブトヤマ",
       "dam": "ガアコニア",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -259,25 +272,26 @@
       "raceResults": [],
       "source": "python_scraping",
       "bogusId": "27043",
-      "damId": "garconniere"
+      "damId": "garconniere",
+      "furigana": "ハツカブト"
     },
     {
       "id": "nishitatsupu",
       "name": "ニシタツプ",
       "foaled": {
-        "year": "1945"
+        "year": 1945
       },
       "sex": "male",
       "breed": "サラ",
       "sire": "トキノチカラ",
       "dam": "初甲",
       "color": "栗毛",
-      "breeder": "JPN",
+      "breeder": "",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 62,
+          "wins": 10
         },
         "divisions": []
       },
@@ -375,7 +389,7 @@
       ],
       "damId": "hatsukabuto",
       "bogusId": "27042",
-      "source": "python_scraping"
+      "source": "python_scraping, 『母馬別競走成績書』p.306"
     }
   ]
 }

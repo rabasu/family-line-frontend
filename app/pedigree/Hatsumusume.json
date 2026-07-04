@@ -13,9 +13,10 @@
       "foaled": {
         "year": 1898
       },
+      "importedYear": "（内国産）",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
+      "breed": "中半",
+      "sire": "（第五ブラツクホーク）",
       "dam": "",
       "color": "",
       "breeder": "",
@@ -28,7 +29,9 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『昭和24年度 国営京都競馬抽籤新馬血統書』p.37, 『アラブ系牝馬系統大鑑』p.223",
+      "furigana": "ハツムスメ",
+      "comment": "『国営京都競馬抽籤新馬血統書』では父「第五ブラツクホース」。これは第五ブラツクホークの誤記と思われるが、第五ブラツクホークはbogusでは1896年生。これだと本馬の生年（1898年）と矛盾する。『国営京都競馬抽籤新馬血統書』以外で父名の記載がないため、一旦保留程度の記載にとどめる。"
     },
     {
       "id": "dainihatsumusume",
@@ -37,7 +40,7 @@
         "year": 1913
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "中半",
       "sire": "キングスクウリヤー",
       "dam": "初娘",
       "color": "",
@@ -64,7 +67,7 @@
         "year": 1917
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "第二アラデユ",
       "dam": "第二初娘",
       "color": "",
@@ -91,7 +94,7 @@
         "year": 1929
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "軽半",
       "sire": "芝蘭",
       "dam": "第二初娘ノ一",
       "color": "",
@@ -112,13 +115,14 @@
       "damId": "dainihatsumusumenoichi"
     },
     {
-      "id": "kinran",
-      "name": "金蘭",
+      "id": "kinran-1934",
+      "pedigreeName": "金蘭",
+      "name": "キンクン",
       "foaled": {
         "year": 1934
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "バラツケー(FR)",
       "dam": "蘭花",
       "color": "黒鹿毛",
@@ -126,13 +130,40 @@
       "netkeibaId": "000a00f13d",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 30,
+          "wins": 12
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 13,
+                "wins": 3
+              },
+              "jump": {
+                "runs": 17,
+                "wins": 9
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『昭和24年度 国営京都競馬抽籤新馬血統書』p.37",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -196,7 +227,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kinran",
+      "damId": "kinran-1934",
       "owner": "熊谷",
       "jbisId": "0000002465"
     }

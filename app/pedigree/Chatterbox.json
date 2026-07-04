@@ -1,30 +1,32 @@
 {
   "metadata": {
     "pedigreeName": "チヤツターボツクス",
-    "rootHorseId": "chatterbox-1924",
+    "rootHorseId": "chatterbox",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
     "source": "attribute_mapping_reverted",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "chatterbox-1924",
+      "id": "chatterbox",
       "name": "チヤツターボツクス",
+      "englishName": "Chatterbox",
       "foaled": {
         "year": 1924
       },
+      "died": "1929.06.01. 斃死",
       "sex": "female",
       "breed": "サラ",
       "sire": "Sir Berkeley",
       "dam": "Solemn Silence",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "英",
       "netkeibaId": "000a018feb",
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『馬匹血統登録書 第4巻』, 『サラブレッド血統書 第1巻』p.348",
       "importedYear": "1928",
       "familyNumber": "F3-l",
       "registration": "4巻515号",
-      "owner": "寺岡庄五郎/寺岡武治"
+      "owner": "寺岡庄五郎/寺岡武治（北海道河西郡帯広町）"
     },
     {
       "id": "shiba-ricky",
@@ -259,20 +261,23 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sairensudootaa"
+      "damId": "silence-daughter"
     },
     {
-      "id": "sairensudootaa",
+      "id": "silence-daughter",
       "name": "サイレンスドーター",
       "foaled": {
-        "year": 1929
+        "year": 1929,
+        "month": 3,
+        "day": 24
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "Tonton",
       "dam": "チヤツターボツクス",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "寺岡武治（北海道河西郡帯広町）",
+      "owner": "大平牧場（青森県八戸市大字鮫町）",
       "netkeibaId": "000a002424",
       "raceStats": {
         "total": {
@@ -282,12 +287,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.261",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "chatterbox-1924",
-      "pedigreeName": "サイレンスドーダー"
+      "damId": "chatterbox"
     },
     {
       "id": "nissekitariyaa",
@@ -750,7 +754,7 @@
         "year": 1959
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ヒエン",
       "dam": "ダイモン",
       "color": "鹿毛",

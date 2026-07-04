@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "pedigreeName": "太織",
+    "rootHorseId": "futoori",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted",
+    "isTraditionalFamily": true
+  },
+  "horses": [
+    {
+      "id": "futoori",
+      "name": "太織",
+      "foaled": {
+        "year": 1905
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "",
+      "breeder": "豪",
+      "netkeibaId": "000a01c1a6",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.190",
+      "comment": "netkeiba, bogus, 『アラブ系牝馬系統大鑑』および『凪的』では「大織」。『アラブ・アングロアラブ血統書』『競馬成績書』および『登録馬名簿』では「太織」。NDLでは「大織」と記載された競馬関連資料は一切ヒットしない。より古い資料を優先するため「太織」とする。"
+    },
+    {
+      "id": "senri",
+      "name": "千里",
+      "foaled": {},
+      "sex": "female",
+      "breed": "アラ系",
+      "sire": "ベルトン(FR)",
+      "dam": "太織",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01f752",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2300, 『競馬成績書 昭和11年春季』p.150",
+      "prizeMoney": {
+        "total": null
+      },
+      "damId": "futoori",
+      "comment": "『アラブ系牝馬系統大鑑』『凪的』およびbogusでは欠落（大織の子が第五初瀬）。しかし生年（26歳差）の勘案、netkeiba、『アラブ・アングロアラブ血統書』および『競馬成績書』に記載されていることから本馬は存在するものとする。"
+    },
+    {
+      "id": "dai5-hatsuse",
+      "name": "ヤエタカ",
+      "pedigreeName": "第五初瀬",
+      "foaled": {
+        "year": 1931
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "露越",
+      "dam": "千里",
+      "color": "栗毛",
+      "breeder": "日高平取村",
+      "netkeibaId": "000a00b6f9",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『登録馬名簿 昭和12年12月』p.226, 『アラブ系牝馬系統大鑑』p.190",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "senri"
+    },
+    {
+      "id": "isamikiri",
+      "pedigreeName": "勇霧",
+      "name": "トクタマ",
+      "foaled": {
+        "year": 1938,
+        "month": 4,
+        "day": 9
+      },
+      "died": "1965.10. 死亡",
+      "sex": "female",
+      "breed": "アア",
+      "sire": "明錦",
+      "dam": "第五初瀬",
+      "color": "栗毛",
+      "breeder": "吉田牧場（北海道安平町）",
+      "netkeibaId": "000a00d8f1",
+      "registration": "繁殖登録番号4930号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』pp.2297-2298",
+      "prizeMoney": {
+        "total": null
+      },
+      "damId": "dai5-hatsuse"
+    },
+    {
+      "id": "shinrai",
+      "name": "シンライ",
+      "foaled": {
+        "year": 1960,
+        "month": 4,
+        "day": 14
+      },
+      "died": "1976.12. 死亡",
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ホースニユース",
+      "dam": "勇霧",
+      "color": "栗毛",
+      "breeder": "橋本義雄（北海道静内町）",
+      "netkeibaId": "000a00df48",
+      "registration": "繁殖登録番号6561号",
+      "raceStats": {
+        "total": {
+          "runs": 46,
+          "wins": 12
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1965,
+            "month": 9,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "中山アラブ障害特別(OP)",
+          "displayRace": "中山アラブ障害特別",
+          "distance": "芝3630",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "2",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "東京",
+          "race": "東京アラブ障害特別(OP)",
+          "displayRace": "東京アラブ障害特別",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "4",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1963,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "アラブ王冠競走(OP)",
+          "displayRace": "アラブ王冠(秋)",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "12",
+          "favorite": "10"
+        }
+      ],
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.770",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "isamikiri"
+    }
+  ]
+}

@@ -13,13 +13,17 @@
       "foaled": {
         "year": 1923
       },
+      "importedYear": "1929",
+      "importedBy": "社台牧場",
       "sex": "female",
       "breed": "サラ",
       "sire": "Peter Quince",
       "dam": "Nebula",
       "color": "栗毛",
       "breeder": "米",
+      "owner": "社台牧場（北海道白老郡白老村）",
       "netkeibaId": "000a0199d2",
+      "registration": "6巻650号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -33,34 +37,39 @@
     },
     {
       "id": "dainimisunan",
-      "name": "第弐ミスナン",
+      "pedigreeName": "第弐ミスナン",
+      "name": "ナニワヒサゴ",
       "foaled": {
-        "year": 1931
+        "year": 1931,
+        "month": 4,
+        "day": 11
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ポリグノータス(GB)",
       "dam": "ミスナン",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "社台牧場（北海道白老郡白老村）",
       "netkeibaId": "000a01b576",
+      "registration": "9巻1037号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 5
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第9巻』p.65, 『母馬別競走成績書』p.569",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "miss-nan"
     },
     {
       "id": "hirohagi",
       "name": "ヒロハギ",
+      "formerPedigreeName": "ナニワタイガー",
       "foaled": {
         "year": 1945,
         "month": 4,
@@ -71,19 +80,19 @@
       "sire": "ステーツマン(GB)",
       "dam": "第弐ミスナン",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "高岸三吉（北海道浦河郡荻伏村）",
       "netkeibaId": "000a0026cd",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 18,
+          "wins": 3
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第3巻』p.168, 『母馬別競走成績書』p.408",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "dainimisunan"
     },
@@ -100,7 +109,7 @@
       "sire": "クモハタ",
       "dam": "ヒロハギ",
       "color": "栗毛",
-      "breeder": "JPN",
+      "breeder": "高岸三吉（北海道浦河郡荻伏村）",
       "netkeibaId": "1952z00142",
       "raceStats": {
         "total": {
@@ -164,9 +173,9 @@
           "displayRace": "クモハタ記念"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第3巻』p.168",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "hirohagi",
       "owner": "塩野入",
@@ -184,7 +193,7 @@
       "sire": "ステーツマン(GB)",
       "dam": "ミスナン",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "社台牧場（北海道白老郡白老村）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -272,11 +281,12 @@
       ],
       "bogusId": "26877",
       "damId": "miss-nan",
-      "source": "python_scraping, 『母馬別競走成績書』p.569"
+      "source": "python_scraping, 『母馬別競走成績書』p.569, 『サラブレッド血統書 第1巻』p.509"
     },
     {
       "id": "night-states",
       "name": "ナイトステーツ",
+      "pedigreeName": "第四ミスナン",
       "foaled": {
         "year": 1939
       },
@@ -285,7 +295,7 @@
       "sire": "ステーツマン(GB)",
       "dam": "ミスナン",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "社台牧場（北海道白老郡白老村）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -328,7 +338,7 @@
       ],
       "bogusId": "42780",
       "damId": "miss-nan",
-      "source": "python_scraping, 『母馬別競走成績書』p.569"
+      "source": "python_scraping, 『母馬別競走成績書』p.569, 『サラブレッド血統書 第1巻』p.509"
     }
   ]
 }

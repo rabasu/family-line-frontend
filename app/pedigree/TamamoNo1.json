@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "pedigreeName": "タマモノ一",
+    "rootHorseId": "tamamo-no-1",
+    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "source": "attribute_mapping_reverted",
+    "isTraditionalFamily": true
+  },
+  "horses": [
+    {
+      "id": "tamamo-no-1",
+      "name": "タマモノ一",
+      "foaled": {
+        "year": 1929
+      },
+      "importedYear": "（内国産）",
+      "sex": "female",
+      "breed": "中半",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』緒言",
+      "comment": "『アラブ系牝馬系統大鑑』の採録から漏れており詳細不明。『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』緒言ではアラブ系馬の基礎牝馬を一覧で示しており、中半血種の中に「タマモノ1 昭4」と記載がある。トクシン等の牝祖である「第一タマモ」は各資料でサラ系と表記されているためおそらく別馬。"
+    },
+    {
+      "id": "hokusei",
+      "name": "北星",
+      "foaled": {},
+      "sex": "female",
+      "breed": "中半",
+      "sire": "アブラール(FR)",
+      "dam": "タマモノ一",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cf16",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.635",
+      "damId": "tamamo-no-1"
+    },
+    {
+      "id": "kitakumo",
+      "pedigreeName": "北雲",
+      "name": "フクミドリ",
+      "foaled": {
+        "year": 1947,
+        "month": 7,
+        "day": 5
+      },
+      "sex": "female",
+      "breed": "軽半",
+      "sire": "クモキク",
+      "dam": "北星",
+      "color": "栗毛",
+      "breeder": "加藤正司（福島県瀬川村）",
+      "netkeibaId": "000a00bf1c",
+      "racecourse": "繫殖登録番号684号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『軽半血種血統書 第1巻』p.635",
+      "prizeMoney": {
+        "total": null
+      },
+      "damId": "hokusei"
+    },
+    {
+      "id": "takatsuru",
+      "name": "タカツル",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "male",
+      "breed": "アラ系",
+      "sire": "方景",
+      "dam": "北雲",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1956z00215",
+      "raceStats": {
+        "total": {
+          "runs": 44,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1959,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(秋)",
+          "distance": "芝3300",
+          "grade": "jra_jump",
+          "entry": "8",
+          "result": "2",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "kitakumo"
+    }
+  ]
+}
