@@ -13,12 +13,14 @@
       "foaled": {
         "year": 1901
       },
+      "importedYear": "1905",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "",
       "breeder": "豪",
+      "owner": "八戸産馬組合",
       "netkeibaId": "000a01c88c",
       "raceStats": {
         "total": {
@@ -28,16 +30,16 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『驥北八戸 : 第三六回青森県種馬共進会記念』p.28"
     },
     {
-      "id": "daiichibaikou",
-      "name": "第一梅香",
+      "id": "dai1-baika",
+      "name": "第一梅花",
       "foaled": {
         "year": 1910
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ヂプロマツト",
       "dam": "梅崎",
       "color": "",
@@ -51,22 +53,22 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.186",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "umezaki"
     },
     {
-      "id": "baikou-1916",
+      "id": "umesachi",
       "name": "梅幸",
       "foaled": {
         "year": 1916
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "義鹿",
-      "dam": "第一梅香",
+      "dam": "第一梅花",
       "color": "",
       "breeder": "",
       "netkeibaId": "000a01c88e",
@@ -82,10 +84,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichibaikou"
+      "damId": "dai1-baika"
     },
     {
-      "id": "baikou-1923",
+      "id": "baikou",
       "name": "梅香",
       "foaled": {
         "year": 1923
@@ -109,16 +111,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "baikou-1916"
+      "damId": "umesachi"
     },
     {
-      "id": "eikaori",
+      "id": "eikou",
       "name": "永香",
       "foaled": {
         "year": 1929
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "永竹",
       "dam": "梅香",
       "color": "",
@@ -136,10 +138,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "baikou-1916"
+      "damId": "baikou"
     },
     {
-      "id": "dainieikaori",
+      "id": "dai2-eikou",
       "name": "第二永香",
       "foaled": {
         "year": 1939
@@ -159,24 +161,26 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』p.36",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "eikaori"
+      "damId": "eikou"
     },
     {
       "id": "wakaazuma",
       "name": "ワカアヅマ",
       "foaled": {
-        "year": 1947
+        "year": 1947,
+        "month": 5,
+        "day": 8
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "クリアヅマ",
       "dam": "第二永香",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "清水熊一（鹿児島県曽於郡西志布志村）",
       "netkeibaId": "000a00b7a3",
       "raceStats": {
         "total": {
@@ -186,11 +190,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.110, 『アラブ系種血統書 第1巻』p.36",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainieikaori"
+      "damId": "dai2-eikou"
     },
     {
       "id": "tatsuazuma",
@@ -199,11 +203,11 @@
         "year": 1956
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "タツマサ",
       "dam": "ワカアヅマ",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "市来静夫（鹿児島県肝属郡串良町）",
       "netkeibaId": "1956z00221",
       "raceStats": {
         "total": {
@@ -229,11 +233,12 @@
           "favorite": "1"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.111",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "wakaazuma"
+      "damId": "wakaazuma",
+      "comment": "『サラブレッド系種血統書』では、祖先の第一梅花が中半表記。しかし同書籍でも第一梅花をサラ系表記している個所もあり、また両親の馬名・生年が『アラブ系種血統書』の記載と一致するため、梅崎系に含む。"
     }
   ]
 }

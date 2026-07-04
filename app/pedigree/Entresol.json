@@ -18,7 +18,7 @@
       "sire": "Soliman",
       "dam": "Clef d'Or",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "英",
       "netkeibaId": "000a0180d9",
       "source": "tsx_conversion",
       "importedYear": "1913",
@@ -202,7 +202,8 @@
     },
     {
       "id": "ion",
-      "name": "伊穏",
+      "pedigreeName": "伊穏",
+      "name": "マサノ",
       "foaled": {
         "year": 1937
       },
@@ -211,35 +212,39 @@
       "sire": "ペリオン(GB)",
       "dam": "安鋭",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "日高種馬牧場",
       "netkeibaId": "000a00255e",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 16,
+          "wins": 4
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.129, 『母馬別競走成績書』p.498",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "anei"
+      "damId": "anei",
+      "furigana": "イオン"
     },
     {
       "id": "anei",
       "name": "安鋭",
       "foaled": {
-        "year": 1928
+        "year": 1928,
+        "month": 3,
+        "day": 3
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "イボア(GB)",
       "dam": "第二アントルソール",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "日高種馬牧場",
       "netkeibaId": "000a002656",
+      "registration": "5巻544号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -248,14 +253,15 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第5巻』",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiantorusooru"
+      "damId": "dai2-entresol",
+      "furigana": "アンエイ"
     },
     {
-      "id": "dainiantorusooru",
+      "id": "dai2-entresol",
       "name": "第二アントルソール",
       "foaled": {
         "year": 1917
@@ -279,7 +285,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "entresol"
+      "damId": "entresol",
+      "furigana": "ダイニアントルソール"
     },
     {
       "id": "supiidoshinzan",
@@ -465,20 +472,23 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "iao"
+      "damId": "isou"
     },
     {
-      "id": "iao",
+      "id": "isou",
       "name": "伊蒼",
       "foaled": {
-        "year": 1936
+        "year": 1936,
+        "month": 4,
+        "day": 21
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ペリオン(GB)",
       "dam": "安鋭",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "日高種馬牧場",
+      "registration": "14巻1487号",
       "netkeibaId": "000a0023ee",
       "raceStats": {
         "total": {
@@ -488,11 +498,12 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第14巻』, 『母馬別競走成績書』p.498",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "anei"
+      "damId": "anei",
+      "furigana": "イソウ"
     },
     {
       "id": "banrai",
@@ -827,11 +838,11 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanantorusooru",
+      "damId": "daisanentresol",
       "linkName": "プリンセス(1936)"
     },
     {
-      "id": "daisanantorusooru",
+      "id": "daisanentresol",
       "name": "第三アントルソール",
       "foaled": {
         "year": 1920
@@ -855,7 +866,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "entresol"
+      "damId": "entresol",
+      "furigana": "ダイサンアントルソール"
     },
     {
       "id": "totsupumerii",
@@ -1271,30 +1283,35 @@
     },
     {
       "id": "nishikiori",
-      "name": "錦織",
+      "pedigreeName": "錦織",
+      "name": "ジヨオー",
       "foaled": {
-        "year": 1936
+        "year": 1936,
+        "month": 5,
+        "day": 13
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "プライオリーパーク(GB)",
       "dam": "モートル",
       "color": "鹿毛",
-      "breeder": "青森県",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
+      "registration": "13巻1438号",
       "netkeibaId": "000a00080c",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 31,
+          "wins": 3
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第13巻』, 『母馬別競走成績書』p.573",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "mootoru"
+      "damId": "mootoru",
+      "furigana": "ニシキオリ"
     },
     {
       "id": "mootoru",
@@ -1321,10 +1338,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichiantorusooru"
+      "damId": "dai1-entresol"
     },
     {
-      "id": "daiichiantorusooru",
+      "id": "dai1-entresol",
       "name": "第一アントルソール",
       "foaled": {
         "year": 1915
@@ -1348,13 +1365,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "entresol"
+      "damId": "entresol",
+      "furigana": "ダイイチアントルソール"
     },
     {
       "id": "toyotaka-1946",
       "name": "トヨタカ",
       "foaled": {
-        "year": "1946"
+        "year": 1946
       },
       "sex": "male",
       "breed": "サラ",

@@ -13,6 +13,8 @@
       "foaled": {
         "year": 1921
       },
+      "importedYear": "1929",
+      "owner": "松宮清【東北牧場】",
       "sex": "female",
       "breed": "サラ",
       "sire": "Jack Atkin",
@@ -20,6 +22,7 @@
       "color": "栗毛",
       "breeder": "米",
       "netkeibaId": "000a0024b0",
+      "registration": "8巻854号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -32,35 +35,41 @@
       "englishName": "Maybe So",
       "prizeMoney": {
         "total": "0万円"
-      }
+      },
+      "comment": "『馬匹血統登録書』では昭和4年輸入、『サラブレッド血統書』『サラブレッド牝馬系統表』では昭和3年輸入となっている。同じく『サラブレッド血統書』で昭和4年輸入となっているバツクソム、昭和3年輸入となっているセヴアインがどちらも昭和4年に持込馬を産んでいることから、持込馬の生年から輸入年は特定できない。『柏葉城の馬』の東北牧場の項に「...昭和四年四月米国よりサラブレツト種牡馬五頭[ママ]更に同年八月英国よりサラブレツト種牡馬タラツプ号を輸入し現在の牧場を開設す...」とある。頭数・牡牝に齟齬はあるが、昭和4年に導入されたのは事実らしいので昭和4年輸入とする。"
     },
     {
-      "id": "hanaden-1934",
-      "name": "花電",
+      "id": "kaden-1934",
+      "pedigreeName": "花電",
+      "name": "エヴアーライト",
       "foaled": {
-        "year": 1934
+        "year": 1934,
+        "month": 3,
+        "day": 29
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "タラツプ(GB)",
       "dam": "メイビイソウ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "000a00256d",
+      "registration": "11巻1248号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 29,
+          "wins": 5
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.212, 『母馬別競走成績書』p.571",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "maybe-so",
-      "linkName": "花電(1934)"
+      "linkName": "花電(1934)",
+      "furigana": "カデン"
     },
     {
       "id": "light",
@@ -88,7 +97,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hanaden-1934"
+      "damId": "kaden-1934"
     },
     {
       "id": "amakusa",
@@ -597,21 +606,24 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "akinorikabuto"
+      "damId": "meitoku-kabuto"
     },
     {
-      "id": "akinorikabuto",
+      "id": "meitoku-kabuto",
       "name": "明徳甲",
       "foaled": {
-        "year": 1941
+        "year": 1941,
+        "month": 4,
+        "day": 5
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "カブトヤマ",
       "dam": "メイビイソウ",
       "color": "鹿毛",
-      "breeder": "青森県",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "000a0026b5",
+      "registration": "18巻2529号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -624,7 +636,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "maybe-so"
+      "damId": "maybe-so",
+      "furigana": "メイトクカブト"
     },
     {
       "id": "fastest",
@@ -985,7 +998,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "akinorikabuto"
+      "damId": "meitoku-kabuto"
     },
     {
       "id": "sir-pen-prince",
@@ -2728,7 +2741,8 @@
     },
     {
       "id": "shachikabuto",
-      "name": "鯱甲",
+      "pedigreeName": "鯱甲",
+      "name": "エイシヨウリ",
       "foaled": {
         "year": 1938
       },
@@ -2737,39 +2751,40 @@
       "sire": "カブトヤマ",
       "dam": "メイビイソウ",
       "color": "栗毛",
-      "breeder": "青森県",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "000a0025d3",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 58,
+          "wins": 9
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.571",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "maybe-so"
+      "damId": "maybe-so",
+      "furigana": "シャチカブト"
     },
     {
       "id": "matsushiyouri",
       "name": "マツシヨウリ",
       "foaled": {
-        "year": "1945"
+        "year": 1945
       },
       "sex": "male",
       "breed": "サラ",
       "sire": "イブキヤマ",
       "dam": "鯱甲",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 45,
+          "wins": 8
         },
         "divisions": []
       },
@@ -2835,13 +2850,13 @@
           "result": "4"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.168",
       "bogusId": "32414",
       "damId": "shachikabuto"
     },
     {
       "id": "eishouki",
-      "name": "ヱイシヨウキ",
+      "name": "エイシヨウキ",
       "foaled": {
         "year": 1940
       },
@@ -2850,12 +2865,12 @@
       "sire": "カブトヤマ",
       "dam": "メイビイソウ",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 17,
+          "wins": 2
         },
         "divisions": []
       },
@@ -2891,9 +2906,10 @@
           "result": "15"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.571, 『日本競馬史 第6巻』pp.713-716",
       "bogusId": "53385",
-      "damId": "maybe-so"
+      "damId": "maybe-so",
+      "comment": "『母馬別競走成績書』によれば1943年に9戦1勝。1944年の能力検定競走に出場し、春季東京で少なくとも8戦し1勝。"
     }
   ]
 }

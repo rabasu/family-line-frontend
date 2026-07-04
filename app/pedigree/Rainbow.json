@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "レインボウ",
     "rootHorseId": "rainbow",
-    "lastUpdated": "2026-03-21T05:30:55.377966Z",
+    "lastUpdated": "2026-06-06T13:22:17.194487Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -13,13 +13,18 @@
       "foaled": {
         "year": 1907
       },
+      "importedYear": "1911",
+      "died": "1931.11. 斃死",
       "sex": "female",
       "breed": "サラ",
       "sire": "Sundridge",
       "dam": "Bright Thought",
       "color": "鹿毛",
       "breeder": "英",
+      "owner": "日高種馬牧場",
+      "importedBy": "馬政局",
       "netkeibaId": "000a017f0e",
+      "registration": "1巻132号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -28,22 +33,25 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.558",
       "englishName": "Rainbow"
     },
     {
-      "id": "nijirin",
+      "id": "kourin",
       "name": "虹凛",
       "foaled": {
-        "year": 1926
+        "year": 1926,
+        "month": 5,
+        "day": 28
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ペリオン(GB)",
       "dam": "レインボウ",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "日高種馬牧場（北海道浦河郡浦河町）",
       "netkeibaId": "000a0023c6",
+      "registration": "3巻351号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -52,15 +60,17 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.256",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "rainbow"
+      "damId": "rainbow",
+      "furigana": "コウリン"
     },
     {
-      "id": "nijimatsurigoto",
-      "name": "虹政",
+      "id": "kousei",
+      "pedigreeName": "虹政",
+      "name": "ムラフト",
       "foaled": {
         "year": 1940
       },
@@ -69,21 +79,22 @@
       "sire": "セフト(GB)",
       "dam": "虹凛",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "日高種馬牧場（北海道浦河郡浦河町）",
       "netkeibaId": "000a000811",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 14,
+          "wins": 3
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.256, 『母馬別競走成績書』p.522",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nijirin"
+      "damId": "kourin",
+      "furigana": "コウセイ"
     },
     {
       "id": "harumasa",
@@ -142,7 +153,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nijimatsurigoto"
+      "damId": "kousei"
     },
     {
       "id": "briar",
@@ -540,21 +551,24 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hekikaminari"
+      "damId": "hekirai"
     },
     {
-      "id": "hekikaminari",
+      "id": "hekirai",
       "name": "碧雷",
       "foaled": {
-        "year": 1932
+        "year": 1932,
+        "month": 4,
+        "day": 30
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "タラツプ(GB)",
       "dam": "レインボウノ二",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "000a00248f",
+      "registration": "8巻904号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -563,61 +577,86 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.479, 『母馬別競走成績書』p.577",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "reinbounoni"
+      "damId": "rainbow-no-2",
+      "furigana": "ヘキライ"
     },
     {
-      "id": "reinbounoni",
-      "name": "レインボウノ二",
+      "id": "rainbow-no-2",
+      "pedigreeName": "レインボウノ二",
+      "name": "ウコウ",
       "foaled": {
-        "year": 1923
+        "year": 1923,
+        "month": 5,
+        "day": 5
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "イボア(GB)",
       "dam": "第二レインボウ",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "鎌田三郎（北海道浦河郡浦河町）",
       "netkeibaId": "000a01b565",
+      "registration": "2巻169号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 8
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1928,
+            "month": 6,
+            "day": 21
+          },
+          "racecourse": "福島",
+          "race": "帝室御賞典",
+          "displayRace": "帝室御賞典（福島）",
+          "distance": "芝1800",
+          "grade": "empire_cup",
+          "entry": "6",
+          "result": "1",
+          "favorite": ""
+        }
+      ],
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.560, 『母馬別競走成績書』p.577",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "dainireinbou"
+      "damId": "dai2-rainbow"
     },
     {
-      "id": "dainireinbou",
-      "name": "第二レインボウ",
+      "id": "dai2-rainbow",
+      "pedigreeName": "第二レインボウ",
+      "name": "レーンボウ",
       "foaled": {
-        "year": 1916
+        "year": 1916,
+        "month": 5,
+        "day": 20
       },
+      "died": "1938.12. 斃死",
       "sex": "female",
       "breed": "サラ",
       "sire": "ブレアーモアー(GB)",
       "dam": "レインボウ",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "日高種馬牧場（北海道浦河郡浦河町）",
       "netkeibaId": "000a00235e",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 2
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.559, 『母馬別競走成績書』p.577",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -888,7 +927,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nijimatsurigoto"
+      "damId": "kousei"
     },
     {
       "id": "chitoseribaa",
@@ -1051,13 +1090,13 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "reboaanisei",
+      "damId": "rebor-2sei",
       "englishName": "Omi Zakura",
       "jbisId": "0000376794",
       "bogusId": "30732"
     },
     {
-      "id": "reboaanisei",
+      "id": "rebor-2sei",
       "name": "レボアー二世",
       "foaled": {
         "year": 1932
@@ -1081,34 +1120,53 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "reboa"
+      "damId": "rebor"
     },
     {
-      "id": "reboa",
-      "name": "レボア",
+      "id": "rebor",
+      "pedigreeName": "レボア",
+      "name": "ヤタケ",
       "foaled": {
-        "year": 1922
+        "year": 1922,
+        "month": 4,
+        "day": 18
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "イボア(GB)",
       "dam": "第二レインボウ",
       "color": "鹿毛",
-      "breeder": "浦河町",
+      "breeder": "鎌田九平（北海道浦河郡浦河町）",
       "netkeibaId": "000a00235d",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 19
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1927,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "帝室御賞典",
+          "displayRace": "帝室御賞典（阪神・春）",
+          "distance": "1 1/8mile",
+          "grade": "empire_cup",
+          "entry": "4",
+          "result": "1",
+          "favorite": ""
+        }
+      ],
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.571, 『母馬別競走成績書』p.577",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainireinbou"
+      "damId": "dai2-rainbow"
     },
     {
       "id": "roiyaruretsuji",
@@ -1193,10 +1251,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nijirei"
+      "damId": "kourei"
     },
     {
-      "id": "nijirei",
+      "id": "kourei",
       "name": "虹玲",
       "foaled": {
         "year": 1935
@@ -1206,21 +1264,22 @@
       "sire": "レヴユーオーダー(GB)",
       "dam": "虹凛",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "日高種馬牧場",
       "netkeibaId": "000a00240b",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 3,
+          "wins": 2
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.256, 『母馬別競走成績書』p.522",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nijirin"
+      "damId": "kourin",
+      "furigana": "コウレイ"
     },
     {
       "id": "houshiyuusakura",
@@ -1529,14 +1588,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "reboamondo",
+      "damId": "rebor-mondo",
       "owner": "岩崎利明",
       "trainer": "尾形藤吉（東京）",
       "ahonooraId": "issei",
       "bogusId": "17276"
     },
     {
-      "id": "reboamondo",
+      "id": "rebor-mondo",
       "name": "レボアモンド",
       "foaled": {
         "year": 1937
@@ -1560,7 +1619,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "reboa"
+      "damId": "rebor"
     },
     {
       "id": "takakumo",
@@ -1756,7 +1815,7 @@
       "prizeMoney": {
         "total": "0.0万円"
       },
-      "damId": "reboaanisei",
+      "damId": "rebor-2sei",
       "englishName": "Theft Dake",
       "jbisId": "0000376389",
       "comment": "10,000円で購買。3,000円で浦河町・鎌田三郎に売却（買い戻し）。なお三歳時は評価が低く、頼み込んで10,000円で買い上げ（補償購買）てもらった、という鎌田三郎氏のエピソードが残されている。"
@@ -1765,7 +1824,7 @@
       "id": "tokinosefuto",
       "name": "トキノセフト",
       "foaled": {
-        "year": "1947"
+        "year": 1947
       },
       "sex": "male",
       "breed": "サラ",
@@ -1950,7 +2009,7 @@
       ],
       "source": "python_scraping",
       "bogusId": "53426",
-      "damId": "reboamondo"
+      "damId": "rebor-mondo"
     },
     {
       "id": "miss-rainbow",
@@ -2037,11 +2096,137 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nijimatsurigoto",
+      "damId": "kousei",
       "englishName": "Miss Rainbow",
       "owner": "盛田",
       "jbisId": "0000000524",
       "bogusId": "42382"
+    },
+    {
+      "id": "suzuran",
+      "name": "スズラン",
+      "foaled": {
+        "year": 1946
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "セフト(GB)",
+      "dam": "虹久",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a002871",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Suzuran",
+      "prizeMoney": null,
+      "linkName": "スズラン(1946)",
+      "damId": "nijikyuu"
+    },
+    {
+      "id": "nijikyuu",
+      "name": "虹久",
+      "foaled": {
+        "year": 1938
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "クラツクマンナン(GB)",
+      "dam": "虹凛",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a002332",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "kourin"
+    },
+    {
+      "id": "hishigashin",
+      "name": "ヒシガシン",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "ハロウエー(GB)",
+      "dam": "スズラン",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1961z00452",
+      "raceStats": {
+        "total": {
+          "runs": 41,
+          "wins": 9
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1966,
+            "month": 4,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "中山大障害(OP)",
+          "displayRace": "中山大障害(春)",
+          "distance": "芝4200",
+          "grade": "jra_grandjump",
+          "entry": "10",
+          "result": "10",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 1965,
+            "month": 11,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "東京障害特別(OP)",
+          "displayRace": "東京障害特別(秋)",
+          "distance": "ダ3300",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "弥生賞(OP)",
+          "displayRace": "弥生賞",
+          "distance": "芝1600",
+          "grade": "jra_grade",
+          "entry": "10",
+          "result": "9",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "suzuran",
+      "comment": "netkeibaでは母スズランが高砂系(1953)になっているが、正しくはレインボウ系(1946)"
     }
   ]
 }

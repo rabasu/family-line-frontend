@@ -9,15 +9,22 @@
   "horses": [
     {
       "id": "kushiro",
-      "name": "釧路",
-      "foaled": {},
+      "pedigreeName": "釧路",
+      "name": "クシロ",
+      "foaled": {
+        "year": 1920
+      },
+      "importedYear": "1924",
+      "importedBy": "札幌競馬倶楽部（大正13年秋季豪州産抽籤馬）",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "breed": "サラ系",
+      "sire": "Grist",
+      "dam": "The Lily",
+      "color": "栗毛",
       "breeder": "豪",
+      "owner": "金井抱二（札幌市北四條西三丁目）→矢野春人（北海道静内郡静内町）",
       "netkeibaId": "000a00b6ed",
+      "registration": "3巻395号[1935.05.20.取消]",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -26,20 +33,25 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『馬匹血統登録書 第3巻』p.73, 『明治・大正・昭和初期の輸入馬』",
+      "furigana": "クシロ",
+      "comment": "一度はサラブレッドとして登録されたものの、後に登録を削除し「サラ系」の烙印を押された。『明治・大正・昭和初期の輸入馬』では豪州血統書を参照して1918年生説を唱えているが、ロジックがあまりしっくりこないため『馬匹血統登録書』に則り1920年生とする。"
     },
     {
       "id": "seririi",
-      "name": "セリリー",
+      "pedigreeName": "セリリー",
+      "name": "トキワカツプ",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 7,
+        "day": 5
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ミンドアー(GB)",
       "dam": "釧路",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "矢野春人（北海道静内郡静内町）",
       "netkeibaId": "000a00b72b",
       "raceStats": {
         "total": {
@@ -49,7 +61,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.40",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -62,7 +74,7 @@
         "year": 1951
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "トキノチカラ",
       "dam": "セリリー",
       "color": "鹿毛",
@@ -89,7 +101,7 @@
         "year": 1958
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ブリツカバツク(US)",
       "dam": "ミスターザン",
       "color": "栗毛",
@@ -117,7 +129,7 @@
         "year": 1964
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "モンタヴァル(FR)",
       "dam": "オータカツキ",
       "color": "",
@@ -145,7 +157,7 @@
         "year": 1969
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "シャミエ(IRE)",
       "dam": "エンザン",
       "color": "",
@@ -188,7 +200,7 @@
         "year": 1957
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ウイザード",
       "dam": "トキワヒメ",
       "color": "",
@@ -231,7 +243,7 @@
         "year": 1950
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "トキノチカラ",
       "dam": "セリリー",
       "color": "栗毛",
@@ -258,7 +270,7 @@
         "year": 1955
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "イツセイ",
       "dam": "トキワヒメ",
       "color": "",

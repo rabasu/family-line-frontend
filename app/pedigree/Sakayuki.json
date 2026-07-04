@@ -10,13 +10,17 @@
     {
       "id": "sakayuki",
       "name": "坂雪",
-      "foaled": {},
+      "foaled": {
+        "year": 1902
+      },
+      "importedYear": "1905",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
-      "color": "",
-      "breeder": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "鹿毛",
+      "breeder": "豪",
+      "owner": "関兵之進（囎唹郡産馬組合管理者市成村）",
       "netkeibaId": "000a01c252",
       "raceStats": {
         "total": {
@@ -26,20 +30,23 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『鹿児島県畜産史 下巻』p.60"
     },
     {
       "id": "futami",
       "name": "二見",
       "foaled": {
-        "year": 1914
+        "year": 1914,
+        "month": 4,
+        "day": 29
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "シークトン",
       "dam": "坂雪",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "鹿児島県囎唹郡市成村",
+      "owner": "桑谷萬吉（囎唹郡西志布志村）",
       "netkeibaId": "000a01c253",
       "raceStats": {
         "total": {
@@ -49,20 +56,20 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『第二回九州聯合馬匹共進会 第三回九州聯合畜産共進会 事務報告』p.82",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "sakayuki"
     },
     {
-      "id": "dainifutami",
+      "id": "dai2-futami",
       "name": "第二二見",
       "foaled": {
         "year": 1924
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ネーヴアルエンジニアー",
       "dam": "二見",
       "color": "黒鹿毛",
@@ -84,16 +91,17 @@
     },
     {
       "id": "akimi",
-      "name": "アキミ",
+      "pedigreeName": "アキミ",
+      "name": "スパルタ",
       "foaled": {
         "year": 1931
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "アキラ",
       "dam": "第二二見",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "鹿児島西志布志",
       "netkeibaId": "000a01c25b",
       "raceStats": {
         "total": {
@@ -103,11 +111,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『競馬成績書 昭和9年春季』p.289",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainifutami"
+      "damId": "dai2-futami"
     },
     {
       "id": "denmii",
@@ -116,7 +124,7 @@
         "year": 1938
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "第拾四シアンモア",
       "dam": "アキミ",
       "color": "栗毛",
@@ -140,15 +148,19 @@
       "id": "den-ei",
       "name": "デンエイ",
       "foaled": {
-        "year": 1946
+        "year": 1946,
+        "month": 4,
+        "day": 5
       },
+      "died": "1961.04. 死亡",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "入栄",
       "dam": "デンミー",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "松本虎吉（鹿児島県野方村）",
       "netkeibaId": "000a00da67",
+      "registration": "登録番号5305号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -157,7 +169,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1190",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -170,11 +182,11 @@
         "year": 1957
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "テツノチカラ(US)",
       "dam": "デンエイ",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "川辺虎袈裟（鹿児島県岩川町）",
       "netkeibaId": "1957z00251",
       "raceStats": {
         "total": {
@@ -275,7 +287,7 @@
           "favorite": "8"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1190",
       "prizeMoney": {
         "total": "0万円"
       },

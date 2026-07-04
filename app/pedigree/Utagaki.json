@@ -13,12 +13,14 @@
       "foaled": {
         "year": 1900
       },
+      "importedYear": "1905",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "",
-      "breeder": "",
+      "breeder": "豪",
+      "owner": "（浦河郡）",
       "netkeibaId": "000a01c921",
       "raceStats": {
         "total": {
@@ -28,16 +30,17 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.194, 『アラブ系牝馬系統大鑑』p.183, 『殖民公報 (80)』p.16",
+      "comment": "第六チロツク（第一絵笛の父）は浦河郡産牛馬組合所有。そして第八回日高国産馬共進会で二等受賞の第二振天（1912, 父アラデユ, 母歌垣）が産地浦河、浦河郡浦河町・長嶺将勝の所有。よっておそらく浦河郡貸下牝馬であり、第一絵笛の生年(1907)から輸入は1905年と思われる（1905年輸入組の配布は基本的に1906年のため）。"
     },
     {
-      "id": "daiichiefue",
+      "id": "dai1-ebue",
       "name": "第一絵笛",
       "foaled": {
         "year": 1907
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "第六チロツク",
       "dam": "歌垣",
       "color": "",
@@ -55,16 +58,17 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "utagaki"
+      "damId": "utagaki",
+      "comment": "父・第六チロツクは浦河郡産牛馬組合所有。その父・チロツクはオロなので、アラブ血量50%とすると第六チロツクの血量は37.5%。本馬は18.75%となるためサラ系。"
     },
     {
-      "id": "dainanaefue",
+      "id": "dai7-ebue",
       "name": "第七絵笛",
       "foaled": {
         "year": 1919
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "ギドラン四二ノ三",
       "dam": "第一絵笛",
       "color": "",
@@ -82,16 +86,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichiefue"
+      "damId": "dai1-ebue"
     },
     {
-      "id": "daijuuichiefue",
+      "id": "dai11-ebue",
       "name": "第十一絵笛",
       "foaled": {
         "year": 1924
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ギドラン四二ノ一五",
       "dam": "第七絵笛",
       "color": "",
@@ -109,20 +113,24 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainanaefue"
+      "damId": "dai7-ebue"
     },
     {
-      "id": "daiichibaika",
-      "name": "第一梅花",
+      "id": "tokitaka",
+      "pedigreeName": "第一梅花",
+      "name": "トキタカ",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 4,
+        "day": 27
       },
+      "died": "1961. 用途変更",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "フアヘツド",
+      "breed": "アア",
+      "sire": "フアヘツド(SYR)",
       "dam": "第十一絵笛",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "吉田菊治郎（北海道荻伏村）",
       "netkeibaId": "000a00d8b0",
       "raceStats": {
         "total": {
@@ -132,24 +140,26 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.194",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daijuuichiefue"
+      "damId": "dai11-ebue"
     },
     {
       "id": "umemidori",
       "name": "ウメミドリ",
       "foaled": {
-        "year": 1951
+        "year": 1951,
+        "month": 5,
+        "day": 31
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "マツミドリ",
       "dam": "第一梅花",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "越湖吉春（北海道新冠村）",
       "netkeibaId": "000a00dca2",
       "raceStats": {
         "total": {
@@ -159,11 +169,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.188",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichibaika"
+      "damId": "tokitaka"
     },
     {
       "id": "baiyuu",
@@ -172,11 +182,11 @@
         "year": 1963
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "セイユウ",
       "dam": "ウメミドリ",
       "color": "鹿毛",
-      "breeder": "三石町",
+      "breeder": "三和俊治（北海道三石町）",
       "netkeibaId": "000a00e0eb",
       "raceStats": {
         "total": {
@@ -232,7 +242,7 @@
           "favorite": "10"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.188",
       "englishName": "Baiyuu",
       "prizeMoney": {
         "total": "0万円"

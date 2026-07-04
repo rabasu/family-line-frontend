@@ -12,11 +12,12 @@
       "name": "夕田",
       "foaled": {},
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "",
-      "breeder": "",
+      "breeder": "豪",
+      "owner": "（福島県）",
       "netkeibaId": "000a01ce52",
       "raceStats": {
         "total": {
@@ -26,7 +27,8 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.240, 『アラブ・アングロアラブ血統書 第2巻』p.393",
+      "comment": "ペロレーシヨン、キルブルツク共に福島種馬所の種牡馬のため、おそらく福島県貸下牝馬。子孫は「山科」およびその子孫に代表される。【不明点】『馬匹血統登録書 第5巻』p.123・仁347号「第三山科」が登録されているが、その牝祖は夕田ではなく山里という豪洋になっている。この「山里の山科」の生年は明治43(1910)年と記載されており、これは『アラブ系牝馬系統大鑑』に記載されている「夕田の山科」の生年と一致する。すなわち、「父キルブルツク・母豪洋・1910年生の『山科号』」が2頭存在することになる。その他、第一山科の生年・3頭の第三山科・アラブ血統書における「山里」の欠如など、非常に不明点が多い牝系。"
     },
     {
       "id": "yamashina",
@@ -35,11 +37,12 @@
         "year": 1910
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ペロレーシヨン",
       "dam": "夕田",
       "color": "",
       "breeder": "",
+      "owner": "",
       "netkeibaId": "000a01ce53",
       "raceStats": {
         "total": {
@@ -49,20 +52,21 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『官報 1912年06月01日』p.11, 『牧畜雑誌 (320)』p.7",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yuuta"
+      "damId": "yuuta",
+      "comment": "第六回福島県馬匹共進会(1912)二等賞、第三回奥羽六県連合馬匹共進会(1912)四等賞受賞の「山科」と生年が一致する。しかし山科については系統の整理が完了しておらず、本馬が夕田系か（あるいは山里系か）はっきりしていないため、ここでは同定しない。"
     },
     {
-      "id": "dainiyamashina",
-      "name": "第二山科",
+      "id": "dai3-yamashina",
+      "name": "第三山科",
       "foaled": {
         "year": 1919
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "キルブルツク",
       "dam": "山科",
       "color": "",
@@ -80,20 +84,23 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yamashina"
+      "damId": "yamashina",
+      "comment": "『アラブ系牝馬系統大鑑』では第二山科、『アラブ・アングロアラブ血統書 第2巻』では第三山科。詳細の検討は必要だが、一旦第三山科とする。"
     },
     {
-      "id": "kawaka",
+      "id": "kawashina",
       "name": "川科",
       "foaled": {
-        "year": 1937
+        "year": 1937,
+        "month": 4,
+        "day": 18
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "オーダツクス",
-      "dam": "第二山科",
+      "dam": "第三山科",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "松本光雄（福島県葛尾村）",
       "netkeibaId": "000a00d8a9",
       "raceStats": {
         "total": {
@@ -103,24 +110,26 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.393",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainiyamashina"
+      "damId": "dai3-yamashina"
     },
     {
       "id": "furinto",
       "name": "フリント",
       "foaled": {
-        "year": 1949
+        "year": 1949,
+        "month": 6,
+        "day": 14
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ナカヒカリ",
       "dam": "川科",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "松本信孝（福島県葛尾村）",
       "netkeibaId": "000a00db0e",
       "raceStats": {
         "total": {
@@ -130,11 +139,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1701",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kawaka"
+      "damId": "kawashina"
     },
     {
       "id": "yuusei",
@@ -143,11 +152,11 @@
         "year": 1962
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "セイユウ",
       "dam": "フリント",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "土田治明（北海道三石町）",
       "netkeibaId": "1962z00579",
       "raceStats": {
         "total": {
@@ -188,7 +197,7 @@
           "favorite": "6"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1701",
       "prizeMoney": {
         "total": "0万円"
       },

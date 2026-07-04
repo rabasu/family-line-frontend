@@ -13,6 +13,9 @@
       "foaled": {
         "year": 1904
       },
+      "importedYear": "1908",
+      "importedBy": "馬政局（第四回）",
+      "owner": "奥羽種馬牧場",
       "sex": "female",
       "breed": "サラ",
       "sire": "Uncle Mac",
@@ -20,6 +23,7 @@
       "color": "栗毛",
       "breeder": "英",
       "netkeibaId": "000a017e4f",
+      "registration": "登録なし",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -28,21 +32,24 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『牧畜雑誌 (278)』p.45",
       "englishName": "Cousin Kate"
     },
     {
       "id": "ofuran",
       "name": "オフラン",
       "foaled": {
-        "year": 1915
+        "year": 1915,
+        "month": 4,
+        "day": 3
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "オーバーヤン五ノ六(HUN)",
       "dam": "カズンケート",
-      "color": "鹿毛",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "奥羽種馬牧場",
+      "registration": "2巻波248号",
       "netkeibaId": "000a01cbd2",
       "raceStats": {
         "total": {
@@ -52,11 +59,12 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第2巻』p.148",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "cousin-kate"
+      "damId": "cousin-kate",
+      "comment": "netkeibaでは鹿毛、馬匹血統登録書では栗毛。栗毛を採用。"
     },
     {
       "id": "hagoromo-1936",
@@ -65,7 +73,7 @@
         "year": 1936
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "択逸",
       "dam": "オフラン",
       "color": "鹿毛",
@@ -83,7 +91,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ofuran"
+      "damId": "ofuran",
+      "furigana": "ハゴロモ"
     },
     {
       "id": "roozenkurantsu",
@@ -92,7 +101,7 @@
         "year": 1949
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "タマカンロ",
       "dam": "羽衣",
       "color": "鹿毛",
@@ -119,7 +128,7 @@
         "year": 1961
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "リンボー(US)",
       "dam": "ローゼンクランツ",
       "color": "鹿毛",
@@ -146,7 +155,7 @@
         "year": 1971
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "センジュ",
       "dam": "ミスハナノキ",
       "color": "鹿毛",
@@ -176,7 +185,7 @@
         "day": 4
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "カスティコ(FR)",
       "dam": "ハナノファニー",
       "color": "栗毛",
@@ -295,7 +304,7 @@
         "year": 1973
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ビッグスリー",
       "dam": "タカラホマレ",
       "color": "栗毛",
@@ -354,7 +363,7 @@
         "year": 1961
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ホマレモン",
       "dam": "香光",
       "color": "芦毛",
@@ -372,16 +381,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kaorihikari"
+      "damId": "kakou"
     },
     {
-      "id": "kaorihikari",
+      "id": "kakou",
       "name": "香光",
       "foaled": {
         "year": 1945
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ブラッソム",
       "dam": "階香",
       "color": "栗毛",
@@ -399,16 +408,16 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kaikaori"
+      "damId": "kaika"
     },
     {
-      "id": "kaikaori",
+      "id": "kaika",
       "name": "階香",
       "foaled": {
         "year": 1931
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ドミノ",
       "dam": "香辰",
       "color": "",
@@ -426,20 +435,23 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kaoritatsu"
+      "damId": "kashin"
     },
     {
-      "id": "kaoritatsu",
+      "id": "kashin",
       "name": "香辰",
       "foaled": {
-        "year": 1925
+        "year": 1925,
+        "month": 5,
+        "day": 20
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "コハイランラシード一ノ四",
       "dam": "ベカシン",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "野澤三蔵（青森県三戸郡階上村）",
+      "registration": "15巻波1746号",
       "netkeibaId": "000a01c51e",
       "raceStats": {
         "total": {
@@ -449,11 +461,12 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第15巻』p.224",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "bekashin"
+      "damId": "bekashin",
+      "furigana": "カシン"
     },
     {
       "id": "bekashin",
@@ -462,7 +475,7 @@
         "year": 1913
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "オーバーヤン五ノ六(HUN)",
       "dam": "カズンケート",
       "color": "栗毛",
@@ -489,7 +502,7 @@
         "year": 1957
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "グレートリング",
       "dam": "ニユーオリエント",
       "color": "",
@@ -562,7 +575,7 @@
         "year": 1948
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "伊聞",
       "dam": "第三ベカシン",
       "color": "栗毛",
@@ -589,7 +602,7 @@
         "year": 1936
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "第十七コイワヰ",
       "dam": "ベカシン",
       "color": "栗毛",
@@ -607,7 +620,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "bekashin"
+      "damId": "bekashin",
+      "furigana": "ダイサンベカシン"
     }
   ]
 }

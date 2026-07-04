@@ -10,15 +10,18 @@
     {
       "id": "sanderling",
       "name": "サンダー",
+      "englishName": "Sanderling",
       "foaled": {
         "year": 1891
       },
+      "importedYear": "1901",
       "sex": "female",
       "breed": "サラ",
       "sire": "St. Simon",
       "dam": "Sandiway",
       "color": "鹿毛",
       "breeder": "英",
+      "owner": "奥羽種馬牧場",
       "netkeibaId": "000a017d6e",
       "raceStats": {
         "total": {
@@ -28,21 +31,23 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
-      "englishName": "Sanderling"
+      "source": "python_scraping, 『日本之産馬 2(8)』pp.14-15",
+      "comment": "日本に初めて輸入された純血サラブレッド牝馬の1頭。容姿秀麗であり、有象無象の種牡馬には蹄鉄をお見舞い、唯一反抗せず種付けを許したのがアラデユのみという逸話が残る。生きている時点でいわゆる女王様キャラが付けられていた模様。"
     },
     {
-      "id": "daiichisandaa",
+      "id": "dai1-sander",
       "name": "第一サンダー",
       "foaled": {
-        "year": 1902
+        "year": 1902,
+        "month": 4,
+        "day": 19
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "Gallinule",
       "dam": "サンダー",
-      "color": "黒鹿毛",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "奥羽種馬牧場",
       "netkeibaId": "000a017d6f",
       "raceStats": {
         "total": {
@@ -52,7 +57,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬政学』p.94",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -62,15 +67,18 @@
       "id": "kamo",
       "name": "加茂",
       "foaled": {
-        "year": 1916
+        "year": 1916,
+        "month": 2,
+        "day": 27
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ラシカツター(GB)",
       "dam": "第一サンダー",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "奥羽種馬牧場",
       "netkeibaId": "000a018ae4",
+      "registration": "1巻22号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -79,25 +87,29 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第1巻』p.55",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichisandaa"
+      "damId": "dai1-sander",
+      "furigana": "カモ"
     },
     {
-      "id": "sugagomo",
+      "id": "sugakomo",
       "name": "菅薦",
       "foaled": {
-        "year": 1925
+        "year": 1925,
+        "month": 4,
+        "day": 1
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ゼヴアイキング(GB)",
       "dam": "加茂",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "野村治三郎（青森県上北郡野辺地町）",
       "netkeibaId": "000a01b5c2",
+      "registration": "3巻338号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -106,25 +118,30 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第3巻』p.44",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kamo"
+      "damId": "kamo",
+      "furigana": "スガコモ"
     },
     {
       "id": "taiee",
       "name": "タイエー",
+      "formerPedigreeName": "大栄",
       "foaled": {
-        "year": 1930
+        "year": 1930,
+        "month": 3,
+        "day": 23
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "オールグリーン(GB)",
       "dam": "菅薦",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "大西栄蔵（青森県三戸郡大舘村）",
       "netkeibaId": "000a00246a",
+      "registration": "17巻2271号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -133,25 +150,28 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第17巻』p.126",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sugagomo"
+      "damId": "sugakomo"
     },
     {
       "id": "zen-ei",
       "name": "ゼンエイ",
       "foaled": {
-        "year": 1937
+        "year": 1937,
+        "month": 4,
+        "day": 20
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "善祖",
       "dam": "タイエー",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "籠田勝（青森県三戸郡大舘村）",
       "netkeibaId": "000a00253a",
+      "registration": "17巻2272号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -160,7 +180,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第17巻』p.126",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -230,7 +250,7 @@
         "day": 2
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "テイモテオ(FR)",
       "dam": "サツマムスメ",
       "color": "栗毛",
@@ -350,7 +370,7 @@
           "favorite": "2"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第10巻』p.675",
       "englishName": "Ginzan",
       "prizeMoney": {
         "total": "0万円"
@@ -648,37 +668,118 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sandaaringu"
+      "damId": "kokuo"
     },
     {
-      "id": "sandaaringu",
-      "name": "サンダーリング",
+      "id": "kokuo",
+      "pedigreeName": "サンダーリング",
+      "name": "コクオー",
       "foaled": {
-        "year": 1934
+        "year": 1934,
+        "month": 3,
+        "day": 30
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "アスフオード(GB)",
       "dam": "第一サンダーノ三",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "駒井庄三郎（青森県三戸郡五戸町）",
       "netkeibaId": "000a0026ba",
+      "bogusId": "31654",
+      "registration": "18巻2611号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 30,
+          "wins": 15
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1939,
+            "month": 4,
+            "day": 9
+          },
+          "racecourse": "中山",
+          "race": "中山大障害",
+          "displayRace": "中山大障害（春）",
+          "distance": "障4100",
+          "grade": "jrs_grandjump",
+          "entry": "5",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1938,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "古呼馬障害特別",
+          "displayRace": "古呼馬障害特別（東京・秋）",
+          "distance": "障4050",
+          "grade": "jrs_jump",
+          "entry": "",
+          "result": "1",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 4,
+            "day": 22
+          },
+          "racecourse": "京都",
+          "race": "古呼馬障害特別",
+          "displayRace": "古呼馬障害特別（京都・春）",
+          "distance": "障4030",
+          "grade": "jrs_jump",
+          "entry": "4",
+          "result": "2",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "古呼馬障害特別",
+          "displayRace": "古呼馬障害特別（京都・秋）",
+          "distance": "障4030",
+          "grade": "jrs_jump",
+          "entry": "4",
+          "result": "1",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 1939,
+            "month": 11,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "古呼馬障害特別",
+          "displayRace": "古呼馬障害特別（東京・秋）",
+          "distance": "障4050",
+          "grade": "jrs_jump",
+          "entry": "4",
+          "result": "1",
+          "favorite": ""
+        }
+      ],
+      "source": "python_scraping, 『馬匹血統登録書 第18巻』p.180, 『日本競馬史 第3巻』pp.163,547,548, 『日本競馬の歩み・資料編』pp.129,256, Wikipedia",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "75,075円"
       },
-      "damId": "daiichisandaanosan"
+      "damId": "dai1-sander-no-3"
     },
     {
-      "id": "daiichisandaanosan",
+      "id": "dai1-sander-no-3",
       "name": "第一サンダーノ三",
       "foaled": {
         "year": 1917
@@ -688,8 +789,9 @@
       "sire": "ラシカツター(GB)",
       "dam": "第一サンダー",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "奥羽種馬牧場",
       "netkeibaId": "000a002443",
+      "registration": "3巻433号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -698,11 +800,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第3巻』p.92",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichisandaa"
+      "damId": "dai1-sander"
     },
     {
       "id": "kingusupiido",
@@ -1084,7 +1186,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sandaaringu"
+      "damId": "kokuo"
     },
     {
       "id": "idaten",

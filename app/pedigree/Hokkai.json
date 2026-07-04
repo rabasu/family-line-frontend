@@ -13,10 +13,11 @@
       "foaled": {
         "year": 1904
       },
+      "importedYear": "1905頃",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "",
       "breeder": "豪",
       "netkeibaId": "000a01c363",
@@ -28,7 +29,8 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.232, 『アラブ・アングロアラブ血統書 第2巻』p.1767",
+      "comment": "netkeibaでは第二北海の母・北海(000a01cc59)と、八花の母・北海(000a01c363)が分かれているが、おそらく同一馬。"
     },
     {
       "id": "yatsuhana",
@@ -37,8 +39,8 @@
         "year": 1914
       },
       "sex": "female",
-      "breed": "サラ",
-      "sire": "アロエー",
+      "breed": "アラ系",
+      "sire": "アロエー(FR)",
       "dam": "北海",
       "color": "",
       "breeder": "",
@@ -64,7 +66,7 @@
         "year": 1927
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "オーバーヤン五ノ六(HUN)",
       "dam": "八花",
       "color": "",
@@ -82,34 +84,37 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yatsuhana"
+      "damId": "yatsuhana",
+      "furigana": "オウハナ"
     },
     {
       "id": "daiichiouhana",
-      "name": "第一王花",
+      "name": "ゴールドクイン",
+      "pedigreeName": "第一王花",
       "foaled": {
         "year": 1936
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "リブナン",
       "dam": "王花",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "種市福太郎（青森県三澤村）",
       "netkeibaId": "000a00d8dc",
       "raceStats": {
         "total": {
-          "runs": 0,
+          "runs": null,
           "wins": 0
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『登録馬名簿 昭和16年』p.102, 『登録馬名簿 昭和17年8月10日』p.109",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "ouhana"
+      "damId": "ouhana",
+      "comment": "生年と両親から、第一王花=ゴールドクイン（昭和14年春京都抽籤馬）と同定。昭和17年8月時点で未勝利のまま競走登録されているが、昭和16年の産駒（ヒカリ・父第拾四シアンモア）が存在するため、実際には未勝利のまま昭和15年頃に引退していたと推測される。品種は『登録馬名簿』ではアラ系、『アラブ・アングロアラブ血統書 第2巻』ではアア。アアを採用。"
     },
     {
       "id": "matsufuji-1949",
@@ -118,7 +123,7 @@
         "year": 1949
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "アサフジ",
       "dam": "第一王花",
       "color": "鹿毛",
@@ -146,7 +151,7 @@
         "year": 1960
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "オウゴンラツシー",
       "dam": "マツフジ",
       "color": "鹿毛",
@@ -220,7 +225,7 @@
         "year": 1972
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "フイリユースオー",
       "dam": "キンシヨウ",
       "color": "鹿毛",

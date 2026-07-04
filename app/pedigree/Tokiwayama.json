@@ -11,12 +11,14 @@
       "id": "tokiwayama",
       "name": "常盤山",
       "foaled": {},
+      "importedYear": "~1912",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "",
-      "breeder": "",
+      "breeder": "豪",
+      "owner": "常陸甚助（宮城県加美郡小野田村）",
       "netkeibaId": "000a01cc9d",
       "raceStats": {
         "total": {
@@ -26,21 +28,22 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『宮城県勧業報告 第68號』p.91, 『宮城県産馬要覧』p.160, 『アラブ系種血統書 第1巻』p.139, 『アラブ系牝馬系統大鑑』p.216",
+      "comment": "生年のわかる最も古い産駒が第二常盤山(1913)のため、輸入は1912年以前。古い資料では馬名（および一部産駒の馬名）を「常陸山」とするものがままある。一方で『アラブ系種血統書』などでは「常盤山」と記載されている。時代的に横綱・常陸山の活躍時期と合致するが、馬主（おそらく貸下牝馬の管理者）である常陸氏と名前がそろうのは都合がよすぎるように感じる。一旦標準資料である『アラブ系種血統書』に従う。"
     },
     {
-      "id": "daigotokiwayama",
-      "name": "第五常盤山",
+      "id": "dai4-tokiwayama",
+      "name": "第四常盤山",
       "foaled": {
-        "year": 1918
+        "year": 1917
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "ギドラン四〇ノ七",
       "dam": "常盤山",
       "color": "",
       "breeder": "",
-      "netkeibaId": "000a01f8bd",
+      "netkeibaId": "000a01cc9f",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -53,18 +56,19 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tokiwayama"
+      "damId": "tokiwayama",
+      "comment": "netkeibaおよび『アラブ系牝馬系統大鑑』に記載されている「第五常盤山(id:000a01f8bd)」は他資料に存在せず、「第四常盤山(id:000a01cc9f)」になっている。『アラブ系種血統書』の第四常盤山→第四常盤山ノ五→宮和のラインを採用する。"
     },
     {
-      "id": "daigotokiwayamanogo",
-      "name": "第五常盤山ノ五",
+      "id": "dai4-tokiwayama-no-5",
+      "name": "第四常盤山ノ五",
       "foaled": {
         "year": 1930
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "第二十二ラシカツター",
-      "dam": "第五常盤山",
+      "dam": "第四常盤山",
       "color": "",
       "breeder": "",
       "netkeibaId": "000a01cca0",
@@ -80,20 +84,23 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigotokiwayama"
+      "damId": "dai4-tokiwayama",
+      "comment": "生年は『アラブ系牝馬系統大鑑』での「第五常盤山ノ五」のものを採用。"
     },
     {
       "id": "miyawa",
       "name": "宮和",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 4,
+        "day": 17
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "盃盟",
-      "dam": "第五常盤山ノ五",
+      "dam": "第四常盤山ノ五",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "常陸甚助（宮城県宮崎村）",
       "netkeibaId": "000a00d8b5",
       "raceStats": {
         "total": {
@@ -103,24 +110,27 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2185",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigotokiwayamanogo"
+      "damId": "dai4-tokiwayama-no-5"
     },
     {
       "id": "marumiya",
       "name": "丸宮",
       "foaled": {
-        "year": 1948
+        "year": 1948,
+        "month": 4,
+        "day": 3
       },
+      "died": "1970.08. 死亡",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "マルカブ",
       "dam": "宮和",
       "color": "黒鹿毛",
-      "breeder": "",
+      "breeder": "熊谷和人（宮城県宮崎村）",
       "netkeibaId": "000a00dc79",
       "raceStats": {
         "total": {
@@ -130,7 +140,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1883",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -140,14 +150,17 @@
       "id": "yamabun-eesu",
       "name": "ヤマブンエース",
       "foaled": {
-        "year": 1962
+        "year": 1962,
+        "month": 4,
+        "day": 19
       },
+      "died": "1974. 用途変更",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "セイユウ",
       "dam": "丸宮",
       "color": "鹿毛",
-      "breeder": "三石町",
+      "breeder": "筒井明春（北海道三石町）",
       "netkeibaId": "000a00e0d9",
       "raceStats": {
         "total": {
@@ -218,7 +231,7 @@
           "favorite": "4"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.2267",
       "prizeMoney": {
         "total": "0万円"
       },

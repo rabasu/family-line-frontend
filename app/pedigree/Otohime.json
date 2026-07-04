@@ -13,12 +13,14 @@
       "foaled": {
         "year": 1905
       },
+      "importedYear": "~1914",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
       "color": "",
-      "breeder": "",
+      "breeder": "豪",
+      "owner": "（北海道）",
       "netkeibaId": "000a01cc86",
       "raceStats": {
         "total": {
@@ -28,7 +30,8 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.289, 『アラブ系牝馬系統大鑑』p.191",
+      "comment": "詳細不明。『アラブ系牝馬系統大鑑』では生年「1895（明治38）年生」と誤植しており正確な生年は不明。アロエーは北海道庁種畜場の種牡馬なので北海道で供用か。『明治・大正・昭和初期の輸入馬』には明治41年抽籤馬として同名の豪洋・乙姫（1903年生）が記載されているが、生年が違うため一旦別とする（『アラブ系牝馬系統大鑑』の生年が間違っている可能性はある）。"
     },
     {
       "id": "nakayama",
@@ -37,7 +40,7 @@
         "year": 1915
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "アロエー",
       "dam": "乙姫",
       "color": "",
@@ -55,7 +58,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "otohime-1905"
+      "damId": "otohime-1905",
+      "furigana": "ナカヤマ"
     },
     {
       "id": "houzan-1931",
@@ -64,7 +68,7 @@
         "year": 1931
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "嘉栄",
       "dam": "中山",
       "color": "",
@@ -82,21 +86,25 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nakayama"
+      "damId": "nakayama",
+      "furigana": "ホウザン"
     },
     {
       "id": "outakara",
       "name": "王宝",
       "foaled": {
-        "year": 1937
+        "year": 1937,
+        "month": 4,
+        "day": 6
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "王慈",
       "dam": "宝山",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "佐々木申松（青森県田部村）",
       "netkeibaId": "000a00d89b",
+      "registration": "登録番号4844号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -105,7 +113,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.289",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -113,17 +121,21 @@
     },
     {
       "id": "sentakara",
-      "name": "選宝",
+      "pedigreeName": "選宝",
+      "name": "センホウ",
       "foaled": {
-        "year": 1944
+        "year": 1944,
+        "month": 4,
+        "day": 28
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "選影",
       "dam": "王宝",
       "color": "栗毛",
-      "breeder": "浦河町",
+      "breeder": "佐々木申松（青森県田部村）",
       "netkeibaId": "000a00dc78",
+      "registration": "登録番号5838号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -132,11 +144,12 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.909",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "outakara"
+      "damId": "outakara",
+      "furigana": "センタカラ"
     },
     {
       "id": "nobutakara",
@@ -145,11 +158,11 @@
         "year": 1960
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "キングライト",
       "dam": "選宝",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "高橋農場（北海道伊達町）",
       "netkeibaId": "1960z00321",
       "raceStats": {
         "total": {
@@ -220,9 +233,9 @@
           "favorite": "13"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.909",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "sentakara"
     }

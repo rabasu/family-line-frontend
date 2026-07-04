@@ -10,9 +10,12 @@
     {
       "id": "umeharu",
       "name": "ウメハル",
+      "englishName": "Our Lass",
       "foaled": {
         "year": 1918
       },
+      "importedYear": "1924",
+      "importedBy": "東京競馬倶楽部（大正13年秋季豪州産抽籤馬）",
       "sex": "female",
       "breed": "サラ",
       "sire": "Lord Howard",
@@ -20,11 +23,10 @@
       "color": "鹿毛",
       "breeder": "豪",
       "netkeibaId": "000a002386",
-      "source": "tsx_conversion",
-      "importedYear": "1924",
+      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.154",
       "familyNumber": "F2-d",
       "registration": "5巻532号",
-      "owner": "東京競馬倶楽部輸入→黒澤文助→柳本理平"
+      "owner": "黒澤文助→柳本理平（北海道静内郡静内町）"
     },
     {
       "id": "nishino-shitan",
@@ -566,26 +568,45 @@
     },
     {
       "id": "dainiumeharu",
-      "name": "第二梅春",
+      "pedigreeName": "第二梅春",
+      "name": "テンシヨウドー",
       "foaled": {
-        "year": 1930
+        "year": 1930,
+        "month": 4,
+        "day": 25
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ペリオン(GB)",
       "dam": "ウメハル",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "柳本理平（北海道静内郡静内町）",
       "netkeibaId": "000a002402",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 5
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1935,
+            "month": 8,
+            "day": 26
+          },
+          "racecourse": "函館",
+          "race": "帝室御賞典",
+          "displayRace": "帝室御賞典（函館）",
+          "distance": "芝2000",
+          "grade": "empire_cup",
+          "entry": "8",
+          "result": "1",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.158, 『競馬成績書 昭和10年 秋季』p.15, 『母馬別競走成績書』p.504",
       "prizeMoney": {
         "total": "0万円"
       },

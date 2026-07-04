@@ -13,12 +13,15 @@
       "foaled": {
         "year": 1904
       },
+      "importedYear": "1907",
+      "importedBy": "馬政局",
+      "owner": "奥羽種馬牧場",
       "sex": "female",
       "breed": "サラ",
       "sire": "Orme",
       "dam": "Flowerdale",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "英",
       "netkeibaId": "000a01b579",
       "raceStats": {
         "total": {
@@ -28,22 +31,25 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『輸入サラブレッド血統簿 全』p.57, 『明治・大正・昭和初期の輸入馬』",
       "englishName": "Ordeal"
     },
     {
-      "id": "dainioodearu",
+      "id": "dai2-ordeal",
       "name": "第二オーデアル",
       "foaled": {
-        "year": 1913
+        "year": 1913,
+        "month": 5,
+        "day": 19
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ダイヤモンドウエツデイング(GB)",
       "dam": "オーデアル",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "奥羽種馬牧場（青森県上北郡七戸町）",
       "netkeibaId": "000a01b57a",
+      "registration": "1巻47号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -52,7 +58,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第1巻』p.79",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -62,15 +68,18 @@
       "id": "amatsukaze-1923",
       "name": "天津風",
       "foaled": {
-        "year": 1923
+        "year": 1923,
+        "month": 4,
+        "day": 18
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ガロン(GB)",
       "dam": "第二オーデアル",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "盛田徳太郎（青森県上北郡七戸町）",
       "netkeibaId": "000a01b57b",
+      "registration": "1巻46号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -79,25 +88,29 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第1巻』p.78",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainioodearu"
+      "damId": "dai2-ordeal",
+      "furigana": "アマツカゼ"
     },
     {
-      "id": "gurinto",
+      "id": "glint",
       "name": "グリント",
       "foaled": {
-        "year": 1928
+        "year": 1928,
+        "month": 5,
+        "day": 12
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "コートプレースター",
       "dam": "天津風",
       "color": "青毛",
-      "breeder": "",
+      "breeder": "東北牧場（青森県上北郡七戸町）",
       "netkeibaId": "000a01b57c",
+      "registration": "7巻746号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -106,56 +119,61 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第7巻』",
       "prizeMoney": {
         "total": "0万円"
       },
       "damId": "amatsukaze-1923"
     },
     {
-      "id": "gunisami",
-      "name": "軍勇",
+      "id": "gun-yu",
+      "pedigreeName": "軍勇",
+      "name": "イイカブト",
       "foaled": {
-        "year": 1938
+        "year": 1938,
+        "month": 6,
+        "day": 16
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "カブトヤマ",
       "dam": "グリント",
       "color": "黒鹿毛",
-      "breeder": "",
+      "breeder": "岡田陸次（北海道静内郡静内町）",
       "netkeibaId": "000a00242f",
+      "registration": "16巻2054号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 11,
+          "wins": 1
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第16巻』, 『母馬別競走成績書』p.518",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gurinto"
+      "damId": "glint",
+      "furigana": "グンユウ"
     },
     {
-      "id": "buruuhomare-1944",
+      "id": "blue-homare-1944",
       "name": "ブルーホマレ",
       "foaled": {
-        "year": "1944"
+        "year": 1944
       },
       "sex": "male",
       "breed": "サラ",
       "sire": "ミナミホマレ",
       "dam": "軍勇",
       "color": "青毛",
-      "breeder": "JPN",
+      "breeder": "",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 37,
+          "wins": 8
         },
         "divisions": []
       },
@@ -266,9 +284,9 @@
           "result": "3"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.117",
       "bogusId": "39228",
-      "damId": "gunisami",
+      "damId": "gun-yu",
       "linkName": "ブルーホマレ(1944)"
     }
   ]

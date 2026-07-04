@@ -10,6 +10,7 @@
     {
       "id": "shrilly",
       "name": "シユリリー",
+      "englishName": "Shrilly",
       "foaled": {
         "year": 1925
       },
@@ -17,14 +18,14 @@
       "breed": "サラ",
       "sire": "Treclare",
       "dam": "Warwhoop",
-      "color": "",
+      "color": "栗毛",
       "breeder": "豪",
       "netkeibaId": "000a0024c4",
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.277",
       "importedYear": "1930",
       "familyNumber": "F7-d",
       "registration": "6巻640号",
-      "owner": "渋谷平乗（S11〜14）→下河辺牧場（S15〜）"
+      "owner": "渋谷平乗→下河辺牧場（北海道浦河郡浦河町）"
     },
     {
       "id": "ravel",
@@ -1200,14 +1201,15 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichishiyuririi",
+      "damId": "dai1-shrilly",
       "owner": "鎌田三郎→高橋虎男",
       "trainer": "石門虎吉（阪神）",
       "ahonooraId": "queen_narbee"
     },
     {
-      "id": "daiichishiyuririi",
-      "name": "第一シユリリー",
+      "id": "dai1-shrilly",
+      "pedigreeName": "第一シユリリー",
+      "name": "アジアカチドキ",
       "foaled": {
         "year": 1937
       },
@@ -1220,13 +1222,13 @@
       "netkeibaId": "000a0024f2",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 6,
+          "wins": 2
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『母馬別競走成績書』p.526",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -2562,7 +2564,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichishiyuririi",
+      "damId": "dai1-shrilly",
       "owner": "桶谷",
       "jbisId": "0000000256",
       "bogusId": "17275"
@@ -3685,12 +3687,13 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainishiyuririi",
+      "damId": "dai2-shrilly",
       "linkName": "レイコウ(1953)"
     },
     {
-      "id": "dainishiyuririi",
-      "name": "第弐シユリリー",
+      "id": "dai2-shrilly",
+      "pedigreeName": "第弐シユリリー",
+      "name": "ドトウ",
       "foaled": {
         "year": 1939
       },
@@ -3699,17 +3702,33 @@
       "sire": "ハクリユウ",
       "dam": "シユリリー",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "渋谷平乗（北海道浦河郡浦河町）",
       "netkeibaId": "000a002435",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 17,
+          "wins": 9
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "date": {
+            "year": 1943,
+            "month": 11,
+            "day": 7
+          },
+          "racecourse": "京都",
+          "race": "京都記念",
+          "displayRace": "京都記念（秋）",
+          "distance": "芝3500",
+          "grade": "jrs_grade",
+          "entry": "4",
+          "result": "1",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping, 『母馬別競走成績書』p.526, 『優駿達の蹄跡』",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -4568,7 +4587,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiichishiyuririi"
+      "damId": "dai1-shrilly"
     },
     {
       "id": "beru",
@@ -5191,7 +5210,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainishiyuririi"
+      "damId": "dai2-shrilly"
     },
     {
       "id": "katsutoshi",
@@ -5625,6 +5644,155 @@
         "total": "0万円"
       },
       "damId": "kunihata"
+    },
+    {
+      "id": "koohaku",
+      "name": "コーハク",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "ヒカルメイジ",
+      "dam": "オーロラ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1964z00123",
+      "raceStats": {
+        "total": {
+          "runs": 47,
+          "wins": 7
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "阪急盃(OP)",
+          "displayRace": "阪急盃",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "5",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 1
+          },
+          "racecourse": "京都",
+          "race": "京都記念(OP)",
+          "displayRace": "京都記念(秋)",
+          "distance": "芝2200",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "9",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 8,
+            "day": 4
+          },
+          "racecourse": "中京",
+          "race": "金鯱賞(OP)",
+          "displayRace": "金鯱賞",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "6",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 7,
+            "day": 21
+          },
+          "racecourse": "中京",
+          "race": "中京大賞典(OP)",
+          "displayRace": "中京大賞典",
+          "distance": "ダ2000",
+          "grade": "jra_grade",
+          "entry": "5",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 7,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "阪急盃(OP)",
+          "displayRace": "阪急盃",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "鳴尾記念(OP)",
+          "displayRace": "鳴尾記念",
+          "distance": "芝2400",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 4,
+            "day": 7
+          },
+          "racecourse": "阪神",
+          "race": "サンケイ大阪盃(OP)",
+          "displayRace": "サンケイ大阪盃",
+          "distance": "芝1900",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 1967,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都4歳特別(OP)",
+          "displayRace": "京都4歳特別",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "3",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "aurora-1956",
+      "comment": "netkeibaでは母オーロラがシドニー系(1956)になっているが、正しくはシユリリー系(1956)。"
     }
   ]
 }

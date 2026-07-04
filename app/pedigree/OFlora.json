@@ -9,56 +9,91 @@
   "horses": [
     {
       "id": "o-flora",
-      "name": "オーフロラ",
+      "pedigreeName": "オーフロラ",
+      "name": "オフロラ",
       "englishName": "O'Flora",
       "foaled": {
         "year": 1919
       },
       "importedYear": "1924",
+      "importedBy": "日本レースクラブ（大正13年秋季豪州産抽籤馬）",
       "sex": "female",
       "breed": "サラ",
       "sire": "Patrobas",
       "dam": "E. D.",
       "color": "栗毛",
       "breeder": "豪",
+      "owner": "飯原牧場（北海道虻田郡弁辺村）",
       "netkeibaId": "000a0023e1",
       "registration": "3巻322号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 20,
+          "wins": 5
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』, 『馬匹血統登録書 第3巻』p.36"
+      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』, 『馬匹血統登録書 第3巻』p.36, 『春季競馬成績書 大正14年』p.134"
     },
     {
       "id": "hiryuu",
-      "name": "飛竜",
+      "pedigreeName": "飛竜",
+      "name": "フンカワン",
       "foaled": {
-        "year": 1929
+        "year": 1929,
+        "month": 6,
+        "day": 12
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "クラツクマンナン(GB)",
       "dam": "オーフロラ",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "飯原盛作（北海道虻田郡弁辺村）",
       "netkeibaId": "000a0023c2",
+      "registration": "14巻1535号",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 13
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": null,
+                "wins": 2
+              },
+              "jump": {
+                "runs": null,
+                "wins": 11
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド血統書 第1巻』p.415, 『母馬別競走成績書』p.510, 『日本の血統 : 種牡馬名鑑1970』p.29",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "o-flora"
+      "damId": "o-flora",
+      "furigana": "ヒリュウ"
     },
     {
       "id": "kenzan-1941",

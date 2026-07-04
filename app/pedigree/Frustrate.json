@@ -715,14 +715,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigomanna",
+      "damId": "dai5-manna",
       "pedigreeName": "トキッカゼ",
       "owner": "川口鷲太郎",
       "trainer": "大久保房松（中山）",
       "ahonooraId": "tokitsukaze"
     },
     {
-      "id": "daigomanna",
+      "id": "dai5-manna",
       "name": "第五マンナ",
       "foaled": {
         "year": 1939
@@ -746,7 +746,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "manna"
+      "damId": "manna",
+      "furigana": "ダイゴマンナ"
     },
     {
       "id": "manna",
@@ -774,10 +775,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfurasutoreeto"
+      "damId": "dai3-frustrate"
     },
     {
-      "id": "daisanfurasutoreeto",
+      "id": "dai3-frustrate",
       "name": "第三フラストレート",
       "foaled": {
         "year": 1910
@@ -801,7 +802,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "frustrate"
+      "damId": "frustrate",
+      "furigana": "ダイサンフラストレート"
     },
     {
       "id": "naran-huleg",
@@ -1044,10 +1046,10 @@
         "central": "4億13万円",
         "local": "0万円"
       },
-      "damId": "keriizubyuutei"
+      "damId": "kelly-s-beauty"
     },
     {
-      "id": "keriizubyuutei",
+      "id": "kelly-s-beauty",
       "name": "ケリーズビューティ",
       "foaled": {
         "year": 2001,
@@ -1061,12 +1063,40 @@
       "color": "青毛",
       "breeder": "乾皆雄（三石町）",
       "netkeibaId": "2001100858",
+      "jbisId": "0000727933",
       "raceStats": {
         "total": {
           "runs": 17,
           "wins": 4
         },
-        "divisions": []
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 17,
+                "wins": 4
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
       },
       "raceResults": [],
       "source": "python_scraping",
@@ -1181,10 +1211,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yutakahayabusa"
+      "damId": "toyo-hayabusa"
     },
     {
-      "id": "yutakahayabusa",
+      "id": "toyo-hayabusa",
       "name": "豊隼",
       "foaled": {
         "year": 1962
@@ -1208,7 +1238,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dashing-lass"
+      "damId": "dashing-lass",
+      "furigana": "トヨハヤブサ"
     },
     {
       "id": "dashing-lass",
@@ -1236,10 +1267,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainifuratsushingurasu"
+      "damId": "dai2-flashing-lass"
     },
     {
-      "id": "dainifuratsushingurasu",
+      "id": "dai2-flashing-lass",
       "name": "第弐フラツシングラス",
       "foaled": {
         "year": 1935
@@ -1263,10 +1294,11 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "furatsushingurasu"
+      "damId": "flashing-lass",
+      "furigana": "ダイニフラツシングラス"
     },
     {
-      "id": "furatsushingurasu",
+      "id": "flashing-lass",
       "name": "フラツシングラス",
       "foaled": {
         "year": 1929
@@ -1290,7 +1322,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfurasutoreeto"
+      "damId": "dai3-frustrate"
     },
     {
       "id": "vin-quet-domingo",
@@ -2352,7 +2384,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "manna"
+      "damId": "manna",
+      "furigana": "ダイロクマンナ"
     },
     {
       "id": "yamakatsu-raiden",
@@ -3181,10 +3214,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna"
+      "damId": "dai3-manna"
     },
     {
-      "id": "daisanmanna",
+      "id": "dai3-manna",
       "name": "第参マンナ",
       "foaled": {
         "year": 1937
@@ -3208,7 +3241,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "manna"
+      "damId": "manna",
+      "furigana": "ダイサンマンナ"
     },
     {
       "id": "takeden-tiger",
@@ -3584,48 +3618,57 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kashin"
+      "damId": "ieomi",
+      "furigana": "ヨシオミ"
     },
     {
-      "id": "kashin",
+      "id": "ieomi",
       "name": "家臣",
       "foaled": {
-        "year": 1937
+        "year": 1937,
+        "month": 3,
+        "day": 27
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "トウルヌソル(GB)",
       "dam": "慶臣",
       "color": "鹿毛",
-      "breeder": "千葉県",
+      "breeder": "宮内庁下総牧場",
+      "registration": "14巻1633号",
       "netkeibaId": "000a002522",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": 13,
+          "wins": 1
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第14巻』p.156, 『母馬別競走成績書』p.520",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "yoshishin"
+      "damId": "keishin",
+      "furigana": "イエオミ"
     },
     {
-      "id": "yoshishin",
+      "id": "keishin",
       "name": "慶臣",
+      "formerPedigreeName": "慶姫",
       "foaled": {
-        "year": 1923
+        "year": 1923,
+        "month": 3,
+        "day": 23
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "ダイヤモンドウエツデイング(GB)",
       "dam": "グローリヤス",
       "color": "鹿毛",
-      "breeder": "静内町",
+      "breeder": "宮内省新冠牧場",
       "netkeibaId": "000a00237f",
+      "registration": "2巻244号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -3634,14 +3677,15 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第2巻』p.91, 『馬匹血統登録書 第8巻』p.229",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "0円"
       },
-      "damId": "gurooriyasu"
+      "damId": "glorious",
+      "furigana": "ケイシン"
     },
     {
-      "id": "gurooriyasu",
+      "id": "glorious",
       "name": "グローリヤス",
       "foaled": {
         "year": 1916
@@ -3665,7 +3709,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfurasutoreeto"
+      "damId": "dai3-frustrate",
+      "comment": "馬匹血統登録書上では「Glorious」で記載されているが、JBIS・血統書データベースでは欧字馬名「Glory Yasu」で登録されている。流石に違和感のある綴りなのでIDでは「Glorious」を採用。"
     },
     {
       "id": "verde-green",
@@ -4523,7 +4568,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainifuratsushingurasu"
+      "damId": "dai2-flashing-lass"
     },
     {
       "id": "impress-winner",
@@ -4886,7 +4931,7 @@
         "central": "1億6,826万円",
         "local": "184万円"
       },
-      "damId": "keriizubyuutei"
+      "damId": "kelly-s-beauty"
     },
     {
       "id": "silk-mobius",
@@ -6948,10 +6993,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "myouryuu"
+      "damId": "myoryu"
     },
     {
-      "id": "myouryuu",
+      "id": "myoryu",
       "name": "妙竜",
       "foaled": {
         "year": 1957
@@ -6975,10 +7020,11 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "umemyou"
+      "damId": "umetae",
+      "furigana": "ミョウリュウ"
     },
     {
-      "id": "umemyou",
+      "id": "umetae",
       "name": "梅妙",
       "foaled": {
         "year": 1945
@@ -7002,21 +7048,27 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yamamyou"
+      "damId": "yamatae",
+      "furigana": "ウメタエ"
     },
     {
-      "id": "yamamyou",
-      "name": "山妙",
+      "id": "yamatae",
+      "pedigreeName": "山妙",
+      "name": "ヤマタエ",
+      "formerPedigreeName": "山姫",
       "foaled": {
-        "year": 1928
+        "year": 1928,
+        "month": 4,
+        "day": 3
       },
       "sex": "female",
       "breed": "サラ",
       "sire": "チヤペルブラムプトン(GB)",
       "dam": "慶臣",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "宮内庁下総牧場",
       "netkeibaId": "000a00239a",
+      "registration": "5巻596号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -7025,11 +7077,12 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第5巻』p.61, 『馬匹血統登録書 第8巻』p.229",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yoshishin"
+      "damId": "keishin",
+      "furigana": "ヤマタエ"
     },
     {
       "id": "sunday-well",
@@ -7766,7 +7819,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna"
+      "damId": "dai3-manna"
     },
     {
       "id": "hayate-brahman",
@@ -8679,7 +8732,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna",
+      "damId": "dai3-manna",
       "owner": "小林庄平",
       "trainer": "伊藤勝吉（京都）",
       "ahonooraId": "yashima_bell"
@@ -10553,13 +10606,13 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kakutaku",
+      "damId": "tsurusawa",
       "englishName": "Maru Hikari",
       "jbisId": "0000376653",
       "bogusId": "29537"
     },
     {
-      "id": "kakutaku",
+      "id": "tsurusawa",
       "name": "鶴沢",
       "foaled": {
         "year": 1935
@@ -10583,7 +10636,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yoshishin"
+      "damId": "keishin",
+      "furigana": "ツルサワ"
     },
     {
       "id": "trot-thunder",
@@ -10873,10 +10927,10 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonfurasutoreeto"
+      "damId": "dai4-frustrate"
     },
     {
-      "id": "daiyonfurasutoreeto",
+      "id": "dai4-frustrate",
       "name": "第四フラストレート",
       "foaled": {
         "year": 1911
@@ -10900,7 +10954,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "frustrate"
+      "damId": "frustrate",
+      "furigana": "ダイヨンフラストレート"
     },
     {
       "id": "riders-high",
@@ -11110,12 +11165,12 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfuratsushingurasu",
+      "damId": "dai3-flashing-lass",
       "jbisId": "0000376849",
       "bogusId": "42807"
     },
     {
-      "id": "daisanfuratsushingurasu",
+      "id": "dai3-flashing-lass",
       "name": "第参フラツシングラス",
       "foaled": {
         "year": 1938
@@ -11139,7 +11194,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "furatsushingurasu"
+      "damId": "flashing-lass",
+      "furigana": "ダイサンフラツシングラス"
     },
     {
       "id": "mighty-mach",
@@ -12060,14 +12116,14 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonmanna",
+      "damId": "dai4-manna",
       "linkName": "ロングラン(1952)",
       "owner": "松尾",
       "jbisId": "0000002206",
       "bogusId": "17709"
     },
     {
-      "id": "daiyonmanna",
+      "id": "dai4-manna",
       "name": "第四マンナ",
       "foaled": {
         "year": 1938
@@ -12091,7 +12147,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "manna"
+      "damId": "manna",
+      "furigana": "ダイヨンマンナ"
     },
     {
       "id": "minagawa-manna",
@@ -12630,7 +12687,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yutakahayabusa"
+      "damId": "toyo-hayabusa"
     },
     {
       "id": "hoyo-boy",
@@ -13308,7 +13365,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna"
+      "damId": "dai3-manna"
     },
     {
       "id": "haadieesu",
@@ -13466,7 +13523,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kashin"
+      "damId": "ieomi"
     },
     {
       "id": "eishin-taro",
@@ -14630,117 +14687,29 @@
       "damId": "yoshiomi"
     },
     {
-      "id": "houshuuandaa",
-      "name": "ホウシュウアンダー",
-      "foaled": {
-        "year": 1968
-      },
-      "sex": "male",
-      "breed": "サラ",
-      "sire": "ザラズーストラ",
-      "dam": "トサクイン",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "1968z00525",
-      "raceStats": {
-        "total": {
-          "runs": 37,
-          "wins": 11
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1973,
-            "month": 5,
-            "day": 13
-          },
-          "racecourse": "京都",
-          "race": "京都大障害(OP)",
-          "displayRace": "京都大障害(春)",
-          "distance": "障3260",
-          "grade": "jra_jump",
-          "entry": "8",
-          "result": "8(9)",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 1973,
-            "month": 2,
-            "day": 25
-          },
-          "racecourse": "阪神",
-          "race": "阪神障害S(OP)",
-          "displayRace": "阪神障害S(春)",
-          "distance": "障3300",
-          "grade": "jra_jump",
-          "entry": "6",
-          "result": "1",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 1972,
-            "month": 11,
-            "day": 3
-          },
-          "racecourse": "京都",
-          "race": "京都大障害(OP)",
-          "displayRace": "京都大障害(秋)",
-          "distance": "障3260",
-          "grade": "jra_jump",
-          "entry": "6",
-          "result": "5",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 1972,
-            "month": 3,
-            "day": 26
-          },
-          "racecourse": "阪神",
-          "race": "阪神障害S(OP)",
-          "displayRace": "阪神障害S(春)",
-          "distance": "障3300",
-          "grade": "jra_jump",
-          "entry": "7",
-          "result": "5",
-          "favorite": "4"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "tosakuin-1964"
-    },
-    {
-      "id": "tosakuin-1964",
+      "id": "tosa-queen-1964",
       "name": "トサクイン",
       "foaled": {
         "year": 1964
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "トヨタニ",
       "dam": "トサセント",
       "color": "黒鹿毛",
-      "breeder": "",
+      "breeder": "桑名莞爾（神奈川県横浜市）",
       "netkeibaId": "000a00babb",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1238",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "tosasento",
       "linkName": "トサクイン(1964)"
@@ -14748,27 +14717,31 @@
     {
       "id": "tosasento",
       "name": "トサセント",
+      "formerPedigreeName": "タチハヤ",
       "foaled": {
-        "year": 1956
+        "year": 1956,
+        "month": 5,
+        "day": 10
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "セントライト",
       "dam": "原姫",
       "color": "青毛",
-      "breeder": "",
+      "breeder": "伊藤金雄（岩手県一ノ関市）",
+      "registration": "本登録番号1813号",
       "netkeibaId": "000a00cd99",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』pp.1237-1238, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.226",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "harahime"
     },
@@ -14776,26 +14749,29 @@
       "id": "harahime",
       "name": "原姫",
       "foaled": {
-        "year": 1945
+        "year": 1945,
+        "month": 4,
+        "day": 8
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "原統",
       "dam": "日本姫",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "蛇平彦三郎（青森県三戸郡階上村）",
+      "registration": "本登録番号576号",
       "netkeibaId": "000a00c8c9",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.226",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
       "damId": "nipponhime"
     },
@@ -14806,55 +14782,59 @@
         "year": 1939
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "レヴユーオーダー(GB)",
       "dam": "フリンジ",
       "color": "",
-      "breeder": "",
+      "breeder": "鎌田管仲（北海道浦河郡浦河町）",
       "netkeibaId": "000a01c95e",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1012",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "furinji"
+      "damId": "fringe",
+      "comment": "アラブ血統書にも毛色・誕生日の記載がない。"
     },
     {
-      "id": "furinji",
+      "id": "fringe",
       "name": "フリンジ",
       "foaled": {
-        "year": 1930
+        "year": 1930,
+        "month": 5,
+        "day": 2
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "マスボート(SYR)",
       "dam": "第五フラストレート",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
+      "registration": "7巻波612号",
       "netkeibaId": "000a00c685",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『馬匹血統登録書 第7巻』p.109",
       "prizeMoney": {
-        "total": "0万円"
+        "total": null
       },
-      "damId": "daigofurasutoreeto"
+      "damId": "dai5-frustrate"
     },
     {
-      "id": "daigofurasutoreeto",
+      "id": "dai5-frustrate",
       "name": "第五フラストレート",
       "foaled": {
         "year": 1912
@@ -14878,7 +14858,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "frustrate"
+      "damId": "frustrate",
+      "furigana": "ダイゴフラストレート"
     },
     {
       "id": "kikunohappii",
@@ -15417,7 +15398,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna"
+      "damId": "dai3-manna"
     },
     {
       "id": "ono-sakura",
@@ -15647,7 +15628,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigomanna"
+      "damId": "dai5-manna"
     },
     {
       "id": "kikunotoppuran",
@@ -15878,7 +15859,8 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yamamyou"
+      "damId": "yamatae",
+      "furigana": "ムラミョウ"
     },
     {
       "id": "surugafuji",
@@ -17279,7 +17261,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daigomanna"
+      "damId": "dai5-manna"
     },
     {
       "id": "a-time",
@@ -17413,7 +17395,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kashin"
+      "damId": "ieomi"
     },
     {
       "id": "kenkabuto",
@@ -18008,7 +17990,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonmanna"
+      "damId": "dai4-manna"
     },
     {
       "id": "fueamanna",
@@ -18453,7 +18435,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfuratsushingurasu",
+      "damId": "dai3-flashing-lass",
       "owner": "富岡",
       "jbisId": "0000001673",
       "bogusId": "39532"
@@ -18824,7 +18806,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna",
+      "damId": "dai3-manna",
       "owner": "前田",
       "jbisId": "0000000296",
       "bogusId": "27751"
@@ -18945,7 +18927,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna",
+      "damId": "dai3-manna",
       "owner": "北竹清剛",
       "trainer": "鈴木勝太郎（東京）",
       "ahonooraId": "kumonohana"
@@ -19081,7 +19063,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanmanna",
+      "damId": "dai3-manna",
       "owner": "高谷喜太郎→森本豊吉",
       "trainer": "田中和一郎（東京）",
       "ahonooraId": "shimataka"
@@ -19212,7 +19194,7 @@
       "owner": "川口",
       "jbisId": "0000000532",
       "bogusId": "26720",
-      "damId": "daigomanna"
+      "damId": "dai5-manna"
     },
     {
       "id": "mitsutae",
@@ -19434,7 +19416,7 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisanfuratsushingurasu",
+      "damId": "dai3-flashing-lass",
       "owner": "石川了吉",
       "trainer": "上村大治郎（東京）→久保田金造（京都）",
       "ahonooraId": "miharuo"
@@ -19443,7 +19425,7 @@
       "id": "eishiyain",
       "name": "エイシヤイン",
       "foaled": {
-        "year": "1944"
+        "year": 1944
       },
       "sex": "male",
       "breed": "サラ",
@@ -19549,7 +19531,7 @@
       ],
       "source": "python_scraping",
       "bogusId": "39156",
-      "damId": "yoshishin"
+      "damId": "keishin"
     },
     {
       "id": "ieryu",
@@ -19639,7 +19621,111 @@
       "owner": "石田一",
       "trainer": "石門虎吉（阪神）",
       "ahonooraId": "ieryu",
-      "damId": "yamamyou"
+      "damId": "yamatae"
+    },
+    {
+      "id": "el-no-gold",
+      "name": "エルノゴールド",
+      "foaled": {
+        "year": 1972,
+        "month": 4,
+        "day": 5
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "エルシド(FR)",
+      "dam": "トサクイン",
+      "color": "黒鹿毛",
+      "breeder": "坂本繁生（北海道静内町）",
+      "netkeibaId": "1955500905",
+      "registration": "本登録番号2960号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "jbisId": "0000055501",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.220",
+      "prizeMoney": {
+        "total": null
+      },
+      "damId": "tosa-queen-1964"
+    },
+    {
+      "id": "takaha-royal",
+      "name": "タカハロイヤル",
+      "foaled": {
+        "year": 1985,
+        "month": 4,
+        "day": 11
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "トツプホース",
+      "dam": "エルノゴールド",
+      "color": "黒鹿毛",
+      "breeder": "木下孝男（北海道三石町）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 55,
+          "wins": 7
+        },
+        "divisions": [
+          {
+            "type": "central",
+            "stats": {
+              "flat": {
+                "runs": 0,
+                "wins": 0
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          },
+          {
+            "type": "local",
+            "stats": {
+              "flat": {
+                "runs": 55,
+                "wins": 7
+              },
+              "jump": {
+                "runs": 0,
+                "wins": 0
+              }
+            }
+          }
+        ]
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1988,
+            "month": 10,
+            "day": 16
+          },
+          "racecourse": "中津",
+          "race": "アラブ優駿",
+          "displayRace": "アラブ優駿",
+          "distance": "ダ1760",
+          "grade": "local_old_grade",
+          "entry": "8",
+          "favorite": "6",
+          "result": "7"
+        }
+      ],
+      "jbisId": "0000183216",
+      "source": "JBIS, 『アラブ・アングロアラブ血統書 第4巻』p.88",
+      "prizeMoney": {
+        "total": "257.1万円"
+      },
+      "damId": "el-no-gold"
     }
   ]
 }

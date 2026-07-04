@@ -39,44 +39,49 @@
     },
     {
       "id": "himeshou",
-      "name": "ヒメショウ",
+      "pedigreeName": "ヒメシヨウ",
+      "name": "ハクヒメシヨウ",
       "foaled": {
         "year": 1931
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "シヤイニングスピヤー(GB)",
       "dam": "ウインザ",
-      "color": "鹿毛",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "渡島森町",
       "netkeibaId": "000a01c571",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": 1
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『競馬成績書 昭和12年春季』p.26",
       "prizeMoney": {
-        "total": "0万円"
+        "total": "1,050円"
       },
-      "damId": "wintha"
+      "damId": "wintha",
+      "comment": "netkeibaでは鹿毛で登録されているが、競馬成績書では栗毛。"
     },
     {
       "id": "sakura-1941",
       "name": "サクラ",
       "foaled": {
-        "year": 1941
+        "year": 1941,
+        "month": 6,
+        "day": 3
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "アカイシダケ",
-      "dam": "ヒメショウ",
+      "dam": "ヒメシヨウ",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "前田與一（宮崎県東諸県郡綾町）",
       "netkeibaId": "000a00b74d",
+      "registration": "登録番号59号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -85,7 +90,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.32",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -96,15 +101,19 @@
       "id": "kin-ou",
       "name": "キンオウ",
       "foaled": {
-        "year": 1956
+        "year": 1956,
+        "month": 3,
+        "day": 15
       },
+      "died": "1975.08. 用途変更",
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アラ系",
       "sire": "トクヒカリ",
       "dam": "サクラ",
       "color": "栗毛",
-      "breeder": "浦河町",
+      "breeder": "久留須重志（鹿児島県横川町）",
       "netkeibaId": "000a00ddc6",
+      "registration": "登録番号6172号",
       "raceStats": {
         "total": {
           "runs": 78,
@@ -144,7 +153,7 @@
           "favorite": "6"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』pp.441-442",
       "englishName": "Kin-Ou",
       "prizeMoney": {
         "total": "0万円"
@@ -158,11 +167,11 @@
         "year": 1968
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "ハマノオー",
       "dam": "キンオウ",
       "color": "鹿毛",
-      "breeder": "新冠町",
+      "breeder": "細川功（北海道新冠町）",
       "netkeibaId": "000a00c4d3",
       "raceStats": {
         "total": {
@@ -323,7 +332,7 @@
           "favorite": "4"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系種血統書 第1巻』p.442",
       "englishName": "Takaradake",
       "prizeMoney": {
         "total": "0万円"
