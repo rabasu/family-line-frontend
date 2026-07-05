@@ -24,7 +24,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  ignorePatterns: ['app/pedigree/**/*.json', '**/*.json', 'node_modules/', '.next/', 'dist/', 'build/', 'public/', 'scraping/', 'scripts/', 'temp_test/'],
+  ignorePatterns: ['app/pedigree/**/*.json', 'app/pedigree-traditional/**/*.json', '**/*.json', 'node_modules/', '.next/', 'dist/', 'build/', 'public/', 'scraping/', 'scripts/', 'temp_test/'],
   rules: {
     // 'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/react-in-jsx-scope': 'off',

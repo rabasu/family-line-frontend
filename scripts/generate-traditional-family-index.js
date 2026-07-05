@@ -10,7 +10,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const PEDIGREE_DIR = path.join(__dirname, '../app/pedigree')
+const PEDIGREE_DIR = path.join(__dirname, '../app/pedigree-traditional')
 const DATA_PEDIGREE_DIR = path.join(__dirname, '../data/pedigree')
 const METADATA_FILE = path.join(DATA_PEDIGREE_DIR, 'pedigree-metadata.json')
 const OUTPUT_FILE = path.join(DATA_PEDIGREE_DIR, 'traditional-family-index.json')
