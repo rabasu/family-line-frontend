@@ -36,10 +36,10 @@ function generateKeyName(fileName: string): string {
 }
 
 // require.contextを一度だけ初期化（効率化）
-// app/pedigree 内の.jsonファイルを検出（牝系データのみ）
+// app/pedigree-traditional 内の.jsonファイルを検出（在来牝系データのみ）
 // .backup.jsonファイルは除外
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const jsonContext = (require as any).context('../../app/pedigree', false, /^\.\/(?!.*\.backup)[^/]+\.json$/)
+const jsonContext = (require as any).context('../../app/pedigree-traditional', false, /^\.\/(?!.*\.backup)[^/]+\.json$/)
 
 /**
  * 在来牝系のJSONファイルを取得
@@ -58,7 +58,7 @@ async function loadJsonFile(fileName: string): Promise<JsonFileData> {
   const variableName = generateVariableName(fileName)
 
   try {
-    const pedigreeData = (await import(`../../app/pedigree/${fileName}`)) as PedigreeJsonData
+    const pedigreeData = (await import(`../../app/pedigree-traditional/${fileName}`)) as PedigreeJsonData
 
     if (pedigreeData?.metadata?.isTraditionalFamily !== true) {
       console.warn(`${fileName}は在来牝系ではないためスキップします`)
@@ -77,7 +77,7 @@ async function loadJsonFile(fileName: string): Promise<JsonFileData> {
       throw new Error(`metadata.rootHorseIdが存在しません: ${fileName}`)
     }
 
-    const horse = await loadPedigreeFromJson(`../../app/pedigree/${fileName}`)
+    const horse = await loadPedigreeFromJson(`../../app/pedigree-traditional/${fileName}`)
 
     return {
       fileName,
@@ -141,7 +141,7 @@ async function getPedigreeData(key: string): Promise<Horse | null> {
 
     const fileName = jsonFilesData.find((data) => data.keyName === key)?.fileName
     if (fileName) {
-      const horse = await loadPedigreeFromJson(`../../app/pedigree/${fileName}`)
+      const horse = await loadPedigreeFromJson(`../../app/pedigree-traditional/${fileName}`)
       jsonHorseCache.set(key, horse)
       return horse
     }
