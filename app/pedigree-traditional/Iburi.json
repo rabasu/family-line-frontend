@@ -1,23 +1,30 @@
 {
   "metadata": {
-    "pedigreeName": "レヴエーキング",
-    "rootHorseId": "revueekingu",
+    "pedigreeName": "胆振",
+    "rootHorseId": "iburi",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
     "source": "attribute_mapping_reverted",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "revueekingu",
-      "name": "レヴエーキング",
-      "foaled": {},
+      "id": "iburi",
+      "pedigreeName": "胆振",
+      "name": "イブリ",
+      "foaled": {
+        "year": 1920
+      },
+      "importedYear": "1924",
+      "importedBy": "札幌競馬倶楽部（大正13年秋季豪州産抽籤馬）",
       "sex": "female",
       "breed": "サラ",
-      "sire": "",
-      "dam": "",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "000a01cd6f",
+      "sire": "Grist",
+      "dam": "Nada's Daughter",
+      "color": "黒鹿毛",
+      "breeder": "豪",
+      "owner": "厚母重丸（北海道札幌郡琴似村）",
+      "bogusId": "1422231",
+      "registration": "3巻396号",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -26,20 +33,77 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "『馬匹血統登録書 第3巻』p.73, 『サラブレッド血統書 第1巻』p.139, 『明治・大正・昭和初期の輸入馬』"
+    },
+    {
+      "id": "nishitappu-ebor",
+      "pedigreeName": "ニシタツプイボア",
+      "name": "ヒダカイフウ",
+      "foaled": {
+        "year": 1927,
+        "month": 5,
+        "day": 24
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "イボア(GB)",
+      "dam": "胆振",
+      "color": "鹿毛",
+      "breeder": "厚母重丸（北海道札幌郡琴似村）",
+      "netkeibaId": "",
+      "registration": "16巻2024号",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『馬匹血統登録書 第16巻』p.118, 『サラブレッド血統書 第1巻』p.374",
+      "damId": "iburi"
+    },
+    {
+      "id": "review-king",
+      "name": "レヴユーキング",
+      "foaled": {
+        "year": 1934,
+        "month": 5,
+        "day": 11
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "レヴユーオーダー(GB)",
+      "dam": "ニシタツプイボア",
+      "color": "栗毛",
+      "breeder": "飛渡作一（北海道新冠郡新冠村）",
+      "netkeibaId": "000a01cd6f",
+      "registration": "17巻2256号",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "damId": "nishitappu-ebor"
     },
     {
       "id": "fuku",
       "name": "フク",
       "foaled": {
-        "year": 1944
+        "year": 1944,
+        "month": 6,
+        "day": 20
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "アア",
       "sire": "モナーク",
-      "dam": "レヴエーキング",
+      "dam": "レヴユーキング",
       "color": "栗毛",
-      "breeder": "",
+      "breeder": "福重明（鹿児島県囎唹郡西志布志村）",
       "netkeibaId": "000a00ca31",
       "raceStats": {
         "total": {
@@ -49,24 +113,26 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.503",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "revueekingu"
+      "damId": "review-king"
     },
     {
       "id": "misuasafuku",
       "name": "ミスアサフク",
       "foaled": {
-        "year": 1954
+        "year": 1954,
+        "month": 4,
+        "day": 7
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "準サラ",
       "sire": "アサフジ",
       "dam": "フク",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "重田与兵衛（鹿児島県囎唹郡西志布志村）",
       "netkeibaId": "000a00ba75",
       "raceStats": {
         "total": {
@@ -76,7 +142,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.750-751",
       "prizeMoney": {
         "total": "0万円"
       },

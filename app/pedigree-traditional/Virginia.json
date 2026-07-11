@@ -1,24 +1,26 @@
 {
   "metadata": {
     "pedigreeName": "バージニアー",
-    "rootHorseId": "baajiniaa",
+    "rootHorseId": "virginia",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
     "source": "attribute_mapping_reverted",
     "isTraditionalFamily": true
   },
   "horses": [
     {
-      "id": "baajiniaa",
+      "id": "virginia",
       "name": "バージニアー",
       "foaled": {
         "year": 1908
       },
+      "importedYear": "~1921",
       "sex": "female",
-      "breed": "サラ",
-      "sire": "",
-      "dam": "",
+      "breed": "サラ系",
+      "sire": "フアンリー",
+      "dam": "アレキサ",
       "color": "",
-      "breeder": "",
+      "breeder": "豪",
+      "owner": "（十勝芽室村）",
       "netkeibaId": "000a01cb33",
       "raceStats": {
         "total": {
@@ -28,20 +30,22 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping"
+      "source": "python_scraping, 『競馬成績書 昭和4年秋季』p.194,203,230, 『アラブ系牝馬系統大鑑』p.221",
+      "comment": "両親の馬名はかなり表記ゆれがあるが、おそらくは父フアンリーorアシリー、母アレキサ。PedigreeQueryなどで大正3年秋季横浜豪州産抽籤馬・バアジニヤと同一視されることがあるが、そちらは父セントフランシスであるため矛盾する。豪州産馬として非常にありふれた馬名なので同名異馬であろう。"
     },
     {
       "id": "tamagiku",
-      "name": "タマギク",
+      "pedigreeName": "タマギク",
+      "name": "タマローズ",
       "foaled": {
         "year": 1924
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ビリーゼヴエルガー",
       "dam": "バージニアー",
       "color": "鹿毛",
-      "breeder": "静内町",
+      "breeder": "十勝芽室村",
       "netkeibaId": "000a00f34d",
       "raceStats": {
         "total": {
@@ -51,11 +55,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『競馬成績書 昭和4年秋季』p.230",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "baajiniaa"
+      "damId": "virginia"
     },
     {
       "id": "erumu",
@@ -64,7 +68,7 @@
         "year": 1933
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "ペリオン(GB)",
       "dam": "タマギク",
       "color": "鹿毛",
@@ -78,7 +82,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.221",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -88,14 +92,16 @@
       "id": "kikubotan",
       "name": "キクボタン",
       "foaled": {
-        "year": 1944
+        "year": 1944,
+        "month": 4,
+        "day": 29
       },
       "sex": "female",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "トキノチカラ",
       "dam": "エルム",
       "color": "鹿毛",
-      "breeder": "",
+      "breeder": "佐々木甚吉（北海道浦河郡浦河町）",
       "netkeibaId": "000a00b78c",
       "raceStats": {
         "total": {
@@ -105,7 +111,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.19",
       "prizeMoney": {
         "total": "0万円"
       },
@@ -118,11 +124,11 @@
         "year": 1956
       },
       "sex": "male",
-      "breed": "サラ",
+      "breed": "サラ系",
       "sire": "タカクラヤマ",
       "dam": "キクボタン",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "中本政次郎（北海道新冠郡新冠村）",
       "netkeibaId": "1956z00159",
       "raceStats": {
         "total": {
@@ -163,7 +169,7 @@
           "favorite": "4"
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『サラブレッド系種血統書 第1巻』p.20",
       "prizeMoney": {
         "total": "0万円"
       },
