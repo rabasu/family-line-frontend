@@ -36,12 +36,24 @@ if (importedMaresMatch) {
 
 console.log(`Found ${importedMaresIds.length} imported mares in familyList.tsx`)
 
-// pedigreeディレクトリ内のすべてのJSONファイルを取得
-const pedigreeDir = path.join(__dirname, '../app/pedigree')
-const jsonFiles = fs
-  .readdirSync(pedigreeDir)
-  .filter((file) => file.endsWith('.json'))
-  .filter((file) => !file.endsWith('.backup.json'))
+// pedigreeディレクトリ（在来牝系 + 通常牝系）内のすべてのJSONファイルを取得
+// 在来牝系は app/pedigree-traditional に分離済みのため、両ディレクトリを対象とする
+const pedigreeDirs = [path.join(__dirname, '../app/pedigree-traditional'), path.join(__dirname, '../app/pedigree')]
+const jsonFiles = []
+const seenFileNames = new Set()
+for (const dir of pedigreeDirs) {
+  if (!fs.existsSync(dir)) continue
+  const files = fs
+    .readdirSync(dir)
+    .filter((file) => file.endsWith('.json'))
+    .filter((file) => !file.endsWith('.backup.json'))
+  for (const file of files) {
+    // 同名ファイルは在来牝系ディレクトリ（先頭）を優先し、重複処理を避ける
+    if (seenFileNames.has(file)) continue
+    seenFileNames.add(file)
+    jsonFiles.push({ dir, file })
+  }
+}
 
 console.log(`Found ${jsonFiles.length} pedigree JSON files`)
 
@@ -62,8 +74,8 @@ const updatedFiles = []
 const createdMdxFiles = []
 
 // 各JSONファイルを処理
-for (const jsonFile of jsonFiles) {
-  const jsonPath = path.join(pedigreeDir, jsonFile)
+for (const { dir, file: jsonFile } of jsonFiles) {
+  const jsonPath = path.join(dir, jsonFile)
   const jsonContent = fs.readFileSync(jsonPath, 'utf-8')
   let pedigreeData
 
@@ -172,6 +184,18 @@ for (const jsonFile of jsonFiles) {
       // 牝系名を取得（日本語名を優先、なければ英語名）
       const displayName = rootHorse.name || rootHorse.pedigreeName || pedigreeName || mdxFileName
 
+      // 概要文の冒頭（輸入年が数値なら「XXXX年に輸入された基礎牝馬」、
+      // 内国産などの非数値なら「内国産の基礎牝馬」、不明なら「基礎牝馬」）
+      const importedYearNum = rootHorse.importedYear ? parseInt(rootHorse.importedYear) : NaN
+      let originPhrase
+      if (!isNaN(importedYearNum)) {
+        originPhrase = `${importedYearNum}年に輸入された基礎牝馬`
+      } else if (rootHorse.importedYear && String(rootHorse.importedYear).includes('内国産')) {
+        originPhrase = '内国産の基礎牝馬'
+      } else {
+        originPhrase = '基礎牝馬'
+      }
+
       // mdxファイルの内容を作成
       const mdxContent = `---
 title: ${displayName}系
@@ -184,7 +208,7 @@ type: Family
 
 ## 概要
 
-${rootHorse.importedYear ? `${rootHorse.importedYear}年に` : ''}輸入された基礎牝馬「**${displayName}**」を牝祖とするファミリーライン。
+${originPhrase}「**${displayName}**」を牝祖とするファミリーライン。
 
 <ProfileTable horseId="${rootHorseId}" />
 
