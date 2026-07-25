@@ -62,7 +62,8 @@ interface Horse {
   netkeibaId?: string // Netkeiba ID
   ahonooraId?: string // Ahonoora(優駿達の蹄跡)ID
   jbisId?: string // JBIS ID
-  bogusId?: string // Bogus(血統表検索) ID
+  bogusId?: string // Bogus(血統表検索) 旧サイト ID（p.bogus.jp）
+  newBogusId?: string // Bogus(血統表検索) 新サイト ID（pedigree.bogus.jp）
   source?: string // 情報源 コメント代わりに使用
 
   // 牝祖用
