@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "pedigreeName": "バコニー五",
+    "rootHorseId": "bakony-v",
+    "lastUpdated": "2026-07-18T18:17:21.744614Z",
+    "source": "python_scraping",
+    "isTraditionalFamily": true
+  },
+  "horses": [
+    {
+      "id": "bakony-v",
+      "name": "バコニー五",
+      "englishName": "Bakony V",
+      "foaled": {
+        "year": 1907
+      },
+      "importedYear": "1910",
+      "sex": "female",
+      "breed": "アア",
+      "sire": "バコニー",
+      "dam": "ポトラニーギドラン",
+      "color": "栗毛",
+      "breeder": "洪",
+      "owner": "日高種馬牧場",
+      "netkeibaId": "000a01c8c4",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.1021-1022, 『明治・大正・昭和初期の輸入馬』",
+      "prizeMoney": null
+    },
+    {
+      "id": "bakony-vnoichi",
+      "name": "バコニー五ノ一",
+      "foaled": {
+        "year": 1912,
+        "month": 4,
+        "day": 11
+      },
+      "sex": "female",
+      "breed": "準サラ",
+      "sire": "ブレアーモアー(GB)",
+      "dam": "バコニー五",
+      "color": "栗毛",
+      "breeder": "日高種馬牧場（北海道浦河郡浦河町）",
+      "netkeibaId": "000a01c8c5",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1166",
+      "prizeMoney": null,
+      "damId": "bakony-v"
+    },
+    {
+      "id": "igunee",
+      "name": "イグネー",
+      "foaled": {
+        "year": 1917
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ギドラン四二ノ三",
+      "dam": "バコニー五ノ一",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01c8c6",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "bakony-vnoichi"
+    },
+    {
+      "id": "kikuhime",
+      "name": "菊姫",
+      "foaled": {
+        "year": 1931
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "王儀",
+      "dam": "イグネー",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01c8c7",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "igunee"
+    },
+    {
+      "id": "housakae",
+      "name": "方栄",
+      "foaled": {
+        "year": 1943
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "方景",
+      "dam": "菊姫",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00c774",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "kikuhime"
+    },
+    {
+      "id": "eadaabii",
+      "name": "エアダービー",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ハルステーツ",
+      "dam": "方栄",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00cc7e",
+      "raceStats": {
+        "total": {
+          "runs": 44,
+          "wins": 8
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "owner": "藤原清治",
+      "trainer": "柏谷富衛",
+      "damId": "housakae"
+    },
+    {
+      "id": "big-three",
+      "name": "ビッグスリー",
+      "foaled": {
+        "year": 1965
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "イチヤマヒカリ",
+      "dam": "エアダービー",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c43e",
+      "raceStats": {
+        "total": {
+          "runs": 30,
+          "wins": 13
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1969,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "14",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 5,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "11",
+          "result": "4",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1969,
+            "month": 3,
+            "day": 16
+          },
+          "racecourse": "中京",
+          "race": "アラブ大賞典(OP)",
+          "displayRace": "アラブ大賞典(春)",
+          "distance": "ダ1800",
+          "grade": "jra_grade",
+          "entry": "13",
+          "result": "7",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 12,
+            "day": 8
+          },
+          "racecourse": "阪神",
+          "race": "読売C(OP)",
+          "displayRace": "読売C(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "17",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 6,
+            "day": 23
+          },
+          "racecourse": "東京",
+          "race": "読売C(OP)",
+          "displayRace": "読売C(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "16",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1968,
+            "month": 5,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念(OP)",
+          "displayRace": "タマツバキ記念(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "19",
+          "result": "12",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Big Three",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "owner": "株式会社ホースタジマ",
+      "trainer": "坂口正二",
+      "damId": "eadaabii"
+    }
+  ]
+}

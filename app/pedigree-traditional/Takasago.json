@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "高砂",
     "rootHorseId": "takasago",
-    "lastUpdated": "2026-04-01T00:16:44.892658Z",
+    "lastUpdated": "2026-07-18T19:14:52.339340Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -6368,6 +6368,134 @@
       "source": "『馬匹血統登録書 第拾八卷』p.208, 『日本競馬史 第6巻』pp.712-715,800-802, 『優駿』（1944年8月号）p.20",
       "damId": "_unknown",
       "comment": "能力検定競走の京都記念・阪神記念で2着、帝室御賞典(春)着外など、少なくとも9戦4勝（4-4-0-1）。各種DB, PedigreeQuery, bogus, 馬匹血統登録書, 各競走成績書などにも血統の記録が一切ない。優駿で競走名・血統名・父母の照合ができたため、タメアキ=為昭は確定した。以下は優駿確認前の考察。【当時の考察】1944/04/20の呼駈五歳に58.5kgで出走していることから「1940年生」「牝馬」「アラブ血量50%未満」であることは推定できる。また各種資料に記載がないことから、純粋なサラブレッドではないことが推測できる。条件を満たす馬の1頭が「為昭（イショウ）」。馬匹血統登録書18巻・波2098号、1940/03/08生まれの準サラブレッド牝馬。父ハクシヨウ、母朝為。母（アサタメ）、兄弟に為勝（タメカツ）などがおり、為昭を「タメアキ」と呼んでも不思議ではなさそう。1943時点では「タメアキ」「為昭（にあたる血統の馬）」「イショウ」どれも出走していないため、おそらく1944年が初出走。この時に競走名タメアキで登録された、その後繁殖入りしなかったため競走名・成績が血統名と結びつけられず散逸した、と考えれば一応矛盾はない。"
+    },
+    {
+      "id": "misukiyofuku",
+      "name": "ミスキヨフク",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "サチハヤ",
+      "dam": "峰宜",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00cafc",
+      "raceStats": {
+        "total": {
+          "runs": 21,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1956,
+            "month": 12,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "読売カップ競走(OP)",
+          "displayRace": "読売C(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "1",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "owner": "片桐芳二",
+      "trainer": "中村広"
+    },
+    {
+      "id": "minegi",
+      "name": "峰宜",
+      "foaled": {
+        "year": 1942
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ニーフアン(FR)",
+      "dam": "天慶",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00c816",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "tengyou"
+    },
+    {
+      "id": "kiyonohana",
+      "name": "キヨノハナ",
+      "pedigreeName": "ミキノカワ",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "female",
+      "breed": "アラ系",
+      "sire": "ミキノヒカリ",
+      "dam": "ミエハタ",
+      "color": "栃栗毛",
+      "breeder": "新冠町",
+      "netkeibaId": "000a00f2e8",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 6
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1956,
+            "month": 12,
+            "day": 9
+          },
+          "racecourse": "阪神",
+          "race": "読売カップ競走(OP)",
+          "displayRace": "読売C(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "8",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 1956,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "9",
+          "result": "5",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.579",
+      "owner": "植中清",
+      "trainer": "日迫清",
+      "damId": "miehata",
+      "comment": "netkeibaでは競走名（キヨノハナ, id:000a00f2e8）と血統名（ミキノカワ, id:000a00dd14）で分裂して登録されている。"
     }
   ]
 }
