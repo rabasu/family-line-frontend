@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "ギドラン四〇",
     "rootHorseId": "gidran-40",
-    "lastUpdated": "2025-11-23T17:47:25.050326Z",
+    "lastUpdated": "2026-07-26T02:09:19.987922Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -849,6 +849,21 @@
         {
           "date": {
             "year": 1964,
+            "month": 7,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "読売C(OP)",
+          "displayRace": "読売C(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "7",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1964,
             "month": 10,
             "day": 4
           },
@@ -860,13 +875,30 @@
           "entry": "17",
           "result": "3",
           "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1964,
+            "month": 12,
+            "day": 27
+          },
+          "racecourse": "阪神",
+          "race": "読売C(OP)",
+          "displayRace": "読売C(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "14",
+          "result": "6",
+          "favorite": "3"
         }
       ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "maruzenkuin"
+      "damId": "maruzenkuin",
+      "owner": "阪口揚造",
+      "trainer": "中村好夫"
     },
     {
       "id": "maruzenkuin",
@@ -946,63 +978,33 @@
       "raceResults": [
         {
           "date": {
-            "year": 1961,
-            "month": 10,
-            "day": 22
+            "year": 1958,
+            "month": 9,
+            "day": 28
           },
-          "racecourse": "阪神",
-          "race": "アラブ大障害競走(OP)",
-          "displayRace": "アラブ大障害(秋)",
-          "distance": "芝3870",
-          "grade": "jra_jump",
-          "entry": "5",
+          "racecourse": "京都",
+          "race": "タマツバキ記念競走(OP)",
+          "displayRace": "タマツバキ記念(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
           "result": "3",
-          "favorite": "4"
-        },
-        {
-          "date": {
-            "year": 1961,
-            "month": 6,
-            "day": 25
-          },
-          "racecourse": "阪神",
-          "race": "アラブ大障害競走(OP)",
-          "displayRace": "アラブ大障害(春)",
-          "distance": "芝3870",
-          "grade": "jra_jump",
-          "entry": "6",
-          "result": "2",
           "favorite": "5"
         },
         {
           "date": {
-            "year": 1960,
-            "month": 10,
-            "day": 23
+            "year": 1958,
+            "month": 12,
+            "day": 21
           },
           "racecourse": "阪神",
-          "race": "アラブ大障害競走(OP)",
-          "displayRace": "アラブ大障害(秋)",
-          "distance": "芝3870",
-          "grade": "jra_jump",
-          "entry": "4",
-          "result": "1",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 1960,
-            "month": 5,
-            "day": 29
-          },
-          "racecourse": "阪神",
-          "race": "アラブ大障害競走(OP)",
-          "displayRace": "アラブ大障害(春)",
-          "distance": "芝3870",
-          "grade": "jra_jump",
-          "entry": "3",
-          "result": "1",
-          "favorite": "2"
+          "race": "読売カップ競走(OP)",
+          "displayRace": "読売C(秋)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "7",
+          "favorite": "6"
         },
         {
           "date": {
@@ -1021,28 +1023,75 @@
         },
         {
           "date": {
-            "year": 1958,
-            "month": 9,
-            "day": 28
+            "year": 1960,
+            "month": 5,
+            "day": 29
           },
-          "racecourse": "京都",
-          "race": "タマツバキ記念競走(OP)",
-          "displayRace": "タマツバキ記念(秋)",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "7",
-          "result": "3",
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(春)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "3",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 1960,
+            "month": 10,
+            "day": 23
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(秋)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "4",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 6,
+            "day": 25
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(春)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "6",
+          "result": "2",
           "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 1961,
+            "month": 10,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "アラブ大障害競走(OP)",
+          "displayRace": "アラブ大障害(秋)",
+          "distance": "芝3870",
+          "grade": "jra_jump",
+          "entry": "5",
+          "result": "3",
+          "favorite": "4"
         }
       ],
       "source": "python_scraping",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kanetomo"
+      "damId": "kanetomo-1948",
+      "owner": "円城留二郎",
+      "trainer": "高橋直三"
     },
     {
-      "id": "kanetomo",
+      "id": "kanetomo-1948",
       "name": "カネトモ",
       "foaled": {
         "year": 1948

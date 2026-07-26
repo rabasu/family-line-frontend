@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "トレアドールギドラン一五",
     "rootHorseId": "toreador-gidran-15",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted",
+    "lastUpdated": "2026-07-26T02:10:17.809368Z",
+    "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
@@ -174,6 +174,77 @@
       },
       "damId": "harukachi",
       "linkName": "カツヨシ(1961)"
+    },
+    {
+      "id": "houzan",
+      "name": "ホウザン",
+      "foaled": {
+        "year": 1954
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "キリンザン",
+      "dam": "第三グードリア",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "1954z00180",
+      "raceStats": {
+        "total": {
+          "runs": 78,
+          "wins": 15
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1957,
+            "month": 7,
+            "day": 7
+          },
+          "racecourse": "中山",
+          "race": "読売カップ競走(OP)",
+          "displayRace": "読売C(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "7",
+          "result": "6",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "owner": "岡本茂",
+      "trainer": "久保田彦之",
+      "linkName": "ホウザン(1954)",
+      "damId": "dai3-guudoria"
+    },
+    {
+      "id": "dai3-guudoria",
+      "name": "第三グードリア",
+      "foaled": {
+        "year": 1931
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "エミグランド",
+      "dam": "グードリア",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00c711",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "guudoria"
     }
   ]
 }
