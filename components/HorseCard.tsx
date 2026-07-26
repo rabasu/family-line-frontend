@@ -116,12 +116,12 @@ function raceStatsSummary(raceStats: AggregatedRaceStats | undefined) {
   if (!raceStats) {
     return ''
   }
-  const summary = `${raceStats.total.runs ?? '?'}戦${raceStats.total.wins ?? '?'}勝`
-  if (summary === '0戦0勝') {
-    // 現状「0戦0勝」にはデータ不足が含まれるため、不出走ではなく空欄とする
+  const { runs, wins } = raceStats.total
+  // 「0戦0勝」や wins/runs 両方 null にはデータ不足が含まれるため、不出走ではなく空欄とする
+  if ((runs == null && wins == null) || (runs === 0 && wins === 0)) {
     return ''
   }
-  return summary
+  return `${runs ?? '?'}戦${wins ?? '?'}勝`
 }
 
 function prizeMoneySummary(prizeMoney: PrizeMoney | undefined): string {
