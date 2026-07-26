@@ -52,6 +52,7 @@ scraping/login_config.py
 # backup
 app/pedigree/backup
 app/pedigree/problematic_backup
+app/pedigree-traditional/backup
 
 # IDE
 .cursor/
@@ -62,13 +63,6 @@ app/pedigree/problematic_backup
 *.backup
 *.backup.json
 temp_test/
-gumma-takemi-queen
-itsunyuu
-itsushin
-kohairan-etsuchi
-mizukin
-obajan-5-7
-ootsuisami
 horse_data_*.json
 
 # scripts and docs (if not needed in repo)
@@ -78,6 +72,12 @@ scripts/*.json
 scripts/*.json.backup
 scripts/test-*.js
 scripts/test-*.json
+# 在来牝系JSON検証スクリプトはリポジトリ管理対象
+!scripts/validate_pedigree_json.py
+
+# pycache
+__pycache__/
+
 
 # scraping
 scraping/*
