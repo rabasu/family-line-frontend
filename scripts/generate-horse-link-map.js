@@ -9,6 +9,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const { getDraftFamilySlugs } = require('./lib/draft-family-slugs')
 
 const PEDIGREE_DIR = path.join(__dirname, '../app/pedigree-traditional')
 const OUTPUT_DIR = path.join(__dirname, '../data/pedigree')
@@ -22,7 +23,9 @@ const files = fs
   .filter((file) => file.endsWith('.json') && !file.includes('.backup'))
   .filter((file) => file !== 'pedigree-metadata.json' && file !== 'horse-link-map.json' && file !== 'traditional-family-index.json')
 
+const draftFamilySlugs = getDraftFamilySlugs()
 console.log(`📁 Found ${files.length} JSON files`)
+console.log(`📝 Draft families to exclude: ${draftFamilySlugs.size}`)
 
 const horseLinkMap = {}
 let totalHorses = 0
@@ -68,6 +71,7 @@ function processHorse(horse, family) {
 }
 
 let traditionalFamilyCount = 0
+let skippedDraftCount = 0
 
 files.forEach((fileName, index) => {
   try {
@@ -82,6 +86,11 @@ files.forEach((fileName, index) => {
       }
 
       const family = data.metadata.rootHorseId
+      if (draftFamilySlugs.has(family)) {
+        skippedDraftCount++
+        return
+      }
+
       traditionalFamilyCount++
 
       // 全馬データを処理
@@ -110,6 +119,7 @@ fs.writeFileSync(OUTPUT_FILE, JSON.stringify(horseLinkMap, null, 2), 'utf8')
 
 console.log('\n✅ Generation complete!')
 console.log(`📊 Traditional families processed: ${traditionalFamilyCount} / ${files.length}`)
+console.log(`📝 Skipped draft families: ${skippedDraftCount}`)
 console.log(`📊 Total horses processed: ${totalHorses}`)
 console.log(`📊 Total link entries: ${totalEntries}`)
 console.log(`❌ Errors: ${errorCount} files`)

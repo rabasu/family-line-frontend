@@ -9,6 +9,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const { getDraftFamilySlugs } = require('./lib/draft-family-slugs')
 
 const PEDIGREE_DIR = path.join(__dirname, '../app/pedigree-traditional')
 const DATA_PEDIGREE_DIR = path.join(__dirname, '../data/pedigree')
@@ -23,14 +24,22 @@ if (!fs.existsSync(METADATA_FILE)) {
 }
 
 const pedigreeMetadata = JSON.parse(fs.readFileSync(METADATA_FILE, 'utf8'))
+const draftFamilySlugs = getDraftFamilySlugs()
 const slugs = Object.keys(pedigreeMetadata)
 console.log(`📁 Found ${slugs.length} traditional families`)
+console.log(`📝 Draft families to exclude: ${draftFamilySlugs.size}`)
 
 const families = []
 let errorCount = 0
+let skippedDraftCount = 0
 
 slugs.forEach((slug, index) => {
   try {
+    if (draftFamilySlugs.has(slug)) {
+      skippedDraftCount++
+      return
+    }
+
     const fileName = pedigreeMetadata[slug]
     const filePath = path.join(PEDIGREE_DIR, fileName)
 
@@ -89,6 +98,7 @@ fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2), 'utf8')
 
 console.log('\n✅ Generation complete!')
 console.log(`📊 Families in index: ${families.length}`)
+console.log(`📝 Skipped draft families: ${skippedDraftCount}`)
 console.log(`❌ Errors: ${errorCount}`)
 console.log(`💾 Output: ${OUTPUT_FILE}`)
 console.log(`📦 File size: ${(fs.statSync(OUTPUT_FILE).size / 1024).toFixed(2)} KB`)

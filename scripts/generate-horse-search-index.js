@@ -9,6 +9,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const { getDraftFamilySlugs } = require('./lib/draft-family-slugs')
 
 const PEDIGREE_DIR = path.join(__dirname, '../app/pedigree-traditional')
 const OUTPUT_DIR = path.join(__dirname, '../data/pedigree')
@@ -21,7 +22,9 @@ const files = fs
   .filter((file) => file.endsWith('.json') && !file.includes('.backup'))
   .filter((file) => file !== 'pedigree-metadata.json' && file !== 'horse-link-map.json' && file !== 'traditional-family-index.json')
 
+const draftFamilySlugs = getDraftFamilySlugs()
 console.log(`📁 Found ${files.length} JSON files`)
+console.log(`📝 Draft families to exclude: ${draftFamilySlugs.size}`)
 
 // Grade の rank マップ（app/types/Grade.tsx から複製）
 const gradeRanks = {
@@ -181,6 +184,7 @@ function buildEntry(horse, family, familyName) {
 const searchIndex = []
 let totalHorses = 0
 let traditionalFamilyCount = 0
+let skippedDraftCount = 0
 let errorCount = 0
 
 files.forEach((fileName, index) => {
@@ -193,6 +197,11 @@ files.forEach((fileName, index) => {
     if (data.metadata.isTraditionalFamily !== true) return
 
     const family = data.metadata.rootHorseId
+    if (draftFamilySlugs.has(family)) {
+      skippedDraftCount++
+      return
+    }
+
     const familyName = data.metadata.pedigreeName ?? ''
     traditionalFamilyCount++
 
@@ -221,6 +230,7 @@ fs.writeFileSync(OUTPUT_FILE, JSON.stringify(searchIndex), 'utf8')
 
 console.log('\n✅ Generation complete!')
 console.log(`📊 Traditional families processed: ${traditionalFamilyCount} / ${files.length}`)
+console.log(`📝 Skipped draft families: ${skippedDraftCount}`)
 console.log(`📊 Total horses: ${totalHorses}`)
 console.log(`❌ Errors: ${errorCount} files`)
 console.log(`💾 Output: ${OUTPUT_FILE}`)

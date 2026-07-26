@@ -16,6 +16,7 @@
 11. 馬名のサニタイジング（改行・記号*・前後空白の削除）
 12. 馬のID欠損の修正（generate_horse_idでID生成、子のdamIdも更新）
 13. damId整合性チェック（牝系でたどれない馬の検出、dam名による母馬探索とdamId修正）
+14. netkeibaId重複の検証（自動補正なし・手動編集が必要）
 """
 
 import os
@@ -89,7 +90,8 @@ class PedigreeJsonValidator:
 
         # 重複検出用の辞書
         self.mother_horses = defaultdict(list)  # 母馬名 -> [ファイル名のリスト]
-        self.netkeiba_ids = defaultdict(list)    # netkeiba_id -> [ファイル名のリスト]
+        # netkeibaId -> [{'file': str, 'horse': dict, 'is_root': bool}]
+        self.netkeiba_ids = defaultdict(list)
 
         # ID、name、linkName重複チェック用の辞書
         # horse_id -> [{'file': str, 'horse': dict}]
@@ -324,17 +326,16 @@ class PedigreeJsonValidator:
             if dam_name:
                 self.mother_horses[dam_name].append(filename)
 
-            # netkeibaIdの収集
-            netkeiba_id = horse.get('netkeibaId', '')
-            if netkeiba_id:
-                self.netkeiba_ids[netkeiba_id].append(filename)
-
-            # ID、name、linkNameの収集
+            # ID、name、linkName、netkeibaIdの収集
             horse_entry = {
                 'file': filename,
                 'horse': horse,
                 'is_root': is_root,
             }
+
+            netkeiba_id = horse.get('netkeibaId', '')
+            if netkeiba_id:
+                self.netkeiba_ids[netkeiba_id].append(horse_entry)
 
             horse_id = horse.get('id', '')
             if horse_id:
@@ -391,29 +392,8 @@ class PedigreeJsonValidator:
                     #     self.errors.append(
                     #         f"同じ母 '{dam_name}' を持つ牝祖以外の馬が複数ファイルに存在: {', '.join(non_root_horses_with_same_dam)}")
 
-        # netkeibaIdの重複検証（牝祖のみ）
-        for netkeiba_id, files in self.netkeiba_ids.items():
-            if len(files) > 1:
-                # 実際に存在するファイルのみを対象とする
-                existing_files = [f for f in files if os.path.exists(
-                    os.path.join(self.pedigree_dir, f))]
-                if len(existing_files) > 1:
-                    # 牝祖のnetkeibaIdの重複のみを警告とする
-                    root_horses_with_same_id = []
-                    for filename in existing_files:
-                        try:
-                            with open(os.path.join(self.pedigree_dir, filename), 'r', encoding='utf-8') as f:
-                                data = json.load(f)
-                            if 'horses' in data and len(data['horses']) > 0:
-                                root_horse = data['horses'][0]
-                                if root_horse.get('netkeibaId') == netkeiba_id:
-                                    root_horses_with_same_id.append(filename)
-                        except Exception:
-                            continue
-
-                    if len(root_horses_with_same_id) > 1:
-                        self.warnings.append(
-                            f"牝祖のnetkeibaId '{netkeiba_id}' が複数のファイルに存在: {', '.join(root_horses_with_same_id)}")
+        # netkeibaIdの重複検証（自動補正なし・手動編集が必要）
+        self._report_netkeiba_id_duplicates()
 
         # ID、name、linkNameの重複チェックと自動補正
         if auto_fix:
@@ -573,6 +553,25 @@ class PedigreeJsonValidator:
 
         self._auto_fix_applied = True
         print("\n自動補正が完了しました。未解消の対応必要項目を再検証します...")
+
+    def _detect_netkeiba_id_duplicates(self):
+        """netkeibaId重複を検出（自動補正対象外）"""
+        duplicates = []
+        for netkeiba_id, horse_list in self.netkeiba_ids.items():
+            if len(horse_list) > 1:
+                duplicates.append((netkeiba_id, horse_list))
+        return duplicates
+
+    def _report_netkeiba_id_duplicates(self):
+        """netkeibaId重複をエラーとして報告する（自動補正なし）"""
+        for netkeiba_id, horse_list in self._detect_netkeiba_id_duplicates():
+            details = ', '.join(
+                f"{h['file']}:{h['horse'].get('name', 'N/A')}"
+                f"(id={h['horse'].get('id', 'N/A')})"
+                for h in horse_list
+            )
+            self.errors.append(
+                f"netkeibaId重複: '{netkeiba_id}' ({len(horse_list)}頭) - {details}")
 
     def _detect_id_duplicates(self):
         """ID重複を検出（牝祖は自動補正の対象外）"""
@@ -1520,6 +1519,8 @@ def main():
     print("  - 馬名サニタイジング: 改行・記号*・前後空白の削除 (name, pedigreeName, formerName, formerPedigreeName, sire, dam)")
     print("  - 自動補正前にバックアップを作成")
     print("  - ユーザーの確認を求めてから実行")
+    print("検知のみ（自動補正なし）:")
+    print("  - netkeibaId重複: 同一netkeibaIdを持つ馬をエラー報告（手動編集が必要）")
     print()
 
     validator = PedigreeJsonValidator()
