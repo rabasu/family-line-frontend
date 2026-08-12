@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "pedigreeName": "種朝",
+    "rootHorseId": "ariffa",
+    "lastUpdated": "2026-07-27T15:46:30.810612Z",
+    "source": "python_scraping",
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
+  },
+  "horses": [
+    {
+      "id": "ariffa",
+      "name": "種朝",
+      "foaled": {
+        "year": 1917,
+        "month": 3,
+        "day": 22
+      },
+      "importedYear": "1919",
+      "sex": "female",
+      "breed": "アラ",
+      "sire": "Hamrah",
+      "dam": "Hejas",
+      "color": "鹿毛",
+      "breeder": "米",
+      "owner": "赤星鉄馬：成驩牧場（朝鮮忠清南道天安郡成驩面）→下総御料牧場（千葉県印旛郡遠山村）",
+      "netkeibaId": "000a00f881",
+      "registration": "『米アラブ血統書 第2巻』No.271, 4巻論68号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『The Arabian Stud Book』vol.2(1918) p.154, 『陸軍獣医団報 (164)』pp.111-115, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.799",
+      "englishName": "Ariffa",
+      "prizeMoney": null,
+      "ancestryByPath": {
+        "s": {
+          "name": "Hamrah",
+          "foaled": {
+            "year": 1904
+          },
+          "color": "鹿毛",
+          "sex": "male",
+          "netkeibaId": "000a01c2aa"
+        },
+        "sd": {
+          "name": "Urfah",
+          "foaled": {
+            "year": 1899
+          },
+          "color": "鹿毛",
+          "sex": "female",
+          "netkeibaId": "000a01c2a9"
+        },
+        "d": {
+          "name": "Hejas",
+          "sex": "female",
+          "netkeibaId": "000a01f965"
+        }
+      },
+      "comments": "Hingham Stock Farm産。輸入年は各資料からの推定。"
+    },
+    {
+      "id": "taneaki",
+      "name": "種秋",
+      "formerPedigreeName": "フアラス",
+      "foaled": {
+        "year": 1923,
+        "month": 3,
+        "day": 18
+      },
+      "sex": "female",
+      "breed": "アラ",
+      "sire": "シヤーマー",
+      "dam": "種朝",
+      "color": "鹿毛",
+      "breeder": "成驩牧場（朝鮮忠清南道天安郡成驩面）",
+      "netkeibaId": "000a01c333",
+      "registration": "4巻論70号",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『馬匹血統登録書 第4巻』p.82",
+      "prizeMoney": null,
+      "damId": "ariffa"
+    },
+    {
+      "id": "yamaaki",
+      "name": "山秋",
+      "foaled": {
+        "year": 1928
+      },
+      "sex": "male",
+      "breed": "アラ",
+      "sire": "シエリーフ",
+      "dam": "種秋",
+      "color": "鹿毛",
+      "breeder": "下総御料牧場（千葉県印旛郡遠山村）",
+      "netkeibaId": "000a01c335",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.799",
+      "prizeMoney": null,
+      "damId": "taneaki",
+      "sireId": "shieriifu",
+      "sireNetkeibaId": "000a01c334"
+    }
+  ]
+}
