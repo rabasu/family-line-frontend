@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "月山",
     "rootHorseId": "getsusan",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted",
+    "lastUpdated": "2026-07-27T04:08:18.650082Z",
+    "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
@@ -61,7 +61,9 @@
         "total": null
       },
       "damId": "getsusan",
-      "comment": "netkeibaの生年1883は誤り。"
+      "comment": "netkeibaの生年1883は誤り。",
+      "sireId": "shiyaiyaa",
+      "sireNetkeibaId": "000a01c190"
     },
     {
       "id": "moon-light-e",
@@ -89,7 +91,9 @@
         "total": null
       },
       "damId": "moon-light",
-      "comment": "父・第四フォーレストビューは明治33（1900）年生、父フォーレストビュー・母第三カリフオルニヤベル。その父フォーレストビューは米国産ハクニー種であるため、第四フォーレストビューは中半血種、本馬も中半血種。兄弟に「ムーンライトデー」等がいるため、「コハイランXX」と同じく末尾にアルファベットをつける形の命名か。"
+      "comment": "父・第四フォーレストビューは明治33（1900）年生、父フォーレストビュー・母第三カリフオルニヤベル。その父フォーレストビューは米国産ハクニー種であるため、第四フォーレストビューは中半血種、本馬も中半血種。兄弟に「ムーンライトデー」等がいるため、「コハイランXX」と同じく末尾にアルファベットをつける形の命名か。",
+      "sireId": "dai4-fooresutobyuu",
+      "sireNetkeibaId": "000a01c91c"
     },
     {
       "id": "dai2-moon-light-e",
@@ -116,7 +120,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "moon-light-e"
+      "damId": "moon-light-e",
+      "sireId": "dalgety",
+      "sireNetkeibaId": "000a01c171"
     },
     {
       "id": "dai2-moon-light-e-1",
@@ -143,7 +149,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-moon-light-e"
+      "damId": "dai2-moon-light-e",
+      "sireId": "gidoranyoichinosan",
+      "sireNetkeibaId": "000a01c1f7"
     },
     {
       "id": "hatsugiku",
@@ -170,7 +178,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-moon-light-e-1"
+      "damId": "dai2-moon-light-e-1",
+      "sireId": "dai10-jipuromatsuto",
+      "sireNetkeibaId": "000a01901d"
     },
     {
       "id": "hatsuhime-1934",
@@ -201,7 +211,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hatsugiku"
+      "damId": "hatsugiku",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     },
     {
       "id": "tamanohoshi",
@@ -244,7 +256,115 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hatsuhime-1934"
+      "damId": "hatsuhime-1934",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c321"
+    },
+    {
+      "id": "senju-sugata",
+      "name": "センジユスガタ",
+      "foaled": {
+        "year": 1965
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "センジュ",
+      "dam": "サチスガタ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00f07d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Senju Sugata",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "sireId": "",
+      "sireNetkeibaId": "000a00c38c"
+    },
+    {
+      "id": "sachisugata",
+      "name": "サチスガタ",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ラツキーパーク",
+      "dam": "ハツスガタ",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00f33a",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "hatsusugata"
+    },
+    {
+      "id": "hatsusugata",
+      "name": "ハツスガタ",
+      "foaled": {
+        "year": 1944
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ピタゴラス",
+      "dam": "春緑",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00f23e",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "harumidori"
+    },
+    {
+      "id": "harumidori",
+      "name": "春緑",
+      "foaled": {
+        "year": 1929
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "第十ヂプロマツト",
+      "dam": "第二ムーンライトイーノ一",
+      "color": "黒鹿毛",
+      "breeder": "門別町",
+      "netkeibaId": "000a00bcdb",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "dai2-moon-light-e-1"
     }
   ]
 }

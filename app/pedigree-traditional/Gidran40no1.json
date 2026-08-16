@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "ギドラン四〇ノ一",
     "rootHorseId": "gidran-40-no-1",
-    "lastUpdated": "2025-10-04T01:02:01.552772Z",
-    "source": "python_scraping_foaled_format_fixed",
-    "isTraditionalFamily": true
+    "lastUpdated": "2026-07-27T15:49:53.665328Z",
+    "source": "python_scraping_updated",
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -33,7 +34,21 @@
         "total": "0万円"
       },
       "importedYear": "1907",
-      "owner": "日高種馬牧場"
+      "owner": "日高種馬牧場",
+      "sireId": "gidran-40",
+      "sireNetkeibaId": "000a01c371",
+      "ancestryByPath": {
+        "s": {
+          "name": "ギドラン四〇",
+          "sex": "male",
+          "netkeibaId": "000a01c371"
+        },
+        "d": {
+          "name": "アルギーギドラン二五",
+          "sex": "female",
+          "netkeibaId": "000a01cb86"
+        }
+      }
     },
     {
       "id": "jinnii",
@@ -60,7 +75,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gidran-40-no-1"
+      "damId": "gidran-40-no-1",
+      "sireId": "gidoranshininoichigo",
+      "sireNetkeibaId": "000a018037"
     },
     {
       "id": "sansen",
@@ -87,7 +104,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "jinnii"
+      "damId": "jinnii",
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a"
     },
     {
       "id": "hitoshihaku",
@@ -114,7 +133,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sansen"
+      "damId": "sansen",
+      "sireId": "fahed",
+      "sireNetkeibaId": "000a00f75a"
     },
     {
       "id": "takarahoushou",
@@ -141,7 +162,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hitoshihaku"
+      "damId": "hitoshihaku",
+      "sireId": "daisan-housyu",
+      "sireNetkeibaId": "000a00092d"
     },
     {
       "id": "yuuseikuin",
@@ -168,7 +191,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takarahoushou"
+      "damId": "takarahoushou",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c331"
     },
     {
       "id": "azuma-scurry",
@@ -274,7 +299,119 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yuuseikuin"
+      "damId": "yuuseikuin",
+      "sireId": "scurry",
+      "sireNetkeibaId": "000a00c477"
+    },
+    {
+      "id": "kinka-ichifuji",
+      "name": "キンカイチフジ",
+      "foaled": {
+        "year": 1981
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "エルシド",
+      "dam": "ミスマスタニ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "1981500965",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Kinka Ichifuji",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "sireId": "el-cid",
+      "sireNetkeibaId": "000a00c610"
+    },
+    {
+      "id": "misumasutani",
+      "name": "ミスマスタニ",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "タガミホマレ",
+      "dam": "ニセイジンパク",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "1955501461",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "niseijinpaku"
+    },
+    {
+      "id": "niseijinpaku",
+      "name": "ニセイジンパク",
+      "foaled": {
+        "year": 1961
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ニユーバラツケー",
+      "dam": "タカラホウショウ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00d32e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "takarahoushou"
+    },
+    {
+      "id": "ootorihitoshi",
+      "name": "鳳仁",
+      "foaled": {
+        "year": 1929
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "王儀",
+      "dam": "三仙",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01c385",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "sansen",
+      "sireId": "ougi",
+      "sireNetkeibaId": "000a00c2e1"
     }
   ]
 }

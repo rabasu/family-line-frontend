@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "ゴンパス二",
     "rootHorseId": "gombas-2",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "lastUpdated": "2026-07-27T15:50:05.401870Z",
+    "source": "python_scraping_updated",
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -33,6 +34,20 @@
       "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』",
       "prizeMoney": {
         "total": "0万円"
+      },
+      "sireId": "gonpasu",
+      "sireNetkeibaId": "000a01c894",
+      "ancestryByPath": {
+        "s": {
+          "name": "ゴンパス",
+          "sex": "male",
+          "netkeibaId": "000a01c894"
+        },
+        "d": {
+          "name": "ギドラン三六",
+          "sex": "female",
+          "netkeibaId": "000a01c270"
+        }
       }
     },
     {
@@ -60,7 +75,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gombas-2"
+      "damId": "gombas-2",
+      "sireId": "gidoranshininoichigo",
+      "sireNetkeibaId": "000a018037"
     },
     {
       "id": "matsupusu",
@@ -87,7 +104,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hanpusu"
+      "damId": "hanpusu",
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a"
     },
     {
       "id": "ooru",
@@ -114,7 +133,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "matsupusu"
+      "damId": "matsupusu",
+      "sireId": "ougi",
+      "sireNetkeibaId": "000a00c2e1"
     },
     {
       "id": "baragi",
@@ -141,7 +162,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ooru"
+      "damId": "ooru",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     },
     {
       "id": "tokinoshiyougun",
@@ -168,7 +191,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "baragi"
+      "damId": "baragi",
+      "sireId": "",
+      "sireNetkeibaId": "000a0008bf"
     },
     {
       "id": "masa-tsubaki",
@@ -196,7 +221,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tokinoshiyougun"
+      "damId": "tokinoshiyougun",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c34a"
     },
     {
       "id": "hamaseiyuu",
@@ -375,7 +402,63 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "masa-tsubaki"
+      "damId": "masa-tsubaki",
+      "sireId": "nihongo",
+      "sireNetkeibaId": "000a00c3f7"
+    },
+    {
+      "id": "nagatake",
+      "name": "永竹",
+      "foaled": {
+        "year": 1922
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ギドラン四二ノ三",
+      "dam": "ハンプス",
+      "color": "栃栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01c892",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "hanpusu",
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a"
+    },
+    {
+      "id": "kiipaa",
+      "name": "キーパー",
+      "foaled": {
+        "year": 1919
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ギドラン四二ノ一五",
+      "dam": "ゴンパス二",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01cad5",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "gombas-2",
+      "sireId": "gidoranshininoichigo",
+      "sireNetkeibaId": "000a018037"
     }
   ]
 }

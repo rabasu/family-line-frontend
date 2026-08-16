@@ -5,10 +5,11 @@
     "subjectNetkeibaId": "000a01c735",
     "subjectName": "ザミール",
     "depth": 4,
-    "lastUpdated": "2026-07-28T02:30:47.767297Z",
-    "source": "python_scraping",
+    "lastUpdated": "2026-08-15T08:31:13Z",
+    "source": "manual_correction",
     "movedFrom": "pedigree-traditional/Zamiiru.json",
-    "breederMigratedFrom": "C:/Users/rabas/git/family-line-frontend/app/pedigree-traditional/backup/before_move_single_male_sires_20260728_000532/Zamiiru.json"
+    "breederMigratedFrom": "C:/Users/rabas/git/family-line-frontend/app/pedigree-traditional/backup/before_move_single_male_sires_20260728_000532/Zamiiru.json",
+    "incompleteFourGenResolved": true
   },
   "horse": {
     "id": "zamiiru",
@@ -18,29 +19,216 @@
       "year": 1909
     },
     "sire": "Hamrah",
-    "dam": "",
+    "dam": "Markisa",
     "netkeibaId": "000a01c735",
-    "source": "python_scraping",
+    "source": "python_scraping, 『The Arabian Stud Book』vol.2(1918) p.73, 『朝鮮農会報 13(1)』口絵",
     "ancestryByPath": {
       "s": {
         "name": "Hamrah",
+        "sex": "male",
         "foaled": {
           "year": 1904
         },
         "color": "鹿毛",
-        "sex": "male",
+        "breed": "アラ",
         "netkeibaId": "000a01c2aa"
+      },
+      "ss": {
+        "name": "A Hamdani-simri",
+        "sex": "male",
+        "color": "栗毛",
+        "breed": "アラ"
+      },
+      "sss": {
+        "name": "不詳",
+        "sex": "male"
+      },
+      "ssss": {
+        "name": "不詳",
+        "sex": "male"
+      },
+      "sssd": {
+        "name": "不詳",
+        "sex": "female"
+      },
+      "ssd": {
+        "name": "不詳",
+        "sex": "female"
+      },
+      "ssds": {
+        "name": "不詳",
+        "sex": "male"
+      },
+      "ssdd": {
+        "name": "不詳",
+        "sex": "female"
       },
       "sd": {
         "name": "Urfah",
+        "sex": "female",
         "foaled": {
           "year": 1899
         },
         "color": "鹿毛",
-        "sex": "female",
+        "breed": "アラ",
         "netkeibaId": "000a01c2a9"
+      },
+      "sds": {
+        "name": "Desert Bred",
+        "sex": "male",
+        "color": "鹿毛",
+        "breed": "アラ"
+      },
+      "sdss": {
+        "name": "不詳",
+        "sex": "male"
+      },
+      "sdsd": {
+        "name": "不詳",
+        "sex": "female"
+      },
+      "sdd": {
+        "name": "A Saqlawiyah Al-abd",
+        "sex": "female",
+        "color": "鹿毛",
+        "breed": "アラ"
+      },
+      "sdds": {
+        "name": "不詳",
+        "sex": "male"
+      },
+      "sddd": {
+        "name": "不詳",
+        "sex": "female"
+      },
+      "d": {
+        "name": "Markisa",
+        "sex": "female",
+        "foaled": {
+          "year": 1905
+        },
+        "color": "鹿毛",
+        "breed": "アラ"
+      },
+      "ds": {
+        "name": "Narkise",
+        "sex": "male",
+        "foaled": {
+          "year": 1899
+        },
+        "color": "鹿毛",
+        "breed": "アラ"
+      },
+      "dss": {
+        "name": "Mesaoud",
+        "sex": "male",
+        "foaled": {
+          "year": 1887
+        },
+        "color": "栗毛",
+        "breed": "アラ"
+      },
+      "dsss": {
+        "name": "Aziz Ii",
+        "sex": "male",
+        "foaled": {
+          "year": 1876
+        },
+        "color": "栗毛"
+      },
+      "dssd": {
+        "name": "Yemameh",
+        "sex": "female",
+        "foaled": {
+          "year": 1872
+        },
+        "color": "芦毛"
+      },
+      "dsd": {
+        "name": "Nefisa",
+        "sex": "female",
+        "foaled": {
+          "year": 1885
+        },
+        "color": "鹿毛",
+        "breed": "アラ"
+      },
+      "dsds": {
+        "name": "Hadban",
+        "sex": "male",
+        "foaled": {
+          "year": 1878
+        },
+        "color": "鹿毛"
+      },
+      "dsdd": {
+        "name": "Dajania",
+        "sex": "female",
+        "foaled": {
+          "year": 1876
+        },
+        "color": "鹿毛"
+      },
+      "dd": {
+        "name": "Maisuna",
+        "sex": "female",
+        "foaled": {
+          "year": 1898
+        },
+        "color": "鹿毛",
+        "breed": "アラ"
+      },
+      "dds": {
+        "name": "Mesaoud",
+        "sex": "male",
+        "foaled": {
+          "year": 1887
+        },
+        "color": "栗毛",
+        "breed": "アラ"
+      },
+      "ddss": {
+        "name": "Aziz Ii",
+        "sex": "male",
+        "foaled": {
+          "year": 1876
+        },
+        "color": "栗毛"
+      },
+      "ddsd": {
+        "name": "Yemameh",
+        "sex": "female",
+        "foaled": {
+          "year": 1872
+        },
+        "color": "芦毛"
+      },
+      "ddd": {
+        "name": "Meshura",
+        "sex": "female",
+        "foaled": {
+          "year": 1872
+        },
+        "color": "鹿毛",
+        "breed": "アラ"
+      },
+      "ddds": {
+        "name": "不詳",
+        "sex": "male"
+      },
+      "dddd": {
+        "name": "不詳",
+        "sex": "female"
       }
     },
-    "breeder": "米"
+    "breeder": "米",
+    "englishName": "Zamil",
+    "color": "鹿毛",
+    "breed": "アラ",
+    "importedYear": "1917",
+    "registration": "『米アラブ血統書 第2巻』No.73",
+    "owner": "赤星鉄馬：成驩牧場（朝鮮忠清南道天安郡成驩面）",
+    "allBreedPedigreeId": "zamil",
+    "comment": "輸入年は各資料からの推定。"
   }
 }

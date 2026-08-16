@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "アーレツド",
     "rootHorseId": "aared",
-    "lastUpdated": "2026-07-18T18:45:07.225684Z",
+    "lastUpdated": "2026-07-30T16:09:12Z",
     "source": "python_scraping",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -33,9 +34,151 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping 『The Arabian Stud Book』vol.2(1918) p.84, 『陸軍獣医団報 (164)』pp.111-115, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.764, 『朝鮮農会報 13(1)』口絵",
+      "source": "python_scraping, 『The Arabian Stud Book』vol.2(1918) p.84, 『陸軍獣医団報 (164)』pp.111-115, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.764, 『朝鮮農会報 13(1)』口絵",
       "englishName": "Aared",
-      "comment": "Hingham Stock Farm産。生年月日・毛色は米アラブ血統書より。輸入年は各資料からの推定。"
+      "comment": "Hingham Stock Farm産。生年月日・毛色は米アラブ血統書より。輸入年は各資料からの推定。",
+      "ancestryByPath": {
+        "s": {
+          "name": "Obeyran",
+          "sex": "male",
+          "foaled": {
+            "year": 1889
+          },
+          "color": "芦毛",
+          "breed": "アラ"
+        },
+        "ss": {
+          "name": "El Tahy",
+          "sex": "male",
+          "breed": "アラ"
+        },
+        "sss": {
+          "name": "Desert Bred",
+          "sex": "male",
+          "breed": "アラ"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "A Muniqiyah Sbailiyah",
+          "sex": "female",
+          "breed": "アラ"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "Senona",
+          "sex": "female",
+          "breed": "アラ"
+        },
+        "sds": {
+          "name": "Desert Bred",
+          "sex": "male",
+          "breed": "アラ"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "A Saqlawiyah Ubayriyah",
+          "sex": "female",
+          "breed": "アラ"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "Wadduda",
+          "sex": "female",
+          "foaled": {
+            "year": 1899
+          },
+          "color": "栗毛",
+          "breed": "アラ"
+        },
+        "ds": {
+          "name": "A Dahman Khumayis",
+          "sex": "male",
+          "breed": "アラ"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "A Saqlawiyah Al-abd",
+          "sex": "female",
+          "color": "鹿毛"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      },
+      "allBreedPedigreeId": "aared",
+      "comments": "Hingham Stock Farm産。生年月日・毛色は米アラブ血統書より。輸入年は各資料からの推定。"
     },
     {
       "id": "tanechika",
@@ -62,7 +205,9 @@
       "raceResults": [],
       "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.801",
       "prizeMoney": null,
-      "damId": "aared"
+      "damId": "aared",
+      "sireId": "zamiiru",
+      "sireNetkeibaId": "000a01c735"
     },
     {
       "id": "chikamichi",
@@ -90,7 +235,9 @@
       "raceResults": [],
       "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.369",
       "prizeMoney": null,
-      "damId": "tanechika"
+      "damId": "tanechika",
+      "sireId": "wakakusa-1927",
+      "sireNetkeibaId": "000a01c808"
     },
     {
       "id": "sakaehime",
@@ -115,7 +262,9 @@
       "raceResults": [],
       "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.369",
       "prizeMoney": null,
-      "damId": "chikamichi"
+      "damId": "chikamichi",
+      "sireId": "",
+      "sireNetkeibaId": "000a000912"
     },
     {
       "id": "minehikari",
@@ -144,7 +293,9 @@
       },
       "owner": "西村光之助",
       "trainer": "玉谷敬治",
-      "damId": "sakaehime"
+      "damId": "sakaehime",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c339"
     },
     {
       "id": "shigeryuu",
@@ -190,7 +341,9 @@
       },
       "owner": "鈴木泰子",
       "trainer": "仲住芳雄",
-      "damId": "minehikari"
+      "damId": "minehikari",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c353"
     }
   ]
 }

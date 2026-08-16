@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "函館",
     "rootHorseId": "hakodate",
-    "lastUpdated": "2026-07-18T18:15:46.021619Z",
+    "lastUpdated": "2026-07-27T15:50:11.531767Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -30,7 +31,20 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻 (昭和35年～昭和52年)』p.1865, 『日本馬政史 続 第3』p.123, 『十勝馬産史』p.111, 『馬匹血統登録書 第4巻』p.145, (アドミラルユスーフ)『牧畜雑誌 (265)』p.63",
-      "comment": "父ユスーフは下総御料牧場→園田牧場（渡島亀田郡桔梗野）。産駒の第三函館が日高荻伏産・加藤繁太郎（北海道河西郡芽室村）所有、オーノールが吉川勘平（浦河郡浦河町）生産・上田仁松（同）所有。母は名称不詳の豪洋。『馬匹血統登録書』や『全国種牡馬名簿』では父・アドミラルユスーフとなっているが、アドミラルユスーフは1905年生（父・ユスーフ、母・アドミラル）のため、1903年生まれの函館とは矛盾する。ユスーフを正とする。"
+      "comment": "父ユスーフは下総御料牧場→園田牧場（渡島亀田郡桔梗野）。産駒の第三函館が日高荻伏産・加藤繁太郎（北海道河西郡芽室村）所有、オーノールが吉川勘平（浦河郡浦河町）生産・上田仁松（同）所有。母は名称不詳の豪洋。『馬匹血統登録書』や『全国種牡馬名簿』では父・アドミラルユスーフとなっているが、アドミラルユスーフは1905年生（父・ユスーフ、母・アドミラル）のため、1903年生まれの函館とは矛盾する。ユスーフを正とする。",
+      "sireId": "jussuf",
+      "sireNetkeibaId": "000a0191a4",
+      "ancestryByPath": {
+        "s": {
+          "name": "ユスーフ",
+          "foaled": {
+            "year": 1884
+          },
+          "color": "鹿毛",
+          "sex": "male",
+          "netkeibaId": "000a0191a4"
+        }
+      }
     },
     {
       "id": "dai4-onor",
@@ -58,7 +72,9 @@
         "total": "0万円"
       },
       "damId": "hakodate",
-      "comment": "「オーノール」の綴りは不明だが、近親に「函館」「後辺戸」など地名由来の名が多いため、サハリン（北樺太）の地名「Онор」と推測。"
+      "comment": "「オーノール」の綴りは不明だが、近親に「函館」「後辺戸」など地名由来の名が多いため、サハリン（北樺太）の地名「Онор」と推測。",
+      "sireId": "gidoranshininoichigo",
+      "sireNetkeibaId": "000a018037"
     },
     {
       "id": "shigeshi",
@@ -85,7 +101,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai4-onor"
+      "damId": "dai4-onor",
+      "sireId": "ougi",
+      "sireNetkeibaId": "000a00c2e1"
     },
     {
       "id": "dai2-nasu",
@@ -112,7 +130,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shigeshi"
+      "damId": "shigeshi",
+      "sireId": "nasuno",
+      "sireNetkeibaId": "000a01c0f1"
     },
     {
       "id": "hosei",
@@ -175,7 +195,9 @@
       },
       "damId": "dai2-nasu",
       "jbisId": "0000455599",
-      "bogusId": "92395"
+      "bogusId": "92395",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c322"
     },
     {
       "id": "shouwakotobuki",
@@ -265,7 +287,9 @@
       },
       "owner": "加藤日祥",
       "trainer": "稲葉秀男",
-      "damId": "hatsumihohpu"
+      "damId": "hatsumihohpu",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c380"
     },
     {
       "id": "hatsumihohpu",
@@ -293,7 +317,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misuhikari-1953"
+      "damId": "misuhikari-1953",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c324"
     },
     {
       "id": "misuhikari-1953",
@@ -321,7 +347,9 @@
         "total": "0万円"
       },
       "damId": "maruhime",
-      "linkName": "ミスヒカリ(1953)"
+      "linkName": "ミスヒカリ(1953)",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c322"
     },
     {
       "id": "maruhime",
@@ -346,7 +374,9 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "oukokorozashi"
+      "damId": "oukokorozashi",
+      "sireId": "marutake",
+      "sireNetkeibaId": "000a0008ad"
     },
     {
       "id": "oukokorozashi",
@@ -371,7 +401,9 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "dai4-onor"
+      "damId": "dai4-onor",
+      "sireId": "ougi",
+      "sireNetkeibaId": "000a00c2e1"
     }
   ]
 }

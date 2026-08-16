@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "ブルーボンネツト",
     "rootHorseId": "blue-bonnet",
-    "lastUpdated": "2026-04-01T00:15:35.015901Z",
+    "lastUpdated": "2026-07-27T07:32:23.223016Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
@@ -79,7 +79,9 @@
       "raceResults": [],
       "source": "『馬匹血統登録書 第4巻』p.141",
       "bogusId": "53474",
-      "damId": "blue-bonnet"
+      "damId": "blue-bonnet",
+      "sireId": "diamond-wedding",
+      "sireNetkeibaId": "000a0000ec"
     },
     {
       "id": "nasu-park",
@@ -121,7 +123,9 @@
         }
       ],
       "source": "『馬匹血統登録書 第18巻』p.290, 『日本競馬史 第6巻』p.712",
-      "damId": "satsuki"
+      "damId": "satsuki",
+      "sireId": "priory-park",
+      "sireNetkeibaId": "000a00085e"
     },
     {
       "id": "tokonatsu",
@@ -151,7 +155,9 @@
       "raceResults": [],
       "source": "『馬匹血統登録書 第2巻』p.220, 『名牝の系譜』p.248, 『明治・大正・昭和初期の輸入馬』",
       "bogusId": "18660",
-      "damId": "blue-bonnet"
+      "damId": "blue-bonnet",
+      "sireId": "diamond-wedding",
+      "sireNetkeibaId": "000a0000ec"
     },
     {
       "id": "peony",
@@ -177,7 +183,9 @@
       "raceResults": [],
       "source": "『競馬成績書 昭和9年』p.120, 『競馬成績書 昭和10年 春季』p.356, 『名牝の系譜』p.248",
       "bogusId": "18659",
-      "damId": "tokonatsu"
+      "damId": "tokonatsu",
+      "sireId": "gallon",
+      "sireNetkeibaId": "000a000866"
     },
     {
       "id": "rock-park",
@@ -262,7 +270,9 @@
       "owner": "伊藤桂蔵",
       "trainer": "稲葉秀男（中山）",
       "ahonooraId": "rock_park",
-      "damId": "peony"
+      "damId": "peony",
+      "sireId": "priory-park",
+      "sireNetkeibaId": "000a00085e"
     },
     {
       "id": "pine-park",
@@ -317,7 +327,60 @@
         }
       ],
       "bogusId": "53367",
-      "damId": "peony"
+      "damId": "peony",
+      "sireId": "priory-park",
+      "sireNetkeibaId": "000a00085e"
+    },
+    {
+      "id": "nasuno",
+      "name": "ナスノ",
+      "foaled": {
+        "year": 1924
+      },
+      "sex": "male",
+      "breed": "サラ系",
+      "sire": "ガロン(GB)",
+      "dam": "常夏",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01c0f1",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "sireId": "gallon",
+      "sireNetkeibaId": "000a000866"
+    },
+    {
+      "id": "tokonatsu-1914",
+      "name": "常夏",
+      "foaled": {
+        "year": 1914
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "ダイヤモンドウエツデイング(GB)",
+      "dam": "ブルーボンネツト",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a01c0f0",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "blue-bonnet"
     }
   ]
 }

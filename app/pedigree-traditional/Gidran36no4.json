@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "ギドラン三六ノ四",
     "rootHorseId": "gidran-36-no-4",
-    "lastUpdated": "2026-07-26T01:09:26.503415Z",
+    "lastUpdated": "2026-07-27T15:49:39.205926Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -33,7 +34,21 @@
         "total": "0万円"
       },
       "importedYear": "1907",
-      "owner": "日高種馬牧場"
+      "owner": "日高種馬牧場",
+      "sireId": "gidoransanroku",
+      "sireNetkeibaId": "000a01f967",
+      "ancestryByPath": {
+        "s": {
+          "name": "ギドラン三六",
+          "sex": "male",
+          "netkeibaId": "000a01f967"
+        },
+        "d": {
+          "name": "アルギーギドラン二",
+          "sex": "female",
+          "netkeibaId": "000a01f968"
+        }
+      }
     },
     {
       "id": "dannemoraa",
@@ -60,7 +75,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gidran-36-no-4"
+      "damId": "gidran-36-no-4",
+      "sireId": "blairmore",
+      "sireNetkeibaId": "000a00086f"
     },
     {
       "id": "rimonen",
@@ -87,7 +104,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dannemoraa"
+      "damId": "dannemoraa",
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a"
     },
     {
       "id": "nenou",
@@ -114,7 +133,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "rimonen"
+      "damId": "rimonen",
+      "sireId": "ougi",
+      "sireNetkeibaId": "000a00c2e1"
     },
     {
       "id": "tachizan",
@@ -141,7 +162,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nenou"
+      "damId": "nenou",
+      "sireId": "",
+      "sireNetkeibaId": "000a00091f"
     },
     {
       "id": "fusaichi",
@@ -276,7 +299,9 @@
       },
       "damId": "tachizan",
       "owner": "五味八郎",
-      "trainer": "小林三雄三"
+      "trainer": "小林三雄三",
+      "sireId": "reikei",
+      "sireNetkeibaId": "000a00c385"
     },
     {
       "id": "misukooen",
@@ -319,7 +344,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misugurando"
+      "damId": "misugurando",
+      "sireId": "homaremon",
+      "sireNetkeibaId": "000a000998"
     },
     {
       "id": "misugurando",
@@ -346,7 +373,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nenhara"
+      "damId": "nenhara",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c322"
     },
     {
       "id": "nenhara",
@@ -373,7 +402,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "rimonen"
+      "damId": "rimonen",
+      "sireId": "harabu",
+      "sireNetkeibaId": "000a00f746"
     },
     {
       "id": "getsukou-1953",
@@ -417,7 +448,9 @@
         "total": "0万円"
       },
       "linkName": "ゲツコウ(1953)",
-      "damId": "wakatama"
+      "damId": "wakatama",
+      "sireId": "",
+      "sireNetkeibaId": "000a0008b6"
     },
     {
       "id": "wakatama",
@@ -444,7 +477,153 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nenou"
+      "damId": "nenou",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
+    },
+    {
+      "id": "rikisu-baby",
+      "name": "リキスベビー",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "リユウザン",
+      "dam": "スルガ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c350",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Rikisu Baby",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "sireId": "",
+      "sireNetkeibaId": "000a0008cd"
+    },
+    {
+      "id": "suruga",
+      "name": "スルガ",
+      "foaled": {
+        "year": 1946
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "方景",
+      "dam": "念原",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00c8b8",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "nenhara"
+    },
+    {
+      "id": "tomosu-baby",
+      "name": "トモスベビー",
+      "foaled": {
+        "year": 1953
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "トシシロ",
+      "dam": "スルガ",
+      "color": "黒鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c351",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tomosu Baby",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "suruga",
+      "sireId": "",
+      "sireNetkeibaId": "000a0008af"
+    },
+    {
+      "id": "takakura-homare",
+      "name": "タカクラホマレ",
+      "foaled": {
+        "year": 1954
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "タカクラヤマ",
+      "dam": "スルガ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c378",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Takakura Homare",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "suruga",
+      "sireId": "",
+      "sireNetkeibaId": "000a0008d1"
+    },
+    {
+      "id": "takaraizan",
+      "name": "タカライザン",
+      "foaled": {
+        "year": 1957
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ホウシユウ",
+      "dam": "スルガ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c394",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Takaraizan",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "suruga",
+      "sireId": "",
+      "sireNetkeibaId": "000a0008c6"
     }
   ]
 }

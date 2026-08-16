@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "アルテミス",
     "rootHorseId": "artemis",
-    "lastUpdated": "2026-04-01T00:15:53.009981Z",
+    "lastUpdated": "2026-07-30T18:55:34Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_draft"
   },
   "horses": [
     {
@@ -31,7 +32,136 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』",
-      "comment": "netkeibaでは生年1898、凪的では2頭に分離していて1887 / 1903。産駒の生年から1903と推定。凪的でトライミーの母とされているアルテミス(1887, FR)はPedigreeQueryに登録はあるが、日本に輸出された形跡がない。『明治・大正・昭和初期の輸入馬』にも記載がないためこれは誤りと思われる。"
+      "comment": "netkeibaでは生年1898、凪的では2頭に分離していて1887 / 1903。産駒の生年から1903と推定。凪的でトライミーの母とされているアルテミス(1887, FR)はPedigreeQueryに登録はあるが、日本に輸出された形跡がない。『明治・大正・昭和初期の輸入馬』にも記載がないためこれは誤りと思われる。",
+      "ancestryByPath": {
+        "s": {
+          "name": "Holbrook",
+          "sex": "male",
+          "foaled": {
+            "year": 1894
+          },
+          "color": "鹿毛"
+        },
+        "ss": {
+          "name": "Lochiel",
+          "sex": "male",
+          "foaled": {
+            "year": 1882
+          },
+          "color": "黒鹿毛"
+        },
+        "sss": {
+          "name": "Prince Charlie",
+          "sex": "male",
+          "foaled": {
+            "year": 1869
+          },
+          "color": "栗毛"
+        },
+        "ssss": {
+          "name": "Blair Athol",
+          "sex": "male",
+          "foaled": {
+            "year": 1861
+          },
+          "color": "栗毛"
+        },
+        "sssd": {
+          "name": "Eastern Princess",
+          "sex": "female",
+          "foaled": {
+            "year": 1858
+          },
+          "color": "栗毛"
+        },
+        "ssd": {
+          "name": "Nelly Moore",
+          "sex": "female",
+          "foaled": {
+            "year": 1872
+          },
+          "color": "鹿毛"
+        },
+        "ssds": {
+          "name": "Voltigeur",
+          "sex": "male",
+          "foaled": {
+            "year": 1847
+          },
+          "color": "黒鹿毛"
+        },
+        "ssdd": {
+          "name": "Fickle",
+          "sex": "female",
+          "foaled": {
+            "year": 1868
+          },
+          "color": "鹿毛"
+        },
+        "sd": {
+          "name": "Hussy",
+          "sex": "female",
+          "foaled": {
+            "year": 1870
+          }
+        },
+        "sds": {
+          "name": "Yattendon",
+          "sex": "male",
+          "foaled": {
+            "year": 1861
+          },
+          "color": "黒鹿毛"
+        },
+        "sdss": {
+          "name": "Sir Hercules",
+          "sex": "male",
+          "foaled": {
+            "year": 1843
+          },
+          "color": "黒鹿毛"
+        },
+        "sdsd": {
+          "name": "Cassandra",
+          "sex": "female",
+          "foaled": {
+            "year": 1841
+          },
+          "color": "芦毛"
+        },
+        "sdd": {
+          "name": "Ultima",
+          "sex": "female",
+          "foaled": {
+            "year": 1855
+          }
+        },
+        "sdds": {
+          "name": "Doctor",
+          "sex": "male",
+          "foaled": {
+            "year": 1840
+          },
+          "color": "黒鹿毛"
+        },
+        "sddd": {
+          "name": "Young Gulnare",
+          "sex": "female",
+          "foaled": {
+            "year": 1845
+          },
+          "color": "鹿毛"
+        },
+        "d": {
+          "name": "Pet Girl",
+          "sex": "female",
+          "foaled": {},
+          "color": ""
+        }
+      },
+      "englishName": "Artemis",
+      "pedigreeQueryId": "artemis36",
+      "comments": "netkeibaでは生年1898、凪的では2頭に分離していて1887 / 1903。産駒の生年から1903と推定。凪的でトライミーの母とされているアルテミス(1887, FR)はPedigreeQueryに登録はあるが、日本に輸出された形跡がない。『明治・大正・昭和初期の輸入馬』にも記載がないためこれは誤りと思われる。"
     },
     {
       "id": "try-me",
@@ -58,7 +188,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "artemis"
+      "damId": "artemis",
+      "sireId": "pure-crystal",
+      "sireNetkeibaId": "000a000871"
     },
     {
       "id": "try-me-7",
@@ -85,7 +217,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "try-me"
+      "damId": "try-me",
+      "sireId": "clackmannan",
+      "sireNetkeibaId": "000a000860"
     },
     {
       "id": "unebino-ni",
@@ -161,7 +295,9 @@
       "damId": "try-me-7",
       "englishName": "Unebino Ni",
       "jbisId": "0000453115",
-      "comment": "16,000円で購買。3,050円で荻伏村・伏木田善作に還元（売却・標準価格未達）。"
+      "comment": "16,000円で購買。3,050円で荻伏村・伏木田善作に還元（売却・標準価格未達）。",
+      "sireId": "tokino-chikara",
+      "sireNetkeibaId": "000a000911"
     },
     {
       "id": "olympia",
@@ -265,7 +401,9 @@
       "damId": "unebino-ni",
       "owner": "大木",
       "jbisId": "0000000395",
-      "bogusId": "35064"
+      "bogusId": "35064",
+      "sireId": "",
+      "sireNetkeibaId": "000a0008df"
     },
     {
       "id": "koshun",
@@ -293,7 +431,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "olympia"
+      "damId": "olympia",
+      "sireId": "rising-flame",
+      "sireNetkeibaId": "000a0008d5"
     },
     {
       "id": "fine-tagami",
@@ -321,7 +461,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "koshun"
+      "damId": "koshun",
+      "sireId": "skymaster",
+      "sireNetkeibaId": "000a00030a"
     },
     {
       "id": "storm-queen",
@@ -351,7 +493,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "fine-tagami"
+      "damId": "fine-tagami",
+      "sireId": "tosho-boy",
+      "sireNetkeibaId": "000a0003c7"
     },
     {
       "id": "vessel-king",
@@ -576,7 +720,9 @@
         "central": "6,534万円",
         "local": "2,166万円"
       },
-      "damId": "storm-queen"
+      "damId": "storm-queen",
+      "sireId": "tony-bin",
+      "sireNetkeibaId": "1983109006"
     },
     {
       "id": "kikuka-royal",
@@ -684,7 +830,9 @@
         "central": "6,166万円",
         "local": "0万円"
       },
-      "damId": "gold-vimy"
+      "damId": "gold-vimy",
+      "sireId": "royal-ski",
+      "sireNetkeibaId": "000a0003c6"
     },
     {
       "id": "gold-vimy",
@@ -712,7 +860,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "rika"
+      "damId": "rika",
+      "sireId": "vimy",
+      "sireNetkeibaId": "000a0004e9"
     },
     {
       "id": "rika",
@@ -740,7 +890,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "koshun"
+      "damId": "koshun",
+      "sireId": "",
+      "sireNetkeibaId": "000a000936"
     },
     {
       "id": "masano-kachidoki",
@@ -816,7 +968,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gold-vimy"
+      "damId": "gold-vimy",
+      "sireId": "",
+      "sireNetkeibaId": "000a000bac"
     },
     {
       "id": "daiwa-prima",
@@ -877,7 +1031,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "miss-winsome"
+      "damId": "miss-winsome",
+      "sireId": "diatome",
+      "sireNetkeibaId": "000a0003ff"
     },
     {
       "id": "miss-winsome",
@@ -905,7 +1061,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "koshun"
+      "damId": "koshun",
+      "sireId": "die-hard",
+      "sireNetkeibaId": "000a0000ee"
     },
     {
       "id": "supurendaagurasu",
@@ -950,7 +1108,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "rammai"
+      "damId": "rammai",
+      "sireId": "haiseiko",
+      "sireNetkeibaId": "000a000b7f"
     },
     {
       "id": "rammai",
@@ -978,7 +1138,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "minebi"
+      "damId": "minebi",
+      "sireId": "atan",
+      "sireNetkeibaId": "000a000045"
     },
     {
       "id": "minebi",
@@ -1006,7 +1168,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misuunebi"
+      "damId": "misuunebi",
+      "sireId": "",
+      "sireNetkeibaId": "000a00091d"
     },
     {
       "id": "misuunebi",
@@ -1033,7 +1197,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "try-me-7"
+      "damId": "try-me-7",
+      "sireId": "theft",
+      "sireNetkeibaId": "000a000359"
     },
     {
       "id": "chitosetaikoo",
@@ -1121,7 +1287,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "happy-unebi"
+      "damId": "happy-unebi",
+      "sireId": "rising-flame",
+      "sireNetkeibaId": "000a0008d5"
     },
     {
       "id": "happy-unebi",
@@ -1243,7 +1411,9 @@
       "englishName": "Happy Unebi",
       "owner": "富岡",
       "jbisId": "0000000567",
-      "bogusId": "19693"
+      "bogusId": "19693",
+      "sireId": "theft",
+      "sireNetkeibaId": "000a000359"
     },
     {
       "id": "unebi-hikari",
@@ -1452,7 +1622,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "happy-unebi"
+      "damId": "happy-unebi",
+      "sireId": "rising-flame",
+      "sireNetkeibaId": "000a0008d5"
     },
     {
       "id": "dankan",
@@ -1525,7 +1697,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "happy-unebi"
+      "damId": "happy-unebi",
+      "sireId": "vino-puro",
+      "sireNetkeibaId": "000a000390"
     },
     {
       "id": "asukayama",
@@ -1588,7 +1762,9 @@
       },
       "damId": "try-me-7",
       "jbisId": "0000453047",
-      "bogusId": "27033"
+      "bogusId": "27033",
+      "sireId": "theft",
+      "sireNetkeibaId": "000a000359"
     },
     {
       "id": "unebi-park",
@@ -1659,7 +1835,9 @@
       ],
       "source": "python_scraping",
       "bogusId": "34790",
-      "damId": "try-me-7"
+      "damId": "try-me-7",
+      "sireId": "priory-park",
+      "sireNetkeibaId": "000a00085e"
     },
     {
       "id": "try-mindo",
@@ -1700,7 +1878,9 @@
       ],
       "bogusId": "42754",
       "source": "『登録馬名簿 昭和17年8月10日』p.49",
-      "damId": "try-me"
+      "damId": "try-me",
+      "sireId": "mint-d-or",
+      "sireNetkeibaId": "000a00086c"
     }
   ]
 }

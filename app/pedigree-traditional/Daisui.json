@@ -2,8 +2,8 @@
   "metadata": {
     "pedigreeName": "ダイスイ",
     "rootHorseId": "daisui",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted",
+    "lastUpdated": "2026-07-27T03:05:01.923693Z",
+    "source": "python_scraping_updated",
     "isTraditionalFamily": true
   },
   "horses": [
@@ -56,7 +56,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daisui"
+      "damId": "daisui",
+      "sireId": "dai2-admiral",
+      "sireNetkeibaId": "000a018f70"
     },
     {
       "id": "joun",
@@ -83,7 +85,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "koosui"
+      "damId": "koosui",
+      "sireId": "rathburne",
+      "sireNetkeibaId": "000a018f6f"
     },
     {
       "id": "kamoike",
@@ -110,7 +114,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "joun"
+      "damId": "joun",
+      "sireId": "splendour",
+      "sireNetkeibaId": "000a018f6a"
     },
     {
       "id": "yandour",
@@ -141,7 +147,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kamoike"
+      "damId": "kamoike",
+      "sireId": "the-yank",
+      "sireNetkeibaId": "000a00088e"
     },
     {
       "id": "young-fuji",
@@ -169,7 +177,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "yandour"
+      "damId": "yandour",
+      "sireId": "",
+      "sireNetkeibaId": "000a0008bf"
     },
     {
       "id": "silver-young",
@@ -213,7 +223,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "young-fuji"
+      "damId": "young-fuji",
+      "sireId": "ready-to-flight",
+      "sireNetkeibaId": "000a000965"
     },
     {
       "id": "young-emperor",
@@ -272,7 +284,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "silver-young"
+      "damId": "silver-young",
+      "sireId": "gustav",
+      "sireNetkeibaId": "000a000165"
     },
     {
       "id": "young-shigeo",
@@ -365,7 +379,133 @@
         "central": "5,469万円",
         "local": "0万円"
       },
-      "damId": "young-emperor"
+      "damId": "young-emperor",
+      "sireId": "bamboo-atlas",
+      "sireNetkeibaId": "1979101247"
+    },
+    {
+      "id": "chikara-ichi",
+      "name": "チカライチ",
+      "foaled": {
+        "year": 1963
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "フジミナト",
+      "dam": "フクサカエ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c40a",
+      "raceStats": {
+        "total": {
+          "runs": 24,
+          "wins": 10
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 1966,
+            "month": 7,
+            "day": 3
+          },
+          "racecourse": "東京",
+          "race": "読売C(OP)",
+          "displayRace": "読売C(春)",
+          "distance": "芝2000",
+          "grade": "jra_grade",
+          "entry": "12",
+          "result": "4",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Chikara Ichi",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "owner": "小松金太郎",
+      "trainer": "高木良三",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c35f"
+    },
+    {
+      "id": "fukusakae",
+      "name": "フクサカエ",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "ツバサ(1944)",
+      "dam": "ミスカズマ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a00b826",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "misukazuma"
+    },
+    {
+      "id": "misukazuma",
+      "name": "ミスカズマ",
+      "foaled": {
+        "year": 1948
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "クリアヅマ",
+      "dam": "カチサカエ",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00b7be",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "kachisakae"
+    },
+    {
+      "id": "kachisakae",
+      "name": "カチサカエ",
+      "foaled": {
+        "year": 1935
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ゼヤンク(GB)",
+      "dam": "如雲",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00b772",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "joun"
     }
   ]
 }

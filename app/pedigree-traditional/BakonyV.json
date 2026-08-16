@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "バコニー五",
     "rootHorseId": "bakony-v",
-    "lastUpdated": "2026-07-18T18:17:21.744614Z",
+    "lastUpdated": "2026-07-27T15:46:39.776784Z",
     "source": "python_scraping",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -32,7 +33,87 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』pp.1021-1022, 『明治・大正・昭和初期の輸入馬』",
-      "prizeMoney": null
+      "prizeMoney": null,
+      "sireId": "bakony",
+      "sireNetkeibaId": "000a019eef",
+      "ancestryByPath": {
+        "s": {
+          "name": "バコニー",
+          "foaled": {
+            "year": 1899
+          },
+          "sex": "male",
+          "netkeibaId": "000a019eef"
+        },
+        "ss": {
+          "name": "Bona Vista",
+          "foaled": {
+            "year": 1889
+          },
+          "color": "栗毛",
+          "sex": "male",
+          "netkeibaId": "000a00114c"
+        },
+        "sss": {
+          "name": "Bend Or",
+          "foaled": {
+            "year": 1877
+          },
+          "color": "栗毛",
+          "sex": "male",
+          "netkeibaId": "000a001134"
+        },
+        "ssss": {
+          "name": "Doncaster",
+          "foaled": {
+            "year": 1870
+          },
+          "color": "栗毛",
+          "sex": "male",
+          "netkeibaId": "000a001135"
+        },
+        "sssd": {
+          "name": "Rouge Rose",
+          "foaled": {
+            "year": 1865
+          },
+          "color": "栗毛",
+          "sex": "female",
+          "netkeibaId": "000a013282"
+        },
+        "ssd": {
+          "name": "Vista",
+          "foaled": {
+            "year": 1879
+          },
+          "color": "栗毛",
+          "sex": "female",
+          "netkeibaId": "000a0102a5"
+        },
+        "ssds": {
+          "name": "Macaroni",
+          "foaled": {
+            "year": 1860
+          },
+          "color": "鹿毛",
+          "sex": "male",
+          "netkeibaId": "000a0019f4"
+        },
+        "ssdd": {
+          "name": "Verdure",
+          "foaled": {
+            "year": 1867
+          },
+          "color": "栗毛",
+          "sex": "female",
+          "netkeibaId": "000a0132ea"
+        },
+        "d": {
+          "name": "ポトラニーギドラン",
+          "sex": "female",
+          "netkeibaId": "000a01c275"
+        }
+      }
     },
     {
       "id": "bakony-vnoichi",
@@ -59,7 +140,9 @@
       "raceResults": [],
       "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.1166",
       "prizeMoney": null,
-      "damId": "bakony-v"
+      "damId": "bakony-v",
+      "sireId": "blairmore",
+      "sireNetkeibaId": "000a00086f"
     },
     {
       "id": "igunee",
@@ -84,7 +167,9 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "bakony-vnoichi"
+      "damId": "bakony-vnoichi",
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a"
     },
     {
       "id": "kikuhime",
@@ -109,7 +194,9 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "igunee"
+      "damId": "igunee",
+      "sireId": "ougi",
+      "sireNetkeibaId": "000a00c2e1"
     },
     {
       "id": "housakae",
@@ -134,7 +221,9 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "kikuhime"
+      "damId": "kikuhime",
+      "sireId": "houkei",
+      "sireNetkeibaId": "000a00c322"
     },
     {
       "id": "eadaabii",
@@ -163,7 +252,9 @@
       },
       "owner": "藤原清治",
       "trainer": "柏谷富衛",
-      "damId": "housakae"
+      "damId": "housakae",
+      "sireId": "haru-states",
+      "sireNetkeibaId": "000a00091c"
     },
     {
       "id": "big-three",
@@ -284,7 +375,9 @@
       },
       "owner": "株式会社ホースタジマ",
       "trainer": "坂口正二",
-      "damId": "eadaabii"
+      "damId": "eadaabii",
+      "sireId": "ichiyama-hikari",
+      "sireNetkeibaId": "000a00c387"
     }
   ]
 }

@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "アルアン",
     "rootHorseId": "araouan",
-    "lastUpdated": "2026-07-26T01:39:04.125710Z",
+    "lastUpdated": "2026-07-27T15:46:25.062799Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -24,7 +25,21 @@
       "color": "栗毛",
       "breeder": "仏",
       "netkeibaId": "000a01cba3",
-      "source": "python_scraping, 『アラブ・アングロアラブ・準アアブレッド血統書 第1巻』p.763, 『明治・大正・昭和初期の輸入馬』"
+      "source": "python_scraping, 『アラブ・アングロアラブ・準アアブレッド血統書 第1巻』p.763, 『明治・大正・昭和初期の輸入馬』",
+      "sireId": "akkaru",
+      "sireNetkeibaId": "000a01c2b8",
+      "ancestryByPath": {
+        "s": {
+          "name": "アッカル",
+          "sex": "male",
+          "netkeibaId": "000a01c2b8"
+        },
+        "d": {
+          "name": "アルーサー",
+          "sex": "female",
+          "netkeibaId": "000a01cba2"
+        }
+      }
     },
     {
       "id": "dai1-araouan",
@@ -78,7 +93,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai1-araouan"
+      "damId": "dai1-araouan",
+      "sireId": "gidoranyoichinosan",
+      "sireNetkeibaId": "000a01c1f7"
     },
     {
       "id": "araouan-no-4",
@@ -105,7 +122,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-araouan"
+      "damId": "dai2-araouan",
+      "sireId": "ofuree",
+      "sireNetkeibaId": "000a01c770"
     },
     {
       "id": "tenso",
@@ -132,7 +151,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "araouan-no-4"
+      "damId": "araouan-no-4",
+      "sireId": "haiyou-1934",
+      "sireNetkeibaId": "000a01ccd9"
     },
     {
       "id": "sachiyuki",
@@ -159,7 +180,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tenso"
+      "damId": "tenso",
+      "sireId": "",
+      "sireNetkeibaId": "000a00b6d7"
     },
     {
       "id": "sakushigeoo",
@@ -279,7 +302,9 @@
       },
       "damId": "sachiyuki",
       "owner": "森川光晴",
-      "trainer": "大久保石松"
+      "trainer": "大久保石松",
+      "sireId": "",
+      "sireNetkeibaId": "000a00c362"
     }
   ]
 }
