@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "清花",
     "rootHorseId": "kiyohana",
-    "lastUpdated": "2026-07-26T01:10:18.225740Z",
+    "lastUpdated": "2026-08-14T03:21:40Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -18,7 +19,7 @@
       "dam": "不詳",
       "color": "",
       "breeder": "豪",
-      "owner": "志岐牧場？",
+      "owner": "（北海道勇払郡安平村字早来）",
       "netkeibaId": "000a01c1e1",
       "raceStats": {
         "total": {
@@ -28,8 +29,131 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『早来町史 本編』pp.444-445",
-      "comment": "詳細不明の豪洋。父・ワルデンカラー（ワルデンガーラ）も豪洋であり、詳細が確認できる産駒は歌丸（安平村・志賀智）・第四ワルデンガーラー（安平村・志賀智）・第一ワルデンガーラー（安平・志岐牧場・長野歓一）あたり。『早来町史』によれば志岐牧場は後に志賀が管理者となり志賀牧場となる。志岐牧場に数頭の種牡馬がいた、という記述もあるので、おそらくは志岐牧場で繋養していたのだろう。そう考えると、ワルデンガーラーとの間に産駒のある本馬についても志岐牧場所有の可能性が高い。"
+      "source": "python_scraping, 『早来町史 本編』pp.444-445, 『アラブ系種血統書 第1巻』p.328",
+      "comment": "詳細不明の豪洋。父・ワルデンカラー（ワルデンガーラ）も豪洋であり、詳細が確認できる産駒は歌丸（安平村・志賀智）・第四ワルデンガーラー（安平村・志賀智）・第一ワルデンガーラー（安平・志岐牧場・長野歓一）あたりで、どれも安平村早来の志岐牧場である。『早来町史』によれば志岐牧場は後に志賀が管理者となり志賀牧場となる。志岐牧場に数頭の種牡馬がいた、という記述もあるので、おそらくワルデンガーラーは志岐牧場で繋養していたのだろう。そう考えると、ワルデンガーラーとの間に産駒のある本馬についても志岐牧場所有か、少なくとも早来で繋養されていた可能性が高い。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "dai2-kiyohana",
@@ -54,7 +178,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kiyohana"
+      "damId": "kiyohana",
+      "sireId": "warudenkaraa",
+      "sireNetkeibaId": "000a01c1e0"
     },
     {
       "id": "dai2-kiyohana-no-2",
@@ -81,7 +207,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-kiyohana"
+      "damId": "dai2-kiyohana",
+      "sireId": "john-lambton",
+      "sireNetkeibaId": "000a01c70a"
     },
     {
       "id": "kiyose",
@@ -108,7 +236,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-kiyohana-no-2"
+      "damId": "dai2-kiyohana-no-2",
+      "sireId": "kohairanrashiidoichinoshi",
+      "sireNetkeibaId": "000a018e56"
     },
     {
       "id": "hikaritama",
@@ -139,7 +269,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kiyose"
+      "damId": "kiyose",
+      "sireId": "dai3-gyokuhai",
+      "sireNetkeibaId": "000a00c2dd"
     },
     {
       "id": "misuchikatsu",
@@ -166,7 +298,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hikaritama"
+      "damId": "hikaritama",
+      "sireId": "east-parade",
+      "sireNetkeibaId": "000a0008e8"
     },
     {
       "id": "saganoharu",
@@ -256,7 +390,9 @@
       },
       "damId": "misuchikatsu",
       "owner": "高木梶",
-      "trainer": "田所秀雄"
+      "trainer": "田所秀雄",
+      "sireId": "seiyu",
+      "sireNetkeibaId": "000a00c353"
     }
   ]
 }

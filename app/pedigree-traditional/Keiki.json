@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "軽喜",
     "rootHorseId": "keiki",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "lastUpdated": "2026-08-13T18:24:53Z",
     "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -16,7 +17,7 @@
       "importedYear": "（内国産）",
       "sex": "female",
       "breed": "中半",
-      "sire": "スカムプストンスクワイヤー(GB)",
+      "sire": "ストムプストンスクワイヤー(GB)",
       "dam": "不詳(AUS)",
       "color": "",
       "breeder": "（岩手県）",
@@ -30,7 +31,136 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.195, 『アラブ系種血統書 第1巻』p.286, 『競馬成績書 昭和6年秋季』p.264, 『巌手縣産馬誌』p.88",
-      "comment": "競馬成績書の時点で母は馬名不詳の濠洋となっている。父「スカムプストンスクワイヤー」は1908年生・父ベツキングハムクツイアー・母ボルトンゼスのハクニー種牡馬。1912年に購入し岩手県種畜場で供用された。"
+      "comment": "競馬成績書の時点で母は馬名不詳の濠洋となっている。父「スカムプストンスクワイヤー」は1908年生・父ベツキングハムクツイアー・母ボルトンゼスのハクニー種牡馬。1912年に購入し岩手県種畜場で供用された。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "ストムプストンスクワイヤー(GB)",
+          "sex": "male",
+          "foaled": {
+            "year": 1908
+          },
+          "color": "栗毛",
+          "breed": "ハク"
+        },
+        "ss": {
+          "name": "ベツキングハムクツイアー",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "ボルトンゼス",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳(AUS)",
+          "sex": "female",
+          "breed": "サラ系"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "jinka",
@@ -57,7 +187,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "keiki"
+      "damId": "keiki",
+      "sireId": "dai2-jingisukan",
+      "sireNetkeibaId": "000a01c19f"
     },
     {
       "id": "sorusuto",
@@ -84,7 +216,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "jinka"
+      "damId": "jinka",
+      "sireId": "kasakae",
+      "sireNetkeibaId": "000a019021"
     },
     {
       "id": "first",
@@ -114,7 +248,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sorusuto"
+      "damId": "sorusuto",
+      "sireId": "eimei-1929",
+      "sireNetkeibaId": "000a01c525"
     },
     {
       "id": "fukuhama",
@@ -141,7 +277,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "first"
+      "damId": "first",
+      "sireId": "grand-park",
+      "sireNetkeibaId": "000a0008bd"
     },
     {
       "id": "ginsachi",
@@ -229,7 +367,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "fukuhama"
+      "damId": "fukuhama",
+      "sireId": "sachi-minori",
+      "sireNetkeibaId": "000a00c32f"
     }
   ]
 }

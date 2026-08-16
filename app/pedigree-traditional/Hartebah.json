@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "ハーテバ",
     "rootHorseId": "hartebah",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "lastUpdated": "2026-07-27T15:50:17.602207Z",
+    "source": "python_scraping_updated",
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -32,7 +33,16 @@
       "source": "python_scraping, 『アラブ系牝馬系統大鑑』pp.86-87, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.805, 『陸軍獣医団報 (164)』pp.111-115, 『朝鮮農会報 13(1)』口絵, 『The Forgotten Man: Peter Bradley’s Role in Early American Breeding (Part II)』",
       "importedYear": "1917",
       "owner": "成驩牧場（朝鮮忠清南道天安郡成驩面）",
-      "comment": "成驩牧場の繁殖数記録より、1919年に生産された馬は全て1917年に輸入された牝馬の産駒であると考えられる（1918年に輸入されたサラ牝馬が1919年に持込馬を出産しているため）。また、1918年1月の『朝鮮農会報 13(1)』に写真が掲載されているため、撮影時期を考えれば1917年の輸入が自然か。よって1919年にナヤバを産んでいる本馬は1917年輸入と推定。毛色はAll Pedigreeおよび英字記事より。"
+      "comment": "成驩牧場の繁殖数記録より、1919年に生産された馬は全て1917年に輸入された牝馬の産駒であると考えられる（1918年に輸入されたサラ牝馬が1919年に持込馬を出産しているため）。また、1918年1月の『朝鮮農会報 13(1)』に写真が掲載されているため、撮影時期を考えれば1917年の輸入が自然か。よって1919年にナヤバを産んでいる本馬は1917年輸入と推定。毛色はAll Pedigreeおよび英字記事より。",
+      "sireId": "el-bulod",
+      "sireNetkeibaId": "000a01c81e",
+      "ancestryByPath": {
+        "s": {
+          "name": "El Bulod",
+          "sex": "male",
+          "netkeibaId": "000a01c81e"
+        }
+      }
     },
     {
       "id": "nayaba",
@@ -61,7 +71,9 @@
       "prizeMoney": {
         "total": null
       },
-      "damId": "hartebah"
+      "damId": "hartebah",
+      "sireId": "zamiiru",
+      "sireNetkeibaId": "000a01c735"
     },
     {
       "id": "kazaaru",
@@ -90,7 +102,9 @@
       "prizeMoney": {
         "total": null
       },
-      "damId": "nayaba"
+      "damId": "nayaba",
+      "sireId": "sharmah",
+      "sireNetkeibaId": "000a00f73f"
     },
     {
       "id": "kaika-1943",
@@ -119,7 +133,9 @@
       "prizeMoney": {
         "total": null
       },
-      "damId": "kazaaru"
+      "damId": "kazaaru",
+      "sireId": "kaigin",
+      "sireNetkeibaId": "000a00080b"
     },
     {
       "id": "ginhana",
@@ -147,7 +163,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kaika-1943"
+      "damId": "kaika-1943",
+      "sireId": "kumonohana",
+      "sireNetkeibaId": "000a0008c7"
     },
     {
       "id": "misuhiryuu",
@@ -174,7 +192,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ginhana"
+      "damId": "ginhana",
+      "sireId": "takakura-homare",
+      "sireNetkeibaId": "000a00c378"
     },
     {
       "id": "suzuka-takeru",
@@ -370,7 +390,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misuhiryuu"
+      "damId": "misuhiryuu",
+      "sireId": "senju",
+      "sireNetkeibaId": "000a00c38c"
     },
     {
       "id": "hayakoma",
@@ -428,7 +450,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misurantou"
+      "damId": "misurantou",
+      "sireId": "komagatake",
+      "sireNetkeibaId": "000a00c2ef"
     },
     {
       "id": "misurantou",
@@ -456,7 +480,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nayabaee"
+      "damId": "nayabaee",
+      "sireId": "katsufuji",
+      "sireNetkeibaId": "000a0008b4"
     },
     {
       "id": "nayabaee",
@@ -483,7 +509,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nayaba"
+      "damId": "nayaba",
+      "sireId": "roideur",
+      "sireNetkeibaId": "000a00086d"
     },
     {
       "id": "tatsuta-o",
@@ -602,7 +630,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misuatsuta"
+      "damId": "misuatsuta",
+      "sireId": "niitakayama",
+      "sireNetkeibaId": "000a00c2ed"
     },
     {
       "id": "misuatsuta",
@@ -630,7 +660,9 @@
         "total": "0万円"
       },
       "damId": "nayabaee",
-      "formerPedigreeName": "第四ナヤバエー"
+      "formerPedigreeName": "第四ナヤバエー",
+      "sireId": "zingaro",
+      "sireNetkeibaId": "000a0008e1"
     },
     {
       "id": "sanukifuji",
@@ -673,7 +705,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hanaitsu"
+      "damId": "hanaitsu",
+      "sireId": "fujimiya",
+      "sireNetkeibaId": "000a0008e5"
     },
     {
       "id": "hanaitsu",
@@ -700,7 +734,90 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kazaaru"
+      "damId": "kazaaru",
+      "sireId": "shine-1929",
+      "sireNetkeibaId": "000a000889"
+    },
+    {
+      "id": "demasu",
+      "name": "デマス",
+      "foaled": {
+        "year": 1928
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ワツデーシルハン",
+      "dam": "デイン",
+      "color": "栗毛",
+      "breeder": "韓",
+      "netkeibaId": "000a01c821",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "sireId": "watsudeeshiruhan",
+      "sireNetkeibaId": "000a01c2a7",
+      "damId": "dein"
+    },
+    {
+      "id": "dein",
+      "name": "デイン",
+      "foaled": {
+        "year": 1921
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "Ain",
+      "dam": "ハーテバ",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01c820",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "hartebah",
+      "sireId": "ain",
+      "sireNetkeibaId": "000a01c81d"
+    },
+    {
+      "id": "monaaku",
+      "name": "モナーク",
+      "foaled": {
+        "year": 1932
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ロイヂユール(GB)",
+      "dam": "ナヤバ",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01cd6e",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "nayaba",
+      "sireId": "roideur",
+      "sireNetkeibaId": "000a00086d"
     }
   ]
 }

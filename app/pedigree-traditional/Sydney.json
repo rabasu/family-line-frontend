@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "シドニー",
     "rootHorseId": "sydney",
-    "lastUpdated": "2026-07-26T01:08:27.946841Z",
+    "lastUpdated": "2026-08-13T09:11:36Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -31,7 +32,131 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『柏葉城の馬』p.107,126, 『種馬牧場種馬所馬匹一覧』p.26, 『アラブ系牝馬系統大鑑』p.203",
-      "comment": "シドニーは複数頭存在するが、これは奥羽種馬牧場由来のもの。netkeibaでは父St. Angeloとなっているが、これはお福島で供用された別のシドニー（父セントアンゼラ・母ドイラドオフ）。"
+      "comment": "シドニーは複数頭存在するが、これは奥羽種馬牧場由来のもの。netkeibaでは父St. Angeloとなっているが、これはお福島で供用された別のシドニー（父セントアンゼラ・母ドイラドオフ）。",
+      "sireId": "st-angelo",
+      "sireNetkeibaId": "000a014c7b",
+      "ancestryByPath": {
+        "s": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "dai2-sydney",
@@ -58,7 +183,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sydney"
+      "damId": "sydney",
+      "sireId": "information",
+      "sireNetkeibaId": "000a0008a4"
     },
     {
       "id": "hougetsu-1916",
@@ -85,7 +212,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-sydney"
+      "damId": "dai2-sydney",
+      "sireId": "oobaayangonoroku",
+      "sireNetkeibaId": "000a00f747"
     },
     {
       "id": "takaradama",
@@ -112,7 +241,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hougetsu-1916"
+      "damId": "hougetsu-1916",
+      "sireId": "zevuaikingu",
+      "sireNetkeibaId": "000a00089d"
     },
     {
       "id": "baraakira",
@@ -139,7 +270,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takaradama"
+      "damId": "takaradama",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     },
     {
       "id": "misubaratsukee",
@@ -166,7 +299,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "baraakira"
+      "damId": "baraakira",
+      "sireId": "kanda-o",
+      "sireNetkeibaId": "000a00c341"
     },
     {
       "id": "hatsuno-takara",
@@ -422,7 +557,9 @@
       },
       "damId": "misubaratsukee",
       "owner": "初鹿吉太郎",
-      "trainer": "田中良平"
+      "trainer": "田中良平",
+      "sireId": "hamano-o",
+      "sireNetkeibaId": "000a00c36b"
     },
     {
       "id": "mitsuno-sekai",
@@ -603,7 +740,9 @@
       },
       "damId": "misunankai",
       "owner": "西村光之助",
-      "trainer": "曽場広作"
+      "trainer": "曽場広作",
+      "sireId": "oogi-1961",
+      "sireNetkeibaId": "000a00c3cd"
     },
     {
       "id": "misunankai",
@@ -633,7 +772,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "baraakira"
+      "damId": "baraakira",
+      "sireId": "ashiyagawa",
+      "sireNetkeibaId": "000a00c318"
     },
     {
       "id": "hougun",
@@ -660,7 +801,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takaradama"
+      "damId": "takaradama",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     },
     {
       "id": "kitanohomare",
@@ -703,7 +846,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "piyuaa"
+      "damId": "piyuaa",
+      "sireId": "ashiyagawa",
+      "sireNetkeibaId": "000a00c318"
     },
     {
       "id": "piyuaa",
@@ -730,7 +875,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hougun"
+      "damId": "hougun",
+      "sireId": "aburaaru",
+      "sireNetkeibaId": "000a00c2eb"
     },
     {
       "id": "kenzan-1954",
@@ -759,7 +906,9 @@
         "total": "0万円"
       },
       "damId": "hougun",
-      "linkName": "ケンザン(1954)"
+      "linkName": "ケンザン(1954)",
+      "sireId": "mikino-hikari",
+      "sireNetkeibaId": "000a00c333"
     },
     {
       "id": "tomosuakira",
@@ -785,7 +934,9 @@
       },
       "raceResults": [],
       "source": "python_scraping, JBIS, 血統・戦績データ: 1962z00378",
-      "damId": "baraakira"
+      "damId": "baraakira",
+      "sireId": "tomosu-baby",
+      "sireNetkeibaId": "000a00c351"
     },
     {
       "id": "chidori-san-itsu",
@@ -813,7 +964,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tomosuakira"
+      "damId": "tomosuakira",
+      "sireId": "senju",
+      "sireNetkeibaId": "000a00c38c"
     },
     {
       "id": "tamamoshitennoo",
@@ -873,7 +1026,37 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "chidori-san-itsu"
+      "damId": "chidori-san-itsu",
+      "sireId": "punjab",
+      "sireNetkeibaId": "000a00029a"
+    },
+    {
+      "id": "marukabu",
+      "name": "マルカブ",
+      "foaled": {
+        "year": 1936
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "バラツケー(FR)",
+      "dam": "宝玉",
+      "color": "黒鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00c327",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Marukabu",
+      "prizeMoney": null,
+      "damId": "takaradama",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     }
   ]
 }

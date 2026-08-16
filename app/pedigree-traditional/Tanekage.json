@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "種影",
     "rootHorseId": "tanekage",
-    "lastUpdated": "2026-07-26T01:08:03.556106Z",
+    "lastUpdated": "2026-07-27T15:55:35.405893Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -35,7 +36,34 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『The Arabian Stud Book』vol.2(1918) p.98, 『陸軍獣医団報 (164)』pp.111-115, 『アラブ系牝馬系統大鑑』p.74, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.800",
-      "comment": "生年月日・毛色は米アラブ血統書より。輸入年は各資料からの推定。"
+      "comment": "生年月日・毛色は米アラブ血統書より。輸入年は各資料からの推定。",
+      "sireId": "hamrah",
+      "sireNetkeibaId": "000a01c2aa",
+      "ancestryByPath": {
+        "s": {
+          "name": "Hamrah",
+          "foaled": {
+            "year": 1904
+          },
+          "color": "鹿毛",
+          "sex": "male",
+          "netkeibaId": "000a01c2aa"
+        },
+        "sd": {
+          "name": "Urfah",
+          "foaled": {
+            "year": 1899
+          },
+          "color": "鹿毛",
+          "sex": "female",
+          "netkeibaId": "000a01c2a9"
+        },
+        "d": {
+          "name": "Dahura",
+          "sex": "female",
+          "netkeibaId": "000a01f964"
+        }
+      }
     },
     {
       "id": "iwakasumi",
@@ -65,7 +93,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tanekage"
+      "damId": "tanekage",
+      "sireId": "masubooto",
+      "sireNetkeibaId": "000a00f73d"
     },
     {
       "id": "takeshikasumi",
@@ -94,7 +124,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "iwakasumi"
+      "damId": "iwakasumi",
+      "sireId": "beruami",
+      "sireNetkeibaId": "000a00f73e"
     },
     {
       "id": "tatsukiyo",
@@ -121,7 +153,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takeshikasumi"
+      "damId": "takeshikasumi",
+      "sireId": "hoshu",
+      "sireNetkeibaId": "000a0008c6"
     },
     {
       "id": "golt-queen",
@@ -149,7 +183,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tatsukiyo"
+      "damId": "tatsukiyo",
+      "sireId": "limbo",
+      "sireNetkeibaId": "000a0008cb"
     },
     {
       "id": "gold-ford",
@@ -177,7 +213,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "golt-queen"
+      "damId": "golt-queen",
+      "sireId": "seiho",
+      "sireNetkeibaId": "000a00c305"
     },
     {
       "id": "time-let",
@@ -205,7 +243,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "gold-ford"
+      "damId": "gold-ford",
+      "sireId": "time-line",
+      "sireNetkeibaId": "000a00c4c6"
     },
     {
       "id": "time-power",
@@ -298,7 +338,9 @@
         "central": "620万円",
         "local": "0万円"
       },
-      "damId": "time-let"
+      "damId": "time-let",
+      "sireId": "consequent",
+      "sireNetkeibaId": "000a0000b3"
     },
     {
       "id": "hiro-time",
@@ -376,7 +418,9 @@
         "central": "1億1,452万円",
         "local": "0万円"
       },
-      "damId": "gold-rikie"
+      "damId": "gold-rikie",
+      "sireId": "time-line",
+      "sireNetkeibaId": "000a00c4c6"
     },
     {
       "id": "gold-rikie",
@@ -404,7 +448,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "golt-queen"
+      "damId": "golt-queen",
+      "sireId": "scurry",
+      "sireNetkeibaId": "000a00c477"
     },
     {
       "id": "gurandoseiyuu",
@@ -495,7 +541,9 @@
       },
       "damId": "misuhatsufuji",
       "owner": "小池清太郎",
-      "trainer": "加藤清一"
+      "trainer": "加藤清一",
+      "sireId": "seiyu",
+      "sireNetkeibaId": "000a00c353"
     },
     {
       "id": "misuhatsufuji",
@@ -523,7 +571,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hatsume"
+      "damId": "hatsume",
+      "sireId": "asafuji",
+      "sireNetkeibaId": "000a0008bf"
     },
     {
       "id": "hatsume",
@@ -550,7 +600,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ankasumi"
+      "damId": "ankasumi",
+      "sireId": "yukitoki",
+      "sireNetkeibaId": "000a0008c3"
     },
     {
       "id": "ankasumi",
@@ -577,7 +629,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "iwakasumi"
+      "damId": "iwakasumi",
+      "sireId": "beruami",
+      "sireNetkeibaId": "000a00f73e"
     },
     {
       "id": "ayahishi",
@@ -710,7 +764,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "uiruson"
+      "damId": "uiruson",
+      "sireId": "hishiryu",
+      "sireNetkeibaId": "000a00097e"
     },
     {
       "id": "uiruson",
@@ -737,7 +793,327 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "takeshikasumi"
+      "damId": "takeshikasumi",
+      "sireId": "hoshu",
+      "sireNetkeibaId": "000a0008c6"
+    },
+    {
+      "id": "top-horse",
+      "name": "トツプホース",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "メイズイ",
+      "dam": "タツキヨ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c47e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Top Horse",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "tatsukiyo",
+      "sireId": "meizui",
+      "sireNetkeibaId": "000a000a11"
+    },
+    {
+      "id": "suisei-governor",
+      "name": "スイセイガバナー",
+      "foaled": {
+        "year": 1974
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "スカレー",
+      "dam": "セツゼツ",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00c51b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Suisei Governor",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "sireId": "scurry",
+      "sireNetkeibaId": "000a00c477",
+      "damId": "setsuzetsu"
+    },
+    {
+      "id": "setsuzetsu",
+      "name": "セツゼツ",
+      "foaled": {
+        "year": 1968
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "マロット(ITA)",
+      "dam": "ナンリュウ",
+      "color": "黒鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00e5db",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "nanryu",
+      "sireId": "marot",
+      "sireNetkeibaId": "000a000a06"
+    },
+    {
+      "id": "nanryu",
+      "name": "ナンリュウ",
+      "foaled": {
+        "year": 1957
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "イツセイ",
+      "dam": "武霞",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a00cd8c",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Nanryu",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "takeshikasumi",
+      "sireId": "issei",
+      "sireNetkeibaId": "000a000921"
+    },
+    {
+      "id": "champion",
+      "name": "チヤンピオン",
+      "foaled": {
+        "year": 1955
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ホウシユウ",
+      "dam": "スガタ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c398",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Champion",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "linkName": "チヤンピオン(1955)",
+      "sireId": "hoshu",
+      "sireNetkeibaId": "000a0008c6",
+      "damId": "sugata"
+    },
+    {
+      "id": "sugata",
+      "name": "スガタ",
+      "foaled": {
+        "year": 1951
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "崇優",
+      "dam": "武霞",
+      "color": "栗毛",
+      "breeder": "平取町",
+      "netkeibaId": "000a00ca1b",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "takeshikasumi",
+      "sireId": "suuyuu",
+      "sireNetkeibaId": "000a000913"
+    },
+    {
+      "id": "saki-hikari",
+      "name": "サキヒカリ",
+      "foaled": {
+        "year": 1964
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ホースニユース",
+      "dam": "ミスハツフジ",
+      "color": "鹿毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c407",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Saki Hikari",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "misuhatsufuji",
+      "sireId": "horse-news",
+      "sireNetkeibaId": "000a00c331"
+    },
+    {
+      "id": "namikage",
+      "name": "波影",
+      "foaled": {
+        "year": 1933
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "吹雪(HUN)",
+      "dam": "種影",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cc28",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "tanekage",
+      "sireId": "fubuki-1911",
+      "sireNetkeibaId": "000a00f073"
+    },
+    {
+      "id": "takasho",
+      "name": "タカショウ",
+      "foaled": {
+        "year": 1956
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "トシシロ",
+      "dam": "スガタ",
+      "color": "栗毛",
+      "breeder": "浦河町",
+      "netkeibaId": "000a00c39b",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Takasho",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "damId": "sugata",
+      "sireId": "toshishiro",
+      "sireNetkeibaId": "000a0008af"
+    },
+    {
+      "id": "hatsushimo",
+      "name": "初霜",
+      "foaled": {
+        "year": 1927
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ワツデーシルハン",
+      "dam": "カゼーナ",
+      "color": "芦毛",
+      "breeder": "",
+      "netkeibaId": "000a00f749",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "sireId": "watsudeeshiruhan",
+      "sireNetkeibaId": "000a01c2a7",
+      "damId": "kazeena"
+    },
+    {
+      "id": "kazeena",
+      "name": "カゼーナ",
+      "foaled": {
+        "year": 1920
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "フアルタク",
+      "dam": "種影",
+      "color": "芦毛",
+      "breeder": "韓",
+      "netkeibaId": "000a01c2ab",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "tanekage",
+      "sireId": "fuarutaku",
+      "sireNetkeibaId": "000a01c2a8"
     }
   ]
 }

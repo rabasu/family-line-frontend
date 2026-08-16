@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "トレアドールギドラン一五",
     "rootHorseId": "toreador-gidran-15",
-    "lastUpdated": "2026-07-26T02:10:17.809368Z",
+    "lastUpdated": "2026-07-27T15:55:56.430652Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -33,7 +34,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "owner": "日高種馬牧場→沢昇平"
+      "owner": "日高種馬牧場→沢昇平",
+      "sireId": "toreadooru",
+      "sireNetkeibaId": "000a01c320",
+      "ancestryByPath": {
+        "s": {
+          "name": "トレアドール",
+          "sex": "male",
+          "netkeibaId": "000a01c320"
+        },
+        "d": {
+          "name": "ギドラン四〇ノ一三三",
+          "sex": "female",
+          "netkeibaId": "000a01c31f"
+        }
+      }
     },
     {
       "id": "guudoria",
@@ -62,7 +77,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "toreador-gidran-15"
+      "damId": "toreador-gidran-15",
+      "sireId": "gidoranyoichinoikku",
+      "sireNetkeibaId": "000a01c286"
     },
     {
       "id": "riguria",
@@ -91,7 +108,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "guudoria"
+      "damId": "guudoria",
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a"
     },
     {
       "id": "harumori",
@@ -118,7 +137,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "riguria"
+      "damId": "riguria",
+      "sireId": "dai10-jipuromatsuto",
+      "sireNetkeibaId": "000a01901d"
     },
     {
       "id": "harukachi",
@@ -145,7 +166,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "harumori"
+      "damId": "harumori",
+      "sireId": "lucky-park",
+      "sireNetkeibaId": "000a00c321"
     },
     {
       "id": "katsuyoshi-1961",
@@ -173,7 +196,9 @@
         "total": "0万円"
       },
       "damId": "harukachi",
-      "linkName": "カツヨシ(1961)"
+      "linkName": "カツヨシ(1961)",
+      "sireId": "seiyu",
+      "sireNetkeibaId": "000a00c353"
     },
     {
       "id": "houzan-1954",
@@ -219,7 +244,9 @@
       "owner": "岡本茂",
       "trainer": "久保田彦之",
       "linkName": "ホウザン(1954)",
-      "damId": "dai3-guudoria"
+      "damId": "dai3-guudoria",
+      "sireId": "kirinzan",
+      "sireNetkeibaId": "000a00c319"
     },
     {
       "id": "dai3-guudoria",
@@ -244,7 +271,37 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "guudoria"
+      "damId": "guudoria",
+      "sireId": "emigrant",
+      "sireNetkeibaId": "000a00086a"
+    },
+    {
+      "id": "tamakanro",
+      "name": "タマカンロ",
+      "foaled": {
+        "year": 1939
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "万青",
+      "dam": "第三グードリア",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00c30a",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tamakanro",
+      "prizeMoney": null,
+      "damId": "dai3-guudoria",
+      "sireId": "manao",
+      "sireNetkeibaId": "000a00c2ec"
     }
   ]
 }

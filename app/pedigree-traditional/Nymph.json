@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "ニンプ",
     "rootHorseId": "nymph",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "lastUpdated": "2026-08-13T10:04:36Z",
     "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -19,7 +20,7 @@
       "sex": "female",
       "breed": "トロ",
       "sire": "Beek",
-      "dam": "Sylvia",
+      "dam": "Sylvin",
       "color": "鹿毛",
       "breeder": "米",
       "netkeibaId": "000a01ca4b",
@@ -31,7 +32,130 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『輸入種牛馬系統取調書』p.17, 『明治大正馬政功労十一氏事蹟』p.615, 『明治・大正・昭和初期の輸入馬』"
+      "source": "python_scraping, 『輸入種牛馬系統取調書』p.17,94, 『明治大正馬政功労十一氏事蹟』p.615, 『明治・大正・昭和初期の輸入馬』",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "Beek",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "Acalde",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "Mambrino chief",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "Balls Vermont",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "Downing's Vermont",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "Betty",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "Old commodore",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "Bet bounce",
+          "sex": "female"
+        },
+        "d": {
+          "name": "Sylvin",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "Alexander's Edwin Forest",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "Corium",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "Mambrino chief",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "Betty",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "Old commodore",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "Bet bounce",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "hanaken",
@@ -58,7 +182,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nymph"
+      "damId": "nymph",
+      "sireId": "aidorusutaa",
+      "sireNetkeibaId": "000a01ca4a"
     },
     {
       "id": "asano",
@@ -85,7 +211,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hanaken"
+      "damId": "hanaken",
+      "sireId": "asahikou",
+      "sireNetkeibaId": "000a01ca4d"
     },
     {
       "id": "dai2-nymph",
@@ -113,7 +241,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "asano"
+      "damId": "asano",
+      "sireId": "banryuu",
+      "sireNetkeibaId": "000a01c93b"
     },
     {
       "id": "kinuzure",
@@ -143,7 +273,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-nymph"
+      "damId": "dai2-nymph",
+      "sireId": "song-and-wine",
+      "sireNetkeibaId": "000a01c94c"
     },
     {
       "id": "seishin",
@@ -173,7 +305,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kinuzure"
+      "damId": "kinuzure",
+      "sireId": "rushcutter",
+      "sireNetkeibaId": "000a0004b4"
     },
     {
       "id": "aoshun",
@@ -200,7 +334,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "seishin"
+      "damId": "seishin",
+      "sireId": "eruwarudo",
+      "sireNetkeibaId": "000a00f73c"
     },
     {
       "id": "raichiyou",
@@ -230,7 +366,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "aoshun"
+      "damId": "aoshun",
+      "sireId": "aburaaru",
+      "sireNetkeibaId": "000a00c2eb"
     },
     {
       "id": "maruyaisu",
@@ -261,7 +399,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "raichiyou"
+      "damId": "raichiyou",
+      "sireId": "shigetaka",
+      "sireNetkeibaId": "000a00c374"
     },
     {
       "id": "boorudobanaa",
@@ -546,7 +686,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "maruyaisu"
+      "damId": "maruyaisu",
+      "sireId": "bold-and-brave",
+      "sireNetkeibaId": "000a000ac4"
     },
     {
       "id": "kouchiyou-1962",
@@ -578,7 +720,9 @@
         "total": "0万円"
       },
       "damId": "raichiyou",
-      "linkName": "コウチヨウ(1962)"
+      "linkName": "コウチヨウ(1962)",
+      "sireId": "kegon",
+      "sireNetkeibaId": "000a00095e"
     },
     {
       "id": "kousei-1953",
@@ -666,7 +810,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "nitsushiyou"
+      "damId": "nitsushiyou",
+      "sireId": "hoshu",
+      "sireNetkeibaId": "000a0008c6"
     },
     {
       "id": "nitsushiyou",
@@ -697,7 +843,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "aoshun"
+      "damId": "aoshun",
+      "sireId": "aburaaru",
+      "sireNetkeibaId": "000a00c2eb"
     }
   ]
 }

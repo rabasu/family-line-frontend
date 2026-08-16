@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "タマモノ一",
     "rootHorseId": "tamamo-no-1",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "lastUpdated": "2026-08-13T09:31:16Z",
     "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -30,7 +31,130 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』緒言",
-      "comment": "『アラブ系牝馬系統大鑑』の採録から漏れており詳細不明。『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』緒言ではアラブ系馬の基礎牝馬を一覧で示しており、中半血種の中に「タマモノ1 昭4」と記載がある。トクシン等の牝祖である「第一タマモ」は各資料でサラ系と表記されているためおそらく別馬。配合相手のアブラールは北海道の民有種牡馬のため、繋養地は北海道のどこかと推測される。"
+      "comment": "『アラブ系牝馬系統大鑑』の採録から漏れており詳細不明。『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』緒言ではアラブ系馬の基礎牝馬を一覧で示しており、中半血種の中に「タマモノ1 昭4」と記載がある。トクシン等の牝祖である「第一タマモ」は各資料でサラ系と表記されているためおそらく別馬。配合相手のアブラールは北海道の民有種牡馬のため、繋養地は北海道のどこかと推測される。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "hokusei",
@@ -52,7 +176,9 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『軽半血種血統書 第1巻』p.635",
-      "damId": "tamamo-no-1"
+      "damId": "tamamo-no-1",
+      "sireId": "aburaaru",
+      "sireNetkeibaId": "000a00c2eb"
     },
     {
       "id": "kitakumo",
@@ -83,7 +209,9 @@
       "prizeMoney": {
         "total": null
       },
-      "damId": "hokusei"
+      "damId": "hokusei",
+      "sireId": "kumokiku",
+      "sireNetkeibaId": "000a00b6d7"
     },
     {
       "id": "takatsuru",
@@ -126,7 +254,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kitakumo"
+      "damId": "kitakumo",
+      "sireId": "houkei",
+      "sireNetkeibaId": "000a00c322"
     }
   ]
 }

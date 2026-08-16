@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "富士見",
     "rootHorseId": "fujimi",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "lastUpdated": "2026-08-14T16:55:52Z",
     "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -14,10 +15,10 @@
       "importedYear": "（内国産）",
       "sex": "female",
       "breed": "中半",
-      "sire": "不詳（ホウゴウト）",
-      "dam": "不詳（北海）",
+      "sire": "ホーガウト",
+      "dam": "北海",
       "color": "",
-      "breeder": "（青森県）",
+      "breeder": "青森県八戸",
       "netkeibaId": "000a01d090",
       "raceStats": {
         "total": {
@@ -28,7 +29,205 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『アラブ系種血統書 軽半血種血統書 第1巻』pp.13-14, 『驥北八戸 : 第三六回青森県種馬共進会記念』p.30",
-      "comment": "孫の第三富士見の血統として、父名全て同じで「富士見→第二富士見」と「富士→第二富士」の2種類が確認されている。おそらく同一馬だろうがどちらが正しいかはよくわからない。また、『驥北八戸』にはその「富士→第二富士→第三富士見」の牝系が紹介されており、その富士の両親として「父濠サラ・ホウゴウト、母洋種・北海」が記載されている。この「ホウゴウト」は全く情報がない。「北海」については八花の母として有名な馬がいるが、それとこの北海が同一馬かは不明。"
+      "comment": "孫の第三富士見の血統として、父名全て同じで「富士見→第二富士見」と「富士→第二富士」の2種類が確認されている。おそらく同一馬だろうがどちらが正しいかはよくわからない。また、『驥北八戸』にはその「富士→第二富士→第三富士見」の牝系が紹介されており、その富士の両親として「父濠サラ・ホウガウト、母洋種・北海」が記載されている。ホーガウトは1904年秋に八戸組が輸入した種牡馬だが、1909年の種牡馬一覧に名前がなく、その間になくなったと考えられる。そうなると富士見の生年は1906〜1910にまで絞られる。「北海」については八花の母として有名な馬がいるが、それとこの北海が同一馬かは不明。『驥北八戸』では濠洋と洋種を書き分けているため、それを信じれば北海は内洋であり、濠洋の北海とは同名異馬ということになるだろう。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "ホーガウト",
+          "sex": "male",
+          "foaled": {
+            "year": 1900
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "ss": {
+          "name": "Haut Brion",
+          "sex": "male",
+          "foaled": {
+            "year": 1890
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sss": {
+          "name": "St Simon",
+          "sex": "male",
+          "foaled": {
+            "year": 1881
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "ssss": {
+          "name": "Galopin",
+          "sex": "male",
+          "foaled": {
+            "year": 1872
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sssd": {
+          "name": "St. Angela",
+          "sex": "female",
+          "foaled": {
+            "year": 1865
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "ssd": {
+          "name": "Bonnie Lassie",
+          "sex": "female",
+          "foaled": {
+            "year": 1875
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "ssds": {
+          "name": "Brother To Strafford",
+          "sex": "male",
+          "foaled": {
+            "year": 1860
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "ssdd": {
+          "name": "Chieftains Daughter",
+          "sex": "female",
+          "foaled": {
+            "year": 1859
+          },
+          "color": "栗毛",
+          "breed": "サラ"
+        },
+        "sd": {
+          "name": "Spy Glass",
+          "sex": "female",
+          "foaled": {
+            "year": 1887
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sds": {
+          "name": "Robinson Crusoe",
+          "sex": "male",
+          "foaled": {
+            "year": 1873
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sdss": {
+          "name": "Angler",
+          "sex": "male",
+          "foaled": {
+            "year": 1862
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sdsd": {
+          "name": "Chrysolite",
+          "sex": "female",
+          "foaled": {
+            "year": 1860
+          },
+          "color": "栗毛",
+          "breed": "サラ"
+        },
+        "sdd": {
+          "name": "Telescope",
+          "sex": "female",
+          "foaled": {
+            "year": 1882
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "sdds": {
+          "name": "Piscator",
+          "sex": "male",
+          "foaled": {
+            "year": 1872
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "sddd": {
+          "name": "Lady Spec",
+          "sex": "female",
+          "foaled": {
+            "year": 1875
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "d": {
+          "name": "北海",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "dainifujimi",
@@ -175,7 +374,7 @@
       },
       "damId": "yasumi",
       "linkName": "マサトモ(1953)",
-      "sireId": "",
+      "sireId": "minami-homare",
       "sireNetkeibaId": "000a0008b6"
     },
     {
@@ -205,7 +404,7 @@
       },
       "damId": "masatomo-1953",
       "linkName": "ミスコロナ(1962)",
-      "sireId": "",
+      "sireId": "kanda-o",
       "sireNetkeibaId": "000a00c341"
     }
   ]

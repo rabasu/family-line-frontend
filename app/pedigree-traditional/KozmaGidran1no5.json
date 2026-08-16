@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "コヅマギドラン一ノ五",
     "rootHorseId": "kozma-gidran-1-no-5",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "lastUpdated": "2026-07-27T15:51:20.023985Z",
     "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -36,7 +37,21 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "comment": "馬名表記には「コツマ」と「コヅマ」が混ざっている。言語表記から「コヅマ」を正とする。"
+      "comment": "馬名表記には「コツマ」と「コヅマ」が混ざっている。言語表記から「コヅマ」を正とする。",
+      "sireId": "kotsumadaiichi",
+      "sireNetkeibaId": "000a01cd96",
+      "ancestryByPath": {
+        "s": {
+          "name": "コツマ第一",
+          "sex": "male",
+          "netkeibaId": "000a01cd96"
+        },
+        "d": {
+          "name": "ギドラン三九ノ一二八",
+          "sex": "female",
+          "netkeibaId": "000a01cd97"
+        }
+      }
     },
     {
       "id": "gojou",
@@ -63,7 +78,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "kozma-gidran-1-no-5"
+      "damId": "kozma-gidran-1-no-5",
+      "sireId": "gidoranshininoichigo",
+      "sireNetkeibaId": "000a018037"
     },
     {
       "id": "ezonishiki-1931",
@@ -91,7 +108,9 @@
         "total": "0万円"
       },
       "damId": "gojou",
-      "linkName": "エゾニシキ(1931)"
+      "linkName": "エゾニシキ(1931)",
+      "sireId": "quickello",
+      "sireNetkeibaId": "000a00088b"
     },
     {
       "id": "chitose-1939",
@@ -121,7 +140,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ezonishiki-1931"
+      "damId": "ezonishiki-1931",
+      "sireId": "erugaaretsubu",
+      "sireNetkeibaId": "000a00f74a"
     },
     {
       "id": "tosarira",
@@ -148,7 +169,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "chitose-1939"
+      "damId": "chitose-1939",
+      "sireId": "tokino-chikara",
+      "sireNetkeibaId": "000a000911"
     },
     {
       "id": "tosanishiki",
@@ -191,7 +214,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "tosarira"
+      "damId": "tosarira",
+      "sireId": "shunei",
+      "sireNetkeibaId": "000a00c370"
     }
   ]
 }

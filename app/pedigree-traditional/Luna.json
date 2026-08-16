@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "ルーナー",
     "rootHorseId": "luna",
-    "lastUpdated": "2026-07-26T01:38:58.361032Z",
+    "lastUpdated": "2026-07-27T15:52:18.137665Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -37,7 +38,37 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "comment": "『アラブ血統書』では黒鹿毛とあるが、他資料では鹿毛。"
+      "comment": "『アラブ血統書』では黒鹿毛とあるが、他資料では鹿毛。",
+      "sireId": "jingisukan",
+      "sireNetkeibaId": "000a01cb8f",
+      "ancestryByPath": {
+        "s": {
+          "name": "ジンギスカン",
+          "sex": "male",
+          "netkeibaId": "000a01cb8f"
+        },
+        "ss": {
+          "name": "Dzsingiskhan",
+          "foaled": {
+            "year": 1888
+          },
+          "sex": "male",
+          "netkeibaId": "000a01f8f8"
+        },
+        "sss": {
+          "name": "O'Bajan",
+          "foaled": {
+            "year": 1880
+          },
+          "sex": "male",
+          "netkeibaId": "000a01fa23"
+        },
+        "d": {
+          "name": "ザリーフ",
+          "sex": "female",
+          "netkeibaId": "000a01fa14"
+        }
+      }
     },
     {
       "id": "dai2-luna",
@@ -64,7 +95,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "luna"
+      "damId": "luna",
+      "sireId": "aloes",
+      "sireNetkeibaId": "000a018124"
     },
     {
       "id": "dai2-lunanoni",
@@ -91,7 +124,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-luna"
+      "damId": "dai2-luna",
+      "sireId": "gidoranshininoichigo",
+      "sireNetkeibaId": "000a018037"
     },
     {
       "id": "daiyonluna",
@@ -118,7 +153,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-lunanoni"
+      "damId": "dai2-lunanoni",
+      "sireId": "ougi",
+      "sireNetkeibaId": "000a00c2e1"
     },
     {
       "id": "barakumo",
@@ -145,7 +182,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "daiyonluna"
+      "damId": "daiyonluna",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     },
     {
       "id": "oku",
@@ -172,7 +211,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "barakumo"
+      "damId": "barakumo",
+      "sireId": "dai2-ibunjiado",
+      "sireNetkeibaId": "000a00c2f3"
     },
     {
       "id": "ibuki",
@@ -200,7 +241,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "oku"
+      "damId": "oku",
+      "sireId": "tsubasa",
+      "sireNetkeibaId": "000a0008c0"
     },
     {
       "id": "dai2-ibuki",
@@ -245,7 +288,9 @@
         "total": "0万円"
       },
       "damId": "ibuki",
-      "linkName": "ブルースカイ(1961)"
+      "linkName": "ブルースカイ(1961)",
+      "sireId": "seiyu",
+      "sireNetkeibaId": "000a00c353"
     },
     {
       "id": "kohriyuu-shingeki",
@@ -304,7 +349,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-ibuki"
+      "damId": "dai2-ibuki",
+      "sireId": "golt-ace",
+      "sireNetkeibaId": "000a00c3f4"
     },
     {
       "id": "ooyodohikari",
@@ -362,7 +409,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "osamusakae"
+      "damId": "osamusakae",
+      "sireId": "buzen-tsuyohata",
+      "sireNetkeibaId": "000a00098c"
     },
     {
       "id": "osamusakae",
@@ -389,7 +438,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shuunan"
+      "damId": "shuunan",
+      "sireId": "kasakae",
+      "sireNetkeibaId": "000a019021"
     },
     {
       "id": "shuunan",
@@ -416,7 +467,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuuosamu"
+      "damId": "ryuuosamu",
+      "sireId": "ribunan",
+      "sireNetkeibaId": "000a00f737"
     },
     {
       "id": "ryuuosamu",
@@ -443,7 +496,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuuuguisu"
+      "damId": "ryuuuguisu",
+      "sireId": "roideur",
+      "sireNetkeibaId": "000a00086d"
     },
     {
       "id": "ryuuuguisu",
@@ -470,7 +525,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-lunanoichi"
+      "damId": "dai2-lunanoichi",
+      "sireId": "oobaayangonoroku",
+      "sireNetkeibaId": "000a00f747"
     },
     {
       "id": "dai2-lunanoichi",
@@ -497,7 +554,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-luna"
+      "damId": "dai2-luna",
+      "sireId": "gidoranshininoichigo",
+      "sireNetkeibaId": "000a018037"
     },
     {
       "id": "satsumakabuto",
@@ -555,7 +614,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "oku"
+      "damId": "oku",
+      "sireId": "otokitsu",
+      "sireNetkeibaId": "000a00095d"
     },
     {
       "id": "tenpo",
@@ -628,7 +689,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ibuki"
+      "damId": "ibuki",
+      "sireId": "hatakaze",
+      "sireNetkeibaId": "000a000920"
     },
     {
       "id": "akehaya",
@@ -701,7 +764,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hayafuji-1947"
+      "damId": "hayafuji-1947",
+      "sireId": "tachikaze",
+      "sireNetkeibaId": "000a00091f"
     },
     {
       "id": "hayafuji-1947",
@@ -728,7 +793,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "umeran"
+      "damId": "umeran",
+      "sireId": "hayatake",
+      "sireNetkeibaId": "000a0008e2"
     },
     {
       "id": "umeran",
@@ -755,7 +822,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "umesazanami"
+      "damId": "umesazanami",
+      "sireId": "hairan",
+      "sireNetkeibaId": "000a00f742"
     },
     {
       "id": "umesazanami",
@@ -782,7 +851,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuuume-1928"
+      "damId": "ryuuume-1928",
+      "sireId": "juusazanami",
+      "sireNetkeibaId": "000a00c2e7"
     },
     {
       "id": "ryuuume-1928",
@@ -809,7 +880,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuuou"
+      "damId": "ryuuou",
+      "sireId": "rushcutter",
+      "sireNetkeibaId": "000a0004b4"
     },
     {
       "id": "ryuuou",
@@ -836,7 +909,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-lunanoichi"
+      "damId": "dai2-lunanoichi",
+      "sireId": "oobaayangonoroku",
+      "sireNetkeibaId": "000a00f747"
     },
     {
       "id": "hoomuran-oo",
@@ -894,7 +969,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hachioo"
+      "damId": "hachioo",
+      "sireId": "houkei",
+      "sireNetkeibaId": "000a00c322"
     },
     {
       "id": "hachioo",
@@ -921,7 +998,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ginuguisu"
+      "damId": "ginuguisu",
+      "sireId": "kumokiku",
+      "sireNetkeibaId": "000a00b6d7"
     },
     {
       "id": "ginuguisu",
@@ -948,7 +1027,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuuuguisu"
+      "damId": "ryuuuguisu",
+      "sireId": "sanchiyuriondouu",
+      "sireNetkeibaId": "000a00c2e6"
     },
     {
       "id": "kampaku",
@@ -997,7 +1078,9 @@
       "damId": "ryuushoku",
       "owner": "仁木",
       "jbisId": "0000001871",
-      "bogusId": "130783"
+      "bogusId": "130783",
+      "sireId": "komagatake",
+      "sireNetkeibaId": "000a00c2ef"
     },
     {
       "id": "ryuushoku",
@@ -1024,7 +1107,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuuuguisu"
+      "damId": "ryuuuguisu",
+      "sireId": "priory-park",
+      "sireNetkeibaId": "000a00085e"
     },
     {
       "id": "taiko",
@@ -1057,7 +1142,283 @@
       "damId": "ryuushoku",
       "owner": "中山",
       "jbisId": "0000000960",
-      "bogusId": "129032"
+      "bogusId": "129032",
+      "sireId": "lamy",
+      "sireNetkeibaId": "000a00c320"
+    },
+    {
+      "id": "sanko-tit",
+      "name": "サンコオーテット",
+      "foaled": {
+        "year": 1971
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "フルヒカル",
+      "dam": "竜選",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00c4cd",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Sanko Tit",
+      "prizeMoney": {
+        "total": "0万円"
+      },
+      "sireId": "furu-hikaru",
+      "sireNetkeibaId": "000a00c3c1",
+      "damId": "ryuusen-1952"
+    },
+    {
+      "id": "ryuusen-1952",
+      "name": "竜選",
+      "foaled": {
+        "year": 1952
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "アサフジ",
+      "dam": "金選",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00ba69",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "kinsen",
+      "sireId": "asafuji",
+      "sireNetkeibaId": "000a0008bf"
+    },
+    {
+      "id": "kinsen",
+      "name": "金選",
+      "foaled": {
+        "year": 1935
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ウツリーブリツヂ(GB)",
+      "dam": "留選",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00c911",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "ryuusen-1952",
+      "sireId": "woolly-bridge",
+      "sireNetkeibaId": "000a000875"
+    },
+    {
+      "id": "ryuusen-1930",
+      "name": "留選",
+      "foaled": {
+        "year": 1930
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "エルワルド(SYR)",
+      "dam": "留鶯",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00c68b",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "ryuuuguisu",
+      "sireId": "eruwarudo",
+      "sireNetkeibaId": "000a00f73c"
+    },
+    {
+      "id": "isamu-nishiki",
+      "name": "イサムニシキ",
+      "foaled": {
+        "year": 1938
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "スモールジヤツク",
+      "dam": "登春",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a00c31c",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Isamu Nishiki",
+      "prizeMoney": null,
+      "sireId": "sumoorujiyatsuku",
+      "sireNetkeibaId": "000a000894",
+      "damId": "touharu"
+    },
+    {
+      "id": "touharu",
+      "name": "登春",
+      "foaled": {
+        "year": 1934
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "フアルハーン(SYR)",
+      "dam": "留登",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a00c663",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "ryuutou",
+      "sireId": "fuaruhaan",
+      "sireNetkeibaId": "000a00f741"
+    },
+    {
+      "id": "ryuutou",
+      "name": "留登",
+      "foaled": {
+        "year": 1924
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "ラシカツター(GB)",
+      "dam": "留鶯",
+      "color": "鹿毛",
+      "breeder": "",
+      "netkeibaId": "000a01c7f4",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "ryuuuguisu",
+      "sireId": "rushcutter",
+      "sireNetkeibaId": "000a0004b4"
+    },
+    {
+      "id": "amesakura",
+      "name": "雨桜",
+      "foaled": {
+        "year": 1925
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ワギー",
+      "dam": "老桜",
+      "color": "",
+      "breeder": "",
+      "netkeibaId": "000a01cc00",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "sireId": "wagii",
+      "sireNetkeibaId": "000a01907c",
+      "damId": "rouou"
+    },
+    {
+      "id": "rouou",
+      "name": "老桜",
+      "foaled": {
+        "year": 1918
+      },
+      "sex": "female",
+      "breed": "アア",
+      "sire": "オーバーヤン五ノ六",
+      "dam": "第二ルーナーノ一",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01c8dc",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "dai2-lunanoichi",
+      "sireId": "oobaayangonoroku",
+      "sireNetkeibaId": "000a00f747"
+    },
+    {
+      "id": "ourou",
+      "name": "王楼",
+      "foaled": {
+        "year": 1917
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "オーバーヤン五ノ六",
+      "dam": "第二ルーナー",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01c55d",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "damId": "dai2-luna",
+      "sireId": "oobaayangonoroku",
+      "sireNetkeibaId": "000a00f747"
     }
   ]
 }

@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "月山",
     "rootHorseId": "getsusan",
-    "lastUpdated": "2026-07-27T04:08:18.650082Z",
+    "lastUpdated": "2026-08-13T18:31:26Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -32,8 +33,132 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』, 『輸入種牛馬系統取調書』p.2, 『日本馬匹改良策』p.55",
-      "comment": "ノーニウス種。生産国は「洪」のほか「墺」とする資料もあるが、当時はオーストリア=ハンガリー帝国なのでどちらでもよさそう。『日本馬匹改良策』では「げつさん」のフリガナ。"
+      "source": "python_scraping, 『明治・大正・昭和初期の輸入馬』, 『輸入種牛馬系統取調書』p.23, 『日本馬匹改良策』p.55",
+      "comment": "ノーニウス種。生産国は「洪」のほか「墺」とする資料もあるが、当時はオーストリア=ハンガリー帝国なのでどちらでもよさそう。『日本馬匹改良策』では「げつさん」のフリガナ。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "Nonius XV",
+          "sex": "male",
+          "breed": "ノニ"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "moon-light",
@@ -257,7 +382,7 @@
         "total": "0万円"
       },
       "damId": "hatsuhime-1934",
-      "sireId": "",
+      "sireId": "lucky-park",
       "sireNetkeibaId": "000a00c321"
     },
     {
@@ -286,8 +411,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "sireId": "",
-      "sireNetkeibaId": "000a00c38c"
+      "sireId": "senju",
+      "sireNetkeibaId": "000a00c38c",
+      "damId": "sachisugata"
     },
     {
       "id": "sachisugata",
@@ -314,7 +440,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hatsusugata"
+      "damId": "hatsusugata",
+      "sireId": "lucky-park",
+      "sireNetkeibaId": "000a00c321"
     },
     {
       "id": "hatsusugata",
@@ -339,7 +467,9 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "harumidori"
+      "damId": "harumidori",
+      "sireId": "pythagoras",
+      "sireNetkeibaId": "000a00c31b"
     },
     {
       "id": "harumidori",
@@ -364,7 +494,9 @@
       "raceResults": [],
       "source": "python_scraping",
       "prizeMoney": null,
-      "damId": "dai2-moon-light-e-1"
+      "damId": "dai2-moon-light-e-1",
+      "sireId": "dai10-jipuromatsuto",
+      "sireNetkeibaId": "000a01901d"
     }
   ]
 }

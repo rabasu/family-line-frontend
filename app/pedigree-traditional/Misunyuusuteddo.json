@@ -2,21 +2,24 @@
   "metadata": {
     "pedigreeName": "ミスニューステッド",
     "rootHorseId": "misunyuusuteddo",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "lastUpdated": "2026-08-13T16:51:27Z",
     "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
       "id": "misunyuusuteddo",
       "name": "ミスニューステッド",
-      "foaled": {},
-      "importedYear": "~1931",
+      "foaled": {
+        "year": 1920
+      },
+      "importedYear": "1926",
       "sex": "female",
       "breed": "サラ系",
       "sire": "パイロ",
       "dam": "プライム",
-      "color": "",
+      "color": "黒鹿毛",
       "breeder": "豪",
       "owner": "（福島県）",
       "netkeibaId": "000a01d343",
@@ -28,8 +31,208 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1735, 『地方競馬年鑑 昭和11年版』p.645",
-      "comment": "「ミスニユーステート」とも。確認できる最も古い産駒、フアストパーク（1932生、父プライオリーパーク、福島県葛尾村産）の存在から、輸入は1931年以前。所有者などの情報は不詳。"
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻』p.1735, 『地方競馬年鑑 昭和11年版』p.645, 『明治・大正・昭和初期の輸入馬』",
+      "comment": "「ミスニユーステート」とも。おそらく大正15年秋季の阪神豪州産抽籤馬・エミールと同一（PedigreeQueryの両親がPyro・Primeで一致する）。エミールのオーストラリアでの登録名は「Newsted」のようなのでそれも一致する（id:newsted）。産駒は福島県産として見られる。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "パイロ",
+          "sex": "male",
+          "foaled": {
+            "year": 1909
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "ss": {
+          "name": "Developer",
+          "sex": "male",
+          "foaled": {
+            "year": 1900
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sss": {
+          "name": "Pioneer",
+          "sex": "male",
+          "foaled": {
+            "year": 1886
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "ssss": {
+          "name": "Galopin",
+          "sex": "male",
+          "foaled": {
+            "year": 1872
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sssd": {
+          "name": "Moorhen",
+          "sex": "female",
+          "foaled": {
+            "year": 1873
+          },
+          "color": "青毛",
+          "breed": "サラ"
+        },
+        "ssd": {
+          "name": "Photo",
+          "sex": "female",
+          "foaled": {
+            "year": 1894
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "ssds": {
+          "name": "Springfield",
+          "sex": "male",
+          "foaled": {
+            "year": 1873
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "ssdd": {
+          "name": "Helioscene",
+          "sex": "female",
+          "foaled": {
+            "year": 1886
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sd": {
+          "name": "Matable",
+          "sex": "female",
+          "foaled": {
+            "year": 1901
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "sds": {
+          "name": "Cranbrook",
+          "sex": "male",
+          "foaled": {
+            "year": 1884
+          },
+          "color": "栗毛",
+          "breed": "サラ"
+        },
+        "sdss": {
+          "name": "Chester",
+          "sex": "male",
+          "foaled": {
+            "year": 1874
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sdsd": {
+          "name": "La Princesse",
+          "sex": "female",
+          "foaled": {
+            "year": 1880
+          },
+          "color": "栗毛",
+          "breed": "サラ"
+        },
+        "sdd": {
+          "name": "Muta",
+          "sex": "female",
+          "foaled": {
+            "year": 1893
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "sdds": {
+          "name": "Bendigo",
+          "sex": "male",
+          "foaled": {
+            "year": 1880
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "sddd": {
+          "name": "Mutina",
+          "sex": "female",
+          "foaled": {
+            "year": 1883
+          },
+          "color": "栗毛",
+          "breed": "サラ"
+        },
+        "d": {
+          "name": "プライム",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      },
+      "englishName": "Newsted",
+      "pedigreeQueryId": "newsted"
     },
     {
       "id": "shinohara",
@@ -54,7 +257,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "misunyuusuteddo"
+      "damId": "misunyuusuteddo",
+      "sireId": "diamond-wedding",
+      "sireNetkeibaId": "000a0000ec"
     },
     {
       "id": "raifuunoni",
@@ -79,7 +284,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shinohara"
+      "damId": "shinohara",
+      "sireId": "sanchiyuriondouu",
+      "sireNetkeibaId": "000a00c2e6"
     },
     {
       "id": "fukuya",
@@ -106,7 +313,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "raifuunoni"
+      "damId": "raifuunoni",
+      "sireId": "caid-ii",
+      "sireNetkeibaId": "000a01c836"
     },
     {
       "id": "suzuhikari",
@@ -133,7 +342,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "fukuya"
+      "damId": "fukuya",
+      "sireId": "harukakin",
+      "sireNetkeibaId": "000a00f74e"
     }
   ]
 }

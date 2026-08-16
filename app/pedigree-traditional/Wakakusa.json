@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "若草",
     "rootHorseId": "wakakusa",
-    "lastUpdated": "2025-11-23T16:48:47.533270Z",
+    "lastUpdated": "2026-08-14T02:43:51Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -28,7 +29,130 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『軽半血種血統書 第1巻』p.424",
-      "comment": "netkeibaに登録がない。基本的に軽半血種血統書に記載のある馬は大体netkeibaに含まれているので、本馬だけ漏れていた理由は不明。また産駒の生年の典拠も不明。配合相手のギドラン四二ノ三は日高種馬牧場の種牡馬のため、おそらく北海道で繋養された馬。"
+      "comment": "netkeibaに登録がない。基本的に軽半血種血統書に記載のある馬は大体netkeibaに含まれているので、本馬だけ漏れていた理由は不明。また産駒の生年の典拠も不明。配合相手のギドラン四二ノ三は日高種馬牧場の種牡馬のため、おそらく北海道で繋養された馬。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "hinode",
@@ -50,7 +174,9 @@
       },
       "raceResults": [],
       "source": "python_scraping",
-      "damId": "wakakusa"
+      "damId": "wakakusa",
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a"
     },
     {
       "id": "dai2-hinode",
@@ -78,7 +204,9 @@
         "total": "0万円"
       },
       "damId": "hinode",
-      "comment": "父・ジヤコブはアラブ種牡馬で、1925時点ではおそらく長野種馬所繋養。かなり珍しい種牡馬なので特定できそうな気もするが、現時点ではわからず。"
+      "comment": "父・ジヤコブはアラブ種牡馬で、1925時点ではおそらく長野種馬所繋養。かなり珍しい種牡馬なので特定できそうな気もするが、現時点ではわからず。",
+      "sireId": "jakobu",
+      "sireNetkeibaId": "000a01c928"
     },
     {
       "id": "akebono",
@@ -110,7 +238,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-hinode"
+      "damId": "dai2-hinode",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     },
     {
       "id": "kometsutowai",
@@ -174,7 +304,9 @@
       },
       "damId": "akebono",
       "owner": "横田",
-      "jbisId": "0000001025"
+      "jbisId": "0000001025",
+      "sireId": "houkei",
+      "sireNetkeibaId": "000a00c322"
     }
   ]
 }

@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "サトワン",
     "rootHorseId": "satwan",
-    "lastUpdated": "2026-07-26T11:31:49.647612Z",
+    "lastUpdated": "2026-07-27T15:54:44.555935Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "python_scraping_ped"
   },
   "horses": [
     {
@@ -35,7 +36,25 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『The Arabian Stud Book』vol.2(1918) p.84, 『陸軍獣医団報 (164)』pp.111-115, 『アラブ系牝馬系統大鑑』p.35, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.784",
-      "comment": "生年月日・毛色は米アラブ血統書より。輸入年は各資料からの推定。"
+      "comment": "生年月日・毛色は米アラブ血統書より。輸入年は各資料からの推定。",
+      "sireId": "deyr",
+      "sireNetkeibaId": "000a01c652",
+      "ancestryByPath": {
+        "s": {
+          "name": "Deyr",
+          "foaled": {
+            "year": 1904
+          },
+          "color": "栗毛",
+          "sex": "male",
+          "netkeibaId": "000a01c652"
+        },
+        "d": {
+          "name": "Haffia",
+          "sex": "female",
+          "netkeibaId": "000a01ca1f"
+        }
+      }
     },
     {
       "id": "heraaru",
@@ -64,7 +83,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "satwan"
+      "damId": "satwan",
+      "sireId": "sharmah",
+      "sireNetkeibaId": "000a00f73f"
     },
     {
       "id": "peraaru",
@@ -94,7 +115,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "heraaru"
+      "damId": "heraaru",
+      "sireId": "pepperminto",
+      "sireNetkeibaId": "000a000891"
     },
     {
       "id": "peraaru-no-4",
@@ -121,7 +144,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "peraaru"
+      "damId": "peraaru",
+      "sireId": "toku-hikari",
+      "sireNetkeibaId": "000a00c2f4"
     },
     {
       "id": "fujiteru",
@@ -148,7 +173,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "peraaru-no-4"
+      "damId": "peraaru-no-4",
+      "sireId": "asafuji",
+      "sireNetkeibaId": "000a0008bf"
     },
     {
       "id": "houshuuhikari",
@@ -253,7 +280,9 @@
       },
       "damId": "fujiteru",
       "owner": "今川庄一",
-      "trainer": "坂口正二"
+      "trainer": "坂口正二",
+      "sireId": "daini-hoshu",
+      "sireNetkeibaId": "000a00c325"
     }
   ]
 }

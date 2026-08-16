@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "大盛",
     "rootHorseId": "oomori",
-    "lastUpdated": "2025-11-25T03:03:40.026375Z",
+    "lastUpdated": "2026-08-14T07:21:17Z",
     "source": "python_scraping_updated",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -31,7 +32,130 @@
       },
       "raceResults": [],
       "source": "python_scraping, 『種馬牧場種馬所馬匹一覧(1905)』p.21",
-      "comment": "種牡馬をヒントに奥羽種馬牧場の名簿を探して発見。"
+      "comment": "種牡馬をヒントに奥羽種馬牧場の名簿を探して発見。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
     },
     {
       "id": "arimori",
@@ -43,7 +167,7 @@
       },
       "sex": "female",
       "breed": "中半",
-      "sire": "アルシザツク(FR)",
+      "sire": "アルシザツク",
       "dam": "大盛",
       "color": "鹿毛",
       "breeder": "奥羽種馬牧場",
@@ -58,7 +182,9 @@
       "raceResults": [],
       "source": "python_scraping, 『種馬牧場種馬所馬匹一覧(1905)』p.35, 『奥羽種馬牧場要覧(1904)』p.32, 『アラブ系牝馬系統大鑑』p.242",
       "linkName": "有盛(1903)",
-      "damId": "oomori"
+      "damId": "oomori",
+      "sireNetkeibaId": "000a01c8aa",
+      "sireId": "arcizac"
     },
     {
       "id": "shinmori",
@@ -85,7 +211,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "arimori"
+      "damId": "arimori",
+      "sireId": "aradius",
+      "sireNetkeibaId": "000a01c329"
     },
     {
       "id": "arimori-1917",
@@ -113,7 +241,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "shinmori"
+      "damId": "shinmori",
+      "sireId": "pernambuco",
+      "sireNetkeibaId": "000a00089e"
     },
     {
       "id": "dainikanamori",
@@ -141,7 +271,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "arimori-1917"
+      "damId": "arimori-1917",
+      "sireId": "dai10-jipuromatsuto",
+      "sireNetkeibaId": "000a01901d"
     },
     {
       "id": "sutoonhoosu",
@@ -170,7 +302,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dainikanamori"
+      "damId": "dainikanamori",
+      "sireId": "barraques",
+      "sireNetkeibaId": "000a00c31f"
     },
     {
       "id": "fukuoo",
@@ -215,7 +349,9 @@
       "owner": "菅野",
       "jbisId": "0000001493",
       "bogusId": "130776",
-      "damId": "sutoonhoosu"
+      "damId": "sutoonhoosu",
+      "sireId": "lucky-park",
+      "sireNetkeibaId": "000a00c321"
     }
   ]
 }

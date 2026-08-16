@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "ソナレ",
     "rootHorseId": "sonare",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
+    "lastUpdated": "2026-08-13T09:29:21Z",
     "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -17,7 +18,7 @@
       "importedBy": "日本レース倶楽部（明治44年秋季豪州産抽籤馬）",
       "sex": "female",
       "breed": "サラ系",
-      "sire": "（アーミストン）",
+      "sire": "アーミストン",
       "dam": "不詳",
       "color": "栗毛",
       "breeder": "豪",
@@ -30,7 +31,131 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『馬匹世界 第5年(11月號)』p.35, 『アラブ系牝馬系統大鑑』p.209, 『明治・大正・昭和初期の輸入馬』, 『アラブ・アングロアラブ血統書 第2巻』p.858"
+      "source": "python_scraping, 『馬匹世界 第5年(11月號)』p.35, 『アラブ系牝馬系統大鑑』p.209, 『明治・大正・昭和初期の輸入馬』, 『アラブ・アングロアラブ血統書 第2巻』p.858",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "アーミストン",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      },
+      "comment": "父「アーミストン」は競馬連合会報告書より。"
     },
     {
       "id": "hanabusa",
@@ -57,7 +182,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "sonare"
+      "damId": "sonare",
+      "sireId": "fayek",
+      "sireNetkeibaId": "000a01c1d8"
     },
     {
       "id": "purechibori",
@@ -84,7 +211,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "hanabusa"
+      "damId": "hanabusa",
+      "sireId": "dai24-rashikatsutaa",
+      "sireNetkeibaId": "000a01c1dc"
     },
     {
       "id": "kashiwano",
@@ -111,7 +240,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "purechibori"
+      "damId": "purechibori",
+      "sireId": "dai1-bureezen",
+      "sireNetkeibaId": "000a00088a"
     },
     {
       "id": "seika-1942",
@@ -142,7 +273,9 @@
         "total": "0万円"
       },
       "damId": "kashiwano",
-      "linkName": "セイカ(1942)"
+      "linkName": "セイカ(1942)",
+      "sireId": "nifan",
+      "sireNetkeibaId": "000a00f75c"
     },
     {
       "id": "takakurahoopu",
@@ -185,7 +318,9 @@
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "seika-1942"
+      "damId": "seika-1942",
+      "sireId": "takakurayama",
+      "sireNetkeibaId": "000a0008d1"
     }
   ]
 }

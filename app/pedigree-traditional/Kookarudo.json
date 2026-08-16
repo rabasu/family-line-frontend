@@ -2,9 +2,10 @@
   "metadata": {
     "pedigreeName": "コーカルド",
     "rootHorseId": "kookarudo",
-    "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted",
-    "isTraditionalFamily": true
+    "lastUpdated": "2026-08-13T09:09:49Z",
+    "source": "python_scraping_updated",
+    "isTraditionalFamily": true,
+    "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
@@ -16,8 +17,8 @@
       "importedYear": "1897",
       "sex": "female",
       "breed": "アア",
-      "sire": "シコモーズ",
-      "dam": "ココデツト",
+      "sire": "Cycomose",
+      "dam": "Cocodette",
       "color": "黒鹿毛",
       "breeder": "仏",
       "owner": "奥羽種馬牧場",
@@ -30,316 +31,253 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『馬匹血統登録書 第2巻』p.165, 『種馬牧場種馬所馬匹一覧』p.21, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』",
-      "comment": "明治27(1894)年生。netkeibaでの生年(1884)は誤り。"
+      "source": "python_scraping, 『馬匹血統登録書 第2巻』p.165, 『種馬牧場種馬所馬匹一覧』p.21, 『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.936",
+      "comment": "明治27(1894)年生。netkeibaでの生年(1884)は誤り。『アラブ血統書 第1巻』の母系に、各種牡馬の血統はPedigreeQueryから保管した。父・Cycomose(日本語表記: シコモーズ)は『アラブ血統書』によればアングロアラブ。ただ馬名が意をなしておらず、発音の似たSycomoreという同名のサラブレッドが同時代にフランスにいたようなので、もしかしたらそれか、その近親かもしれない。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "Cycomose",
+          "sex": "male",
+          "breed": "アア"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "Cocodette",
+          "sex": "female",
+          "breed": "サラ"
+        },
+        "ds": {
+          "name": "Sacripant",
+          "sex": "male",
+          "foaled": {
+            "year": 1866
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "dss": {
+          "name": "Light",
+          "sex": "male",
+          "foaled": {
+            "year": 1856
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "dsss": {
+          "name": "The Prime Warden",
+          "sex": "male",
+          "foaled": {
+            "year": 1834
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "dssd": {
+          "name": "Balaclava",
+          "sex": "female",
+          "foaled": {
+            "year": 1842
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "dsd": {
+          "name": "Somnambule",
+          "sex": "female",
+          "foaled": {
+            "year": 1858
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "dsds": {
+          "name": "Ion",
+          "sex": "male",
+          "foaled": {
+            "year": 1835
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "dsdd": {
+          "name": "Semiseria",
+          "sex": "female",
+          "foaled": {
+            "year": 1840
+          },
+          "color": "黒鹿毛",
+          "breed": "サラ"
+        },
+        "dd": {
+          "name": "Cascade",
+          "sex": "female",
+          "breed": "サラ"
+        },
+        "dds": {
+          "name": "Fitz-Gladiator",
+          "sex": "male",
+          "foaled": {
+            "year": 1850
+          },
+          "color": "栗毛",
+          "breed": "サラ"
+        },
+        "ddss": {
+          "name": "Gladiator",
+          "sex": "male",
+          "foaled": {
+            "year": 1833
+          },
+          "breed": "サラ"
+        },
+        "ddsd": {
+          "name": "Zarah",
+          "sex": "female",
+          "foaled": {
+            "year": 1835
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "ddd": {
+          "name": "Colline",
+          "sex": "female",
+          "foaled": {
+            "year": 1860
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "ddds": {
+          "name": "Collingwood",
+          "sex": "male",
+          "foaled": {
+            "year": 1843
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "dddd": {
+          "name": "Catanno",
+          "sex": "female",
+          "foaled": {
+            "year": 1846
+          },
+          "color": "栗毛",
+          "breed": "サラ"
+        }
+      },
+      "englishName": "Cocarde"
     },
     {
-      "id": "korotetsuto",
-      "name": "コロテツト",
+      "id": "jiyatsukaado",
+      "name": "ジヤツカード",
       "foaled": {
-        "year": 1901
+        "year": 1918
+      },
+      "sex": "male",
+      "breed": "アア",
+      "sire": "ギドラン四二ノ三",
+      "dam": "第三コーカルド",
+      "color": "栗毛",
+      "breeder": "",
+      "netkeibaId": "000a01cb27",
+      "raceStats": {
+        "total": {
+          "runs": null,
+          "wins": null
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "prizeMoney": null,
+      "sireId": "gidoranshininosan",
+      "sireNetkeibaId": "000a01845a",
+      "damId": "dai3-kookarudo"
+    },
+    {
+      "id": "dai3-kookarudo",
+      "name": "第三コーカルド",
+      "foaled": {
+        "year": 1908
       },
       "sex": "female",
       "breed": "アア",
       "sire": "ガズラン",
       "dam": "コーカルド",
       "color": "栗毛",
-      "breeder": "奥羽種馬牧場",
-      "netkeibaId": "000a01c9af",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping, 『種馬牧場種馬所馬匹一覧(1903)』p.34",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "kookarudo"
-    },
-    {
-      "id": "dainikorotetsuto",
-      "name": "第二コロテツト",
-      "foaled": {
-        "year": 1906
-      },
-      "sex": "female",
-      "breed": "アア",
-      "sire": "イスレール",
-      "dam": "コロテツト",
-      "color": "",
       "breeder": "",
-      "netkeibaId": "000a01c9b0",
+      "netkeibaId": "000a01cb26",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
       "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "korotetsuto"
-    },
-    {
-      "id": "kooei",
-      "name": "コーエイ",
-      "foaled": {
-        "year": 1920
-      },
-      "sex": "female",
-      "breed": "アア",
-      "sire": "モントルーヂ",
-      "dam": "第二コロテツト",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "000a01c9b1",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "dainikorotetsuto"
-    },
-    {
-      "id": "asanami-1926",
-      "name": "アサナミ",
-      "foaled": {
-        "year": 1926
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "野菊",
-      "dam": "コーエイ",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a01c9be",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "kooei",
-      "linkName": "アサナミ(1926)"
-    },
-    {
-      "id": "hanahime",
-      "name": "ハナヒメ",
-      "foaled": {
-        "year": 1933
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "三雅",
-      "dam": "アサナミ",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a01cd9a",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "asanami-1926"
-    },
-    {
-      "id": "yayohi",
-      "name": "ヤヨヒ",
-      "foaled": {
-        "year": 1938
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "万武",
-      "dam": "ハナヒメ",
-      "color": "栗毛",
-      "breeder": "",
-      "netkeibaId": "000a00c6a8",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "hanahime"
-    },
-    {
-      "id": "kaneyuki-1949",
-      "name": "カネユキ",
-      "foaled": {
-        "year": 1949
-      },
-      "sex": "female",
-      "breed": "サラ",
-      "sire": "ユキヒサ",
-      "dam": "ヤヨヒ",
-      "color": "鹿毛",
-      "breeder": "",
-      "netkeibaId": "000a00cc83",
-      "raceStats": {
-        "total": {
-          "runs": 0,
-          "wins": 0
-        },
-        "divisions": []
-      },
-      "raceResults": [],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "yayohi",
-      "linkName": "カネユキ(1949)"
-    },
-    {
-      "id": "kanetomi",
-      "name": "カネトミ",
-      "foaled": {
-        "year": 1956
-      },
-      "sex": "male",
-      "breed": "サラ",
-      "sire": "ライジングフレーム(IRE)",
-      "dam": "カネユキ",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "1956z00021",
-      "raceStats": {
-        "total": {
-          "runs": 33,
-          "wins": 7
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1960,
-            "month": 3,
-            "day": 6
-          },
-          "racecourse": "東京",
-          "race": "東京記念競走(OP)",
-          "displayRace": "東京記念",
-          "distance": "芝1800",
-          "grade": "jra_grade",
-          "entry": "10",
-          "result": "9",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 1960,
-            "month": 2,
-            "day": 21
-          },
-          "racecourse": "東京",
-          "race": "スプリングハンデキャ(OP)",
-          "displayRace": "京王杯スプリングH",
-          "distance": "芝1600",
-          "grade": "jra_grade",
-          "entry": "10",
-          "result": "3",
-          "favorite": "8"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "kaneyuki-1949",
-      "comment": "牝系違い。"
-    },
-    {
-      "id": "kanehata",
-      "name": "カネハタ",
-      "foaled": {
-        "year": 1953
-      },
-      "sex": "male",
-      "breed": "サラ",
-      "sire": "クモハタ",
-      "dam": "カネユキ",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "1953z00024",
-      "raceStats": {
-        "total": {
-          "runs": 36,
-          "wins": 3
-        },
-        "divisions": []
-      },
-      "raceResults": [
-        {
-          "date": {
-            "year": 1957,
-            "month": 5,
-            "day": 5
-          },
-          "racecourse": "京都",
-          "race": "京都大障害競走(OP)",
-          "displayRace": "京都大障害(春)",
-          "distance": "障3100",
-          "grade": "jra_jump",
-          "entry": "5",
-          "result": "1",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 1956,
-            "month": 12,
-            "day": 30
-          },
-          "racecourse": "中山",
-          "race": "クモハタ記念競走(OP)",
-          "displayRace": "クモハタ記念",
-          "distance": "芝2000",
-          "grade": "jra_grade",
-          "entry": "9",
-          "result": "8",
-          "favorite": "7"
-        }
-      ],
-      "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "damId": "kaneyuki-1949"
+      "prizeMoney": null,
+      "damId": "kookarudo",
+      "sireId": "gazuran",
+      "sireNetkeibaId": "000a0191aa"
     }
   ]
 }
