@@ -2,10 +2,11 @@
   "metadata": {
     "pedigreeName": "オーバーヤン五ノ一一",
     "rootHorseId": "o-bajan-v-11",
-    "lastUpdated": "2026-07-27T15:53:02.488852Z",
+    "lastUpdated": "2026-08-22T03:34:34Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
-    "rootAncestrySource": "python_scraping_ped"
+    "rootAncestrySource": "manual_correction",
+    "incompleteFourGenResolved": true
   },
   "horses": [
     {
@@ -20,7 +21,7 @@
       "sex": "female",
       "breed": "アラ",
       "sire": "O'Bajan V",
-      "dam": "99 Gazlan I",
+      "dam": "九九ガズラン第一",
       "color": "鹿毛",
       "breeder": "洪",
       "owner": "奥羽種馬牧場",
@@ -42,16 +43,128 @@
       "ancestryByPath": {
         "s": {
           "name": "O'Bajan V",
+          "sex": "male",
           "foaled": {
             "year": 1894
           },
-          "sex": "male",
           "netkeibaId": "000a01c196"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
         },
         "d": {
           "name": "九九ガズラン第一",
           "sex": "female",
           "netkeibaId": "000a01c2ac"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
         }
       }
     },
@@ -1196,16 +1309,32 @@
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "race": "読売カップ",
+          "displayRace": "読売カップ（秋）",
+          "grade": "national_grade",
+          "racecourse": "阪神",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "2",
+          "result": "2",
+          "date": {
+            "year": 1952,
+            "month": 12,
+            "day": 14
+          }
+        }
+      ],
+      "source": "python_scraping, 『優駿たちの蹄跡』",
       "englishName": "Seiho",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "umehashi",
       "owner": "北竹",
       "jbisId": "0000000942",
       "bogusId": "119846",
+      "damId": "umehashi",
       "sireId": "barraques",
       "sireNetkeibaId": "000a00c31f"
     },

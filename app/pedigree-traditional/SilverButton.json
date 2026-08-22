@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "シルバーバツトン",
     "rootHorseId": "silver-button",
-    "lastUpdated": "2026-07-27T15:55:05.836803Z",
+    "lastUpdated": "2026-08-22T15:24:33.225921Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
     "rootAncestrySource": "python_scraping_ped"
@@ -3113,16 +3113,14 @@
       "netkeibaId": "000a0025c5",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
       "raceResults": [],
       "source": "python_scraping",
-      "prizeMoney": {
-        "total": "0万円"
-      },
+      "prizeMoney": null,
       "damId": "shirorei",
       "sireId": "dai10-shianmoa",
       "sireNetkeibaId": "000a000864"
@@ -11637,25 +11635,44 @@
     {
       "id": "tsuranuki",
       "name": "ツラヌキ",
-      "foaled": {},
-      "sex": "",
+      "foaled": {
+        "year": 1946
+      },
+      "sex": "male",
       "breed": "サラ",
-      "sire": "",
-      "dam": "",
-      "color": "",
+      "sire": "タイホウ",
+      "dam": "レイザン",
+      "color": "鹿毛",
       "breeder": "",
       "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": 0,
-          "wins": 0
+          "runs": null,
+          "wins": null
         },
         "divisions": []
       },
-      "raceResults": [],
+      "raceResults": [
+        {
+          "date": {
+            "year": 1950,
+            "month": 11,
+            "day": 3
+          },
+          "racecourse": null,
+          "race": "京都記念",
+          "displayRace": "京都記念(秋)",
+          "distance": null,
+          "grade": "national_grade",
+          "entry": null,
+          "favorite": null,
+          "result": "3"
+        }
+      ],
       "source": "python_scraping",
       "damId": "reizan",
-      "sireNetkeibaId": "none"
+      "sireNetkeibaId": "none",
+      "newBogusId": "1407804"
     },
     {
       "id": "tracko",

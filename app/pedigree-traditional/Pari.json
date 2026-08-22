@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "巴里",
     "rootHorseId": "pari",
-    "lastUpdated": "2026-08-14T07:25:06Z",
+    "lastUpdated": "2026-08-18T16:34:35Z",
     "source": "python_scraping",
     "isTraditionalFamily": true,
     "rootAncestrySource": "manual_correction"
@@ -156,6 +156,110 @@
           "sex": "female"
         }
       }
+    },
+    {
+      "id": "sumizome",
+      "name": "墨染",
+      "foaled": {
+        "year": 1890
+      },
+      "sex": "female",
+      "breed": "中半",
+      "sire": "シユペルブ",
+      "dam": "巴里",
+      "color": "青毛",
+      "breeder": "北海道庁種畜場",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『北海道庁種畜場沿革誌』p.113, 田島芳郎(2012)「北海道馬産の秘密：トロッターに関連して」『Hippophile(50)』pp.6-13",
+      "comment": "トロッターxペルシュロンの配合からなる「農トロ」と呼ばれる品種の嚆矢。資料上の品種は「農用種」。",
+      "damId": "pari",
+      "sireNetkeibaId": "none",
+      "sireId": "superbe"
+    },
+    {
+      "id": "zuiai",
+      "name": "瑞靄",
+      "foaled": {
+        "year": 1895
+      },
+      "sex": "female",
+      "breed": "中半",
+      "sire": "初蕾",
+      "dam": "墨染",
+      "color": "青毛",
+      "breeder": "北海道庁種畜場",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『北海道庁種畜場業務功程報告書 第35回(明治43年分)』p.117, 田島芳郎(2012)「北海道馬産の秘密：トロッターに関連して」『Hippophile(50)』pp.6-13, 『馬匹血統登録書 第8巻』p.114",
+      "comment": "『業務功程報告書』では明治38年生となっているが複数資料で明治28年となっているため後者を採用。",
+      "damId": "sumizome",
+      "sireId": "hatsurai",
+      "sireNetkeibaId": "000a01fa07"
+    },
+    {
+      "id": "dai2-zuiai",
+      "name": "第二瑞靄",
+      "foaled": {
+        "year": 1906
+      },
+      "sex": "female",
+      "breed": "中半",
+      "sire": "モルモン",
+      "dam": "瑞靄",
+      "breeder": "北海道庁種畜場",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『馬匹血統登録書 第8巻』p.114",
+      "comment": "TODO:業務功程報告書から生年月日と経路を確認",
+      "damId": "zuiai",
+      "sireNetkeibaId": "000a01c12a",
+      "sireId": "morumon"
+    },
+    {
+      "id": "zuibaka",
+      "name": "瑞驊",
+      "foaled": {
+        "year": 1915
+      },
+      "sex": "male",
+      "breed": "軽半",
+      "sire": "アラデユ",
+      "dam": "第二瑞靄",
+      "color": "黒鹿毛",
+      "breeder": "北海道日高",
+      "netkeibaId": "000a01c858",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『全国種牡馬名簿 昭和7年版』p.317",
+      "comment": "TODO: ID改称",
+      "damId": "dai2-zuiai",
+      "sireId": "aradius",
+      "sireNetkeibaId": "000a01c329"
     },
     {
       "id": "dai2-pari",

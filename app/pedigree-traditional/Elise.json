@@ -2,10 +2,11 @@
   "metadata": {
     "pedigreeName": "エリース",
     "rootHorseId": "elise",
-    "lastUpdated": "2026-08-13T04:50:30Z",
+    "lastUpdated": "2026-08-22T05:16:11Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
-    "rootAncestrySource": "python_scraping_ped"
+    "rootAncestrySource": "manual_correction",
+    "incompleteFourGenResolved": true
   },
   "horses": [
     {
@@ -31,7 +32,7 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『宮内省新冠牧場要覧 昭和2年』p.3",
+      "source": "python_scraping, 『宮内省新冠牧場要覧 昭和2年』p.3, 『東京獣医新報 (50)』p.299, 『明治・大正・昭和初期の輸入馬』",
       "englishName": "Elise",
       "sireId": "echo",
       "sireNetkeibaId": "000a01ca3e",
@@ -39,25 +40,210 @@
         "s": {
           "name": "Echo",
           "sex": "male",
+          "foaled": {
+            "year": 1866
+          },
+          "color": "鹿毛",
+          "breed": "スタ",
           "netkeibaId": "000a01ca3e"
         },
         "ss": {
           "name": "Hambletonian",
           "sex": "male",
+          "foaled": {
+            "year": 1849
+          },
+          "color": "鹿毛",
+          "breed": "スタ",
           "netkeibaId": "000a01ca3b"
+        },
+        "sss": {
+          "name": "Abdallah",
+          "sex": "male",
+          "foaled": {
+            "year": 1823
+          },
+          "color": "鹿毛",
+          "breed": "トロ"
+        },
+        "ssss": {
+          "name": "Mambrino",
+          "sex": "male",
+          "foaled": {
+            "year": 1807
+          },
+          "color": "鹿毛",
+          "breed": "サラ"
+        },
+        "sssd": {
+          "name": "Amazzonia",
+          "sex": "female",
+          "foaled": {
+            "year": 1810
+          },
+          "color": "栗毛",
+          "breed": "トロ"
+        },
+        "ssd": {
+          "name": "Charles Kent Mare",
+          "sex": "female",
+          "foaled": {
+            "year": 1834
+          },
+          "color": "鹿毛",
+          "breed": "トロ"
+        },
+        "ssds": {
+          "name": "Bellfounder",
+          "sex": "male",
+          "foaled": {
+            "year": 1816
+          },
+          "color": "鹿毛",
+          "breed": "トロ"
+        },
+        "ssdd": {
+          "name": "One Eye",
+          "sex": "female",
+          "foaled": {
+            "year": 1815
+          },
+          "color": "鹿毛",
+          "breed": "スタ"
         },
         "sd": {
           "name": "Fanny Felter",
-          "color": "鹿毛",
           "sex": "female",
+          "color": "鹿毛",
+          "breed": "スタ",
           "netkeibaId": "000a01ca3c"
+        },
+        "sds": {
+          "name": "Magnolia",
+          "sex": "male",
+          "foaled": {
+            "year": 1852
+          },
+          "color": "黒鹿毛",
+          "breed": "スタ"
+        },
+        "sdss": {
+          "name": "Seelys American Star",
+          "sex": "male",
+          "foaled": {
+            "year": 1837
+          },
+          "color": "栗毛"
+        },
+        "sdsd": {
+          "name": "Jenny Lind",
+          "sex": "female",
+          "breed": "スタ"
+        },
+        "sdd": {
+          "name": "Dam Of Fanny Felter",
+          "sex": "female",
+          "breed": "スタ"
+        },
+        "sdds": {
+          "name": "Webbers Kentucky Whip",
+          "sex": "male",
+          "breed": "スタ"
+        },
+        "sddd": {
+          "name": "2nd Dam Of Fanny Felter",
+          "sex": "female",
+          "breed": "サラ"
         },
         "d": {
           "name": "Half Moon",
           "sex": "female",
           "netkeibaId": "000a01ca3f"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
         }
-      }
+      },
+      "comment": "『東京獣医新報(50)』によれば、父エコー・母ハーフムウン。"
+    },
+    {
+      "id": "dai2-buratsukuhooku",
+      "name": "第二ブラツクホーク",
+      "foaled": {
+        "year": 1891
+      },
+      "sex": "male",
+      "breed": "トロ",
+      "sire": "ブラツクホーク",
+      "dam": "エリース",
+      "color": "鹿毛",
+      "breeder": "新冠御料牧場",
+      "netkeibaId": "000a01c18d",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『新冠御料牧場 牧場録（明治25年）』, 『馬匹血統登録書 第3巻』p.172",
+      "damId": "elise",
+      "sireId": "buratsukuhooku",
+      "sireNetkeibaId": "000a01c18c"
     },
     {
       "id": "dai6-elise",
@@ -187,7 +373,8 @@
       "bogusId": "39149",
       "damId": "elise-5",
       "comment": "軽半と記載されることが多いが、軽半の第六エリースノ三にサラを2代配合しているため理論上はサラ系に見える。なぜ軽半と記載されているのかは不明。",
-      "sireNetkeibaId": "000a000858"
+      "sireNetkeibaId": "000a000858",
+      "sireId": "fremor"
     },
     {
       "id": "tama-tsubaki",
@@ -504,6 +691,32 @@
       "sireNetkeibaId": "000a0102d0"
     },
     {
+      "id": "dai2-shaiyaa",
+      "name": "第二シヤイヤー",
+      "foaled": {
+        "year": 1903
+      },
+      "sex": "male",
+      "breed": "アラ系",
+      "sire": "シヤイヤー",
+      "dam": "第五エリース",
+      "color": "鹿毛",
+      "breeder": "新冠御料牧場",
+      "netkeibaId": "000a01c80e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『総馬匹名簿 新冠御料牧場 明治40年』[4/62]",
+      "damId": "dai5-elise",
+      "sireId": "shiyaiyaa",
+      "sireNetkeibaId": "000a01c190"
+    },
+    {
       "id": "mikino-hikari",
       "name": "ミキノヒカリ",
       "foaled": {
@@ -527,29 +740,29 @@
       },
       "raceResults": [
         {
+          "race": "読売楯アラブ東西対抗",
+          "displayRace": "読売楯アラブ東西対抗（春）",
+          "grade": "national_grade",
+          "racecourse": "東京",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "6",
+          "result": "1",
           "date": {
             "year": 1950,
             "month": 6,
             "day": 10
-          },
-          "racecourse": null,
-          "race": "読売カップ（春）",
-          "displayRace": "読売カップ（春）",
-          "distance": null,
-          "grade": "national_grade",
-          "entry": null,
-          "favorite": null,
-          "result": "1"
+          }
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『優駿たちの蹄跡』",
       "englishName": "Mikino Hikari",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "meibi-1935",
       "jbisId": "0000455646",
       "bogusId": "128389",
+      "damId": "meibi-1935",
       "sireId": "tokino-chikara",
       "sireNetkeibaId": "000a000911"
     }

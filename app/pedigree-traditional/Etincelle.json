@@ -1,44 +1,40 @@
 {
   "metadata": {
-    "pedigreeName": "デシレー",
-    "rootHorseId": "desiree",
-    "lastUpdated": "2026-08-13T09:31:52Z",
-    "source": "python_scraping",
+    "pedigreeName": "エタンセル",
+    "rootHorseId": "etincelle",
+    "lastUpdated": "2026-08-17T17:28:17Z",
+    "source": "manual_correction",
     "isTraditionalFamily": true,
     "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
-      "id": "desiree",
-      "name": "デシレー",
-      "englishName": "Desiree",
+      "id": "etincelle",
+      "name": "エタンセル",
       "foaled": {
-        "year": 1895
+        "year": 1896
       },
-      "died": "1902.04. 斃死",
-      "importedYear": "1899",
       "sex": "female",
-      "breed": "アラ",
-      "sire": "不詳",
-      "dam": "不詳",
-      "color": "鹿毛",
+      "breed": "アア",
+      "sire": "キユゼラ",
+      "dam": "ヱドリング",
+      "color": "栗毛",
       "breeder": "仏",
-      "owner": "奥羽種馬牧場",
-      "netkeibaId": "",
       "raceStats": {
         "total": {
-          "runs": null,
-          "wins": null
+          "runs": 0,
+          "wins": 0
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "『奥羽種馬牧場要覧』p.14, 『中央獣医会雑誌 13(2)』p.44, 『馬匹血統登録書 第6巻』p.166, 『明治・大正・昭和初期の輸入馬』",
-      "prizeMoney": null,
-      "sireNetkeibaId": "none",
+      "source": "『種馬牧場種馬所馬匹一覧(1905)』p.23, 『中央獣医会雑誌 13(2)』p.4, 『牧畜雑誌 (173)』口絵",
+      "owner": "奥羽種馬牧場",
+      "importedYear": "1899",
+      "comment": "アクシヨン・フユレーらと同期の輸入。『中央獣医会雑誌 13(2)』ではその姿・気品が絶賛されており、『牧畜雑誌 (173)』では口絵にもなっている。",
       "ancestryByPath": {
         "s": {
-          "name": "不詳",
+          "name": "キユゼラ",
           "sex": "male"
         },
         "ss": {
@@ -98,7 +94,7 @@
           "sex": "female"
         },
         "d": {
-          "name": "不詳",
+          "name": "ヱドリング",
           "sex": "female"
         },
         "ds": {
@@ -157,33 +153,32 @@
           "name": "不詳",
           "sex": "female"
         }
-      }
+      },
+      "sireNetkeibaId": "none"
     },
     {
-      "id": "dai3-aradius",
-      "name": "第三アラデユ",
+      "id": "dai2-aradeyu",
+      "name": "第二アラデユ",
       "foaled": {
         "year": 1901
       },
       "sex": "male",
       "breed": "アア",
-      "sire": "アラデユ(FR)",
-      "dam": "デシレー",
+      "sire": "アラデユ",
+      "dam": "エタンセル",
       "color": "栗毛",
       "breeder": "奥羽種馬牧場",
-      "owner": "北海道庁種畜場",
-      "netkeibaId": "",
+      "netkeibaId": "000a01c51c",
       "raceStats": {
         "total": {
-          "runs": null,
-          "wins": null
+          "runs": 0,
+          "wins": 0
         },
         "divisions": []
       },
       "raceResults": [],
-      "source": "『拓地殖民要録 第2』p.114",
-      "prizeMoney": null,
-      "damId": "desiree",
+      "source": "python_scraping, 『種馬牧場種馬所馬匹一覧(1905)』p.97",
+      "damId": "etincelle",
       "sireId": "aradius",
       "sireNetkeibaId": "000a01c329"
     }

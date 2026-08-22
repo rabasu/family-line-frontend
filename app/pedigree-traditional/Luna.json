@@ -2,10 +2,11 @@
   "metadata": {
     "pedigreeName": "ルーナー",
     "rootHorseId": "luna",
-    "lastUpdated": "2026-07-27T15:52:18.137665Z",
+    "lastUpdated": "2026-08-22T03:29:29Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
-    "rootAncestrySource": "python_scraping_ped"
+    "rootAncestrySource": "manual_correction",
+    "incompleteFourGenResolved": true
   },
   "horses": [
     {
@@ -34,39 +35,134 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『牧畜雑誌 (158)』pp.46-47,  『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』",
+      "source": "python_scraping, 『牧畜雑誌 (158)』pp.46-47,  『アラブ・アングロアラブ・準サラブレッド血統書 第1巻』p.817",
       "prizeMoney": {
         "total": "0万円"
       },
-      "comment": "『アラブ血統書』では黒鹿毛とあるが、他資料では鹿毛。",
+      "comment": "『アラブ血統書』では黒鹿毛とあるが、他資料では鹿毛。netkeibaでは父ジンギスカン・父父Dzsingiskhan(1888)・父父父O'Bajan とするが、素直に父Dzsingiskhanなのではないだろうか。詳細不明なためここでは父名ジンギスカンのみ記す。",
       "sireId": "jingisukan",
       "sireNetkeibaId": "000a01cb8f",
       "ancestryByPath": {
         "s": {
           "name": "ジンギスカン",
-          "sex": "male",
-          "netkeibaId": "000a01cb8f"
+          "sex": "male"
         },
         "ss": {
-          "name": "Dzsingiskhan",
-          "foaled": {
-            "year": 1888
-          },
-          "sex": "male",
-          "netkeibaId": "000a01f8f8"
+          "name": "不詳",
+          "sex": "male"
         },
         "sss": {
-          "name": "O'Bajan",
-          "foaled": {
-            "year": 1880
-          },
-          "sex": "male",
-          "netkeibaId": "000a01fa23"
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
         },
         "d": {
           "name": "ザリーフ",
           "sex": "female",
           "netkeibaId": "000a01fa14"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
         }
       }
     },
@@ -1055,30 +1151,45 @@
       },
       "raceResults": [
         {
+          "race": "読売カップ（秋）",
+          "displayRace": "読売カップ（秋）",
+          "grade": "jra_grade",
+          "racecourse": "阪神",
+          "distance": "芝2000",
+          "entry": "8",
+          "favorite": "1",
+          "result": "1",
           "date": {
             "year": 1954,
             "month": 12,
             "day": 19
-          },
-          "racecourse": null,
-          "race": "読売カップ（秋）",
-          "displayRace": "読売カップ（秋）",
-          "distance": null,
-          "grade": "jra_grade",
-          "entry": null,
-          "favorite": null,
-          "result": "1"
+          }
+        },
+        {
+          "race": "読売カップ",
+          "displayRace": "読売カップ（春）",
+          "grade": "national_grade",
+          "racecourse": "中山",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "1",
+          "result": "2",
+          "date": {
+            "year": 1954,
+            "month": 7,
+            "day": 4
+          }
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『優駿たちの蹄跡』",
       "englishName": "Kampaku",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuushoku",
       "owner": "仁木",
       "jbisId": "0000001871",
       "bogusId": "130783",
+      "damId": "ryuushoku",
       "sireId": "komagatake",
       "sireNetkeibaId": "000a00c2ef"
     },
@@ -1124,7 +1235,6 @@
       "sire": "ラミー(FR)",
       "dam": "留織",
       "color": "鹿毛",
-      "breeder": "",
       "netkeibaId": "000a00c311",
       "raceStats": {
         "total": {
@@ -1133,16 +1243,32 @@
         },
         "divisions": []
       },
-      "raceResults": [],
-      "source": "python_scraping",
+      "raceResults": [
+        {
+          "race": "読売カップ",
+          "displayRace": "読売カップ（春）",
+          "grade": "national_grade",
+          "racecourse": "中山",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "3",
+          "result": "2",
+          "date": {
+            "year": 1952,
+            "month": 6,
+            "day": 15
+          }
+        }
+      ],
+      "source": "python_scraping, 『優駿たちの蹄跡』",
       "englishName": "Taiko",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "ryuushoku",
       "owner": "中山",
       "jbisId": "0000000960",
       "bogusId": "129032",
+      "damId": "ryuushoku",
       "sireId": "lamy",
       "sireNetkeibaId": "000a00c320"
     },

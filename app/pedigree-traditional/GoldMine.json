@@ -1,25 +1,23 @@
 {
   "metadata": {
-    "pedigreeName": "岩浪",
-    "rootHorseId": "iwanami",
-    "lastUpdated": "2026-08-22T05:28:57Z",
-    "source": "attribute_mapping_reverted",
+    "pedigreeName": "ゴールマイン",
+    "rootHorseId": "gold-mine",
+    "lastUpdated": "2026-08-20T17:06:44Z",
+    "source": "manual_correction",
     "isTraditionalFamily": true,
     "rootAncestrySource": "manual_correction"
   },
   "horses": [
     {
-      "id": "iwanami",
-      "name": "岩浪",
+      "id": "gold-mine",
+      "name": "ゴールドマイン",
       "foaled": {},
-      "importedYear": "（内国産）",
       "sex": "female",
-      "breed": "中半",
+      "breed": "サラ系",
       "sire": "不詳",
       "dam": "不詳",
-      "color": "",
-      "breeder": "（鹿児島県）",
-      "netkeibaId": "",
+      "color": "鹿毛",
+      "breeder": "豪",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -28,9 +26,12 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『登録馬名簿 昭和18年1月31日現在』p.142",
-      "comment": "詳細不明。宮崎種馬所の万武との産駒・二葉が鹿児島県で繋養されていたと思われることから、九州のそのあたりにいたと思われる。また『アラブ系種血統書 軽半血種血統書 第1巻』に記載がないことから逆説的に、二葉も含め1948年以降に種付けされた子孫が存在しないことがわかる。かなり早い時期、おそらくグレートタイガーの引退をもって断絶した血統だろう。",
-      "sireNetkeibaId": "none",
+      "source": "『畜産博覧会報告』p.102, 『馬匹世界 (14)』p.39, 『明治・大正・昭和初期の輸入馬』, 『驥北』p.38",
+      "pedigreeName": "ゴールマイン",
+      "owner": "近藤元太郎（青森県三戸郡八戸町）",
+      "importedYear": "1908",
+      "importedBy": "京浜競馬倶楽部（明治41年秋季豪州産抽籤馬）",
+      "comment": "青森県三戸郡八戸で繋養されていた豪洋。『明治・大正・昭和初期の輸入馬』によれば、明治41年秋季京浜競馬倶楽部豪州産抽籤馬。古い書籍を見ると「ゴールドマイン（金鉱）」を「ゴールマイン」とするものもままあるので馬名に矛盾はない。確認できる最初の産駒（キンセイ(1912)）の生年とも矛盾しないため、これを採用する。",
       "ancestryByPath": {
         "s": {
           "name": "不詳",
@@ -155,16 +156,18 @@
       }
     },
     {
-      "id": "futaba",
-      "name": "二葉",
-      "foaled": {},
+      "id": "dai5-kinsei",
+      "name": "第五キンセイ",
+      "foaled": {
+        "year": 1917,
+        "month": 3
+      },
       "sex": "female",
-      "breed": "軽半",
-      "sire": "万武",
-      "dam": "岩浪",
-      "color": "",
-      "breeder": "",
-      "netkeibaId": "",
+      "breed": "サラ系",
+      "sire": "ガロン",
+      "dam": "ゴールドマイン",
+      "color": "鹿毛",
+      "breeder": "近藤元太郎（青森県三戸郡八戸町）",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -173,23 +176,25 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "『日本競馬の歩み 資料編』p.1020, 『馬匹血統登録書 第7巻』p.168, 『登録馬名簿 昭和18年1月31日現在』p.142（デンナミ）",
-      "damId": "iwanami",
-      "comment": "『アラブ系牝馬系統大鑑』『アラブ系種血統書 軽半血種血統書』に記載なし。父・万武は1931年頃より宮崎種馬所に繋養。",
-      "sireId": "mantakeshi",
-      "sireNetkeibaId": "000a00f745"
+      "source": "『畜産博覧会報告』p.102",
+      "damId": "gold-mine",
+      "sireId": "gallon",
+      "sireNetkeibaId": "000a000866"
     },
     {
-      "id": "great-tiger",
-      "name": "グレートタイガー",
+      "id": "kiyotaki-000a01ce33",
+      "name": "キヨタキ",
       "foaled": {
-        "year": 1944
+        "year": 1924,
+        "month": 4
       },
       "sex": "male",
-      "breed": "軽半",
-      "sire": "アカイシダケ",
-      "dam": "二葉",
-      "color": "栗毛",
+      "breed": "サラ",
+      "sire": "ロイヂユール",
+      "dam": "第五キンセイ",
+      "color": "鹿毛",
+      "breeder": "青森県八戸町",
+      "netkeibaId": "000a01ce33",
       "raceStats": {
         "total": {
           "runs": 0,
@@ -199,29 +204,42 @@
       },
       "raceResults": [
         {
-          "race": "読売楯アラブ東西対抗",
-          "displayRace": "読売楯アラブ東西対抗（秋）",
-          "grade": "national_grade",
-          "racecourse": "阪神",
-          "distance": "芝2000",
-          "entry": "10",
-          "favorite": "9",
-          "result": "3",
+          "race": "横浜特別",
+          "displayRace": "横浜特別",
+          "grade": "empire_2mile",
+          "racecourse": "",
+          "distance": "",
+          "entry": "",
+          "favorite": "",
+          "result": "1",
           "date": {
-            "year": 1949,
-            "month": 12,
+            "year": 1928,
+            "month": 11,
+            "day": 10
+          }
+        },
+        {
+          "race": "帝室御賞典（東京）",
+          "displayRace": "帝室御賞典（東京）",
+          "grade": "empire_cup",
+          "racecourse": "東京",
+          "distance": "",
+          "entry": "",
+          "favorite": "",
+          "result": "1",
+          "date": {
+            "year": 1928,
+            "month": 11,
             "day": 25
           }
         }
       ],
-      "source": "『日本競馬の歩み 資料編』p.1020, 『昭和25年前期 国営競馬成績書』p.23",
-      "prizeMoney": {
-        "total": "0万円"
-      },
-      "comment": "他に1949年 アラブステークス（秋）、1950年 京都銀杯に勝利。本馬・母含めnetkeiba, JBIS, bogusどれにもデータなし。半姉・デンナミ（1940, 父・第十四シアンモア）は山ノ上タミ（鹿児島県志布志村）生産。",
-      "damId": "futaba",
-      "sireId": "akaishidake",
-      "sireNetkeibaId": "000a000874"
+      "source": "『全国種牡馬名簿 昭和10年版』p.273",
+      "pedigreeName": "第二ゴールマイン",
+      "owner": "八戸産馬畜産組合",
+      "damId": "dai5-kinsei",
+      "sireId": "roideur",
+      "sireNetkeibaId": "000a00086d"
     }
   ]
 }

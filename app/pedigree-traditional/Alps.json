@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "アルプス",
     "rootHorseId": "alps",
-    "lastUpdated": "2026-08-13T05:31:23Z",
+    "lastUpdated": "2026-08-22T05:27:56Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
     "rootAncestrySource": "python_scraping_ped"
@@ -509,18 +509,14 @@
     {
       "id": "moriaki",
       "name": "モリアキ",
-      "pedigreeName": "岩菊",
       "foaled": {
         "year": 1946
       },
-      "retired": "1951.12.30 蕃殖",
       "sex": "female",
       "breed": "アア",
       "sire": "成霞",
       "dam": "ミンドラス",
-      "color": "",
       "breeder": "武田重四郎（新冠郡新冠村）",
-      "netkeibaId": "",
       "raceStats": {
         "total": {
           "runs": 80,
@@ -547,12 +543,61 @@
           }
         ]
       },
-      "raceResults": [],
-      "source": "python_scraping, 『国営競馬成績書 昭和26年 春季』p.22, 『国営競馬統計 昭和27年』p.170, 『サラブレッド血統書 第3巻』p.147",
+      "raceResults": [
+        {
+          "race": "読売楯アラブ東西対抗",
+          "displayRace": "読売楯アラブ東西対抗（秋）",
+          "grade": "national_grade",
+          "racecourse": "阪神",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "4",
+          "result": "3",
+          "date": {
+            "year": 1951,
+            "month": 12,
+            "day": 23
+          }
+        },
+        {
+          "race": "読売楯アラブ東西対抗",
+          "displayRace": "読売楯アラブ東西対抗（秋）",
+          "grade": "national_grade",
+          "racecourse": "阪神",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "5",
+          "result": "3",
+          "date": {
+            "year": 1950,
+            "month": 12,
+            "day": 3
+          }
+        },
+        {
+          "race": "読売楯アラブ東西対抗",
+          "displayRace": "読売楯アラブ東西対抗（秋）",
+          "grade": "national_grade",
+          "racecourse": "阪神",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "5",
+          "result": "2",
+          "date": {
+            "year": 1949,
+            "month": 12,
+            "day": 25
+          }
+        }
+      ],
+      "source": "python_scraping, 『国営競馬成績書 昭和26年 春季』p.22, 『国営競馬統計 昭和27年』p.170, 『サラブレッド血統書 第3巻』p.147, 『優駿たちの蹄跡』",
+      "pedigreeName": "岩菊",
+      "linkName": "モリアキ(1946)",
       "comment": "母名は「ミンドラス」とする誤記が多い。父・成霞は血量100%のアラブのため、本馬はアラブ血量50%のアングロアラブ。",
       "damId": "mint-lass",
-      "linkName": "モリアキ(1946)",
-      "sireNetkeibaId": "000a00f753"
+      "sireId": "seikasumi",
+      "sireNetkeibaId": "000a00f753",
+      "retired": "1951.12.30 蕃殖"
     }
   ]
 }

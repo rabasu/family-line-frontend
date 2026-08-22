@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "クララマクゲレー",
     "rootHorseId": "clara-mcgeary",
-    "lastUpdated": "2026-08-13T06:51:19Z",
+    "lastUpdated": "2026-08-17T11:01:46Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
     "rootAncestrySource": "python_scraping_ped"
@@ -759,6 +759,63 @@
       "damId": "clara-mcgeary",
       "sireId": "monmouth",
       "sireNetkeibaId": "000a0191a1"
+    },
+    {
+      "id": "haruzono",
+      "name": "春園",
+      "foaled": {
+        "year": 1891,
+        "month": 3,
+        "day": 21
+      },
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "蘭",
+      "dam": "第二クララマクゲレー",
+      "color": "鹿毛",
+      "breeder": "下総御料牧場",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "『下総御料牧場 明治3年度 馬籍原簿』[19/340]",
+      "damId": "dai2-clara-mcgeary",
+      "sireId": "ran",
+      "sireNetkeibaId": "000a01c1aa"
+    },
+    {
+      "id": "dai2-admiral",
+      "name": "第二アドミラル",
+      "foaled": {
+        "year": 1902,
+        "month": 4,
+        "day": 28
+      },
+      "sex": "male",
+      "breed": "アラ系",
+      "sire": "第四ユスーフ",
+      "dam": "春園",
+      "color": "栗毛",
+      "breeder": "下総御料牧場",
+      "netkeibaId": "000a018f70",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『鹿児島県畜産史 中巻』p.284, 『下総御料牧場 明治3年度 馬籍原簿』[60/340]",
+      "owner": "鹿児島県産馬組合連合会",
+      "comment": "TODO: 下総御料牧場では「アドミラール」の馬名で登録。中村延吉（盛岡？）に払い下げられ、その後鹿児島では「第二アドミラル」として種牡馬に供された。",
+      "damId": "haruzono",
+      "sireId": "dai4-yusuufu",
+      "sireNetkeibaId": "000a01c150"
     },
     {
       "id": "taise-isakura",
@@ -1651,7 +1708,8 @@
       },
       "damId": "bandai",
       "comment": "1944年の能力検定競走に出場し、春季東京2勝、秋季修錬場3戦2勝。",
-      "sireNetkeibaId": "000a01cb8c"
+      "sireNetkeibaId": "000a01cb8c",
+      "sireId": "hakugun"
     }
   ]
 }

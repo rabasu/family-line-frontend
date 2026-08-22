@@ -2,10 +2,10 @@
   "metadata": {
     "pedigreeName": "函館",
     "rootHorseId": "hakodate",
-    "lastUpdated": "2026-07-27T15:50:11.531767Z",
+    "lastUpdated": "2026-08-22T05:21:40Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
-    "rootAncestrySource": "python_scraping_ped"
+    "rootAncestrySource": "manual_draft"
   },
   "horses": [
     {
@@ -17,7 +17,7 @@
       "importedYear": "（内国産）",
       "sex": "female",
       "breed": "アラ系",
-      "sire": "ユスーフ(HUN)",
+      "sire": "ユスーフ",
       "dam": "不詳(AUS)",
       "color": "",
       "breeder": "（北海道）",
@@ -30,21 +30,34 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻 (昭和35年～昭和52年)』p.1865, 『日本馬政史 続 第3』p.123, 『十勝馬産史』p.111, 『馬匹血統登録書 第4巻』p.145, (アドミラルユスーフ)『牧畜雑誌 (265)』p.63",
+      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻 (昭和35年～昭和52年)』p.1865, 『日本馬政史 続 第3』p.123, 『十勝馬産史』p.111, 『馬匹血統登録書 第4巻』p.145, 『優駿のふるさと日高（十周年）』p.259,  (アドミラルユスーフ)『牧畜雑誌 (265)』p.63",
       "comment": "父ユスーフは下総御料牧場→園田牧場（渡島亀田郡桔梗野）。産駒の第三函館が日高荻伏産・加藤繁太郎（北海道河西郡芽室村）所有、オーノールが吉川勘平（浦河郡浦河町）生産・上田仁松（同）所有。母は名称不詳の豪洋。『馬匹血統登録書』や『全国種牡馬名簿』では父・アドミラルユスーフとなっているが、アドミラルユスーフは1905年生（父・ユスーフ、母・アドミラル）のため、1903年生まれの函館とは矛盾する。ユスーフを正とする。",
       "sireId": "jussuf",
       "sireNetkeibaId": "000a0191a4",
       "ancestryByPath": {
         "s": {
           "name": "ユスーフ",
+          "sex": "male",
           "foaled": {
             "year": 1884
           },
           "color": "鹿毛",
-          "sex": "male",
           "netkeibaId": "000a0191a4"
+        },
+        "ss": {
+          "name": "ユスーフ",
+          "sex": "male"
+        },
+        "sd": {
+          "name": "一一七ザリーフ",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳(AUS)",
+          "sex": "female"
         }
-      }
+      },
+      "owner": "今井重太郎（北海道浦河郡荻伏村）"
     },
     {
       "id": "dai4-onor",
@@ -147,7 +160,6 @@
       "sire": "方景",
       "dam": "第二ナス",
       "color": "栗毛",
-      "breeder": "",
       "netkeibaId": "000a00c2fb",
       "raceStats": {
         "total": {
@@ -158,44 +170,59 @@
       },
       "raceResults": [
         {
+          "race": "中山大障害（秋）",
+          "displayRace": "中山大障害（秋）",
+          "grade": "national_grandjump",
+          "racecourse": "",
+          "distance": "",
+          "entry": "",
+          "favorite": "",
+          "result": "4",
           "date": {
             "year": 1950,
             "month": 12,
             "day": 7
-          },
-          "racecourse": null,
-          "race": "中山大障害（秋）",
-          "displayRace": "中山大障害（秋）",
-          "distance": null,
-          "grade": "national_grandjump",
-          "entry": null,
-          "favorite": null,
-          "result": "4"
+          }
         },
         {
+          "race": "中山大障害（秋）",
+          "displayRace": "中山大障害（秋）",
+          "grade": "national_grandjump",
+          "racecourse": "",
+          "distance": "",
+          "entry": "",
+          "favorite": "",
+          "result": "2",
           "date": {
             "year": 1951,
             "month": 12,
             "day": 16
-          },
-          "racecourse": null,
-          "race": "中山大障害（秋）",
-          "displayRace": "中山大障害（秋）",
-          "distance": null,
-          "grade": "national_grandjump",
-          "entry": null,
-          "favorite": null,
-          "result": "2"
+          }
+        },
+        {
+          "race": "読売楯アラブ東西対抗",
+          "displayRace": "読売楯アラブ東西対抗（春）",
+          "grade": "national_grade",
+          "racecourse": "東京",
+          "distance": "芝2000",
+          "entry": "10",
+          "favorite": "3",
+          "result": "2",
+          "date": {
+            "year": 1950,
+            "month": 6,
+            "day": 10
+          }
         }
       ],
-      "source": "python_scraping",
+      "source": "python_scraping, 『優駿たちの蹄跡』",
       "englishName": "Hosei",
       "prizeMoney": {
         "total": "0万円"
       },
-      "damId": "dai2-nasu",
       "jbisId": "0000455599",
       "bogusId": "92395",
+      "damId": "dai2-nasu",
       "sireId": "houkei",
       "sireNetkeibaId": "000a00c322"
     },
