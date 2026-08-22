@@ -1,5 +1,4 @@
 // @ts-check
-const { fontFamily } = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 /** @type {import("tailwindcss/types").Config } */
@@ -22,7 +21,18 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        // system-ui / Yu Gothic はカナの高さが不揃いなので使わない
+        sans: [
+          'var(--font-space-grotesk)',
+          'var(--font-noto-sans-jp)',
+          '"Hiragino Sans"',
+          'Meiryo',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
       },
       colors: {
         primary: colors.pink,

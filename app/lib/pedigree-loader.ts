@@ -42,6 +42,19 @@ export interface HorseJsonData {
   breeder: string
   netkeibaId: string
   damId?: string // 母馬のID（親子関係の表現）
+  sireId?: string // 父馬の内部 id
+  sireNetkeibaId?: string
+  damNetkeibaId?: string
+  ancestryByPath?: Record<
+    string,
+    {
+      name: string
+      foaled?: { year?: number; month?: number; day?: number }
+      color?: string
+      sex?: string
+      netkeibaId?: string
+    }
+  >
   hasArticle?: boolean
   summary?: string
   details?: string
@@ -76,7 +89,8 @@ export interface HorseJsonData {
   owner?: string
   trainer?: string
   jockey?: string
-  comments?: string // コメントアウトされていた情報
+  comment?: string // コメント（注記・補足）。JSONキーは comment
+  comments?: string // 旧キー。comment へ吸収
   source: string
   // 牝祖用
   importedYear?: string // 輸入年
@@ -154,11 +168,21 @@ function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): H
   if (horseData.trainer) horse.trainer = horseData.trainer
   if (horseData.jockey) horse.jockey = horseData.jockey
   if (horseData.source) horse.source = horseData.source
-  if (horseData.comments) horse.comments = horseData.comments
+  const commentText = [
+    typeof horseData.comment === 'string' ? horseData.comment : '',
+    typeof horseData.comments === 'string' ? horseData.comments : '',
+  ].find((t) => t.trim())
+  if (commentText) horse.comment = commentText
   if (horseData.importedYear) horse.importedYear = horseData.importedYear
   if (horseData.importedBy) horse.importedBy = horseData.importedBy
   if (horseData.familyNumber) horse.familyNumber = horseData.familyNumber
   if (horseData.registration) horse.registration = horseData.registration
+  if (horseData.sireId) horse.sireId = horseData.sireId
+  if (horseData.sireNetkeibaId) horse.sireNetkeibaId = horseData.sireNetkeibaId
+  if (horseData.damNetkeibaId) horse.damNetkeibaId = horseData.damNetkeibaId
+  if (horseData.ancestryByPath) {
+    horse.ancestryByPath = horseData.ancestryByPath as Horse['ancestryByPath']
+  }
   if (horseData.raceResults) {
     // raceResultsのdateフィールドをDate型に変換
     horse.raceResults = horseData.raceResults.map((result) => ({

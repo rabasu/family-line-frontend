@@ -8,6 +8,7 @@ import { yearOf, compareDate } from 'app/lib/utils'
 import ReactMarkdown from 'react-markdown'
 import remarkBreaks from 'remark-breaks'
 import HorseLink from './HorseLink'
+import HorseNameWithPedigree from './HorseNameWithPedigree'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import Link from 'next/link'
@@ -96,7 +97,7 @@ const DetailLinkIcon = () => (
 const BaseInfo = (horse: Horse): JSX.Element => {
   return (
     <div className="flex flex-nowrap items-baseline gap-x-1 whitespace-nowrap">
-      <span className="font-bold">{displayHorseName(horse)}</span>
+      <HorseNameWithPedigree horseId={horse.id} displayName={displayHorseName(horse)} />
       {horseArticleSlugs.has(horse.id) && (
         <Link href={`/horse/${horse.id}`} className="ml-1 text-primary-500 hover:text-primary-600" title="詳細ページを見る">
           <DetailLinkIcon />
@@ -247,12 +248,14 @@ const getRaceStyle = (rank: number) => {
   }
 }
 
-const RecordFormatter = (record: RaceRecord): JSX.Element => {
+const RecordChip = (record: RaceRecord): JSX.Element => {
+  const isWin = record.result === '1'
   return (
-    <>
-      {record.result !== '1' && <span>（{record.result}着）</span>}
-      <span className={`mr-1 ${getRaceStyle(grades[record.grade].rank)} ${record.result === '1' ? 'font-bold' : ''}`}>{record.displayRace}</span>
-    </>
+    <span className="inline-flex items-baseline gap-x-1.5 bg-black/[0.06] px-2 py-0.5 dark:bg-white/10">
+      {!isWin && <span className="text-gray-500 dark:text-gray-400">{record.result}着</span>}
+      <span className={`${getRaceStyle(grades[record.grade].rank)} ${isWin ? 'font-bold' : ''}`}>{record.displayRace}</span>
+      <span className="text-gray-500 dark:text-gray-400">{yearOf(record.date)}</span>
+    </span>
   )
 }
 
@@ -264,7 +267,7 @@ const RecordFormatter = (record: RaceRecord): JSX.Element => {
 //         Object.entries(grouped).map(([year, records]) => (
 //           <div>
 //             <span className="mr-1">{year}</span>
-//             {records.map((record) => RecordFormatter(record))}
+//             {records.map((record) => RecordChip(record))}
 //           </div>
 //         ))}
 //     </>
@@ -274,12 +277,9 @@ const RecordFormatter = (record: RaceRecord): JSX.Element => {
 const RecordsSummary = (props: RecordsProp): JSX.Element => {
   const records: RaceRecord[] = props.records
   return (
-    <div className="flex flex-wrap gap-x-2">
+    <div className="mt-1 flex flex-wrap gap-1.5">
       {records.map((record) => (
-        <span key={`${record.date}-${record.displayRace}`} className="inline-flex items-baseline">
-          <RecordFormatter {...record} />
-          <span className="text-sm">（{yearOf(record.date)}）</span>
-        </span>
+        <RecordChip key={`${record.date}-${record.displayRace}`} {...record} />
       ))}
     </div>
   )

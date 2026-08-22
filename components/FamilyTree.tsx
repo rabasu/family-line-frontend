@@ -21,7 +21,7 @@ const FamilyTree = ({ name }): JSX.Element => {
 export default FamilyTree
 
 const branch = tv({
-  base: 'ml-4 pwid',
+  base: 'ml-4',
   variants: {
     // 牝系図の線を制御
     border: {

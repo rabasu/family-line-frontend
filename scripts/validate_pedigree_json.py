@@ -17,6 +17,24 @@
 12. 馬のID欠損の修正（generate_horse_idでID生成、子のdamIdも更新）
 13. damId整合性チェック（牝系でたどれない馬の検出、dam名による母馬探索とdamId修正）
 14. netkeibaId重複の検証（自動補正なし・手動編集が必要）
+15. 品種齟齬の検証と自動補正
+    - アラブ系競走出走なのに breed=サラ → アア（自動補正）
+    - 牝祖/母馬がサラ以外なのに breed=サラ → 要手動修正（自動補正なし）
+16. ID変更時の参照同期（同一ファイル内の damId / sireId）
+17. sireId未設定の補完
+    - sire/dam が「不詳」の場合は対象外（補完IDなし）
+    - sireNetkeibaId がある → pedigree-traditional / pedigree-sires から netkeibaId 一致馬の id を設定
+    - sireNetkeibaId が空 → 両ディレクトリの牡馬を name/pedigreeName 一致で検索
+      （馬名末尾の (GB) 等は除去。候補1頭なら自動修正、0or複数は要手動修正）
+    - sireNetkeibaId=none かつ sireId空:
+      - sire 空 → 「父馬名要確認」（記入漏れか不詳かの判断）
+      - 牝祖本人 + sire あり + 4代未完了 → 「牝祖4代要手動補完」
+        （種牡馬単独保存せず、牝祖 ancestryByPath でカバー）
+      - 非牝祖 + sire あり → 「父馬要手動補完」（父馬未登録タブと同期）
+      - 牝祖本人 + 4代完了済み → 対象外（sireId 不要）
+      - sire=不詳 → 対象外
+18. sireId / sireNetkeibaId 齟齬
+    - sireNetkeibaId で父馬を特定し、その id と sireId が異なれば sireId を自動追従
 """
 
 import os
@@ -25,7 +43,7 @@ import json
 import re
 import hashlib
 from pathlib import Path
-from typing import Dict, List, Tuple, Set
+from typing import Dict, List, Optional, Tuple, Set
 from collections import defaultdict
 
 # scraping/ 配下のモジュールを参照できるようにする
@@ -42,10 +60,71 @@ from get_pedigree_data import (  # noqa: E402
     generate_horse_id,
     handle_duplicate_horses
 )
+from breed_determination import breed_determination  # noqa: E402
 
 # 馬名サニタイジングの対象カラム（name, pedigree_name, former_name, former_pedigree_name, sire, dam）
 HORSE_NAME_COLUMNS = ['name', 'pedigreeName',
                       'formerName', 'formerPedigreeName', 'sire', 'dam']
+
+# 種牡馬4代血統（sireId補完の検索対象）
+SIRE_PEDIGREE_DIR = str(_PROJECT_ROOT / "app" / "pedigree-sires")
+
+# 父・母が不明な場合のプレースホルダ（ID補完対象外）
+UNKNOWN_PARENT_NAME = "不詳"
+
+# 父が netkeiba 未登録と確認済みのマーカー
+SIRE_NETKEIBA_NONE = "none"
+
+# サマリ1行の見やすさ用
+SUMMARY_SEP = " | "
+SUMMARY_HORSE_MAX = 36
+SUMMARY_DETAIL_MAX = 56
+
+
+def _truncate_summary_text(text: str, max_len: int) -> str:
+    """サマリ表示用に文字列を短縮する"""
+    text = str(text or "").replace("\n", " ").strip()
+    if max_len <= 0 or len(text) <= max_len:
+        return text
+    if max_len <= 1:
+        return "…"
+    return text[: max_len - 1] + "…"
+
+
+def format_horse_label(name: str = "", horse_id: str = "") -> str:
+    """サマリ用の対象馬ラベル（馬名 / id）"""
+    name = (name or "").strip()
+    horse_id = (horse_id or "").strip()
+    if name and horse_id:
+        label = f"{name} ({horse_id})"
+    elif name:
+        label = name
+    elif horse_id:
+        label = f"id={horse_id}"
+    else:
+        label = "-"
+    return _truncate_summary_text(label, SUMMARY_HORSE_MAX)
+
+
+def format_summary_issue(
+    filename: str,
+    horse: str,
+    action: str,
+    detail: str = "",
+) -> str:
+    """
+    サマリ用メッセージを統一形式で作る。
+
+    形式: `{file}: {horse} | {action} | {detail}`
+    """
+    filename = (filename or "-").strip() or "-"
+    horse = _truncate_summary_text(horse or "-", SUMMARY_HORSE_MAX)
+    action = (action or "-").strip() or "-"
+    detail = _truncate_summary_text(detail, SUMMARY_DETAIL_MAX)
+    parts = [f"{filename}: {horse}", action]
+    if detail:
+        parts.append(detail)
+    return SUMMARY_SEP.join(parts)
 
 
 def sanitize_horse_name(value: str) -> str:
@@ -255,12 +334,20 @@ class PedigreeJsonValidator:
 
         # 1. 牝祖IDの検証
         if not root_horse_id:
-            self.errors.append(f"{filename}: 牝祖のIDが空です（馬名: {root_horse_name}）")
+            self.errors.append(format_summary_issue(
+                filename,
+                format_horse_label(root_horse_name, ''),
+                "牝祖IDが空",
+            ))
 
         # 2. 牝祖性別の検証
         if root_horse_sex == 'male' or root_horse_sex == 'gelding':
-            self.errors.append(
-                f"{filename}: 牝祖が牡馬または騙馬です（馬名: {root_horse_name}）")
+            self.errors.append(format_summary_issue(
+                filename,
+                format_horse_label(root_horse_name, root_horse_id),
+                "牝祖が牡馬/騙馬",
+                f"sex={root_horse_sex}",
+            ))
 
         # 3. 牝祖判定の検証（母馬が日本語の場合）
         # 在来馬・血統不詳馬増加のため廃止する
@@ -275,8 +362,11 @@ class PedigreeJsonValidator:
         # netkeiba未登録馬増加のためINFOに落とす
         root_netkeiba_id = root_horse.get('netkeibaId', '')
         if not root_netkeiba_id:
-            self.info.append(
-                f"{filename}: 牝祖のnetkeibaIdが空です（馬名: {root_horse_name}）")
+            self.info.append(format_summary_issue(
+                filename,
+                format_horse_label(root_horse_name, root_horse_id),
+                "牝祖netkeibaIdが空",
+            ))
 
         # 5. ファイル名と牝祖IDの齟齬検証
         self._validate_filename_root_id_consistency(
@@ -289,18 +379,29 @@ class PedigreeJsonValidator:
 
         # 1. metadataのrootHorseIdと実際の牝祖IDが一致しない場合
         if metadata_root_id and metadata_root_id != root_horse_id:
-            self.errors.append(
-                f"{filename}: metadata.rootHorseId({metadata_root_id})と実際の牝祖ID({root_horse_id})が一致しません（牝祖: {root_horse_name}）")
+            self.errors.append(format_summary_issue(
+                filename,
+                format_horse_label(root_horse_name, root_horse_id),
+                "rootHorseId不一致",
+                f"metadata={metadata_root_id}",
+            ))
 
         # 2. ファイル名と牝祖IDの一致チェック（ハイフン除去＋小文字化）
         if self._is_filename_root_id_strictly_incompatible(filename, root_horse_id):
-            self.errors.append(
-                f"{filename}: ファイル名と牝祖ID({root_horse_id})が完全に無関係です（牝祖: {root_horse_name}）")
+            self.errors.append(format_summary_issue(
+                filename,
+                format_horse_label(root_horse_name, root_horse_id),
+                "ファイル名と牝祖IDが不一致",
+            ))
 
         # 3. metadataのrootHorseIdがファイル名と異なる場合（警告レベル）
         if metadata_root_id and self._is_filename_root_id_strictly_incompatible(filename, metadata_root_id):
-            self.warnings.append(
-                f"{filename}: metadata.rootHorseId({metadata_root_id})がファイル名と大きく異なります")
+            self.warnings.append(format_summary_issue(
+                filename,
+                format_horse_label(root_horse_name, root_horse_id),
+                "metadata.rootHorseIdがファイル名と乖離",
+                f"metadata={metadata_root_id}",
+            ))
 
     def _is_filename_root_id_strictly_incompatible(self, filename: str, root_horse_id: str) -> bool:
         """ファイル名と牝祖IDが不一致かどうかをチェック（ハイフン除去＋小文字化して比較）"""
@@ -413,6 +514,13 @@ class PedigreeJsonValidator:
         invalid_damid = self._detect_invalid_damid()
         missing_id = self._detect_missing_id()
         name_sanitization_issues = self._detect_name_sanitization_issues()
+        # 品種要手動修正は _detect_breed_mismatches 内で self.errors に追加される
+        breed_mismatches = self._detect_breed_mismatches()
+        # sireId要手動修正は _detect_missing_sireid 内で self.errors に追加される
+        netkeiba_index, male_name_index = self._build_sire_lookup_indexes()
+        missing_sireid = self._detect_missing_sireid(
+            netkeiba_index, male_name_index)
+        sireid_mismatch = self._detect_sireid_netkeiba_mismatch(netkeiba_index)
 
         self._append_remaining_issues_to_errors(
             id_duplicates=id_duplicates,
@@ -422,6 +530,9 @@ class PedigreeJsonValidator:
             invalid_damid=invalid_damid,
             missing_id=missing_id,
             name_sanitization_issues=name_sanitization_issues,
+            breed_mismatches=breed_mismatches,
+            missing_sireid=missing_sireid,
+            sireid_mismatch=sireid_mismatch,
         )
 
     def _append_remaining_issues_to_errors(
@@ -433,6 +544,9 @@ class PedigreeJsonValidator:
         invalid_damid=None,
         missing_id=None,
         name_sanitization_issues=None,
+        breed_mismatches=None,
+        missing_sireid=None,
+        sireid_mismatch=None,
     ):
         """未解消の自動補正対象をサマリ用エラーとして追加する"""
         id_duplicates = id_duplicates or []
@@ -442,45 +556,116 @@ class PedigreeJsonValidator:
         invalid_damid = invalid_damid or []
         missing_id = missing_id or []
         name_sanitization_issues = name_sanitization_issues or []
+        breed_mismatches = breed_mismatches or []
+        missing_sireid = missing_sireid or []
+        sireid_mismatch = sireid_mismatch or []
 
         for horse_id, horse_list in id_duplicates:
-            details = ', '.join(
-                f"{h['file']}:{h['horse'].get('name', 'N/A')}" for h in horse_list)
-            self.errors.append(
-                f"ID重複が未解消: '{horse_id}' ({len(horse_list)}頭) - {details}")
+            first = horse_list[0]
+            others = ', '.join(
+                f"{h['file']}:{h['horse'].get('name', '-')}"
+                for h in horse_list[:3]
+            )
+            if len(horse_list) > 3:
+                others += f" 他{len(horse_list) - 3}頭"
+            self.errors.append(format_summary_issue(
+                first['file'],
+                format_horse_label(
+                    first['horse'].get('name', ''), horse_id),
+                "ID重複が未解消",
+                others,
+            ))
 
         for horse_name, horse_list in name_duplicates:
-            details = ', '.join(
-                f"{h['file']}:id={h['horse'].get('id', 'N/A')}" for h in horse_list)
-            self.errors.append(
-                f"name重複が未解消（linkName未設定）: '{horse_name}' ({len(horse_list)}頭) - {details}")
+            first = horse_list[0]
+            others = ', '.join(
+                f"{h['file']}:{h['horse'].get('id', '-')}"
+                for h in horse_list[:3]
+            )
+            if len(horse_list) > 3:
+                others += f" 他{len(horse_list) - 3}頭"
+            self.errors.append(format_summary_issue(
+                first['file'],
+                format_horse_label(horse_name, first['horse'].get('id', '')),
+                "name重複が未解消",
+                f"linkName未設定 / {others}",
+            ))
 
         for linkname, horse_list in linkname_duplicates:
-            details = ', '.join(
-                f"{h['file']}:id={h['horse'].get('id', 'N/A')}" for h in horse_list)
-            self.errors.append(
-                f"linkName重複が未解消: '{linkname}' ({len(horse_list)}頭) - {details}")
+            first = horse_list[0]
+            others = ', '.join(
+                f"{h['file']}:{h['horse'].get('id', '-')}"
+                for h in horse_list[:3]
+            )
+            if len(horse_list) > 3:
+                others += f" 他{len(horse_list) - 3}頭"
+            self.errors.append(format_summary_issue(
+                first['file'],
+                format_horse_label(
+                    first['horse'].get('name', ''),
+                    first['horse'].get('id', '')),
+                "linkName重複が未解消",
+                f"linkName={linkname} / {others}",
+            ))
 
         for item in missing_damid:
-            self.errors.append(
-                f"{item['filename']}: damId未設定が未解消 - '{item['horse_name']}' "
-                f"(ID: {item['horse_id']}, 母馬名: {item['dam_name']} -> damId候補: {item['dam_id']})")
+            self.errors.append(format_summary_issue(
+                item['filename'],
+                format_horse_label(item['horse_name'], item['horse_id']),
+                "damId未設定が未解消",
+                f"dam={item['dam_name']} -> {item['dam_id']}",
+            ))
 
         for item in invalid_damid:
-            self.errors.append(
-                f"{item['filename']}: damId整合性の自動修正候補が未適用 - '{item['horse_name']}' "
-                f"(ID: {item['horse_id']}) damId '{item['old_dam_id']}' -> '{item['correct_dam_id']}'")
+            self.errors.append(format_summary_issue(
+                item['filename'],
+                format_horse_label(item['horse_name'], item['horse_id']),
+                "damId整合性が未適用",
+                f"{item['old_dam_id']} -> {item['correct_dam_id']}",
+            ))
 
         for item in missing_id:
             for mod in item['modifications']:
-                self.errors.append(
-                    f"{item['filename']}: ID欠損が未解消 - '{mod['horse_name']}' -> id候補: '{mod['new_id']}'")
+                self.errors.append(format_summary_issue(
+                    item['filename'],
+                    format_horse_label(mod['horse_name'], ''),
+                    "ID欠損が未解消",
+                    f"id候補={mod['new_id']}",
+                ))
 
         for item in name_sanitization_issues:
             for mod in item['modifications']:
-                self.errors.append(
-                    f"{item['filename']}: 馬名サニタイズが未適用 - {mod['field']}: "
-                    f"'{mod['old_value']}' -> '{mod['new_value']}' (馬: {mod['horse_name']})")
+                self.errors.append(format_summary_issue(
+                    item['filename'],
+                    format_horse_label(mod['horse_name'], ''),
+                    "馬名サニタイズが未適用",
+                    f"{mod['field']}: {mod['old_value']} -> {mod['new_value']}",
+                ))
+
+        for item in breed_mismatches:
+            for mod in item['modifications']:
+                self.errors.append(format_summary_issue(
+                    item['filename'],
+                    format_horse_label(mod['horse_name'], mod['horse_id']),
+                    "品種齟齬が未適用",
+                    f"{mod['old_breed']}->{mod['new_breed']} ({mod['reason']})",
+                ))
+
+        for item in missing_sireid:
+            self.errors.append(format_summary_issue(
+                item['filename'],
+                format_horse_label(item['horse_name'], item['horse_id']),
+                "sireId未設定が未適用",
+                f"sire={item['sire_name']} -> {item['sire_id']}",
+            ))
+
+        for item in sireid_mismatch:
+            self.errors.append(format_summary_issue(
+                item['filename'],
+                format_horse_label(item['horse_name'], item['horse_id']),
+                "sireId齟齬が未適用",
+                f"{item['old_sire_id']} -> {item['new_sire_id']}",
+            ))
 
     def _validate_and_fix_duplicates(self):
         """ID、name、linkNameの重複チェックと自動補正"""
@@ -493,21 +678,30 @@ class PedigreeJsonValidator:
         invalid_damid = self._detect_invalid_damid()
         missing_id = self._detect_missing_id()
         name_sanitization_issues = self._detect_name_sanitization_issues()
+        # 品種要手動修正は _detect_breed_mismatches 内で self.errors に追加される
+        breed_mismatches = self._detect_breed_mismatches()
+        # sireId要手動修正は _detect_missing_sireid 内で self.errors に追加される
+        netkeiba_index, male_name_index = self._build_sire_lookup_indexes()
+        missing_sireid = self._detect_missing_sireid(
+            netkeiba_index, male_name_index)
+        sireid_mismatch = self._detect_sireid_netkeiba_mismatch(netkeiba_index)
 
-        # 自動補正対象がなくても、_detect_invalid_damid が手動エラーを
-        # self.errors に積んでいる場合がある（サマリに出すため return のみ）
-        if not id_duplicates and not name_duplicates and not linkname_duplicates and not metadata_mismatches and not missing_damid and not invalid_damid and not missing_id and not name_sanitization_issues:
+        # 自動補正対象がなくても、手動エラーを self.errors に積んでいる場合がある
+        # （サマリに出すため return のみ）
+        if not id_duplicates and not name_duplicates and not linkname_duplicates and not metadata_mismatches and not missing_damid and not invalid_damid and not missing_id and not name_sanitization_issues and not breed_mismatches and not missing_sireid and not sireid_mismatch:
             return
 
         # 重複の一覧を表示
         self._display_duplicates(
-            id_duplicates, name_duplicates, linkname_duplicates, metadata_mismatches, missing_damid, invalid_damid, missing_id, name_sanitization_issues)
+            id_duplicates, name_duplicates, linkname_duplicates, metadata_mismatches,
+            missing_damid, invalid_damid, missing_id, name_sanitization_issues,
+            breed_mismatches, missing_sireid, sireid_mismatch)
 
         # ユーザーの確認を求める
         if not self._confirm_fixes():
             print("自動補正をキャンセルしました。未解消項目を検証結果に残します。")
             # キャンセル時もサマリに対応必要項目が出るよう追加
-            # （修正不能 damId は _detect_invalid_damid 済みのため重複追加しない）
+            # （修正不能項目は detect 済みのため重複追加しない）
             self._append_remaining_issues_to_errors(
                 id_duplicates=id_duplicates,
                 name_duplicates=name_duplicates,
@@ -516,11 +710,18 @@ class PedigreeJsonValidator:
                 invalid_damid=invalid_damid,
                 missing_id=missing_id,
                 name_sanitization_issues=name_sanitization_issues,
+                breed_mismatches=breed_mismatches,
+                missing_sireid=missing_sireid,
+                sireid_mismatch=sireid_mismatch,
             )
             return
 
         # バックアップを作成
-        if not self._create_backup(invalid_damid=invalid_damid):
+        if not self._create_backup(
+                invalid_damid=invalid_damid,
+                breed_mismatches=breed_mismatches,
+                missing_sireid=missing_sireid,
+                sireid_mismatch=sireid_mismatch):
             print("バックアップの作成に失敗しました。自動補正を中止します。")
             self._append_remaining_issues_to_errors(
                 id_duplicates=id_duplicates,
@@ -530,6 +731,9 @@ class PedigreeJsonValidator:
                 invalid_damid=invalid_damid,
                 missing_id=missing_id,
                 name_sanitization_issues=name_sanitization_issues,
+                breed_mismatches=breed_mismatches,
+                missing_sireid=missing_sireid,
+                sireid_mismatch=sireid_mismatch,
             )
             return
 
@@ -550,6 +754,12 @@ class PedigreeJsonValidator:
             self._fix_missing_id(missing_id)
         if name_sanitization_issues:
             self._fix_name_sanitization(name_sanitization_issues)
+        if breed_mismatches:
+            self._fix_breed_mismatches(breed_mismatches)
+        if missing_sireid:
+            self._fix_missing_sireid(missing_sireid)
+        if sireid_mismatch:
+            self._fix_sireid_netkeiba_mismatch(sireid_mismatch)
 
         self._auto_fix_applied = True
         print("\n自動補正が完了しました。未解消の対応必要項目を再検証します...")
@@ -565,13 +775,21 @@ class PedigreeJsonValidator:
     def _report_netkeiba_id_duplicates(self):
         """netkeibaId重複をエラーとして報告する（自動補正なし）"""
         for netkeiba_id, horse_list in self._detect_netkeiba_id_duplicates():
-            details = ', '.join(
-                f"{h['file']}:{h['horse'].get('name', 'N/A')}"
-                f"(id={h['horse'].get('id', 'N/A')})"
-                for h in horse_list
+            first = horse_list[0]
+            others = ', '.join(
+                f"{h['file']}:{h['horse'].get('name', '-')}"
+                for h in horse_list[:3]
             )
-            self.errors.append(
-                f"netkeibaId重複: '{netkeiba_id}' ({len(horse_list)}頭) - {details}")
+            if len(horse_list) > 3:
+                others += f" 他{len(horse_list) - 3}頭"
+            self.errors.append(format_summary_issue(
+                first['file'],
+                format_horse_label(
+                    first['horse'].get('name', ''),
+                    first['horse'].get('id', '')),
+                "netkeibaId重複",
+                f"nk={netkeiba_id} / {others}",
+            ))
 
     def _detect_id_duplicates(self):
         """ID重複を検出（牝祖は自動補正の対象外）"""
@@ -749,7 +967,8 @@ class PedigreeJsonValidator:
                     dam_name = horse.get('dam', '')
 
                     # damIdが空で、dam（母馬名）が存在する場合
-                    if not dam_id and dam_name:
+                    # 「不詳」は補完対象の母馬が存在しないためスキップ
+                    if not dam_id and dam_name and dam_name != UNKNOWN_PARENT_NAME:
                         # 同じファイル内で母馬を探す
                         dam_horse = self._find_dam_in_file(data, dam_name)
                         if dam_horse:
@@ -813,15 +1032,14 @@ class PedigreeJsonValidator:
                         new_id = f"{base_id}-{year}" if year else f"{base_id}-unknown"
                     existing_ids.add(new_id)
 
-                    # 子の検出: 同じファイル内、dam_idが空、damがnameまたはpedigreeNameと一致
+                    # 子の検出: 同じファイル内、damIdが空、damがnameまたはpedigreeNameと一致
                     children = []
                     for j, other in enumerate(horses):
                         if i == j:
                             continue
-                        if other.get('damId'):
-                            continue
                         dam = other.get('dam', '')
-                        if dam and (dam == name or dam == pedigree_name):
+                        if not other.get('damId') and dam and (
+                                dam == name or dam == pedigree_name):
                             children.append({
                                 'horse_index': j,
                                 'horse_name': other.get('name', ''),
@@ -846,6 +1064,365 @@ class PedigreeJsonValidator:
                 continue
 
         return issues
+
+    def _normalize_horse_name_for_lookup(self, name: str) -> str:
+        """馬名末尾の国名括弧（(GB) / （IRE）など）を除去して検索用に正規化する"""
+        if not isinstance(name, str):
+            return ''
+        return re.sub(r'[\(（][^\)）]*[\)）]\s*$', '', name).strip()
+
+    def _iter_sire_lookup_horses(self):
+        """
+        sireId補完の検索対象馬を列挙する。
+        pedigree-traditional（検証対象）と pedigree-sires（種牡馬）の両方。
+        yield: (source_label, horse_dict)
+        """
+        # 在来牝系
+        for filename in self._get_json_files():
+            filepath = os.path.join(self.pedigree_dir, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+            except Exception:
+                continue
+            for horse in data.get('horses', []):
+                if isinstance(horse, dict):
+                    yield filename, horse
+
+        # 種牡馬（app/pedigree-sires/*.json の horse）
+        if not os.path.isdir(SIRE_PEDIGREE_DIR):
+            return
+        for filename in sorted(os.listdir(SIRE_PEDIGREE_DIR)):
+            if not filename.endswith('.json') or filename.startswith('.'):
+                continue
+            filepath = os.path.join(SIRE_PEDIGREE_DIR, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+            except Exception:
+                continue
+            horse = data.get('horse')
+            if isinstance(horse, dict):
+                yield f"pedigree-sires/{filename}", horse
+
+    def _build_sire_lookup_indexes(self):
+        """
+        sireId補完用インデックスを構築する。
+
+        Returns:
+            netkeiba_index: netkeibaId -> [{id, name, filename, sex}, ...]
+            male_name_index: name/pedigreeName（末尾括弧除去後も） ->
+              [{id, name, pedigreeName, filename}, ...]
+              （牡馬のみ。同一idは1件にまとめる）
+        """
+        netkeiba_index = defaultdict(list)
+        male_name_index = defaultdict(list)
+        # male_name_index の id 重複排除用
+        male_name_seen = defaultdict(set)
+
+        for source_label, horse in self._iter_sire_lookup_horses():
+            horse_id = horse.get('id', '')
+            horse_name = horse.get('name', '') or ''
+            pedigree_name = horse.get('pedigreeName', '') or ''
+            sex = horse.get('sex', '')
+            netkeiba_id = horse.get('netkeibaId', '')
+
+            if netkeiba_id and horse_id:
+                netkeiba_index[netkeiba_id].append({
+                    'id': horse_id,
+                    'name': horse_name,
+                    'filename': source_label,
+                    'sex': sex,
+                })
+
+            # pedigree-sires の subject は種牡馬なので sex 欠損時も牡馬扱い
+            is_male = sex == 'male' or (
+                source_label.startswith('pedigree-sires/') and sex in ('', 'male')
+            )
+            if not is_male or not horse_id:
+                continue
+
+            entry = {
+                'id': horse_id,
+                'name': horse_name,
+                'pedigreeName': pedigree_name,
+                'filename': source_label,
+            }
+            name_keys = set()
+            for raw in (horse_name, pedigree_name):
+                if not raw:
+                    continue
+                name_keys.add(raw)
+                normalized = self._normalize_horse_name_for_lookup(raw)
+                if normalized:
+                    name_keys.add(normalized)
+
+            for key in name_keys:
+                if horse_id in male_name_seen[key]:
+                    continue
+                male_name_seen[key].add(horse_id)
+                male_name_index[key].append(entry)
+
+        return netkeiba_index, male_name_index
+
+    def _unique_horses_by_netkeiba_id(
+        self,
+        netkeiba_index: dict,
+        netkeiba_id: str,
+    ) -> List[dict]:
+        """netkeibaId に対応する馬を id 一意で返す"""
+        unique = []
+        seen_ids = set()
+        for candidate in netkeiba_index.get(netkeiba_id, []):
+            horse_id = candidate.get('id') or ''
+            if not horse_id or horse_id in seen_ids:
+                continue
+            seen_ids.add(horse_id)
+            unique.append(candidate)
+        return unique
+
+    def _detect_missing_sireid(
+        self,
+        netkeiba_index: dict = None,
+        male_name_index: dict = None,
+    ):
+        """
+        sireIdが空の馬を検出する。
+
+        自動補正:
+        - sireNetkeibaId がある → traditional / pedigree-sires から netkeibaId 一致馬の id を候補に
+        - sireNetkeibaId が空 → 両ディレクトリの牡馬を name/pedigreeName 一致で検索し、
+          候補がちょうど1頭なら自動補正（馬名末尾の (GB) 等は除去して比較）
+
+        手動修正（self.errors に追加）:
+        - sireNetkeibaId=none かつ sire 空 → 「父馬名要確認」
+        - 牝祖 + none + sire あり + 4代未完了 → 「牝祖4代要手動補完」
+        - 非牝祖 + none + sire あり → 「父馬要手動補完」
+        - netkeibaId で解決できない
+        - 名前検索の候補が0頭または複数頭
+
+        対象外:
+        - sire が「不詳」
+        - 牝祖で ancestryByPath が4代分そろっている（sireId 不要）
+
+        報告順:
+        - 父馬名要確認 → 牝祖4代要手動補完 → 父馬要手動補完
+        """
+        missing_sireid_list = []
+        empty_sire_name_issues = []
+        root_four_gen_issues = []
+        missing_sire_data_issues = []
+        root_four_gen_complete = 30
+        if netkeiba_index is None or male_name_index is None:
+            netkeiba_index, male_name_index = self._build_sire_lookup_indexes()
+
+        for filename in self._get_json_files():
+            filepath = os.path.join(self.pedigree_dir, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+            except Exception:
+                continue
+
+            horses = data.get('horses', [])
+            if not horses:
+                continue
+
+            root_horse_id = (data.get('metadata') or {}).get('rootHorseId') or ''
+
+            for i, horse in enumerate(horses):
+                if horse.get('sireId'):
+                    continue
+
+                horse_id = horse.get('id', '')
+                horse_name = horse.get('name', '')
+                sire_name = (horse.get('sire', '') or '').strip()
+                sire_netkeiba_id = horse.get('sireNetkeibaId', '') or ''
+                is_root = bool(root_horse_id) and horse_id == root_horse_id
+
+                # 不詳は馬名不明のため補完不能（none 報告も含めスキップ）
+                if sire_name == UNKNOWN_PARENT_NAME:
+                    continue
+
+                # (1) none + sireId空
+                if sire_netkeiba_id == SIRE_NETKEIBA_NONE:
+                    label = format_horse_label(horse_name, horse_id)
+                    if not sire_name:
+                        empty_sire_name_issues.append(format_summary_issue(
+                            filename,
+                            label,
+                            "父馬名要確認",
+                            "sireNetkeibaId=none / sire=(空) → 記入漏れか不詳かを判断",
+                        ))
+                    elif is_root:
+                        ancestry_count = len(horse.get('ancestryByPath') or {})
+                        if ancestry_count < root_four_gen_complete:
+                            root_four_gen_issues.append(format_summary_issue(
+                                filename,
+                                label,
+                                "牝祖4代要手動補完",
+                                f"sireNetkeibaId=none / sire={sire_name} / "
+                                f"ancestry={ancestry_count}/{root_four_gen_complete}",
+                            ))
+                        # 4代完了済みの牝祖は sireId 不要 → 報告しない
+                    else:
+                        missing_sire_data_issues.append(format_summary_issue(
+                            filename,
+                            label,
+                            "父馬要手動補完",
+                            f"sireNetkeibaId=none / sire={sire_name}",
+                        ))
+                    continue
+
+                if not sire_name:
+                    continue
+
+                if sire_netkeiba_id:
+                    unique_ids = self._unique_horses_by_netkeiba_id(
+                        netkeiba_index, sire_netkeiba_id)
+
+                    if len(unique_ids) == 1:
+                        missing_sireid_list.append({
+                            'filename': filename,
+                            'filepath': filepath,
+                            'horse_index': i,
+                            'horse_id': horse_id,
+                            'horse_name': horse_name,
+                            'sire_name': sire_name,
+                            'sire_id': unique_ids[0]['id'],
+                            'reason': (
+                                f"sireNetkeibaId={sire_netkeiba_id} "
+                                f"-> {unique_ids[0]['filename']}:{unique_ids[0]['name']}"
+                            ),
+                        })
+                    else:
+                        detail = (
+                            f"候補{len(unique_ids)}頭"
+                            if unique_ids else "候補なし"
+                        )
+                        self.errors.append(format_summary_issue(
+                            filename,
+                            format_horse_label(horse_name, horse_id),
+                            "sireId要手動修正",
+                            f"sire={sire_name} / nk={sire_netkeiba_id} ({detail})",
+                        ))
+                    continue
+
+                # sireNetkeibaId が空 → 牡馬を名前で検索（末尾括弧は除去）
+                lookup_name = self._normalize_horse_name_for_lookup(sire_name)
+                name_candidates = male_name_index.get(lookup_name, [])
+                if not name_candidates and lookup_name != sire_name:
+                    name_candidates = male_name_index.get(sire_name, [])
+
+                if len(name_candidates) == 1:
+                    missing_sireid_list.append({
+                        'filename': filename,
+                        'filepath': filepath,
+                        'horse_index': i,
+                        'horse_id': horse_id,
+                        'horse_name': horse_name,
+                        'sire_name': sire_name,
+                        'sire_id': name_candidates[0]['id'],
+                        'reason': (
+                            f"牡馬名一致(正規化='{lookup_name}') "
+                            f"-> {name_candidates[0]['filename']}:"
+                            f"{name_candidates[0]['name'] or name_candidates[0]['pedigreeName']}"
+                        ),
+                    })
+                else:
+                    detail = (
+                        f"候補{len(name_candidates)}頭"
+                        if name_candidates else "候補なし"
+                    )
+                    if name_candidates:
+                        cand_desc = ', '.join(
+                            f"{c['filename']}:{c['id']}"
+                            for c in name_candidates[:3]
+                        )
+                        if len(name_candidates) > 3:
+                            cand_desc += "…"
+                        detail = f"{detail} {cand_desc}"
+                    self.errors.append(format_summary_issue(
+                        filename,
+                        format_horse_label(horse_name, horse_id),
+                        "sireId要手動修正",
+                        f"sire={sire_name} / 名検索({detail})",
+                    ))
+
+        # 父馬名要確認 → 牝祖4代要手動補完 → 父馬要手動補完
+        self.errors.extend(empty_sire_name_issues)
+        self.errors.extend(root_four_gen_issues)
+        self.errors.extend(missing_sire_data_issues)
+
+        return missing_sireid_list
+
+    def _detect_sireid_netkeiba_mismatch(self, netkeiba_index: dict = None):
+        """
+        sireId と sireNetkeibaId の齟齬を検出する。
+
+        sireNetkeibaId（none/空以外）で父馬を特定し、
+        その id が sireId と異なれば自動補正対象とする。
+        """
+        mismatches = []
+        if netkeiba_index is None:
+            netkeiba_index, _ = self._build_sire_lookup_indexes()
+
+        for filename in self._get_json_files():
+            filepath = os.path.join(self.pedigree_dir, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+            except Exception:
+                continue
+
+            for i, horse in enumerate(data.get('horses', [])):
+                sire_netkeiba_id = horse.get('sireNetkeibaId', '') or ''
+                if not sire_netkeiba_id or sire_netkeiba_id == SIRE_NETKEIBA_NONE:
+                    continue
+
+                current_sire_id = horse.get('sireId', '') or ''
+                # sireId 空は _detect_missing_sireid 側で扱う
+                if not current_sire_id:
+                    continue
+
+                unique_ids = self._unique_horses_by_netkeiba_id(
+                    netkeiba_index, sire_netkeiba_id)
+                if len(unique_ids) == 0:
+                    continue
+                if len(unique_ids) > 1:
+                    cand_desc = ', '.join(
+                        f"{c['filename']}:{c['id']}" for c in unique_ids[:3]
+                    )
+                    self.errors.append(format_summary_issue(
+                        filename,
+                        format_horse_label(
+                            horse.get('name', ''), horse.get('id', '')),
+                        "sireId齟齬要手動修正",
+                        f"nk={sire_netkeiba_id} 候補複数 / 現={current_sire_id} / {cand_desc}",
+                    ))
+                    continue
+
+                correct_sire_id = unique_ids[0]['id']
+                if current_sire_id == correct_sire_id:
+                    continue
+
+                mismatches.append({
+                    'filename': filename,
+                    'filepath': filepath,
+                    'horse_index': i,
+                    'horse_id': horse.get('id', ''),
+                    'horse_name': horse.get('name', ''),
+                    'sire_name': horse.get('sire', '') or '',
+                    'sire_netkeiba_id': sire_netkeiba_id,
+                    'old_sire_id': current_sire_id,
+                    'new_sire_id': correct_sire_id,
+                    'reason': (
+                        f"sireNetkeibaId={sire_netkeiba_id} "
+                        f"-> {unique_ids[0]['filename']}:{unique_ids[0]['name']}"
+                    ),
+                })
+
+        return mismatches
 
     def _detect_name_sanitization_issues(self):
         """馬名サニタイジングが必要な馬を検出"""
@@ -958,16 +1535,146 @@ class PedigreeJsonValidator:
                             })
                     else:
                         # 適切な母馬候補が見つからなかった場合、エラーとして通知
-                        self.errors.append(
-                            f"{filename}: damId整合性エラー - '{horse_name}' (ID: {horse_id}) のdamId '{dam_id}' は"
-                            f"同一牝系内に存在せず、母馬名 '{dam_name}' での探索でも候補が見つかりません")
+                        self.errors.append(format_summary_issue(
+                            filename,
+                            format_horse_label(horse_name, horse_id),
+                            "damId整合性エラー",
+                            f"damId={dam_id} / dam={dam_name}",
+                        ))
 
             except Exception:
                 continue
 
         return invalid_damid_fixable
 
-    def _display_duplicates(self, id_duplicates, name_duplicates, linkname_duplicates, metadata_mismatches, missing_damid, invalid_damid=None, missing_id=None, name_sanitization_issues=None):
+    def _get_race_results(self, horse: dict) -> List[dict]:
+        """競走成績リストを取得（表記ゆれを吸収）"""
+        race_results = (
+            horse.get('raceResults')
+            or horse.get('race-results')
+            or horse.get('race_results')
+            or []
+        )
+        return race_results if isinstance(race_results, list) else []
+
+    def _has_arab_race(self, race_results: List[dict]) -> bool:
+        """アラブ系競走への出走があるか"""
+        for race_result in race_results:
+            if not isinstance(race_result, dict):
+                continue
+            race_name = (
+                race_result.get('displayRace', '')
+                or race_result.get('race_name', '')
+                or race_result.get('race', '')
+                or ''
+            )
+            if breed_determination.is_arab_race(race_name):
+                return True
+        return False
+
+    def _find_mother_horse(self, data: dict, horse: dict) -> Optional[dict]:
+        """同一ファイル内から母馬を探索する"""
+        dam_id = horse.get('damId', '')
+        if dam_id:
+            for candidate in data.get('horses', []):
+                if candidate.get('id') == dam_id:
+                    return candidate
+
+        dam_name = horse.get('dam', '')
+        if dam_name:
+            return self._find_dam_in_file(data, dam_name)
+        return None
+
+    def _detect_breed_mismatches(self):
+        """
+        品種齟齬を検出する。
+
+        自動補正対象:
+        (1) breed=サラ かつアラブ系競走出走あり → アア
+
+        手動修正対象（self.errors に追加）:
+        (2) 牝祖/母馬がサラ以外、breed=サラ（出走有無を問わず自動補正しない）
+        """
+        breed_mismatches = []
+        json_files = self._get_json_files()
+
+        for filename in json_files:
+            filepath = os.path.join(self.pedigree_dir, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                horses = data.get('horses', [])
+                if not horses:
+                    continue
+
+                root_horse = horses[0]
+                root_breed = root_horse.get('breed')
+                modifications = []
+
+                for i, horse in enumerate(horses):
+                    if horse.get('breed') != 'サラ':
+                        continue
+
+                    horse_id = horse.get('id', '')
+                    horse_name = horse.get('name', '')
+                    race_results = self._get_race_results(horse)
+                    has_arab = self._has_arab_race(race_results)
+
+                    # (1) アラブ系競走出走 → アア（最優先・自動補正）
+                    if has_arab:
+                        modifications.append({
+                            'horse_index': i,
+                            'horse_id': horse_id,
+                            'horse_name': horse_name,
+                            'old_breed': 'サラ',
+                            'new_breed': 'アア',
+                            'reason': 'アラブ系競走出走',
+                        })
+                        continue
+
+                    mother = self._find_mother_horse(data, horse)
+                    mother_breed = mother.get('breed') if mother else None
+                    ancestor_non_sara = (
+                        (root_breed and root_breed != 'サラ')
+                        or (mother_breed and mother_breed != 'サラ')
+                    )
+                    if not ancestor_non_sara:
+                        continue
+
+                    # (2) 牝祖/母馬がサラ以外 → 要手動修正（自動補正しない）
+                    ancestor_desc = []
+                    if root_breed and root_breed != 'サラ':
+                        ancestor_desc.append(f"牝祖={root_breed}")
+                    if mother_breed and mother_breed != 'サラ':
+                        ancestor_desc.append(f"母馬={mother_breed}")
+                    ancestor_info = (
+                        f"（{', '.join(ancestor_desc)}）" if ancestor_desc else ''
+                    )
+                    race_info = (
+                        f"非アラブ出走{len(race_results)}件"
+                        if race_results else "出走情報なし"
+                    )
+                    self.errors.append(format_summary_issue(
+                        filename,
+                        format_horse_label(horse_name, horse_id),
+                        "品種要手動修正",
+                        f"breed=サラ / {race_info}{ancestor_info}",
+                    ))
+
+                if modifications:
+                    breed_mismatches.append({
+                        'filename': filename,
+                        'filepath': filepath,
+                        'modifications': modifications,
+                    })
+
+            except Exception:
+                continue
+
+        return breed_mismatches
+
+    def _display_duplicates(self, id_duplicates, name_duplicates, linkname_duplicates, metadata_mismatches, missing_damid, invalid_damid=None, missing_id=None, name_sanitization_issues=None, breed_mismatches=None, missing_sireid=None, sireid_mismatch=None):
         """重複の一覧を表示"""
         if invalid_damid is None:
             invalid_damid = []
@@ -975,6 +1682,12 @@ class PedigreeJsonValidator:
             missing_id = []
         if name_sanitization_issues is None:
             name_sanitization_issues = []
+        if breed_mismatches is None:
+            breed_mismatches = []
+        if missing_sireid is None:
+            missing_sireid = []
+        if sireid_mismatch is None:
+            sireid_mismatch = []
 
         print("\n" + "="*60)
         print("検出された重複・不一致:")
@@ -1058,6 +1771,32 @@ class PedigreeJsonValidator:
                     print(
                         f"    {mod['field']}: '{mod['old_value']}' -> '{mod['new_value']}' (馬: {mod['horse_name']})")
 
+        if breed_mismatches:
+            print("\n【品種齟齬】")
+            for item in breed_mismatches:
+                print(f"  {item['filename']}:")
+                for mod in item['modifications']:
+                    print(
+                        f"    {mod['horse_name']} (ID: {mod['horse_id']}): "
+                        f"'{mod['old_breed']}' -> '{mod['new_breed']}' ({mod['reason']})")
+
+        if missing_sireid:
+            print("\n【sireId未設定】")
+            for item in missing_sireid:
+                print(
+                    f"  {item['filename']}: {item['horse_name']} (ID: {item['horse_id']})")
+                print(
+                    f"    父馬名: '{item['sire_name']}' -> sireId: '{item['sire_id']}' ({item['reason']})")
+
+        if sireid_mismatch:
+            print("\n【sireId / sireNetkeibaId 齟齬】")
+            for item in sireid_mismatch:
+                print(
+                    f"  {item['filename']}: {item['horse_name']} (ID: {item['horse_id']})")
+                print(
+                    f"    sireId: '{item['old_sire_id']}' -> '{item['new_sire_id']}' "
+                    f"({item['reason']})")
+
     def _confirm_fixes(self):
         """修正の確認を求める"""
         print("\n上記の重複を自動補正しますか？ (Y/N): ", end="")
@@ -1068,10 +1807,16 @@ class PedigreeJsonValidator:
             print("\nキャンセルされました。")
             return False
 
-    def _create_backup(self, invalid_damid=None):
+    def _create_backup(self, invalid_damid=None, breed_mismatches=None, missing_sireid=None, sireid_mismatch=None):
         """バックアップを作成"""
         if invalid_damid is None:
             invalid_damid = []
+        if breed_mismatches is None:
+            breed_mismatches = []
+        if missing_sireid is None:
+            missing_sireid = []
+        if sireid_mismatch is None:
+            sireid_mismatch = []
         import shutil
         import datetime
 
@@ -1125,6 +1870,18 @@ class PedigreeJsonValidator:
             for item in missing_id:
                 affected_files.add(item['filename'])
 
+            # 品種齟齬のファイルもバックアップ対象に追加
+            for item in breed_mismatches:
+                affected_files.add(item['filename'])
+
+            # sireId未設定のファイルもバックアップ対象に追加
+            for item in missing_sireid:
+                affected_files.add(item['filename'])
+
+            # sireId齟齬のファイルもバックアップ対象に追加
+            for item in sireid_mismatch:
+                affected_files.add(item['filename'])
+
             # ファイルをコピー
             for filename in affected_files:
                 src = os.path.join(self.pedigree_dir, filename)
@@ -1166,8 +1923,8 @@ class PedigreeJsonValidator:
                             file_horse['id'] = new_id
                             break
 
-                    # damId参照を更新
-                    self._update_damid_references(data, old_id, new_id)
+                    # damId / sireId 参照を更新
+                    self._update_id_references(data, old_id, new_id)
 
                     # ファイルを保存
                     self._write_json_file(filepath, data)
@@ -1380,6 +2137,49 @@ class PedigreeJsonValidator:
                 self.errors.append(
                     f"ID欠損修正エラー {item['filename']}: {e}")
 
+    def _fix_missing_sireid(self, missing_sireid):
+        """sireId未設定の修正（sireNetkeibaIdまたは牡馬名一意一致）"""
+        for item in missing_sireid:
+            filepath = item['filepath']
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                horse_index = item['horse_index']
+                if 'horses' in data and len(data['horses']) > horse_index:
+                    data['horses'][horse_index]['sireId'] = item['sire_id']
+                    self.info.append(
+                        f"sireId設定: {item['horse_name']} -> sireId: '{item['sire_id']}' "
+                        f"({item['reason']}) ({item['filename']})")
+
+                self._write_json_file(filepath, data)
+
+            except Exception as e:
+                self.errors.append(
+                    f"sireId設定エラー {item['filename']}: {e}")
+
+    def _fix_sireid_netkeiba_mismatch(self, sireid_mismatch):
+        """sireNetkeibaId に合わせて sireId を追従修正する"""
+        for item in sireid_mismatch:
+            filepath = item['filepath']
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                horse_index = item['horse_index']
+                if 'horses' in data and len(data['horses']) > horse_index:
+                    data['horses'][horse_index]['sireId'] = item['new_sire_id']
+                    self.info.append(
+                        f"sireId追従: {item['horse_name']} "
+                        f"'{item['old_sire_id']}' -> '{item['new_sire_id']}' "
+                        f"({item['reason']}) ({item['filename']})")
+
+                self._write_json_file(filepath, data)
+
+            except Exception as e:
+                self.errors.append(
+                    f"sireId追従エラー {item['filename']}: {e}")
+
     def _fix_name_sanitization(self, name_sanitization_issues):
         """馬名サニタイジングの修正"""
         for item in name_sanitization_issues:
@@ -1403,17 +2203,73 @@ class PedigreeJsonValidator:
                 self.errors.append(
                     f"馬名サニタイジングエラー {item['filename']}: {e}")
 
-    def _update_damid_references(self, data: dict, old_id: str, new_id: str):
-        """damId参照を更新"""
-        updated_count = 0
+    def _fix_breed_mismatches(self, breed_mismatches):
+        """品種齟齬の自動修正（サラ→アア）"""
+        for item in breed_mismatches:
+            filepath = item['filepath']
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                for mod in item['modifications']:
+                    horse_index = mod['horse_index']
+                    new_breed = mod['new_breed']
+                    if 'horses' in data and len(data['horses']) > horse_index:
+                        data['horses'][horse_index]['breed'] = new_breed
+                        self.info.append(
+                            f"品種修正: {mod['horse_name']} (ID: {mod['horse_id']}) "
+                            f"'{mod['old_breed']}' -> '{new_breed}' "
+                            f"({mod['reason']}) ({item['filename']})")
+
+                self._write_json_file(filepath, data)
+
+            except Exception as e:
+                self.errors.append(
+                    f"品種修正エラー {item['filename']}: {e}")
+
+    def _update_id_references(self, data: dict, old_id: str, new_id: str):
+        """同一ファイル内の damId / sireId 参照を更新"""
+        damid_updated = 0
+        sireid_updated = 0
 
         for horse in data.get('horses', []):
             if horse.get('damId') == old_id:
                 horse['damId'] = new_id
-                updated_count += 1
+                damid_updated += 1
+            if horse.get('sireId') == old_id:
+                horse['sireId'] = new_id
+                sireid_updated += 1
 
-        if updated_count > 0:
-            self.info.append(f"  {updated_count} 個のdamId参照を更新しました")
+        if damid_updated > 0:
+            self.info.append(f"  {damid_updated} 個のdamId参照を更新しました")
+        if sireid_updated > 0:
+            self.info.append(f"  {sireid_updated} 個のsireId参照を更新しました")
+
+    def _print_summary_item(self, level: str, message: str):
+        """
+        サマリ1件を見やすく出力する。
+
+        統一形式 `{file}: {horse} | {action} | {detail}` は複数行に展開する。
+        """
+        if SUMMARY_SEP in message and ": " in message.split(SUMMARY_SEP, 1)[0]:
+            head, *rest = message.split(SUMMARY_SEP)
+            print(f"  [{level}] {head}")
+            labels = ("作業", "補足")
+            for i, part in enumerate(rest):
+                part = part.strip()
+                if not part:
+                    continue
+                label = labels[i] if i < len(labels) else "補足"
+                print(f"         {label}: {part}")
+            return
+
+        # 旧形式・短いメッセージはそのまま（長すぎる場合のみ折り返し）
+        prefix = f"  [{level}] "
+        width = 88
+        if len(prefix) + len(message) <= width:
+            print(f"{prefix}{message}")
+            return
+        print(prefix + message[: width - len(prefix) - 1] + "…")
 
     def _print_summary(self, result: Dict[str, List[str]]):
         """検証結果のサマリーを出力"""
@@ -1424,21 +2280,21 @@ class PedigreeJsonValidator:
         print(f"\n【エラー】 ({len(result['errors'])}件)")
         if result['errors']:
             for error in result['errors']:
-                print(f"  [ERROR] {error}")
+                self._print_summary_item("ERROR", error)
         else:
             print("  エラーはありません")
 
         print(f"\n【警告】 ({len(result['warnings'])}件)")
         if result['warnings']:
             for warning in result['warnings']:
-                print(f"  [WARNING] {warning}")
+                self._print_summary_item("WARNING", warning)
         else:
             print("  警告はありません")
 
         print(f"\n【情報】 ({len(result['info'])}件)")
         if result['info']:
             for info in result['info']:
-                print(f"  [INFO] {info}")
+                self._print_summary_item("INFO", info)
         else:
             print("  情報はありません")
 
@@ -1513,14 +2369,22 @@ def main():
     print("  - name重複: linkNameを設定 (例: アメーリア -> アメーリア(1998))")
     print("  - linkName重複: 生年付きlinkNameに変更")
     print("  - metadata.rootHorseId不一致: 実際の牝祖IDに修正")
-    print("  - damId参照の自動更新")
+    print("  - damId / sireId参照の自動更新（同一ファイル内のID変更に追従）")
     print("  - damId整合性: 牝系でたどれないdamIdを母馬名探索で修正")
     print("  - ID欠損: generate_horse_idでID生成、子のdamIdも更新")
+    print("  - sireId未設定: sireNetkeibaId一致、または traditional/sires 牡馬の名前一意一致で補完（末尾(GB)等は除去）")
+    print("  - sireId齟齬: sireNetkeibaIdで特定した父馬idへsireIdを追従")
     print("  - 馬名サニタイジング: 改行・記号*・前後空白の削除 (name, pedigreeName, formerName, formerPedigreeName, sire, dam)")
+    print("  - 品種齟齬: アラブ系競走出走のサラ→アア")
     print("  - 自動補正前にバックアップを作成")
     print("  - ユーザーの確認を求めてから実行")
     print("検知のみ（自動補正なし）:")
     print("  - netkeibaId重複: 同一netkeibaIdを持つ馬をエラー報告（手動編集が必要）")
+    print("  - 品種要手動修正: 牝祖/母馬がサラ以外なのにbreed=サラ")
+    print("  - sireId要手動修正: sireNetkeibaId/牡馬名検索で候補が0頭または複数頭（sire=不詳は対象外）")
+    print("  - 父馬名要確認: sireNetkeibaId=none かつ sire空（記入漏れか不詳かの判断）")
+    print("  - 牝祖4代要手動補完: 牝祖本人の none + 4代未完了（種牡馬単独保存しない）")
+    print("  - 父馬要手動補完: 非牝祖の none + sireあり（4代血統表・父馬未登録と同期）")
     print()
 
     validator = PedigreeJsonValidator()

@@ -24,6 +24,19 @@ export const sex: { [key in Sex]: string } = {
   gelding: 'セン',
 }
 
+/** 血統パス（s=父, d=母。例: ss=父父, sdds=父父母父） */
+export type PedigreePath = string
+
+/** 非在来種牡馬などの祖先埋め込みノード（独立馬レコードにはしない） */
+export type PedigreePathNode = {
+  name: string
+  foaled?: { year?: number; month?: number; day?: number }
+  color?: string
+  sex?: Sex
+  breed?: Breed
+  netkeibaId?: string
+}
+
 interface Horse {
   name?: string // 競走名 競走出走のない馬は血統名
   pedigreeName?: string // 血統名 書籍資料等から取得する
@@ -42,6 +55,17 @@ interface Horse {
   breeder?: string // 生産者
   sire: string // 父
   dam: string // 母
+  /** 父馬の内部 id（在来 JSON または pedigree-sires の subject） */
+  sireId?: string
+  /** 父馬の netkeibaId */
+  sireNetkeibaId?: string
+  /** 母馬の netkeibaId */
+  damNetkeibaId?: string
+  /**
+   * 祖先をパスキーで埋め込んだ辞書（主に非在来種牡馬の4代分）。
+   * 例: ancestryByPath['sdds'] = 父父母父
+   */
+  ancestryByPath?: Partial<Record<PedigreePath, PedigreePathNode>>
   children?: Horse[] // 産駒
   color?: string // 毛色
   hasArticle?: boolean
@@ -64,14 +88,17 @@ interface Horse {
   jbisId?: string // JBIS ID
   bogusId?: string // Bogus(血統表検索) 旧サイト ID（p.bogus.jp）
   newBogusId?: string // Bogus(血統表検索) 新サイト ID（pedigree.bogus.jp）
-  source?: string // 情報源 コメント代わりに使用
-
+  /** Pedigree Query (pedigreequery.com) の馬ID（URLパス） */
+  pedigreeQueryId?: string
+  /** All Breed Pedigree (allbreedpedigree.com) の馬ID（URLパス） */
+  allBreedPedigreeId?: string
+  source?: string // 出典・情報源
   // 牝祖用
   importedYear?: string // 輸入年
   importedBy?: string // 輸入者
   familyNumber?: string // 系統番号
   registration?: string // 馬匹血統登録書における登録番号
-  comments?: string // コメント
+  comment?: string // コメント（注記・補足）。JSONキーは comment（旧 comments は loader で吸収）
 }
 
 export type { Horse }
