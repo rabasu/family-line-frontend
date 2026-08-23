@@ -2,7 +2,7 @@
   "metadata": {
     "pedigreeName": "フロリースカツプ",
     "rootHorseId": "florries-cup",
-    "lastUpdated": "2026-08-15T05:00:58Z",
+    "lastUpdated": "2026-08-23T07:10:20.219Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
     "rootAncestrySource": "python_scraping_ped"
@@ -315,8 +315,8 @@
       "breed": "サラ",
       "sire": "インタグリオー(GB)",
       "dam": "フロリースカツプ",
-      "color": "",
-      "breeder": "",
+      "color": "黒鹿毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a01b7c4",
       "raceStats": {
         "total": {
@@ -325,7 +325,7 @@
         },
         "divisions": []
       },
-      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.437",
+      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.440",
       "damId": "florries-cup",
       "pedigreeName": "第二フロリースカツプ",
       "died": "1932.06 斃死",
@@ -344,10 +344,10 @@
       "breed": "サラ",
       "sire": "ルーヂゲーア(GB)",
       "dam": "第二フロリースカツプ",
-      "color": "",
-      "breeder": "",
+      "color": "黒鹿毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a0023f3",
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.437",
       "damId": "dai2-florries-cup",
       "pedigreeName": "フロリカルチユアー",
       "died": "1938年以降 転売不明",
@@ -366,8 +366,8 @@
       "breed": "サラ",
       "sire": "ロイヂユール(GB)",
       "dam": "フロリカルチユアー",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "大平市太郎（岩手県盛岡市上小路）",
       "netkeibaId": "000a002604",
       "raceStats": {
         "total": {
@@ -436,16 +436,14 @@
       "id": "nasunotake",
       "name": "ナスノタケ",
       "foaled": {
-        "year": 1946,
-        "month": 1,
-        "day": 1
+        "year": 1946
       },
       "sex": "male",
       "breed": "サラ",
       "sire": "マルタケ",
       "dam": "ナスノー",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "マルタケ牧場（北海道沙流郡門別村）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -491,6 +489,7 @@
           "racecourse": "京都",
           "race": "菊花賞",
           "grade": "national_big8",
+          "entry": "6",
           "result": "5",
           "distance": "芝3000",
           "displayRace": "菊花賞"
@@ -504,6 +503,7 @@
           "racecourse": "京都",
           "race": "京都記念",
           "grade": "national_grade",
+          "entry": "7",
           "result": "3",
           "distance": "芝3000",
           "displayRace": "京都記念(春)"
@@ -514,13 +514,13 @@
             "month": 5,
             "day": 7
           },
-          "racecourse": "OP",
+          "racecourse": "阪神",
           "race": "阪神記念",
-          "displayRace": "阪神記念〔OP〕",
-          "distance": null,
-          "grade": "local_old_grade",
-          "entry": null,
-          "favorite": null,
+          "displayRace": "阪神記念（春）",
+          "distance": "芝2600",
+          "grade": "national_grade",
+          "entry": "",
+          "favorite": "",
           "result": "1"
         },
         {
@@ -532,6 +532,7 @@
           "racecourse": "京都",
           "race": "天皇賞(春)",
           "grade": "national_big8",
+          "entry": "9",
           "result": "2",
           "distance": "芝3200",
           "displayRace": "天皇賞(春)"
@@ -539,15 +540,30 @@
         {
           "date": {
             "year": 1950,
+            "month": 10,
+            "day": 1
+          },
+          "racecourse": "阪神",
+          "race": "阪神記念（秋）",
+          "displayRace": "阪神記念（秋）",
+          "distance": "芝2600",
+          "grade": "national_grade",
+          "entry": "7",
+          "favorite": "",
+          "result": "3"
+        },
+        {
+          "date": {
+            "year": 1950,
             "month": 11,
             "day": 3
           },
-          "racecourse": null,
+          "racecourse": "東京",
           "race": "天皇賞（秋）",
           "displayRace": "天皇賞（秋）",
-          "distance": null,
+          "distance": "芝3200",
           "grade": "national_big8",
-          "entry": null,
+          "entry": "10",
           "favorite": null,
           "result": "7"
         },
@@ -557,24 +573,33 @@
             "month": 11,
             "day": 26
           },
-          "racecourse": null,
+          "racecourse": "阪神",
           "race": "朝日チャレンジカップ",
           "displayRace": "朝日チャレンジC",
-          "distance": null,
+          "distance": "芝2400",
           "grade": "national_grade",
-          "entry": null,
-          "favorite": null,
+          "entry": "9",
+          "favorite": "",
           "result": "5"
         }
       ],
       "source": "python_scraping",
       "englishName": "Nasunotake",
-      "owner": "前田",
+      "owner": "長峰常次郎",
       "jbisId": "0000000291",
       "bogusId": "41688",
       "damId": "nasunoo",
       "sireId": "marutake",
-      "sireNetkeibaId": "000a0008ad"
+      "sireNetkeibaId": "000a0008ad",
+      "retired": "1951.03.22 地方競馬",
+      "trainer": "伊藤勝吉",
+      "jockey": "清田十一",
+      "prizeMoney": {
+        "total": "3,387,600円",
+        "central": "3,387,600円"
+      },
+      "summary": "泡と消えた「父子4代・帝室御賞典馬」の夢",
+      "details": "\n父**マルタケ**の馬主が運営するマルタケ牧場で1946年に生まれる。1949年2回小倉で初出走。菊花賞こそ6頭立て5着に沈んだものの、年間で8勝を挙げる活躍を見せた。翌1950年には京都記念（春）で3着。阪神では特ハンと阪神記念（春）で1着。1段飛ばしで着順を上げて重賞勝利をつかみ取った。\n\n余勢を駆って天皇賞（春）へ向かうナスノタケにはある大記録が懸かっていた。曾祖父**ラシカツター**、祖父**ハクリユウ**、父**マルタケ**による父子3代帝室御賞典（天皇賞）制覇、それを「父子4代」に更新する挑戦である。ラシカツターとハクリユウが勝ったのは統一前の「帝室御賞典」ではあるものの、それを除いても**マルタケ**との「史上初の父子制覇」となる。3000mの京都記念（春）での好走、上がり調子、血統背景、そして往年のファンの夢が託されたのだろうか、ナスノタケは1番人気に推された。\n\n当日の馬場は稍重。勝利したのは9頭立て8番人気の**オーエンス**で、ナスノタケは3馬身離された2着に終わった。再び挑んだ天皇賞（秋）では前目につけるも直線失速し7着に敗れた。翌年には障害に転向し4戦1勝、その春に地方競馬へ転出。ここにナスノタケの夢は潰えた。その後の行方は分かっていない。\n\nなお、なぜか資料上の性別が不安定で『サラブレッド血統書 第3巻』や『国営競馬統計 昭和28年』などでは牝馬と表記されている。\n\n現在、天皇賞の第1回は日本競馬会による統一後の1937年「帝室御賞典（秋）」とされているため、マルタケの勝利が「父子3代天皇賞勝利」と称されることはない。それを初めて成し遂げたのは50年後の**メジロマックイーン**であり、奇しくも**オーエンス**と同じ**オーグメント**の牝系だった。\n// ここはマルタケのとこでいいかも"
     },
     {
       "id": "king-flora",
@@ -588,8 +613,8 @@
       "breed": "サラ",
       "sire": "コイワヰ",
       "dam": "第二フロリースカツプ",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -930,8 +955,8 @@
       "breed": "サラ",
       "sire": "インフオーメーシヨン(GB)",
       "dam": "フロリースカツプ",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a01b605",
       "raceStats": {
         "total": {},
@@ -994,8 +1019,8 @@
       "breed": "サラ",
       "sire": "ヒラデエナモールド",
       "dam": "第三フロリースカツプ",
-      "color": "",
-      "breeder": "",
+      "color": "黒鹿毛",
+      "breeder": "前川牧場（北海道函館市旭岡）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -1173,7 +1198,7 @@
           "result": "1"
         }
       ],
-      "source": "tsx_conversion",
+      "source": "tsx_conversion, 『競馬と馬券の實際知識 昭和13年度版』p.441",
       "prizeMoney": {
         "total": "30,100円"
       },
@@ -1182,9 +1207,7 @@
       "owner": "前川太郎兵衛（カノウ）",
       "formerPedigreeName": "フロリス",
       "details": "\n1933年に誕生。生産は函館の前川牧場となっているが、これは函館の湯ノ川牧場を1933年9月に譲り受けたもの。湯ノ川牧場の前身・平出農場を創設した平出喜三郎はマークイスの両親の所有者でもあるため、事実上湯ノ川牧場の産といってもいいだろう。\n\n1936年の春に4歳でデビュー。本格化したのは翌年からで、まず春に帝室御賞典（東京・春）を勝利。日本競馬協会による統一前最後の帝室御賞典で、母第三フロリースカツプ（競走名**フロリスカツプ**）との母子制覇を達成した。秋には目黒記念（秋）を勝ったほか、特ハン2勝・優勝1回という好成績を残した。翌1938年は初戦の中山特ハンで2着となるも、そこから怪我で休養に入る。しかしその怪我が癒えることはなく、最終的に1938年いっぱいで引退を余儀なくされた。引退後は乗馬になったと記録されている。\n\nまた、上記の休養期間中にあたる1937年の6月～8月にオリンピックに向けた馬術候補選手の強化合宿が中山競馬場で行われ、その候補馬として本馬と**カブト**が日本国際馬術協会に譲渡されたという。これがマークイスの引退事由だったのかははっきりしないが、その夏以降マークイスが1度も出走しなかった事実とは矛盾しない。あるいは記録上の抹消理由「乗用」がそれを指すのかもしれない。",
-      "citation": [
-        "『競馬と馬券の實際知識 昭和13年度版』p.441"
-      ],
+      "citation": ["『競馬と馬券の實際知識 昭和13年度版』p.441"],
       "retired": "1939.02 乗用",
       "jockey": "石毛彦次郎",
       "sireNetkeibaId": "000a000885",
@@ -1202,10 +1225,10 @@
       "breed": "サラ",
       "sire": "インタグリオー(GB)",
       "dam": "フロリースカツプ",
-      "color": "",
-      "breeder": "",
+      "color": "黒鹿毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a002371",
-      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.442",
+      "source": "tsx_conversion, 『サラブレッド血統書 第1巻』p.442, 『サラブレッド系種牡馬名簿 第1巻』p.33",
       "damId": "florries-cup",
       "pedigreeName": "第四フロリースカツプ",
       "died": "1939.10.06. 斃死",
@@ -1224,8 +1247,8 @@
       "breed": "サラ",
       "sire": "ガロン(GB)",
       "dam": "第四フロリースカツプ",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a002370",
       "raceStats": {
         "total": {
@@ -1456,8 +1479,8 @@
       "breed": "サラ",
       "sire": "ラシカツター(GB)",
       "dam": "フロリスト",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a00243c",
       "raceStats": {
         "total": {
@@ -1466,7 +1489,7 @@
         },
         "divisions": []
       },
-      "source": "tsx_conversion, 血統書データベース, 『競馬必勝の基礎 種馬と競走馬篇』",
+      "source": "tsx_conversion, 血統書データベース, 『競馬必勝の基礎 種馬と競走馬篇』, 凪的電脳賽馬",
       "damId": "florist",
       "pedigreeName": "第貮フロリスト",
       "died": "1945年以降転売不明",
@@ -1485,8 +1508,8 @@
       "breed": "サラ",
       "sire": "シアンモア(GB)",
       "dam": "第貮フロリスト",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a0026af",
       "raceStats": {
         "total": {
@@ -1522,7 +1545,7 @@
           }
         ]
       },
-      "source": "tsx_conversion, 血統書データベース, 『母馬別競走成績書』p.558",
+      "source": "tsx_conversion, 血統書データベース, 『母馬別競走成績書』p.558,『登録馬名簿 昭和16年』p.62",
       "prizeMoney": {
         "total": "10,770円"
       },
@@ -1544,8 +1567,8 @@
       "breed": "サラ",
       "sire": "ラシデヤー",
       "dam": "フロリスト",
-      "color": "",
-      "breeder": "",
+      "color": "栗毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a0008b1",
       "raceStats": {
         "total": {
@@ -1791,8 +1814,8 @@
       "breed": "サラ",
       "sire": "シアンモア(GB)",
       "dam": "フロリスト",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -2167,7 +2190,7 @@
       "sire": "シアンモア(GB)",
       "dam": "フロリスト",
       "color": "鹿毛",
-      "breeder": "岩手県",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a00251f",
       "raceStats": {
         "total": {
@@ -2410,8 +2433,8 @@
       "breed": "サラ",
       "sire": "シアンモア(GB)",
       "dam": "フロリスト",
-      "color": "",
-      "breeder": "",
+      "color": "鹿毛",
+      "breeder": "小岩井農場（岩手県岩手郡雫石村）",
       "netkeibaId": "000a000874",
       "raceStats": {
         "total": {
@@ -47814,7 +47837,7 @@
       "sire": "プリメロ(GB)",
       "dam": "第弐スターカップ",
       "color": "鹿毛",
-      "breeder": "JPN",
+      "breeder": "",
       "netkeibaId": "",
       "raceStats": {
         "total": {
@@ -48179,7 +48202,7 @@
       "sire": "ロツクフオード",
       "dam": "第五フロリスト",
       "color": "栗毛",
-      "breeder": "JPN",
+      "breeder": "",
       "netkeibaId": "000a0008f2",
       "raceStats": {
         "total": {
