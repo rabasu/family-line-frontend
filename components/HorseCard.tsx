@@ -56,7 +56,7 @@ const filterRecords = (records: RaceRecord[], number: number) => {
   // 着順→グレード→日付 の条件でソートし、上位{number}レースを抽出
   const all_grade_races: RaceRecord[] = records
     .filter((record) => grades[record.grade].rank <= 6)
-    .filter((record) => !Number.isNaN(record.result))
+    .filter((record) => !Number.isNaN(Number(record.result)))
     .sort((a, b) => {
       if (Number(a.result) != Number(b.result)) {
         return Number(a.result) - Number(b.result)
