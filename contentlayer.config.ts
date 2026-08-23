@@ -1,5 +1,5 @@
 import { defineDocumentType, ComputedFields, makeSource } from 'contentlayer2/source-files'
-import { writeFileSync, readFileSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync } from 'fs'
 import readingTime from 'reading-time'
 import { slug } from 'github-slugger'
 import path from 'path'
@@ -53,11 +53,11 @@ const computedFields: ComputedFields = {
 }
 
 /**
- * Count the occurrences of all tags across blog posts and write to json file
+ * Count the occurrences of all tags across posts and write to json file
  */
-function createTagCount(allBlogs) {
+function createTagCount(posts) {
   const tagCount: Record<string, number> = {}
-  allBlogs.forEach((file) => {
+  posts.forEach((file) => {
     if (file.tags && (!isProduction || file.draft !== true)) {
       file.tags.forEach((tag) => {
         const formattedTag = slug(tag)
@@ -72,47 +72,12 @@ function createTagCount(allBlogs) {
   writeFileSync('./app/tag-data.json', JSON.stringify(tagCount))
 }
 
-function createSearchIndex(allBlogs) {
+function createSearchIndex(posts) {
   if (siteMetadata?.search?.provider === 'kbar' && siteMetadata.search.kbarConfig.searchDocumentsPath) {
-    writeFileSync(`public/${siteMetadata.search.kbarConfig.searchDocumentsPath}`, JSON.stringify(allCoreContent(sortPosts(allBlogs))))
+    writeFileSync(`public/${siteMetadata.search.kbarConfig.searchDocumentsPath}`, JSON.stringify(allCoreContent(sortPosts(posts))))
     console.log('Local search index generated...')
   }
 }
-
-export const Blog = defineDocumentType(() => ({
-  name: 'Blog',
-  filePathPattern: 'blog/**/*.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    date: { type: 'date', required: true },
-    tags: { type: 'list', of: { type: 'string' }, default: [] },
-    lastmod: { type: 'date' },
-    draft: { type: 'boolean' },
-    summary: { type: 'string' },
-    images: { type: 'json' },
-    authors: { type: 'list', of: { type: 'string' } },
-    layout: { type: 'string' },
-    bibliography: { type: 'string' },
-    canonicalUrl: { type: 'string' },
-  },
-  computedFields: {
-    ...computedFields,
-    structuredData: {
-      type: 'json',
-      resolve: (doc) => ({
-        '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: doc.title,
-        datePublished: doc.date,
-        dateModified: doc.lastmod || doc.date,
-        description: doc.summary,
-        image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
-        url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
-      }),
-    },
-  },
-}))
 
 export const Authors = defineDocumentType(() => ({
   name: 'Authors',
@@ -209,8 +174,8 @@ export const Horse = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'data',
-  contentDirExclude: ['pedigree', 'glossary'],
-  documentTypes: [Blog, Authors, Family, Horse],
+  contentDirExclude: ['pedigree', 'glossary', 'blog'],
+  documentTypes: [Authors, Family, Horse],
   mdx: {
     cwd: process.cwd(),
     remarkPlugins: [remarkExtractFrontmatter, remarkGfm, remarkCodeTitles, remarkMath, remarkImgToJsx, remarkBreaks],
@@ -235,9 +200,13 @@ export default makeSource({
   onSuccess: async (_importData) => {
     // Node.js 22+ では import assert 構文がサポートされないため、
     // importData() を使わずに JSON ファイルを直接読み込む
-    const blogIndexPath = path.join(root, '.contentlayer/generated/Blog/_index.json')
-    const allBlogs = JSON.parse(readFileSync(blogIndexPath, 'utf-8'))
-    createTagCount(allBlogs)
-    createSearchIndex(allBlogs)
+    // 該当する mdx が無い場合 contentlayer は _index.json を生成しない
+    const readIndex = (type: string) => {
+      const indexPath = path.join(root, `.contentlayer/generated/${type}/_index.json`)
+      return existsSync(indexPath) ? JSON.parse(readFileSync(indexPath, 'utf-8')) : []
+    }
+    const posts = [...readIndex('Family'), ...readIndex('Horse')]
+    createTagCount(posts)
+    createSearchIndex(posts)
   },
 })

@@ -1,12 +1,11 @@
 import { tv } from 'tailwind-variants'
 import HorseCard from './HorseCard'
 import type { Horse } from '@/types/Horse'
-import pedigreeList from '@/data/pedigree/index'
-import { compareDate, toDate } from 'app/lib/utils'
+import { loadFamilyRoot } from 'app/lib/traditional-family-loader'
 import { Foaled } from '@/types/Foaled'
 
 const FamilyTree = ({ name }): JSX.Element => {
-  const horse = pedigreeList.get(name)
+  const horse = loadFamilyRoot(name)
   if (!horse) return <div>pedigreeが存在しません; ${name}</div>
 
   return (

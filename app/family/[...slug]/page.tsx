@@ -71,13 +71,7 @@ export async function generateMetadata({ params }: { params: { slug: string[] } 
 }
 
 export const generateStaticParams = async () => {
-  // 静的生成を無効化（メモリ不足を回避）
-  // 代わりに各ページはリクエスト時に動的に生成される
-  return []
-
-  // 元のコード（メモリ不足のため無効化）
-  // const paths = allFamilies.map((p) => ({ slug: p.slug.split('/') }))
-  // return paths
+  return allFamilies.map((p) => ({ slug: p.slug.split('/') }))
 }
 
 export default async function Page({ params }: { params: { slug: string[] } }) {

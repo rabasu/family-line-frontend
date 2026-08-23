@@ -1,46 +1,18 @@
-'use client'
-
-import { findHorseByIdOnDemand } from '@/data/pedigree/index'
 import { sex } from '@/types/Horse'
-import { useEffect, useState } from 'react'
-import type { Horse } from '@/types/Horse'
+import { findHorseById } from 'app/lib/traditional-family-loader'
 
 const ProfileTable = ({ horseId }: { horseId: string }) => {
-  const [horse, setHorse] = useState<Horse | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+  const found = findHorseById(horseId)
 
-  useEffect(() => {
-    const loadHorse = async () => {
-      try {
-        setLoading(true)
-        const horseData = await findHorseByIdOnDemand(horseId)
-        setHorse(horseData)
-      } catch (err) {
-        console.error('ProfileTable: エラーが発生しました:', err)
-        setError('馬データの取得に失敗しました')
-      } finally {
-        setLoading(false)
-      }
-    }
-    loadHorse()
-  }, [horseId])
-
-  if (loading) {
+  if (!found) {
     return (
       <div className="w-2/5 overflow-x-auto">
-        <p className="text-gray-500">読み込み中...</p>
+        <p className="text-red-500">エラー: 馬が見つかりませんでした</p>
       </div>
     )
   }
 
-  if (error || !horse) {
-    return (
-      <div className="w-2/5 overflow-x-auto">
-        <p className="text-red-500">エラー: {error || '馬が見つかりませんでした'}</p>
-      </div>
-    )
-  }
+  const horse = found.horse
 
   // 存在する属性のみを表に出力するための行データ
   const rows: Array<{ label: string; value: string }> = []
@@ -76,8 +48,8 @@ const ProfileTable = ({ horseId }: { horseId: string }) => {
     <div className="w-2/5 overflow-x-auto">
       <table className="table-fixed">
         <tbody>
-          {rows.map((row, index) => (
-            <tr key={index}>
+          {rows.map((row) => (
+            <tr key={row.label}>
               <th>{row.label}</th>
               <td>{row.value}</td>
             </tr>

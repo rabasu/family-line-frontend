@@ -1,10 +1,6 @@
-'use client'
-
 import RaceResult from '@/types/RaceResult'
 import { grades } from '@/types/Grade'
-import { findHorseByIdOnDemand } from '@/data/pedigree/index'
-import { useEffect, useState } from 'react'
-import type { Horse } from '@/types/Horse'
+import { findHorseById } from 'app/lib/traditional-family-loader'
 
 interface RaceResultsTableProps {
   results?: RaceResult[]
@@ -52,48 +48,20 @@ const formatDate = (date: Date) => {
 }
 
 const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTableProps) => {
-  const [results, setResults] = useState<RaceResult[] | undefined>(propResults)
-  const [displayName, setDisplayName] = useState<string | undefined>()
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  let results = propResults
+  let displayName: string | undefined
 
-  useEffect(() => {
-    if (horseId && !propResults) {
-      const loadHorse = async () => {
-        try {
-          setLoading(true)
-          const horse = await findHorseByIdOnDemand(horseId)
-          if (horse) {
-            setResults(horse.raceResults)
-            setDisplayName(horse.name || horse.pedigreeName)
-          } else {
-            setError('馬が見つかりませんでした')
-          }
-        } catch (err) {
-          console.error('RaceResultsTable: エラーが発生しました:', err)
-          setError('戦績データの取得に失敗しました')
-        } finally {
-          setLoading(false)
-        }
-      }
-      loadHorse()
+  if (!results && horseId) {
+    const found = findHorseById(horseId)
+    if (!found) {
+      return (
+        <div className="my-4">
+          <p className="text-red-500">エラー: 馬が見つかりませんでした</p>
+        </div>
+      )
     }
-  }, [horseId, propResults])
-
-  if (loading) {
-    return (
-      <div className="my-4">
-        <p className="text-gray-500">読み込み中...</p>
-      </div>
-    )
-  }
-
-  if (error) {
-    return (
-      <div className="my-4">
-        <p className="text-red-500">エラー: {error}</p>
-      </div>
-    )
+    results = found.horse.raceResults
+    displayName = found.horse.name || found.horse.pedigreeName
   }
 
   if (!results || results.length === 0) {
@@ -103,6 +71,9 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
       </div>
     )
   }
+
+  const hasRacecourse = results.some((r) => r.racecourse)
+  const hasDistance = results.some((r) => r.distance)
 
   // 日付順にソート（新しい順）
   const sortedResults = [...results].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -118,8 +89,8 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
               <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">レース名</th>
               <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">格付け</th>
               <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">着順</th>
-              {results.some((r) => r.racecourse) && <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">競馬場</th>}
-              {results.some((r) => r.distance) && <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">距離</th>}
+              {hasRacecourse && <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">競馬場</th>}
+              {hasDistance && <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">距離</th>}
             </tr>
           </thead>
           <tbody>
@@ -133,8 +104,8 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
                   </td>
                   <td className={`border border-gray-200 px-3 py-2 text-center text-sm ${getGradeStyle(grade.rank)}`}>{grade.name}</td>
                   <td className={`border border-gray-200 px-3 py-2 text-center text-sm ${getResultStyle(result.result)}`}>{result.result}着</td>
-                  {results.some((r) => r.racecourse) && <td className="border border-gray-200 px-3 py-2 text-sm">{result.racecourse || '-'}</td>}
-                  {results.some((r) => r.distance) && <td className="border border-gray-200 px-3 py-2 text-center text-sm">{result.distance ? `${result.distance}m` : '-'}</td>}
+                  {hasRacecourse && <td className="border border-gray-200 px-3 py-2 text-sm">{result.racecourse || '-'}</td>}
+                  {hasDistance && <td className="border border-gray-200 px-3 py-2 text-center text-sm">{result.distance ? `${result.distance}m` : '-'}</td>}
                 </tr>
               )
             })}

@@ -1,21 +1,18 @@
 import ListLayout from '@/layouts/ListLayoutWithTags'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
-import { allBlogs } from 'contentlayer/generated'
+import { allFamilies } from 'contentlayer/generated'
 
 const POSTS_PER_PAGE = 5
 
-export const generateStaticParams = async () => {
-  // 静的生成を無効化（メモリ不足を回避）
-  return []
+export const dynamicParams = false
 
-  // 元のコード
-  // const totalPages = Math.ceil(allBlogs.length / POSTS_PER_PAGE)
-  // const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
-  // return paths
+export const generateStaticParams = async () => {
+  const totalPages = Math.ceil(allFamilies.length / POSTS_PER_PAGE)
+  return Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
 }
 
 export default function Page({ params }: { params: { page: string } }) {
-  const posts = allCoreContent(sortPosts(allBlogs))
+  const posts = allCoreContent(sortPosts(allFamilies))
   const pageNumber = parseInt(params.page as string)
   const initialDisplayPosts = posts.slice(POSTS_PER_PAGE * (pageNumber - 1), POSTS_PER_PAGE * pageNumber)
   const pagination = {
@@ -23,5 +20,5 @@ export default function Page({ params }: { params: { page: string } }) {
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
   }
 
-  return <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title="All Posts" />
+  return <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title="牝系一覧" />
 }

@@ -2,10 +2,16 @@ import { slug } from 'github-slugger'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayoutWithTags'
-import { allBlogs } from 'contentlayer/generated'
+import { allFamilies, allHorses } from 'contentlayer/generated'
 import tagData from 'app/tag-data.json'
 import { genPageMetadata } from 'app/seo'
 import { Metadata } from 'next'
+
+export const dynamicParams = false
+
+function taggedPosts() {
+  return [...allFamilies, ...allHorses]
+}
 
 export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {
   const tag = decodeURI(params.tag)
@@ -14,30 +20,19 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
     description: `${siteMetadata.title} ${tag} tagged content`,
     alternates: {
       canonical: './',
-      types: {
-        'application/rss+xml': `${siteMetadata.siteUrl}/tags/${tag}/feed.xml`,
-      },
     },
   })
 }
 
 export const generateStaticParams = async () => {
-  // 静的生成を無効化（メモリ不足を回避）
-  return []
-
-  // 元のコード
-  // const tagCounts = tagData as Record<string, number>
-  // const tagKeys = Object.keys(tagCounts)
-  // const paths = tagKeys.map((tag) => ({
-  //   tag: encodeURI(tag),
-  // }))
-  // return paths
+  const tagCounts = tagData as Record<string, number>
+  return Object.keys(tagCounts).map((tag) => ({ tag: encodeURI(tag) }))
 }
 
 export default function TagPage({ params }: { params: { tag: string } }) {
   const tag = decodeURI(params.tag)
-  // Capitalize first letter and convert space to dash
-  const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
-  const filteredPosts = allCoreContent(sortPosts(allBlogs.filter((post) => post.tags && post.tags.map((t) => slug(t)).includes(tag))))
-  return <ListLayout posts={filteredPosts} title={title} />
+  const filteredPosts = allCoreContent(
+    sortPosts(taggedPosts().filter((post) => post.tags && post.tags.map((t) => slug(t)).includes(tag)))
+  )
+  return <ListLayout posts={filteredPosts} title={tag} />
 }

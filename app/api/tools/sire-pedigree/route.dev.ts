@@ -148,7 +148,7 @@ async function loadQueueItem(childId: string) {
 }
 
 async function loadRootHorse(childId: string, filepathHint?: string) {
-  let fp = filepathHint ? resolveRepoPath(filepathHint) : null
+  const fp = filepathHint ? resolveRepoPath(filepathHint) : null
   if (fp) {
     try {
       const data = JSON.parse(await fs.readFile(fp, 'utf-8'))

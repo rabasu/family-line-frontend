@@ -1,0 +1,293 @@
+import 'css/prism.css'
+
+import type { ReactNode } from 'react'
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
+import { allHorses } from 'contentlayer/generated'
+import { MDXLayoutRenderer } from 'pliny/mdx-components'
+import { components } from '@/components/MDXComponents'
+import Comments from '@/components/Comments'
+import FiveGenPedigreeTable, { hasKnownAncestor } from '@/components/FiveGenPedigreeTable'
+import HorseLink from '@/components/HorseLink'
+import HorseMarkdown from '@/components/HorseMarkdown'
+import RaceResultsTable from '@/components/RaceResultsTable'
+import siteMetadata from '@/data/siteMetadata'
+import type { Horse } from '@/types/Horse'
+import { sex as sexLabel } from '@/types/Horse'
+import { buildFiveGenPedigree } from '@/lib/five-gen-pedigree'
+import { damLineOf, findHorseById, getHorsePageIndex } from '@/lib/traditional-family-loader'
+
+// 静的エクスポートでは generateStaticParams が返した id 以外は 404 にする
+export const dynamicParams = false
+
+export const generateStaticParams = async () => {
+  const index = getHorsePageIndex()
+  // 情報の薄い馬にもページは用意する（robots で index/noindex を出し分ける）。
+  // 牝系ごとにまとめて生成すると、牝系JSONのキャッシュがページ間で効く。
+  return Object.entries(index.horses)
+    .sort(([, a], [, b]) => a.family.localeCompare(b.family))
+    .map(([id]) => ({ id }))
+}
+
+function displayNameOf(horse: Horse): string {
+  return horse.name || horse.pedigreeName || horse.id
+}
+
+/** Foaled は年のみなら文字列、月日まで判れば Date を保持している */
+function formatFoaled(horse: Horse): string | null {
+  const raw = horse.foaled?.value
+  if (!raw) return null
+  if (raw instanceof Date) {
+    return `${raw.getFullYear()}年${raw.getMonth() + 1}月${raw.getDate()}日`
+  }
+  return /^\d{4}$/.test(raw) ? `${raw}年` : raw
+}
+
+function foaledYear(horse: Horse): string | null {
+  const year = horse.foaled?.year
+  return year && /^\d{4}$/.test(year) ? year : null
+}
+
+/** 「1985年生 牝 鹿毛」のような一行サマリ */
+function subtitleOf(horse: Horse): string {
+  const parts: string[] = []
+  const year = foaledYear(horse)
+  if (year) parts.push(`${year}年生`)
+  parts.push(sexLabel[horse.sex])
+  if (horse.color) parts.push(horse.color)
+  return parts.join(' ')
+}
+
+function articleFor(horseId: string) {
+  return allHorses.find((post) => post.slug === horseId && !post.draft)
+}
+
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const found = findHorseById(params.id)
+  if (!found) return {}
+
+  const { horse, family, entry } = found
+  const name = displayNameOf(horse)
+  const article = articleFor(params.id)
+  const description =
+    article?.summary ||
+    horse.summary ||
+    `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。父${horse.sire || '不詳'}、母${horse.dam || '不詳'}。`
+
+  return {
+    title: name,
+    description,
+    // 情報の薄い馬はクロールバジェットを食うだけなので索引から外し、リンクだけ辿らせる。
+    // index 側はルートレイアウトの robots 設定を継がせたいのでキー自体を置かない。
+    ...(entry.tier === 'noindex' ? { robots: { index: false, follow: true } } : {}),
+    alternates: { canonical: `${siteMetadata.siteUrl}/horse/${params.id}` },
+    openGraph: {
+      title: name,
+      description,
+      siteName: siteMetadata.title,
+      locale: 'ja_JP',
+      type: 'article',
+      url: `${siteMetadata.siteUrl}/horse/${params.id}`,
+      images: [siteMetadata.socialBanner],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: name,
+      description,
+      images: [siteMetadata.socialBanner],
+    },
+  }
+}
+
+function ProfileRows({ horse, familyName }: { horse: Horse; familyName: string }) {
+  const rows: Array<{ label: string; value: ReactNode }> = []
+
+  if (horse.pedigreeName && horse.pedigreeName !== horse.name) {
+    rows.push({ label: '血統名', value: horse.pedigreeName })
+  }
+  if (horse.englishName) rows.push({ label: '欧字表記', value: horse.englishName })
+  if (horse.formerName) rows.push({ label: '旧名', value: horse.formerName })
+  if (horse.localName) rows.push({ label: '地方名', value: horse.localName })
+  rows.push({ label: '性別', value: sexLabel[horse.sex] })
+  if (horse.color) rows.push({ label: '毛色', value: horse.color })
+  const foaled = formatFoaled(horse)
+  if (foaled) rows.push({ label: '生年月日', value: foaled })
+  if (horse.sire) rows.push({ label: '父', value: <HorseLink name={horse.sire} /> })
+  if (horse.dam) rows.push({ label: '母', value: <HorseLink name={horse.dam} /> })
+  if (horse.breeder) rows.push({ label: '生産者', value: horse.breeder })
+  if (horse.foaledAt) rows.push({ label: '生産地', value: horse.foaledAt })
+  if (horse.importedYear) rows.push({ label: '輸入年', value: horse.importedYear })
+  if (horse.importedBy) rows.push({ label: '輸入者', value: horse.importedBy })
+  if (horse.owner) rows.push({ label: '馬主', value: horse.owner })
+  if (horse.trainer) rows.push({ label: '調教師', value: horse.trainer })
+  if (horse.familyNumber) rows.push({ label: 'ファミリーナンバー', value: horse.familyNumber })
+  if (horse.registration) rows.push({ label: '登録番号', value: horse.registration })
+  rows.push({ label: '牝系', value: familyName })
+
+  const stats = horse.raceStats?.total
+  if (stats && (stats.runs != null || stats.wins != null)) {
+    rows.push({ label: '通算成績', value: `${stats.runs ?? '?'}戦${stats.wins ?? '?'}勝` })
+  }
+
+  return (
+    <table className="w-full border-collapse text-sm">
+      <tbody>
+        {rows.map((row) => (
+          <tr key={row.label} className="border-b border-stone-200">
+            <th className="w-36 bg-stone-50 px-3 py-1.5 text-left font-medium whitespace-nowrap text-stone-600">
+              {row.label}
+            </th>
+            <td className="px-3 py-1.5">{row.value}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
+
+function HorseRef({ horse, currentId }: { horse: Horse; currentId: string }) {
+  const label = displayNameOf(horse)
+  const born = foaledYear(horse)
+  const year = born ? `（${born}）` : ''
+  if (horse.id === currentId) {
+    return (
+      <span className="font-bold text-stone-900">
+        {label}
+        {year}
+      </span>
+    )
+  }
+  return (
+    <Link href={`/horse/${horse.id}`} className="text-sky-700 hover:underline">
+      {label}
+      {year}
+    </Link>
+  )
+}
+
+export default async function Page({ params }: { params: { id: string } }) {
+  const found = findHorseById(params.id)
+  if (!found) return notFound()
+
+  const { horse, family, entry } = found
+  const name = displayNameOf(horse)
+  const damLine = damLineOf(family, horse.id)
+  const offspring = horse.children || []
+  const pedigree = await buildFiveGenPedigree(horse.id)
+  const article = articleFor(horse.id)
+  const details = typeof horse.details === 'string' ? horse.details.trim() : ''
+  const pageUrl = `${siteMetadata.siteUrl}/horse/${horse.id}`
+  const description =
+    article?.summary ||
+    horse.summary ||
+    `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。`
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: name,
+    description,
+    url: pageUrl,
+    image: siteMetadata.socialBanner,
+  }
+
+  return (
+    // data-horse-detail はモーダルが本文だけを抜き出すための目印。
+    // 静的エクスポートでは API が使えないため、モーダルはこのページの HTML を取得して描画する。
+    <div className="divide-y divide-stone-200" data-horse-detail={horse.id}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <header className="space-y-2 pt-6 pb-6">
+        <nav className="text-sm text-stone-500">
+          <Link href="/family" className="hover:underline">
+            牝系一覧
+          </Link>
+          <span className="mx-1.5">/</span>
+          <Link href={`/family/${family.rootHorseId}`} className="hover:underline">
+            {family.pedigreeName}
+          </Link>
+        </nav>
+        <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-stone-900 sm:text-4xl">
+          {name}
+        </h1>
+        <p className="text-stone-500">{subtitleOf(horse)}</p>
+      </header>
+
+      <section className="py-6">
+        <h2 className="mb-3 text-xl font-bold text-stone-900">基本情報</h2>
+        <ProfileRows horse={horse} familyName={family.pedigreeName} />
+      </section>
+
+      {pedigree && hasKnownAncestor(pedigree.ancestryByPath) && (
+        <section className="py-6">
+          <h2 className="mb-3 text-xl font-bold text-stone-900">5代血統表</h2>
+          <FiveGenPedigreeTable ancestryByPath={pedigree.ancestryByPath} />
+        </section>
+      )}
+
+      {horse.raceResults && horse.raceResults.length > 0 && (
+        <section className="py-6">
+          <h2 className="mb-3 text-xl font-bold text-stone-900">競走成績</h2>
+          <RaceResultsTable results={horse.raceResults} />
+        </section>
+      )}
+
+      {damLine.length > 1 && (
+        <section className="py-6">
+          <h2 className="mb-3 text-xl font-bold text-stone-900">牝系内の位置</h2>
+          <ol className="space-y-1 text-sm">
+            {damLine.map((ancestor, depth) => (
+              <li key={ancestor.id} style={{ paddingLeft: `${depth * 1.25}rem` }}>
+                <span className="mr-1.5 text-stone-400">{depth === 0 ? '牝祖' : `${depth}代下`}</span>
+                <HorseRef horse={ancestor} currentId={horse.id} />
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      {offspring.length > 0 && (
+        <section className="py-6">
+          <h2 className="mb-3 text-xl font-bold text-stone-900">産駒（{offspring.length}頭）</h2>
+          <ul className="grid grid-cols-1 gap-x-6 gap-y-1 text-sm sm:grid-cols-2 lg:grid-cols-3">
+            {offspring.map((child) => (
+              <li key={child.id} className="flex items-baseline gap-2">
+                <HorseRef horse={child} currentId={horse.id} />
+                <span className="text-xs text-stone-500">
+                  {sexLabel[child.sex]}
+                  {child.sire ? ` / 父${child.sire}` : ''}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {(details || article) && (
+        <section className="prose dark:prose-invert max-w-none py-6">
+          <h2 className="text-xl font-bold text-stone-900">解説</h2>
+          {details && <HorseMarkdown markdown={details} />}
+          {article && <MDXLayoutRenderer code={article.body.code} components={components} toc={article.toc} />}
+        </section>
+      )}
+
+      {horse.citation && horse.citation.length > 0 && (
+        <section className="py-6">
+          <h2 className="mb-3 text-xl font-bold text-stone-900">参考文献</h2>
+          <ul className="list-inside list-disc space-y-1 text-sm text-stone-600">
+            {horse.citation.map((source) => (
+              <li key={source}>{source}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* モーダルは本文を生 HTML として差し込むだけなので、この節は取り除かれる。
+          薄いページまでスレッドを量産しないよう、index 対象の馬だけ置く。 */}
+      {entry.tier === 'index' && siteMetadata.comments?.provider && (
+        <section className="py-6" data-horse-comments>
+          <Comments slug={horse.id} />
+        </section>
+      )}
+    </div>
+  )
+}

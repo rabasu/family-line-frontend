@@ -147,6 +147,9 @@ data/pedigree/horse-page-index.json
 
 
 # backup
+# 自動補正前スナップショットの退避先。app/ 配下に置くと Next.js の
+# ルート走査と dev watcher の対象になるため、リポジトリ直下に集約している。
+.backups/
 app/pedigree/backup
 app/pedigree/problematic_backup
 app/pedigree-traditional/backup
@@ -185,3 +188,4 @@ data/pedigree/traditional-family-index.json
 data/pedigree/pedigree-metadata.json
 tsconfig.tsbuildinfo
 data/pedigree/horse-search-index.json
+data/pedigree/horse-page-index.json

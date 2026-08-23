@@ -1,39 +1,20 @@
-'use client'
-
-import NameList from '@/data/pedigree/HorseList'
-import type { HorseLinkData } from '@/types/HorseLinkData'
 import React from 'react'
 import NextLink from 'next/link'
-import { useEffect, useState } from 'react'
+import { findHorseLinkByName } from 'app/lib/traditional-family-loader'
 
 interface LinkProps {
   name: string
 }
 
 const HorseLink: React.FC<LinkProps> = ({ name }) => {
-  const [currentPath, setCurrentPath] = useState<string | null>(null)
-
-  useEffect(() => {
-    // クライアントサイドでのみ実行される
-    if (typeof window !== 'undefined') {
-      setCurrentPath(window.location.pathname) // パスをセット
-    }
-  }, [])
-  // 軽量マップから馬リンク情報を取得
-  const map = NameList.get()
-  const result: HorseLinkData | undefined = map.get(name)
+  const result = findHorseLinkByName(name)
 
   if (!result) {
     return <span className="font-medium">{name}</span>
   }
 
-  // 現在のページと一致する場合、ページ内リンクを生成
-  if (currentPath && currentPath.includes(result.family)) {
-    return <a href={`#${result.link}`}>{result.name}</a>
-  }
-
-  // 他ページへのリンクを生成
-  return <NextLink href={`/family/${result.family}#${result.link}`}>{result.name}</NextLink>
+  // 個別ページが恒久URL。牝系内の位置は馬ページ側のパンくずから辿れる。
+  return <NextLink href={`/horse/${result.link}`}>{result.name}</NextLink>
 }
 
 export default HorseLink

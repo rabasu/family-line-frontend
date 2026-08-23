@@ -159,7 +159,10 @@ async function loadTraditionalProvenSires(): Promise<SireCatalogEntry[]> {
 }
 
 let catalogCache: { at: number; entries: SireCatalogEntry[] } | null = null
-const CACHE_MS = 30_000
+// 開発時はエディタツールが JSON を書き換えるので短命にする。
+// 本番ビルド中はデータが不変なうえ、再読み込みすると数千ページ分の生成で
+// 全ファイル走査を何度も繰り返すことになるため期限を設けない。
+const CACHE_MS = process.env.NODE_ENV === 'production' ? Infinity : 30_000
 
 export async function loadSireCatalog(
   force = false

@@ -5,18 +5,10 @@ import { Grade, GradeCode, grades } from '@/types/Grade'
 import { AggregatedRaceStats } from '@/types/AggregatedRaceStats'
 import RaceRecord from '@/types/RaceResult'
 import { yearOf, compareDate } from 'app/lib/utils'
-import ReactMarkdown from 'react-markdown'
-import remarkBreaks from 'remark-breaks'
 import HorseLink from './HorseLink'
+import HorseMarkdown from './HorseMarkdown'
 import HorseNameWithPedigree from './HorseNameWithPedigree'
-import remarkGfm from 'remark-gfm'
-import rehypeRaw from 'rehype-raw'
-import Link from 'next/link'
-import { allHorses } from 'contentlayer/generated'
 import { PrizeMoney } from '@/types/PrizeMoney'
-
-// 個別ページが存在する馬のIDセット（ビルド時に生成）
-const horseArticleSlugs = new Set(allHorses.map((horse) => horse.slug))
 
 const summary = tv({
   base: 'px-5 py-1',
@@ -78,31 +70,10 @@ const filterRecords = (records: RaceRecord[], number: number) => {
   }
 }
 
-// 詳細ページリンクアイコン
-const DetailLinkIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4">
-    <path
-      fillRule="evenodd"
-      d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
-      clipRule="evenodd"
-    />
-    <path
-      fillRule="evenodd"
-      d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
-      clipRule="evenodd"
-    />
-  </svg>
-)
-
 const BaseInfo = (horse: Horse): JSX.Element => {
   return (
     <div className="flex flex-nowrap items-baseline gap-x-1 whitespace-nowrap">
       <HorseNameWithPedigree horseId={horse.id} displayName={displayHorseName(horse)} />
-      {horseArticleSlugs.has(horse.id) && (
-        <Link href={`/horse/${horse.id}`} className="ml-1 text-primary-500 hover:text-primary-600" title="詳細ページを見る">
-          <DetailLinkIcon />
-        </Link>
-      )}
       <span className="text-sm">
         （{horse.foaled.year}） by <HorseLink name={horse.sire} />
       </span>
@@ -165,27 +136,7 @@ const HorseDetails = (horse: Horse) => {
             {summarized && <RecordsSummary records={summarized} />}
           </summary>
           <div className="collapse-content rounded-none">
-            {typeof horse.details === 'string' && (
-              <ReactMarkdown
-                remarkPlugins={[remarkBreaks, remarkGfm]}
-                rehypePlugins={[rehypeRaw]}
-                components={{
-                  p: ({ children }) => (
-                    <p className="indent-4" style={{ marginBottom: '1em' }}>
-                      {children}
-                    </p>
-                  ),
-                  strong: ({ node, ...props }) => {
-                    if (typeof props.children === 'string' && props.children.length > 0) {
-                      return <HorseLink name={props.children} />
-                    }
-                    return <strong {...props} />
-                  },
-                }}
-              >
-                {horse.details}
-              </ReactMarkdown>
-            )}
+            {typeof horse.details === 'string' && <HorseMarkdown markdown={horse.details} />}
           </div>
         </details>
       </div>

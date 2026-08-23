@@ -57,3 +57,31 @@ input:-webkit-autofill:focus {
 .pwid {
   font-feature-settings: "pwid";
 }
+/*
+ * 5代血統表は1ページに62セルあり、Tailwind のユーティリティを直接並べると
+ * HTML と RSC ペイロードの両方に同じクラス文字列が62回入って肥大する。
+ * 8,550ページ分に効くのでクラスに畳んでおく。
+ */
+.pedi-cell {
+  @apply border border-stone-300 align-middle min-w-[7.5rem] max-w-[11rem];
+}
+
+.pedi-sire {
+  @apply bg-sky-50;
+}
+
+.pedi-dam {
+  @apply bg-rose-50;
+}
+
+.pedi-name {
+  @apply text-xs leading-tight font-medium text-stone-800;
+}
+
+.pedi-name-unknown {
+  @apply text-xs leading-tight text-stone-400;
+}
+
+.pedi-meta {
+  @apply text-[10px] leading-tight text-stone-500;
+}

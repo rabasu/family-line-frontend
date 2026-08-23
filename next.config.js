@@ -1,3 +1,9 @@
+// withContentlayer は next build / next dev の中で contentlayer を動かすため、
+// 先に作業ディレクトリの環境変数を正規化しておく必要がある。
+const { normalizeCwdEnv } = require('./scripts/lib/normalize-cwd-env')
+
+normalizeCwdEnv()
+
 const { withContentlayer } = require('next-contentlayer2')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -54,6 +60,12 @@ const securityHeaders = [
   },
 ]
 
+// 在来牝系データを編集するローカル専用ツール（/tools/* と /api/tools/*）は
+// ファイル書き込みを伴うため静的エクスポートできない。
+// ファイル名を route.dev.ts / page.dev.tsx とし、開発時だけルートとして認識させる。
+const devOnlyExtensions = ['dev.ts', 'dev.tsx']
+const productionExtensions = ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
@@ -61,11 +73,15 @@ module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
-    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+    // Cloudflare へは out/ をそのまま配信する
+    output: process.env.NODE_ENV === 'development' ? undefined : 'export',
+    pageExtensions: process.env.NODE_ENV === 'development' ? [...devOnlyExtensions, ...productionExtensions] : productionExtensions,
     eslint: {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
     images: {
+      // 静的エクスポートでは Next の画像最適化サーバーが存在しない
+      unoptimized: true,
       remotePatterns: [
         {
           protocol: 'https',
@@ -73,14 +89,19 @@ module.exports = () => {
         },
       ],
     },
-    async headers() {
-      return [
-        {
-          source: '/(.*)',
-          headers: securityHeaders,
-        },
-      ]
-    },
+    // 静的エクスポートでは headers() が非サポート。本番の配信ヘッダは public/_headers。
+    ...(process.env.NODE_ENV === 'development'
+      ? {
+          async headers() {
+            return [
+              {
+                source: '/(.*)',
+                headers: securityHeaders,
+              },
+            ]
+          },
+        }
+      : {}),
     webpack: (config, options) => {
       const { IgnorePlugin } = require('webpack')
 

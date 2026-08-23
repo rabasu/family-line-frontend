@@ -6,7 +6,8 @@ const siteMetadata = {
   description: '戦前から日本に根付く競走馬の牝系をまとめています。',
   language: 'ja-jp',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  // sitemap / canonical / OG の基準。公開前に実ドメインを NEXT_PUBLIC_SITE_URL へ入れる。
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',

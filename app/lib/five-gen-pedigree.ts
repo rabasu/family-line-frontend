@@ -12,9 +12,29 @@ import type { FiveGenPedigreeResponse } from '@/types/FiveGenPedigree'
 import { allAncestryPaths, sexFromPath } from '@/lib/sire-pedigree-paths'
 import { findCatalogEntryById } from '@/lib/sire-catalog'
 import { findTraditionalHorseById } from '@/lib/traditional-horse-lookup'
+import { getHorsePageIndex } from '@/lib/traditional-family-loader'
 
 const FOUR_GEN_DEPTH = 4
 const FOUR_GEN_PATHS = allAncestryPaths(FOUR_GEN_DEPTH)
+const TRADITIONAL_DIR = path.join(process.cwd(), 'app', 'pedigree-traditional')
+
+/**
+ * 牝系JSONは1ファイルが最大数MBあるため、常駐させるのは数件までにする。
+ * /horse/[id] の generateStaticParams を牝系ごとにまとめているのでヒット率は高い。
+ */
+const TRAD_FILE_CACHE_LIMIT = 4
+/** 種牡馬は1頭1ファイルで小さいので多めに保持してよい */
+const SIRE_CACHE_LIMIT = 4000
+
+function rememberInLru<K, V>(cache: Map<K, V>, key: K, value: V, limit: number) {
+  cache.delete(key)
+  cache.set(key, value)
+  while (cache.size > limit) {
+    const oldest = cache.keys().next().value
+    if (oldest === undefined) break
+    cache.delete(oldest)
+  }
+}
 
 export type FourGen = {
   subject: PedigreePathNode
@@ -139,9 +159,13 @@ function fourGenFromHorse(horse: RawHorse, fallbackSex: Sex): FourGen {
   }
 }
 
+// パース済みファイルは呼び出しをまたいで共有する。
+// 静的エクスポートでは同じ牝系の馬を連続して生成するため、これがないと
+// 1ページごとに数MBのJSONを読み直すことになる。
+const sharedTradFileByAbs = new Map<string, TradFile>()
+const sharedSireHorseById = new Map<string, RawHorse | null>()
+
 class PedigreeAssembler {
-  private sireFileById = new Map<string, RawHorse | null>()
-  private tradFileByAbs = new Map<string, TradFile>()
   private tradHorseById = new Map<string, RawHorse | null>()
   private fourGenCache = new Map<string, FourGen | null>()
   private visiting = new Set<string>()
@@ -233,49 +257,72 @@ class PedigreeAssembler {
   }
 
   private async loadSireHorse(id: string): Promise<RawHorse | null> {
-    if (this.sireFileById.has(id)) return this.sireFileById.get(id) ?? null
+    if (sharedSireHorseById.has(id)) return sharedSireHorseById.get(id) ?? null
     const entry = await findCatalogEntryById(id)
     if (!entry || entry.store !== 'sire') {
-      this.sireFileById.set(id, null)
+      rememberInLru(sharedSireHorseById, id, null, SIRE_CACHE_LIMIT)
       return null
     }
     try {
       const abs = path.join(process.cwd(), entry.filepath)
       const data = JSON.parse(await fs.readFile(abs, 'utf-8')) as SireFile
       const horse = data?.horse || null
-      this.sireFileById.set(id, horse)
+      rememberInLru(sharedSireHorseById, id, horse, SIRE_CACHE_LIMIT)
       return horse
     } catch {
-      this.sireFileById.set(id, null)
+      rememberInLru(sharedSireHorseById, id, null, SIRE_CACHE_LIMIT)
+      return null
+    }
+  }
+
+  /**
+   * 馬 id から所属する牝系JSONの絶対パスを求める。
+   * まず horse-page-index を引き、無ければ全ファイル走査にフォールバックする。
+   */
+  private async resolveTraditionalFile(id: string): Promise<string | null> {
+    const entry = getHorsePageIndex().horses[id]
+    if (entry) return path.join(TRADITIONAL_DIR, `${entry.file}.json`)
+
+    const hit = await findTraditionalHorseById(id)
+    return hit ? path.join(process.cwd(), hit.filepath) : null
+  }
+
+  private async readTraditionalFile(abs: string): Promise<TradFile | null> {
+    const cached = sharedTradFileByAbs.get(abs)
+    if (cached) {
+      rememberInLru(sharedTradFileByAbs, abs, cached, TRAD_FILE_CACHE_LIMIT)
+      return cached
+    }
+    try {
+      const file = JSON.parse(await fs.readFile(abs, 'utf-8')) as TradFile
+      rememberInLru(sharedTradFileByAbs, abs, file, TRAD_FILE_CACHE_LIMIT)
+      return file
+    } catch {
       return null
     }
   }
 
   private async loadTraditionalHorse(id: string): Promise<RawHorse | null> {
     if (this.tradHorseById.has(id)) return this.tradHorseById.get(id) ?? null
-    const hit = await findTraditionalHorseById(id)
-    if (!hit) {
+
+    const abs = await this.resolveTraditionalFile(id)
+    if (!abs) {
       this.tradHorseById.set(id, null)
       return null
     }
-    const abs = path.join(process.cwd(), hit.filepath)
-    let file = this.tradFileByAbs.get(abs)
+
+    const file = await this.readTraditionalFile(abs)
     if (!file) {
-      try {
-        file = JSON.parse(await fs.readFile(abs, 'utf-8')) as TradFile
-        this.tradFileByAbs.set(abs, file)
-      } catch {
-        this.tradHorseById.set(id, null)
-        return null
-      }
+      this.tradHorseById.set(id, null)
+      return null
     }
+
     for (const horse of file.horses || []) {
       const hid = (horse.id || '').trim()
       if (hid && !this.tradHorseById.has(hid)) this.tradHorseById.set(hid, horse)
     }
-    const found = this.tradHorseById.get(id) ?? null
-    if (!this.tradHorseById.has(id)) this.tradHorseById.set(id, found)
-    return found
+    if (!this.tradHorseById.has(id)) this.tradHorseById.set(id, null)
+    return this.tradHorseById.get(id) ?? null
   }
 }
 

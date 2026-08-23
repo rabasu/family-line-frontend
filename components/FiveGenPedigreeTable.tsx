@@ -13,19 +13,27 @@ function cellMeta(node: PedigreePathNode | undefined): string {
   return parts.join(' ')
 }
 
+// 血統が判らない祖先に使われる表記。'【血統不明】' は牝系不明の馬をまとめる仮の牝祖
+const UNKNOWN_NAMES = new Set(['不詳', '不明', '【血統不明】'])
+
+function isUnknownName(name: string | undefined): boolean {
+  return !name || UNKNOWN_NAMES.has(name)
+}
+
 function Cell({ node }: { node: PedigreePathNode | undefined }) {
   const name = node?.name?.trim()
-  const unknown = !name || name === '不詳'
+  const unknown = isUnknownName(name)
   return (
     <div className="px-1.5 py-0.5">
-      <div className={`text-xs leading-tight ${unknown ? 'text-stone-400' : 'font-medium text-stone-800'}`}>
-        {name || '—'}
-      </div>
-      {!unknown && cellMeta(node) && (
-        <div className="text-[10px] leading-tight text-stone-500">{cellMeta(node)}</div>
-      )}
+      <div className={unknown ? 'pedi-name-unknown' : 'pedi-name'}>{name || '—'}</div>
+      {!unknown && cellMeta(node) && <div className="pedi-meta">{cellMeta(node)}</div>}
     </div>
   )
+}
+
+/** 祖先が1頭も判っていない血統表は出す意味がない */
+export function hasKnownAncestor(ancestryByPath: Partial<Record<string, PedigreePathNode>>): boolean {
+  return Object.values(ancestryByPath).some((node) => !isUnknownName(node?.name?.trim()))
 }
 
 type Props = {
@@ -54,9 +62,7 @@ export default function FiveGenPedigreeTable({ ancestryByPath }: Props) {
                   <td
                     key={path}
                     rowSpan={rowspanForPath(path, FIVE_GEN_DEPTH)}
-                    className={`border border-stone-300 align-middle min-w-[7.5rem] max-w-[11rem] ${
-                      sexFromPath(path) === 'female' ? 'bg-rose-50' : 'bg-sky-50'
-                    }`}
+                    className={`pedi-cell ${sexFromPath(path) === 'female' ? 'pedi-dam' : 'pedi-sire'}`}
                   >
                     <Cell node={ancestryByPath[path]} />
                   </td>

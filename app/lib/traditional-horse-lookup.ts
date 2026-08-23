@@ -7,7 +7,10 @@ import { stripTrailingCountryParen } from '@/lib/sire-manual-missing'
 import { findCatalogEntryById, searchSireCatalog } from '@/lib/sire-catalog'
 
 const TRAD_DIR = path.join(process.cwd(), 'app', 'pedigree-traditional')
-const CACHE_MS = 30_000
+// 開発時はエディタツールが JSON を書き換えるので短命にする。
+// 本番ビルド中はデータが不変なうえ、再読み込みすると数千ページ分の生成で
+// 305 ファイルの全走査を何度も繰り返すことになるため期限を設けない。
+const CACHE_MS = process.env.NODE_ENV === 'production' ? Infinity : 30_000
 
 export type TradHorseHit = {
   id: string
@@ -263,6 +266,11 @@ export type TraditionalSireRef = {
   netkeibaId?: string
 }
 
+/** JSON 上の raceStats のうち、上書き時に引き継ぐ部分だけを表した型 */
+type RaceStatsShape = {
+  total?: { runs?: number | null; wins?: number | null }
+}
+
 export function invalidateTraditionalHorseCache() {
   cache = null
 }
@@ -321,13 +329,11 @@ export function applyOptionalHorseFields(
   assignIfPresent(target, 'allBreedPedigreeId', horse.allBreedPedigreeId)
   assignIfPresent(target, 'source', horse.source)
   if (horse.raceStatsRuns != null || horse.raceStatsWins != null) {
-    const prev = (target.raceStats as
-      | { total?: { runs?: number | null; wins?: number | null } }
-      | undefined) || { total: {}, divisions: [] }
+    const prevTotal = (target.raceStats as RaceStatsShape | undefined)?.total
     target.raceStats = {
       total: {
-        runs: horse.raceStatsRuns ?? prev.total?.runs ?? null,
-        wins: horse.raceStatsWins ?? prev.total?.wins ?? null,
+        runs: horse.raceStatsRuns ?? prevTotal?.runs ?? null,
+        wins: horse.raceStatsWins ?? prevTotal?.wins ?? null,
       },
       divisions: Array.isArray(
         (target.raceStats as { divisions?: unknown })?.divisions
@@ -385,13 +391,11 @@ export function applyEditableHorseFields(
     assignOrDelete(target, key, horse[key])
   }
   if (horse.raceStatsRuns != null || horse.raceStatsWins != null) {
-    const prev = (target.raceStats as
-      | { total?: { runs?: number | null; wins?: number | null } }
-      | undefined) || { total: {}, divisions: [] }
+    const prevTotal = (target.raceStats as RaceStatsShape | undefined)?.total
     target.raceStats = {
       total: {
-        runs: horse.raceStatsRuns ?? prev.total?.runs ?? null,
-        wins: horse.raceStatsWins ?? prev.total?.wins ?? null,
+        runs: horse.raceStatsRuns ?? prevTotal?.runs ?? null,
+        wins: horse.raceStatsWins ?? prevTotal?.wins ?? null,
       },
       divisions: Array.isArray(
         (target.raceStats as { divisions?: unknown })?.divisions

@@ -62,6 +62,11 @@ from get_pedigree_data import (  # noqa: E402
 )
 from breed_determination import breed_determination  # noqa: E402
 
+# 自動補正前バックアップの出力先。
+# app/ 配下に置くと Next.js のルート走査と dev watcher の対象になり、
+# ビルド時のメモリ消費とファイルロックの原因になるため app/ の外へ出している。
+BACKUP_ROOT = _PROJECT_ROOT / ".backups"
+
 # 馬名サニタイジングの対象カラム（name, pedigree_name, former_name, former_pedigree_name, sire, dam）
 HORSE_NAME_COLUMNS = ['name', 'pedigreeName',
                       'formerName', 'formerPedigreeName', 'sire', 'dam']
@@ -1821,7 +1826,9 @@ class PedigreeJsonValidator:
         import datetime
 
         # バックアップディレクトリを作成
-        backup_dir = os.path.join(self.pedigree_dir, 'backup')
+        backup_dir = os.path.join(
+            str(BACKUP_ROOT), os.path.basename(
+                os.path.normpath(self.pedigree_dir)) + '-backup')
         timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
         backup_subdir = os.path.join(
             backup_dir, f'before_auto_fix_{timestamp}')
