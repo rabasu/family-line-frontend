@@ -1,6 +1,6 @@
 /**
  * data/family 配下の MDX frontmatter で draft: true の牝系 slug を収集する。
- * slug は contentlayer と同様に family/ 配下の相対パス（拡張子なし）。
+ * slug は family/ 配下の相対パス（拡張子なし）。
  * 在来牝系 JSON の rootHorseId / traditional-family-index の slug と一致する想定。
  */
 

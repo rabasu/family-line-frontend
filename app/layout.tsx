@@ -1,9 +1,7 @@
 import 'css/tailwind.css'
-import 'pliny/search/algolia.css'
 
 import { Noto_Sans_JP, Space_Grotesk } from 'next/font/google'
-import { Analytics, AnalyticsConfig } from 'pliny/analytics'
-import { SearchProvider, SearchConfig } from 'pliny/search'
+import Script from 'next/script'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
@@ -39,7 +37,7 @@ export const metadata: Metadata = {
     url: './',
     siteName: siteMetadata.title,
     images: [siteMetadata.socialBanner],
-    locale: 'en_US',
+    locale: 'ja_JP',
     type: 'website',
   },
   alternates: {
@@ -66,6 +64,12 @@ export const metadata: Metadata = {
   },
 }
 
+function UmamiAnalytics() {
+  const websiteId = siteMetadata.analytics?.umamiAnalytics?.umamiWebsiteId
+  if (!websiteId) return null
+  return <Script src="https://analytics.umami.is/script.js" data-website-id={websiteId} strategy="afterInteractive" />
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang={siteMetadata.language} className={`${space_grotesk.variable} ${noto_sans_jp.variable} scroll-smooth bg-white dark:bg-gray-950`} suppressHydrationWarning>
@@ -80,13 +84,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
-          <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
+          <UmamiAnalytics />
           <SectionContainer>
             <div className="flex min-h-screen flex-col justify-between font-sans">
-              <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-                <Header />
-                <main className="mb-auto">{children}</main>
-              </SearchProvider>
+              <Header />
+              <main className="mb-auto">{children}</main>
               <Footer />
             </div>
           </SectionContainer>

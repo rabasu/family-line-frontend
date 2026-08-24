@@ -6,9 +6,8 @@
  * 静的エクスポートで 8,594 頭分のページを生成するとこれがメモリを食い潰すため、
  * fs による遅延読み込みと件数上限つきキャッシュに置き換えている。
  *
- * すべて同期 API なのは、MDX 内で使う <FamilyTree> や <ProfileTable> が
- * pliny の MDXLayoutRenderer 配下で同期レンダリングされるため。
- * 静的エクスポートではこれらはビルド時にしか動かないので I/O をブロックしても問題ない。
+ * すべて同期 API なのは、FamilyTree / ProfileTable がサーバーコンポーネントとして
+ * ビルド時に描画されるため。静的エクスポートでは I/O をブロックしても問題ない。
  */
 import fs from 'fs'
 import path from 'path'

@@ -1,23 +1,47 @@
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs'
+import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync } from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { slug } from 'github-slugger'
-import { escape } from 'pliny/utils/htmlEscaper.js'
+import matter from 'gray-matter'
 import siteMetadata from '../data/siteMetadata.js'
-import { sortPosts } from 'pliny/utils/contentlayer.js'
 
-// Node.js 22+ では import assert 構文がサポートされないため、
-// JSON ファイルを fs で直接読み込む
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const root = path.join(__dirname, '..')
 
-const tagData = JSON.parse(readFileSync(path.join(root, 'app/tag-data.json'), 'utf-8'))
+function escape(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
 
-// 該当する mdx が無い場合 contentlayer は _index.json を生成しない
-const readIndex = (type) => {
-  const indexPath = path.join(root, `.contentlayer/generated/${type}/_index.json`)
-  return existsSync(indexPath) ? JSON.parse(readFileSync(indexPath, 'utf-8')) : []
+function walkMarkdown(dir, files = []) {
+  if (!existsSync(dir)) return files
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const fullPath = path.join(dir, entry.name)
+    if (entry.isDirectory()) walkMarkdown(fullPath, files)
+    else if (entry.isFile() && /\.(mdx|md)$/.test(entry.name)) files.push(fullPath)
+  }
+  return files
+}
+
+function loadFamilyPosts() {
+  const dir = path.join(root, 'data', 'family')
+  return walkMarkdown(dir)
+    .map((filePath) => {
+      const { data } = matter(readFileSync(filePath, 'utf8'))
+      const rel = path.relative(dir, filePath).replace(/\\/g, '/').replace(/\.(mdx|md)$/, '')
+      return {
+        path: `family/${rel}`,
+        title: data.title || rel,
+        summary: data.summary || '',
+        date: data.date,
+        draft: data.draft === true,
+      }
+    })
+    .filter((post) => !post.draft && post.date)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 const generateRssItem = (config, post) => `
@@ -25,10 +49,9 @@ const generateRssItem = (config, post) => `
     <guid>${config.siteUrl}/${post.path}</guid>
     <title>${escape(post.title)}</title>
     <link>${config.siteUrl}/${post.path}</link>
-    ${post.summary && `<description>${escape(post.summary)}</description>`}
+    ${post.summary ? `<description>${escape(post.summary)}</description>` : ''}
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-    <author>${config.email} (${config.author})</author>
-    ${post.tags && post.tags.map((t) => `<category>${t}</category>`).join('')}
+    <author>${config.author}</author>
   </item>
 `
 
@@ -39,8 +62,6 @@ const generateRss = (config, posts, page = 'feed.xml') => `
       <link>${config.siteUrl}</link>
       <description>${escape(config.description)}</description>
       <language>${config.language}</language>
-      <managingEditor>${config.email} (${config.author})</managingEditor>
-      <webMaster>${config.email} (${config.author})</webMaster>
       <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
       <atom:link href="${config.siteUrl}/${page}" rel="self" type="application/rss+xml"/>
       ${posts.map((post) => generateRssItem(config, post)).join('')}
@@ -48,23 +69,14 @@ const generateRss = (config, posts, page = 'feed.xml') => `
   </rss>
 `
 
-async function generateRSS(config, allPosts, page = 'feed.xml') {
-  const publishPosts = allPosts.filter((post) => post.draft !== true)
-  if (publishPosts.length === 0) return
-
-  writeFileSync(`./public/${page}`, generateRss(config, sortPosts(publishPosts)))
-
-  for (const tag of Object.keys(tagData)) {
-    const filteredPosts = publishPosts.filter((post) => (post.tags || []).map((t) => slug(t)).includes(tag))
-    if (filteredPosts.length === 0) continue
-    const rssPath = path.join('public', 'tags', tag)
-    mkdirSync(rssPath, { recursive: true })
-    writeFileSync(path.join(rssPath, page), generateRss(config, sortPosts(filteredPosts), `tags/${tag}/${page}`))
-  }
+async function generateRSS(config, posts) {
+  if (posts.length === 0) return
+  mkdirSync('./public', { recursive: true })
+  writeFileSync('./public/feed.xml', generateRss(config, posts))
 }
 
 const rss = () => {
-  generateRSS(siteMetadata, [...readIndex('Family'), ...readIndex('Horse')])
+  generateRSS(siteMetadata, loadFamilyPosts())
   console.log('RSS feed generated...')
 }
 export default rss

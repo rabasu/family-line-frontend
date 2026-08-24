@@ -1,12 +1,7 @@
-import 'css/prism.css'
-
 import type { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { allHorses } from 'contentlayer/generated'
-import { MDXLayoutRenderer } from 'pliny/mdx-components'
-import { components } from '@/components/MDXComponents'
 import Comments from '@/components/Comments'
 import FiveGenPedigreeTable, { hasKnownAncestor } from '@/components/FiveGenPedigreeTable'
 import HorseLink from '@/components/HorseLink'
@@ -16,6 +11,7 @@ import siteMetadata from '@/data/siteMetadata'
 import type { Horse } from '@/types/Horse'
 import { sex as sexLabel } from '@/types/Horse'
 import { buildFiveGenPedigree } from '@/lib/five-gen-pedigree'
+import { loadHorseArticle } from '@/lib/horse-article'
 import { damLineOf, findHorseById, getHorsePageIndex } from '@/lib/traditional-family-loader'
 
 // 静的エクスポートでは generateStaticParams が返した id 以外は 404 にする
@@ -60,7 +56,7 @@ function subtitleOf(horse: Horse): string {
 }
 
 function articleFor(horseId: string) {
-  return allHorses.find((post) => post.slug === horseId && !post.draft)
+  return loadHorseArticle(horseId)
 }
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
@@ -198,7 +194,7 @@ export default async function Page({ params }: { params: { id: string } }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="space-y-2 pt-6 pb-6">
         <nav className="text-sm text-stone-500">
-          <Link href="/family" className="hover:underline">
+          <Link href="/" className="hover:underline">
             牝系一覧
           </Link>
           <span className="mx-1.5">/</span>
@@ -266,7 +262,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         <section className="prose dark:prose-invert max-w-none py-6">
           <h2 className="text-xl font-bold text-stone-900">解説</h2>
           {details && <HorseMarkdown markdown={details} />}
-          {article && <MDXLayoutRenderer code={article.body.code} components={components} toc={article.toc} />}
+          {article && <HorseMarkdown markdown={article.markdown} />}
         </section>
       )}
 

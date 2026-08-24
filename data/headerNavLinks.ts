@@ -1,8 +1,7 @@
 const headerNavLinks = [
-  { href: '/', title: 'Home' },
-  { href: '/family', title: '牝系' },
+  { href: '/', title: '牝系' },
+  { href: '/search', title: '検索' },
   { href: '/glossary', title: '用語集' },
-  { href: '/tags', title: 'タグ' },
 ]
 
 export default headerNavLinks

@@ -3,7 +3,6 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Link from '@/components/Link'
 import siteMetadata from '@/data/siteMetadata'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
 import type { TraditionalFamily } from '@/types/TraditionalFamily'
 import FamilyFilterModal, { type FilterState, EMPTY_FILTER, countActiveFilters, getDecade } from '@/components/FamilyFilterModal'
 
@@ -323,12 +322,6 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
       </div>
 
       <FamilyFilterModal isOpen={isFilterOpen} onClose={() => setIsFilterOpen(false)} families={families} filter={filter} onApply={handleFilterApply} />
-
-      {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
     </>
   )
 }
