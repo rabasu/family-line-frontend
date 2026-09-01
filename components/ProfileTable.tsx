@@ -5,11 +5,7 @@ const ProfileTable = ({ horseId }: { horseId: string }) => {
   const found = findHorseById(horseId)
 
   if (!found) {
-    return (
-      <div className="w-2/5 overflow-x-auto">
-        <p className="text-red-500">エラー: 馬が見つかりませんでした</p>
-      </div>
-    )
+    return <p className="text-sm text-red-500">エラー: 馬が見つかりませんでした</p>
   }
 
   const horse = found.horse
@@ -45,18 +41,18 @@ const ProfileTable = ({ horseId }: { horseId: string }) => {
   }
 
   return (
-    <div className="w-2/5 overflow-x-auto">
-      <table className="table-fixed">
-        <tbody>
-          {rows.map((row) => (
-            <tr key={row.label}>
-              <th>{row.label}</th>
-              <td>{row.value}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <table className="w-full border-collapse text-sm">
+      <tbody>
+        {rows.map((row) => (
+          <tr key={row.label} className="border-b border-stone-200">
+            <th className="w-36 bg-stone-50 px-3 py-1.5 text-left font-medium whitespace-nowrap text-stone-600">
+              {row.label}
+            </th>
+            <td className="px-3 py-1.5">{row.value}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   )
 }
 

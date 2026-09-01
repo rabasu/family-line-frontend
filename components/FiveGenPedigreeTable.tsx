@@ -1,5 +1,6 @@
 import type { PedigreePathNode } from '@/types/Horse'
 import { FIVE_GEN_DEPTH } from '@/types/FiveGenPedigree'
+import { formatBreedMark } from '@/lib/breed-mark'
 import { leafAncestryPaths, pathsStartingAtLeaf, rowspanForPath, sexFromPath } from '@/lib/sire-pedigree-paths'
 
 const LEAVES = leafAncestryPaths(FIVE_GEN_DEPTH)
@@ -10,6 +11,8 @@ function cellMeta(node: PedigreePathNode | undefined): string {
   const parts: string[] = []
   if (node.foaled?.year != null) parts.push(String(node.foaled.year))
   if (node.color) parts.push(node.color)
+  const breedMark = formatBreedMark(node.breed)
+  if (breedMark) parts.push(breedMark)
   return parts.join(' ')
 }
 

@@ -75,8 +75,8 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
   const hasRacecourse = results.some((r) => r.racecourse)
   const hasDistance = results.some((r) => r.distance)
 
-  // 日付順にソート（新しい順）
-  const sortedResults = [...results].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  // 日付順にソート（古い順）
+  const sortedResults = [...results].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
   return (
     <div className="my-6">

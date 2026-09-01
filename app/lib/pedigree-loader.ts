@@ -128,10 +128,10 @@ export function convertJsonToHorse(pedigreeData: PedigreeJsonData): Horse {
 }
 
 /**
- * 馬データをHorse型に変換し、子孫を再帰的に構築する
+ * JSON の1頭を Horse 型に変換する（産駒ツリーは付けない）。
+ * 種牡馬成績など、牝系図を展開せずに個体だけ欲しいときに使う。
  */
-function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): Horse {
-  // 基本データをHorse型に変換（安全な処理）
+export function convertHorseRecord(horseData: HorseJsonData): Horse {
   const horse: Horse = {
     id: horseData.id || 'unknown',
     name: horseData.name || '不明',
@@ -146,7 +146,6 @@ function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): H
     children: [],
   }
 
-  // オプショナルフィールドを追加（Horse型のすべての属性を含める）
   if (horseData.pedigreeName) horse.pedigreeName = horseData.pedigreeName
   if (horseData.formerName) horse.formerName = horseData.formerName
   if (horseData.localName) horse.localName = horseData.localName
@@ -184,17 +183,22 @@ function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): H
     horse.ancestryByPath = horseData.ancestryByPath as Horse['ancestryByPath']
   }
   if (horseData.raceResults) {
-    // raceResultsのdateフィールドをDate型に変換
     horse.raceResults = horseData.raceResults.map((result) => ({
       ...result,
       date: typeof result.date === 'string' ? new Date(result.date) : new Date(result.date.year, result.date.month - 1, result.date.day),
     })) as RaceResult[]
   }
 
-  // 子馬を検索して再帰的に構築
+  return horse
+}
+
+/**
+ * 馬データをHorse型に変換し、子孫を再帰的に構築する
+ */
+function buildHorseTree(horseData: HorseJsonData, allHorses: HorseJsonData[]): Horse {
+  const horse = convertHorseRecord(horseData)
   const children = allHorses.filter((child) => child.damId === horseData.id)
   horse.children = children.map((child) => buildHorseTree(child, allHorses))
-
   return horse
 }
 

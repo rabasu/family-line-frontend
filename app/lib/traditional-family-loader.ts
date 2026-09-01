@@ -13,7 +13,8 @@ import fs from 'fs'
 import path from 'path'
 import type { Horse } from '@/types/Horse'
 import type { HorseLinkData } from '@/types/HorseLinkData'
-import { convertJsonToHorse, type PedigreeJsonData } from './pedigree-loader'
+import { Foaled } from '@/types/Foaled'
+import { convertHorseRecord, convertJsonToHorse, type PedigreeJsonData } from './pedigree-loader'
 
 const TRADITIONAL_DIR = path.join(process.cwd(), 'app', 'pedigree-traditional')
 const PEDIGREE_METADATA = path.join(process.cwd(), 'data', 'pedigree', 'pedigree-metadata.json')
@@ -229,4 +230,104 @@ export function damLineOf(family: TraditionalFamily, horseId: string): Horse[] {
   }
 
   return line
+}
+
+export type SireOffspring = {
+  horse: Horse
+  familyName: string
+  familyRootId: string
+}
+
+/** sireId → 産駒 id（公開インデックスに載る馬だけ） */
+let sireOffspringIndex: Map<string, string[]> | null = null
+
+function getSireOffspringIndex(): Map<string, string[]> {
+  if (sireOffspringIndex) return sireOffspringIndex
+
+  const published = getHorsePageIndex().horses
+  const map = new Map<string, string[]>()
+
+  let files: string[]
+  try {
+    files = fs.readdirSync(TRADITIONAL_DIR).filter((file) => file.endsWith('.json') && !file.includes('.backup'))
+  } catch (error) {
+    console.error('種牡馬産駒インデックスの構築に失敗:', error)
+    sireOffspringIndex = map
+    return map
+  }
+
+  for (const fileName of files) {
+    let data: PedigreeJsonData
+    try {
+      data = JSON.parse(fs.readFileSync(path.join(TRADITIONAL_DIR, fileName), 'utf-8'))
+    } catch {
+      continue
+    }
+    if (data?.metadata?.isTraditionalFamily !== true) continue
+
+    for (const horse of data.horses || []) {
+      const id = String(horse?.id || '').trim()
+      const sireId = String(horse?.sireId || '').trim()
+      if (!id || !sireId || !published[id]) continue
+      const list = map.get(sireId)
+      if (list) {
+        if (!list.includes(id)) list.push(id)
+      } else {
+        map.set(sireId, [id])
+      }
+    }
+  }
+
+  sireOffspringIndex = map
+  return map
+}
+
+/**
+ * 指定 id を sireId に持つ産駒を、生年順で返す。
+ * 牝系ツリーは展開しない（静的生成時にキャッシュを汚さないため）。
+ */
+export function findOffspringBySireId(sireId: string): SireOffspring[] {
+  const ids = getSireOffspringIndex().get(sireId)
+  if (!ids || ids.length === 0) return []
+
+  const index = getHorsePageIndex()
+  const byFile = new Map<string, string[]>()
+  for (const id of ids) {
+    const file = index.horses[id]?.file
+    if (!file) continue
+    const list = byFile.get(file)
+    if (list) list.push(id)
+    else byFile.set(file, [id])
+  }
+
+  const out: SireOffspring[] = []
+  for (const [file, childIds] of byFile) {
+    const wanted = new Set(childIds)
+    let data: PedigreeJsonData
+    try {
+      data = JSON.parse(fs.readFileSync(path.join(TRADITIONAL_DIR, `${file}.json`), 'utf-8'))
+    } catch (error) {
+      console.error(`種牡馬産駒の読み込みに失敗: ${file}.json`, error)
+      continue
+    }
+    const familyName = data.metadata?.pedigreeName || file
+    const familyRootId = data.metadata?.rootHorseId || file
+    for (const horseData of data.horses || []) {
+      if (!wanted.has(horseData.id)) continue
+      out.push({
+        horse: convertHorseRecord(horseData),
+        familyName,
+        familyRootId,
+      })
+    }
+  }
+
+  out.sort((a, b) => {
+    const byFoaled = Foaled.compare(a.horse.foaled, b.horse.foaled)
+    if (byFoaled !== 0) return byFoaled
+    const nameA = a.horse.name || a.horse.pedigreeName || a.horse.id
+    const nameB = b.horse.name || b.horse.pedigreeName || b.horse.id
+    return nameA.localeCompare(nameB, 'ja')
+  })
+  return out
 }

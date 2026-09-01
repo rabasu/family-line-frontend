@@ -5,6 +5,11 @@ import { Dialog, Transition } from '@headlessui/react'
 
 const OPEN_EVENT = 'horse-modal:open'
 
+/** 解説をモーダルに残すおおよその文字数（超えたらクリップ） */
+const ARTICLE_CLIP_CHARS = 480
+/** クリップ時に残す段落数の上限 */
+const ARTICLE_CLIP_PARAS = 2
+
 type OpenDetail = { horseId: string; displayName: string }
 
 /** 馬名リンクからモーダルを開く。レイアウトに置いた HorseDetailModal が受け取る */
@@ -14,6 +19,65 @@ export function openHorseModal(horseId: string, displayName: string) {
 
 // 同じ馬を何度も開くのはよくあるので、取得済みの本文は保持しておく
 const fragmentCache = new Map<string, string>()
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
+
+function fullPageHref(horseId: string, hash = ''): string {
+  return `/horse/${encodeURIComponent(horseId)}${hash}`
+}
+
+/** インタラクティブ／巨大な節を、見出し＋要約＋個別ページ誘導に差し替える */
+function replaceTeaseSections(detail: Element, horseId: string) {
+  detail.querySelectorAll('[data-horse-modal-tease]').forEach((section) => {
+    const title = section.getAttribute('data-tease-title') || section.querySelector('h2')?.textContent?.trim() || '詳細'
+    const summary = section.getAttribute('data-tease-summary') || ''
+    const hash = section.getAttribute('data-tease-href') || ''
+    const replacement = detail.ownerDocument.createElement('section')
+    replacement.className = 'py-6'
+    replacement.innerHTML = `
+      <h2 class="mb-2 text-xl font-bold text-stone-900">${escapeHtml(title)}</h2>
+      ${summary ? `<p class="mb-3 text-sm text-stone-500">${escapeHtml(summary)}</p>` : ''}
+      <a href="${fullPageHref(horseId, hash)}" data-full-page class="text-sm font-medium text-sky-700 hover:underline">個別ページで見る</a>
+    `
+    section.replaceWith(replacement)
+  })
+}
+
+/** 長文解説は冒頭だけ残し、「続きを読む」で個別ページへ */
+function clipArticleSections(detail: Element, horseId: string) {
+  detail.querySelectorAll('[data-horse-modal-clip]').forEach((section) => {
+    const blocks = [...section.children].filter((el) => el.tagName !== 'H2')
+    if (blocks.length === 0) return
+
+    let keptChars = 0
+    const keep: Element[] = []
+    for (const block of blocks) {
+      if (keep.length >= ARTICLE_CLIP_PARAS && keptChars >= ARTICLE_CLIP_CHARS) break
+      keep.push(block)
+      keptChars += (block.textContent || '').trim().length
+      if (keptChars >= ARTICLE_CLIP_CHARS) break
+    }
+
+    // 全部残せたならクリップ不要（CTA も出さない）
+    if (keep.length >= blocks.length) return
+
+    const keepSet = new Set(keep)
+    for (const block of blocks) {
+      if (!keepSet.has(block)) block.remove()
+    }
+
+    const cta = detail.ownerDocument.createElement('p')
+    cta.className = 'mt-4 not-prose'
+    cta.innerHTML = `<a href="${fullPageHref(horseId, '#article')}" data-full-page class="text-sm font-medium text-sky-700 hover:underline">続きを読む</a>`
+    section.appendChild(cta)
+  })
+}
 
 /**
  * 個別ページの HTML から本文だけを取り出す。
@@ -43,6 +107,10 @@ async function fetchHorseFragment(horseId: string): Promise<string> {
   // ページに埋め込まれた RSC ペイロードなどを持ち込まない。
   // コメント欄は生 HTML では動かないので落とす（個別ページで読んでもらう）
   detail.querySelectorAll('script,link,style,[data-horse-comments]').forEach((node) => node.remove())
+
+  // チェックボックス付きの巨大節はティーザーに。長文解説は冒頭だけ。
+  replaceTeaseSections(detail, horseId)
+  clipArticleSections(detail, horseId)
 
   const html = detail.innerHTML
   fragmentCache.set(horseId, html)
@@ -116,14 +184,34 @@ export default function HorseDetailModal() {
     }
   }, [])
 
-  // 差し込んだ本文の中の馬リンクも、そのままモーダル内で辿れるようにする
+  // 差し込んだ本文の中の馬リンクも、そのままモーダル内で辿れるようにする。
+  // data-full-page は個別ページ誘導。pushState 済みの同一 URL だと hash だけでは遷移しないので強制する。
   const onBodyClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
     const anchor = (e.target as HTMLElement).closest('a')
-    const href = anchor?.getAttribute('href')
-    if (!href?.startsWith('/horse/')) return
+    if (!anchor) return
+    const href = anchor.getAttribute('href')
+    if (!href) return
+
+    if (anchor.hasAttribute('data-full-page')) {
+      e.preventDefault()
+      // モーダルは pushState で既に /horse/id にいることが多い。
+      // 同パス + hash だとドキュメント遷移が起きないので、必要なら reload する。
+      const url = new URL(href, window.location.origin)
+      if (window.location.pathname === url.pathname) {
+        window.location.replace(url.href)
+        window.location.reload()
+      } else {
+        window.location.assign(url.href)
+      }
+      return
+    }
+
+    if (!href.startsWith('/horse/')) return
     e.preventDefault()
-    openHorseModal(decodeURIComponent(href.slice('/horse/'.length)), anchor?.textContent?.trim() || '')
+    const id = decodeURIComponent(href.slice('/horse/'.length).split(/[?#]/)[0] || '')
+    if (!id) return
+    openHorseModal(id, anchor.textContent?.trim() || '')
     bodyRef.current?.scrollTo({ top: 0 })
   }
 

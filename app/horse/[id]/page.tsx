@@ -3,16 +3,21 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Comments from '@/components/Comments'
+import FamilyTreeView from '@/components/FamilyTreeView'
 import FiveGenPedigreeTable, { hasKnownAncestor } from '@/components/FiveGenPedigreeTable'
+import HorseFamilyTree from '@/components/HorseFamilyTree'
 import HorseLink from '@/components/HorseLink'
 import HorseMarkdown from '@/components/HorseMarkdown'
 import RaceResultsTable from '@/components/RaceResultsTable'
+import StallionOffspringCard from '@/components/StallionOffspringCard'
+import StallionProgeny from '@/components/StallionProgeny'
 import siteMetadata from '@/data/siteMetadata'
 import type { Horse } from '@/types/Horse'
 import { sex as sexLabel } from '@/types/Horse'
 import { buildFiveGenPedigree } from '@/lib/five-gen-pedigree'
 import { loadHorseArticle } from '@/lib/horse-article'
-import { damLineOf, findHorseById, getHorsePageIndex } from '@/lib/traditional-family-loader'
+import { hasGradeWin } from '@/lib/race-summary'
+import { damLineOf, findHorseById, findOffspringBySireId, getHorsePageIndex } from '@/lib/traditional-family-loader'
 
 // 静的エクスポートでは generateStaticParams が返した id 以外は 404 にする
 export const dynamicParams = false
@@ -98,13 +103,16 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
 
 function ProfileRows({ horse, familyName }: { horse: Horse; familyName: string }) {
   const rows: Array<{ label: string; value: ReactNode }> = []
+  const nameLabel = horse.pedigreeName ? '競走名' : '馬名'
 
+  if (horse.name) rows.push({ label: nameLabel, value: horse.name })
+  if (horse.localName) rows.push({ label: `${nameLabel}（地方）`, value: horse.localName })
+  if (horse.formerName) rows.push({ label: `${nameLabel}（旧）`, value: horse.formerName })
   if (horse.pedigreeName && horse.pedigreeName !== horse.name) {
     rows.push({ label: '血統名', value: horse.pedigreeName })
   }
+  if (horse.formerPedigreeName) rows.push({ label: '血統名（旧）', value: horse.formerPedigreeName })
   if (horse.englishName) rows.push({ label: '欧字表記', value: horse.englishName })
-  if (horse.formerName) rows.push({ label: '旧名', value: horse.formerName })
-  if (horse.localName) rows.push({ label: '地方名', value: horse.localName })
   rows.push({ label: '性別', value: sexLabel[horse.sex] })
   if (horse.color) rows.push({ label: '毛色', value: horse.color })
   const foaled = formatFoaled(horse)
@@ -162,6 +170,17 @@ function HorseRef({ horse, currentId }: { horse: Horse; currentId: string }) {
   )
 }
 
+/** 直接の産駒だけ残し、孫以降の枝を切る（元オブジェクトは改変しない） */
+function withDirectOffspringOnly(root: Horse): Horse {
+  return {
+    ...root,
+    children: (root.children || []).map((child) => ({
+      ...child,
+      children: [],
+    })),
+  }
+}
+
 export default async function Page({ params }: { params: { id: string } }) {
   const found = findHorseById(params.id)
   if (!found) return notFound()
@@ -170,6 +189,8 @@ export default async function Page({ params }: { params: { id: string } }) {
   const name = displayNameOf(horse)
   const damLine = damLineOf(family, horse.id)
   const offspring = horse.children || []
+  const sireOffspring = horse.sex === 'male' ? findOffspringBySireId(horse.id) : []
+  const gradeWinnerCount = sireOffspring.filter((item) => hasGradeWin(item.horse.raceResults)).length
   const pedigree = await buildFiveGenPedigree(horse.id)
   const article = articleFor(horse.id)
   const details = typeof horse.details === 'string' ? horse.details.trim() : ''
@@ -241,25 +262,48 @@ export default async function Page({ params }: { params: { id: string } }) {
         </section>
       )}
 
-      {offspring.length > 0 && (
-        <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-stone-900">産駒（{offspring.length}頭）</h2>
-          <ul className="grid grid-cols-1 gap-x-6 gap-y-1 text-sm sm:grid-cols-2 lg:grid-cols-3">
-            {offspring.map((child) => (
-              <li key={child.id} className="flex items-baseline gap-2">
-                <HorseRef horse={child} currentId={horse.id} />
-                <span className="text-xs text-stone-500">
-                  {sexLabel[child.sex]}
-                  {child.sire ? ` / 父${child.sire}` : ''}
-                </span>
-              </li>
+      {sireOffspring.length > 0 && (
+        // data-horse-modal-tease: モーダルでは一覧本体を落とし、個別ページへ誘導する
+        <section
+          id="sire-record"
+          className="py-6"
+          data-horse-modal-tease
+          data-tease-title="主な種牡馬成績"
+          data-tease-summary={`重賞勝ち馬 ${gradeWinnerCount}頭 / 登録産駒 ${sireOffspring.length}頭`}
+          data-tease-href={`#sire-record`}
+        >
+          <StallionProgeny gradeWinnerCount={gradeWinnerCount} totalCount={sireOffspring.length}>
+            {sireOffspring.map((item) => (
+              <StallionOffspringCard
+                key={item.horse.id}
+                horse={item.horse}
+                familyName={item.familyName}
+                familyRootId={item.familyRootId}
+              />
             ))}
-          </ul>
+          </StallionProgeny>
+        </section>
+      )}
+
+      {offspring.length > 0 && (
+        <section
+          id="family-tree"
+          className="py-6"
+          data-horse-modal-tease
+          data-tease-title="牝系図"
+          data-tease-summary="産駒・子孫の系統図"
+          data-tease-href="#family-tree"
+        >
+          <HorseFamilyTree
+            fullTree={<FamilyTreeView horse={horse} />}
+            directTree={<FamilyTreeView horse={withDirectOffspringOnly(horse)} />}
+          />
         </section>
       )}
 
       {(details || article) && (
-        <section className="prose dark:prose-invert max-w-none py-6">
+        // data-horse-modal-clip: モーダルでは冒頭だけ残して「続きを読む」へ誘導する
+        <section id="article" className="prose dark:prose-invert max-w-none py-6" data-horse-modal-clip>
           <h2 className="text-xl font-bold text-stone-900">解説</h2>
           {details && <HorseMarkdown markdown={details} />}
           {article && <HorseMarkdown markdown={article.markdown} />}
