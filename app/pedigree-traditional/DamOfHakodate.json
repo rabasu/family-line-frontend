@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "pedigreeName": "函館",
-    "rootHorseId": "hakodate",
+    "pedigreeName": "馬名不詳（函館の母）",
+    "rootHorseId": "dam-of-hakodate",
     "lastUpdated": "2026-08-22T05:21:40Z",
     "source": "python_scraping_updated",
     "isTraditionalFamily": true,
@@ -9,16 +9,162 @@
   },
   "horses": [
     {
+      "id": "dam-of-hakodate",
+      "name": "馬名不詳（函館の母）",
+      "foaled": {},
+      "importedYear": "~1902",
+      "sex": "female",
+      "breed": "サラ系",
+      "sire": "不詳",
+      "dam": "不詳",
+      "color": "",
+      "breeder": "豪",
+      "owner": "（北海道）",
+      "netkeibaId": "",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.220, 『アラブ・アングロアラブ血統書 第2巻 (昭和35年～昭和52年)』p.1865, 『日本馬政史 続 第3』p.123, 『十勝馬産史』p.111, 『馬匹血統登録書 第4巻』p.145, 『優駿のふるさと日高（十周年）』p.259",
+      "comment": "名称不詳の豪洋。『アラブ血統書』や『アラブ系牝馬系統大鑑』など、複数の史料で名称不詳となっている。時期的に日露戦争での一斉輸入馬ではない。配合相手のユスーフは函館の園田牧場繋養。本馬も同地かその周辺、函館あたりで繋養されていた可能性が高い。",
+      "sireNetkeibaId": "none",
+      "ancestryByPath": {
+        "s": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ssds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ssdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sdsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "sdds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "sddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "d": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dssd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dsds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dsdd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "dds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddss": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "ddsd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddd": {
+          "name": "不詳",
+          "sex": "female"
+        },
+        "ddds": {
+          "name": "不詳",
+          "sex": "male"
+        },
+        "dddd": {
+          "name": "不詳",
+          "sex": "female"
+        }
+      }
+    },
+    {
       "id": "hakodate",
       "name": "函館",
       "foaled": {
         "year": 1903
       },
-      "importedYear": "（内国産）",
       "sex": "female",
       "breed": "アラ系",
       "sire": "ユスーフ",
-      "dam": "不詳(AUS)",
+      "dam": "馬名不詳",
       "color": "",
       "breeder": "（北海道）",
       "netkeibaId": "000a01c7fd",
@@ -30,33 +176,11 @@
         "divisions": []
       },
       "raceResults": [],
-      "source": "python_scraping, 『アラブ・アングロアラブ血統書 第2巻 (昭和35年～昭和52年)』p.1865, 『日本馬政史 続 第3』p.123, 『十勝馬産史』p.111, 『馬匹血統登録書 第4巻』p.145, 『優駿のふるさと日高（十周年）』p.259,  (アドミラルユスーフ)『牧畜雑誌 (265)』p.63",
-      "comment": "父ユスーフは下総御料牧場→園田牧場（渡島亀田郡桔梗野）。産駒の第三函館が日高荻伏産・加藤繁太郎（北海道河西郡芽室村）所有、オーノールが吉川勘平（浦河郡浦河町）生産・上田仁松（同）所有。母は名称不詳の豪洋。『馬匹血統登録書』や『全国種牡馬名簿』では父・アドミラルユスーフとなっているが、アドミラルユスーフは1905年生（父・ユスーフ、母・アドミラル）のため、1903年生まれの函館とは矛盾する。ユスーフを正とする。",
+      "source": "python_scraping, 『アラブ系牝馬系統大鑑』p.220, 『アラブ・アングロアラブ血統書 第2巻 (昭和35年～昭和52年)』p.1865, 『日本馬政史 続 第3』p.123, 『十勝馬産史』p.111, 『馬匹血統登録書 第4巻』p.145, 『優駿のふるさと日高（十周年）』p.259,  (アドミラルユスーフ)『牧畜雑誌 (265)』p.63",
+      "comment": "父ユスーフは下総御料牧場→園田牧場（渡島亀田郡桔梗野）。『優駿のふるさと日高（十周年）』によれば、浦河郡の今井重太郎の所有で第八豊平・第四豊平を産している。産駒の第三函館が日高荻伏産・加藤繁太郎（北海道河西郡芽室村）所有、オーノールが吉川勘平（浦河郡浦河町）生産・上田仁松（同）所有。母は名称不詳の豪洋。『馬匹血統登録書』や『全国種牡馬名簿』では父・アドミラルユスーフとなっているが、アドミラルユスーフは1905年生（父・ユスーフ、母・アドミラル）のため、1903年生まれの函館とは矛盾する。ユスーフを正とする。",
+      "damId": "dam-of-hakodate",
       "sireId": "jussuf",
       "sireNetkeibaId": "000a0191a4",
-      "ancestryByPath": {
-        "s": {
-          "name": "ユスーフ",
-          "sex": "male",
-          "foaled": {
-            "year": 1884
-          },
-          "color": "鹿毛",
-          "netkeibaId": "000a0191a4"
-        },
-        "ss": {
-          "name": "ユスーフ",
-          "sex": "male"
-        },
-        "sd": {
-          "name": "一一七ザリーフ",
-          "sex": "female"
-        },
-        "d": {
-          "name": "不詳(AUS)",
-          "sex": "female"
-        }
-      },
       "owner": "今井重太郎（北海道浦河郡荻伏村）"
     },
     {
