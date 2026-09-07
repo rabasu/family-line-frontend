@@ -501,7 +501,11 @@ async function markQueueResolved(
     for (const item of items) {
       if (item.child_id !== childId) continue
 
-      if (mode === 'sire' && item.reason === 'incomplete_four_gen_pedigree') {
+      if (
+        mode === 'sire' &&
+        (item.reason === 'incomplete_four_gen_pedigree' ||
+          item.reason === 'missing_breeder')
+      ) {
         item.resolved = true
         item.resolvedAt = now
         item.ancestry_present = ancestryCount

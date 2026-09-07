@@ -59,6 +59,12 @@ function isSirePath(filepath = ''): boolean {
   return filepath.replace(/\\/g, '/').includes('pedigree-sires/')
 }
 
+function isSireIncompleteReason(reason = ''): boolean {
+  return (
+    reason === 'incomplete_four_gen_pedigree' || reason === 'missing_breeder'
+  )
+}
+
 function classifyMode(item: QueueItem): EditMode | null {
   if (item.resolved) return null
   if (!item.child_id) return null
@@ -74,10 +80,7 @@ function classifyMode(item: QueueItem): EditMode | null {
     return 'missing_sire'
   }
 
-  if (
-    item.reason === 'incomplete_four_gen_pedigree' &&
-    isSirePath(item.filepath || '')
-  ) {
+  if (isSireIncompleteReason(item.reason) && isSirePath(item.filepath || '')) {
     return 'sire'
   }
 
@@ -222,12 +225,12 @@ async function buildRootFourGenItems(
 }
 
 /**
- * pedigree-sires の4代パス未完了をスキャンし、ファイルキューの sire 件とマージ。
+ * pedigree-sires の4代パス未完了・生産者空をスキャンし、ファイルキューの sire 件とマージ。
  */
 async function buildIncompleteSireItems(
   fileItems: QueueItem[]
 ): Promise<QueueItem[]> {
-  const resolvedIds = new Set(
+  const resolvedFourGenIds = new Set(
     fileItems
       .filter(
         (item) =>
@@ -241,7 +244,7 @@ async function buildIncompleteSireItems(
   const byId = new Map<string, QueueItem>()
 
   for (const item of scanned) {
-    if (resolvedIds.has(item.horseId)) continue
+    if (resolvedFourGenIds.has(item.horseId) && !item.missingBreeder) continue
     byId.set(item.horseId, {
       child_id: item.horseId,
       child_name: item.name,
@@ -249,9 +252,10 @@ async function buildIncompleteSireItems(
       sire_name: item.sireName,
       dam_name: item.damName,
       filepath: item.filepath,
-      reason: 'incomplete_four_gen_pedigree',
+      reason: item.reason,
       ancestry_present: item.ancestryPresent,
       ancestry_missing: item.ancestryMissing,
+      skip_scrape_reason: item.missingBreeder ? 'missing_breeder' : undefined,
       source: 'sire_scan',
     })
   }
@@ -267,9 +271,12 @@ async function buildIncompleteSireItems(
     })
   }
 
-  return Array.from(byId.values()).sort((a, b) =>
-    (a.child_name || '').localeCompare(b.child_name || '', 'ja')
-  )
+  return Array.from(byId.values()).sort((a, b) => {
+    const ar = a.reason === 'missing_breeder' ? 0 : 1
+    const br = b.reason === 'missing_breeder' ? 0 : 1
+    if (ar !== br) return ar - br
+    return (a.child_name || '').localeCompare(b.child_name || '', 'ja')
+  })
 }
 
 export async function GET(req: NextRequest) {
@@ -300,6 +307,12 @@ export async function GET(req: NextRequest) {
       item.related_children_total = preview.nonRootTotal
       sireItems.push(item)
     }
+    sireItems.sort((a, b) => {
+      const ar = a.reason === 'missing_breeder' ? 0 : 1
+      const br = b.reason === 'missing_breeder' ? 0 : 1
+      if (ar !== br) return ar - br
+      return (a.child_name || '').localeCompare(b.child_name || '', 'ja')
+    })
 
     const combined: { item: QueueItem; mode: EditMode }[] = []
 
@@ -350,6 +363,9 @@ export async function GET(req: NextRequest) {
         ancestryMissing: item.ancestry_missing,
         ancestryEmptyNodes: item.ancestry_empty_nodes,
         skipScrapeReason: item.skip_scrape_reason,
+        missingBreeder:
+          item.reason === 'missing_breeder' ||
+          item.skip_scrape_reason === 'missing_breeder',
         relatedChildren: item.related_children || [],
         relatedChildrenTotal: item.related_children_total ?? (item.related_children || []).length,
         familyPages: item.family_pages || [],

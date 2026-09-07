@@ -30,6 +30,8 @@ export type PedigreePath = string
 /** 非在来種牡馬などの祖先埋め込みノード（独立馬レコードにはしない） */
 export type PedigreePathNode = {
   name: string
+  /** 在来牝系の独立馬レコードから合成したときだけ付く */
+  id?: string
   foaled?: { year?: number; month?: number; day?: number }
   color?: string
   sex?: Sex
@@ -55,9 +57,9 @@ interface Horse {
   breeder?: string // 生産者
   sire: string // 父
   dam: string // 母
-  /** 父馬の内部 id（在来 JSON または pedigree-sires の subject） */
+  /** 父馬の内部 id（在来 JSON または pedigree-sires の subject）。牝祖は持たない */
   sireId?: string
-  /** 父馬の netkeibaId */
+  /** 父馬の netkeibaId。牝祖は持たない（ancestryByPath でカバー） */
   sireNetkeibaId?: string
   /** 母馬の netkeibaId */
   damNetkeibaId?: string

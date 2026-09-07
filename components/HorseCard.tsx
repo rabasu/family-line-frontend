@@ -10,6 +10,7 @@ import HorseLink from './HorseLink'
 import HorseMarkdown from './HorseMarkdown'
 import HorseNameWithPedigree from './HorseNameWithPedigree'
 import { PrizeMoney } from '@/types/PrizeMoney'
+import { formatSireDisplayName } from '@/lib/origin-country-index'
 
 const summary = tv({
   base: 'px-5 py-1',
@@ -33,7 +34,12 @@ const BaseInfo = (horse: Horse): JSX.Element => {
       <HorseNameWithPedigree horseId={horse.id} displayName={displayHorseName(horse)} />
       {breedMark && <span className="text-xs font-medium text-stone-500">{breedMark}</span>}
       <span className="text-sm">
-        （{horse.foaled.year}） by <HorseLink name={horse.sire} />
+        （{horse.foaled.year}） by{' '}
+        <HorseLink
+          name={horse.sire}
+          horseId={horse.sireId}
+          displayName={formatSireDisplayName(horse.sire, horse.sireId)}
+        />
       </span>
       <span>
         {raceStatsSummary(horse.raceStats)} {prizeMoneySummary(horse.prizeMoney)}

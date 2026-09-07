@@ -15,6 +15,7 @@ import type { Horse } from '@/types/Horse'
 import type { HorseLinkData } from '@/types/HorseLinkData'
 import { Foaled } from '@/types/Foaled'
 import { convertHorseRecord, convertJsonToHorse, type PedigreeJsonData } from './pedigree-loader'
+import { stripTrailingOriginCodeParen } from './origin-country'
 
 const TRADITIONAL_DIR = path.join(process.cwd(), 'app', 'pedigree-traditional')
 const PEDIGREE_METADATA = path.join(process.cwd(), 'data', 'pedigree', 'pedigree-metadata.json')
@@ -195,20 +196,32 @@ function getHorseLinkMap(): Map<string, HorseLinkData> {
 }
 
 /** 馬名（linkName / linkPedigreeName を含む）からリンク情報を引く */
-export function findHorseLinkByName(horseName: string): HorseLinkData | null {
+export function findHorseLinkByName(
+  horseName: string,
+  options?: { quiet?: boolean; year?: number }
+): HorseLinkData | null {
   if (!horseName) return null
 
   const map = getHorseLinkMap()
-  const found = map.get(horseName)
-  if (found) return found
+  const keys = [horseName]
+  if (options?.year != null) keys.push(`${horseName}(${options.year})`)
+  const stripped = stripTrailingOriginCodeParen(horseName)
+  if (stripped && stripped !== horseName) {
+    keys.push(stripped)
+    if (options?.year != null) keys.push(`${stripped}(${options.year})`)
+  }
+  for (const key of keys) {
+    const found = map.get(key)
+    if (found) return found
+  }
 
-  if (process.env.NODE_ENV === 'development') {
-    const keys = Array.from(map.keys())
-    const similar = keys.filter((key) => key.includes(horseName) || horseName.includes(key))
+  if (process.env.NODE_ENV === 'development' && !options?.quiet) {
+    const keysInMap = Array.from(map.keys())
+    const similar = keysInMap.filter((key) => key.includes(horseName) || horseName.includes(key))
     if (similar.length > 0) {
       console.warn(`馬「${horseName}」が見つかりませんでした。類似するキー:`, similar.slice(0, 5))
     } else {
-      console.warn(`馬「${horseName}」が見つかりませんでした。利用可能なキーの例:`, keys.slice(0, 10))
+      console.warn(`馬「${horseName}」が見つかりませんでした。利用可能なキーの例:`, keysInMap.slice(0, 10))
     }
   }
 

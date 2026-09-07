@@ -41,10 +41,27 @@ const getResultStyle = (result: string) => {
   }
 }
 
-// 日付をフォーマット
-const formatDate = (date: Date) => {
+function pad2(n: number): string {
+  return String(n).padStart(2, '0')
+}
+
+/** YYYY/MM/DD（月日はゼロ埋め）。年・月・日オブジェクトも受け取る */
+const formatDate = (date: Date | string | { year: number; month: number; day: number }) => {
+  if (date && typeof date === 'object' && 'year' in date && 'month' in date && 'day' in date) {
+    return `${date.year}/${pad2(date.month)}/${pad2(date.day)}`
+  }
+  if (typeof date === 'string') {
+    const iso = date.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/)
+    if (iso) return `${iso[1]}/${pad2(Number(iso[2]))}/${pad2(Number(iso[3]))}`
+  }
   const d = new Date(date)
-  return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`
+  if (Number.isNaN(d.getTime())) return '-'
+  return `${d.getFullYear()}/${pad2(d.getMonth() + 1)}/${pad2(d.getDate())}`
+}
+
+const formatFavorite = (favorite?: string | null) => {
+  if (!favorite) return '-'
+  return favorite.endsWith('人') ? favorite : `${favorite}人`
 }
 
 const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTableProps) => {
@@ -79,7 +96,7 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
   const sortedResults = [...results].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
   return (
-    <div className="my-6">
+    <div>
       {displayName && <h3 className="mb-3 text-lg font-bold">{displayName}の重賞成績</h3>}
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse border border-gray-200">
@@ -89,6 +106,7 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
               <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">レース名</th>
               <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">格付け</th>
               <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">着順</th>
+              <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">人気</th>
               {hasRacecourse && <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">競馬場</th>}
               {hasDistance && <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">距離</th>}
             </tr>
@@ -104,6 +122,7 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
                   </td>
                   <td className={`border border-gray-200 px-3 py-2 text-center text-sm ${getGradeStyle(grade.rank)}`}>{grade.name}</td>
                   <td className={`border border-gray-200 px-3 py-2 text-center text-sm ${getResultStyle(result.result)}`}>{result.result}着</td>
+                  <td className="border border-gray-200 px-3 py-2 text-center text-sm">{formatFavorite(result.favorite)}</td>
                   {hasRacecourse && <td className="border border-gray-200 px-3 py-2 text-sm">{result.racecourse || '-'}</td>}
                   {hasDistance && <td className="border border-gray-200 px-3 py-2 text-center text-sm">{result.distance ? `${result.distance}m` : '-'}</td>}
                 </tr>

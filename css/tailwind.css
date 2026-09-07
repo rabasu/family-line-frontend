@@ -66,6 +66,10 @@ input:-webkit-autofill:focus {
   @apply border border-stone-300 align-middle min-w-[7.5rem] max-w-[11rem];
 }
 
+.pedi-cell-leaf {
+  @apply max-w-none;
+}
+
 .pedi-sire {
   @apply bg-sky-50;
 }
@@ -78,10 +82,14 @@ input:-webkit-autofill:focus {
   @apply text-xs leading-tight font-medium text-stone-800;
 }
 
+.pedi-name a {
+  @apply text-sky-700 hover:underline;
+}
+
 .pedi-name-unknown {
   @apply text-xs leading-tight text-stone-400;
 }
 
 .pedi-meta {
-  @apply text-[10px] leading-tight text-stone-500;
+  @apply text-[10px] leading-tight font-normal text-stone-500;
 }

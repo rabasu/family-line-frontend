@@ -13,6 +13,8 @@ import { allAncestryPaths, sexFromPath } from '@/lib/sire-pedigree-paths'
 import { findCatalogEntryById } from '@/lib/sire-catalog'
 import { findTraditionalHorseById } from '@/lib/traditional-horse-lookup'
 import { getHorsePageIndex } from '@/lib/traditional-family-loader'
+import { formatNameWithOrigin, extractTrailingCountryCode, originCodeFromHorse } from '@/lib/origin-country'
+import { getOriginCodeByHorseId } from '@/lib/origin-country-index'
 
 const FOUR_GEN_DEPTH = 4
 const FOUR_GEN_PATHS = allAncestryPaths(FOUR_GEN_DEPTH)
@@ -55,6 +57,9 @@ type RawHorse = {
   sireId?: string
   damId?: string
   netkeibaId?: string
+  breeder?: string
+  foaledAt?: string
+  importedYear?: string
   ancestryByPath?: Partial<Record<string, PedigreePathNode>>
 }
 
@@ -71,12 +76,18 @@ function asSex(value: string | undefined, fallback: Sex): Sex {
   return fallback
 }
 
+function originCodeForRecord(horse: RawHorse): string | null {
+  return originCodeFromHorse(horse) || getOriginCodeByHorseId(horse.id) || null
+}
+
 function nodeFromRaw(horse: RawHorse, fallbackSex: Sex): PedigreePathNode {
   const name = (horse.name || horse.pedigreeName || horse.englishName || horse.id || '').trim()
   const node: PedigreePathNode = {
-    name: name || '不詳',
+    name: formatNameWithOrigin(name || '不詳', originCodeForRecord(horse)),
     sex: asSex(horse.sex, fallbackSex),
   }
+  const id = (horse.id || '').trim()
+  if (id) node.id = id
   if (horse.foaled?.year != null) node.foaled = { year: horse.foaled.year }
   if (horse.color) node.color = horse.color
   if (horse.breed) node.breed = horse.breed as Breed
@@ -86,7 +97,25 @@ function nodeFromRaw(horse: RawHorse, fallbackSex: Sex): PedigreePathNode {
 
 function nameOnlyNode(name: string, sex: Sex): PedigreePathNode {
   const trimmed = (name || '').trim()
-  return { name: trimmed || '不詳', sex }
+  return { name: formatNameWithOrigin(trimmed || '不詳', extractTrailingCountryCode(trimmed)), sex }
+}
+
+/** 輸入馬の先祖からは国名を外す。内国産馬の祖先にいる輸入馬本人は付ける */
+function ancestryNodeForDisplay(node: PedigreePathNode, stripAll: boolean): PedigreePathNode {
+  const code = stripAll ? null : node.id ? getOriginCodeByHorseId(node.id) : extractTrailingCountryCode(node.name)
+  return { ...node, name: formatNameWithOrigin(node.name, code) }
+}
+
+function ancestryForDisplay(
+  ancestry: Partial<Record<string, PedigreePathNode>> | undefined,
+  stripAll: boolean
+): Partial<Record<string, PedigreePathNode>> {
+  const out: Partial<Record<string, PedigreePathNode>> = {}
+  for (const [path, node] of Object.entries(ancestry || {})) {
+    if (!node) continue
+    out[path] = ancestryNodeForDisplay(node, stripAll)
+  }
+  return out
 }
 
 function hasCompleteFourGen(ancestry: Partial<Record<string, PedigreePathNode>> | undefined): boolean {
@@ -153,9 +182,10 @@ export function fourGenFromChildBranch(
 }
 
 function fourGenFromHorse(horse: RawHorse, fallbackSex: Sex): FourGen {
+  const stripAncestors = Boolean(originCodeForRecord(horse))
   return {
     subject: nodeFromRaw(horse, fallbackSex),
-    ancestryByPath: horse.ancestryByPath || {},
+    ancestryByPath: ancestryForDisplay(horse.ancestryByPath, stripAncestors),
   }
 }
 
@@ -240,7 +270,7 @@ class PedigreeAssembler {
         const stored = tradHorse.ancestryByPath || {}
         return {
           subject: nodeFromRaw(tradHorse, asSex(tradHorse.sex, 'female')),
-          ancestryByPath: { ...stored, ...truncated },
+          ancestryByPath: { ...ancestryForDisplay(stored, false), ...truncated },
         }
       }
     }

@@ -2,12 +2,16 @@
  * 4代血統表手動入力向けのスキャン。
  *
  * - pedigree-sires で ancestryByPath の4代パス（s…dddd）が欠けている → 種牡馬不完全
+ * - pedigree-sires で horse.breeder が空 → 種牡馬不完全（生産者/産地の人手入力）
  * - 牝祖以外 + sireNetkeibaId=none → 父馬未登録（pedigree-sires）
  * - 牝祖本人で4代未完了 → 牝祖4代（ancestryByPath を牝祖に直接書く。種牡馬単独保存しない）
  */
 import fs from 'fs/promises'
 import path from 'path'
 import { allAncestryPaths } from '@/lib/sire-pedigree-paths'
+import { stripTrailingCountryParen } from '@/lib/origin-country'
+
+export { stripTrailingCountryParen }
 
 export const SIRE_NETKEIBA_NONE = 'none'
 export const UNKNOWN_PARENT_NAME = '不詳'
@@ -66,6 +70,10 @@ export type RootFourGenItem = {
   skipScrapeReason: string
 }
 
+export type IncompleteSireReason =
+  | 'incomplete_four_gen_pedigree'
+  | 'missing_breeder'
+
 export type IncompleteSireItem = {
   horseId: string
   name: string
@@ -77,6 +85,8 @@ export type IncompleteSireItem = {
   ancestryPresent: number
   ancestryMissing: number
   missingPaths: string[]
+  missingBreeder: boolean
+  reason: IncompleteSireReason
 }
 
 type TradHorse = {
@@ -110,14 +120,6 @@ function repoRelative(filepath: string): string {
 function isUnknownParent(name: string): boolean {
   const t = (name || '').trim()
   return !t || t === UNKNOWN_PARENT_NAME || t === '不明' || t === '未登録'
-}
-
-/** 馬名末尾の国名括弧を除去（例: アジヤツクス（トロ）→ アジヤツクス、Foo(GB) → Foo） */
-export function stripTrailingCountryParen(name: string): string {
-  return (name || '')
-    .trim()
-    .replace(/[（(][^）)]*[）)]\s*$/u, '')
-    .trim()
 }
 
 function sireNamesMatch(a: string, b: string): boolean {
@@ -300,6 +302,7 @@ type SireFileHorse = {
   name?: string
   sire?: string
   dam?: string
+  breeder?: string | null
   netkeibaId?: string
   ancestryByPath?: Record<string, { name?: string } | undefined>
 }
@@ -352,9 +355,14 @@ export function hasCompleteFourGenAncestry(horse: HorseWithAncestry): boolean {
   return missingFourGenPaths(horse).length === 0
 }
 
+export function isMissingBreeder(horse: { breeder?: string | null }): boolean {
+  return !(horse.breeder || '').trim()
+}
+
 /**
- * pedigree-sires のうち、ancestryByPath の4代パスが欠けている種牡馬。
- * 4代枠がすべて存在する（保存済み）ファイルは不詳でも対象外。
+ * pedigree-sires のうち、4代パスが欠けているか、生産者（産地）が空の種牡馬。
+ * 4代枠がすべて存在する（保存済み）ファイルは、4代理由では対象外（不詳でも可）。
+ * 生産者空は incompleteFourGenResolved でも残す。
  */
 export async function scanIncompleteSires(): Promise<IncompleteSireItem[]> {
   let files: string[]
@@ -374,12 +382,14 @@ export async function scanIncompleteSires(): Promise<IncompleteSireItem[]> {
     } catch {
       continue
     }
-    if (data.metadata?.incompleteFourGenResolved) continue
     const horse = data.horse || {}
     const horseId = (horse.id || data.metadata?.subjectHorseId || '').trim()
     if (!horseId) continue
     const missingPaths = missingFourGenPaths(horse)
-    if (missingPaths.length === 0) continue
+    const missingBreeder = isMissingBreeder(horse)
+    const fourGenIncomplete =
+      missingPaths.length > 0 && !data.metadata?.incompleteFourGenResolved
+    if (!fourGenIncomplete && !missingBreeder) continue
 
     items.push({
       horseId,
@@ -392,10 +402,19 @@ export async function scanIncompleteSires(): Promise<IncompleteSireItem[]> {
       ancestryPresent: FOUR_GEN_PATH_COUNT - missingPaths.length,
       ancestryMissing: missingPaths.length,
       missingPaths,
+      missingBreeder,
+      reason: fourGenIncomplete
+        ? 'incomplete_four_gen_pedigree'
+        : 'missing_breeder',
     })
   }
 
-  return items.sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  return items.sort((a, b) => {
+    const ar = a.reason === 'missing_breeder' ? 0 : 1
+    const br = b.reason === 'missing_breeder' ? 0 : 1
+    if (ar !== br) return ar - br
+    return a.name.localeCompare(b.name, 'ja')
+  })
 }
 
 export type SireOffspringPreview = {

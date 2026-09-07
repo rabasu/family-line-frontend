@@ -28,6 +28,7 @@ type Props = {
   idWarning?: string
   showSex?: 'hidden' | 'select' | 'female' | 'male'
   extrasDefaultOpen?: boolean
+  breederRequired?: boolean
 }
 
 function FieldLabel({
@@ -55,6 +56,7 @@ export default function SubjectFields({
   idWarning,
   showSex = 'hidden',
   extrasDefaultOpen = false,
+  breederRequired,
 }: Props) {
   const set = (patch: Partial<EditorSubject>) => onChange({ ...subject, ...patch })
   const setResult = (index: number, patch: Partial<RaceResultInput>) => {
@@ -204,11 +206,16 @@ export default function SubjectFields({
       </label>
 
       <label className="col-span-2">
-        <FieldLabel>生産者</FieldLabel>
+        <FieldLabel required={breederRequired}>生産者</FieldLabel>
         <input
-          className={INPUT}
+          className={
+            breederRequired && !subject.breeder.trim()
+              ? `${INPUT} border-amber-500 bg-amber-50`
+              : INPUT
+          }
           value={subject.breeder}
           onChange={(e) => set({ breeder: e.target.value })}
+          placeholder={breederRequired ? '例: 米 / 英 / 新冠御料牧場' : undefined}
         />
       </label>
       <label className="col-span-2">

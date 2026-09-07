@@ -60,12 +60,13 @@ export interface HorseJsonData {
   details?: string
   raceStats?: {
     total: { runs: number; wins: number }
-    divisions: Array<{ type: 'central' | 'local'; stats: unknown }>
+    divisions: Array<{ type: 'central' | 'local' | 'abroad'; stats: unknown }>
   }
   prizeMoney?: {
     total: string
     central?: string
     local?: string
+    abroad?: string
   }
   awards?: Array<{
     year: number

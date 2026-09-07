@@ -8,6 +8,7 @@ import FiveGenPedigreeTable, { hasKnownAncestor } from '@/components/FiveGenPedi
 import HorseFamilyTree from '@/components/HorseFamilyTree'
 import HorseLink from '@/components/HorseLink'
 import HorseMarkdown from '@/components/HorseMarkdown'
+import RaceCareerSummary from '@/components/RaceCareerSummary'
 import RaceResultsTable from '@/components/RaceResultsTable'
 import StallionOffspringCard from '@/components/StallionOffspringCard'
 import StallionProgeny from '@/components/StallionProgeny'
@@ -16,8 +17,9 @@ import type { Horse } from '@/types/Horse'
 import { sex as sexLabel } from '@/types/Horse'
 import { buildFiveGenPedigree } from '@/lib/five-gen-pedigree'
 import { loadHorseArticle } from '@/lib/horse-article'
-import { hasGradeWin } from '@/lib/race-summary'
+import { hasGradeWin, hasRaceCareerInfo } from '@/lib/race-summary'
 import { damLineOf, findHorseById, findOffspringBySireId, getHorsePageIndex } from '@/lib/traditional-family-loader'
+import { formatSireDisplayName } from '@/lib/origin-country-index'
 
 // 静的エクスポートでは generateStaticParams が返した id 以外は 404 にする
 export const dynamicParams = false
@@ -117,7 +119,18 @@ function ProfileRows({ horse, familyName }: { horse: Horse; familyName: string }
   if (horse.color) rows.push({ label: '毛色', value: horse.color })
   const foaled = formatFoaled(horse)
   if (foaled) rows.push({ label: '生年月日', value: foaled })
-  if (horse.sire) rows.push({ label: '父', value: <HorseLink name={horse.sire} /> })
+  if (horse.sire) {
+    rows.push({
+      label: '父',
+      value: (
+        <HorseLink
+          name={horse.sire}
+          horseId={horse.sireId}
+          displayName={formatSireDisplayName(horse.sire, horse.sireId)}
+        />
+      ),
+    })
+  }
   if (horse.dam) rows.push({ label: '母', value: <HorseLink name={horse.dam} /> })
   if (horse.breeder) rows.push({ label: '生産者', value: horse.breeder })
   if (horse.foaledAt) rows.push({ label: '生産地', value: horse.foaledAt })
@@ -128,11 +141,6 @@ function ProfileRows({ horse, familyName }: { horse: Horse; familyName: string }
   if (horse.familyNumber) rows.push({ label: 'ファミリーナンバー', value: horse.familyNumber })
   if (horse.registration) rows.push({ label: '登録番号', value: horse.registration })
   rows.push({ label: '牝系', value: familyName })
-
-  const stats = horse.raceStats?.total
-  if (stats && (stats.runs != null || stats.wins != null)) {
-    rows.push({ label: '通算成績', value: `${stats.runs ?? '?'}戦${stats.wins ?? '?'}勝` })
-  }
 
   return (
     <table className="w-full border-collapse text-sm">
@@ -241,10 +249,16 @@ export default async function Page({ params }: { params: { id: string } }) {
         </section>
       )}
 
-      {horse.raceResults && horse.raceResults.length > 0 && (
+      {hasRaceCareerInfo(horse.raceStats, horse.prizeMoney, horse.raceResults?.length ?? 0) && (
         <section className="py-6">
           <h2 className="mb-3 text-xl font-bold text-stone-900">競走成績</h2>
-          <RaceResultsTable results={horse.raceResults} />
+          <RaceCareerSummary raceStats={horse.raceStats} prizeMoney={horse.prizeMoney} />
+          {horse.raceResults && horse.raceResults.length > 0 && (
+            <>
+              <h3 className="mb-3 text-lg font-bold text-stone-900">重賞戦績</h3>
+              <RaceResultsTable results={horse.raceResults} />
+            </>
+          )}
         </section>
       )}
 

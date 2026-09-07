@@ -23,6 +23,7 @@
 16. ID変更時の参照同期（同一ファイル内の damId / sireId）
 17. sireId未設定の補完
     - sire/dam が「不詳」の場合は対象外（補完IDなし）
+    - 牝祖本人 + ancestryByPath が4代分そろっている → 対象外（sireId / sireNetkeibaId 不要）
     - sireNetkeibaId がある → pedigree-traditional / pedigree-sires から netkeibaId 一致馬の id を設定
     - sireNetkeibaId が空 → 両ディレクトリの牡馬を name/pedigreeName 一致で検索
       （馬名末尾の (GB) 等は除去。候補1頭なら自動修正、0or複数は要手動修正）
@@ -31,7 +32,6 @@
       - 牝祖本人 + sire あり + 4代未完了 → 「牝祖4代要手動補完」
         （種牡馬単独保存せず、牝祖 ancestryByPath でカバー）
       - 非牝祖 + sire あり → 「父馬要手動補完」（父馬未登録タブと同期）
-      - 牝祖本人 + 4代完了済み → 対象外（sireId 不要）
       - sire=不詳 → 対象外
 18. sireId / sireNetkeibaId 齟齬
     - sireNetkeibaId で父馬を特定し、その id と sireId が異なれば sireId を自動追従
@@ -1244,6 +1244,10 @@ class PedigreeJsonValidator:
                 sire_name = (horse.get('sire', '') or '').strip()
                 sire_netkeiba_id = horse.get('sireNetkeibaId', '') or ''
                 is_root = bool(root_horse_id) and horse_id == root_horse_id
+
+                # 4代完了済みの牝祖は sireId / sireNetkeibaId 不要（種牡馬単独保存しない）
+                if is_root and len(horse.get('ancestryByPath') or {}) >= root_four_gen_complete:
+                    continue
 
                 # 不詳は馬名不明のため補完不能（none 報告も含めスキップ）
                 if sire_name == UNKNOWN_PARENT_NAME:

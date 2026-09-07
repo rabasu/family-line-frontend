@@ -96,6 +96,7 @@ type QueueItem = {
   relatedChildrenTotal?: number
   familyPages?: FamilyPageRef[]
   skipScrapeReason?: string
+  missingBreeder?: boolean
 }
 
 type PedigreePayload = {
@@ -231,7 +232,7 @@ const MODE_META: Record<
   sire: {
     label: '種牡馬不完全',
     title: '種牡馬4代血統 人力補正',
-    help: '4代が欠けていて、在来に産駒がいる種牡馬。',
+    help: '4代が欠けているか、生産者（産地）が空で、在来に産駒がいる種牡馬。',
   },
   missing_sire: {
     label: '父馬未登録',
@@ -875,6 +876,15 @@ export default function SirePedigreeEditor() {
 
   const save = async (goNext: boolean, draft = false) => {
     if (!current?.id) return
+    if (
+      !draft &&
+      current.mode === 'sire' &&
+      current.reason === 'missing_breeder' &&
+      !subject.breeder.trim()
+    ) {
+      setError('生産者（産地）が空です。国名や牧場名を入れてから保存して。')
+      return
+    }
     setSaving(true)
     setError('')
     setStatus('')
@@ -914,12 +924,25 @@ export default function SirePedigreeEditor() {
         )
         return
       }
+      const breederOnly = current.reason === 'missing_breeder'
       setStatus(
-        `保存しました（${json.filename} / ${json.ancestryCount} paths` +
-          (extras.length ? ` / ${extras.join(' / ')}` : '') +
-          '）。空欄は「不詳」で埋め済み。'
+        breederOnly
+          ? `保存しました（${json.filename} / 生産者 ${subject.breeder.trim()}）。`
+          : `保存しました（${json.filename} / ${json.ancestryCount} paths` +
+            (extras.length ? ` / ${extras.join(' / ')}` : '') +
+            '）。空欄は「不詳」で埋め済み。'
       )
       setQueue((prev) => {
+        const stillNeedBreeder =
+          Boolean(
+            current.missingBreeder || current.reason === 'missing_breeder'
+          ) && !subject.breeder.trim()
+        if (stillNeedBreeder) {
+          if (goNext) {
+            setCursor((c) => Math.min(c + 1, Math.max(0, prev.length - 1)))
+          }
+          return prev
+        }
         const nextQueue = prev.filter((q) => {
           if (
             current.mode === 'missing_sire' &&
@@ -1312,8 +1335,12 @@ export default function SirePedigreeEditor() {
                 </div>
                 {current ? (
                   <div className="mt-1 text-[11px] text-stone-500">
-                    reason: {current.reason || '?'} / 欠け:{' '}
-                    {current.ancestryMissing ?? '?'} / 既存:{' '}
+                    reason: {current.reason || '?'}
+                    {current.missingBreeder ||
+                    current.reason === 'missing_breeder'
+                      ? ' / 生産者なし'
+                      : ''}{' '}
+                    / 欠け: {current.ancestryMissing ?? '?'} / 既存:{' '}
                     {current.ancestryPresent ?? '?'} / 入力済み名: {filledCount}/30
                     {payload?.isNew ? ' / 新規作成' : ''}
                   </div>
@@ -1485,6 +1512,10 @@ export default function SirePedigreeEditor() {
                 mode === 'new_family' ||
                 mode === 'new_horse' ||
                 mode === 'edit_horse'
+              }
+              breederRequired={
+                current?.mode === 'sire' &&
+                (current.missingBreeder || current.reason === 'missing_breeder')
               }
             />
             )}
