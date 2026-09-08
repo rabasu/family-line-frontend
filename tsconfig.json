@@ -33,9 +33,7 @@
     "strictNullChecks": true
   },
   "include": ["**/*", ".next/types/**/*.ts"],
-  // app/pedigree/*.tsx は JSON 化以前のデータリテラルで、どこからも import されていない。
-  // 旧データの復元元として残しているだけなので型チェックの対象から外す。
-  "exclude": ["node_modules", ".backups", "app/pedigree/*.tsx"],
+  "exclude": ["node_modules", ".backups"],
   "mdx": {
     // Enable strict type checking in MDX files.
     "checkMdx": true
