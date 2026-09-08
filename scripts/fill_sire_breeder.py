@@ -347,8 +347,6 @@ def set_breeder(horse: dict, breeder: str) -> None:
 def write_sire_file(path: Path, data: dict, breeder: str, dry_run: bool) -> None:
     horse = data.setdefault("horse", {})
     set_breeder(horse, breeder)
-    meta = data.setdefault("metadata", {})
-    meta["lastUpdated"] = now_iso()
     if dry_run:
         return
     path.write_text(

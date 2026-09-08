@@ -10,10 +10,7 @@ const HORSE_DIR = path.join(process.cwd(), 'data', 'horse')
 
 export type HorseArticle = {
   slug: string
-  title: string
   summary?: string
-  date?: string
-  lastmod?: string
   draft: boolean
   markdown: string
 }
@@ -27,15 +24,10 @@ export function loadHorseArticle(slug: string): HorseArticle | null {
   const { data, content } = matter(raw)
   if (data.draft === true && process.env.NODE_ENV === 'production') return null
 
-  const { markdown } = normalizeFamilyMarkdown(content)
-
   return {
     slug,
-    title: typeof data.title === 'string' ? data.title : slug,
     summary: typeof data.summary === 'string' && data.summary.trim() ? data.summary : undefined,
-    date: typeof data.date === 'string' ? data.date : undefined,
-    lastmod: typeof data.lastmod === 'string' ? data.lastmod : undefined,
     draft: data.draft === true,
-    markdown,
+    markdown: normalizeFamilyMarkdown(content),
   }
 }

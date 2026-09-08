@@ -104,23 +104,11 @@ export async function writeFamilyMdx(options: {
     // create
   }
   const display = options.displayName
-  const date = new Date().toISOString().split('T')[0]
   const content = `---
 title: ${display}系
-date: '${date}'
-tags: []
-draft: false
-summary:
-type: Family
 ---
 
-## 概要
-
 ${originPhrase(options.importedYear)}「**${display}**」を牝祖とするファミリーライン。
-
-<ProfileTable horseId="${options.rootHorseId}" />
-
-<FamilyTree name="${options.rootHorseId}" />
 `
   await fs.mkdir(FAMILY_DIR, { recursive: true })
   await fs.writeFile(mdxPath, content, 'utf-8')
@@ -193,7 +181,6 @@ export async function createTraditionalFamily(options: {
   ancestryByPath: Record<string, unknown>
   sireName: string
   damName: string
-  nowIso: string
   draft?: boolean
 }): Promise<{
   filepath: string
@@ -271,7 +258,6 @@ export async function createTraditionalFamily(options: {
     metadata: {
       pedigreeName,
       rootHorseId: horseId,
-      lastUpdated: options.nowIso,
       source: options.draft ? 'manual_draft' : 'manual_correction',
       isTraditionalFamily: true,
       rootAncestrySource: options.draft ? 'manual_draft' : 'manual_correction',

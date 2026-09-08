@@ -12,7 +12,7 @@ import { loadFamilyByRootId } from '@/lib/traditional-family-loader'
 
 export function familyPageMetadata(slug: string): Metadata | undefined {
   const article = loadFamilyArticle(slug)
-  const rootId = article?.treeName || article?.horseId || slug.split('/').pop() || slug
+  const rootId = slug.split('/').pop() || slug
   const family = loadFamilyByRootId(rootId)
   const title = article?.title || (family ? `${family.pedigreeName}系` : undefined)
   if (!title) return undefined
@@ -48,9 +48,9 @@ export default function FamilyDetailPage({ slug }: { slug: string }) {
     notFound()
   }
 
-  const rootId = article?.treeName || slug.split('/').pop() || slug
+  const rootId = slug.split('/').pop() || slug
   const family = loadFamilyByRootId(rootId)
-  const horseId = article?.horseId || family?.rootHorseId
+  const horseId = family?.rootHorseId || rootId
   const showTree = Boolean(family)
   const title = article?.title || (family ? `${family.pedigreeName}系` : undefined)
 

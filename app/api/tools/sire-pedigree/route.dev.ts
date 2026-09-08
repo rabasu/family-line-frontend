@@ -593,8 +593,6 @@ export async function PUT(req: NextRequest) {
       return NextResponse.json({ error: 'id required' }, { status: 400 })
     }
 
-    const now = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z')
-
     // 登録済み種牡馬への紐づけのみ（4代入力なし・新規ファイルなし）
     if (mode === 'missing_sire' && body.linkExistingSireId) {
       const entry = await findCatalogEntryById(body.linkExistingSireId)
@@ -608,7 +606,6 @@ export async function PUT(req: NextRequest) {
       const childIds = collectRelatedChildIds(body, id, item)
       const linked = await linkChildrenToRegisteredSire(entry.name, entry.id, {
         sireNetkeibaId: entry.netkeibaId || '',
-        nowIso: now,
         childIds,
         alsoMatchSireNames: [
           body.queueSireName || '',
@@ -655,7 +652,6 @@ export async function PUT(req: NextRequest) {
       const { item } = await loadQueueItem(id)
       const childIds = collectRelatedChildIds(body, id, item)
       const linked = await setChildrenSireNetkeibaId(sireNk, {
-        nowIso: now,
         childIds,
         sireName: body.queueSireName || item?.sire_name || '',
         alsoMatchSireNames: [
@@ -725,7 +721,6 @@ export async function PUT(req: NextRequest) {
           ancestryByPath,
           sireName: ancestryByPath.s?.name || '',
           damName: ancestryByPath.d?.name || '',
-          nowIso: now,
           draft: isDraft,
         })
         return NextResponse.json({
@@ -815,7 +810,6 @@ export async function PUT(req: NextRequest) {
             name: sireName,
             netkeibaId: sireNk || undefined,
           },
-          nowIso: now,
           createOnly: true,
           horse: offspring,
         })
@@ -864,7 +858,6 @@ export async function PUT(req: NextRequest) {
         const saved = await updateTraditionalHorseInPlace({
           horseId,
           horse: offspring,
-          nowIso: now,
           replaceRaceResults: true,
         })
         return NextResponse.json({
@@ -939,7 +932,6 @@ export async function PUT(req: NextRequest) {
           name: sireName,
           netkeibaId: sireNk || undefined,
         },
-        nowIso: now,
         horse: fromSubject,
       })
       horse.sire = saved.sireName
@@ -952,7 +944,6 @@ export async function PUT(req: NextRequest) {
       data.horse = horse
       data.metadata = {
         ...(data.metadata || {}),
-        lastUpdated: now,
         source: 'manual_correction',
         savedToTraditional: saved.filepath,
         incompleteFourGenResolved: true,
@@ -1023,7 +1014,6 @@ export async function PUT(req: NextRequest) {
         subjectNetkeibaId: horse.netkeibaId || '',
         subjectName: horse.name || '',
         depth: 4,
-        lastUpdated: now,
         source: sourceLabel,
         ...(markResolved ? { incompleteFourGenResolved: true } : {}),
       }
@@ -1054,7 +1044,6 @@ export async function PUT(req: NextRequest) {
       applySubjectToHorse(horse, body.subject)
       loaded.data.metadata = {
         ...(loaded.data.metadata || {}),
-        lastUpdated: now,
         rootAncestrySource: sourceLabel,
         ...(markResolved ? { incompleteFourGenResolved: true } : {}),
       }
@@ -1165,7 +1154,6 @@ export async function PUT(req: NextRequest) {
       subjectNetkeibaId: horse.netkeibaId || '',
       subjectName: horse.name || '',
       depth: 4,
-      lastUpdated: now,
       source: sourceLabel,
       createdForChildId: id,
     }
@@ -1186,7 +1174,6 @@ export async function PUT(req: NextRequest) {
         String(horse.id),
         {
           sireNetkeibaId: String(horse.netkeibaId || ''),
-          nowIso: now,
           childIds,
           alsoMatchSireNames: [
             sireName,

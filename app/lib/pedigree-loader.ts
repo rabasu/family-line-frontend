@@ -13,7 +13,6 @@ export interface PedigreeJsonData {
   metadata: {
     pedigreeName: string
     rootHorseId: string
-    lastUpdated: string
     source: string
     isTraditionalFamily?: boolean
   }

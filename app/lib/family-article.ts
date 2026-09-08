@@ -1,9 +1,8 @@
 /**
- * 牝系ページ用の解説文ローダ。contentlayer を使わず、
+ * 牝系ページ用の解説文ローダ。
  * data/family 配下の Markdown / MDX を gray-matter で読む。
  *
- * MDX 時代の画面部品（ProfileTable / FamilyTree / HL）は本文から取り除き、
- * ページ側のスロットと HorseMarkdown（太字 → 馬リンク）へ寄せる。
+ * 表・系統図はページ側のスロット。本文は HorseMarkdown（太字 → 馬リンク）。
  */
 import fs from 'fs'
 import path from 'path'
@@ -15,14 +14,8 @@ export type FamilyArticle = {
   slug: string
   title: string
   summary?: string
-  date?: string
-  lastmod?: string
   draft: boolean
   markdown: string
-  /** <ProfileTable horseId>。無ければ slug 末尾 */
-  horseId: string
-  /** <FamilyTree name>。牝祖の系統図を出すときだけ入る */
-  treeName?: string
 }
 
 function walkContentFiles(dir: string, files: string[] = []): string[] {
@@ -38,44 +31,28 @@ function walkContentFiles(dir: string, files: string[] = []): string[] {
   return files
 }
 
-function extractAttr(source: string, tag: string, attr: string): string | undefined {
-  const re = new RegExp(`<${tag}[^>]*\\b${attr}=['"]([^'"]+)['"][^>]*\\/?>`, 'i')
-  return source.match(re)?.[1]
-}
-
-/** MDX 固有の JSX を、Markdown + ページスロットで扱える形に落とす */
-export function normalizeFamilyMarkdown(source: string): { markdown: string; horseId?: string; treeName?: string } {
-  const horseId = extractAttr(source, 'ProfileTable', 'horseId')
-  const treeName = extractAttr(source, 'FamilyTree', 'name')
-
-  const markdown = source
-    .replace(/<ProfileTable\b[^>]*\/>/g, '')
-    .replace(/<FamilyTree\b[^>]*\/>/g, '')
+/** 旧ブログ JSX の残骸を Markdown に落とす */
+export function normalizeFamilyMarkdown(source: string): string {
+  return source
+    .replace(/<ProfileTable\b[^>]*\/?>/g, '')
+    .replace(/<FamilyTree\b[^>]*\/?>/g, '')
     .replace(/<HL\s+name=['"]([^'"]+)['"]\s*\/>/g, '**$1**')
-    .replace(/<(?:GlossaryLink|GL)\b[^>]*\/>/g, '')
+    .replace(/<(?:GlossaryLink|GL)\b[^>]*\/?>/g, '')
     .replace(/^\s*## 概要\s*\n+/, '')
     .replace(/\n{3,}/g, '\n\n')
     .trim()
-
-  return { markdown, horseId, treeName }
 }
 
 function articleFromFile(slug: string, filePath: string): FamilyArticle {
   const raw = fs.readFileSync(filePath, 'utf8')
   const { data, content } = matter(raw)
-  const normalized = normalizeFamilyMarkdown(content)
-  const horseId = normalized.horseId || slug.split('/').pop() || slug
 
   return {
     slug,
     title: typeof data.title === 'string' ? data.title : '',
     summary: typeof data.summary === 'string' && data.summary.trim() ? data.summary : undefined,
-    date: typeof data.date === 'string' ? data.date : data.date instanceof Date ? data.date.toISOString() : undefined,
-    lastmod: typeof data.lastmod === 'string' ? data.lastmod : undefined,
     draft: data.draft === true,
-    markdown: normalized.markdown,
-    horseId,
-    treeName: normalized.treeName,
+    markdown: normalizeFamilyMarkdown(content),
   }
 }
 

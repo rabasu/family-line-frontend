@@ -284,7 +284,7 @@ class PedigreeJsonValidator:
 
         metadata = data['metadata']
         required_metadata_fields = ['pedigreeName',
-                                    'rootHorseId', 'lastUpdated', 'source']
+                                    'rootHorseId', 'source']
 
         for field in required_metadata_fields:
             if field not in metadata:

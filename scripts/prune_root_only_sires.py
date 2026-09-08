@@ -16,7 +16,6 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 
@@ -26,10 +25,6 @@ PEDIGREE_DIR = ROOT / "app" / "pedigree"
 SIRE_DIR = ROOT / "app" / "pedigree-sires"
 
 NODE_KEYS = ("name", "foaled", "color", "sex", "breed", "netkeibaId")
-
-
-def now_iso() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
 
 
 def json_files(directory: Path) -> List[Path]:
@@ -260,7 +255,6 @@ def process(dry_run: bool) -> int:
             file_changed = True
         if not file_changed:
             continue
-        meta["lastUpdated"] = now_iso()
         data["metadata"] = meta
         trad_updated += 1
         if not dry_run:

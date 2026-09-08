@@ -104,7 +104,6 @@ type TradFile = {
   metadata?: {
     pedigreeName?: string
     rootHorseId?: string
-    lastUpdated?: string
     incompleteFourGenResolved?: boolean
     [key: string]: unknown
   }
@@ -558,7 +557,6 @@ type ChildMatchOptions = {
   childIds?: string[]
   /** 追加で照合する父馬名（キュー上の旧表記など） */
   alsoMatchSireNames?: string[]
-  nowIso?: string
 }
 
 function childMatchesPendingSire(
@@ -610,7 +608,6 @@ export async function setChildrenSireNetkeibaId(
     return { linkedCount: 0, files: [] }
   }
 
-  const now = options?.nowIso || new Date().toISOString().replace(/\.\d{3}Z$/, 'Z')
   let linkedCount = 0
   const touched: string[] = []
 
@@ -637,10 +634,6 @@ export async function setChildrenSireNetkeibaId(
     }
 
     if (changed) {
-      data.metadata = {
-        ...(data.metadata || {}),
-        lastUpdated: now,
-      }
       await fs.writeFile(filepath, JSON.stringify(data, null, 2) + '\n', 'utf-8')
       touched.push(filename)
     }
@@ -684,7 +677,6 @@ export async function linkChildrenToRegisteredSire(
     return { linkedCount: 0, files: [] }
   }
 
-  const now = options?.nowIso || new Date().toISOString().replace(/\.\d{3}Z$/, 'Z')
   const sireNk = (options?.sireNetkeibaId || '').trim()
   const displaySire = stripTrailingCountryParen(targetSire) || targetSire
   let linkedCount = 0
@@ -718,10 +710,6 @@ export async function linkChildrenToRegisteredSire(
     }
 
     if (changed) {
-      data.metadata = {
-        ...(data.metadata || {}),
-        lastUpdated: now,
-      }
       await fs.writeFile(filepath, JSON.stringify(data, null, 2) + '\n', 'utf-8')
       touched.push(filename)
     }

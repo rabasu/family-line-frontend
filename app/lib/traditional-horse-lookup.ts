@@ -37,7 +37,6 @@ type TradFile = {
   metadata?: {
     pedigreeName?: string
     rootHorseId?: string
-    lastUpdated?: string
     [key: string]: unknown
   }
   horses?: Array<Record<string, unknown>>
@@ -418,7 +417,6 @@ export function applyEditableHorseFields(
 export async function updateTraditionalHorseInPlace(options: {
   horseId: string
   horse: TraditionalOffspringInput
-  nowIso: string
   replaceRaceResults?: boolean
 }): Promise<{
   filepath: string
@@ -463,10 +461,6 @@ export async function updateTraditionalHorseInPlace(options: {
 
   horses[idx] = orderTraditionalHorseKeys(next)
   data.horses = horses
-  data.metadata = {
-    ...(data.metadata || {}),
-    lastUpdated: options.nowIso,
-  }
   await fs.writeFile(abs, JSON.stringify(data, null, 2) + '\n', 'utf-8')
   cache = null
 
@@ -544,7 +538,6 @@ export async function upsertHorseIntoDamFamily(options: {
   damId: string
   sire: TraditionalSireRef
   horse: TraditionalOffspringInput
-  nowIso: string
   /** true: 既存 id があればエラー（新規追加専用） */
   createOnly?: boolean
 }): Promise<{
@@ -647,10 +640,6 @@ export async function upsertHorseIntoDamFamily(options: {
     else horses.push(ordered)
   }
   data.horses = horses
-  data.metadata = {
-    ...(data.metadata || {}),
-    lastUpdated: options.nowIso,
-  }
   await fs.writeFile(abs, JSON.stringify(data, null, 2) + '\n', 'utf-8')
   cache = null
 
