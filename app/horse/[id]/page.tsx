@@ -235,6 +235,9 @@ export default async function Page({ params }: { params: { id: string } }) {
           {name}
         </h1>
         <p className="text-stone-500">{subtitleOf(horse)}</p>
+        {(article?.summary || horse.summary) && (
+          <p className="text-stone-500">{article?.summary || horse.summary}</p>
+        )}
       </header>
 
       <section className="py-6">
@@ -258,6 +261,18 @@ export default async function Page({ params }: { params: { id: string } }) {
               <h3 className="mb-3 text-lg font-bold text-stone-900">重賞戦績</h3>
               <RaceResultsTable results={horse.raceResults} />
             </>
+          )}
+        </section>
+      )}
+
+      {(details || article) && (
+        // data-horse-modal-clip: モーダルでは冒頭だけ残して「続きを読む」へ誘導する
+        <section id="article" className="prose dark:prose-invert max-w-none py-6" data-horse-modal-clip>
+          <h2 className="text-xl font-bold text-stone-900">解説</h2>
+          {article ? (
+            <HorseMarkdown markdown={article.markdown} />
+          ) : (
+            details && <HorseMarkdown markdown={details} />
           )}
         </section>
       )}
@@ -312,15 +327,6 @@ export default async function Page({ params }: { params: { id: string } }) {
             fullTree={<FamilyTreeView horse={horse} />}
             directTree={<FamilyTreeView horse={withDirectOffspringOnly(horse)} />}
           />
-        </section>
-      )}
-
-      {(details || article) && (
-        // data-horse-modal-clip: モーダルでは冒頭だけ残して「続きを読む」へ誘導する
-        <section id="article" className="prose dark:prose-invert max-w-none py-6" data-horse-modal-clip>
-          <h2 className="text-xl font-bold text-stone-900">解説</h2>
-          {details && <HorseMarkdown markdown={details} />}
-          {article && <HorseMarkdown markdown={article.markdown} />}
         </section>
       )}
 

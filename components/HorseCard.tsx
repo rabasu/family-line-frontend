@@ -7,7 +7,6 @@ import { formatBreedMark } from '@/lib/breed-mark'
 import { filterHighlightRaces, raceStatsSummary } from '@/lib/race-summary'
 import { yearOf } from 'app/lib/utils'
 import HorseLink from './HorseLink'
-import HorseMarkdown from './HorseMarkdown'
 import HorseNameWithPedigree from './HorseNameWithPedigree'
 import { PrizeMoney } from '@/types/PrizeMoney'
 import { formatSireDisplayName } from '@/lib/origin-country-index'
@@ -79,29 +78,12 @@ export default HorseCard
 
 const HorseDetails = (horse: Horse) => {
   const summarized = filterHighlightRaces(horse.raceResults || [], 3)
-  if (horse.details) {
-    return (
-      <div className="">
-        <details className="collapse collapse-arrow rounded-none">
-          <summary className={`collapse-title  min-h-0 ${summary({ sex: horse.sex })} `}>
-            <BaseInfo {...horse} />
-            {summarized && <RecordsSummary records={summarized} />}
-          </summary>
-          <div className="collapse-content rounded-none">
-            {typeof horse.details === 'string' && <HorseMarkdown markdown={horse.details} />}
-          </div>
-        </details>
-      </div>
-    )
-  } else {
-    return (
-      <div className={`${summary({ sex: horse.sex })}`}>
-        <BaseInfo {...horse} />
-        {/* {summarized && <br />} */}
-        {summarized && <RecordsSummary records={summarized} />}
-      </div>
-    )
-  }
+  return (
+    <div className={`${summary({ sex: horse.sex })}`}>
+      <BaseInfo {...horse} />
+      {summarized && <RecordsSummary records={summarized} />}
+    </div>
+  )
 }
 
 // 馬名を整形する
