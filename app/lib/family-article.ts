@@ -63,7 +63,7 @@ export function loadFamilyArticle(slug: string): FamilyArticle | null {
   return articleFromFile(slug, filePath)
 }
 
-/** data/family 配下の slug（拡張子なし、入れ子パスあり） */
+/** data/family 配下の slug（拡張子なし）。入れ子パスは旧方針の名残で、新規には作らない */
 export function listFamilyArticleSlugs(): string[] {
   return walkContentFiles(FAMILY_DIR).map((filePath) => {
     const rel = path.relative(FAMILY_DIR, filePath).replace(/\\/g, '/')
