@@ -1,5 +1,42 @@
 /** 馬 id / 在来 JSON ファイル名の生成と衝突判定用 */
 
+/** ルート直 `/{id}` と衝突する静的パス。馬 id にしてはいけない */
+export const RESERVED_ROOT_SLUGS = new Set([
+  'search',
+  'glossary',
+  'family',
+  'horse',
+  'tools',
+  'api',
+  'static',
+  'sitemap',
+  'robots',
+  'about',
+  'tags',
+  'blog',
+  'feed',
+  'rss',
+  'index',
+  '404',
+  '500',
+])
+
+export function isReservedRootSlug(id: string): boolean {
+  return RESERVED_ROOT_SLUGS.has(id)
+}
+
+/** 馬の正規 URL。hash は `#article` でも `article` でも可 */
+export function horseHref(id: string, hash = ''): string {
+  const path = `/${encodeURIComponent(id)}`
+  if (!hash) return path
+  return `${path}${hash.startsWith('#') ? hash : `#${hash}`}`
+}
+
+export function ensureUnreserved(id: string): string {
+  if (!id || !isReservedRootSlug(id)) return id
+  return `${id}-horse`
+}
+
 export function slugifyId(src: string): string {
   return src
     .trim()
@@ -37,13 +74,13 @@ export function proposeHorseId(options: {
   pedigreeName?: string
 }): string {
   const preferred = (options.preferredId || '').trim()
-  if (preferred) return slugifyId(preferred) || preferred
+  if (preferred) return ensureUnreserved(slugifyId(preferred) || preferred)
   const en = (options.englishName || '').trim()
-  if (en) return slugifyId(en)
+  if (en) return ensureUnreserved(slugifyId(en))
   const name = (options.name || '').trim()
-  if (hasLatin(name)) return slugifyId(name)
+  if (hasLatin(name)) return ensureUnreserved(slugifyId(name))
   const pedigreeName = (options.pedigreeName || '').trim()
-  if (hasLatin(pedigreeName)) return slugifyId(pedigreeName)
+  if (hasLatin(pedigreeName)) return ensureUnreserved(slugifyId(pedigreeName))
   return ''
 }
 

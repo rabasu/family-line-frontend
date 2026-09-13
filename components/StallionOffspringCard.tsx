@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { horseHref } from '@/lib/horse-id'
 import { tv } from 'tailwind-variants'
 import type { Horse } from '@/types/Horse'
 import { formatBreedMark } from '@/lib/breed-mark'
@@ -47,7 +48,7 @@ export default function StallionOffspringCard({ horse, familyName, familyRootId 
           母 {horse.dam ? <HorseLink name={horse.dam} /> : '不詳'}
         </span>
         <span className="text-stone-400">·</span>
-        <Link href={`/family/${familyRootId}`} className="text-sky-700 hover:underline">
+        <Link href={horseHref(familyRootId)} className="text-sky-700 hover:underline">
           {familyName}系
         </Link>
       </div>

@@ -3,7 +3,7 @@
 /**
  * 静的エクスポート（out/）のローカル確認用サーバ。
  *
- * python -m http.server は /horse/foo を foo.html に結び付けない。
+ * python -m http.server は /florries-cup を florries-cup.html に結び付けない。
  * Cloudflare Workers の静的アセットはデフォルトでその変換をするので、
  * 本番と同じ URL（拡張子なし）で確認できるようにしている。
  */

@@ -1,5 +1,5 @@
 /**
- * 牝系ページ用の解説文ローダ。
+ * 根馬の系統解説ローダ。
  * data/family 配下の Markdown / MDX を gray-matter で読む。
  *
  * 表・系統図はページ側のスロット。本文は HorseMarkdown（太字 → 馬リンク）。
@@ -16,19 +16,6 @@ export type FamilyArticle = {
   summary?: string
   draft: boolean
   markdown: string
-}
-
-function walkContentFiles(dir: string, files: string[] = []): string[] {
-  if (!fs.existsSync(dir)) return files
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const fullPath = path.join(dir, entry.name)
-    if (entry.isDirectory()) {
-      walkContentFiles(fullPath, files)
-    } else if (entry.isFile() && /\.(mdx|md)$/.test(entry.name)) {
-      files.push(fullPath)
-    }
-  }
-  return files
 }
 
 /** 旧ブログ JSX の残骸を Markdown に落とす */
@@ -63,33 +50,3 @@ export function loadFamilyArticle(slug: string): FamilyArticle | null {
   return articleFromFile(slug, filePath)
 }
 
-/** data/family 配下の slug（拡張子なし）。入れ子パスは旧方針の名残で、新規には作らない */
-export function listFamilyArticleSlugs(): string[] {
-  return walkContentFiles(FAMILY_DIR).map((filePath) => {
-    const rel = path.relative(FAMILY_DIR, filePath).replace(/\\/g, '/')
-    return rel.replace(/\.(mdx|md)$/, '')
-  })
-}
-
-/**
- * 静的生成する牝系ページの slug。
- * 解説 MDX と在来牝系インデックスの和集合。draft は本番で除外する。
- */
-export function listFamilyPageSlugs(): string[] {
-  const slugs = new Set<string>()
-  const isProd = process.env.NODE_ENV === 'production'
-
-  for (const slug of listFamilyArticleSlugs()) {
-    const article = loadFamilyArticle(slug)
-    if (isProd && article?.draft) continue
-    slugs.add(slug)
-  }
-
-  const indexPath = path.join(process.cwd(), 'data', 'pedigree', 'traditional-family-index.json')
-  if (fs.existsSync(indexPath)) {
-    const { families } = JSON.parse(fs.readFileSync(indexPath, 'utf8')) as { families: { slug: string }[] }
-    for (const family of families) slugs.add(family.slug)
-  }
-
-  return [...slugs]
-}

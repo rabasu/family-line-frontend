@@ -1,5 +1,6 @@
 import React from 'react'
 import NextLink from 'next/link'
+import { horseHref } from '@/lib/horse-id'
 import { findHorseLinkByName, getHorsePageIndex } from 'app/lib/traditional-family-loader'
 
 interface LinkProps {
@@ -25,8 +26,8 @@ const HorseLink: React.FC<LinkProps> = ({ name, horseId, displayName, year, quie
     return <span className="font-medium">{label}</span>
   }
 
-  // 個別ページが恒久URL。牝系内の位置は馬ページ側のパンくずから辿れる。
-  return <NextLink href={`/horse/${result.link}`}>{label}</NextLink>
+  // 個別ページが恒久URL（ルート直 /{id}）。
+  return <NextLink href={horseHref(result.link)}>{label}</NextLink>
 }
 
 export default HorseLink

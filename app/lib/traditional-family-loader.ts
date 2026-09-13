@@ -6,7 +6,7 @@
  * 静的エクスポートで 8,594 頭分のページを生成するとこれがメモリを食い潰すため、
  * fs による遅延読み込みと件数上限つきキャッシュに置き換えている。
  *
- * すべて同期 API なのは、FamilyTree / ProfileTable がサーバーコンポーネントとして
+ * すべて同期 API なのは、馬ページがサーバーコンポーネントとして
  * ビルド時に描画されるため。静的エクスポートでは I/O をブロックしても問題ない。
  */
 import fs from 'fs'
@@ -24,7 +24,7 @@ const HORSE_LINK_MAP = path.join(process.cwd(), 'data', 'pedigree', 'horse-link-
 
 /**
  * 同時に展開しておく牝系ツリーの数。
- * /horse/[id] の generateStaticParams を牝系ごとにまとめて返すため、少数でもヒット率は高い。
+ * /[id] の generateStaticParams を牝系ごとにまとめて返すため、少数でもヒット率は高い。
  */
 const FAMILY_CACHE_LIMIT = 4
 

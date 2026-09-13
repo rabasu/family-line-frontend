@@ -4,7 +4,7 @@
  * generate-horse-page-index.js
  *
  * 在来牝系の全馬について id → { file, family, name, year, sex, tier } を生成する。
- * /horse/[id] の generateStaticParams と、サーバー側の馬データ検索に使う。
+ * /[id] の generateStaticParams と、サーバー側の馬データ検索に使う。
  *
  * 出力: data/pedigree/horse-page-index.json
  */

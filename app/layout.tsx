@@ -82,9 +82,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProviders>
           <UmamiAnalytics />
           <SectionContainer>
-            <div className="flex min-h-screen flex-col justify-between font-sans">
+            <div className="flex min-h-screen min-w-0 flex-col justify-between font-sans">
               <Header />
-              <main className="mb-auto">{children}</main>
+              <main className="mb-auto min-w-0">{children}</main>
               <Footer />
             </div>
           </SectionContainer>

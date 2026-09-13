@@ -4,6 +4,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 import { stripTrailingCountryParen } from '@/lib/sire-manual-missing'
+import { horseHref } from '@/lib/horse-id'
 import { findCatalogEntryById, searchSireCatalog } from '@/lib/sire-catalog'
 
 const TRAD_DIR = path.join(process.cwd(), 'app', 'pedigree-traditional')
@@ -116,7 +117,7 @@ export async function loadTraditionalHorses(
         rootHorseId,
         pedigreeName,
         horsePedigreeName: String(horse.pedigreeName || ''),
-        familyHref: rootHorseId ? `/family/${rootHorseId}` : '',
+        familyHref: rootHorseId ? horseHref(rootHorseId) : '',
       })
     }
   }

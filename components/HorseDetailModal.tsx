@@ -2,6 +2,7 @@
 
 import { Fragment, useCallback, useEffect, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import { horseHref, isReservedRootSlug } from '@/lib/horse-id'
 
 const OPEN_EVENT = 'horse-modal:open'
 
@@ -29,7 +30,16 @@ function escapeHtml(text: string): string {
 }
 
 function fullPageHref(horseId: string, hash = ''): string {
-  return `/horse/${encodeURIComponent(horseId)}${hash}`
+  return horseHref(horseId, hash)
+}
+
+function parseHorseHref(href: string): string | null {
+  const path = href.split(/[?#]/)[0]
+  const match = path.match(/^\/([^/]+)$/)
+  if (!match) return null
+  const id = decodeURIComponent(match[1] || '')
+  if (!id || isReservedRootSlug(id)) return null
+  return id
 }
 
 /** インタラクティブ／巨大な節を、見出し＋要約＋個別ページ誘導に差し替える */
@@ -87,9 +97,10 @@ async function fetchHorseFragment(horseId: string): Promise<string> {
   const cached = fragmentCache.get(horseId)
   if (cached) return cached
 
-  // Cloudflare は /horse/id → horse/id.html を返す。
+  // Cloudflare は /id → id.html を返す。
   // 拡張子を要求する静的サーバ向けに .html も試す。
-  const paths = [`/horse/${encodeURIComponent(horseId)}`, `/horse/${encodeURIComponent(horseId)}.html`]
+  const encoded = encodeURIComponent(horseId)
+  const paths = [`/${encoded}`, `/${encoded}.html`]
   let res: Response | null = null
   for (const path of paths) {
     const attempt = await fetch(path)
@@ -149,7 +160,7 @@ export default function HorseDetailModal() {
   useEffect(() => {
     const onOpen = (event: Event) => {
       const { horseId, displayName } = (event as CustomEvent<OpenDetail>).detail
-      const url = `/horse/${encodeURIComponent(horseId)}`
+      const url = horseHref(horseId)
       if (pushedRef.current) {
         // モーダル内での馬移動。履歴は増やさず、戻るで必ず元のページに帰れるようにする
         history.replaceState({ horseModal: horseId }, '', url)
@@ -195,7 +206,7 @@ export default function HorseDetailModal() {
 
     if (anchor.hasAttribute('data-full-page')) {
       e.preventDefault()
-      // モーダルは pushState で既に /horse/id にいることが多い。
+      // モーダルは pushState で既に /id にいることが多い。
       // 同パス + hash だとドキュメント遷移が起きないので、必要なら reload する。
       const url = new URL(href, window.location.origin)
       if (window.location.pathname === url.pathname) {
@@ -207,10 +218,9 @@ export default function HorseDetailModal() {
       return
     }
 
-    if (!href.startsWith('/horse/')) return
-    e.preventDefault()
-    const id = decodeURIComponent(href.slice('/horse/'.length).split(/[?#]/)[0] || '')
+    const id = parseHorseHref(href)
     if (!id) return
+    e.preventDefault()
     openHorseModal(id, anchor.textContent?.trim() || '')
     bodyRef.current?.scrollTo({ top: 0 })
   }
@@ -245,7 +255,7 @@ export default function HorseDetailModal() {
                   <Dialog.Title className="text-base font-semibold text-stone-900">{title}</Dialog.Title>
                   <div className="flex items-center gap-3">
                     <a
-                      href={`/horse/${encodeURIComponent(horseId)}`}
+                      href={horseHref(horseId)}
                       className="text-xs text-sky-700 hover:underline"
                     >
                       ページを開く

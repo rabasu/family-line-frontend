@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Link from '@/components/Link'
+import { horseHref } from '@/lib/horse-id'
 import siteMetadata from '@/data/siteMetadata'
 import type { TraditionalFamily } from '@/types/TraditionalFamily'
 import FamilyFilterModal, { type FilterState, EMPTY_FILTER, countActiveFilters, getDecade } from '@/components/FamilyFilterModal'
@@ -270,7 +271,7 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
                   <div className="space-y-2">
                     <h2 className={`text-xl leading-8 tracking-tight ${isPlaceholder ? 'font-medium' : 'font-bold'}`}>
                       <Link
-                        href={`/family/${family.slug}`}
+                        href={horseHref(family.slug)}
                         className={
                           isPlaceholder
                             ? 'text-gray-500 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-400'
@@ -304,11 +305,11 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
                     </dl>
                     <div className="text-base font-medium leading-6">
                       <Link
-                        href={`/family/${family.slug}`}
+                        href={horseHref(family.slug)}
                         className={
                           isPlaceholder ? 'text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400' : 'text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
                         }
-                        aria-label={`${family.name}の牝系ページへ`}
+                        aria-label={`${family.name}のページへ`}
                       >
                         詳細を見る →
                       </Link>

@@ -1,6 +1,7 @@
 'use client'
 
 import type { MouseEvent } from 'react'
+import { horseHref } from '@/lib/horse-id'
 import { openHorseModal } from './HorseDetailModal'
 
 type Props = {
@@ -25,7 +26,7 @@ export default function HorseNameWithPedigree({ horseId, displayName }: Props) {
 
   return (
     <a
-      href={`/horse/${horseId}`}
+      href={horseHref(horseId)}
       onClick={handleClick}
       className="hover:text-primary-600 cursor-pointer font-bold text-inherit hover:underline"
     >

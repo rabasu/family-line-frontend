@@ -1,6 +1,6 @@
 import { spawn } from 'child_process'
 import path from 'path'
-import { proposeHorseId, slugifyId } from './horse-id'
+import { ensureUnreserved, proposeHorseId, slugifyId } from './horse-id'
 
 const cache = new Map<string, string>()
 
@@ -54,7 +54,7 @@ export async function resolveHorseId(options: {
   pedigreeName?: string
 }): Promise<string> {
   const preferred = (options.preferredId || '').trim()
-  if (preferred && preferred !== 'new') return slugifyId(preferred) || preferred
+  if (preferred && preferred !== 'new') return ensureUnreserved(slugifyId(preferred) || preferred)
 
   const en = (options.englishName || '').trim()
   const ja =
@@ -63,7 +63,7 @@ export async function resolveHorseId(options: {
   if (!source) return ''
 
   const generated = await pythonGenerateHorseId(source)
-  if (generated) return generated
+  if (generated) return ensureUnreserved(generated)
   return proposeHorseId({
     englishName: en,
     name: ja,

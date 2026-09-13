@@ -22,7 +22,7 @@ const TRADITIONAL_DIR = path.join(process.cwd(), 'app', 'pedigree-traditional')
 
 /**
  * 牝系JSONは1ファイルが最大数MBあるため、常駐させるのは数件までにする。
- * /horse/[id] の generateStaticParams を牝系ごとにまとめているのでヒット率は高い。
+ * /[id] の generateStaticParams を牝系ごとにまとめているのでヒット率は高い。
  */
 const TRAD_FILE_CACHE_LIMIT = 4
 /** 種牡馬は1頭1ファイルで小さいので多めに保持してよい */

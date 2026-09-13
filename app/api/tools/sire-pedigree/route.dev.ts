@@ -24,7 +24,7 @@ import {
   type TraditionalOffspringInput,
 } from '@/lib/traditional-horse-lookup'
 import { createTraditionalFamily } from '@/lib/traditional-family-write'
-import { hasLatin, slugifyId, toFileStem } from '@/lib/horse-id'
+import { hasLatin, horseHref, slugifyId, toFileStem } from '@/lib/horse-id'
 import { resolveHorseId } from '@/lib/horse-id-server'
 
 export const runtime = 'nodejs'
@@ -734,7 +734,7 @@ export async function PUT(req: NextRequest) {
           pedigreeName: saved.pedigreeName,
           ancestryCount: Object.keys(ancestryByPath).length,
           mdxCreated: saved.mdxCreated,
-          familyHref: `/family/${saved.horseId}`,
+          familyHref: horseHref(saved.horseId),
           indexNotes: saved.indexNotes,
         })
       } catch (e) {

@@ -9,6 +9,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 import { allAncestryPaths } from '@/lib/sire-pedigree-paths'
+import { horseHref } from '@/lib/horse-id'
 import { stripTrailingCountryParen } from '@/lib/origin-country'
 
 export { stripTrailingCountryParen }
@@ -179,7 +180,7 @@ export async function scanMissingSireGroups(): Promise<MissingSireGroup[]> {
     }
     const pedigreeName = data.metadata?.pedigreeName || filename.replace(/\.json$/, '')
     const rootHorseId = data.metadata?.rootHorseId || ''
-    const familyHref = rootHorseId ? `/family/${rootHorseId}` : ''
+    const familyHref = rootHorseId ? horseHref(rootHorseId) : ''
     const relPath = repoRelative(filepath)
 
     for (const horse of data.horses || []) {
@@ -283,7 +284,7 @@ export async function scanRootFourGenNeeded(): Promise<RootFourGenItem[]> {
       filepath: repoRelative(filepath),
       filename,
       pedigreeName,
-      familyHref: `/family/${rootHorseId}`,
+      familyHref: horseHref(rootHorseId),
       netkeibaId: nk,
       sireName: (root.sire || '').trim(),
       damName: (root.dam || '').trim(),
@@ -490,7 +491,7 @@ export async function collectOffspringForSires(
     const pedigreeName =
       data.metadata?.pedigreeName || filename.replace(/\.json$/, '')
     const rootHorseId = data.metadata?.rootHorseId || ''
-    const familyHref = rootHorseId ? `/family/${rootHorseId}` : ''
+    const familyHref = rootHorseId ? horseHref(rootHorseId) : ''
     const relPath = repoRelative(filepath)
 
     for (const horse of data.horses || []) {

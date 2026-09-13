@@ -16,7 +16,9 @@ import siteMetadata from '@/data/siteMetadata'
 import type { Horse } from '@/types/Horse'
 import { sex as sexLabel } from '@/types/Horse'
 import { buildFiveGenPedigree } from '@/lib/five-gen-pedigree'
+import { loadFamilyArticle } from '@/lib/family-article'
 import { loadHorseArticle } from '@/lib/horse-article'
+import { horseHref, isReservedRootSlug } from '@/lib/horse-id'
 import { hasGradeWin, hasRaceCareerInfo } from '@/lib/race-summary'
 import { damLineOf, findHorseById, findOffspringBySireId, getHorsePageIndex } from '@/lib/traditional-family-loader'
 import { formatSireDisplayName } from '@/lib/origin-country-index'
@@ -29,6 +31,7 @@ export const generateStaticParams = async () => {
   // 情報の薄い馬にもページは用意する（robots で index/noindex を出し分ける）。
   // 牝系ごとにまとめて生成すると、牝系JSONのキャッシュがページ間で効く。
   return Object.entries(index.horses)
+    .filter(([id]) => !isReservedRootSlug(id))
     .sort(([, a], [, b]) => a.family.localeCompare(b.family))
     .map(([id]) => ({ id }))
 }
@@ -62,8 +65,17 @@ function subtitleOf(horse: Horse): string {
   return parts.join(' ')
 }
 
-function articleFor(horseId: string) {
-  return loadHorseArticle(horseId)
+function commentaryFor(horseId: string, isRoot: boolean) {
+  const horseArticle = loadHorseArticle(horseId)
+  if (horseArticle) return horseArticle
+  if (!isRoot) return null
+  const familyArticle = loadFamilyArticle(horseId)
+  if (!familyArticle?.markdown) return null
+  return {
+    summary: familyArticle.summary,
+    markdown: familyArticle.markdown,
+    draft: familyArticle.draft,
+  }
 }
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
@@ -71,39 +83,52 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   if (!found) return {}
 
   const { horse, family, entry } = found
+  const isRoot = horse.id === family.rootHorseId
   const name = displayNameOf(horse)
-  const article = articleFor(params.id)
+  const familyArticle = isRoot ? loadFamilyArticle(horse.id) : null
+  const article = commentaryFor(horse.id, isRoot)
+  const title = isRoot ? familyArticle?.title || `${family.pedigreeName}系` : name
   const description =
     article?.summary ||
     horse.summary ||
+    familyArticle?.summary ||
     `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。父${horse.sire || '不詳'}、母${horse.dam || '不詳'}。`
+  const url = `${siteMetadata.siteUrl}${horseHref(params.id)}`
 
   return {
-    title: name,
+    title,
     description,
     // 情報の薄い馬はクロールバジェットを食うだけなので索引から外し、リンクだけ辿らせる。
     // index 側はルートレイアウトの robots 設定を継がせたいのでキー自体を置かない。
     ...(entry.tier === 'noindex' ? { robots: { index: false, follow: true } } : {}),
-    alternates: { canonical: `${siteMetadata.siteUrl}/horse/${params.id}` },
+    alternates: { canonical: url },
     openGraph: {
-      title: name,
+      title,
       description,
       siteName: siteMetadata.title,
       locale: 'ja_JP',
       type: 'article',
-      url: `${siteMetadata.siteUrl}/horse/${params.id}`,
+      url,
       images: [siteMetadata.socialBanner],
     },
     twitter: {
       card: 'summary_large_image',
-      title: name,
+      title,
       description,
       images: [siteMetadata.socialBanner],
     },
   }
 }
 
-function ProfileRows({ horse, familyName }: { horse: Horse; familyName: string }) {
+function ProfileRows({
+  horse,
+  familyName,
+  familyRootId,
+}: {
+  horse: Horse
+  familyName: string
+  familyRootId: string
+}) {
   const rows: Array<{ label: string; value: ReactNode }> = []
   const nameLabel = horse.pedigreeName ? '競走名' : '馬名'
 
@@ -140,7 +165,17 @@ function ProfileRows({ horse, familyName }: { horse: Horse; familyName: string }
   if (horse.trainer) rows.push({ label: '調教師', value: horse.trainer })
   if (horse.familyNumber) rows.push({ label: 'ファミリーナンバー', value: horse.familyNumber })
   if (horse.registration) rows.push({ label: '登録番号', value: horse.registration })
-  rows.push({ label: '牝系', value: familyName })
+  rows.push({
+    label: '牝系',
+    value:
+      horse.id === familyRootId ? (
+        familyName
+      ) : (
+        <Link href={horseHref(familyRootId)} className="text-sky-700 hover:underline">
+          {familyName}
+        </Link>
+      ),
+  })
 
   return (
     <table className="w-full border-collapse text-sm">
@@ -171,7 +206,7 @@ function HorseRef({ horse, currentId }: { horse: Horse; currentId: string }) {
     )
   }
   return (
-    <Link href={`/horse/${horse.id}`} className="text-sky-700 hover:underline">
+    <Link href={horseHref(horse.id)} className="text-sky-700 hover:underline">
       {label}
       {year}
     </Link>
@@ -194,23 +229,25 @@ export default async function Page({ params }: { params: { id: string } }) {
   if (!found) return notFound()
 
   const { horse, family, entry } = found
+  const isRoot = horse.id === family.rootHorseId
   const name = displayNameOf(horse)
+  const familyArticle = isRoot ? loadFamilyArticle(horse.id) : null
+  const familyTitle = familyArticle?.title || `${family.pedigreeName}系`
   const damLine = damLineOf(family, horse.id)
   const offspring = horse.children || []
   const sireOffspring = horse.sex === 'male' ? findOffspringBySireId(horse.id) : []
   const gradeWinnerCount = sireOffspring.filter((item) => hasGradeWin(item.horse.raceResults)).length
   const pedigree = await buildFiveGenPedigree(horse.id)
-  const article = articleFor(horse.id)
+  const article = commentaryFor(horse.id, isRoot)
   const details = typeof horse.details === 'string' ? horse.details.trim() : ''
-  const pageUrl = `${siteMetadata.siteUrl}/horse/${horse.id}`
+  const pageUrl = `${siteMetadata.siteUrl}${horseHref(horse.id)}`
+  const summary = article?.summary || horse.summary || familyArticle?.summary
   const description =
-    article?.summary ||
-    horse.summary ||
-    `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。`
+    summary || `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。`
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: name,
+    headline: isRoot ? familyTitle : name,
     description,
     url: pageUrl,
     image: siteMetadata.socialBanner,
@@ -219,7 +256,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   return (
     // data-horse-detail はモーダルが本文だけを抜き出すための目印。
     // 静的エクスポートでは API が使えないため、モーダルはこのページの HTML を取得して描画する。
-    <div className="divide-y divide-stone-200" data-horse-detail={horse.id}>
+    <div className="min-w-0 divide-y divide-stone-200" data-horse-detail={horse.id}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="space-y-2 pt-6 pb-6">
         <nav className="text-sm text-stone-500">
@@ -227,22 +264,25 @@ export default async function Page({ params }: { params: { id: string } }) {
             牝系一覧
           </Link>
           <span className="mx-1.5">/</span>
-          <Link href={`/family/${family.rootHorseId}`} className="hover:underline">
-            {family.pedigreeName}
-          </Link>
+          {isRoot ? (
+            <span>{family.pedigreeName}</span>
+          ) : (
+            <Link href={horseHref(family.rootHorseId)} className="hover:underline">
+              {family.pedigreeName}
+            </Link>
+          )}
         </nav>
         <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-stone-900 sm:text-4xl">
           {name}
         </h1>
         <p className="text-stone-500">{subtitleOf(horse)}</p>
-        {(article?.summary || horse.summary) && (
-          <p className="text-stone-500">{article?.summary || horse.summary}</p>
-        )}
+        {isRoot && <p className="text-stone-500">{familyTitle}</p>}
+        {summary && <p className="text-stone-500">{summary}</p>}
       </header>
 
       <section className="py-6">
         <h2 className="mb-3 text-xl font-bold text-stone-900">基本情報</h2>
-        <ProfileRows horse={horse} familyName={family.pedigreeName} />
+        <ProfileRows horse={horse} familyName={family.pedigreeName} familyRootId={family.rootHorseId} />
       </section>
 
       {pedigree && hasKnownAncestor(pedigree.ancestryByPath) && (
@@ -317,7 +357,7 @@ export default async function Page({ params }: { params: { id: string } }) {
       {offspring.length > 0 && (
         <section
           id="family-tree"
-          className="py-6"
+          className="min-w-0 py-6"
           data-horse-modal-tease
           data-tease-title="牝系図"
           data-tease-summary="産駒・子孫の系統図"

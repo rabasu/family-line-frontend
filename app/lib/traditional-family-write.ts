@@ -4,7 +4,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 import { spawn } from 'child_process'
-import { proposeTraditionalFilename } from '@/lib/horse-id'
+import { horseHref, proposeTraditionalFilename } from '@/lib/horse-id'
 import {
   applyFoaledFromInput,
   applyOptionalHorseFields,
@@ -332,7 +332,7 @@ export async function snapshotPedigreeHorses(): Promise<{
             filename,
             pedigreeName,
             rootHorseId,
-            familyHref: rootHorseId ? `/family/${rootHorseId}` : '',
+            familyHref: rootHorseId ? horseHref(rootHorseId) : '',
             dir,
           })
         }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { HorseSearchEntry, RaceResultJSON } from '@/types/HorseSearchEntry'
+import { horseHref } from '@/lib/horse-id'
 import { grades } from '@/types/Grade'
 import { AggregatedRaceStats } from '@/types/AggregatedRaceStats'
 import { PrizeMoney } from '@/types/PrizeMoney'
@@ -86,7 +87,7 @@ export default function HorseSearchCard({ entry }: Props) {
       <div className="grid grid-cols-2 items-stretch">
         {/* 左: 馬名 + 生年 */}
         <div className="flex flex-col justify-center pr-3">
-          <Link href={`/family/${entry.family}#${entry.id}`} className="font-bold hover:underline">
+          <Link href={horseHref(entry.id)} className="font-bold hover:underline">
             {mainName(entry)}
           </Link>
           {sub.length > 0 && <div className="text-xs text-gray-500 dark:text-gray-400">{sub.join('　')}</div>}
@@ -103,7 +104,7 @@ export default function HorseSearchCard({ entry }: Props) {
               {entry.dam || '不詳'}
             </span>
             <Link
-              href={`/family/${entry.family}`}
+              href={horseHref(entry.family)}
               className="shrink-0 rounded border border-primary-400 px-1.5 py-0.5 text-xs font-medium text-primary-600 hover:bg-primary-50 dark:border-primary-500 dark:text-primary-400 dark:hover:bg-primary-900/20"
             >
               {entry.familyName}系

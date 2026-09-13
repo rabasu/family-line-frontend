@@ -43,7 +43,7 @@ function Branch({
 /** 渡された馬を根にした牝系図（データ取得は呼び出し側） */
 export default function FamilyTreeView({ horse }: { horse: Horse }) {
   return (
-    <div className="w-full overflow-x-auto md:overflow-x-visible">
+    <div className="min-w-0 max-w-full overflow-x-auto">
       <div className="root min-w-max">
         <Branch key="root" id="root" border="root" horse={horse} />
       </div>
