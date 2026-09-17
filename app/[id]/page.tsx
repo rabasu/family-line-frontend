@@ -171,18 +171,18 @@ function ProfileRows({
       horse.id === familyRootId ? (
         familyName
       ) : (
-        <Link href={horseHref(familyRootId)} className="text-sky-700 hover:underline">
+        <Link href={horseHref(familyRootId)} className="link-inline">
           {familyName}
         </Link>
       ),
   })
 
   return (
-    <table className="w-full border-collapse text-sm">
+    <table className="info-table">
       <tbody>
         {rows.map((row) => (
-          <tr key={row.label} className="border-b border-stone-200">
-            <th className="w-36 bg-stone-50 px-3 py-1.5 text-left font-medium whitespace-nowrap text-stone-600">
+          <tr key={row.label}>
+            <th className="w-36 bg-label px-3 py-1.5 text-left font-medium whitespace-nowrap text-label">
               {row.label}
             </th>
             <td className="px-3 py-1.5">{row.value}</td>
@@ -199,14 +199,14 @@ function HorseRef({ horse, currentId }: { horse: Horse; currentId: string }) {
   const year = born ? `（${born}）` : ''
   if (horse.id === currentId) {
     return (
-      <span className="font-bold text-stone-900">
+      <span className="font-bold text-heading">
         {label}
         {year}
       </span>
     )
   }
   return (
-    <Link href={horseHref(horse.id)} className="text-sky-700 hover:underline">
+    <Link href={horseHref(horse.id)} className="link-inline">
       {label}
       {year}
     </Link>
@@ -256,10 +256,10 @@ export default async function Page({ params }: { params: { id: string } }) {
   return (
     // data-horse-detail はモーダルが本文だけを抜き出すための目印。
     // 静的エクスポートでは API が使えないため、モーダルはこのページの HTML を取得して描画する。
-    <div className="min-w-0 divide-y divide-stone-200" data-horse-detail={horse.id}>
+    <div className="min-w-0 divide-y divide-theme" data-horse-detail={horse.id}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="space-y-2 pt-6 pb-6">
-        <nav className="text-sm text-stone-500">
+        <nav className="text-sm text-muted">
           <Link href="/" className="hover:underline">
             牝系一覧
           </Link>
@@ -271,34 +271,38 @@ export default async function Page({ params }: { params: { id: string } }) {
               {family.pedigreeName}
             </Link>
           )}
+          <span className="mx-1.5">·</span>
+          <a href={horseHref(family.rootHorseId, horse.id)} className="link-inline" data-full-page>
+            牝系図に戻る
+          </a>
         </nav>
-        <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-stone-900 sm:text-4xl">
+        <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl">
           {name}
         </h1>
-        <p className="text-stone-500">{subtitleOf(horse)}</p>
-        {isRoot && <p className="text-stone-500">{familyTitle}</p>}
-        {summary && <p className="text-stone-500">{summary}</p>}
+        <p className="text-muted">{subtitleOf(horse)}</p>
+        {isRoot && <p className="text-muted">{familyTitle}</p>}
+        {summary && <p className="text-muted">{summary}</p>}
       </header>
 
       <section className="py-6">
-        <h2 className="mb-3 text-xl font-bold text-stone-900">基本情報</h2>
+        <h2 className="mb-3 text-xl font-bold text-heading">基本情報</h2>
         <ProfileRows horse={horse} familyName={family.pedigreeName} familyRootId={family.rootHorseId} />
       </section>
 
       {pedigree && hasKnownAncestor(pedigree.ancestryByPath) && (
         <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-stone-900">5代血統表</h2>
+          <h2 className="mb-3 text-xl font-bold text-heading">5代血統表</h2>
           <FiveGenPedigreeTable ancestryByPath={pedigree.ancestryByPath} />
         </section>
       )}
 
       {hasRaceCareerInfo(horse.raceStats, horse.prizeMoney, horse.raceResults?.length ?? 0) && (
         <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-stone-900">競走成績</h2>
+          <h2 className="mb-3 text-xl font-bold text-heading">競走成績</h2>
           <RaceCareerSummary raceStats={horse.raceStats} prizeMoney={horse.prizeMoney} />
           {horse.raceResults && horse.raceResults.length > 0 && (
             <>
-              <h3 className="mb-3 text-lg font-bold text-stone-900">重賞戦績</h3>
+              <h3 className="mb-3 text-lg font-bold text-heading">重賞戦績</h3>
               <RaceResultsTable results={horse.raceResults} />
             </>
           )}
@@ -308,7 +312,7 @@ export default async function Page({ params }: { params: { id: string } }) {
       {(details || article) && (
         // data-horse-modal-clip: モーダルでは冒頭だけ残して「続きを読む」へ誘導する
         <section id="article" className="prose dark:prose-invert max-w-none py-6" data-horse-modal-clip>
-          <h2 className="text-xl font-bold text-stone-900">解説</h2>
+          <h2 className="text-xl font-bold text-heading">解説</h2>
           {article ? (
             <HorseMarkdown markdown={article.markdown} />
           ) : (
@@ -319,11 +323,16 @@ export default async function Page({ params }: { params: { id: string } }) {
 
       {damLine.length > 1 && (
         <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-stone-900">牝系内の位置</h2>
+          <div className="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+            <h2 className="text-xl font-bold text-heading">牝系内の位置</h2>
+            <a href={horseHref(family.rootHorseId, horse.id)} className="link-inline text-sm" data-full-page>
+              牝系図に戻る
+            </a>
+          </div>
           <ol className="space-y-1 text-sm">
             {damLine.map((ancestor, depth) => (
               <li key={ancestor.id} style={{ paddingLeft: `${depth * 1.25}rem` }}>
-                <span className="mr-1.5 text-stone-400">{depth === 0 ? '牝祖' : `${depth}代下`}</span>
+                <span className="mr-1.5 text-subtle">{depth === 0 ? '牝祖' : `${depth}代下`}</span>
                 <HorseRef horse={ancestor} currentId={horse.id} />
               </li>
             ))}
@@ -372,8 +381,8 @@ export default async function Page({ params }: { params: { id: string } }) {
 
       {horse.citation && horse.citation.length > 0 && (
         <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-stone-900">参考文献</h2>
-          <ul className="list-inside list-disc space-y-1 text-sm text-stone-600">
+          <h2 className="mb-3 text-xl font-bold text-heading">参考文献</h2>
+          <ul className="list-inside list-disc space-y-1 text-sm text-label">
             {horse.citation.map((source) => (
               <li key={source}>{source}</li>
             ))}

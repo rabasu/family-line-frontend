@@ -68,9 +68,9 @@ export default function FiveGenPedigreeTable({ ancestryByPath }: Props) {
     <div className="overflow-auto">
       <table className="border-collapse text-left">
         <thead>
-          <tr className="bg-stone-100 text-[11px] text-stone-600">
+          <tr className="bg-thead text-[11px] text-label">
             {HEADERS.map((label) => (
-              <th key={label} className="border border-stone-300 px-2 py-1 font-medium whitespace-nowrap">
+              <th key={label} className="border border-theme px-2 py-1 font-medium whitespace-nowrap">
                 {label}
               </th>
             ))}

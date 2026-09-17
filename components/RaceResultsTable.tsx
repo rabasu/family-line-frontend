@@ -1,44 +1,11 @@
 import RaceResult from '@/types/RaceResult'
 import { grades } from '@/types/Grade'
 import { findHorseById } from 'app/lib/traditional-family-loader'
+import { raceGradeTableClass, resultPlaceClass } from '@/lib/ui-theme'
 
 interface RaceResultsTableProps {
   results?: RaceResult[]
   horseId?: string
-}
-
-// グレードに応じた色を返す
-const getGradeStyle = (rank: number) => {
-  switch (rank) {
-    case 1:
-      return 'text-red-700 font-bold'
-    case 2:
-      return 'text-blue-500 font-semibold'
-    case 3:
-      return 'text-green-600 font-semibold'
-    case 4:
-      return 'text-violet-600'
-    case 5:
-      return 'text-amber-600'
-    case 6:
-      return 'text-gray-700'
-    default:
-      return 'text-gray-500'
-  }
-}
-
-// 着順に応じたスタイルを返す
-const getResultStyle = (result: string) => {
-  switch (result) {
-    case '1':
-      return 'bg-yellow-100 font-bold text-yellow-800'
-    case '2':
-      return 'bg-gray-100 font-semibold text-gray-700'
-    case '3':
-      return 'bg-amber-50 font-semibold text-amber-700'
-    default:
-      return ''
-  }
 }
 
 function pad2(n: number): string {
@@ -84,7 +51,7 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
   if (!results || results.length === 0) {
     return (
       <div className="my-4">
-        <p className="text-gray-500">戦績データがありません</p>
+        <p className="text-muted">戦績データがありません</p>
       </div>
     )
   }
@@ -97,34 +64,34 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
 
   return (
     <div>
-      {displayName && <h3 className="mb-3 text-lg font-bold">{displayName}の重賞成績</h3>}
+      {displayName && <h3 className="mb-3 text-lg font-bold text-heading">{displayName}の重賞成績</h3>}
       <div className="overflow-x-auto">
-        <table className="min-w-full border-collapse border border-gray-200">
+        <table className="min-w-full border-collapse border border-theme">
           <thead>
-            <tr className="bg-gray-50">
-              <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">日付</th>
-              <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">レース名</th>
-              <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">格付け</th>
-              <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">着順</th>
-              <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">人気</th>
-              {hasRacecourse && <th className="border border-gray-200 px-3 py-2 text-left text-sm font-semibold">競馬場</th>}
-              {hasDistance && <th className="border border-gray-200 px-3 py-2 text-center text-sm font-semibold">距離</th>}
+            <tr className="bg-thead">
+              <th className="border border-theme px-3 py-2 text-left text-sm font-semibold">日付</th>
+              <th className="border border-theme px-3 py-2 text-left text-sm font-semibold">レース名</th>
+              <th className="border border-theme px-3 py-2 text-center text-sm font-semibold">格付け</th>
+              <th className="border border-theme px-3 py-2 text-center text-sm font-semibold">着順</th>
+              <th className="border border-theme px-3 py-2 text-center text-sm font-semibold">人気</th>
+              {hasRacecourse && <th className="border border-theme px-3 py-2 text-left text-sm font-semibold">競馬場</th>}
+              {hasDistance && <th className="border border-theme px-3 py-2 text-center text-sm font-semibold">距離</th>}
             </tr>
           </thead>
           <tbody>
             {sortedResults.map((result, index) => {
               const grade = grades[result.grade]
               return (
-                <tr key={`${result.date}-${result.race}-${index}`} className="hover:bg-gray-50">
-                  <td className="border border-gray-200 px-3 py-2 text-sm">{formatDate(result.date)}</td>
-                  <td className="border border-gray-200 px-3 py-2 text-sm">
-                    <span className={getGradeStyle(grade.rank)}>{result.displayRace}</span>
+                <tr key={`${result.date}-${result.race}-${index}`} className="bg-hover-row">
+                  <td className="border border-theme px-3 py-2 text-sm">{formatDate(result.date)}</td>
+                  <td className="border border-theme px-3 py-2 text-sm">
+                    <span className={raceGradeTableClass(grade.rank)}>{result.displayRace}</span>
                   </td>
-                  <td className={`border border-gray-200 px-3 py-2 text-center text-sm ${getGradeStyle(grade.rank)}`}>{grade.name}</td>
-                  <td className={`border border-gray-200 px-3 py-2 text-center text-sm ${getResultStyle(result.result)}`}>{result.result}着</td>
-                  <td className="border border-gray-200 px-3 py-2 text-center text-sm">{formatFavorite(result.favorite)}</td>
-                  {hasRacecourse && <td className="border border-gray-200 px-3 py-2 text-sm">{result.racecourse || '-'}</td>}
-                  {hasDistance && <td className="border border-gray-200 px-3 py-2 text-center text-sm">{result.distance ? `${result.distance}m` : '-'}</td>}
+                  <td className={`border border-theme px-3 py-2 text-center text-sm ${raceGradeTableClass(grade.rank)}`}>{grade.name}</td>
+                  <td className={`border border-theme px-3 py-2 text-center text-sm ${resultPlaceClass(result.result)}`}>{result.result}着</td>
+                  <td className="border border-theme px-3 py-2 text-center text-sm">{formatFavorite(result.favorite)}</td>
+                  {hasRacecourse && <td className="border border-theme px-3 py-2 text-sm">{result.racecourse || '-'}</td>}
+                  {hasDistance && <td className="border border-theme px-3 py-2 text-center text-sm">{result.distance ? `${result.distance}m` : '-'}</td>}
                 </tr>
               )
             })}

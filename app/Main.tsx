@@ -4,8 +4,9 @@ import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Link from '@/components/Link'
 import { horseHref } from '@/lib/horse-id'
 import siteMetadata from '@/data/siteMetadata'
-import type { TraditionalFamily } from '@/types/TraditionalFamily'
+import { familyListName, type TraditionalFamily } from '@/types/TraditionalFamily'
 import FamilyFilterModal, { type FilterState, EMPTY_FILTER, countActiveFilters, getDecade } from '@/components/FamilyFilterModal'
+import { FAMILY_BREED_GROUPS, familyBreedGroup, type FamilyBreedGroup } from '@/lib/family-breed-group'
 
 type SortKey = 'name' | 'foaled' | 'importedYear'
 
@@ -22,8 +23,8 @@ function sortFamilies(families: TraditionalFamily[], sortKey: SortKey): Traditio
     if (a.slug !== '_unknown' && b.slug === '_unknown') return -1
     if (a.slug === '_unknown' && b.slug === '_unknown') return 0
 
-    const valA = (a[sortKey] ?? '') as string
-    const valB = (b[sortKey] ?? '') as string
+    const valA = sortKey === 'name' ? familyListName(a) : ((a[sortKey] ?? '') as string)
+    const valB = sortKey === 'name' ? familyListName(b) : ((b[sortKey] ?? '') as string)
     return valA.localeCompare(valB, 'ja')
   })
 }
@@ -35,6 +36,7 @@ function formatValue(value: string | undefined): string {
 const SCROLL_THRESHOLD = 10
 
 export default function Home({ families }: { families: TraditionalFamily[] }) {
+  const [breedGroup, setBreedGroup] = useState<FamilyBreedGroup>('サラ')
   const [sortKey, setSortKey] = useState<SortKey>('name')
   const [searchQuery, setSearchQuery] = useState('')
   const [filter, setFilter] = useState<FilterState>(EMPTY_FILTER)
@@ -113,17 +115,27 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
 
   const shouldScrollRef = useRef(false)
 
+  const groupCounts = useMemo(() => {
+    const counts: Record<FamilyBreedGroup, number> = { サラ: 0, サラ系: 0, 'アラ・アア': 0, その他: 0 }
+    for (const family of families) {
+      counts[familyBreedGroup(family.breed)] += 1
+    }
+    return counts
+  }, [families])
+
+  const familiesInGroup = useMemo(
+    () => families.filter((family) => familyBreedGroup(family.breed) === breedGroup),
+    [families, breedGroup],
+  )
+
   const filteredAndSorted = useMemo(() => {
-    let result = families
+    let result = familiesInGroup
 
     if (searchQuery.trim()) {
       const q = searchQuery.trim()
-      result = result.filter((f) => f.name.includes(q))
+      result = result.filter((f) => familyListName(f).includes(q) || f.name.includes(q))
     }
 
-    if (filter.breeds.length > 0) {
-      result = result.filter((f) => f.breed && filter.breeds.includes(f.breed))
-    }
     if (filter.breeders.length > 0) {
       result = result.filter((f) => f.breeder && filter.breeders.includes(f.breeder))
     }
@@ -144,7 +156,7 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
     }
 
     return sortFamilies(result, sortKey)
-  }, [families, searchQuery, filter, sortKey])
+  }, [familiesInGroup, searchQuery, filter, sortKey])
 
   useEffect(() => {
     if (shouldScrollRef.current) {
@@ -153,6 +165,12 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
       window.scrollTo({ top: Math.max(0, barTop), behavior: 'smooth' })
     }
   }, [filteredAndSorted, barHeight])
+
+  const handleBreedGroupChange = (group: FamilyBreedGroup) => {
+    if (group === breedGroup) return
+    setBreedGroup(group)
+    shouldScrollRef.current = true
+  }
 
   const handleSortChange = (key: SortKey) => {
     if (key === sortKey) return
@@ -170,6 +188,32 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
 
   const barContent = (
     <div ref={barRef} className="space-y-3 py-3">
+      {/* Breed group — 牝祖の品種によるメイン切り替え */}
+      <div className="flex" role="tablist" aria-label="牝祖の品種">
+        {FAMILY_BREED_GROUPS.map((group) => {
+          const selected = breedGroup === group
+          return (
+            <button
+              key={group}
+              type="button"
+              role="tab"
+              aria-selected={selected}
+              onClick={() => handleBreedGroupChange(group)}
+              className={`flex-1 border-b-2 px-1 py-2 text-center text-xs font-medium transition-colors sm:text-sm ${
+                selected
+                  ? 'border-gray-900 text-gray-900 dark:border-gray-100 dark:text-gray-100'
+                  : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:text-gray-200'
+              }`}
+            >
+              <span className="block">{group}</span>
+              <span className={`block tabular-nums text-[10px] font-normal sm:text-xs ${selected ? 'opacity-70' : 'opacity-50'}`}>
+                {groupCounts[group]}
+              </span>
+            </button>
+          )
+        })}
+      </div>
+
       {/* Search */}
       <div className="relative">
         <label htmlFor="name-search" className="sr-only">
@@ -231,7 +275,7 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
 
       {/* Results count */}
       <p className="text-sm text-gray-500 dark:text-gray-400">
-        {filteredAndSorted.length}件{(searchQuery.trim() || activeFilterCount > 0) && ` / ${families.length}件中`}
+        {filteredAndSorted.length}件{(searchQuery.trim() || activeFilterCount > 0) && ` / ${familiesInGroup.length}件中`}
       </p>
     </div>
   )
@@ -261,10 +305,11 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
           <div className={isFloating ? 'mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0' : ''}>{barContent}</div>
         </div>
 
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700" aria-label={`${breedGroup}の牝系`}>
           {!filteredAndSorted.length && <li className="py-8 text-center text-gray-500 dark:text-gray-400">条件に一致する牝系が見つかりません。</li>}
           {filteredAndSorted.map((family) => {
             const isPlaceholder = family.slug === '_unknown'
+            const listName = familyListName(family)
             return (
               <li key={family.slug} className={`py-4 ${isPlaceholder ? 'opacity-75' : ''}`}>
                 <article className={`min-w-0 overflow-hidden ${isPlaceholder ? 'text-gray-500 dark:text-gray-500' : ''}`}>
@@ -278,7 +323,7 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
                             : 'text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400'
                         }
                       >
-                        {formatValue(family.name)}
+                        {formatValue(listName)}
                       </Link>
                     </h2>
                     <dl className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm text-gray-500 dark:text-gray-400 md:grid-cols-4">
@@ -309,7 +354,7 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
                         className={
                           isPlaceholder ? 'text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400' : 'text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
                         }
-                        aria-label={`${family.name}のページへ`}
+                        aria-label={`${listName}のページへ`}
                       >
                         詳細を見る →
                       </Link>
@@ -322,7 +367,7 @@ export default function Home({ families }: { families: TraditionalFamily[] }) {
         </ul>
       </div>
 
-      <FamilyFilterModal isOpen={isFilterOpen} onClose={() => setIsFilterOpen(false)} families={families} filter={filter} onApply={handleFilterApply} />
+      <FamilyFilterModal isOpen={isFilterOpen} onClose={() => setIsFilterOpen(false)} families={familiesInGroup} filter={filter} onApply={handleFilterApply} />
     </>
   )
 }

@@ -4,6 +4,7 @@ import { horseHref } from '@/lib/horse-id'
 import { grades } from '@/types/Grade'
 import { AggregatedRaceStats } from '@/types/AggregatedRaceStats'
 import { PrizeMoney } from '@/types/PrizeMoney'
+import { raceGradeClass, sexBg } from '@/lib/ui-theme'
 
 /** name / pedigreeName の1行目 */
 function mainName(entry: HorseSearchEntry): string {
@@ -38,37 +39,16 @@ function dateToYear(date: RaceResultJSON['date']): number {
   return date.year ?? 0
 }
 
-const getRaceStyle = (rank: number): string => {
-  switch (rank) {
-    case 1:
-      return 'text-red-700'
-    case 2:
-      return 'text-blue-500'
-    case 3:
-      return 'text-green-600'
-    case 5:
-      return 'text-violet-600'
-    default:
-      return ''
-  }
-}
-
 const RecordItem = ({ record }: { record: RaceResultJSON }) => {
   const rank = grades[record.grade].rank
   const year = dateToYear(record.date)
   return (
     <span className="inline-flex items-baseline">
       {record.result !== '1' && <span>（{record.result}着）</span>}
-      <span className={`mr-1 ${getRaceStyle(rank)} ${record.result === '1' ? 'font-bold' : ''}`}>{record.displayRace}</span>
+      <span className={`mr-1 ${raceGradeClass(rank)} ${record.result === '1' ? 'font-bold' : ''}`}>{record.displayRace}</span>
       <span className="text-sm">（{year}）</span>
     </span>
   )
-}
-
-const bgBySex: Record<string, string> = {
-  male: 'bg-cyan-100 dark:bg-cyan-900/30',
-  female: 'bg-red-50 dark:bg-red-900/20',
-  gelding: 'bg-green-100 dark:bg-green-900/30',
 }
 
 interface Props {
@@ -78,20 +58,20 @@ interface Props {
 export default function HorseSearchCard({ entry }: Props) {
   const statsSummary = raceStatsSummary(entry.raceStats)
   const prizeText = prizeMoneySummary(entry.prizeMoney)
-  const sexBg = bgBySex[entry.sex] ?? 'bg-gray-50 dark:bg-gray-800'
+  const rowBg = sexBg(entry.sex)
   const sub = subNames(entry)
 
   return (
-    <div className={`border-y border-gray-300 px-5 py-2 text-sm dark:border-gray-600 md:text-base ${sexBg}`}>
+    <div className={`border-y border-theme px-5 py-2 text-sm md:text-base ${rowBg}`}>
       {/* ─── 馬名 + 父母 ─── */}
       <div className="grid grid-cols-2 items-stretch">
         {/* 左: 馬名 + 生年 */}
         <div className="flex flex-col justify-center pr-3">
-          <Link href={horseHref(entry.id)} className="font-bold hover:underline">
+          <Link href={horseHref(entry.id)} className="font-bold text-heading hover:underline">
             {mainName(entry)}
           </Link>
-          {sub.length > 0 && <div className="text-xs text-gray-500 dark:text-gray-400">{sub.join('　')}</div>}
-          <div className="text-xs tabular-nums text-gray-500 dark:text-gray-400">{entry.foaled.year ?? '?'}</div>
+          {sub.length > 0 && <div className="text-xs text-muted">{sub.join('　')}</div>}
+          <div className="text-xs tabular-nums text-muted">{entry.foaled.year ?? '?'}</div>
         </div>
 
         {/* 右: 父母（縦線・横線で分割） */}
@@ -115,7 +95,7 @@ export default function HorseSearchCard({ entry }: Props) {
 
       {/* ─── 情報行: 戦績・賞金 ─── */}
       <div className="mt-1 border-t border-gray-300 pt-1 dark:border-gray-600">
-        <div className="flex items-center gap-x-3 text-xs text-gray-500 dark:text-gray-400">
+        <div className="flex items-center gap-x-3 text-xs text-muted">
           {statsSummary && <span className="shrink-0">{statsSummary}</span>}
           {prizeText && <span className="shrink-0">{prizeText}</span>}
         </div>

@@ -17,11 +17,11 @@ const RaceCareerSummary = ({ raceStats, prizeMoney }: RaceCareerSummaryProps) =>
   if (prize) rows.push({ label: '獲得賞金', value: prize })
 
   return (
-    <table className="mb-6 w-full border-collapse text-sm">
+    <table className="info-table mb-6">
       <tbody>
         {rows.map((row) => (
-          <tr key={row.label} className="border-b border-stone-200">
-            <th className="w-36 bg-stone-50 px-3 py-1.5 text-left font-medium whitespace-nowrap text-stone-600">
+          <tr key={row.label}>
+            <th className="w-36 bg-label px-3 py-1.5 text-left font-medium whitespace-nowrap text-label">
               {row.label}
             </th>
             <td className="px-3 py-1.5">{row.value}</td>

@@ -17,8 +17,8 @@ export default function HorseFamilyTree({ fullTree, directTree }: Props) {
   return (
     <>
       <div className="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
-        <h2 className="text-xl font-bold text-stone-900">牝系図</h2>
-        <label className="inline-flex cursor-pointer items-center gap-2 py-1 text-sm text-stone-600 select-none">
+        <h2 className="text-xl font-bold text-heading">牝系図</h2>
+        <label className="inline-flex cursor-pointer items-center gap-2 py-1 text-sm text-label select-none">
           <input
             type="checkbox"
             className="size-4 cursor-pointer rounded border-stone-300 text-sky-700 focus:ring-sky-600"

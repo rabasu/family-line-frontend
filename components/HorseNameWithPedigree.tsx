@@ -28,7 +28,7 @@ export default function HorseNameWithPedigree({ horseId, displayName }: Props) {
     <a
       href={horseHref(horseId)}
       onClick={handleClick}
-      className="hover:text-primary-600 cursor-pointer font-bold text-inherit hover:underline"
+      className="hover:text-primary-600 dark:hover:text-primary-400 cursor-pointer font-bold text-heading hover:underline"
     >
       {displayName}
     </a>

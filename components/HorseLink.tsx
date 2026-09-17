@@ -27,7 +27,11 @@ const HorseLink: React.FC<LinkProps> = ({ name, horseId, displayName, year, quie
   }
 
   // 個別ページが恒久URL（ルート直 /{id}）。
-  return <NextLink href={horseHref(result.link)}>{label}</NextLink>
+  return (
+    <NextLink href={horseHref(result.link)} className="link-inline">
+      {label}
+    </NextLink>
+  )
 }
 
 export default HorseLink

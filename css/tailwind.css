@@ -2,6 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * テーマ連動の前景色。html.dark で変数が切り替わるので、見出しやリンクに
+ * text-stone-900 / text-sky-700 を直書きするとダークモードで消える。
+ * 新しい UI はこちらのクラスを使う。
+ */
+@layer base {
+  :root {
+    --color-heading: theme('colors.stone.900');
+    --color-muted: theme('colors.stone.500');
+    --color-subtle: theme('colors.stone.400');
+    --color-secondary: theme('colors.stone.600');
+    --color-link: theme('colors.sky.700');
+    --color-border: theme('colors.stone.200');
+    --color-border-strong: theme('colors.stone.300');
+    --color-label-bg: theme('colors.stone.50');
+    --color-thead-bg: theme('colors.stone.100');
+    --color-hover-bg: theme('colors.gray.50');
+    --color-race-1: theme('colors.red.700');
+    --color-race-2: theme('colors.blue.500');
+    --color-race-3: theme('colors.green.600');
+    --color-race-listed: theme('colors.violet.600');
+    --color-race-historic: theme('colors.amber.600');
+    --color-race-plain: var(--color-heading);
+    --color-chip-bg: rgb(255 255 255 / 0.55);
+    --color-result-1-bg: theme('colors.yellow.100');
+    --color-result-1-fg: theme('colors.yellow.800');
+    --color-result-2-bg: theme('colors.gray.100');
+    --color-result-2-fg: theme('colors.gray.700');
+    --color-result-3-bg: theme('colors.amber.50');
+    --color-result-3-fg: theme('colors.amber.700');
+  }
+
+  .dark {
+    --color-heading: theme('colors.gray.100');
+    --color-muted: theme('colors.gray.400');
+    --color-subtle: theme('colors.gray.500');
+    --color-secondary: theme('colors.gray.400');
+    --color-link: theme('colors.sky.400');
+    --color-border: theme('colors.gray.700');
+    --color-border-strong: theme('colors.gray.600');
+    --color-label-bg: theme('colors.gray.900');
+    --color-thead-bg: theme('colors.gray.800');
+    --color-hover-bg: theme('colors.gray.800');
+    --color-race-1: theme('colors.red.400');
+    --color-race-2: theme('colors.blue.400');
+    --color-race-3: theme('colors.green.400');
+    --color-race-listed: theme('colors.violet.400');
+    --color-race-historic: theme('colors.amber.400');
+    --color-chip-bg: rgb(0 0 0 / 0.3);
+    --color-result-1-bg: rgb(250 204 21 / 0.2);
+    --color-result-1-fg: theme('colors.yellow.200');
+    --color-result-2-bg: theme('colors.gray.700');
+    --color-result-2-fg: theme('colors.gray.200');
+    --color-result-3-bg: rgb(251 191 36 / 0.2);
+    --color-result-3-fg: theme('colors.amber.200');
+  }
+}
+
 .task-list-item::before {
   @apply hidden;
 }
@@ -57,13 +115,167 @@ input:-webkit-autofill:focus {
 .pwid {
   font-feature-settings: "pwid";
 }
+
+.text-heading {
+  color: var(--color-heading);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-subtle {
+  color: var(--color-subtle);
+}
+
+.text-label {
+  color: var(--color-secondary);
+}
+
+.link-inline {
+  color: var(--color-link);
+}
+
+.link-inline:hover {
+  text-decoration: underline;
+}
+
+/*
+ * daisyUI は :root .prose で本文を base-content の 80% 不透明度にする。
+ * 同じ詳細度で上書きし、解説を見出しと同じ前景色に揃える。
+ */
+:root .prose,
+.dark .prose {
+  --tw-prose-body: var(--color-heading);
+  --tw-prose-headings: var(--color-heading);
+  --tw-prose-bold: var(--color-heading);
+  --tw-prose-quotes: var(--color-heading);
+  --tw-prose-invert-body: var(--color-heading);
+  --tw-prose-invert-headings: var(--color-heading);
+  --tw-prose-invert-bold: var(--color-heading);
+  --tw-prose-invert-quotes: var(--color-heading);
+}
+
+.border-theme {
+  border-color: var(--color-border);
+}
+
+/*
+ * 基本情報・通算成績などの2列表。tr の border-b だけだと上辺と右辺が欠ける。
+ * セル側に枠を置き、border-collapse で隣接辺を重ねる。
+ */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.info-table th,
+.info-table td {
+  border-width: 1px;
+  border-color: var(--color-border);
+}
+
+.divide-theme > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--color-border);
+}
+
+.bg-label {
+  background-color: var(--color-label-bg);
+}
+
+.bg-thead {
+  background-color: var(--color-thead-bg);
+}
+
+.bg-hover-row:hover {
+  background-color: var(--color-hover-bg);
+}
+
+.sex-bg-male,
+.sex-bg-female,
+.sex-bg-gelding,
+.sex-bg-unknown {
+  color: var(--color-heading);
+}
+
+.sex-bg-male {
+  @apply bg-cyan-100 dark:bg-cyan-900/30;
+}
+
+.sex-bg-female {
+  @apply bg-red-50 dark:bg-red-900/20;
+}
+
+.sex-bg-gelding {
+  @apply bg-green-100 dark:bg-green-900/30;
+}
+
+.sex-bg-unknown {
+  @apply bg-gray-50 dark:bg-gray-800;
+}
+
+.race-grade-1 {
+  color: var(--color-race-1);
+}
+
+.race-grade-2 {
+  color: var(--color-race-2);
+}
+
+.race-grade-3 {
+  color: var(--color-race-3);
+}
+
+.race-grade-listed {
+  color: var(--color-race-listed);
+}
+
+.race-grade-historic {
+  color: var(--color-race-historic);
+}
+
+.race-grade-plain {
+  color: var(--color-race-plain);
+}
+
+/* 牝系図の重賞チップ。カードより明るく（ライト）／暗く（ダーク）して本文とのコントラストを保つ */
+.race-chip {
+  background-color: var(--color-chip-bg);
+}
+
+.result-place-1 {
+  background-color: var(--color-result-1-bg);
+  color: var(--color-result-1-fg);
+}
+
+.result-place-2 {
+  background-color: var(--color-result-2-bg);
+  color: var(--color-result-2-fg);
+}
+
+.result-place-3 {
+  background-color: var(--color-result-3-bg);
+  color: var(--color-result-3-fg);
+}
+
+/*
+ * 牝系図の #馬id 着地。枠はカード本体の内側に乗せ、外側ラッパの余白には掛けない。
+ */
+:target > .horse-card .horse-card-panel {
+  outline: 2px solid var(--color-link);
+  outline-offset: -2px;
+}
+
 /*
  * 5代血統表は1ページに62セルあり、Tailwind のユーティリティを直接並べると
  * HTML と RSC ペイロードの両方に同じクラス文字列が62回入って肥大する。
  * 8,550ページ分に効くのでクラスに畳んでおく。
  */
 .pedi-cell {
-  @apply border border-stone-300 align-middle min-w-[7.5rem] max-w-[11rem];
+  @apply align-middle min-w-[7.5rem] max-w-[11rem];
+  border-width: 1px;
+  border-color: var(--color-border-strong);
 }
 
 .pedi-cell-leaf {
@@ -71,25 +283,32 @@ input:-webkit-autofill:focus {
 }
 
 .pedi-sire {
-  @apply bg-sky-50;
+  @apply bg-sky-50 dark:bg-sky-950/50;
 }
 
 .pedi-dam {
-  @apply bg-rose-50;
+  @apply bg-rose-50 dark:bg-rose-950/50;
 }
 
 .pedi-name {
-  @apply text-xs leading-tight font-medium text-stone-800;
+  @apply text-xs leading-tight font-medium;
+  color: var(--color-heading);
 }
 
 .pedi-name a {
-  @apply text-sky-700 hover:underline;
+  color: var(--color-link);
+}
+
+.pedi-name a:hover {
+  text-decoration: underline;
 }
 
 .pedi-name-unknown {
-  @apply text-xs leading-tight text-stone-400;
+  @apply text-xs leading-tight;
+  color: var(--color-subtle);
 }
 
 .pedi-meta {
-  @apply text-[10px] leading-tight font-normal text-stone-500;
+  @apply text-[10px] leading-tight font-normal;
+  color: var(--color-muted);
 }

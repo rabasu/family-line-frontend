@@ -5,7 +5,6 @@ import { Dialog, Transition } from '@headlessui/react'
 import type { TraditionalFamily } from '@/types/TraditionalFamily'
 
 export type FilterState = {
-  breeds: string[]
   breeders: string[]
   owners: string[]
   foaledDecades: string[]
@@ -13,7 +12,6 @@ export type FilterState = {
 }
 
 export const EMPTY_FILTER: FilterState = {
-  breeds: [],
   breeders: [],
   owners: [],
   foaledDecades: [],
@@ -21,7 +19,7 @@ export const EMPTY_FILTER: FilterState = {
 }
 
 export function countActiveFilters(filter: FilterState): number {
-  return filter.breeds.length + filter.breeders.length + filter.owners.length + filter.foaledDecades.length + filter.importedDecades.length
+  return filter.breeders.length + filter.owners.length + filter.foaledDecades.length + filter.importedDecades.length
 }
 
 export function getDecade(year: string | undefined): string | null {
@@ -132,7 +130,6 @@ export default function FamilyFilterModal({ isOpen, onClose, families, filter, o
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen])
 
-  const breedOptions = useMemo(() => getValueOptions(families, 'breed'), [families])
   const breederOptions = useMemo(() => getValueOptions(families, 'breeder'), [families])
   const ownerOptions = useMemo(() => getValueOptions(families, 'owner'), [families])
   const foaledDecadeOptions = useMemo(() => getDecadeOptions(families, 'foaled'), [families])
@@ -189,7 +186,6 @@ export default function FamilyFilterModal({ isOpen, onClose, families, filter, o
 
               {/* Scrollable body */}
               <div className="flex-1 divide-y divide-gray-200 overflow-y-auto overscroll-contain px-4 dark:divide-gray-700">
-                <FilterSection title="品種" options={breedOptions} selected={draft.breeds} onChange={(breeds) => setDraft((d) => ({ ...d, breeds }))} />
                 <FilterSection title="生産" options={breederOptions} selected={draft.breeders} onChange={(breeders) => setDraft((d) => ({ ...d, breeders }))} />
                 <FilterSection title="所有者" options={ownerOptions} selected={draft.owners} onChange={(owners) => setDraft((d) => ({ ...d, owners }))} searchable />
                 <FilterSection title="生年" options={foaledDecadeOptions} selected={draft.foaledDecades} onChange={(foaledDecades) => setDraft((d) => ({ ...d, foaledDecades }))} />

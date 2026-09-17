@@ -51,9 +51,9 @@ function replaceTeaseSections(detail: Element, horseId: string) {
     const replacement = detail.ownerDocument.createElement('section')
     replacement.className = 'py-6'
     replacement.innerHTML = `
-      <h2 class="mb-2 text-xl font-bold text-stone-900">${escapeHtml(title)}</h2>
-      ${summary ? `<p class="mb-3 text-sm text-stone-500">${escapeHtml(summary)}</p>` : ''}
-      <a href="${fullPageHref(horseId, hash)}" data-full-page class="text-sm font-medium text-sky-700 hover:underline">個別ページで見る</a>
+      <h2 class="mb-2 text-xl font-bold text-heading">${escapeHtml(title)}</h2>
+      ${summary ? `<p class="mb-3 text-sm text-muted">${escapeHtml(summary)}</p>` : ''}
+      <a href="${fullPageHref(horseId, hash)}" data-full-page class="link-inline text-sm font-medium">個別ページで見る</a>
     `
     section.replaceWith(replacement)
   })
@@ -84,7 +84,7 @@ function clipArticleSections(detail: Element, horseId: string) {
 
     const cta = detail.ownerDocument.createElement('p')
     cta.className = 'mt-4 not-prose'
-    cta.innerHTML = `<a href="${fullPageHref(horseId, '#article')}" data-full-page class="text-sm font-medium text-sky-700 hover:underline">続きを読む</a>`
+    cta.innerHTML = `<a href="${fullPageHref(horseId, '#article')}" data-full-page class="link-inline text-sm font-medium">続きを読む</a>`
     section.appendChild(cta)
   })
 }
@@ -250,20 +250,20 @@ export default function HorseDetailModal() {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:scale-95"
             >
-              <Dialog.Panel className="flex max-h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-xl bg-white shadow-xl">
-                <div className="flex shrink-0 items-center justify-between gap-3 border-b border-stone-200 px-4 py-3">
-                  <Dialog.Title className="text-base font-semibold text-stone-900">{title}</Dialog.Title>
+              <Dialog.Panel className="flex max-h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-xl bg-white shadow-xl dark:bg-gray-950">
+                <div className="flex shrink-0 items-center justify-between gap-3 border-b border-theme px-4 py-3">
+                  <Dialog.Title className="text-base font-semibold text-heading">{title}</Dialog.Title>
                   <div className="flex items-center gap-3">
                     <a
                       href={horseHref(horseId)}
-                      className="text-xs text-sky-700 hover:underline"
+                      className="link-inline text-xs"
                     >
                       ページを開く
                     </a>
                     <button
                       type="button"
                       onClick={close}
-                      className="rounded-md p-1 text-stone-400 hover:text-stone-600"
+                      className="rounded-md p-1 text-subtle hover:text-label"
                     >
                       <span className="sr-only">閉じる</span>
                       <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -275,7 +275,7 @@ export default function HorseDetailModal() {
                 {/* 差し込んだ本文内の <a> へのイベント委譲。Enter でも click は発火するのでキーボード操作も届く */}
                 {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
                 <div ref={bodyRef} className="flex-1 overflow-auto px-4" onClick={onBodyClick}>
-                  {loading && <p className="py-8 text-sm text-stone-500">読み込んでるよ…</p>}
+                  {loading && <p className="py-8 text-sm text-muted">読み込んでるよ…</p>}
                   {error && <p className="py-8 text-sm text-red-600">{error}</p>}
                   {html && <div dangerouslySetInnerHTML={{ __html: html }} />}
                 </div>

@@ -10,15 +10,12 @@ import HorseLink from './HorseLink'
 import HorseNameWithPedigree from './HorseNameWithPedigree'
 import { PrizeMoney } from '@/types/PrizeMoney'
 import { formatSireDisplayName } from '@/lib/origin-country-index'
+import { raceGradeClass, sexBgClass } from '@/lib/ui-theme'
 
 const summary = tv({
   base: 'px-5 py-1',
   variants: {
-    sex: {
-      male: 'bg-cyan-100',
-      female: 'bg-red-50',
-      gelding: 'bg-green-100',
-    },
+    sex: sexBgClass,
   },
 })
 
@@ -31,7 +28,7 @@ const BaseInfo = (horse: Horse): JSX.Element => {
   return (
     <div className="flex flex-nowrap items-baseline gap-x-1 whitespace-nowrap">
       <HorseNameWithPedigree horseId={horse.id} displayName={displayHorseName(horse)} />
-      {breedMark && <span className="text-xs font-medium text-stone-500">{breedMark}</span>}
+      {breedMark && <span className="text-xs font-medium text-muted">{breedMark}</span>}
       <span className="text-sm">
         （{horse.foaled.year}） by{' '}
         <HorseLink
@@ -66,7 +63,7 @@ function HorseCard(horse: Horse) {
   return (
     <div className="horse-card w-[40rem] text-sm md:text-base">
       <div className="-ml-2 pt-3 ">
-        <div className="before:display-block card rounded-none bg-base-100 shadow-xl before:absolute before:z-10 before:mt-2 before:h-3 before:w-3 before:bg-black before:opacity-50 before:content-['']">
+        <div className="before:display-block horse-card-panel card rounded-none bg-white shadow-xl before:absolute before:z-10 before:mt-2 before:h-3 before:w-3 before:bg-black before:opacity-50 before:content-[''] dark:bg-gray-900 dark:before:bg-white">
           <HorseDetails {...horse} />
         </div>
       </div>
@@ -112,34 +109,13 @@ const groupByYear = (records: RaceRecord[]) => {
   )
 }
 
-const getRaceStyle = (rank: number) => {
-  switch (rank) {
-    case 1:
-      return 'text-red-700'
-    case 2:
-      return 'text-blue-500'
-    case 3:
-      return 'text-green-600'
-    case 4:
-      return ''
-    case 5:
-      return 'text-violet-600'
-    case 6:
-      return ''
-    case 7:
-      return ''
-    default:
-      return ''
-  }
-}
-
 const RecordChip = (record: RaceRecord): JSX.Element => {
   const isWin = record.result === '1'
   return (
-    <span className="inline-flex items-baseline gap-x-1.5 bg-black/[0.06] px-2 py-0.5 dark:bg-white/10">
-      {!isWin && <span className="text-gray-500 dark:text-gray-400">{record.result}着</span>}
-      <span className={`${getRaceStyle(grades[record.grade].rank)} ${isWin ? 'font-bold' : ''}`}>{record.displayRace}</span>
-      <span className="text-gray-500 dark:text-gray-400">{yearOf(record.date)}</span>
+    <span className="race-chip inline-flex items-baseline gap-x-1.5 px-2 py-0.5">
+      {!isWin && <span className="text-heading">{record.result}着</span>}
+      <span className={`${raceGradeClass(grades[record.grade].rank)} ${isWin ? 'font-bold' : ''}`}>{record.displayRace}</span>
+      <span className="text-heading">{yearOf(record.date)}</span>
     </span>
   )
 }

@@ -21,10 +21,10 @@ export default function HorseMarkdown({ markdown }: { markdown: string }) {
       remarkPlugins={[remarkBreaks, remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{
-        h2: ({ children }) => <h3 className="mb-3 mt-6 text-lg font-bold text-stone-900 dark:text-gray-100">{children}</h3>,
-        h3: ({ children }) => <h4 className="mb-2 mt-4 text-base font-bold text-stone-900 dark:text-gray-100">{children}</h4>,
+        h2: ({ children }) => <h3 className="mb-3 mt-6 text-lg font-bold text-heading">{children}</h3>,
+        h3: ({ children }) => <h4 className="mb-2 mt-4 text-base font-bold text-heading">{children}</h4>,
         p: ({ children }) => (
-          <p className="indent-4" style={{ marginBottom: '1em' }}>
+          <p className="indent-4 text-heading" style={{ marginBottom: '1em' }}>
             {children}
           </p>
         ),

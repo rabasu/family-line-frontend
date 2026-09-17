@@ -66,10 +66,13 @@ slugs.forEach((slug, index) => {
     const importedYear = rootHorse.importedYear ?? ''
     const owner = rootHorse.owner ?? ''
     const breed = rootHorse.breed ?? ''
+    const name = rootHorse.name ?? ''
+    const pedigreeName = String(rootHorse.pedigreeName || data.metadata?.pedigreeName || '').trim()
 
     families.push({
       slug,
-      name: rootHorse.name ?? '',
+      name,
+      pedigreeName,
       foaled,
       breeder,
       importedYear,
@@ -86,10 +89,10 @@ slugs.forEach((slug, index) => {
   }
 })
 
-// 馬名順（五十音）でソート
+// 一覧見出し（血統名があればそれ）の五十音順
 families.sort((a, b) => {
-  const nameA = a.name || ''
-  const nameB = b.name || ''
+  const nameA = a.pedigreeName || a.name || ''
+  const nameB = b.pedigreeName || b.name || ''
   return nameA.localeCompare(nameB, 'ja')
 })
 
