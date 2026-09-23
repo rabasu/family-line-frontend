@@ -177,20 +177,17 @@ function ProfileRows({
   if (horse.trainer) rows.push({ label: '調教師', value: <AttributeSearchLink facet="trainer" value={horse.trainer} /> })
   if (horse.familyNumber) rows.push({ label: 'ファミリーナンバー', value: horse.familyNumber })
   if (horse.registration) rows.push({ label: '登録番号', value: horse.registration })
-  rows.push({
-    label: '牝系',
-    value: (
-      <AttributeSearchLink facet="family" value={familyRootId}>
-        {horse.id === familyRootId ? (
-          familyName
-        ) : (
-          <Link href={horseHref(familyRootId)} className="link-inline">
-            {familyName}
-          </Link>
-        )}
-      </AttributeSearchLink>
-    ),
-  })
+  // 牝祖のページが系統そのもの。所属牝系の行は子孫だけ。系統名が牝祖ページへのリンク。
+  if (horse.id !== familyRootId) {
+    rows.push({
+      label: '牝系',
+      value: (
+        <Link href={horseHref(familyRootId)} className="link-inline">
+          {familyName}
+        </Link>
+      ),
+    })
+  }
 
   return (
     <table className="info-table">
@@ -282,14 +279,16 @@ export default async function Page({ params }: { params: { id: string } }) {
           {isRoot ? (
             <span>{family.pedigreeName}</span>
           ) : (
-            <Link href={horseHref(family.rootHorseId)} className="hover:underline">
-              {family.pedigreeName}
-            </Link>
+            <>
+              <Link href={horseHref(family.rootHorseId)} className="hover:underline">
+                {family.pedigreeName}
+              </Link>
+              <span className="mx-1.5">·</span>
+              <a href={horseHref(family.rootHorseId, horse.id)} className="link-inline" data-full-page>
+                牝系図に戻る
+              </a>
+            </>
           )}
-          <span className="mx-1.5">·</span>
-          <a href={horseHref(family.rootHorseId, horse.id)} className="link-inline" data-full-page>
-            牝系図に戻る
-          </a>
         </nav>
         <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl">
           {name}
@@ -336,7 +335,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         </section>
       )}
 
-      {damLine.length > 1 && (
+      {!isRoot && damLine.length > 1 && (
         <section className="py-6">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
             <h2 className="text-xl font-bold text-heading">牝系内の位置</h2>

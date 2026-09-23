@@ -25,6 +25,7 @@
     --color-race-listed: theme('colors.violet.600');
     --color-race-historic: theme('colors.amber.600');
     --color-race-plain: var(--color-heading);
+    --color-tree-line: theme('colors.stone.400');
     --color-chip-bg: rgb(255 255 255 / 0.55);
     --color-result-1-bg: theme('colors.yellow.100');
     --color-result-1-fg: theme('colors.yellow.800');
@@ -50,6 +51,7 @@
     --color-race-3: theme('colors.green.400');
     --color-race-listed: theme('colors.violet.400');
     --color-race-historic: theme('colors.amber.400');
+    --color-tree-line: theme('colors.gray.500');
     --color-chip-bg: rgb(0 0 0 / 0.3);
     --color-result-1-bg: rgb(250 204 21 / 0.2);
     --color-result-1-fg: theme('colors.yellow.200');
@@ -257,6 +259,48 @@ input:-webkit-autofill:focus {
 .result-place-3 {
   background-color: var(--color-result-3-bg);
   color: var(--color-result-3-fg);
+}
+
+/*
+ * 牝系図の系線。縦は世代、横は馬名の高さでカードに渡す肘。
+ * 兄弟の間隔は枝の padding-top に置き、縦線がその隙間をまたぐ。
+ * 末子の縦線は肘の上端で止める。
+ * --tree-join は枝の上端から肘まで。padding-top 0.5rem + 本文 py-1 + text-lg の半行。
+ */
+.tree-branch {
+  position: relative;
+  margin-left: 1rem;
+  --tree-join: 1.625rem;
+}
+
+.tree-branch:not(.tree-root) {
+  padding-top: 0.5rem;
+  padding-left: 0.75rem;
+}
+
+.tree-branch:not(.tree-root)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--color-tree-line);
+}
+
+.tree-branch-last::before {
+  bottom: auto;
+  height: var(--tree-join);
+}
+
+.tree-branch:not(.tree-root) > .horse-card::before {
+  content: '';
+  position: absolute;
+  top: calc(var(--tree-join) - 0.5rem);
+  left: -0.75rem;
+  width: 0.75rem;
+  height: 1px;
+  background-color: var(--color-tree-line);
 }
 
 /*

@@ -4,7 +4,7 @@ import { sex as sexes } from '@/types/Horse'
 import { grades } from '@/types/Grade'
 import RaceRecord from '@/types/RaceResult'
 import { formatBreedMark } from '@/lib/breed-mark'
-import { filterHighlightRaces, prizeMoneySummary, raceStatsSummary } from '@/lib/race-summary'
+import { filterHighlightRaces } from '@/lib/race-summary'
 import HorseLink from './HorseLink'
 import HorseNameWithPedigree from './HorseNameWithPedigree'
 import { RecordsSummary } from './RecordsSummary'
@@ -21,9 +21,15 @@ const summary = tv({
 const BaseInfo = (horse: Horse): JSX.Element => {
   const breedMark = formatBreedMark(horse.breed)
   return (
-    <div className="flex flex-nowrap items-baseline gap-x-1 whitespace-nowrap">
-      <HorseNameWithPedigree horseId={horse.id} displayName={displayHorseName(horse)} />
-      {breedMark && <span className="text-xs font-medium text-muted">{breedMark}</span>}
+    <div className="flex flex-wrap items-baseline gap-x-1">
+      <span className="inline-flex min-w-0 max-w-full items-baseline gap-x-1">
+        <HorseNameWithPedigree
+          horseId={horse.id}
+          displayName={displayHorseName(horse)}
+          className="min-w-0 text-base md:text-lg"
+        />
+        {breedMark && <span className="shrink-0 text-xs font-medium text-muted">{breedMark}</span>}
+      </span>
       <span className="text-sm">
         （{horse.foaled.year}） by{' '}
         <HorseLink
@@ -32,25 +38,18 @@ const BaseInfo = (horse: Horse): JSX.Element => {
           displayName={formatSireDisplayName(horse.sire, horse.sireId)}
         />
       </span>
-      <span>
-        {raceStatsSummary(horse.raceStats)} {prizeMoneySummary(horse.prizeMoney)}
-      </span>
     </div>
   )
 }
-
-export { prizeMoneySummary }
 
 function HorseCard(horse: Horse) {
   const won_races: RaceRecord[] | undefined = horse.raceResults?.filter((record) => record.result === '1')
   // 勝ち鞍の最高格付け 重賞勝ち鞍がない場合は0
   const horse_rank = won_races ? Math.max(...won_races.map((record) => grades[record.grade].rank)) : 0
   return (
-    <div className="horse-card w-[40rem] text-sm md:text-base">
-      <div className="-ml-2 pt-3 ">
-        <div className="before:display-block horse-card-panel card rounded-none bg-white shadow-xl before:absolute before:z-10 before:mt-2 before:h-3 before:w-3 before:bg-black before:opacity-50 before:content-[''] dark:bg-gray-900 dark:before:bg-white">
-          <HorseDetails {...horse} />
-        </div>
+    <div className="horse-card relative w-[40rem] text-sm md:text-base">
+      <div className="horse-card-panel">
+        <HorseDetails {...horse} />
       </div>
     </div>
   )

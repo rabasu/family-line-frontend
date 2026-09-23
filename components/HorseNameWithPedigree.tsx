@@ -7,6 +7,7 @@ import { openHorseModal } from './HorseDetailModal'
 type Props = {
   horseId: string
   displayName: string
+  className?: string
 }
 
 /**
@@ -16,7 +17,7 @@ type Props = {
  * 牝系ページには数百の馬名が並ぶので、ここではダイアログを持たない。
  * モーダル本体はレイアウトに1つだけ置いてある。
  */
-export default function HorseNameWithPedigree({ horseId, displayName }: Props) {
+export default function HorseNameWithPedigree({ horseId, displayName, className }: Props) {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     // 修飾キー付きクリックや中クリックは、ブラウザ本来の挙動に任せる
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
@@ -28,7 +29,7 @@ export default function HorseNameWithPedigree({ horseId, displayName }: Props) {
     <a
       href={horseHref(horseId)}
       onClick={handleClick}
-      className="hover:text-primary-600 dark:hover:text-primary-400 cursor-pointer font-bold text-heading hover:underline"
+      className={`cursor-pointer font-bold text-heading hover:text-primary-600 hover:underline dark:hover:text-primary-400${className ? ` ${className}` : ''}`}
     >
       {displayName}
     </a>

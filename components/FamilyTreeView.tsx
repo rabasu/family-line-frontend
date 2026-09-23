@@ -4,13 +4,13 @@ import type { Horse } from '@/types/Horse'
 import { Foaled } from '@/types/Foaled'
 
 const branch = tv({
-  base: 'ml-4',
+  base: 'tree-branch',
   variants: {
-    // 牝系図の線を制御
+    // 末子は肘の高さで縦線を止める。根には線を引かない。
     border: {
-      last: 'border-none [&>.horse-card]:border-l-4 [&>.horse-card]:border-indigo-500 [&>.horse-card]:border-double',
-      default: 'border-l-4 border-indigo-500 border-double',
-      root: '',
+      last: 'tree-branch-last',
+      default: '',
+      root: 'tree-root',
     },
   },
 })
