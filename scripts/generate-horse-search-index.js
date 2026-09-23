@@ -173,6 +173,9 @@ function buildEntry(horse, family, familyName) {
   if (horse.linkPedigreeName) entry.linkPedigreeName = horse.linkPedigreeName
   if (horse.englishName) entry.englishName = horse.englishName
   if (horse.furigana) entry.furigana = horse.furigana
+  if (horse.breeder) entry.breeder = horse.breeder
+  if (horse.owner) entry.owner = horse.owner
+  if (horse.trainer) entry.trainer = horse.trainer
 
   // 表示用
   if (horse.raceStats) entry.raceStats = horse.raceStats

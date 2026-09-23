@@ -1,10 +1,11 @@
 import Link from 'next/link'
-import { HorseSearchEntry, RaceResultJSON } from '@/types/HorseSearchEntry'
+import { HorseSearchEntry } from '@/types/HorseSearchEntry'
 import { horseHref } from '@/lib/horse-id'
-import { grades } from '@/types/Grade'
-import { AggregatedRaceStats } from '@/types/AggregatedRaceStats'
-import { PrizeMoney } from '@/types/PrizeMoney'
-import { raceGradeClass, sexBg } from '@/lib/ui-theme'
+import { horseSearchHref } from '@/lib/horse-search'
+import { prizeMoneySummary, raceStatsSummary } from '@/lib/race-summary'
+import { sexBg } from '@/lib/ui-theme'
+import HorseNameWithPedigree from './HorseNameWithPedigree'
+import { RecordsSummary } from './RecordsSummary'
 
 /** name / pedigreeName の1行目 */
 function mainName(entry: HorseSearchEntry): string {
@@ -21,34 +22,8 @@ function subNames(entry: HorseSearchEntry): string[] {
   return names
 }
 
-function raceStatsSummary(raceStats: AggregatedRaceStats | undefined): string {
-  if (!raceStats) return ''
-  const text = `${raceStats.total.runs ?? '?'}戦${raceStats.total.wins ?? '?'}勝`
-  return text === '0戦0勝' ? '' : text
-}
-
-function prizeMoneySummary(prizeMoney: PrizeMoney | undefined): string {
-  if (!prizeMoney) return ''
-  if (prizeMoney.total === '0.0万円' || prizeMoney.total === '0万円') return ''
-  return prizeMoney.total
-}
-
-function dateToYear(date: RaceResultJSON['date']): number {
-  if (!date) return 0
-  if (typeof date === 'string') return new Date(date).getFullYear()
-  return date.year ?? 0
-}
-
-const RecordItem = ({ record }: { record: RaceResultJSON }) => {
-  const rank = grades[record.grade].rank
-  const year = dateToYear(record.date)
-  return (
-    <span className="inline-flex items-baseline">
-      {record.result !== '1' && <span>（{record.result}着）</span>}
-      <span className={`mr-1 ${raceGradeClass(rank)} ${record.result === '1' ? 'font-bold' : ''}`}>{record.displayRace}</span>
-      <span className="text-sm">（{year}）</span>
-    </span>
-  )
+function isSearchableName(value?: string): value is string {
+  return Boolean(value && value !== '不詳')
 }
 
 interface Props {
@@ -67,26 +42,35 @@ export default function HorseSearchCard({ entry }: Props) {
       <div className="grid grid-cols-2 items-stretch">
         {/* 左: 馬名 + 生年 */}
         <div className="flex flex-col justify-center pr-3">
-          <Link href={horseHref(entry.id)} className="font-bold text-heading hover:underline">
-            {mainName(entry)}
-          </Link>
+          <HorseNameWithPedigree horseId={entry.id} displayName={mainName(entry)} />
           {sub.length > 0 && <div className="text-xs text-muted">{sub.join('　')}</div>}
           <div className="text-xs tabular-nums text-muted">{entry.foaled.year ?? '?'}</div>
         </div>
 
         {/* 右: 父母（縦線・横線で分割） */}
-        <div className="divide-y divide-gray-300 border-l border-gray-300 dark:divide-gray-600 dark:border-gray-600">
-          <div className="py-0.5 pl-3 text-sm text-gray-600 dark:text-gray-400" title={entry.sire}>
-            {entry.sire || '不詳'}
+        <div className="divide-y divide-theme border-l border-theme">
+          <div className="py-0.5 pl-3 text-sm" title={entry.sire}>
+            <span className="text-muted">父 </span>
+            {isSearchableName(entry.sire) ? (
+              <Link href={horseSearchHref({ sire: entry.sire })} className="link-inline">
+                {entry.sire}
+              </Link>
+            ) : (
+              '不詳'
+            )}
           </div>
           <div className="flex items-center justify-between gap-x-1 py-0.5 pl-3 pr-1">
-            <span className="text-sm text-gray-400 dark:text-gray-500" title={entry.dam}>
-              {entry.dam || '不詳'}
+            <span className="text-sm" title={entry.dam}>
+              <span className="text-muted">母 </span>
+              {isSearchableName(entry.dam) ? (
+                <Link href={horseSearchHref({ dam: entry.dam })} className="link-inline">
+                  {entry.dam}
+                </Link>
+              ) : (
+                '不詳'
+              )}
             </span>
-            <Link
-              href={horseHref(entry.family)}
-              className="shrink-0 rounded border border-primary-400 px-1.5 py-0.5 text-xs font-medium text-primary-600 hover:bg-primary-50 dark:border-primary-500 dark:text-primary-400 dark:hover:bg-primary-900/20"
-            >
+            <Link href={horseHref(entry.family)} className="link-inline shrink-0 text-xs">
               {entry.familyName}系
             </Link>
           </div>
@@ -94,21 +78,17 @@ export default function HorseSearchCard({ entry }: Props) {
       </div>
 
       {/* ─── 情報行: 戦績・賞金 ─── */}
-      <div className="mt-1 border-t border-gray-300 pt-1 dark:border-gray-600">
-        <div className="flex items-center gap-x-3 text-xs text-muted">
-          {statsSummary && <span className="shrink-0">{statsSummary}</span>}
-          {prizeText && <span className="shrink-0">{prizeText}</span>}
+      {(statsSummary || prizeText || entry.topRaceResults.length > 0) && (
+        <div className="mt-1 border-t border-theme pt-1">
+          {(statsSummary || prizeText) && (
+            <div className="flex items-center gap-x-3 text-sm">
+              {statsSummary && <span className="shrink-0">{statsSummary}</span>}
+              {prizeText && <span className="shrink-0">{prizeText}</span>}
+            </div>
+          )}
+          <RecordsSummary records={entry.topRaceResults} />
         </div>
-
-        {/* ─── 重賞成績（左詰め） ─── */}
-        {entry.topRaceResults.length > 0 && (
-          <div className="mt-0.5 flex flex-wrap gap-x-2 text-sm">
-            {entry.topRaceResults.map((record, i) => (
-              <RecordItem key={`${i}-${record.displayRace}`} record={record} />
-            ))}
-          </div>
-        )}
-      </div>
+      )}
     </div>
   )
 }

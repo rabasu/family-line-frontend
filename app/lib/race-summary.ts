@@ -66,6 +66,12 @@ export function formatPrizeMoneyDetailed(prizeMoney: PrizeMoney | undefined): st
   return prizeMoney.total
 }
 
+/** 獲得賞金の短い表示。0円はデータ不足を含むため出さない */
+export function prizeMoneySummary(prizeMoney: PrizeMoney | undefined): string {
+  if (!prizeMoney || isEmptyPrize(prizeMoney.total)) return ''
+  return prizeMoney.total
+}
+
 export function hasRaceCareerInfo(
   raceStats: AggregatedRaceStats | undefined,
   prizeMoney: PrizeMoney | undefined,

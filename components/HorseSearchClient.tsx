@@ -1,49 +1,187 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { HorseSearchEntry } from '@/types/HorseSearchEntry'
 import HorseSearchCard from './HorseSearchCard'
+import {
+  SEARCH_FACETS,
+  SEARCH_GRADES,
+  activeSearchFacets,
+  hasSearchCriteria,
+  horseSearchQueryString,
+  matchHorseName,
+  matchesSearchFacets,
+  parseHorseSearchQuery,
+  resolveFacetOption,
+  searchFacetLabel,
+  sortHorseSearch,
+  unwrapEstimatedParens,
+  withSearchFacet,
+  withoutSearchFacet,
+  type HorseSearchQuery,
+  type SearchFacetKey,
+  type SearchGrade,
+} from '@/lib/horse-search'
 
-type FilterMode = 'all' | 'placed' | 'win' | 'g1win'
-
-const FILTER_OPTIONS: { value: FilterMode; label: string }[] = [
-  { value: 'all', label: 'すべて' },
-  { value: 'placed', label: '重賞入着馬（3着以内）' },
-  { value: 'win', label: '重賞勝ち馬' },
-  { value: 'g1win', label: 'G1級競走勝ち馬' },
-]
-
-const NAME_FIELDS = ['name', 'pedigreeName', 'formerName', 'localName', 'formerPedigreeName', 'linkName', 'linkPedigreeName', 'englishName'] as const
-
-function getNames(entry: HorseSearchEntry): string[] {
-  return NAME_FIELDS.map((f) => entry[f]).filter((v): v is string => typeof v === 'string')
+function familyDisplayName(familyNames: Map<string, string>, value: string): string {
+  const name = familyNames.get(value) || value
+  return name.endsWith('系') ? name : `${name}系`
 }
 
-function applyFilter(entry: HorseSearchEntry, mode: FilterMode): boolean {
-  switch (mode) {
-    case 'placed':
-      return entry.hasGradePlaced
-    case 'win':
-      return entry.hasGradeWin
-    case 'g1win':
-      return entry.hasG1Win
-    default:
-      return true
+function resolveFamilyValue(familyNames: Map<string, string>, input: string): string {
+  const trimmed = input.trim()
+  if (familyNames.has(trimmed)) return trimmed
+  for (const [id, name] of familyNames) {
+    if (name === trimmed) return id
   }
+  return trimmed
 }
 
-function sortKey(entry: HorseSearchEntry): string {
-  if (entry.furigana) return entry.furigana
-  return entry.name ?? entry.pedigreeName ?? entry.englishName ?? entry.formerName ?? entry.linkName ?? entry.id
+function addFacetOption(set: Set<string>, value?: string) {
+  if (!value) return
+  const canonical = unwrapEstimatedParens(value)
+  if (canonical) set.add(canonical)
 }
 
-function sortByName(a: HorseSearchEntry, b: HorseSearchEntry): number {
-  const cmp = sortKey(a).localeCompare(sortKey(b), 'ja', { sensitivity: 'base' })
-  if (cmp !== 0) return cmp
-  const ya = a.foaled.year ?? 9999
-  const yb = b.foaled.year ?? 9999
-  if (ya !== yb) return ya - yb
-  return a.id.localeCompare(b.id)
+function buildFacetOptions(data: HorseSearchEntry[]): Record<SearchFacetKey, string[]> {
+  const sets: Record<SearchFacetKey, Set<string>> = {
+    sire: new Set(),
+    dam: new Set(),
+    family: new Set(),
+    breeder: new Set(),
+    owner: new Set(),
+    trainer: new Set(),
+  }
+  for (const entry of data) {
+    addFacetOption(sets.sire, entry.sire)
+    addFacetOption(sets.dam, entry.dam)
+    addFacetOption(sets.family, entry.familyName)
+    addFacetOption(sets.breeder, entry.breeder)
+    addFacetOption(sets.owner, entry.owner)
+    addFacetOption(sets.trainer, entry.trainer)
+  }
+  const sorted = {} as Record<SearchFacetKey, string[]>
+  for (const key of SEARCH_FACETS.map((f) => f.key)) {
+    sorted[key] = [...sets[key]].sort((a, b) => a.localeCompare(b, 'ja'))
+  }
+  return sorted
+}
+
+function FacetSuggestField({
+  value,
+  onChange,
+  onCommit,
+  suggestions,
+  placeholder,
+}: {
+  value: string
+  onChange: (value: string) => void
+  onCommit: (value: string) => void
+  suggestions: string[]
+  placeholder: string
+}) {
+  const [open, setOpen] = useState(false)
+  const [highlight, setHighlight] = useState(0)
+  const listRef = useRef<HTMLUListElement>(null)
+
+  useEffect(() => {
+    setHighlight(0)
+  }, [suggestions])
+
+  useEffect(() => {
+    const list = listRef.current
+    if (!list) return
+    const item = list.children[highlight] as HTMLElement | undefined
+    item?.scrollIntoView({ block: 'nearest' })
+  }, [highlight])
+
+  const showList = open && suggestions.length > 0
+
+  const commit = (raw: string) => {
+    const trimmed = raw.trim()
+    if (!trimmed) return
+    onCommit(trimmed)
+    setOpen(false)
+  }
+
+  return (
+    <div
+      className="relative min-w-[12rem] flex-1"
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node)) setOpen(false)
+      }}
+    >
+      <input
+        type="text"
+        role="combobox"
+        aria-expanded={showList}
+        aria-controls="horse-search-facet-list"
+        aria-autocomplete="list"
+        aria-activedescendant={showList ? `horse-search-facet-option-${highlight}` : undefined}
+        value={value}
+        onChange={(e) => {
+          onChange(e.target.value)
+          setOpen(true)
+        }}
+        onFocus={() => setOpen(true)}
+        onClick={() => setOpen(true)}
+        onKeyDown={(e) => {
+          if (e.key === 'ArrowDown') {
+            e.preventDefault()
+            setOpen(true)
+            if (suggestions.length === 0) return
+            setHighlight((i) => (i + 1) % suggestions.length)
+            return
+          }
+          if (e.key === 'ArrowUp') {
+            e.preventDefault()
+            setOpen(true)
+            if (suggestions.length === 0) return
+            setHighlight((i) => (i - 1 + suggestions.length) % suggestions.length)
+            return
+          }
+          if (e.key === 'Escape') {
+            e.preventDefault()
+            setOpen(false)
+            return
+          }
+          if (e.key === 'Enter') {
+            e.preventDefault()
+            if (showList && suggestions[highlight]) commit(suggestions[highlight])
+            else commit(value)
+          }
+        }}
+        placeholder={placeholder}
+        className="w-full rounded-md border border-theme bg-white px-3 py-1.5 text-sm text-heading placeholder:text-muted focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 dark:bg-gray-800"
+      />
+      {showList && (
+        <ul
+          ref={listRef}
+          id="horse-search-facet-list"
+          role="listbox"
+          className="absolute left-0 right-0 top-full z-50 mt-1 max-h-60 overflow-y-auto rounded-md border border-theme bg-white py-1 shadow-lg dark:bg-gray-800"
+        >
+          {suggestions.map((option, index) => (
+            <li key={option} role="presentation">
+              <button
+                type="button"
+                id={`horse-search-facet-option-${index}`}
+                role="option"
+                aria-selected={index === highlight}
+                className={`block w-full px-3 py-1.5 text-left text-sm text-heading ${index === highlight ? 'bg-label' : 'hover:bg-label'}`}
+                onMouseEnter={() => setHighlight(index)}
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => commit(option)}
+              >
+                {option}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
 }
 
 interface Props {
@@ -51,102 +189,230 @@ interface Props {
 }
 
 export default function HorseSearchClient({ data }: Props) {
-  const [query, setQuery] = useState('')
-  const [filterMode, setFilterMode] = useState<FilterMode>('all')
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
+  const urlQs = searchParams.toString()
+  const urlQuery = useMemo(() => parseHorseSearchQuery(new URLSearchParams(urlQs)), [urlQs])
+  const [query, setQuery] = useState(urlQuery)
+
+  const [nameInput, setNameInput] = useState(urlQuery.q ?? '')
+  const [facetKey, setFacetKey] = useState<SearchFacetKey>('sire')
+  const [facetInput, setFacetInput] = useState('')
+
+  const queryRef = useRef(query)
+  queryRef.current = query
+  const skipUrlSyncRef = useRef(false)
+
+  useEffect(() => {
+    if (skipUrlSyncRef.current) {
+      skipUrlSyncRef.current = false
+      return
+    }
+    setQuery(urlQuery)
+    setNameInput(urlQuery.q ?? '')
+  }, [urlQuery])
+
+  const replaceQuery = (next: HorseSearchQuery) => {
+    const qs = horseSearchQueryString(next)
+    const href = qs ? `${pathname}?${qs}` : pathname
+    skipUrlSyncRef.current = true
+    setQuery(next)
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(window.history.state, '', href)
+    }
+    router.replace(href, { scroll: false })
+  }
+
+  useEffect(() => {
+    const trimmed = nameInput.trim()
+    const current = queryRef.current.q ?? ''
+    if (trimmed === current) return
+    const t = window.setTimeout(() => {
+      const next: HorseSearchQuery = { ...queryRef.current }
+      if (trimmed) next.q = trimmed
+      else delete next.q
+      replaceQuery(next)
+    }, 300)
+    return () => window.clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [nameInput])
+
+  const facetOptions = useMemo(() => buildFacetOptions(data), [data])
+  const familyNames = useMemo(() => {
+    const map = new Map<string, string>()
+    for (const entry of data) {
+      if (!map.has(entry.family)) map.set(entry.family, entry.familyName)
+    }
+    return map
+  }, [data])
+  const suggestions = useMemo(() => {
+    const q = facetInput.trim()
+    const all = facetOptions[facetKey]
+    if (!q) return all.slice(0, 40)
+    const needle = unwrapEstimatedParens(q)
+    return all.filter((value) => value.includes(q) || (needle !== q && value.includes(needle))).slice(0, 40)
+  }, [facetOptions, facetKey, facetInput])
 
   const results = useMemo(() => {
-    const q = query.trim()
-
-    // フィルタ適用
-    const filtered = data.filter((entry) => applyFilter(entry, filterMode))
+    if (!hasSearchCriteria(query)) {
+      return { exact: [] as HorseSearchEntry[], partial: [] as HorseSearchEntry[] }
+    }
+    const filtered = data.filter((entry) => matchesSearchFacets(entry, query))
+    const q = query.q?.trim() ?? ''
 
     if (!q) {
-      return { exact: [], partial: filtered.slice().sort(sortByName) }
+      return { exact: [] as HorseSearchEntry[], partial: filtered.slice().sort(sortHorseSearch) }
     }
 
     const exact: HorseSearchEntry[] = []
     const partial: HorseSearchEntry[] = []
-
     for (const entry of filtered) {
-      const names = getNames(entry)
-      if (names.some((n) => n === q)) {
-        exact.push(entry)
-      } else if (names.some((n) => n.includes(q))) {
-        partial.push(entry)
-      }
+      const match = matchHorseName(entry, q)
+      if (match === 'exact') exact.push(entry)
+      else if (match === 'partial') partial.push(entry)
     }
-
-    exact.sort(sortByName)
-    partial.sort(sortByName)
-
+    exact.sort(sortHorseSearch)
+    partial.sort(sortHorseSearch)
     return { exact, partial }
-  }, [query, filterMode, data])
+  }, [data, query])
 
   const totalCount = results.exact.length + results.partial.length
-  const showQuery = query.trim()
+  const showNameQuery = Boolean(query.q?.trim())
+  const facets = activeSearchFacets(query)
+  const active = hasSearchCriteria(query)
+  const grade: SearchGrade = query.grade ?? 'all'
+
+  const addFacetValue = (raw: string) => {
+    const trimmed = raw.trim()
+    if (!trimmed) return
+    const value =
+      facetKey === 'family'
+        ? resolveFamilyValue(familyNames, trimmed)
+        : resolveFacetOption(facetOptions[facetKey], trimmed)
+    replaceQuery(withSearchFacet(query, facetKey, value))
+    setFacetInput('')
+  }
 
   return (
     <div className="space-y-4">
-      {/* 検索入力 */}
       <div className="relative">
         <input
           type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          value={nameInput}
+          onChange={(e) => setNameInput(e.target.value)}
           placeholder="馬名（競走名・血統名・英語名など）を入力"
-          className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-sm shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400"
+          className="w-full rounded-md border border-theme bg-white px-4 py-2 text-sm text-heading shadow-sm placeholder:text-muted focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 dark:bg-gray-800"
         />
       </div>
 
-      {/* フィルタ */}
+      <div className="flex flex-wrap items-center gap-2">
+        <label className="sr-only" htmlFor="horse-search-facet-key">
+          絞り込みの属性
+        </label>
+        <select
+          id="horse-search-facet-key"
+          value={facetKey}
+          onChange={(e) => {
+            setFacetKey(e.target.value as SearchFacetKey)
+            setFacetInput('')
+          }}
+          className="rounded-md border border-theme bg-white px-2 py-1.5 text-sm text-heading dark:bg-gray-800"
+        >
+          {SEARCH_FACETS.map((facet) => (
+            <option key={facet.key} value={facet.key}>
+              {facet.label}
+            </option>
+          ))}
+        </select>
+        <FacetSuggestField
+          value={facetInput}
+          onChange={setFacetInput}
+          onCommit={addFacetValue}
+          suggestions={suggestions}
+          placeholder={`${searchFacetLabel(facetKey)}で絞り込む`}
+        />
+      </div>
+
+      {facets.length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {facets.map((facet) => {
+            const display = facet.key === 'family' ? familyDisplayName(familyNames, facet.value) : facet.value
+            return (
+              <span
+                key={facet.key}
+                className="inline-flex items-center gap-1 rounded-full border border-theme bg-label px-2.5 py-0.5 text-xs text-heading"
+              >
+                <span className="text-muted">{searchFacetLabel(facet.key)}</span>
+                <span>{display}</span>
+                <button
+                  type="button"
+                  onClick={() => replaceQuery(withoutSearchFacet(query, facet.key))}
+                  className="text-subtle hover:text-heading"
+                  aria-label={`${searchFacetLabel(facet.key)}「${display}」を外す`}
+                >
+                  ×
+                </button>
+              </span>
+            )
+          })}
+        </div>
+      )}
+
       <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
-        {FILTER_OPTIONS.map((opt) => (
+        {SEARCH_GRADES.map((opt) => (
           <label key={opt.value} className="flex cursor-pointer items-center gap-1.5">
-            <input type="radio" name="horse-filter" value={opt.value} checked={filterMode === opt.value} onChange={() => setFilterMode(opt.value)} className="accent-primary-500" />
+            <input
+              type="radio"
+              name="horse-filter"
+              value={opt.value}
+              checked={grade === opt.value}
+              onChange={() => {
+                const next: HorseSearchQuery = { ...query }
+                if (opt.value === 'all') delete next.grade
+                else next.grade = opt.value
+                replaceQuery(next)
+              }}
+              className="accent-sky-700"
+            />
             <span>{opt.label}</span>
           </label>
         ))}
       </div>
 
-      {/* 件数表示 */}
-      {showQuery && (
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          「{showQuery}」の検索結果：{totalCount} 件
-        </p>
-      )}
-      {!showQuery && filterMode !== 'all' && (
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          {FILTER_OPTIONS.find((o) => o.value === filterMode)?.label}：{totalCount} 件
+      {active && (
+        <p className="text-sm text-muted">
+          {showNameQuery ? `「${query.q}」の検索結果：` : '絞り込み結果：'}
+          {totalCount} 件
         </p>
       )}
 
-      {/* 検索結果 */}
       <div className="space-y-1">
-        {/* 完全一致グループ */}
         {results.exact.length > 0 && (
           <>
-            {showQuery && <p className="pt-1 text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500">完全一致</p>}
+            {showNameQuery && <p className="pt-1 text-xs font-semibold uppercase tracking-wide text-muted">完全一致</p>}
             {results.exact.map((entry) => (
               <HorseSearchCard key={`${entry.family}-${entry.id}`} entry={entry} />
             ))}
           </>
         )}
 
-        {/* 部分一致グループ */}
         {results.partial.length > 0 && (
           <>
-            {showQuery && results.exact.length > 0 && <p className="pt-2 text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500">部分一致</p>}
+            {showNameQuery && results.exact.length > 0 && (
+              <p className="pt-2 text-xs font-semibold uppercase tracking-wide text-muted">部分一致</p>
+            )}
             {results.partial.map((entry) => (
               <HorseSearchCard key={`${entry.family}-${entry.id}`} entry={entry} />
             ))}
           </>
         )}
 
-        {/* 検索結果なし */}
-        {showQuery && totalCount === 0 && <p className="py-8 text-center text-sm text-gray-500 dark:text-gray-400">該当する馬が見つかりませんでした。</p>}
+        {active && totalCount === 0 && <p className="py-8 text-center text-sm text-muted">該当する馬が見つかりませんでした。</p>}
 
-        {/* 未入力かつフィルタなし */}
-        {!showQuery && filterMode === 'all' && <p className="py-8 text-center text-sm text-gray-400 dark:text-gray-500">馬名を入力するか、絞り込み条件を選択してください。</p>}
+        {!active && (
+          <p className="py-8 text-center text-sm text-muted">馬名を入力するか、属性・成績で絞り込んでください。</p>
+        )}
       </div>
     </div>
   )

@@ -3,10 +3,11 @@ import { horseHref } from '@/lib/horse-id'
 import { tv } from 'tailwind-variants'
 import type { Horse } from '@/types/Horse'
 import { formatBreedMark } from '@/lib/breed-mark'
-import { filterHighlightRaces, hasGradeWin, raceStatsSummary } from '@/lib/race-summary'
+import { filterHighlightRaces, hasGradeWin, prizeMoneySummary, raceStatsSummary } from '@/lib/race-summary'
 import HorseLink from './HorseLink'
 import HorseNameWithPedigree from './HorseNameWithPedigree'
-import { displayHorseName, prizeMoneySummary, RecordsSummary } from './HorseCard'
+import { displayHorseName } from './HorseCard'
+import { RecordsSummary } from './RecordsSummary'
 import { sexBgClass } from '@/lib/ui-theme'
 
 const summary = tv({

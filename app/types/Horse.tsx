@@ -81,8 +81,8 @@ interface Horse {
   // 以下は後々追加 一旦は不要
   retired?: string // 抹消日
   died?: string // 死亡日
-  foaledAt?: string // 生産地
-  owner?: string // 馬主
+  foaledAt?: string // 生産
+  owner?: string // 所有
   trainer?: string // 調教師
   jockey?: string // 騎手
   netkeibaId?: string // Netkeiba ID

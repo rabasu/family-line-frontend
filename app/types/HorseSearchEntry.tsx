@@ -23,6 +23,9 @@ export interface HorseSearchEntry {
   sex: Sex
   sire?: string
   dam?: string
+  breeder?: string
+  owner?: string
+  trainer?: string
   name?: string
   pedigreeName?: string
   formerName?: string

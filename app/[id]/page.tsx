@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import AttributeSearchLink from '@/components/AttributeSearchLink'
 import Comments from '@/components/Comments'
 import FamilyTreeView from '@/components/FamilyTreeView'
 import FiveGenPedigreeTable, { hasKnownAncestor } from '@/components/FiveGenPedigreeTable'
@@ -148,33 +149,47 @@ function ProfileRows({
     rows.push({
       label: '父',
       value: (
-        <HorseLink
-          name={horse.sire}
-          horseId={horse.sireId}
-          displayName={formatSireDisplayName(horse.sire, horse.sireId)}
-        />
+        <AttributeSearchLink facet="sire" value={horse.sire}>
+          <HorseLink
+            name={horse.sire}
+            horseId={horse.sireId}
+            displayName={formatSireDisplayName(horse.sire, horse.sireId)}
+          />
+        </AttributeSearchLink>
       ),
     })
   }
-  if (horse.dam) rows.push({ label: '母', value: <HorseLink name={horse.dam} /> })
-  if (horse.breeder) rows.push({ label: '生産者', value: horse.breeder })
-  if (horse.foaledAt) rows.push({ label: '生産地', value: horse.foaledAt })
+  if (horse.dam) {
+    rows.push({
+      label: '母',
+      value: (
+        <AttributeSearchLink facet="dam" value={horse.dam}>
+          <HorseLink name={horse.dam} />
+        </AttributeSearchLink>
+      ),
+    })
+  }
+  if (horse.breeder) rows.push({ label: '生産者', value: <AttributeSearchLink facet="breeder" value={horse.breeder} /> })
+  if (horse.foaledAt) rows.push({ label: '生産', value: horse.foaledAt })
   if (horse.importedYear) rows.push({ label: '輸入年', value: horse.importedYear })
   if (horse.importedBy) rows.push({ label: '輸入者', value: horse.importedBy })
-  if (horse.owner) rows.push({ label: '馬主', value: horse.owner })
-  if (horse.trainer) rows.push({ label: '調教師', value: horse.trainer })
+  if (horse.owner) rows.push({ label: '所有', value: <AttributeSearchLink facet="owner" value={horse.owner} /> })
+  if (horse.trainer) rows.push({ label: '調教師', value: <AttributeSearchLink facet="trainer" value={horse.trainer} /> })
   if (horse.familyNumber) rows.push({ label: 'ファミリーナンバー', value: horse.familyNumber })
   if (horse.registration) rows.push({ label: '登録番号', value: horse.registration })
   rows.push({
     label: '牝系',
-    value:
-      horse.id === familyRootId ? (
-        familyName
-      ) : (
-        <Link href={horseHref(familyRootId)} className="link-inline">
-          {familyName}
-        </Link>
-      ),
+    value: (
+      <AttributeSearchLink facet="family" value={familyRootId}>
+        {horse.id === familyRootId ? (
+          familyName
+        ) : (
+          <Link href={horseHref(familyRootId)} className="link-inline">
+            {familyName}
+          </Link>
+        )}
+      </AttributeSearchLink>
+    ),
   })
 
   return (

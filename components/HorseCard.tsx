@@ -4,13 +4,12 @@ import { sex as sexes } from '@/types/Horse'
 import { grades } from '@/types/Grade'
 import RaceRecord from '@/types/RaceResult'
 import { formatBreedMark } from '@/lib/breed-mark'
-import { filterHighlightRaces, raceStatsSummary } from '@/lib/race-summary'
-import { yearOf } from 'app/lib/utils'
+import { filterHighlightRaces, prizeMoneySummary, raceStatsSummary } from '@/lib/race-summary'
 import HorseLink from './HorseLink'
 import HorseNameWithPedigree from './HorseNameWithPedigree'
-import { PrizeMoney } from '@/types/PrizeMoney'
+import { RecordsSummary } from './RecordsSummary'
 import { formatSireDisplayName } from '@/lib/origin-country-index'
-import { raceGradeClass, sexBgClass } from '@/lib/ui-theme'
+import { sexBgClass } from '@/lib/ui-theme'
 
 const summary = tv({
   base: 'px-5 py-1',
@@ -18,10 +17,6 @@ const summary = tv({
     sex: sexBgClass,
   },
 })
-
-type RecordsProp = {
-  records: RaceRecord[]
-}
 
 const BaseInfo = (horse: Horse): JSX.Element => {
   const breedMark = formatBreedMark(horse.breed)
@@ -44,17 +39,7 @@ const BaseInfo = (horse: Horse): JSX.Element => {
   )
 }
 
-export function prizeMoneySummary(prizeMoney: PrizeMoney | undefined): string {
-  if (!prizeMoney) {
-    return ''
-  }
-  if (prizeMoney.total == '0.0万円' || prizeMoney.total == '0万円') {
-    // 現状「0.0万円」「0万円」にはデータ不足が含まれるため、空欄とする
-    return ''
-  } else {
-    return prizeMoney.total
-  }
-}
+export { prizeMoneySummary }
 
 function HorseCard(horse: Horse) {
   const won_races: RaceRecord[] | undefined = horse.raceResults?.filter((record) => record.result === '1')
@@ -91,57 +76,4 @@ export function displayHorseName(horse: Horse): string {
   return display_name
 }
 
-const groupByYear = (records: RaceRecord[]) => {
-  if (!Array.isArray(records)) {
-    console.error('records is not an array:', records)
-    return
-  }
-  return records.reduce(
-    (acc, record) => {
-      const year = record.date.getFullYear()
-      if (!acc[year]) {
-        acc[year] = []
-      }
-      acc[year].push(record)
-      return acc
-    },
-    {} as Record<number, RaceRecord[]>
-  )
-}
-
-const RecordChip = (record: RaceRecord): JSX.Element => {
-  const isWin = record.result === '1'
-  return (
-    <span className="race-chip inline-flex items-baseline gap-x-1.5 px-2 py-0.5">
-      {!isWin && <span className="text-heading">{record.result}着</span>}
-      <span className={`${raceGradeClass(grades[record.grade].rank)} ${isWin ? 'font-bold' : ''}`}>{record.displayRace}</span>
-      <span className="text-heading">{yearOf(record.date)}</span>
-    </span>
-  )
-}
-
-// const RecordsFormatter = (props: RecordsProp): JSX.Element => {
-//   const grouped = groupByYear(props.records)
-//   return (
-//     <>
-//       {grouped &&
-//         Object.entries(grouped).map(([year, records]) => (
-//           <div>
-//             <span className="mr-1">{year}</span>
-//             {records.map((record) => RecordChip(record))}
-//           </div>
-//         ))}
-//     </>
-//   )
-// }
-
-export const RecordsSummary = (props: RecordsProp): JSX.Element => {
-  const records: RaceRecord[] = props.records
-  return (
-    <div className="mt-1 flex flex-wrap gap-1.5">
-      {records.map((record) => (
-        <RecordChip key={`${record.date}-${record.displayRace}`} {...record} />
-      ))}
-    </div>
-  )
-}
+export { RecordsSummary }
