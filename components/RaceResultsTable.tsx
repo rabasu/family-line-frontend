@@ -26,9 +26,11 @@ const formatDate = (date: Date | string | { year: number; month: number; day: nu
   return `${d.getFullYear()}/${pad2(d.getMonth() + 1)}/${pad2(d.getDate())}`
 }
 
-const formatFavorite = (favorite?: string | null) => {
-  if (!favorite) return '-'
-  return favorite.endsWith('人') ? favorite : `${favorite}人`
+/** 数字だけに接尾辞を付ける。「能検」「中止」などはそのまま出す */
+const withNumericSuffix = (value: string | null | undefined, suffix: string) => {
+  if (!value) return '-'
+  if (value.endsWith(suffix)) return value
+  return /^\d+$/.test(value) ? `${value}${suffix}` : value
 }
 
 const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTableProps) => {
@@ -88,8 +90,8 @@ const RaceResultsTable = ({ results: propResults, horseId }: RaceResultsTablePro
                     <span className={raceGradeTableClass(grade.rank)}>{result.displayRace}</span>
                   </td>
                   <td className={`border border-theme px-3 py-2 text-center text-sm ${raceGradeTableClass(grade.rank)}`}>{grade.name}</td>
-                  <td className={`border border-theme px-3 py-2 text-center text-sm ${resultPlaceClass(result.result)}`}>{result.result}着</td>
-                  <td className="border border-theme px-3 py-2 text-center text-sm">{formatFavorite(result.favorite)}</td>
+                  <td className={`border border-theme px-3 py-2 text-center text-sm ${resultPlaceClass(result.result)}`}>{withNumericSuffix(result.result, '着')}</td>
+                  <td className="border border-theme px-3 py-2 text-center text-sm">{withNumericSuffix(result.favorite, '人')}</td>
                   {hasRacecourse && <td className="border border-theme px-3 py-2 text-sm">{result.racecourse || '-'}</td>}
                   {hasDistance && <td className="border border-theme px-3 py-2 text-center text-sm">{result.distance ? `${result.distance}m` : '-'}</td>}
                 </tr>
