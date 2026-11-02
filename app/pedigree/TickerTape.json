@@ -3,7 +3,7 @@
     "pedigreeName": "Ticker Tape",
     "rootHorseId": "ticker-tape",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -47,12 +47,27 @@
       "netkeibaId": "2019105293",
       "raceStats": {
         "total": {
-          "runs": 17,
+          "runs": 21,
           "wins": 5
         },
         "divisions": []
       },
       "raceResults": [
+        {
+          "date": {
+            "year": 2025,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "府中牝馬S(GIII)",
+          "displayRace": "府中牝馬S",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "2",
+          "favorite": "3"
+        },
         {
           "date": {
             "year": 2025,
@@ -71,24 +86,69 @@
         {
           "date": {
             "year": 2025,
-            "month": 6,
-            "day": 22
+            "month": 10,
+            "day": 12
           },
           "racecourse": "東京",
-          "race": "府中牝馬S(GIII)",
-          "displayRace": "府中牝馬S",
+          "race": "アイルランドT(GII)",
+          "displayRace": "アイルランドT",
           "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "14",
-          "result": "2",
-          "favorite": "3"
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(GI)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "15",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "サンスポ杯阪神牝馬S(GII)",
+          "displayRace": "阪神牝馬S",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "10",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "ヴィクトリアマイル(GI)",
+          "displayRace": "ヴィクトリアマイル",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "10",
+          "favorite": "10"
         }
       ],
       "source": "python_scraping",
       "englishName": "Kana Tape",
       "prizeMoney": {
-        "total": "1億4,291万円",
-        "central": "1億4,291万円",
+        "total": "1億5,707万円",
+        "central": "1億5,707万円",
         "local": "0万円"
       },
       "damId": "ticker-tape"

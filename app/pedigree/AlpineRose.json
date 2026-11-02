@@ -3,7 +3,7 @@
     "pedigreeName": "Alpine Rose",
     "rootHorseId": "alpine-rose",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -916,6 +916,105 @@
       },
       "damId": "alpine-rose",
       "dam_netkeiba_id": "000a00fecb"
+    },
+    {
+      "id": "meisho-hachiro",
+      "name": "メイショウハチロー",
+      "foaled": {
+        "year": 2022,
+        "month": 3,
+        "day": 9
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "シニスターミニスター",
+      "dam": "メイショウミハル",
+      "color": "栗毛",
+      "breeder": "三嶋牧場（浦河町）",
+      "netkeibaId": "2022103264",
+      "raceStats": {
+        "total": {
+          "runs": 14,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "盛岡",
+          "race": "マイルチャンピオンシ(JpnI)",
+          "displayRace": "マイルCS南部杯〔盛岡〕",
+          "distance": "ダ1600",
+          "grade": "nar_jpn1",
+          "entry": "11",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 7,
+            "day": 26
+          },
+          "racecourse": "中京",
+          "race": "東海S(GIII)",
+          "displayRace": "東海S",
+          "distance": "ダ1400",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "2",
+          "favorite": "6"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Meisho Hachiro",
+      "prizeMoney": {
+        "total": "1億6,310万円",
+        "central": "8,310万円",
+        "local": "8,000万円"
+      },
+      "owner": "松本好隆",
+      "trainer": "福永祐一 (栗東)",
+      "damId": "meisho-miharu"
+    },
+    {
+      "id": "meisho-miharu",
+      "name": "メイショウミハル",
+      "foaled": {
+        "year": 2014,
+        "month": 3,
+        "day": 24
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ダイワメジャー",
+      "dam": "アルペンローズ",
+      "color": "栗毛",
+      "breeder": "三嶋牧場（浦河町）",
+      "netkeibaId": "2014103529",
+      "raceStats": {
+        "total": {
+          "runs": 13,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Meisho Miharu",
+      "prizeMoney": {
+        "total": "1,259万円",
+        "central": "1,259万円",
+        "local": "0万円"
+      },
+      "owner": "松本好雄",
+      "trainer": "藤岡健一 (栗東)",
+      "damId": "alpine-rose"
     }
   ]
 }

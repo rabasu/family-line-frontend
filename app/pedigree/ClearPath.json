@@ -3,7 +3,7 @@
     "pedigreeName": "Clear Path",
     "rootHorseId": "clear-path",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -125,7 +125,7 @@
       "netkeibaId": "2021101436",
       "raceStats": {
         "total": {
-          "runs": 13,
+          "runs": 18,
           "wins": 3
         },
         "divisions": []
@@ -133,108 +133,33 @@
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 8,
+            "year": 2023,
+            "month": 12,
             "day": 17
           },
-          "racecourse": "中京",
-          "race": "中京記念(GIII)",
-          "displayRace": "中京記念",
-          "distance": "芝1600",
-          "grade": "jra_g3",
-          "entry": "12",
-          "result": "4",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 6,
-            "day": 8
-          },
-          "racecourse": "東京",
-          "race": "安田記念(GI)",
-          "displayRace": "安田記念",
-          "distance": "芝1600",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "7",
-          "favorite": "7"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 4,
-            "day": 6
-          },
           "racecourse": "阪神",
-          "race": "大阪杯(GI)",
-          "displayRace": "大阪杯",
-          "distance": "芝2000",
-          "grade": "jra_g1",
-          "entry": "15",
-          "result": "4",
-          "favorite": "10"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 3,
-            "day": 2
-          },
-          "racecourse": "中山",
-          "race": "中山記念(GII)",
-          "displayRace": "中山記念",
-          "distance": "芝1800",
-          "grade": "jra_g2",
-          "entry": "16",
-          "result": "2",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 10,
-            "day": 20
-          },
-          "racecourse": "京都",
-          "race": "菊花賞(GI)",
-          "displayRace": "菊花賞",
-          "distance": "芝3000",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "9",
-          "favorite": "12"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 9,
-            "day": 16
-          },
-          "racecourse": "中山",
-          "race": "朝日セントライト記念(GII)",
-          "displayRace": "セントライト記念",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "14",
-          "result": "3",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 5,
-            "day": 26
-          },
-          "racecourse": "東京",
-          "race": "東京優駿(GI)",
-          "displayRace": "東京優駿",
-          "distance": "芝2400",
+          "race": "朝日フューチュリティ(GI)",
+          "displayRace": "朝日杯フューチュリティS",
+          "distance": "芝1600",
           "grade": "jra_g1",
           "entry": "17",
-          "result": "8",
-          "favorite": "17"
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 2,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "共同通信杯(GIII)",
+          "displayRace": "共同通信杯",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "10",
+          "result": "5",
+          "favorite": "3"
         },
         {
           "date": {
@@ -254,39 +179,189 @@
         {
           "date": {
             "year": 2024,
-            "month": 2,
-            "day": 11
+            "month": 5,
+            "day": 26
           },
           "racecourse": "東京",
-          "race": "共同通信杯(GIII)",
-          "displayRace": "共同通信杯",
-          "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "10",
-          "result": "5",
+          "race": "東京優駿(GI)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "8",
+          "favorite": "17"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 9,
+            "day": 16
+          },
+          "racecourse": "中山",
+          "race": "朝日セントライト記念(GII)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "3",
           "favorite": "3"
         },
         {
           "date": {
-            "year": 2023,
-            "month": 12,
-            "day": 17
+            "year": 2024,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(GI)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "9",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 3,
+            "day": 2
+          },
+          "racecourse": "中山",
+          "race": "中山記念(GII)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 4,
+            "day": 6
           },
           "racecourse": "阪神",
-          "race": "朝日フューチュリティ(GI)",
-          "displayRace": "朝日杯フューチュリティS",
+          "race": "大阪杯(GI)",
+          "displayRace": "大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "4",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 6,
+            "day": 8
+          },
+          "racecourse": "東京",
+          "race": "安田記念(GI)",
+          "displayRace": "安田記念",
           "distance": "芝1600",
           "grade": "jra_g1",
-          "entry": "17",
+          "entry": "18",
+          "result": "7",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 8,
+            "day": 17
+          },
+          "racecourse": "中京",
+          "race": "中京記念(GIII)",
+          "displayRace": "中京記念",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "12",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(秋)(GI)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "14",
+          "result": "11",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 22
+          },
+          "racecourse": "福島",
+          "race": "福島記念(GIII)",
+          "displayRace": "福島記念",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "16",
           "result": "2",
-          "favorite": "4"
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "中山記念(GII)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "大阪杯(GI)",
+          "displayRace": "大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "14",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 8,
+            "day": 16
+          },
+          "racecourse": "札幌",
+          "race": "札幌記念(GII)",
+          "displayRace": "札幌記念",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "16",
+          "favorite": "7"
         }
       ],
       "source": "python_scraping",
       "englishName": "Ecoro Walz",
       "prizeMoney": {
-        "total": "1億7,683万円",
-        "central": "1億7,683万円",
+        "total": "2億1,114万円",
+        "central": "2億1,114万円",
         "local": "0万円"
       },
       "damId": "petit-princesse"

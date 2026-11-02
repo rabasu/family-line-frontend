@@ -3,7 +3,7 @@
     "pedigreeName": "Balada Sale",
     "rootHorseId": "balada-sale",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -112,8 +112,8 @@
       "netkeibaId": "2022104896",
       "raceStats": {
         "total": {
-          "runs": 8,
-          "wins": 2
+          "runs": 14,
+          "wins": 3
         },
         "divisions": []
       },
@@ -121,32 +121,17 @@
         {
           "date": {
             "year": 2025,
-            "month": 9,
-            "day": 6
-          },
-          "racecourse": "中山",
-          "race": "京成杯オータムH(GIII)",
-          "displayRace": "京成杯オータムH",
-          "distance": "芝1600",
-          "grade": "jra_g3",
-          "entry": "16",
-          "result": "10",
-          "favorite": "6"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 6,
-            "day": 1
+            "month": 2,
+            "day": 16
           },
           "racecourse": "東京",
-          "race": "東京優駿(GI)",
-          "displayRace": "東京優駿",
-          "distance": "芝2400",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "12",
-          "favorite": "15"
+          "race": "共同通信杯(GIII)",
+          "displayRace": "共同通信杯",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "9",
+          "result": "2",
+          "favorite": "6"
         },
         {
           "date": {
@@ -166,24 +151,114 @@
         {
           "date": {
             "year": 2025,
-            "month": 2,
-            "day": 16
+            "month": 6,
+            "day": 1
           },
           "racecourse": "東京",
-          "race": "共同通信杯(GIII)",
-          "displayRace": "共同通信杯",
+          "race": "東京優駿(GI)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "12",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 9,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "京成杯オータムH(GIII)",
+          "displayRace": "京成杯オータムH",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "10",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 1,
+            "day": 4
+          },
+          "racecourse": "中山",
+          "race": "日刊スポ賞中山金杯(GIII)",
+          "displayRace": "中山金杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "1",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "中山記念(GII)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "エプソムC(GIII)",
+          "displayRace": "エプソムC",
           "distance": "芝1800",
           "grade": "jra_g3",
-          "entry": "9",
+          "entry": "17",
+          "result": "6",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 7,
+            "day": 12
+          },
+          "racecourse": "福島",
+          "race": "七夕賞(GIII)",
+          "displayRace": "七夕賞",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "7",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 9,
+            "day": 12
+          },
+          "racecourse": "阪神",
+          "race": "チャレンジC(GIII)",
+          "displayRace": "チャレンジC",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "16",
           "result": "2",
-          "favorite": "6"
+          "favorite": "9"
         }
       ],
       "source": "python_scraping",
       "englishName": "Kalamatianos",
       "prizeMoney": {
-        "total": "3,566万円",
-        "central": "3,566万円",
+        "total": "1億2,361万円",
+        "central": "1億2,361万円",
         "local": "0万円"
       },
       "damId": "dancar"
@@ -417,6 +492,135 @@
         "central": "1億1,338万円",
         "local": "0万円"
       },
+      "damId": "balada-sale"
+    },
+    {
+      "id": "cavallerizzo",
+      "name": "カヴァレリッツォ",
+      "foaled": {
+        "year": 2023,
+        "month": 2,
+        "day": 28
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "サートゥルナーリア",
+      "dam": "バラーディスト",
+      "color": "鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2023107153",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "NHKマイルC(GI)",
+          "displayRace": "NHKマイルC",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "12",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 19
+          },
+          "racecourse": "中山",
+          "race": "皐月賞(GI)",
+          "displayRace": "皐月賞",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "13",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 12,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "朝日フューチュリティ(GI)",
+          "displayRace": "朝日杯フューチュリティS",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "14",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 15
+          },
+          "racecourse": "京都",
+          "race": "デイリー杯2歳S(GII)",
+          "displayRace": "デイリー杯2歳S",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "8",
+          "result": "2",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Cavallerizzo",
+      "prizeMoney": {
+        "total": "9,362万円",
+        "central": "9,362万円",
+        "local": "0万円"
+      },
+      "owner": "シルクレーシング",
+      "trainer": "吉岡辰弥 (栗東)",
+      "damId": "balladist"
+    },
+    {
+      "id": "balladist",
+      "name": "バラーディスト",
+      "foaled": {
+        "year": 2016,
+        "month": 3,
+        "day": 13
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ハーツクライ",
+      "dam": "バラダセール",
+      "color": "黒鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2016104570",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Balladist",
+      "prizeMoney": {
+        "total": "3,045万円",
+        "central": "3,045万円",
+        "local": "0万円"
+      },
+      "owner": "シルクレーシング",
+      "trainer": "四位洋文 (栗東)",
       "damId": "balada-sale"
     }
   ]

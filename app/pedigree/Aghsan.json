@@ -3,7 +3,7 @@
     "pedigreeName": "Aghsan",
     "rootHorseId": "aghsan",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -308,8 +308,8 @@
       "netkeibaId": "2022105185",
       "raceStats": {
         "total": {
-          "runs": 7,
-          "wins": 4
+          "runs": 11,
+          "wins": 7
         },
         "divisions": []
       },
@@ -317,17 +317,17 @@
         {
           "date": {
             "year": 2025,
-            "month": 5,
-            "day": 25
+            "month": 2,
+            "day": 15
           },
           "racecourse": "東京",
-          "race": "優駿牝馬(GI)",
-          "displayRace": "優駿牝馬",
-          "distance": "芝2400",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "9",
-          "favorite": "1"
+          "race": "デイリー杯クイーンC(GIII)",
+          "displayRace": "クイーンC",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "1",
+          "favorite": "3"
         },
         {
           "date": {
@@ -347,24 +347,84 @@
         {
           "date": {
             "year": 2025,
-            "month": 2,
-            "day": 15
+            "month": 5,
+            "day": 25
           },
           "racecourse": "東京",
-          "race": "デイリー杯クイーンC(GIII)",
-          "displayRace": "クイーンC",
-          "distance": "芝1600",
-          "grade": "jra_g3",
-          "entry": "14",
+          "race": "優駿牝馬(GI)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "9",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 19
+          },
+          "racecourse": "京都",
+          "race": "秋華賞(GI)",
+          "displayRace": "秋華賞",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "18",
           "result": "1",
-          "favorite": "3"
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 12,
+            "day": 14
+          },
+          "racecourse": "シャティン",
+          "race": "香港マイル(GI)",
+          "displayRace": "香港マイル〔シャティン〕",
+          "distance": "芝1600",
+          "grade": "abroad_g1",
+          "entry": "14",
+          "result": "11",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "サンスポ杯阪神牝馬S(GII)",
+          "displayRace": "阪神牝馬S",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "10",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "ヴィクトリアマイル(GI)",
+          "displayRace": "ヴィクトリアマイル",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "1",
+          "favorite": "1"
         }
       ],
       "source": "python_scraping",
       "englishName": "Embroidery",
       "prizeMoney": {
-        "total": "2億2,455万円",
-        "central": "2億2,455万円",
+        "total": "5億4,781万円",
+        "central": "5億4,781万円",
         "local": "0万円"
       },
       "damId": "rottenmeier"
@@ -1862,6 +1922,121 @@
         "local": "0万円"
       },
       "damId": "biwa-heidi"
+    },
+    {
+      "id": "solennellement",
+      "name": "ソラネルマン",
+      "foaled": {
+        "year": 2023,
+        "month": 3,
+        "day": 24
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "フィエールマン",
+      "dam": "ソシアルクラブ",
+      "color": "鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2023107087",
+      "raceStats": {
+        "total": {
+          "runs": 4,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "中山",
+          "race": "京成杯(GIII)",
+          "displayRace": "京成杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "3",
+          "favorite": "1"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Solennellement",
+      "prizeMoney": {
+        "total": "1,987万円",
+        "central": "1,987万円",
+        "local": "0万円"
+      },
+      "owner": "サンデーレーシング",
+      "trainer": "手塚貴久 (美浦)",
+      "damId": "social-club"
+    },
+    {
+      "id": "social-club",
+      "name": "ソシアルクラブ",
+      "foaled": {
+        "year": 2015,
+        "month": 1,
+        "day": 26
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "キングカメハメハ",
+      "dam": "ブエナビスタ",
+      "color": "栗毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2015104968",
+      "raceStats": {
+        "total": {
+          "runs": 19,
+          "wins": 4
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2018,
+            "month": 2,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "デイリー杯クイーンC(GIII)",
+          "displayRace": "クイーンC",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "7",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2017,
+            "month": 12,
+            "day": 10
+          },
+          "racecourse": "阪神",
+          "race": "阪神ジュベナイルF(GI)",
+          "displayRace": "阪神ジュベナイルF",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "8",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Social Club",
+      "prizeMoney": {
+        "total": "7,889万円",
+        "central": "7,889万円",
+        "local": "0万円"
+      },
+      "owner": "サンデーレーシング",
+      "trainer": "池添学 (栗東)",
+      "damId": "buena-vista"
     }
   ]
 }

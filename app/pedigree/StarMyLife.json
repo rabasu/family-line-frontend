@@ -3,7 +3,7 @@
     "pedigreeName": "Star My Life",
     "rootHorseId": "star-my-life",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -357,6 +357,90 @@
         "total": "0万円"
       },
       "damId": "star-my-life"
+    },
+    {
+      "id": "toshin-magic",
+      "name": "トウシンマジック",
+      "foaled": {
+        "year": 2024,
+        "month": 5,
+        "day": 13
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "モズアスコット",
+      "dam": "トウシンハンター",
+      "color": "鹿毛",
+      "breeder": "千代田牧場（新ひだか町）",
+      "netkeibaId": "2024104696",
+      "raceStats": {
+        "total": {
+          "runs": 2,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 8,
+            "day": 23
+          },
+          "racecourse": "新潟",
+          "race": "新潟2歳S(GIII)",
+          "displayRace": "新潟2歳S",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "10",
+          "result": "2",
+          "favorite": "2"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Toshin Magic",
+      "prizeMoney": {
+        "total": "2,190万円",
+        "central": "2,190万円",
+        "local": "0万円"
+      },
+      "owner": "サトー",
+      "trainer": "秋本大介 (美浦)",
+      "damId": "toshin-hunter"
+    },
+    {
+      "id": "toshin-hunter",
+      "name": "トウシンハンター",
+      "foaled": {
+        "year": 2012,
+        "month": 4,
+        "day": 15
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "エンパイアメーカー",
+      "dam": "トレンドハンター",
+      "color": "黒鹿毛",
+      "breeder": "千代田牧場（新ひだか町）",
+      "netkeibaId": "2012103182",
+      "raceStats": {
+        "total": {
+          "runs": 16,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Toshin Hunter",
+      "prizeMoney": {
+        "total": "1,055万円",
+        "central": "1,055万円",
+        "local": "0万円"
+      },
+      "owner": "サトー",
+      "trainer": "佐々木晶 (栗東)",
+      "damId": "trend-hunter"
     }
   ]
 }

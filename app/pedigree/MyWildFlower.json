@@ -3,7 +3,7 @@
     "pedigreeName": "My Wild Flower",
     "rootHorseId": "my-wild-flower",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -736,6 +736,150 @@
         "total": "0万円"
       },
       "damId": "my-wild-flower"
+    },
+    {
+      "id": "lorbeerkranz",
+      "name": "ローベルクランツ",
+      "foaled": {
+        "year": 2023,
+        "month": 2,
+        "day": 11
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "サトノダイヤモンド",
+      "dam": "ブルーメンクローネ",
+      "color": "鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2023107199",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 6,
+            "day": 28
+          },
+          "racecourse": "福島",
+          "race": "ラジオNIKKEI賞(GIII)",
+          "displayRace": "ラジオNIKKEI賞",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "11",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "NHKマイルC(GI)",
+          "displayRace": "NHKマイルC",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "4",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 3,
+            "day": 28
+          },
+          "racecourse": "阪神",
+          "race": "毎日杯(GIII)",
+          "displayRace": "毎日杯",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "7",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "京都",
+          "race": "きさらぎ賞(GIII)",
+          "displayRace": "きさらぎ賞",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "9",
+          "result": "7",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 24
+          },
+          "racecourse": "東京",
+          "race": "東京スポーツ杯2歳S(GII)",
+          "displayRace": "東京スポーツ杯2歳S",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "12",
+          "result": "8",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Lorbeerkranz",
+      "prizeMoney": {
+        "total": "4,747万円",
+        "central": "4,747万円",
+        "local": "0万円"
+      },
+      "owner": "キャロットファーム",
+      "trainer": "小林真也 (栗東)",
+      "damId": "blumenkrone"
+    },
+    {
+      "id": "blumenkrone",
+      "name": "ブルーメンクローネ",
+      "foaled": {
+        "year": 2015,
+        "month": 3,
+        "day": 26
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "キングカメハメハ",
+      "dam": "ブルーメンブラット",
+      "color": "鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2015104972",
+      "raceStats": {
+        "total": {
+          "runs": 17,
+          "wins": 5
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Blumenkrone",
+      "prizeMoney": {
+        "total": "4,527万円",
+        "central": "4,447万円",
+        "local": "80万円"
+      },
+      "owner": "キャロットファーム",
+      "trainer": "石坂正 (栗東)",
+      "damId": "blumenblatt"
     }
   ]
 }

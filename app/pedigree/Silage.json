@@ -3,7 +3,7 @@
     "pedigreeName": "Silage",
     "rootHorseId": "silage",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -175,101 +175,26 @@
       "netkeibaId": "2021103272",
       "raceStats": {
         "total": {
-          "runs": 11,
-          "wins": 5
+          "runs": 16,
+          "wins": 6
         },
         "divisions": []
       },
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 6,
-            "day": 15
+            "year": 2024,
+            "month": 3,
+            "day": 23
           },
           "racecourse": "阪神",
-          "race": "宝塚記念(GI)",
-          "displayRace": "宝塚記念",
-          "distance": "芝2200",
-          "grade": "jra_g1",
-          "entry": "17",
-          "result": "1",
-          "favorite": "7"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 4,
-            "day": 5
-          },
-          "racecourse": "メイダン",
-          "race": "ドバイターフ(GI)",
-          "displayRace": "ドバイターフ〔メイダン〕",
+          "race": "毎日杯(GIII)",
+          "displayRace": "毎日杯",
           "distance": "芝1800",
-          "grade": "abroad_g1",
-          "entry": "11",
-          "result": "5",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 1,
-            "day": 19
-          },
-          "racecourse": "中京",
-          "race": "日経新春杯(GII)",
-          "displayRace": "日経新春杯",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "16",
-          "result": "11",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 10,
-            "day": 20
-          },
-          "racecourse": "京都",
-          "race": "菊花賞(GI)",
-          "displayRace": "菊花賞",
-          "distance": "芝3000",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "16",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 9,
-            "day": 22
-          },
-          "racecourse": "中京",
-          "race": "神戸新聞杯(GII)",
-          "displayRace": "神戸新聞杯",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "14",
+          "grade": "jra_g3",
+          "entry": "10",
           "result": "1",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 5,
-            "day": 26
-          },
-          "racecourse": "東京",
-          "race": "東京優駿(GI)",
-          "displayRace": "東京優駿",
-          "distance": "芝2400",
-          "grade": "jra_g1",
-          "entry": "17",
-          "result": "取",
-          "favorite": ""
+          "favorite": "5"
         },
         {
           "date": {
@@ -289,24 +214,174 @@
         {
           "date": {
             "year": 2024,
-            "month": 3,
-            "day": 23
+            "month": 5,
+            "day": 26
+          },
+          "racecourse": "東京",
+          "race": "東京優駿(GI)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "取",
+          "favorite": ""
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 9,
+            "day": 22
+          },
+          "racecourse": "中京",
+          "race": "神戸新聞杯(GII)",
+          "displayRace": "神戸新聞杯",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 10,
+            "day": 20
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(GI)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "16",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 1,
+            "day": 19
+          },
+          "racecourse": "中京",
+          "race": "日経新春杯(GII)",
+          "displayRace": "日経新春杯",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "11",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "メイダン",
+          "race": "ドバイターフ(GI)",
+          "displayRace": "ドバイターフ〔メイダン〕",
+          "distance": "芝1800",
+          "grade": "abroad_g1",
+          "entry": "11",
+          "result": "5",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 6,
+            "day": 15
           },
           "racecourse": "阪神",
-          "race": "毎日杯(GIII)",
-          "displayRace": "毎日杯",
-          "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "10",
+          "race": "宝塚記念(GI)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "17",
           "result": "1",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 2
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(秋)(GI)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "14",
+          "result": "6",
           "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(GI)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "13",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "大阪杯(GI)",
+          "displayRace": "大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 6,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(GI)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "パリロンシャン",
+          "race": "凱旋門賞(GI)",
+          "displayRace": "凱旋門賞〔パリロンシャン〕",
+          "distance": "芝2400",
+          "grade": "abroad_g1",
+          "entry": "16",
+          "result": "14",
+          "favorite": "2"
         }
       ],
       "source": "python_scraping",
       "englishName": "Meisho Tabaru",
       "prizeMoney": {
-        "total": "4億1,809万円",
-        "central": "4億1,809万円",
+        "total": "8億4,278万円",
+        "central": "8億4,278万円",
         "local": "0万円"
       },
       "damId": "meisho-tsubakuro"

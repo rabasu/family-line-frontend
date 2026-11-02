@@ -3,7 +3,7 @@
     "pedigreeName": "Dancer Destination",
     "rootHorseId": "dancer-destination",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -49,8 +49,8 @@
       "netkeibaId": "2021105117",
       "raceStats": {
         "total": {
-          "runs": 9,
-          "wins": 3
+          "runs": 13,
+          "wins": 5
         },
         "divisions": []
       },
@@ -58,17 +58,17 @@
         {
           "date": {
             "year": 2024,
-            "month": 5,
-            "day": 4
+            "month": 2,
+            "day": 11
           },
-          "racecourse": "京都",
-          "race": "京都新聞杯(GII)",
-          "displayRace": "京都新聞杯",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "15",
-          "result": "14",
-          "favorite": "3"
+          "racecourse": "東京",
+          "race": "共同通信杯(GIII)",
+          "displayRace": "共同通信杯",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "10",
+          "result": "6",
+          "favorite": "5"
         },
         {
           "date": {
@@ -88,26 +88,125 @@
         {
           "date": {
             "year": 2024,
-            "month": 2,
-            "day": 11
+            "month": 5,
+            "day": 4
           },
-          "racecourse": "東京",
-          "race": "共同通信杯(GIII)",
-          "displayRace": "共同通信杯",
-          "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "10",
-          "result": "6",
+          "racecourse": "京都",
+          "race": "京都新聞杯(GII)",
+          "displayRace": "京都新聞杯",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "14",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 26
+          },
+          "racecourse": "京都",
+          "race": "読売マイラーズC(GII)",
+          "displayRace": "マイラーズC",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "3",
           "favorite": "5"
         }
       ],
       "source": "python_scraping",
       "englishName": "Bellagio Bond",
       "prizeMoney": {
-        "total": "4,468万円",
-        "central": "4,468万円",
+        "total": "1億616万円",
+        "central": "1億616万円",
         "local": "0万円"
       },
+      "damId": "dancer-destination"
+    },
+    {
+      "id": "desert-spirit",
+      "name": "デザートスピリット",
+      "foaled": {
+        "year": 2024,
+        "month": 3,
+        "day": 27
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "イスラボニータ",
+      "dam": "ツキノサバク",
+      "color": "鹿毛",
+      "breeder": "碧雲牧場（日高町）",
+      "netkeibaId": "2024101022",
+      "raceStats": {
+        "total": {
+          "runs": 4,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 9,
+            "day": 5
+          },
+          "racecourse": "札幌",
+          "race": "札幌2歳S(GIII)",
+          "displayRace": "札幌2歳S",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "9",
+          "result": "3",
+          "favorite": "4"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Desert Spirit",
+      "prizeMoney": {
+        "total": "1,843万円",
+        "central": "1,843万円",
+        "local": "0万円"
+      },
+      "owner": "ホースアディクト",
+      "trainer": "平岩大典 (美浦)",
+      "damId": "tsukino-sabaku"
+    },
+    {
+      "id": "tsukino-sabaku",
+      "name": "ツキノサバク",
+      "foaled": {
+        "year": 2016,
+        "month": 4,
+        "day": 7
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "Oasis Dream(GB)",
+      "dam": "ダンサーデスティネイション",
+      "color": "鹿毛",
+      "breeder": "社台ファーム（千歳市）",
+      "netkeibaId": "2016105104",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Tsukino Sabaku",
+      "prizeMoney": {
+        "total": "300万円",
+        "central": "300万円",
+        "local": "0万円"
+      },
+      "owner": "吉田照哉",
+      "trainer": "蛯名雄太 (大井)",
       "damId": "dancer-destination"
     }
   ]

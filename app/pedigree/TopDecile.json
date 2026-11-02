@@ -3,7 +3,7 @@
     "pedigreeName": "Top Decile",
     "rootHorseId": "top-decile",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -49,7 +49,7 @@
       "netkeibaId": "2021105143",
       "raceStats": {
         "total": {
-          "runs": 10,
+          "runs": 14,
           "wins": 5
         },
         "divisions": []
@@ -57,93 +57,33 @@
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 8,
-            "day": 20
-          },
-          "racecourse": "ヨーク",
-          "race": "インターナショナルS(GI)",
-          "displayRace": "インターナショナルS〔ヨーク〕",
-          "distance": "芝2050",
-          "grade": "abroad_g1",
-          "entry": "6",
-          "result": "5",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 4,
-            "day": 5
-          },
-          "racecourse": "メイダン",
-          "race": "ドバイシーマクラシッ(GI)",
-          "displayRace": "ドバイシーマクラシッ〔メイダン〕",
-          "distance": "芝2410",
-          "grade": "abroad_g1",
-          "entry": "9",
-          "result": "1",
-          "favorite": "4"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 1,
-            "day": 26
-          },
-          "racecourse": "中山",
-          "race": "アメリカジョッキーC(GII)",
-          "displayRace": "アメリカジョッキーC",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "18",
-          "result": "1",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 12,
-            "day": 22
-          },
-          "racecourse": "中山",
-          "race": "有馬記念(GI)",
-          "displayRace": "有馬記念",
-          "distance": "芝2500",
-          "grade": "jra_g1",
-          "entry": "15",
-          "result": "3",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 10,
-            "day": 20
+            "year": 2023,
+            "month": 11,
+            "day": 25
           },
           "racecourse": "京都",
-          "race": "菊花賞(GI)",
-          "displayRace": "菊花賞",
-          "distance": "芝3000",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "6",
-          "favorite": "1"
+          "race": "ラジオN杯京都2歳S(GIII)",
+          "displayRace": "京都2歳S",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "4",
+          "favorite": "11"
         },
         {
           "date": {
             "year": 2024,
-            "month": 5,
-            "day": 26
+            "month": 1,
+            "day": 14
           },
-          "racecourse": "東京",
-          "race": "東京優駿(GI)",
-          "displayRace": "東京優駿",
-          "distance": "芝2400",
-          "grade": "jra_g1",
-          "entry": "17",
+          "racecourse": "中山",
+          "race": "京成杯(GIII)",
+          "displayRace": "京成杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "14",
           "result": "1",
-          "favorite": "9"
+          "favorite": "5"
         },
         {
           "date": {
@@ -163,39 +103,159 @@
         {
           "date": {
             "year": 2024,
-            "month": 1,
-            "day": 14
+            "month": 5,
+            "day": 26
           },
-          "racecourse": "中山",
-          "race": "京成杯(GIII)",
-          "displayRace": "京成杯",
-          "distance": "芝2000",
-          "grade": "jra_g3",
-          "entry": "14",
+          "racecourse": "東京",
+          "race": "東京優駿(GI)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "17",
           "result": "1",
-          "favorite": "5"
+          "favorite": "9"
         },
         {
           "date": {
-            "year": 2023,
-            "month": 11,
-            "day": 25
+            "year": 2024,
+            "month": 10,
+            "day": 20
           },
           "racecourse": "京都",
-          "race": "ラジオN杯京都2歳S(GIII)",
-          "displayRace": "京都2歳S",
+          "race": "菊花賞(GI)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "6",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(GI)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 1,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーC(GII)",
+          "displayRace": "アメリカジョッキーC",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "メイダン",
+          "race": "ドバイシーマクラシッ(GI)",
+          "displayRace": "ドバイシーマクラシッ〔メイダン〕",
+          "distance": "芝2410",
+          "grade": "abroad_g1",
+          "entry": "9",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 8,
+            "day": 20
+          },
+          "racecourse": "ヨーク",
+          "race": "インターナショナルS(GI)",
+          "displayRace": "インターナショナルS〔ヨーク〕",
+          "distance": "芝2050",
+          "grade": "abroad_g1",
+          "entry": "6",
+          "result": "5",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 30
+          },
+          "racecourse": "東京",
+          "race": "ジャパンC(GI)",
+          "displayRace": "ジャパンC",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "3",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(GI)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "大阪杯(GI)",
+          "displayRace": "大阪杯",
           "distance": "芝2000",
-          "grade": "jra_g3",
-          "entry": "14",
-          "result": "4",
-          "favorite": "11"
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 6,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(GI)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "3",
+          "favorite": "3"
         }
       ],
       "source": "python_scraping",
       "englishName": "Danon Decile",
       "prizeMoney": {
-        "total": "5億7,577万円",
-        "central": "5億7,577万円",
+        "total": "9億8,781万円",
+        "central": "9億8,781万円",
         "local": "0万円"
       },
       "damId": "top-decile"

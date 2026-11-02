@@ -3,7 +3,7 @@
     "pedigreeName": "Scarlet Ink",
     "rootHorseId": "scarlet-ink",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -621,86 +621,26 @@
       "netkeibaId": "2019105806",
       "raceStats": {
         "total": {
-          "runs": 27,
-          "wins": 5
+          "runs": 34,
+          "wins": 6
         },
         "divisions": []
       },
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 9,
-            "day": 6
-          },
-          "racecourse": "中山",
-          "race": "京成杯オータムH(GIII)",
-          "displayRace": "京成杯オータムH",
-          "distance": "芝1600",
-          "grade": "jra_g3",
-          "entry": "16",
-          "result": "2",
-          "favorite": "11"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 8,
-            "day": 10
-          },
-          "racecourse": "中京",
-          "race": "CBC賞(GIII)",
-          "displayRace": "CBC賞",
-          "distance": "芝1200",
-          "grade": "jra_g3",
-          "entry": "17",
-          "result": "4",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 7,
-            "day": 6
-          },
-          "racecourse": "小倉",
-          "race": "TV西日本北九州記念(GIII)",
-          "displayRace": "北九州記念",
-          "distance": "芝1200",
-          "grade": "jra_g3",
-          "entry": "18",
-          "result": "6",
-          "favorite": "9"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 3,
-            "day": 30
-          },
-          "racecourse": "中京",
-          "race": "高松宮記念(GI)",
-          "displayRace": "高松宮記念",
-          "distance": "芝1200",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "8",
-          "favorite": "17"
-        },
-        {
-          "date": {
             "year": 2024,
-            "month": 11,
-            "day": 24
+            "month": 2,
+            "day": 17
           },
           "racecourse": "京都",
-          "race": "京阪杯(GIII)",
-          "displayRace": "京阪杯",
-          "distance": "芝1200",
+          "race": "京都牝馬S(GIII)",
+          "displayRace": "京都牝馬S",
+          "distance": "芝1400",
           "grade": "jra_g3",
           "entry": "18",
-          "result": "6",
-          "favorite": "7"
+          "result": "9",
+          "favorite": "10"
         },
         {
           "date": {
@@ -720,24 +660,189 @@
         {
           "date": {
             "year": 2024,
-            "month": 2,
-            "day": 17
+            "month": 11,
+            "day": 24
           },
           "racecourse": "京都",
-          "race": "京都牝馬S(GIII)",
-          "displayRace": "京都牝馬S",
+          "race": "京阪杯(GIII)",
+          "displayRace": "京阪杯",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "6",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 3,
+            "day": 30
+          },
+          "racecourse": "中京",
+          "race": "高松宮記念(GI)",
+          "displayRace": "高松宮記念",
+          "distance": "芝1200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "8",
+          "favorite": "17"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 7,
+            "day": 6
+          },
+          "racecourse": "小倉",
+          "race": "TV西日本北九州記念(GIII)",
+          "displayRace": "北九州記念",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "6",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 8,
+            "day": 10
+          },
+          "racecourse": "中京",
+          "race": "CBC賞(GIII)",
+          "displayRace": "CBC賞",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "17",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 9,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "京成杯オータムH(GIII)",
+          "displayRace": "京成杯オータムH",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "2",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 9,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "スプリンターズS(GI)",
+          "displayRace": "スプリンターズS",
+          "distance": "芝1200",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "14",
+          "favorite": "16"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 12,
+            "day": 20
+          },
+          "racecourse": "中山",
+          "race": "ターコイズS(GIII)",
+          "displayRace": "ターコイズS",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 2,
+            "day": 21
+          },
+          "racecourse": "阪神",
+          "race": "阪急杯(GIII)",
+          "displayRace": "阪急杯",
           "distance": "芝1400",
           "grade": "jra_g3",
           "entry": "18",
-          "result": "9",
+          "result": "3",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 3,
+            "day": 22
+          },
+          "racecourse": "中京",
+          "race": "愛知杯(GIII)",
+          "displayRace": "愛知杯",
+          "distance": "芝1400",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "10",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "ヴィクトリアマイル(GI)",
+          "displayRace": "ヴィクトリアマイル",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "18",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 7,
+            "day": 26
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(GIII)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "12",
           "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 9,
+            "day": 5
+          },
+          "racecourse": "中山",
+          "race": "京成杯オータムH(GIII)",
+          "displayRace": "京成杯オータムH",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "8"
         }
       ],
       "source": "python_scraping",
       "englishName": "Drop of Light",
       "prizeMoney": {
-        "total": "1億4,927万円",
-        "central": "1億4,927万円",
+        "total": "2億902万円",
+        "central": "2億902万円",
         "local": "0万円"
       },
       "damId": "precious-drop"
@@ -883,7 +988,7 @@
       "netkeibaId": "2020103945",
       "raceStats": {
         "total": {
-          "runs": 21,
+          "runs": 29,
           "wins": 4
         },
         "divisions": []
@@ -892,17 +997,17 @@
         {
           "date": {
             "year": 2025,
-            "month": 6,
-            "day": 1
+            "month": 2,
+            "day": 22
           },
           "racecourse": "東京",
-          "race": "目黒記念(GII)",
-          "displayRace": "目黒記念",
-          "distance": "芝2500",
-          "grade": "jra_g2",
-          "entry": "18",
-          "result": "6",
-          "favorite": "11"
+          "race": "ダイヤモンドS(GIII)",
+          "displayRace": "ダイヤモンドS",
+          "distance": "芝3400",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "3",
+          "favorite": "10"
         },
         {
           "date": {
@@ -922,24 +1027,129 @@
         {
           "date": {
             "year": 2025,
-            "month": 2,
-            "day": 22
+            "month": 6,
+            "day": 1
           },
           "racecourse": "東京",
-          "race": "ダイヤモンドS(GIII)",
-          "displayRace": "ダイヤモンドS",
-          "distance": "芝3400",
-          "grade": "jra_g3",
-          "entry": "16",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "6",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "京都",
+          "race": "京都大賞典(GII)",
+          "displayRace": "京都大賞典",
+          "distance": "芝2400",
+          "grade": "jra_g2",
+          "entry": "18",
           "result": "3",
-          "favorite": "10"
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(GI)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "8",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 12,
+            "day": 6
+          },
+          "racecourse": "中山",
+          "race": "ステイヤーズS(GII)",
+          "displayRace": "ステイヤーズS",
+          "distance": "芝3600",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 2,
+            "day": 15
+          },
+          "racecourse": "キングアブドゥル",
+          "race": "レッドシーターフH(GII)",
+          "displayRace": "レッドシーターフH〔キングアブドゥル〕",
+          "distance": "芝3000",
+          "grade": "abroad_g2",
+          "entry": "11",
+          "result": "11",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)(GI)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "9",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 31
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "12",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 4
+          },
+          "racecourse": "京都",
+          "race": "京都大賞典(GII)",
+          "displayRace": "京都大賞典",
+          "distance": "芝2400",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "13",
+          "favorite": "16"
         }
       ],
       "source": "python_scraping",
       "englishName": "Vermicelles",
       "prizeMoney": {
-        "total": "7,026万円",
-        "central": "7,026万円",
+        "total": "8,744万円",
+        "central": "8,744万円",
         "local": "0万円"
       },
       "damId": "maroon-drop"
@@ -993,7 +1203,7 @@
       "netkeibaId": "2019103588",
       "raceStats": {
         "total": {
-          "runs": 22,
+          "runs": 25,
           "wins": 2
         },
         "divisions": []
@@ -1001,273 +1211,33 @@
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 8,
-            "day": 3
-          },
-          "racecourse": "札幌",
-          "race": "クイーンS(GIII)",
-          "displayRace": "クイーンS",
-          "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "14",
-          "result": "4",
-          "favorite": "10"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 4,
-            "day": 20
-          },
-          "racecourse": "福島",
-          "race": "福島牝馬S(GIII)",
-          "displayRace": "福島牝馬S",
-          "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "16",
-          "result": "8",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 3,
-            "day": 16
-          },
-          "racecourse": "中京",
-          "race": "東海テレビ杯金鯱賞(GII)",
-          "displayRace": "金鯱賞",
-          "distance": "芝2000",
-          "grade": "jra_g2",
-          "entry": "10",
-          "result": "8",
-          "favorite": "7"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 1,
-            "day": 26
-          },
-          "racecourse": "中山",
-          "race": "アメリカジョッキーC(GII)",
-          "displayRace": "アメリカジョッキーC",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "18",
-          "result": "5",
-          "favorite": "9"
-        },
-        {
-          "date": {
-            "year": 2024,
+            "year": 2021,
             "month": 11,
-            "day": 10
-          },
-          "racecourse": "京都",
-          "race": "エリザベス女王杯(GI)",
-          "displayRace": "エリザベス女王杯",
-          "distance": "芝2200",
-          "grade": "jra_g1",
-          "entry": "17",
-          "result": "6",
-          "favorite": "10"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 10,
-            "day": 14
-          },
-          "racecourse": "東京",
-          "race": "アイルランド府中牝馬(GII)",
-          "displayRace": "アイルランド府中牝馬",
-          "distance": "芝1800",
-          "grade": "jra_g2",
-          "entry": "15",
-          "result": "13",
-          "favorite": "9"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 5,
-            "day": 12
-          },
-          "racecourse": "東京",
-          "race": "ヴィクトリアマイル(GI)",
-          "displayRace": "ヴィクトリアマイル",
-          "distance": "芝1600",
-          "grade": "jra_g1",
-          "entry": "15",
-          "result": "14",
-          "favorite": "9"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 4,
-            "day": 6
+            "day": 27
           },
           "racecourse": "阪神",
-          "race": "サンスポ杯阪神牝馬S(GII)",
-          "displayRace": "阪神牝馬S",
-          "distance": "芝1600",
-          "grade": "jra_g2",
-          "entry": "11",
-          "result": "10",
-          "favorite": "6"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 12,
-            "day": 24
-          },
-          "racecourse": "中山",
-          "race": "有馬記念(GI)",
-          "displayRace": "有馬記念",
-          "distance": "芝2500",
-          "grade": "jra_g1",
-          "entry": "16",
-          "result": "13",
-          "favorite": "10"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 11,
-            "day": 12
-          },
-          "racecourse": "京都",
-          "race": "エリザベス女王杯(GI)",
-          "displayRace": "エリザベス女王杯",
-          "distance": "芝2200",
-          "grade": "jra_g1",
-          "entry": "15",
-          "result": "4",
+          "race": "ラジオN杯京都2歳S(GIII)",
+          "displayRace": "京都2歳S",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "10",
+          "result": "8",
           "favorite": "4"
         },
         {
           "date": {
-            "year": 2023,
-            "month": 10,
-            "day": 14
-          },
-          "racecourse": "東京",
-          "race": "アイルランド府中牝馬(GII)",
-          "displayRace": "アイルランド府中牝馬",
-          "distance": "芝1800",
-          "grade": "jra_g2",
-          "entry": "13",
-          "result": "3",
-          "favorite": "10"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 6,
-            "day": 25
-          },
-          "racecourse": "阪神",
-          "race": "宝塚記念(GI)",
-          "displayRace": "宝塚記念",
-          "distance": "芝2200",
-          "grade": "jra_g1",
-          "entry": "17",
-          "result": "17",
-          "favorite": "13"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 5,
-            "day": 28
-          },
-          "racecourse": "東京",
-          "race": "目黒記念(GII)",
-          "displayRace": "目黒記念",
-          "distance": "芝2500",
-          "grade": "jra_g2",
-          "entry": "18",
-          "result": "9",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 3,
-            "day": 25
-          },
-          "racecourse": "中山",
-          "race": "日経賞(GII)",
-          "displayRace": "日経賞",
-          "distance": "芝2500",
-          "grade": "jra_g2",
-          "entry": "12",
-          "result": "4",
-          "favorite": "3"
-        },
-        {
-          "date": {
             "year": 2022,
-            "month": 11,
-            "day": 13
-          },
-          "racecourse": "阪神",
-          "race": "エリザベス女王杯(GI)",
-          "displayRace": "エリザベス女王杯",
-          "distance": "芝2200",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "2",
-          "favorite": "12"
-        },
-        {
-          "date": {
-            "year": 2022,
-            "month": 10,
-            "day": 16
-          },
-          "racecourse": "阪神",
-          "race": "秋華賞(GI)",
-          "displayRace": "秋華賞",
-          "distance": "芝2000",
-          "grade": "jra_g1",
-          "entry": "16",
-          "result": "10",
-          "favorite": "6"
-        },
-        {
-          "date": {
-            "year": 2022,
-            "month": 9,
+            "month": 1,
             "day": 10
           },
           "racecourse": "中山",
-          "race": "紫苑S(GIII)",
-          "displayRace": "紫苑S",
-          "distance": "芝2000",
+          "race": "フェアリーS(GIII)",
+          "displayRace": "フェアリーS",
+          "distance": "芝1600",
           "grade": "jra_g3",
-          "entry": "12",
-          "result": "3",
-          "favorite": "6"
-        },
-        {
-          "date": {
-            "year": 2022,
-            "month": 5,
-            "day": 22
-          },
-          "racecourse": "東京",
-          "race": "優駿牝馬(GI)",
-          "displayRace": "優駿牝馬",
-          "distance": "芝2400",
-          "grade": "jra_g1",
-          "entry": "17",
-          "result": "11",
-          "favorite": "12"
+          "entry": "16",
+          "result": "1",
+          "favorite": "5"
         },
         {
           "date": {
@@ -1287,39 +1257,324 @@
         {
           "date": {
             "year": 2022,
-            "month": 1,
+            "month": 5,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(GI)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "11",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2022,
+            "month": 9,
             "day": 10
           },
           "racecourse": "中山",
-          "race": "フェアリーS(GIII)",
-          "displayRace": "フェアリーS",
-          "distance": "芝1600",
+          "race": "紫苑S(GIII)",
+          "displayRace": "紫苑S",
+          "distance": "芝2000",
           "grade": "jra_g3",
+          "entry": "12",
+          "result": "3",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 16
+          },
+          "racecourse": "阪神",
+          "race": "秋華賞(GI)",
+          "displayRace": "秋華賞",
+          "distance": "芝2000",
+          "grade": "jra_g1",
           "entry": "16",
-          "result": "1",
+          "result": "10",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 13
+          },
+          "racecourse": "阪神",
+          "race": "エリザベス女王杯(GI)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "2",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 3,
+            "day": 25
+          },
+          "racecourse": "中山",
+          "race": "日経賞(GII)",
+          "displayRace": "日経賞",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "12",
+          "result": "4",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 5,
+            "day": 28
+          },
+          "racecourse": "東京",
+          "race": "目黒記念(GII)",
+          "displayRace": "目黒記念",
+          "distance": "芝2500",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "9",
           "favorite": "5"
         },
         {
           "date": {
-            "year": 2021,
-            "month": 11,
-            "day": 27
+            "year": 2023,
+            "month": 6,
+            "day": 25
           },
           "racecourse": "阪神",
-          "race": "ラジオN杯京都2歳S(GIII)",
-          "displayRace": "京都2歳S",
+          "race": "宝塚記念(GI)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "17",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 10,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "アイルランド府中牝馬(GII)",
+          "displayRace": "アイルランド府中牝馬",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "3",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(GI)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 12,
+            "day": 24
+          },
+          "racecourse": "中山",
+          "race": "有馬記念(GI)",
+          "displayRace": "有馬記念",
+          "distance": "芝2500",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "13",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 4,
+            "day": 6
+          },
+          "racecourse": "阪神",
+          "race": "サンスポ杯阪神牝馬S(GII)",
+          "displayRace": "阪神牝馬S",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "10",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 5,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "ヴィクトリアマイル(GI)",
+          "displayRace": "ヴィクトリアマイル",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "14",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 10,
+            "day": 14
+          },
+          "racecourse": "東京",
+          "race": "アイルランド府中牝馬(GII)",
+          "displayRace": "アイルランド府中牝馬",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "13",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 11,
+            "day": 10
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(GI)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "6",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 1,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーC(GII)",
+          "displayRace": "アメリカジョッキーC",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "5",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 3,
+            "day": 16
+          },
+          "racecourse": "中京",
+          "race": "東海テレビ杯金鯱賞(GII)",
+          "displayRace": "金鯱賞",
           "distance": "芝2000",
-          "grade": "jra_g3",
+          "grade": "jra_g2",
           "entry": "10",
           "result": "8",
-          "favorite": "4"
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 4,
+            "day": 20
+          },
+          "racecourse": "福島",
+          "race": "福島牝馬S(GIII)",
+          "displayRace": "福島牝馬S",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 8,
+            "day": 3
+          },
+          "racecourse": "札幌",
+          "race": "クイーンS(GIII)",
+          "displayRace": "クイーンS",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "4",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "アイルランドT(GII)",
+          "displayRace": "アイルランドT",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "4",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 16
+          },
+          "racecourse": "京都",
+          "race": "エリザベス女王杯(GI)",
+          "displayRace": "エリザベス女王杯",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "3",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "京都",
+          "race": "日経新春杯(GII)",
+          "displayRace": "日経新春杯",
+          "distance": "芝2400",
+          "grade": "jra_g2",
+          "entry": "13",
+          "result": "12",
+          "favorite": "6"
         }
       ],
       "source": "python_scraping",
       "englishName": "Lilac",
       "prizeMoney": {
-        "total": "1億5,327万円",
-        "central": "1億5,327万円",
+        "total": "1億9,507万円",
+        "central": "1億9,507万円",
         "local": "0万円"
       },
       "damId": "viva-bouquet"
@@ -6537,6 +6792,90 @@
         "local": "0万円"
       },
       "damId": "scarlet-bouquet"
+    },
+    {
+      "id": "daishin-dragon",
+      "name": "ダイシンドラゴン",
+      "foaled": {
+        "year": 2024,
+        "month": 4,
+        "day": 22
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "ビッグアーサー",
+      "dam": "エカルラート",
+      "color": "鹿毛",
+      "breeder": "飛渡牧場（新冠町）",
+      "netkeibaId": "2024103288",
+      "raceStats": {
+        "total": {
+          "runs": 4,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 7,
+            "day": 19
+          },
+          "racecourse": "函館",
+          "race": "函館2歳S(GIII)",
+          "displayRace": "函館2歳S",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "13",
+          "result": "3",
+          "favorite": "8"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Daishin Dragon",
+      "prizeMoney": {
+        "total": "1,957万円",
+        "central": "1,957万円",
+        "local": "0万円"
+      },
+      "owner": "大八木信行",
+      "trainer": "高橋一哉 (栗東)",
+      "damId": "ecarlate"
+    },
+    {
+      "id": "ecarlate",
+      "name": "エカルラート",
+      "foaled": {
+        "year": 2008,
+        "month": 4,
+        "day": 11
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ハーツクライ",
+      "dam": "スカーレットローズ",
+      "color": "黒鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2008103189",
+      "raceStats": {
+        "total": {
+          "runs": 7,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Ecarlate",
+      "prizeMoney": {
+        "total": "547万円",
+        "central": "547万円",
+        "local": "0万円"
+      },
+      "owner": "キャロットファーム",
+      "trainer": "平田修 (栗東)",
+      "damId": "scarlet-rose"
     }
   ]
 }

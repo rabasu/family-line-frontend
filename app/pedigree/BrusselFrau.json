@@ -3,7 +3,7 @@
     "pedigreeName": "Brussel Frau",
     "rootHorseId": "brussel-frau",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -139,6 +139,185 @@
         "local": "0万円"
       },
       "damId": "atlas-marker"
+    },
+    {
+      "id": "big-karen-roof",
+      "name": "ビッグカレンルーフ",
+      "foaled": {
+        "year": 2023,
+        "month": 3,
+        "day": 6
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "アメリカンペイトリオット",
+      "dam": "シルクナデシコ",
+      "color": "鹿毛",
+      "breeder": "笹地牧場（浦河町）",
+      "netkeibaId": "2023102054",
+      "raceStats": {
+        "total": {
+          "runs": 7,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 1,
+            "day": 11
+          },
+          "racecourse": "中山",
+          "race": "フェアリーS(GIII)",
+          "displayRace": "フェアリーS",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "2",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 30
+          },
+          "racecourse": "門別",
+          "race": "エーデルワイス賞(JpnIII)",
+          "displayRace": "エーデルワイス賞〔門別〕",
+          "distance": "ダ1200",
+          "grade": "nar_jpn3",
+          "entry": "11",
+          "result": "4",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 2
+          },
+          "racecourse": "門別",
+          "race": "ネクストスター門別〔(重賞)",
+          "displayRace": "ネクストスター門別〔〔門別〕",
+          "distance": "ダ1200",
+          "grade": "local_grade",
+          "entry": "14",
+          "result": "10",
+          "favorite": "3"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Big Karen Roof",
+      "prizeMoney": {
+        "total": "3,644万円",
+        "central": "3,145万円",
+        "local": "499万円"
+      },
+      "owner": "ビッグルーフレーシング",
+      "trainer": "堀内岳志 (美浦)",
+      "damId": "silk-nadeshiko"
+    },
+    {
+      "id": "silk-nadeshiko",
+      "name": "シルクナデシコ",
+      "foaled": {
+        "year": 2006,
+        "month": 3,
+        "day": 28
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "フジキセキ",
+      "dam": "ピサノヒビキ",
+      "color": "栗毛",
+      "breeder": "笹地牧場（浦河町）",
+      "netkeibaId": "2006102012",
+      "raceStats": {
+        "total": {
+          "runs": 33,
+          "wins": 2
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2008,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "KBSファンタジーS(GIII)",
+          "displayRace": "ファンタジーS",
+          "distance": "芝1400",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "9",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2008,
+            "month": 9,
+            "day": 7
+          },
+          "racecourse": "小倉",
+          "race": "小倉2歳S(GIII)",
+          "displayRace": "小倉2歳S",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "4",
+          "favorite": "5"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Silk Nadeshiko",
+      "prizeMoney": {
+        "total": "4,376万円",
+        "central": "4,376万円",
+        "local": "0万円"
+      },
+      "owner": "シルク",
+      "trainer": "宮徹 (栗東)",
+      "damId": "pisa-no-hibiki"
+    },
+    {
+      "id": "pisa-no-hibiki",
+      "name": "ピサノヒビキ",
+      "foaled": {
+        "year": 2000,
+        "month": 4,
+        "day": 29
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "ラムタラ",
+      "dam": "ブラッセルフラウ",
+      "color": "芦毛",
+      "breeder": "フジワラファーム（静内町）",
+      "netkeibaId": "2000102682",
+      "raceStats": {
+        "total": {
+          "runs": 11,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Pisa no Hibiki",
+      "prizeMoney": {
+        "total": "510万円",
+        "central": "510万円",
+        "local": "0万円"
+      },
+      "owner": "市川義美",
+      "trainer": "大久保正 (栗東)",
+      "damId": "brussel-frau"
     }
   ]
 }

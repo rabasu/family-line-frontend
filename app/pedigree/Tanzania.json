@@ -3,7 +3,7 @@
     "pedigreeName": "Tanzania",
     "rootHorseId": "tanzania",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -434,6 +434,150 @@
         "total": "1億7,073万円",
         "central": "1億6,988万円",
         "local": "85万円"
+      },
+      "damId": "tanzania"
+    },
+    {
+      "id": "justin-chicago",
+      "name": "ジャスティンシカゴ",
+      "foaled": {
+        "year": 2023,
+        "month": 2,
+        "day": 13
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "スワーヴリチャード",
+      "dam": "エリカブライト",
+      "color": "栗毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2023106924",
+      "raceStats": {
+        "total": {
+          "runs": 8,
+          "wins": 3
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 25
+          },
+          "racecourse": "京都",
+          "race": "菊花賞(GI)",
+          "displayRace": "菊花賞",
+          "distance": "芝3000",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "10",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 9,
+            "day": 13
+          },
+          "racecourse": "中山",
+          "race": "朝日セントライト記念(GII)",
+          "displayRace": "セントライト記念",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "1",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 9,
+            "day": 6
+          },
+          "racecourse": "札幌",
+          "race": "札幌2歳S(GIII)",
+          "displayRace": "札幌2歳S",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "12",
+          "result": "12",
+          "favorite": "7"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Justin Chicago",
+      "prizeMoney": {
+        "total": "8,396万円",
+        "central": "8,396万円",
+        "local": "0万円"
+      },
+      "owner": "三木正浩",
+      "trainer": "宮田敬介 (美浦)",
+      "damId": "erika-bright"
+    },
+    {
+      "id": "erika-bright",
+      "name": "エリカブライト",
+      "foaled": {
+        "year": 2018,
+        "month": 2,
+        "day": 21
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "キングカメハメハ",
+      "dam": "テーブルロンド",
+      "color": "鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2018105145",
+      "raceStats": {
+        "total": {
+          "runs": 10,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Erika Bright",
+      "prizeMoney": {
+        "total": "490万円",
+        "central": "427万円",
+        "local": "63万円"
+      },
+      "owner": "三木正浩",
+      "trainer": "松浦聡志 (兵庫)",
+      "damId": "table-ronde"
+    },
+    {
+      "id": "table-ronde",
+      "name": "テーブルロンド",
+      "foaled": {
+        "year": 2010,
+        "month": 5,
+        "day": 11
+      },
+      "sex": "female",
+      "breed": "サラ",
+      "sire": "Astronomer Royal(US)",
+      "dam": "Tanzania",
+      "color": "青毛",
+      "breeder": "愛",
+      "netkeibaId": "000a01379e",
+      "raceStats": {
+        "total": {
+          "runs": 0,
+          "wins": 0
+        },
+        "divisions": []
+      },
+      "raceResults": [],
+      "source": "python_scraping",
+      "englishName": "Table Ronde",
+      "prizeMoney": {
+        "total": "0万円"
       },
       "damId": "tanzania"
     }

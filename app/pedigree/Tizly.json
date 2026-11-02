@@ -3,7 +3,7 @@
     "pedigreeName": "Tizly",
     "rootHorseId": "tizly",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -140,12 +140,27 @@
       "netkeibaId": "2021102224",
       "raceStats": {
         "total": {
-          "runs": 5,
-          "wins": 3
+          "runs": 8,
+          "wins": 4
         },
         "divisions": []
       },
       "raceResults": [
+        {
+          "date": {
+            "year": 2024,
+            "month": 4,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "テレビ東京杯青葉賞(GII)",
+          "displayRace": "青葉賞",
+          "distance": "芝2400",
+          "grade": "jra_g2",
+          "entry": "17",
+          "result": "1",
+          "favorite": "2"
+        },
         {
           "date": {
             "year": 2024,
@@ -163,25 +178,55 @@
         },
         {
           "date": {
-            "year": 2024,
-            "month": 4,
-            "day": 27
+            "year": 2026,
+            "month": 5,
+            "day": 16
+          },
+          "racecourse": "新潟",
+          "race": "新潟大賞典(GIII)",
+          "displayRace": "新潟大賞典",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "15",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 6,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(GI)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "17",
+          "favorite": "17"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 17
           },
           "racecourse": "東京",
-          "race": "テレビ東京杯青葉賞(GII)",
-          "displayRace": "青葉賞",
-          "distance": "芝2400",
+          "race": "富士S(GII)",
+          "displayRace": "富士S",
+          "distance": "芝1600",
           "grade": "jra_g2",
-          "entry": "17",
+          "entry": "14",
           "result": "1",
-          "favorite": "2"
+          "favorite": "12"
         }
       ],
       "source": "python_scraping",
       "englishName": "Sugar Kun",
       "prizeMoney": {
-        "total": "7,414万円",
-        "central": "7,414万円",
+        "total": "1億3,412万円",
+        "central": "1億3,412万円",
         "local": "0万円"
       },
       "damId": "sugar-heart"

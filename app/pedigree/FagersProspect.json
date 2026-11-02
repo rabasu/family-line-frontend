@@ -3,7 +3,7 @@
     "pedigreeName": "Fager's Prospect",
     "rootHorseId": "fagers-prospect",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -505,86 +505,26 @@
       "netkeibaId": "2021107098",
       "raceStats": {
         "total": {
-          "runs": 14,
-          "wins": 1
+          "runs": 22,
+          "wins": 4
         },
         "divisions": []
       },
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 6,
-            "day": 22
-          },
-          "racecourse": "東京",
-          "race": "府中牝馬S(GIII)",
-          "displayRace": "府中牝馬S",
-          "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "14",
-          "result": "3",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 4,
-            "day": 12
+            "year": 2024,
+            "month": 3,
+            "day": 2
           },
           "racecourse": "阪神",
-          "race": "サンスポ杯阪神牝馬S(GII)",
-          "displayRace": "阪神牝馬S",
+          "race": "チューリップ賞(GII)",
+          "displayRace": "チューリップ賞",
           "distance": "芝1600",
           "grade": "jra_g2",
-          "entry": "14",
-          "result": "3",
-          "favorite": "8"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 10,
-            "day": 13
-          },
-          "racecourse": "京都",
-          "race": "秋華賞(GI)",
-          "displayRace": "秋華賞",
-          "distance": "芝2000",
-          "grade": "jra_g1",
-          "entry": "15",
-          "result": "4",
-          "favorite": "13"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 9,
-            "day": 15
-          },
-          "racecourse": "中京",
-          "race": "関西TVローズS(GII)",
-          "displayRace": "ローズS",
-          "distance": "芝2000",
-          "grade": "jra_g2",
-          "entry": "15",
+          "entry": "16",
           "result": "7",
-          "favorite": "8"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 5,
-            "day": 19
-          },
-          "racecourse": "東京",
-          "race": "優駿牝馬(GI)",
-          "displayRace": "優駿牝馬",
-          "distance": "芝2400",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "11",
-          "favorite": "12"
+          "favorite": "11"
         },
         {
           "date": {
@@ -604,24 +544,189 @@
         {
           "date": {
             "year": 2024,
-            "month": 3,
-            "day": 2
+            "month": 5,
+            "day": 19
+          },
+          "racecourse": "東京",
+          "race": "優駿牝馬(GI)",
+          "displayRace": "優駿牝馬",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "11",
+          "favorite": "12"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 9,
+            "day": 15
+          },
+          "racecourse": "中京",
+          "race": "関西TVローズS(GII)",
+          "displayRace": "ローズS",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "7",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "秋華賞(GI)",
+          "displayRace": "秋華賞",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "4",
+          "favorite": "13"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 4,
+            "day": 12
           },
           "racecourse": "阪神",
-          "race": "チューリップ賞(GII)",
-          "displayRace": "チューリップ賞",
+          "race": "サンスポ杯阪神牝馬S(GII)",
+          "displayRace": "阪神牝馬S",
           "distance": "芝1600",
           "grade": "jra_g2",
+          "entry": "14",
+          "result": "3",
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "府中牝馬S(GIII)",
+          "displayRace": "府中牝馬S",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "3",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "東京",
+          "race": "アイルランドT(GII)",
+          "displayRace": "アイルランドT",
+          "distance": "芝1800",
+          "grade": "jra_g2",
           "entry": "16",
+          "result": "1",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "マイルチャンピオンS(GI)",
+          "displayRace": "マイルCS",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "16",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(GIII)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 11
+          },
+          "racecourse": "阪神",
+          "race": "サンスポ杯阪神牝馬S(GII)",
+          "displayRace": "阪神牝馬S",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "10",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 17
+          },
+          "racecourse": "東京",
+          "race": "ヴィクトリアマイル(GI)",
+          "displayRace": "ヴィクトリアマイル",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
           "result": "7",
-          "favorite": "11"
+          "favorite": "8"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 8,
+            "day": 16
+          },
+          "racecourse": "中京",
+          "race": "中京記念(GIII)",
+          "displayRace": "中京記念",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "1",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "アイルランドT(GII)",
+          "displayRace": "アイルランドT",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "16",
+          "result": "3",
+          "favorite": "2"
         }
       ],
       "source": "python_scraping",
       "englishName": "Lavanda",
       "prizeMoney": {
-        "total": "8,971万円",
-        "central": "8,971万円",
+        "total": "2億3,637万円",
+        "central": "2億3,637万円",
         "local": "0万円"
       },
       "damId": "god-pirates"

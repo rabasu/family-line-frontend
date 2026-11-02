@@ -3,7 +3,7 @@
     "pedigreeName": "Rose Trail",
     "rootHorseId": "rose-trail",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -47,100 +47,40 @@
       "netkeibaId": "2021110031",
       "raceStats": {
         "total": {
-          "runs": 14,
-          "wins": 3
+          "runs": 20,
+          "wins": 4
         },
         "divisions": []
       },
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 7,
-            "day": 27
+            "year": 2024,
+            "month": 4,
+            "day": 13
           },
-          "racecourse": "新潟",
-          "race": "関屋記念(GIII)",
-          "displayRace": "関屋記念",
-          "distance": "芝1600",
-          "grade": "jra_g3",
-          "entry": "18",
-          "result": "2",
-          "favorite": "10"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 3,
-            "day": 30
-          },
-          "racecourse": "中京",
-          "race": "高松宮記念(GI)",
-          "displayRace": "高松宮記念",
-          "distance": "芝1200",
-          "grade": "jra_g1",
-          "entry": "18",
-          "result": "14",
-          "favorite": "11"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 3,
-            "day": 1
-          },
-          "racecourse": "中山",
-          "race": "オーシャンS(GIII)",
-          "displayRace": "オーシャンS",
-          "distance": "芝1200",
-          "grade": "jra_g3",
-          "entry": "15",
-          "result": "9",
-          "favorite": "7"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 2,
-            "day": 9
-          },
-          "racecourse": "東京",
-          "race": "東京新聞杯(GIII)",
-          "displayRace": "東京新聞杯",
+          "racecourse": "阪神",
+          "race": "アーリントンC(GIII)",
+          "displayRace": "アーリントンC",
           "distance": "芝1600",
           "grade": "jra_g3",
           "entry": "16",
-          "result": "8",
-          "favorite": "9"
+          "result": "6",
+          "favorite": "5"
         },
         {
           "date": {
             "year": 2024,
-            "month": 12,
-            "day": 21
+            "month": 6,
+            "day": 30
           },
-          "racecourse": "京都",
-          "race": "阪神C(GII)",
-          "displayRace": "阪神C",
-          "distance": "芝1400",
-          "grade": "jra_g2",
-          "entry": "18",
-          "result": "3",
-          "favorite": "9"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 10,
-            "day": 26
-          },
-          "racecourse": "京都",
-          "race": "MBS賞スワンS(GII)",
-          "displayRace": "スワンS",
-          "distance": "芝1400",
-          "grade": "jra_g2",
-          "entry": "17",
-          "result": "2",
+          "racecourse": "福島",
+          "race": "ラジオNIKKEI賞(GIII)",
+          "displayRace": "ラジオNIKKEI賞",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "12",
+          "result": "1",
           "favorite": "6"
         },
         {
@@ -161,39 +101,189 @@
         {
           "date": {
             "year": 2024,
-            "month": 6,
-            "day": 30
+            "month": 10,
+            "day": 26
           },
-          "racecourse": "福島",
-          "race": "ラジオNIKKEI賞(GIII)",
-          "displayRace": "ラジオNIKKEI賞",
-          "distance": "芝1800",
-          "grade": "jra_g3",
-          "entry": "12",
-          "result": "1",
+          "racecourse": "京都",
+          "race": "MBS賞スワンS(GII)",
+          "displayRace": "スワンS",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "17",
+          "result": "2",
           "favorite": "6"
         },
         {
           "date": {
             "year": 2024,
-            "month": 4,
-            "day": 13
+            "month": 12,
+            "day": 21
           },
-          "racecourse": "阪神",
-          "race": "アーリントンC(GIII)",
-          "displayRace": "アーリントンC",
+          "racecourse": "京都",
+          "race": "阪神C(GII)",
+          "displayRace": "阪神C",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "3",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 2,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(GIII)",
+          "displayRace": "東京新聞杯",
           "distance": "芝1600",
           "grade": "jra_g3",
           "entry": "16",
-          "result": "6",
+          "result": "8",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "オーシャンS(GIII)",
+          "displayRace": "オーシャンS",
+          "distance": "芝1200",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "9",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 3,
+            "day": 30
+          },
+          "racecourse": "中京",
+          "race": "高松宮記念(GI)",
+          "displayRace": "高松宮記念",
+          "distance": "芝1200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "14",
+          "favorite": "11"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 7,
+            "day": 27
+          },
+          "racecourse": "新潟",
+          "race": "関屋記念(GIII)",
+          "displayRace": "関屋記念",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "2",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 13
+          },
+          "racecourse": "京都",
+          "race": "MBS賞スワンS(GII)",
+          "displayRace": "スワンS",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "1",
           "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "マイルチャンピオンS(GI)",
+          "displayRace": "マイルCS",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "4",
+          "favorite": "7"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 2,
+            "day": 10
+          },
+          "racecourse": "東京",
+          "race": "東京新聞杯(GIII)",
+          "displayRace": "東京新聞杯",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "10",
+          "favorite": "6"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 26
+          },
+          "racecourse": "京都",
+          "race": "読売マイラーズC(GII)",
+          "displayRace": "マイラーズC",
+          "distance": "芝1600",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "5",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "安田記念(GI)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "6",
+          "favorite": "10"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "京都",
+          "race": "MBS賞スワンS(GII)",
+          "displayRace": "スワンS",
+          "distance": "芝1400",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "3",
+          "favorite": "1"
         }
       ],
       "source": "python_scraping",
       "englishName": "Off Trail",
       "prizeMoney": {
-        "total": "1億2,618万円",
-        "central": "1億2,618万円",
+        "total": "2億3,453万円",
+        "central": "2億3,453万円",
         "local": "0万円"
       },
       "damId": "rose-trail"

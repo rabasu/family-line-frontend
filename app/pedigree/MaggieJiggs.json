@@ -3,7 +3,7 @@
     "pedigreeName": "Maggie Jiggs",
     "rootHorseId": "maggie-jiggs",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -189,115 +189,25 @@
       "netkeibaId": "2020102078",
       "raceStats": {
         "total": {
-          "runs": 13,
-          "wins": 5
+          "runs": 19,
+          "wins": 7
         },
         "divisions": []
       },
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 6,
-            "day": 22
+            "year": 2023,
+            "month": 7,
+            "day": 2
           },
-          "racecourse": "阪神",
-          "race": "しらさぎS(GIII)",
-          "displayRace": "しらさぎS",
-          "distance": "芝1600",
-          "grade": "jra_g3",
-          "entry": "14",
-          "result": "7",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 2025,
-            "month": 1,
-            "day": 26
-          },
-          "racecourse": "中山",
-          "race": "アメリカジョッキーC(GII)",
-          "displayRace": "アメリカジョッキーC",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "18",
-          "result": "12",
-          "favorite": "2"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 10,
-            "day": 27
-          },
-          "racecourse": "東京",
-          "race": "天皇賞(秋)(GI)",
-          "displayRace": "天皇賞(秋)",
-          "distance": "芝2000",
-          "grade": "jra_g1",
-          "entry": "15",
-          "result": "8",
-          "favorite": "3"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 9,
-            "day": 22
-          },
-          "racecourse": "中山",
-          "race": "産経賞オールカマー(GII)",
-          "displayRace": "オールカマー",
-          "distance": "芝2200",
-          "grade": "jra_g2",
-          "entry": "15",
-          "result": "1",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 6,
-            "day": 9
-          },
-          "racecourse": "東京",
-          "race": "エプソムC(GIII)",
-          "displayRace": "エプソムC",
+          "racecourse": "福島",
+          "race": "ラジオNIKKEI賞(GIII)",
+          "displayRace": "ラジオNIKKEI賞",
           "distance": "芝1800",
           "grade": "jra_g3",
-          "entry": "18",
-          "result": "1",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 5,
-            "day": 5
-          },
-          "racecourse": "新潟",
-          "race": "新潟大賞典(GIII)",
-          "displayRace": "新潟大賞典",
-          "distance": "芝2000",
-          "grade": "jra_g3",
           "entry": "16",
-          "result": "11",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 12,
-            "day": 10
-          },
-          "racecourse": "シャティン",
-          "race": "香港ヴァーズ(GI)",
-          "displayRace": "香港ヴァーズ〔シャティン〕",
-          "distance": "芝2400",
-          "grade": "abroad_g1",
-          "entry": "8",
-          "result": "8",
+          "result": "3",
           "favorite": "1"
         },
         {
@@ -318,24 +228,204 @@
         {
           "date": {
             "year": 2023,
-            "month": 7,
-            "day": 2
+            "month": 12,
+            "day": 10
           },
-          "racecourse": "福島",
-          "race": "ラジオNIKKEI賞(GIII)",
-          "displayRace": "ラジオNIKKEI賞",
-          "distance": "芝1800",
+          "racecourse": "シャティン",
+          "race": "香港ヴァーズ(GI)",
+          "displayRace": "香港ヴァーズ〔シャティン〕",
+          "distance": "芝2400",
+          "grade": "abroad_g1",
+          "entry": "8",
+          "result": "8",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 5,
+            "day": 5
+          },
+          "racecourse": "新潟",
+          "race": "新潟大賞典(GIII)",
+          "displayRace": "新潟大賞典",
+          "distance": "芝2000",
           "grade": "jra_g3",
           "entry": "16",
-          "result": "3",
+          "result": "11",
           "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 6,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "エプソムC(GIII)",
+          "displayRace": "エプソムC",
+          "distance": "芝1800",
+          "grade": "jra_g3",
+          "entry": "18",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 9,
+            "day": 22
+          },
+          "racecourse": "中山",
+          "race": "産経賞オールカマー(GII)",
+          "displayRace": "オールカマー",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "15",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 10,
+            "day": 27
+          },
+          "racecourse": "東京",
+          "race": "天皇賞(秋)(GI)",
+          "displayRace": "天皇賞(秋)",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "8",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 1,
+            "day": 26
+          },
+          "racecourse": "中山",
+          "race": "アメリカジョッキーC(GII)",
+          "displayRace": "アメリカジョッキーC",
+          "distance": "芝2200",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "12",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 6,
+            "day": 22
+          },
+          "racecourse": "阪神",
+          "race": "しらさぎS(GIII)",
+          "displayRace": "しらさぎS",
+          "distance": "芝1600",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "7",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "東京",
+          "race": "毎日王冠(GII)",
+          "displayRace": "毎日王冠",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "11",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 23
+          },
+          "racecourse": "京都",
+          "race": "マイルチャンピオンS(GI)",
+          "displayRace": "マイルCS",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "12",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 3,
+            "day": 1
+          },
+          "racecourse": "中山",
+          "race": "中山記念(GII)",
+          "displayRace": "中山記念",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "14",
+          "result": "1",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "大阪杯(GI)",
+          "displayRace": "大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "6",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 6,
+            "day": 7
+          },
+          "racecourse": "東京",
+          "race": "安田記念(GI)",
+          "displayRace": "安田記念",
+          "distance": "芝1600",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "7",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "盛岡",
+          "race": "マイルチャンピオンシ(JpnI)",
+          "displayRace": "マイルCS南部杯〔盛岡〕",
+          "distance": "ダ1600",
+          "grade": "nar_jpn1",
+          "entry": "11",
+          "result": "8",
+          "favorite": "4"
         }
       ],
       "source": "python_scraping",
       "englishName": "Lebensstil",
       "prizeMoney": {
-        "total": "1億9,574万円",
-        "central": "1億9,574万円",
+        "total": "3億3,156万円",
+        "central": "3億3,156万円",
         "local": "0万円"
       },
       "damId": "tokai-life"

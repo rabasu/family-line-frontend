@@ -3,7 +3,7 @@
     "pedigreeName": "Rising Cross",
     "rootHorseId": "rising-cross",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -49,22 +49,37 @@
       "netkeibaId": "2022105102",
       "raceStats": {
         "total": {
-          "runs": 5,
-          "wins": 4
+          "runs": 11,
+          "wins": 7
         },
         "divisions": []
       },
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 6,
-            "day": 1
+            "year": 2024,
+            "month": 11,
+            "day": 16
           },
           "racecourse": "東京",
-          "race": "東京優駿(GI)",
-          "displayRace": "東京優駿",
-          "distance": "芝2400",
+          "race": "東京スポーツ杯2歳S(GII)",
+          "displayRace": "東京スポーツ杯2歳S",
+          "distance": "芝1800",
+          "grade": "jra_g2",
+          "entry": "9",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 28
+          },
+          "racecourse": "中山",
+          "race": "ホープフルS(GI)",
+          "displayRace": "ホープフルS",
+          "distance": "芝2000",
           "grade": "jra_g1",
           "entry": "18",
           "result": "1",
@@ -87,14 +102,14 @@
         },
         {
           "date": {
-            "year": 2024,
-            "month": 12,
-            "day": 28
+            "year": 2025,
+            "month": 6,
+            "day": 1
           },
-          "racecourse": "中山",
-          "race": "ホープフルS(GI)",
-          "displayRace": "ホープフルS",
-          "distance": "芝2000",
+          "racecourse": "東京",
+          "race": "東京優駿(GI)",
+          "displayRace": "東京優駿",
+          "distance": "芝2400",
           "grade": "jra_g1",
           "entry": "18",
           "result": "1",
@@ -102,25 +117,100 @@
         },
         {
           "date": {
-            "year": 2024,
+            "year": 2025,
+            "month": 9,
+            "day": 14
+          },
+          "racecourse": "パリロンシャン",
+          "race": "プランスドランジュ賞(GIII)",
+          "displayRace": "プランスドランジュ賞〔パリロンシャン〕",
+          "distance": "芝2000",
+          "grade": "abroad_g3",
+          "entry": "7",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 10,
+            "day": 5
+          },
+          "racecourse": "パリロンシャン",
+          "race": "凱旋門賞(GI)",
+          "displayRace": "凱旋門賞〔パリロンシャン〕",
+          "distance": "芝2400",
+          "grade": "abroad_g1",
+          "entry": "17",
+          "result": "14",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2025,
             "month": 11,
-            "day": 16
+            "day": 30
           },
           "racecourse": "東京",
-          "race": "東京スポーツ杯2歳S(GII)",
-          "displayRace": "東京スポーツ杯2歳S",
-          "distance": "芝1800",
-          "grade": "jra_g2",
-          "entry": "9",
+          "race": "ジャパンC(GI)",
+          "displayRace": "ジャパンC",
+          "distance": "芝2400",
+          "grade": "jra_g1",
+          "entry": "17",
+          "result": "4",
+          "favorite": "2"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 5
+          },
+          "racecourse": "阪神",
+          "race": "大阪杯(GI)",
+          "displayRace": "大阪杯",
+          "distance": "芝2000",
+          "grade": "jra_g1",
+          "entry": "15",
           "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 5,
+            "day": 3
+          },
+          "racecourse": "京都",
+          "race": "天皇賞(春)(GI)",
+          "displayRace": "天皇賞(春)",
+          "distance": "芝3200",
+          "grade": "jra_g1",
+          "entry": "15",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 6,
+            "day": 14
+          },
+          "racecourse": "阪神",
+          "race": "宝塚記念(GI)",
+          "displayRace": "宝塚記念",
+          "distance": "芝2200",
+          "grade": "jra_g1",
+          "entry": "18",
+          "result": "2",
           "favorite": "1"
         }
       ],
       "source": "python_scraping",
       "englishName": "Croix du Nord",
       "prizeMoney": {
-        "total": "5億3,248万円",
-        "central": "5億3,248万円",
+        "total": "13億3,495万円",
+        "central": "13億3,495万円",
         "local": "0万円"
       },
       "damId": "rising-cross"
@@ -292,6 +382,86 @@
         "local": "0万円"
       },
       "damId": "rising-cross"
+    },
+    {
+      "id": "tidal-lock",
+      "name": "タイダルロック",
+      "foaled": {
+        "year": 2023,
+        "month": 2,
+        "day": 15
+      },
+      "sex": "male",
+      "breed": "サラ",
+      "sire": "モーリス",
+      "dam": "アースライズ",
+      "color": "鹿毛",
+      "breeder": "ノーザンファーム（安平町）",
+      "netkeibaId": "2023106861",
+      "raceStats": {
+        "total": {
+          "runs": 5,
+          "wins": 1
+        },
+        "divisions": []
+      },
+      "raceResults": [
+        {
+          "date": {
+            "year": 2026,
+            "month": 4,
+            "day": 25
+          },
+          "racecourse": "東京",
+          "race": "テレビ東京杯青葉賞(GII)",
+          "displayRace": "青葉賞",
+          "distance": "芝2400",
+          "grade": "jra_g2",
+          "entry": "18",
+          "result": "2",
+          "favorite": "3"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 3,
+            "day": 8
+          },
+          "racecourse": "中山",
+          "race": "報知弥生ディープ記念(GII)",
+          "displayRace": "弥生賞ディープインパクト記念",
+          "distance": "芝2000",
+          "grade": "jra_g2",
+          "entry": "10",
+          "result": "4",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 1,
+            "day": 18
+          },
+          "racecourse": "中山",
+          "race": "京成杯(GIII)",
+          "displayRace": "京成杯",
+          "distance": "芝2000",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "4",
+          "favorite": "9"
+        }
+      ],
+      "source": "python_scraping",
+      "englishName": "Tidal Lock",
+      "prizeMoney": {
+        "total": "4,417万円",
+        "central": "4,417万円",
+        "local": "0万円"
+      },
+      "owner": "サンデーレーシング",
+      "trainer": "武井亮 (美浦)",
+      "damId": "earthrise"
     }
   ]
 }

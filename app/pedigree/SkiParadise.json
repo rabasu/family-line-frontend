@@ -3,7 +3,7 @@
     "pedigreeName": "Ski Paradise",
     "rootHorseId": "ski-paradise",
     "lastUpdated": "2025-10-04T17:35:00.000Z",
-    "source": "attribute_mapping_reverted"
+    "source": "python_scraping_updated"
   },
   "horses": [
     {
@@ -159,7 +159,7 @@
       "netkeibaId": "2020101874",
       "raceStats": {
         "total": {
-          "runs": 16,
+          "runs": 22,
           "wins": 6
         },
         "divisions": []
@@ -167,77 +167,17 @@
       "raceResults": [
         {
           "date": {
-            "year": 2025,
-            "month": 8,
-            "day": 9
+            "year": 2022,
+            "month": 12,
+            "day": 14
           },
-          "racecourse": "札幌",
-          "race": "エルムS(GIII)",
-          "displayRace": "エルムS",
-          "distance": "ダ1700",
-          "grade": "jra_g3",
+          "racecourse": "川崎",
+          "race": "全日本2歳優駿【国際(JpnI)",
+          "displayRace": "全日本2歳優駿【国際〔川崎〕",
+          "distance": "ダ1600",
+          "grade": "nar_jpn1",
           "entry": "14",
-          "result": "1",
-          "favorite": "5"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 11,
-            "day": 9
-          },
-          "racecourse": "東京",
-          "race": "東京中日S杯武蔵野S(GIII)",
-          "displayRace": "武蔵野S",
-          "distance": "ダ1600",
-          "grade": "jra_g3",
-          "entry": "15",
           "result": "3",
-          "favorite": "4"
-        },
-        {
-          "date": {
-            "year": 2024,
-            "month": 2,
-            "day": 29
-          },
-          "racecourse": "名古屋",
-          "race": "かきつばた記念(JpnIII)",
-          "displayRace": "かきつばた記念〔名古屋〕",
-          "distance": "ダ1500",
-          "grade": "nar_jpn3",
-          "entry": "12",
-          "result": "5",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 11,
-            "day": 11
-          },
-          "racecourse": "東京",
-          "race": "東京中日S杯武蔵野S(GIII)",
-          "displayRace": "武蔵野S",
-          "distance": "ダ1600",
-          "grade": "jra_g3",
-          "entry": "16",
-          "result": "9",
-          "favorite": "1"
-        },
-        {
-          "date": {
-            "year": 2023,
-            "month": 6,
-            "day": 18
-          },
-          "racecourse": "東京",
-          "race": "ユニコーンS(GIII)",
-          "displayRace": "ユニコーンS",
-          "distance": "ダ1600",
-          "grade": "jra_g3",
-          "entry": "15",
-          "result": "1",
           "favorite": "1"
         },
         {
@@ -257,26 +197,161 @@
         },
         {
           "date": {
-            "year": 2022,
-            "month": 12,
-            "day": 14
+            "year": 2023,
+            "month": 6,
+            "day": 18
           },
-          "racecourse": "川崎",
-          "race": "全日本2歳優駿【国際(JpnI)",
-          "displayRace": "全日本2歳優駿【国際〔川崎〕",
+          "racecourse": "東京",
+          "race": "ユニコーンS(GIII)",
+          "displayRace": "ユニコーンS",
+          "distance": "ダ1600",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "1",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 11
+          },
+          "racecourse": "東京",
+          "race": "東京中日S杯武蔵野S(GIII)",
+          "displayRace": "武蔵野S",
+          "distance": "ダ1600",
+          "grade": "jra_g3",
+          "entry": "16",
+          "result": "9",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 2,
+            "day": 29
+          },
+          "racecourse": "名古屋",
+          "race": "かきつばた記念(JpnIII)",
+          "displayRace": "かきつばた記念〔名古屋〕",
+          "distance": "ダ1500",
+          "grade": "nar_jpn3",
+          "entry": "12",
+          "result": "5",
+          "favorite": "1"
+        },
+        {
+          "date": {
+            "year": 2024,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "東京",
+          "race": "東京中日S杯武蔵野S(GIII)",
+          "displayRace": "武蔵野S",
+          "distance": "ダ1600",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "3",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 8,
+            "day": 9
+          },
+          "racecourse": "札幌",
+          "race": "エルムS(GIII)",
+          "displayRace": "エルムS",
+          "distance": "ダ1700",
+          "grade": "jra_g3",
+          "entry": "14",
+          "result": "1",
+          "favorite": "5"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 11,
+            "day": 9
+          },
+          "racecourse": "京都",
+          "race": "みやこS(GIII)",
+          "displayRace": "みやこS",
+          "distance": "ダ1800",
+          "grade": "jra_g3",
+          "entry": "15",
+          "result": "10",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2025,
+            "month": 12,
+            "day": 7
+          },
+          "racecourse": "中京",
+          "race": "チャンピオンズC(GI)",
+          "displayRace": "チャンピオンズC",
+          "distance": "ダ1800",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "10",
+          "favorite": "15"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 2,
+            "day": 22
+          },
+          "racecourse": "東京",
+          "race": "フェブラリーS(GI)",
+          "displayRace": "フェブラリーS",
+          "distance": "ダ1600",
+          "grade": "jra_g1",
+          "entry": "16",
+          "result": "10",
+          "favorite": "9"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 8,
+            "day": 8
+          },
+          "racecourse": "札幌",
+          "race": "エルムS(GIII)",
+          "displayRace": "エルムS",
+          "distance": "ダ1700",
+          "grade": "jra_g3",
+          "entry": "11",
+          "result": "2",
+          "favorite": "4"
+        },
+        {
+          "date": {
+            "year": 2026,
+            "month": 10,
+            "day": 12
+          },
+          "racecourse": "盛岡",
+          "race": "マイルチャンピオンシ(JpnI)",
+          "displayRace": "マイルCS南部杯〔盛岡〕",
           "distance": "ダ1600",
           "grade": "nar_jpn1",
-          "entry": "14",
-          "result": "3",
-          "favorite": "1"
+          "entry": "11",
+          "result": "5",
+          "favorite": "5"
         }
       ],
       "source": "python_scraping",
       "englishName": "Perriere",
       "prizeMoney": {
-        "total": "1億8,390万円",
-        "central": "1億7,270万円",
-        "local": "1,120万円"
+        "total": "2億1,062万円",
+        "central": "1億9,142万円",
+        "local": "1,920万円"
       },
       "damId": "soft-rime"
     },
