@@ -2,19 +2,12 @@
 
 import { useState } from 'react'
 import { ALL_BREEDS } from '@/types/Breed'
-import {
-  PedigreePathNodeInput,
-  leafAncestryPaths,
-  pathLabelJa,
-  pathsStartingAtLeaf,
-  rowspanForPath,
-  sexFromPath,
-} from '@/lib/sire-pedigree-paths'
+import { PedigreePathNodeInput, leafAncestryPaths, pathLabelJa, pathsStartingAtLeaf, rowspanForPath, sexFromPath } from '@/lib/sire-pedigree-paths'
 
 const LEAVES = leafAncestryPaths(4)
 const COLORS = ['', '栗毛', '鹿毛', '黒鹿毛', '青毛', '青鹿毛', '芦毛', '白毛', '栃栗毛']
 
-export type CellFetchSite = 'pedigreequery' | 'allbreed'
+export type CellFetchSite = 'pedigreequery' | 'allbreed' | 'horse'
 
 type Props = {
   value: Record<string, PedigreePathNodeInput>
@@ -43,23 +36,21 @@ function CellEditor({
   const rs = rowspanForPath(path)
   const busy = fetchingPath === path
   const id = onlineId.trim()
-  const pqHref = id
-    ? `https://www.pedigreequery.com/${id.replace(/ /g, '+')}`
-    : ''
-  const abHref = id
-    ? `https://www.allbreedpedigree.com/${id.replace(/ /g, '+')}`
-    : ''
+  const pqHref = id ? `https://www.pedigreequery.com/${id.replace(/ /g, '+')}` : ''
+  const abHref = id ? `https://www.allbreedpedigree.com/${id.replace(/ /g, '+')}` : ''
 
   return (
-    <td
-      rowSpan={rs}
-      className="border border-stone-400 bg-white p-1 align-top min-w-[10rem] max-w-[13rem]"
-    >
+    <td rowSpan={rs} className="min-w-[10rem] max-w-[13rem] border border-stone-400 bg-white p-1 align-top">
       <div className="mb-0.5 text-[10px] text-stone-500">{pathLabelJa(path)}</div>
       <input
         className="mb-0.5 w-full rounded border border-stone-300 px-1 py-0.5 text-xs"
         value={node.name}
-        onChange={(e) => onChange({ ...node, name: e.target.value })}
+        title={node.id ? `id=${node.id}` : undefined}
+        onChange={(e) => {
+          const name = e.target.value
+          const keepId = name.trim() === (node.name || '').trim()
+          onChange({ ...node, name, id: keepId ? node.id : '' })
+        }}
       />
       <div className="flex gap-0.5">
         <input
@@ -68,11 +59,7 @@ function CellEditor({
           value={node.foaledYear || ''}
           onChange={(e) => onChange({ ...node, foaledYear: e.target.value })}
         />
-        <select
-          className="min-w-0 flex-1 rounded border border-stone-300 px-0.5 py-0.5 text-[11px]"
-          value={node.color || ''}
-          onChange={(e) => onChange({ ...node, color: e.target.value })}
-        >
+        <select className="min-w-0 flex-1 rounded border border-stone-300 px-0.5 py-0.5 text-[11px]" value={node.color || ''} onChange={(e) => onChange({ ...node, color: e.target.value })}>
           {COLORS.map((c) => (
             <option key={c || 'none'} value={c}>
               {c || '毛色'}
@@ -102,16 +89,10 @@ function CellEditor({
         value={node.netkeibaId || ''}
         onChange={(e) => onChange({ ...node, netkeibaId: e.target.value })}
       />
-      <div className="mt-0.5 text-[10px] text-stone-400">
-        {node.sex === 'female' ? '牝' : '牡'}
-      </div>
+      <div className="mt-0.5 text-[10px] text-stone-400">{node.sex === 'female' ? '牝' : '牡'}</div>
       {onFetchCell && (
         <div className="mt-1 border-t border-stone-200 pt-1">
-          <input
-            className="mb-0.5 w-full rounded border border-stone-300 px-1 py-0.5 font-mono text-[10px]"
-            value={onlineId}
-            onChange={(e) => setOnlineId(e.target.value)}
-          />
+          <input className="mb-0.5 w-full rounded border border-stone-300 px-1 py-0.5 font-mono text-[10px]" value={onlineId} onChange={(e) => setOnlineId(e.target.value)} />
           <div className="flex gap-0.5">
             <button
               type="button"
@@ -129,23 +110,22 @@ function CellEditor({
             >
               {busy ? '…' : 'AB'}
             </button>
+            <button
+              type="button"
+              disabled={fetchDisabled || !id}
+              title="登録済みの horseId で、このマス以降の空欄を埋める"
+              className="flex-1 rounded border border-stone-400 px-1 py-0.5 text-[10px] disabled:opacity-40"
+              onClick={() => onFetchCell(path, 'horse', id)}
+            >
+              {busy ? '…' : 'ID'}
+            </button>
           </div>
           {id && (
             <div className="mt-0.5 flex gap-1.5 text-[10px]">
-              <a
-                className="text-sky-700 underline"
-                href={pqHref}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a className="text-sky-700 underline" href={pqHref} target="_blank" rel="noreferrer">
                 PQ
               </a>
-              <a
-                className="text-sky-700 underline"
-                href={abHref}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a className="text-sky-700 underline" href={abHref} target="_blank" rel="noreferrer">
                 AB
               </a>
             </div>
@@ -156,13 +136,7 @@ function CellEditor({
   )
 }
 
-export default function BloodTableEditor({
-  value,
-  onChange,
-  onFetchCell,
-  fetchingPath,
-  fetchDisabled,
-}: Props) {
+export default function BloodTableEditor({ value, onChange, onFetchCell, fetchingPath, fetchDisabled }: Props) {
   const setPath = (path: string, node: PedigreePathNodeInput) => {
     onChange({
       ...value,

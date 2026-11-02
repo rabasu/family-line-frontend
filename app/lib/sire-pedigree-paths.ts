@@ -14,6 +14,8 @@ export type PedigreePathNodeInput = {
   sex?: Sex | ''
   breed?: Breed | ''
   netkeibaId?: string
+  /** 在来・種牡馬レコードへの参照。馬名を変えたら外す */
+  id?: string
 }
 
 /** s 優先の DFS で長さ 1〜depth の全パス */
@@ -49,12 +51,7 @@ export function rowspanForPath(path: string, depth = SIRE_PEDIGREE_DEPTH): numbe
 }
 
 /** この葉行で新規開始する祖先パス（短い順） */
-export function pathsStartingAtLeaf(
-  leaf: string,
-  leafIndex: number,
-  leaves: string[],
-  depth = SIRE_PEDIGREE_DEPTH
-): string[] {
+export function pathsStartingAtLeaf(leaf: string, leafIndex: number, leaves: string[], depth = SIRE_PEDIGREE_DEPTH): string[] {
   const starting: string[] = []
   for (let len = 1; len <= depth; len++) {
     const path = leaf.slice(0, len)
@@ -70,6 +67,8 @@ export type FetchedAncestryNode = {
   color?: string
   breed?: string
   foaledYear?: number | null
+  netkeibaId?: string
+  id?: string
 }
 
 export type FetchedSubject = {
@@ -79,6 +78,8 @@ export type FetchedSubject = {
   breed?: string
   foaledYear?: number | null
   sex?: string
+  netkeibaId?: string
+  id?: string
 }
 
 /**
@@ -104,6 +105,8 @@ export function shiftFetchedAncestryToBranch(
   if (subject.color) node.color = subject.color
   if (subject.breed) node.breed = subject.breed
   if (subject.foaledYear != null) node.foaledYear = subject.foaledYear
+  if (subject.netkeibaId) node.netkeibaId = subject.netkeibaId
+  if (subject.id) node.id = subject.id
   out[branch] = node
 
   for (const [path, anc] of Object.entries(ancestryByPath || {})) {
@@ -135,19 +138,18 @@ export function nodeFromJson(
     sex?: Sex
     breed?: Breed
     netkeibaId?: string
+    id?: string
   } | null
 ): PedigreePathNodeInput {
   if (!node) return emptyNodeInput(path)
   return {
     name: node.name || '',
-    foaledYear:
-      node.foaled?.year != null && node.foaled.year !== undefined
-        ? String(node.foaled.year)
-        : '',
+    foaledYear: node.foaled?.year != null && node.foaled.year !== undefined ? String(node.foaled.year) : '',
     color: node.color || '',
     sex: node.sex || sexFromPath(path),
     breed: node.breed || '',
     netkeibaId: node.netkeibaId || '',
+    id: node.id || '',
   }
 }
 
@@ -169,6 +171,7 @@ export function buildAncestryByPath(
     sex: Sex
     breed?: Breed
     netkeibaId?: string
+    id?: string
   }
 > {
   const fillUnknown = options?.fillUnknown !== false
@@ -181,6 +184,7 @@ export function buildAncestryByPath(
       sex: Sex
       breed?: Breed
       netkeibaId?: string
+      id?: string
     }
   > = {}
   for (const path of allAncestryPaths(depth)) {
@@ -196,6 +200,7 @@ export function buildAncestryByPath(
       sex: Sex
       breed?: Breed
       netkeibaId?: string
+      id?: string
     } = { name, sex }
     const yearStr = (raw.foaledYear || '').trim()
     if (yearStr) {
@@ -208,7 +213,28 @@ export function buildAncestryByPath(
     if (breed) node.breed = breed
     const nk = (raw.netkeibaId || '').trim()
     if (nk) node.netkeibaId = nk
+    const horseId = (raw.id || '').trim()
+    if (horseId) node.id = horseId
     out[path] = node
   }
   return out
+}
+
+/**
+ * 祖先名が変わっていないパスだけ、既存ノードの id（在来・種牡馬への参照）を残す。
+ * 名前を書き換えたパスの id は付けない。
+ */
+export function preserveMatchingAncestryIds<T extends { name: string; id?: string }>(
+  previous: Record<string, { name?: string; id?: string } | null | undefined> | undefined,
+  next: Record<string, T>
+): Record<string, T> {
+  for (const [path, node] of Object.entries(next)) {
+    const old = previous?.[path]
+    const prevId = String(old?.id || '').trim()
+    const prevName = String(old?.name || '').trim()
+    if (prevId && prevName && prevName === node.name.trim()) {
+      node.id = prevId
+    }
+  }
+  return next
 }

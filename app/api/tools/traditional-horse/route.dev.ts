@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { searchFatherHorses, searchTraditionalHorses } from '@/lib/traditional-horse-lookup'
+import { searchFatherHorses, searchHorsesForEdit, searchTraditionalHorses } from '@/lib/traditional-horse-lookup'
 import { checkTraditionalIdConflict } from '@/lib/traditional-family-write'
 import { proposeTraditionalFilename } from '@/lib/horse-id'
 import { resolveHorseId } from '@/lib/horse-id-server'
@@ -41,10 +41,9 @@ export async function GET(req: NextRequest) {
     }
     const q = searchParams.get('q') || ''
     const limit = Number(searchParams.get('limit') || '20')
+    const scope = searchParams.get('scope') || ''
     const includeSires = searchParams.get('includeSires') === '1'
-    const items = includeSires
-      ? await searchFatherHorses(q, limit)
-      : await searchTraditionalHorses(q, limit)
+    const items = scope === 'edit' ? await searchHorsesForEdit(q, limit) : includeSires ? await searchFatherHorses(q, limit) : await searchTraditionalHorses(q, limit)
     return NextResponse.json({ count: items.length, items })
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e)

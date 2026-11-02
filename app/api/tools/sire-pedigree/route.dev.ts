@@ -1,21 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import fs from 'fs/promises'
 import path from 'path'
-import {
-  PedigreePathNodeInput,
-  buildAncestryByPath,
-} from '@/lib/sire-pedigree-paths'
-import {
-  linkChildrenToRegisteredSire,
-  setChildrenSireNetkeibaId,
-  stripTrailingCountryParen,
-} from '@/lib/sire-manual-missing'
-import {
-  findCatalogEntryById,
-  findSireFileByNetkeibaId,
-} from '@/lib/sire-catalog'
+import { PedigreePathNodeInput, buildAncestryByPath, preserveMatchingAncestryIds } from '@/lib/sire-pedigree-paths'
+import { linkChildrenToRegisteredSire, setChildrenSireNetkeibaId, stripTrailingCountryParen } from '@/lib/sire-manual-missing'
+import { findCatalogEntryById, findSireFileByNetkeibaId } from '@/lib/sire-catalog'
 import {
   upsertHorseIntoDamFamily,
+  applyEditableHorseFields,
   applyFoaledFromInput,
   applyOptionalHorseFields,
   loadTraditionalHorseRecord,
@@ -30,22 +21,11 @@ import { resolveHorseId } from '@/lib/horse-id-server'
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-type EditMode =
-  | 'sire'
-  | 'missing_sire'
-  | 'root'
-  | 'new_family'
-  | 'new_horse'
-  | 'edit_horse'
+type EditMode = 'sire' | 'missing_sire' | 'root' | 'new_family' | 'new_horse' | 'edit_horse'
 
 const SIRE_DIR = path.join(process.cwd(), 'app', 'pedigree-sires')
 const TRAD_DIR = path.join(process.cwd(), 'app', 'pedigree-traditional')
-const QUEUE_PATH = path.join(
-  process.cwd(),
-  'scraping',
-  'output',
-  'sire_manual_queue.json'
-)
+const QUEUE_PATH = path.join(process.cwd(), 'scraping', 'output', 'sire_manual_queue.json')
 
 function resolveRepoPath(filepath: string): string | null {
   if (!filepath) return null
@@ -99,11 +79,7 @@ async function findSireFileByName(name: string): Promise<{
     try {
       const data = JSON.parse(await fs.readFile(fp, 'utf-8'))
       const horse = data?.horse || {}
-      if (
-        nameEqualsLoose(horse.name || '', target) ||
-        nameEqualsLoose(horse.englishName || '', target) ||
-        nameEqualsLoose(horse.pedigreeName || '', target)
-      ) {
+      if (nameEqualsLoose(horse.name || '', target) || nameEqualsLoose(horse.englishName || '', target) || nameEqualsLoose(horse.pedigreeName || '', target)) {
         return { filepath: fp, data }
       }
     } catch {
@@ -128,10 +104,7 @@ async function collectUsedSireIds(): Promise<Set<string>> {
   return used
 }
 
-async function allocateSireId(
-  preferred: string,
-  used: Set<string>
-): Promise<string> {
+async function allocateSireId(preferred: string, used: Set<string>): Promise<string> {
   let base = slugifyId(preferred)
   if (!base) base = 'unknown-sire'
   if (!used.has(base)) return base
@@ -152,9 +125,7 @@ async function loadRootHorse(childId: string, filepathHint?: string) {
   if (fp) {
     try {
       const data = JSON.parse(await fs.readFile(fp, 'utf-8'))
-      const horse = (data.horses || []).find(
-        (h: { id?: string }) => h.id === childId
-      )
+      const horse = (data.horses || []).find((h: { id?: string }) => h.id === childId)
       if (horse) return { filepath: fp, data, horse }
     } catch {
       // fall through to scan
@@ -167,9 +138,7 @@ async function loadRootHorse(childId: string, filepathHint?: string) {
     const candidate = path.join(TRAD_DIR, file)
     try {
       const data = JSON.parse(await fs.readFile(candidate, 'utf-8'))
-      const horse = (data.horses || []).find(
-        (h: { id?: string }) => h.id === childId
-      )
+      const horse = (data.horses || []).find((h: { id?: string }) => h.id === childId)
       if (horse) return { filepath: candidate, data, horse }
     } catch {
       // skip
@@ -230,9 +199,7 @@ function parseOptInt(v?: string): number | undefined {
   return Number.isFinite(n) ? n : undefined
 }
 
-function raceResultsFromSubject(
-  raw?: RaceResultBody[]
-): RaceResultJson[] | undefined {
+function raceResultsFromSubject(raw?: RaceResultBody[]): RaceResultJson[] | undefined {
   if (!raw) return undefined
   return raw
     .map((r) => {
@@ -262,10 +229,7 @@ function raceResultsFromSubject(
     .filter((r) => Boolean(r.race))
 }
 
-function offspringFromSubject(
-  subject: SubjectBody | undefined,
-  fallback: { id: string; name: string; sex?: string }
-): TraditionalOffspringInput {
+function offspringFromSubject(subject: SubjectBody | undefined, fallback: { id: string; name: string; sex?: string }): TraditionalOffspringInput {
   return {
     id: (subject?.id || '').trim() || fallback.id,
     name: (subject?.name || '').trim() || undefined,
@@ -297,11 +261,7 @@ function offspringFromSubject(
   }
 }
 
-function applySubjectToHorse(
-  horse: Record<string, unknown>,
-  subject?: SubjectBody,
-  opts?: { forceSex?: string }
-) {
+function applySubjectToHorse(horse: Record<string, unknown>, subject?: SubjectBody, opts?: { forceSex?: string }) {
   if (opts?.forceSex) horse.sex = opts.forceSex
   else if (subject?.sex && subject.sex.trim()) horse.sex = subject.sex.trim()
   if (!subject) return
@@ -313,11 +273,7 @@ function applySubjectToHorse(
   })
   applyOptionalHorseFields(horse, offspring)
   horse.foaled = applyFoaledFromInput(horse.foaled, offspring)
-  for (const key of [
-    'formerName',
-    'localName',
-    'formerPedigreeName',
-  ] as const) {
+  for (const key of ['formerName', 'localName', 'formerPedigreeName'] as const) {
     const value = subject[key]
     if (value === undefined) continue
     const trimmed = value.trim()
@@ -383,10 +339,7 @@ export async function GET(req: NextRequest) {
     if (mode === 'edit_horse') {
       const loaded = await loadTraditionalHorseRecord(id)
       if (!loaded) {
-        return NextResponse.json(
-          { error: `在来に馬が見つかりません: ${id}` },
-          { status: 404 }
-        )
+        return NextResponse.json({ error: `在来に馬が見つかりません: ${id}` }, { status: 404 })
       }
       return NextResponse.json({
         mode,
@@ -405,10 +358,7 @@ export async function GET(req: NextRequest) {
     const { item } = await loadQueueItem(id)
     const sireName = (sireNameParam || item?.sire_name || '').trim()
     if (!sireName) {
-      return NextResponse.json(
-        { error: 'sire_name missing on queue item' },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: 'sire_name missing on queue item' }, { status: 400 })
     }
     const existing = await findSireFileByName(sireName)
     if (existing) {
@@ -484,13 +434,17 @@ type SaveBody = {
   markResolved?: boolean
   /** true: 空欄を「不詳」で埋めず、キューも完了扱いにしない */
   draft?: boolean
+  /** edit_horse: 在来 JSON か pedigree-sires か */
+  editStore?: 'traditional' | 'sire'
 }
 
-async function markQueueResolved(
-  childId: string,
-  mode: EditMode,
-  ancestryCount: number
-): Promise<boolean> {
+function ancestryForEdit(previous: unknown, input: Record<string, PedigreePathNodeInput>) {
+  const built = buildAncestryByPath(input, 4, { fillUnknown: false })
+  const prev = previous && typeof previous === 'object' ? (previous as Record<string, { name?: string; id?: string }>) : undefined
+  return preserveMatchingAncestryIds(prev, built)
+}
+
+async function markQueueResolved(childId: string, mode: EditMode, ancestryCount: number): Promise<boolean> {
   try {
     const queueRaw = await fs.readFile(QUEUE_PATH, 'utf-8')
     const queue = JSON.parse(queueRaw)
@@ -501,11 +455,7 @@ async function markQueueResolved(
     for (const item of items) {
       if (item.child_id !== childId) continue
 
-      if (
-        mode === 'sire' &&
-        (item.reason === 'incomplete_four_gen_pedigree' ||
-          item.reason === 'missing_breeder')
-      ) {
+      if (mode === 'sire' && (item.reason === 'incomplete_four_gen_pedigree' || item.reason === 'missing_breeder')) {
         item.resolved = true
         item.resolvedAt = now
         item.ancestry_present = ancestryCount
@@ -560,20 +510,10 @@ async function markQueueResolved(
   }
 }
 
-function collectRelatedChildIds(
-  body: SaveBody,
-  primaryId: string,
-  item: { related_children?: Array<{ id?: string }>; sire_name?: string } | null
-): string[] {
-  const relatedFromBody = (body.relatedChildIds || [])
-    .map((x) => (x || '').trim())
-    .filter(Boolean)
-  const relatedFromItem = (item?.related_children || [])
-    .map((c) => (c.id || '').trim())
-    .filter(Boolean)
-  return Array.from(
-    new Set([primaryId, ...relatedFromBody, ...relatedFromItem].filter(Boolean))
-  )
+function collectRelatedChildIds(body: SaveBody, primaryId: string, item: { related_children?: Array<{ id?: string }>; sire_name?: string } | null): string[] {
+  const relatedFromBody = (body.relatedChildIds || []).map((x) => (x || '').trim()).filter(Boolean)
+  const relatedFromItem = (item?.related_children || []).map((c) => (c.id || '').trim()).filter(Boolean)
+  return Array.from(new Set([primaryId, ...relatedFromBody, ...relatedFromItem].filter(Boolean)))
 }
 
 function requestedHorseId(subjectId: string | undefined, routeId: string): string {
@@ -597,22 +537,14 @@ export async function PUT(req: NextRequest) {
     if (mode === 'missing_sire' && body.linkExistingSireId) {
       const entry = await findCatalogEntryById(body.linkExistingSireId)
       if (!entry) {
-        return NextResponse.json(
-          { error: `登録済み種牡馬が見つかりません: ${body.linkExistingSireId}` },
-          { status: 404 }
-        )
+        return NextResponse.json({ error: `登録済み種牡馬が見つかりません: ${body.linkExistingSireId}` }, { status: 404 })
       }
       const { item } = await loadQueueItem(id)
       const childIds = collectRelatedChildIds(body, id, item)
       const linked = await linkChildrenToRegisteredSire(entry.name, entry.id, {
         sireNetkeibaId: entry.netkeibaId || '',
         childIds,
-        alsoMatchSireNames: [
-          body.queueSireName || '',
-          item?.sire_name || '',
-          entry.name,
-          entry.englishName || '',
-        ],
+        alsoMatchSireNames: [body.queueSireName || '', item?.sire_name || '', entry.name, entry.englishName || ''],
       })
       const queueUpdated = await markQueueResolved(id, mode, 0)
       return NextResponse.json({
@@ -635,16 +567,12 @@ export async function PUT(req: NextRequest) {
     if (mode === 'missing_sire' && body.setSireNetkeibaIdOnly) {
       const sireNk = body.setSireNetkeibaIdOnly.trim()
       if (!sireNk || sireNk === 'none') {
-        return NextResponse.json(
-          { error: '有効な netkeibaId を指定してください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: '有効な netkeibaId を指定してください' }, { status: 400 })
       }
       if (!/^[0-9a-fA-F]{10}$/.test(sireNk)) {
         return NextResponse.json(
           {
-            error:
-              'netkeibaId は10桁の英数字（例: 000a0012fc）で指定してください',
+            error: 'netkeibaId は10桁の英数字（例: 000a0012fc）で指定してください',
           },
           { status: 400 }
         )
@@ -654,17 +582,12 @@ export async function PUT(req: NextRequest) {
       const linked = await setChildrenSireNetkeibaId(sireNk, {
         childIds,
         sireName: body.queueSireName || item?.sire_name || '',
-        alsoMatchSireNames: [
-          body.queueSireName || '',
-          item?.sire_name || '',
-          body.subject?.name || '',
-        ],
+        alsoMatchSireNames: [body.queueSireName || '', item?.sire_name || '', body.subject?.name || ''],
       })
       if (linked.linkedCount === 0) {
         return NextResponse.json(
           {
-            error:
-              '更新対象の産駒が見つかりませんでした（既に sireId があるか、sireNetkeibaId=none 以外）',
+            error: '更新対象の産駒が見つかりませんでした（既に sireId があるか、sireNetkeibaId=none 以外）',
           },
           { status: 404 }
         )
@@ -693,16 +616,10 @@ export async function PUT(req: NextRequest) {
         pedigreeName,
       })
       if (!horseId) {
-        return NextResponse.json(
-          { error: 'id を手入力するか、英名か日本語名を入れてください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: 'id を手入力するか、英名か日本語名を入れてください' }, { status: 400 })
       }
       if (!body.ancestryInput) {
-        return NextResponse.json(
-          { error: '4代血統（ancestryInput）が必要です' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: '4代血統（ancestryInput）が必要です' }, { status: 400 })
       }
       const isDraft = Boolean(body.draft)
       const ancestryByPath = buildAncestryByPath(body.ancestryInput, 4, {
@@ -740,10 +657,7 @@ export async function PUT(req: NextRequest) {
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e)
         const conflict = message.includes('id を変更してください')
-        return NextResponse.json(
-          { error: message },
-          { status: conflict ? 409 : 400 }
-        )
+        return NextResponse.json({ error: message }, { status: conflict ? 409 : 400 })
       }
     }
 
@@ -757,28 +671,18 @@ export async function PUT(req: NextRequest) {
       const englishName = (body.subject?.englishName || '').trim()
       const sex = (body.subject?.sex || '').trim()
       if (!sex || !['male', 'female', 'gelding'].includes(sex)) {
-        return NextResponse.json(
-          { error: '性別（牡 / 牝 / セン）を選んでください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: '性別（牡 / 牝 / セン）を選んでください' }, { status: 400 })
       }
       if (!damId) {
-        return NextResponse.json(
-          { error: '母馬（在来）を選んでください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: '母馬（在来）を選んでください' }, { status: 400 })
       }
       if (!sireId && !sireName) {
-        return NextResponse.json(
-          { error: '父馬を選ぶか父馬名を入力してください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: '父馬を選ぶか父馬名を入力してください' }, { status: 400 })
       }
       if (sireNk && sireNk !== 'none' && !/^[0-9a-fA-F]{10}$/.test(sireNk)) {
         return NextResponse.json(
           {
-            error:
-              'sireNetkeibaId は10桁の英数字か none です',
+            error: 'sireNetkeibaId は10桁の英数字か none です',
           },
           { status: 400 }
         )
@@ -790,10 +694,7 @@ export async function PUT(req: NextRequest) {
         pedigreeName,
       })
       if (!horseId) {
-        return NextResponse.json(
-          { error: 'id を手入力するか、英名か日本語名を入れてください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: 'id を手入力するか、英名か日本語名を入れてください' }, { status: 400 })
       }
       const offspring = offspringFromSubject(body.subject, {
         id: horseId,
@@ -828,10 +729,7 @@ export async function PUT(req: NextRequest) {
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e)
         const conflict = message.includes('既に') && message.includes('id=')
-        return NextResponse.json(
-          { error: message },
-          { status: conflict ? 409 : 400 }
-        )
+        return NextResponse.json({ error: message }, { status: conflict ? 409 : 400 })
       }
     }
 
@@ -843,10 +741,7 @@ export async function PUT(req: NextRequest) {
       const name = (body.subject?.name || '').trim()
       const sex = (body.subject?.sex || '').trim()
       if (sex && !['male', 'female', 'gelding'].includes(sex)) {
-        return NextResponse.json(
-          { error: '性別は牡 / 牝 / センです' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: '性別は牡 / 牝 / センです' }, { status: 400 })
       }
       const offspring = offspringFromSubject(body.subject, {
         id: horseId,
@@ -855,10 +750,76 @@ export async function PUT(req: NextRequest) {
       })
       offspring.id = horseId
       try {
+        if (body.editStore === 'sire') {
+          const fp = await findSireFileById(horseId)
+          if (!fp) {
+            return NextResponse.json({ error: `種牡馬が見つかりません: ${horseId}` }, { status: 404 })
+          }
+          const data = JSON.parse(await fs.readFile(fp, 'utf-8'))
+          const horse = (data.horse || {}) as Record<string, unknown>
+          if (name) horse.name = name
+          if (sex) horse.sex = sex
+          const hadResults = Array.isArray(horse.raceResults)
+          const nextResults = offspring.raceResults || []
+          applyEditableHorseFields(horse, offspring, {
+            replaceRaceResults: hadResults || nextResults.length > 0,
+          })
+          const commentText = offspring.comment ?? offspring.comments
+          if (commentText !== undefined) {
+            const t = commentText.trim()
+            if (t) horse.comment = t
+            else delete horse.comment
+          }
+          delete horse.comments
+          horse.foaled = applyFoaledFromInput(horse.foaled, offspring)
+          let ancestryCount: number | undefined
+          if (body.ancestryInput) {
+            const ancestryByPath = ancestryForEdit(horse.ancestryByPath, body.ancestryInput)
+            ancestryCount = Object.keys(ancestryByPath).length
+            if (ancestryCount) {
+              horse.ancestryByPath = ancestryByPath
+              if (ancestryByPath.s?.name) horse.sire = ancestryByPath.s.name
+              if (ancestryByPath.d?.name) horse.dam = ancestryByPath.d.name
+            } else {
+              delete horse.ancestryByPath
+            }
+          }
+          data.horse = horse
+          if (data.metadata && typeof data.metadata === 'object') {
+            const meta = data.metadata as Record<string, unknown>
+            if (typeof horse.name === 'string' && horse.name) {
+              meta.subjectName = horse.name
+            }
+            if (typeof horse.netkeibaId === 'string' && horse.netkeibaId) {
+              meta.subjectNetkeibaId = horse.netkeibaId
+            } else if ('subjectNetkeibaId' in meta) {
+              meta.subjectNetkeibaId = ''
+            }
+          }
+          await fs.writeFile(fp, JSON.stringify(data, null, 2) + '\n', 'utf-8')
+          return NextResponse.json({
+            ok: true,
+            mode,
+            filepath: fp,
+            filename: path.basename(fp),
+            horseId,
+            pedigreeName: String(horse.pedigreeName || ''),
+            familyHref: '',
+            ancestryCount,
+          })
+        }
+
+        const loaded = await loadTraditionalHorseRecord(horseId)
+        if (!loaded) {
+          return NextResponse.json({ error: `在来に馬が見つかりません: ${horseId}` }, { status: 404 })
+        }
+        const isRoot = Boolean(loaded.hit.rootHorseId) && loaded.hit.id === loaded.hit.rootHorseId
+        const ancestryByPath = isRoot && body.ancestryInput ? ancestryForEdit(loaded.horse.ancestryByPath, body.ancestryInput) : undefined
         const saved = await updateTraditionalHorseInPlace({
           horseId,
           horse: offspring,
           replaceRaceResults: true,
+          ancestryByPath,
         })
         return NextResponse.json({
           ok: true,
@@ -868,14 +829,12 @@ export async function PUT(req: NextRequest) {
           horseId: saved.horseId,
           pedigreeName: saved.pedigreeName,
           familyHref: saved.familyHref,
+          ancestryCount: ancestryByPath ? Object.keys(ancestryByPath).length : undefined,
         })
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e)
         const missing = message.includes('見つかりません')
-        return NextResponse.json(
-          { error: message },
-          { status: missing ? 404 : 400 }
-        )
+        return NextResponse.json({ error: message }, { status: missing ? 404 : 400 })
       }
     }
 
@@ -885,22 +844,15 @@ export async function PUT(req: NextRequest) {
       const sireName = (body.traditionalSireName || '').trim()
       const sireNk = (body.traditionalSireNetkeibaId || '').trim()
       if (!damId) {
-        return NextResponse.json(
-          { error: 'traditionalDamId（在来の母馬）が必要です' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: 'traditionalDamId（在来の母馬）が必要です' }, { status: 400 })
       }
       if (!sireId && !sireName) {
-        return NextResponse.json(
-          { error: '父馬を選ぶか父馬名を入力してください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: '父馬を選ぶか父馬名を入力してください' }, { status: 400 })
       }
       if (sireNk && sireNk !== 'none' && !/^[0-9a-fA-F]{10}$/.test(sireNk)) {
         return NextResponse.json(
           {
-            error:
-              'sireNetkeibaId は10桁の英数字か none です',
+            error: 'sireNetkeibaId は10桁の英数字か none です',
           },
           { status: 400 }
         )
@@ -921,9 +873,7 @@ export async function PUT(req: NextRequest) {
       fromSubject.name = String(horse.name || fromSubject.name)
       fromSubject.sex = 'male'
       if (fromSubject.foaledYear == null) {
-        fromSubject.foaledYear = (
-          horse.foaled as { year?: number } | undefined
-        )?.year
+        fromSubject.foaledYear = (horse.foaled as { year?: number } | undefined)?.year
       }
       const saved = await upsertHorseIntoDamFamily({
         damId,
@@ -952,9 +902,7 @@ export async function PUT(req: NextRequest) {
       let sireFileDeleted = ''
       const sireDirAbs = path.resolve(SIRE_DIR)
       const fpAbs = path.resolve(fp)
-      const canDeleteSire =
-        Boolean(body.deleteSireFile) &&
-        (fpAbs === sireDirAbs || fpAbs.startsWith(sireDirAbs + path.sep))
+      const canDeleteSire = Boolean(body.deleteSireFile) && (fpAbs === sireDirAbs || fpAbs.startsWith(sireDirAbs + path.sep))
       if (canDeleteSire) {
         await fs.unlink(fpAbs)
         sireFileDeleted = path.basename(fpAbs)
@@ -980,10 +928,7 @@ export async function PUT(req: NextRequest) {
     }
 
     if (!body.ancestryInput) {
-      return NextResponse.json(
-        { error: 'id and ancestryInput required' },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: 'id and ancestryInput required' }, { status: 400 })
     }
 
     const isDraft = Boolean(body.draft)
@@ -1018,9 +963,7 @@ export async function PUT(req: NextRequest) {
         ...(markResolved ? { incompleteFourGenResolved: true } : {}),
       }
       await fs.writeFile(fp, JSON.stringify(data, null, 2) + '\n', 'utf-8')
-      const queueUpdated = markResolved
-        ? await markQueueResolved(id, mode, ancestryCount)
-        : false
+      const queueUpdated = markResolved ? await markQueueResolved(id, mode, ancestryCount) : false
       return NextResponse.json({
         ok: true,
         mode,
@@ -1052,14 +995,8 @@ export async function PUT(req: NextRequest) {
       const idx = horses.findIndex((h: { id?: string }) => h.id === id)
       if (idx >= 0) horses[idx] = horse
       loaded.data.horses = horses
-      await fs.writeFile(
-        loaded.filepath,
-        JSON.stringify(loaded.data, null, 2) + '\n',
-        'utf-8'
-      )
-      const queueUpdated = markResolved
-        ? await markQueueResolved(id, mode, ancestryCount)
-        : false
+      await fs.writeFile(loaded.filepath, JSON.stringify(loaded.data, null, 2) + '\n', 'utf-8')
+      const queueUpdated = markResolved ? await markQueueResolved(id, mode, ancestryCount) : false
       return NextResponse.json({
         ok: true,
         mode,
@@ -1073,14 +1010,11 @@ export async function PUT(req: NextRequest) {
 
     // missing_sire
     const { item } = await loadQueueItem(id)
-    const sireName =
-      (body.subject?.name || item?.sire_name || '').trim() || '不詳'
+    const sireName = (body.subject?.name || item?.sire_name || '').trim() || '不詳'
     const subjectNk = (body.subject?.netkeibaId || '').trim()
 
     // netkeibaId が既存 pedigree-sires にあればそちらへ寄せる（重複下書き防止）
-    const existingByNk = subjectNk
-      ? await findSireFileByNetkeibaId(subjectNk)
-      : null
+    const existingByNk = subjectNk ? await findSireFileByNetkeibaId(subjectNk) : null
     const existing = existingByNk || (await findSireFileByName(sireName))
     let fp = existing?.filepath || null
     let data = existing?.data as {
@@ -1100,18 +1034,11 @@ export async function PUT(req: NextRequest) {
         pedigreeName: body.subject?.pedigreeName,
       })
       if (!horseIdBase) {
-        return NextResponse.json(
-          { error: 'id を手入力するか、英名か日本語名を入れてください' },
-          { status: 400 }
-        )
+        return NextResponse.json({ error: 'id を手入力するか、英名か日本語名を入れてください' }, { status: 400 })
       }
       const used = await collectUsedSireIds()
       const horseId = await allocateSireId(horseIdBase, used)
-      const stem = toFileStem(
-        (body.subject?.englishName || '').trim() ||
-          (hasLatin(sireName) ? sireName : horseId),
-        horseId
-      )
+      const stem = toFileStem((body.subject?.englishName || '').trim() || (hasLatin(sireName) ? sireName : horseId), horseId)
       fp = path.join(SIRE_DIR, `${stem}.json`)
       try {
         await fs.access(fp)
@@ -1169,27 +1096,16 @@ export async function PUT(req: NextRequest) {
     let linkedFiles: string[] = []
     if (!isDraft) {
       const childIds = collectRelatedChildIds(body, id, item)
-      const linked = await linkChildrenToRegisteredSire(
-        String(horse.name || sireName),
-        String(horse.id),
-        {
-          sireNetkeibaId: String(horse.netkeibaId || ''),
-          childIds,
-          alsoMatchSireNames: [
-            sireName,
-            body.queueSireName || '',
-            item?.sire_name || '',
-            String(horse.name || ''),
-          ],
-        }
-      )
+      const linked = await linkChildrenToRegisteredSire(String(horse.name || sireName), String(horse.id), {
+        sireNetkeibaId: String(horse.netkeibaId || ''),
+        childIds,
+        alsoMatchSireNames: [sireName, body.queueSireName || '', item?.sire_name || '', String(horse.name || '')],
+      })
       linkedCount = linked.linkedCount
       linkedFiles = linked.files
     }
 
-    const queueUpdated = markResolved
-      ? await markQueueResolved(id, mode, ancestryCount)
-      : false
+    const queueUpdated = markResolved ? await markQueueResolved(id, mode, ancestryCount) : false
 
     return NextResponse.json({
       ok: true,

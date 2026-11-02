@@ -5,23 +5,11 @@ import BloodTableEditor, { type CellFetchSite } from './BloodTableEditor'
 import SubjectFields from './SubjectFields'
 import HorseMappingScrapePanel from './HorseMappingScrapePanel'
 import { emptySubject, type EditorSubject, type RaceResultInput } from './subject'
-import {
-  PedigreePathNodeInput,
-  allAncestryPaths,
-  emptyNodeInput,
-  nodeFromJson,
-  pathLabelJa,
-  shiftFetchedAncestryToBranch,
-} from '@/lib/sire-pedigree-paths'
+import { PedigreePathNodeInput, allAncestryPaths, emptyNodeInput, nodeFromJson, pathLabelJa, shiftFetchedAncestryToBranch } from '@/lib/sire-pedigree-paths'
 import type { Breed } from '@/types/Breed'
 
 function subjectHasIdSource(s: EditorSubject) {
-  return Boolean(
-    s.id.trim() ||
-      s.englishName.trim() ||
-      s.name.trim() ||
-      s.pedigreeName.trim()
-  )
+  return Boolean(s.id.trim() || s.englishName.trim() || s.name.trim() || s.pedigreeName.trim())
 }
 
 type QueueMode = 'sire' | 'missing_sire' | 'root'
@@ -75,6 +63,7 @@ type TradHorseHit = {
   filepath: string
   pedigreeName: string
   familyHref: string
+  rootHorseId?: string
   store?: 'traditional' | 'sire'
 }
 
@@ -155,10 +144,7 @@ function isBlankName(v?: string | null): boolean {
   return !t || t === UNKNOWN
 }
 
-function recordedParentNames(
-  horse?: { sire?: string; dam?: string },
-  fallback?: { sire?: string; dam?: string }
-): { sire: string; dam: string } {
+function recordedParentNames(horse?: { sire?: string; dam?: string }, fallback?: { sire?: string; dam?: string }): { sire: string; dam: string } {
   const sire = (horse?.sire || fallback?.sire || '').trim()
   const dam = (horse?.dam || fallback?.dam || '').trim()
   return {
@@ -178,6 +164,8 @@ function mergeFetchedAncestry(
       color?: string
       breed?: string
       foaledYear?: number | null
+      netkeibaId?: string
+      id?: string
     }
   >,
   options?: {
@@ -199,17 +187,18 @@ function mergeFetchedAncestry(
     if (isBlank(cur.breed) && src.breed) {
       merged.breed = src.breed as Breed
     }
-    if (
-      options?.defaultBreedWhenNamed &&
-      isBlank(merged.breed) &&
-      !isBlankName(merged.name)
-    ) {
+    if (options?.defaultBreedWhenNamed && isBlank(merged.breed) && !isBlankName(merged.name)) {
       merged.breed = options.defaultBreedWhenNamed
     }
     if (isBlank(cur.foaledYear) && src.foaledYear != null) {
       merged.foaledYear = String(src.foaledYear)
     }
     if (!cur.sex && src.sex) merged.sex = src.sex
+    const sameName = !isBlankName(merged.name) && merged.name.trim() === (src.name || '').trim()
+    if (sameName && isBlank(merged.id) && src.id) merged.id = src.id
+    if (sameName && isBlank(merged.netkeibaId) && src.netkeibaId) {
+      merged.netkeibaId = src.netkeibaId
+    }
     next[path] = merged
   }
   return next
@@ -222,13 +211,11 @@ function cellPathFromFetchKey(key: FetchKey | null): string | null {
   if (!key) return null
   if (key.startsWith('pedigreequery-')) return key.slice('pedigreequery-'.length)
   if (key.startsWith('allbreed-')) return key.slice('allbreed-'.length)
+  if (key.startsWith('horse-')) return key.slice('horse-'.length)
   return null
 }
 
-const MODE_META: Record<
-  EditMode,
-  { label: string; title: string; help: string }
-> = {
+const MODE_META: Record<EditMode, { label: string; title: string; help: string }> = {
   sire: {
     label: '種牡馬不完全',
     title: '種牡馬4代血統 人力補正',
@@ -256,8 +243,8 @@ const MODE_META: Record<
   },
   edit_horse: {
     label: '既存馬編集',
-    title: '既存馬の編集（コメント・競走成績）',
-    help: '在来牝系の登録済み馬を検索して、コメントや重賞成績などを更新する。4代血統は触らない。',
+    title: '既存馬の編集',
+    help: '在来の登録済み馬か種牡馬を検索して更新する。牝祖と種牡馬は四代血統も編集できる。',
   },
   new_horse_scrape: {
     label: '新規馬（netkeiba）',
@@ -287,18 +274,13 @@ function raceResultsFromHorse(raw: unknown): RaceResultInput[] {
   })
 }
 
-function subjectFromHorse(
-  horse: Record<string, unknown>,
-  fallbackName = ''
-): EditorSubject {
+function subjectFromHorse(horse: Record<string, unknown>, fallbackName = ''): EditorSubject {
   const foaled = (horse.foaled || {}) as {
     year?: number
     month?: number
     day?: number
   }
-  const stats = horse.raceStats as
-    | { total?: { runs?: number | null; wins?: number | null } }
-    | undefined
+  const stats = horse.raceStats as { total?: { runs?: number | null; wins?: number | null } } | undefined
   const base = emptySubject()
   return {
     ...base,
@@ -326,18 +308,31 @@ function subjectFromHorse(
     sex: (horse.sex as EditorSubject['sex']) || '',
     source: String(horse.source || ''),
     comment: String(horse.comment || horse.comments || ''),
-    raceStatsRuns:
-      stats?.total?.runs != null ? String(stats.total.runs) : '',
-    raceStatsWins:
-      stats?.total?.wins != null ? String(stats.total.wins) : '',
+    raceStatsRuns: stats?.total?.runs != null ? String(stats.total.runs) : '',
+    raceStatsWins: stats?.total?.wins != null ? String(stats.total.wins) : '',
     raceResults: raceResultsFromHorse(horse.raceResults),
   }
 }
 
+function editHasFourGen(hit: TradHorseHit | null): boolean {
+  if (!hit) return false
+  if (hit.store === 'sire') return true
+  return Boolean(hit.rootHorseId) && hit.id === hit.rootHorseId
+}
+
+function editHitKind(hit: TradHorseHit): string {
+  if (hit.store === 'sire') return '種牡馬'
+  if (hit.rootHorseId && hit.id === hit.rootHorseId) return '牝祖'
+  return '在来'
+}
+
+function sameEditHit(a: TradHorseHit | null, b: TradHorseHit): boolean {
+  if (!a) return false
+  return a.id === b.id && (a.store || 'traditional') === (b.store || 'traditional') && a.filename === b.filename
+}
+
 function buildInputFromHorse(
-  ancestryByPath?: PedigreePayload['data']['horse'] extends undefined
-    ? never
-    : NonNullable<PedigreePayload['data']['horse']>['ancestryByPath'],
+  ancestryByPath?: PedigreePayload['data']['horse'] extends undefined ? never : NonNullable<PedigreePayload['data']['horse']>['ancestryByPath'],
   knownParents?: { sire?: string; dam?: string }
 ): Record<string, PedigreePathNodeInput> {
   const input: Record<string, PedigreePathNodeInput> = {}
@@ -366,15 +361,11 @@ export default function SirePedigreeEditor() {
   const [error, setError] = useState('')
   const [status, setStatus] = useState('')
   const [payload, setPayload] = useState<PedigreePayload | null>(null)
-  const [ancestryInput, setAncestryInput] = useState<
-    Record<string, PedigreePathNodeInput>
-  >({})
+  const [ancestryInput, setAncestryInput] = useState<Record<string, PedigreePathNodeInput>>({})
   const [subject, setSubject] = useState<EditorSubject>(emptySubject)
   const [idConflict, setIdConflict] = useState('')
   const [catalogQuery, setCatalogQuery] = useState('')
-  const [catalogSuggestions, setCatalogSuggestions] = useState<CatalogEntry[]>(
-    []
-  )
+  const [catalogSuggestions, setCatalogSuggestions] = useState<CatalogEntry[]>([])
   const [catalogResults, setCatalogResults] = useState<CatalogEntry[]>([])
   const [catalogSearching, setCatalogSearching] = useState(false)
   const [linkingExisting, setLinkingExisting] = useState(false)
@@ -386,9 +377,7 @@ export default function SirePedigreeEditor() {
   const [tradSireHits, setTradSireHits] = useState<TradHorseHit[]>([])
   const [tradDam, setTradDam] = useState<TradHorseHit | null>(null)
   const [tradSire, setTradSire] = useState<TradHorseHit | null>(null)
-  const [tradSearching, setTradSearching] = useState<'dam' | 'sire' | null>(
-    null
-  )
+  const [tradSearching, setTradSearching] = useState<'dam' | 'sire' | null>(null)
   const [savingTraditional, setSavingTraditional] = useState(false)
   const [externalSireName, setExternalSireName] = useState('')
   const [externalSireNetkeibaId, setExternalSireNetkeibaId] = useState('')
@@ -414,9 +403,7 @@ export default function SirePedigreeEditor() {
     setLoading(true)
     setError('')
     try {
-      const res = await fetch(
-        `/api/tools/sire-manual-queue?mode=${encodeURIComponent(nextMode)}`
-      )
+      const res = await fetch(`/api/tools/sire-manual-queue?mode=${encodeURIComponent(nextMode)}`)
       const json = await res.json()
       if (!res.ok) throw new Error(json.error || 'queue load failed')
       setCounts(json.counts || { sire: 0, missing_sire: 0, root: 0 })
@@ -430,52 +417,47 @@ export default function SirePedigreeEditor() {
     }
   }, [])
 
-  const loadTarget = useCallback(
-    async (item: QueueItem) => {
-      setError('')
-      setStatus('')
-      setPayload(null)
-      setTradDam(null)
-      setTradSire(null)
-      setTradDamHits([])
-      setTradSireHits([])
-      setTradDamQuery('')
-      setTradSireQuery('')
-      setExternalSireName('')
-      setExternalSireNetkeibaId('')
-      try {
-        const params = new URLSearchParams({
-          id: item.id,
-          mode: item.mode,
-        })
-        if (item.filepath) params.set('filepath', item.filepath)
-        if (item.sireName) params.set('sireName', item.sireName)
-        const res = await fetch(`/api/tools/sire-pedigree?${params}`)
-        const json = await res.json()
-        if (!res.ok) throw new Error(json.error || 'load failed')
-        if (!isQueueMode(modeRef.current) || modeRef.current !== item.mode) {
-          return
-        }
-        setPayload(json)
-        const horse = json.data?.horse || {}
-        setAncestryInput(
-          buildInputFromHorse(horse.ancestryByPath, {
-            sire: horse.sire,
-            dam: horse.dam,
-          })
-        )
-        setSubject(
-          subjectFromHorse(horse, item.mode === 'missing_sire' ? item.sireName || '' : '')
-        )
-        setExternalSireName(horse.sire || '')
-        setExternalSireNetkeibaId(horse.sireNetkeibaId || '')
-      } catch (e) {
-        if (!isQueueMode(modeRef.current)) return
-        setError(e instanceof Error ? e.message : String(e))
+  const loadTarget = useCallback(async (item: { id: string; mode: EditMode; filepath?: string; sireName?: string }) => {
+    setError('')
+    setStatus('')
+    setPayload(null)
+    setTradDam(null)
+    setTradSire(null)
+    setTradDamHits([])
+    setTradSireHits([])
+    setTradDamQuery('')
+    setTradSireQuery('')
+    setExternalSireName('')
+    setExternalSireNetkeibaId('')
+    try {
+      const params = new URLSearchParams({
+        id: item.id,
+        mode: item.mode,
+      })
+      if (item.filepath) params.set('filepath', item.filepath)
+      if (item.sireName) params.set('sireName', item.sireName)
+      const res = await fetch(`/api/tools/sire-pedigree?${params}`)
+      const json = await res.json()
+      if (!res.ok) throw new Error(json.error || 'load failed')
+      if (!isQueueMode(modeRef.current) || modeRef.current !== item.mode) {
+        return
       }
-    },
-    []
-  )
+      setPayload(json)
+      const horse = json.data?.horse || {}
+      setAncestryInput(
+        buildInputFromHorse(horse.ancestryByPath, {
+          sire: horse.sire,
+          dam: horse.dam,
+        })
+      )
+      setSubject(subjectFromHorse(horse, item.mode === 'missing_sire' ? item.sireName || '' : ''))
+      setExternalSireName(horse.sire || '')
+      setExternalSireNetkeibaId(horse.sireNetkeibaId || '')
+    } catch (e) {
+      if (!isQueueMode(modeRef.current)) return
+      setError(e instanceof Error ? e.message : String(e))
+    }
+  }, [])
 
   useEffect(() => {
     loadQueue(mode)
@@ -505,10 +487,20 @@ export default function SirePedigreeEditor() {
     setStatus('')
   }, [mode])
 
+  const queueTargetId = current?.id
+  const queueTargetMode = current?.mode
+  const queueTargetFilepath = current?.filepath
+  const queueTargetSireName = current?.sireName
+
   useEffect(() => {
-    if (!isQueueMode(mode) || !current?.id) return
-    loadTarget(current)
-  }, [mode, current?.id, current?.mode, loadTarget])
+    if (!isQueueMode(mode) || !queueTargetId || !queueTargetMode) return
+    loadTarget({
+      id: queueTargetId,
+      mode: queueTargetMode,
+      filepath: queueTargetFilepath,
+      sireName: queueTargetSireName,
+    })
+  }, [mode, queueTargetId, queueTargetMode, queueTargetFilepath, queueTargetSireName, loadTarget])
 
   useEffect(() => {
     if (mode !== 'missing_sire' || !current?.sireName) {
@@ -523,9 +515,7 @@ export default function SirePedigreeEditor() {
     let cancelled = false
     ;(async () => {
       try {
-        const res = await fetch(
-          `/api/tools/sire-catalog?hint=${encodeURIComponent(current.sireName || '')}&q=${encodeURIComponent(current.sireName || '')}&limit=12`
-        )
+        const res = await fetch(`/api/tools/sire-catalog?hint=${encodeURIComponent(current.sireName || '')}&q=${encodeURIComponent(current.sireName || '')}&limit=12`)
         const json = await res.json()
         if (!res.ok || cancelled) return
         setCatalogSuggestions(json.suggestions || [])
@@ -567,21 +557,12 @@ export default function SirePedigreeEditor() {
     const sireName = (tradSire?.name || externalSireName).trim()
     if (!current?.id || !tradDam || !sireName) return
     const horseId = subject.id || current.id
-    const sireFilename =
-      payload?.filename ||
-      (current.filepath || '').replace(/\\/g, '/').split('/').pop() ||
-      ''
+    const sireFilename = payload?.filename || (current.filepath || '').replace(/\\/g, '/').split('/').pop() || ''
     const proceed = window.confirm(
-      `id「${horseId}」を ${tradDam.filename} に書くと、` +
-        `種牡馬JSON（${sireFilename || 'pedigree-sires'}）と牝系JSONで同じ id が重複します。\n\n` +
-        `在来牝系への保存を続行しますか？`
+      `id「${horseId}」を ${tradDam.filename} に書くと、` + `種牡馬JSON（${sireFilename || 'pedigree-sires'}）と牝系JSONで同じ id が重複します。\n\n` + `在来牝系への保存を続行しますか？`
     )
     if (!proceed) return
-    const deleteSireFile = window.confirm(
-      `元の種牡馬ファイル ${sireFilename || horseId + '.json'} を削除しますか？\n\n` +
-        `OK: 削除する（在来側だけ残す）\n` +
-        `キャンセル: 種牡馬ファイルは残す`
-    )
+    const deleteSireFile = window.confirm(`元の種牡馬ファイル ${sireFilename || horseId + '.json'} を削除しますか？\n\n` + `OK: 削除する（在来側だけ残す）\n` + `キャンセル: 種牡馬ファイルは残す`)
     setSavingTraditional(true)
     setError('')
     setStatus('')
@@ -596,10 +577,7 @@ export default function SirePedigreeEditor() {
           traditionalDamId: tradDam.id,
           traditionalSireId: tradSire?.id || '',
           traditionalSireName: sireName,
-          traditionalSireNetkeibaId: (
-            tradSire?.netkeibaId ||
-            externalSireNetkeibaId
-          ).trim(),
+          traditionalSireNetkeibaId: (tradSire?.netkeibaId || externalSireNetkeibaId).trim(),
           subject,
           markResolved: true,
           deleteSireFile,
@@ -609,15 +587,10 @@ export default function SirePedigreeEditor() {
       if (!res.ok) throw new Error(json.error || 'traditional save failed')
       const sireNote = json.sireId
         ? `父 ${json.sireName}（id=${json.sireId}）`
-        : `父 ${json.sireName}` +
-          (json.sireNetkeibaId
-            ? ` / sireNetkeibaId=${json.sireNetkeibaId}`
-            : ' / sireIdなし（collect 待ち）')
+        : `父 ${json.sireName}` + (json.sireNetkeibaId ? ` / sireNetkeibaId=${json.sireNetkeibaId}` : ' / sireIdなし（collect 待ち）')
       setStatus(
         `在来牝系に${json.created ? '追加' : '更新'}しました（${json.filename} / ${sireNote} / 母 ${json.damName}）。` +
-          (json.sireFileDeleted
-            ? ` 種牡馬ファイル ${json.sireFileDeleted} は削除しました。`
-            : ' 種牡馬ファイルは残しています。') +
+          (json.sireFileDeleted ? ` 種牡馬ファイル ${json.sireFileDeleted} は削除しました。` : ' 種牡馬ファイルは残しています。') +
           ' 種牡馬キューからは外しています。'
       )
       setQueue((prev) => {
@@ -642,9 +615,7 @@ export default function SirePedigreeEditor() {
     setCatalogSearching(true)
     setError('')
     try {
-      const res = await fetch(
-        `/api/tools/sire-catalog?q=${encodeURIComponent(q)}&hint=${encodeURIComponent(current?.sireName || q)}&limit=30`
-      )
+      const res = await fetch(`/api/tools/sire-catalog?q=${encodeURIComponent(q)}&hint=${encodeURIComponent(current?.sireName || q)}&limit=30`)
       const json = await res.json()
       if (!res.ok) throw new Error(json.error || 'catalog search failed')
       setCatalogResults(json.items || [])
@@ -687,19 +658,13 @@ export default function SirePedigreeEditor() {
           id: current.id,
           mode: 'missing_sire',
           linkExistingSireId: entry.id,
-          relatedChildIds: (current.relatedChildren || [])
-            .map((c) => c.id)
-            .filter(Boolean),
+          relatedChildIds: (current.relatedChildren || []).map((c) => c.id).filter(Boolean),
           queueSireName: current.sireName || '',
         }),
       })
       const json = await res.json()
       if (!res.ok) throw new Error(json.error || 'link failed')
-      setStatus(
-        `登録済み種牡馬に紐づけました（${entry.name} / id=${entry.id}` +
-          (json.linkedCount != null ? ` / 子 ${json.linkedCount}頭` : '') +
-          '）。新規ファイルは作っていません。'
-      )
+      setStatus(`登録済み種牡馬に紐づけました（${entry.name} / id=${entry.id}` + (json.linkedCount != null ? ` / 子 ${json.linkedCount}頭` : '') + '）。新規ファイルは作っていません。')
       removeCurrentFromMissingQueue()
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e))
@@ -726,9 +691,7 @@ export default function SirePedigreeEditor() {
           id: current.id,
           mode: 'missing_sire',
           setSireNetkeibaIdOnly: nk,
-          relatedChildIds: (current.relatedChildren || [])
-            .map((c) => c.id)
-            .filter(Boolean),
+          relatedChildIds: (current.relatedChildren || []).map((c) => c.id).filter(Boolean),
           queueSireName: current.sireName || '',
           subject: { name: subject.name || current.sireName || '' },
         }),
@@ -764,32 +727,19 @@ export default function SirePedigreeEditor() {
         sire: current?.mode === 'root' ? current.sireName : '',
         dam: current?.damName,
       }),
-    [
-      payload?.data?.horse,
-      current?.mode,
-      current?.sireName,
-      current?.damName,
-    ]
+    [payload?.data?.horse, current?.mode, current?.sireName, current?.damName]
   )
 
-  const fetchFromPedigreeOnline = async (
-    site: FetchSite,
-    options?: { branch?: string; id?: string }
-  ) => {
+  const fetchFromPedigreeOnline = async (site: FetchSite, options?: { branch?: string; id?: string }) => {
     const branch = options?.branch
-    const id = (
-      options?.id ||
-      (site === 'pedigreequery'
-        ? subject.pedigreeQueryId
-        : subject.allBreedPedigreeId)
-    ).trim()
+    const id = (options?.id || (site === 'pedigreequery' ? subject.pedigreeQueryId : site === 'allbreed' ? subject.allBreedPedigreeId : '')).trim()
     if (!id) {
       const who = branch ? `${pathLabelJa(branch)}の` : ''
-      setError(
-        site === 'pedigreequery'
-          ? `${who}pedigreeQueryId を入力してください`
-          : `${who}allBreedPedigreeId を入力してください`
-      )
+      setError(site === 'horse' ? `${who}horseId を入力してください` : site === 'pedigreequery' ? `${who}pedigreeQueryId を入力してください` : `${who}allBreedPedigreeId を入力してください`)
+      return
+    }
+    if (site === 'horse' && !branch) {
+      setError('血統表のマスから horseId を読み込んでください')
       return
     }
     const fetchKey: FetchKey = branch ? `${site}-${branch}` : site
@@ -797,21 +747,17 @@ export default function SirePedigreeEditor() {
     setError('')
     setStatus('')
     try {
-      const res = await fetch('/api/tools/pedigree-online-fetch', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ site, id }),
-      })
+      const res =
+        site === 'horse'
+          ? await fetch(`/api/tools/registered-pedigree?id=${encodeURIComponent(id)}`)
+          : await fetch('/api/tools/pedigree-online-fetch', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ site, id }),
+            })
       const json = await res.json()
       if (!res.ok || !json.ok) {
-        throw new Error(
-          json.error ||
-            json.detail ||
-            `取得失敗 (${site})` +
-              (json.attempts
-                ? `: ${JSON.stringify(json.attempts)}`
-                : '')
-        )
+        throw new Error(json.error || json.detail || `取得失敗 (${site})` + (json.attempts ? `: ${JSON.stringify(json.attempts)}` : ''))
       }
 
       const fetched = (json.ancestryByPath || {}) as Record<
@@ -822,15 +768,14 @@ export default function SirePedigreeEditor() {
           color?: string
           breed?: string
           foaledYear?: number | null
+          netkeibaId?: string
+          id?: string
         }
       >
-      const toMerge = branch
-        ? shiftFetchedAncestryToBranch(branch, json.subject || {}, fetched)
-        : fetched
+      const toMerge = branch ? shiftFetchedAncestryToBranch(branch, json.subject || {}, fetched) : fetched
       setAncestryInput((prev) =>
         mergeFetchedAncestry(prev, toMerge, {
-          defaultBreedWhenNamed:
-            site === 'pedigreequery' ? 'サラ' : undefined,
+          defaultBreedWhenNamed: site === 'pedigreequery' ? 'サラ' : undefined,
         })
       )
 
@@ -853,17 +798,16 @@ export default function SirePedigreeEditor() {
       }
 
       const side = branch ? pathLabelJa(branch) : '本人'
-      const subjectName = (
-        json.subject?.englishName ||
-        json.subject?.name ||
-        ''
-      ).trim()
+      const subjectName = ((site === 'horse' ? json.name : '') || json.subject?.englishName || json.subject?.name || '').trim()
+      const sourceLabel = site === 'horse' ? `${json.store === 'sire' ? '種牡馬' : '在来'} ${json.id || id}` : json.fetchSource
       setStatus(
         `${side}を取得完了（` +
           (subjectName ? `${subjectName} / ` : '') +
-          `${json.fetchSource} / ${Object.keys(toMerge).length} paths）。` +
+          `${sourceLabel} / ${Object.keys(toMerge).length} paths）。` +
           (branch
-            ? 'ページ本人をそのマスに載せ、より遠い世代だけ空欄を埋めました。他の枝は触っていません。'
+            ? site === 'horse'
+              ? '登録馬をそのマスに載せ、より遠い世代だけ空欄を埋めました。他の枝は触っていません。'
+              : 'ページ本人をそのマスに載せ、より遠い世代だけ空欄を埋めました。他の枝は触っていません。'
             : '入力済み項目は維持し、空欄のみ埋めました。') +
           '内容を確認して保存してください。'
       )
@@ -876,12 +820,7 @@ export default function SirePedigreeEditor() {
 
   const save = async (goNext: boolean, draft = false) => {
     if (!current?.id) return
-    if (
-      !draft &&
-      current.mode === 'sire' &&
-      current.reason === 'missing_breeder' &&
-      !subject.breeder.trim()
-    ) {
+    if (!draft && current.mode === 'sire' && current.reason === 'missing_breeder' && !subject.breeder.trim()) {
       setError('生産者（産地）が空です。国名や牧場名を入れてから保存して。')
       return
     }
@@ -900,12 +839,8 @@ export default function SirePedigreeEditor() {
           subject,
           draft,
           markResolved: !draft,
-          relatedChildIds:
-            current.mode === 'missing_sire'
-              ? (current.relatedChildren || []).map((c) => c.id).filter(Boolean)
-              : undefined,
-          queueSireName:
-            current.mode === 'missing_sire' ? current.sireName || '' : undefined,
+          relatedChildIds: current.mode === 'missing_sire' ? (current.relatedChildren || []).map((c) => c.id).filter(Boolean) : undefined,
+          queueSireName: current.mode === 'missing_sire' ? current.sireName || '' : undefined,
         }),
       })
       const json = await res.json()
@@ -918,25 +853,17 @@ export default function SirePedigreeEditor() {
         extras.push('子へ sireId 書戻し済')
       }
       if (draft) {
-        setStatus(
-          `一時保存しました（${json.filename} / ${json.ancestryCount} paths）。` +
-            '空欄はそのまま残し、キューからも外していません。'
-        )
+        setStatus(`一時保存しました（${json.filename} / ${json.ancestryCount} paths）。` + '空欄はそのまま残し、キューからも外していません。')
         return
       }
       const breederOnly = current.reason === 'missing_breeder'
       setStatus(
         breederOnly
           ? `保存しました（${json.filename} / 生産者 ${subject.breeder.trim()}）。`
-          : `保存しました（${json.filename} / ${json.ancestryCount} paths` +
-            (extras.length ? ` / ${extras.join(' / ')}` : '') +
-            '）。空欄は「不詳」で埋め済み。'
+          : `保存しました（${json.filename} / ${json.ancestryCount} paths` + (extras.length ? ` / ${extras.join(' / ')}` : '') + '）。空欄は「不詳」で埋め済み。'
       )
       setQueue((prev) => {
-        const stillNeedBreeder =
-          Boolean(
-            current.missingBreeder || current.reason === 'missing_breeder'
-          ) && !subject.breeder.trim()
+        const stillNeedBreeder = Boolean(current.missingBreeder || current.reason === 'missing_breeder') && !subject.breeder.trim()
         if (stillNeedBreeder) {
           if (goNext) {
             setCursor((c) => Math.min(c + 1, Math.max(0, prev.length - 1)))
@@ -944,11 +871,7 @@ export default function SirePedigreeEditor() {
           return prev
         }
         const nextQueue = prev.filter((q) => {
-          if (
-            current.mode === 'missing_sire' &&
-            current.sireName &&
-            q.mode === 'missing_sire'
-          ) {
+          if (current.mode === 'missing_sire' && current.sireName && q.mode === 'missing_sire') {
             return q.sireName !== current.sireName
           }
           return q.id !== current.id
@@ -969,12 +892,17 @@ export default function SirePedigreeEditor() {
     }
   }
 
+  const subjectId = subject.id
+  const subjectEnglishName = subject.englishName
+  const subjectName = subject.name
+  const subjectPedigreeName = subject.pedigreeName
+
   useEffect(() => {
     if (mode !== 'new_family' && mode !== 'new_horse') {
       setIdConflict('')
       return
     }
-    if (!subjectHasIdSource(subject)) {
+    if (!subjectId.trim() && !subjectEnglishName.trim() && !subjectName.trim() && !subjectPedigreeName.trim()) {
       setIdConflict('')
       return
     }
@@ -982,10 +910,10 @@ export default function SirePedigreeEditor() {
     const t = setTimeout(async () => {
       try {
         const params = new URLSearchParams({
-          checkId: subject.id,
-          englishName: subject.englishName,
-          name: subject.name,
-          pedigreeName: subject.pedigreeName,
+          checkId: subjectId,
+          englishName: subjectEnglishName,
+          name: subjectName,
+          pedigreeName: subjectPedigreeName,
         })
         const res = await fetch(`/api/tools/traditional-horse?${params}`)
         const json = await res.json()
@@ -1012,7 +940,7 @@ export default function SirePedigreeEditor() {
       cancelled = true
       clearTimeout(t)
     }
-  }, [mode, subject.id, subject.englishName, subject.name, subject.pedigreeName])
+  }, [mode, subjectId, subjectEnglishName, subjectName, subjectPedigreeName])
 
   const saveNewFamily = async (draft = false) => {
     setSaving(true)
@@ -1066,23 +994,15 @@ export default function SirePedigreeEditor() {
           traditionalDamId: tradDam.id,
           traditionalSireId: tradSire?.id || '',
           traditionalSireName: sireName,
-          traditionalSireNetkeibaId: (
-            tradSire?.netkeibaId ||
-            externalSireNetkeibaId
-          ).trim(),
+          traditionalSireNetkeibaId: (tradSire?.netkeibaId || externalSireNetkeibaId).trim(),
         }),
       })
       const json = await res.json()
       if (!res.ok) throw new Error(json.error || 'save failed')
       const sireNote = json.sireId
         ? `父 ${json.sireName}（id=${json.sireId}）`
-        : `父 ${json.sireName}` +
-          (json.sireNetkeibaId
-            ? ` / sireNetkeibaId=${json.sireNetkeibaId}`
-            : ' / sireIdなし（collect 待ち）')
-      setStatus(
-        `在来牝系に追加しました（${json.filename} / id=${json.horseId} / ${sireNote} / 母 ${json.damName}）。`
-      )
+        : `父 ${json.sireName}` + (json.sireNetkeibaId ? ` / sireNetkeibaId=${json.sireNetkeibaId}` : ' / sireIdなし（collect 待ち）')
+      setStatus(`在来牝系に追加しました（${json.filename} / id=${json.horseId} / ${sireNote} / 母 ${json.damName}）。`)
       setSubject((prev) => ({ ...prev, id: json.horseId || prev.id }))
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e))
@@ -1098,7 +1018,7 @@ export default function SirePedigreeEditor() {
     setEditSearching(true)
     setError('')
     try {
-      const params = new URLSearchParams({ q, limit: '20' })
+      const params = new URLSearchParams({ q, limit: '20', scope: 'edit' })
       const res = await fetch(`/api/tools/traditional-horse?${params}`)
       const json = await res.json()
       if (!res.ok) throw new Error(json.error || 'traditional search failed')
@@ -1122,7 +1042,7 @@ export default function SirePedigreeEditor() {
     try {
       const params = new URLSearchParams({
         id: hit.id,
-        mode: 'edit_horse',
+        mode: hit.store === 'sire' ? 'sire' : 'edit_horse',
       })
       const res = await fetch(`/api/tools/sire-pedigree?${params}`)
       const json = await res.json()
@@ -1131,6 +1051,14 @@ export default function SirePedigreeEditor() {
       setPayload(json)
       const horse = json.data?.horse || {}
       setSubject(subjectFromHorse(horse))
+      setAncestryInput(
+        editHasFourGen(hit)
+          ? buildInputFromHorse(horse.ancestryByPath, {
+              sire: horse.sire,
+              dam: horse.dam,
+            })
+          : buildInputFromHorse()
+      )
       setEditTarget({
         ...hit,
         familyHref: json.familyHref || hit.familyHref,
@@ -1160,16 +1088,14 @@ export default function SirePedigreeEditor() {
         body: JSON.stringify({
           id: horseId,
           mode: 'edit_horse',
+          editStore: editTarget?.store === 'sire' ? 'sire' : 'traditional',
           subject,
+          ...(editHasFourGen(editTarget) ? { ancestryInput } : {}),
         }),
       })
       const json = await res.json()
       if (!res.ok) throw new Error(json.error || 'save failed')
-      setStatus(
-        `更新しました（${json.filename} / id=${json.horseId}` +
-          (json.familyHref ? ` / ${json.familyHref}` : '') +
-          '）。'
-      )
+      setStatus(`更新しました（${json.filename} / id=${json.horseId}` + (json.ancestryCount != null ? ` / 四代 ${json.ancestryCount}` : '') + (json.familyHref ? ` / ${json.familyHref}` : '') + '）。')
       if (editTarget) {
         await loadEditHorse(editTarget)
       }
@@ -1180,11 +1106,7 @@ export default function SirePedigreeEditor() {
     }
   }
 
-  const showEditor =
-    mode === 'new_family' ||
-    mode === 'new_horse' ||
-    mode === 'edit_horse' ||
-    (isQueueMode(mode) && Boolean(current))
+  const showEditor = mode === 'new_family' || mode === 'new_horse' || mode === 'edit_horse' || (isQueueMode(mode) && Boolean(current))
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-6 text-stone-900">
@@ -1197,65 +1119,38 @@ export default function SirePedigreeEditor() {
             <button
               key={m}
               type="button"
-              className={
-                m === mode
-                  ? 'rounded bg-stone-900 px-3 py-1.5 text-sm text-white'
-                  : 'rounded border border-stone-400 px-3 py-1.5 text-sm hover:bg-stone-100'
-              }
+              className={m === mode ? 'rounded bg-stone-900 px-3 py-1.5 text-sm text-white' : 'rounded border border-stone-400 px-3 py-1.5 text-sm hover:bg-stone-100'}
               onClick={() => setMode(m)}
             >
               {MODE_META[m].label}
-              {isQueueMode(m) ? (
-                <span className="ml-1 font-mono text-xs opacity-80">
-                  ({counts[m] ?? 0})
-                </span>
-              ) : null}
+              {isQueueMode(m) ? <span className="ml-1 font-mono text-xs opacity-80">({counts[m] ?? 0})</span> : null}
             </button>
           ))}
         </div>
 
         {isQueueMode(mode) && (
-        <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
-          <span className="rounded bg-stone-800 px-2 py-1 font-mono text-white">
-            {progressLabel}
-          </span>
-          <button
-            type="button"
-            className="rounded border border-stone-400 px-3 py-1 hover:bg-stone-100"
-            onClick={() => loadQueue(mode)}
-          >
-            キュー再読込
-          </button>
-          <button
-            type="button"
-            className="rounded border border-stone-400 px-3 py-1 disabled:opacity-40"
-            disabled={cursor <= 0}
-            onClick={() => setCursor((c) => Math.max(0, c - 1))}
-          >
-            ← 前へ
-          </button>
-          <button
-            type="button"
-            className="rounded border border-stone-400 px-3 py-1 disabled:opacity-40"
-            disabled={cursor >= queue.length - 1}
-            onClick={() => setCursor((c) => Math.min(queue.length - 1, c + 1))}
-          >
-            次へ →
-          </button>
-        </div>
+          <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
+            <span className="rounded bg-stone-800 px-2 py-1 font-mono text-white">{progressLabel}</span>
+            <button type="button" className="rounded border border-stone-400 px-3 py-1 hover:bg-stone-100" onClick={() => loadQueue(mode)}>
+              キュー再読込
+            </button>
+            <button type="button" className="rounded border border-stone-400 px-3 py-1 disabled:opacity-40" disabled={cursor <= 0} onClick={() => setCursor((c) => Math.max(0, c - 1))}>
+              ← 前へ
+            </button>
+            <button
+              type="button"
+              className="rounded border border-stone-400 px-3 py-1 disabled:opacity-40"
+              disabled={cursor >= queue.length - 1}
+              onClick={() => setCursor((c) => Math.min(queue.length - 1, c + 1))}
+            >
+              次へ →
+            </button>
+          </div>
         )}
       </header>
 
-      {error && (
-        <div className="mb-4 rounded border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-800">
-          {error}
-        </div>
-      )}
-      {status && (
-        <div className="mb-4 rounded border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm text-emerald-900">
-          {status}
-        </div>
-      )}
+      {error && <div className="mb-4 rounded border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-800">{error}</div>}
+      {status && <div className="mb-4 rounded border border-emerald-300 bg-emerald-50 px-3 py-2 text-sm text-emerald-900">{status}</div>}
 
       {mode === 'new_horse_scrape' ? (
         <HorseMappingScrapePanel />
@@ -1268,67 +1163,26 @@ export default function SirePedigreeEditor() {
           <section className="mb-4 rounded border border-stone-300 bg-stone-50 p-4">
             <div className="mb-3 flex flex-wrap items-start justify-between gap-x-6 gap-y-2 border-b border-stone-200 pb-3">
               <div className="min-w-0">
-                <div className="text-xs text-stone-500">
-                  対象（{MODE_META[(current?.mode || mode)].label}）
-                </div>
-                <div className="text-lg font-medium">
-                  {current
-                    ? current.displayName || current.name
-                    : mode === 'edit_horse'
-                      ? editTarget?.name || '編集する馬を検索'
-                      : subject.name || '新規入力'}
-                </div>
+                <div className="text-xs text-stone-500">対象（{MODE_META[current?.mode || mode].label}）</div>
+                <div className="text-lg font-medium">{current ? current.displayName || current.name : mode === 'edit_horse' ? editTarget?.name || '編集する馬を検索' : subject.name || '新規入力'}</div>
                 <div className="mt-0.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs text-stone-600">
-                  {current?.mode === 'missing_sire' && current.sireName ? (
-                    <span className="text-amber-800">
-                      父馬名: {current.sireName}（sireNetkeibaId=none）
-                    </span>
-                  ) : null}
-                  {(current && current.mode !== 'missing_sire') ||
-                  (mode === 'edit_horse' && editTarget && subject.id) ? (
-                    <span className="font-mono">
-                      id: {current?.id || subject.id}
-                    </span>
-                  ) : null}
-                  {(current?.netkeibaId && current.mode !== 'missing_sire') ||
-                  (mode === 'edit_horse' &&
-                    editTarget &&
-                    subject.netkeibaId) ? (
-                    <a
-                      className="text-sky-700 underline"
-                      href={`https://db.netkeiba.com/horse/ped/${current?.netkeibaId || subject.netkeibaId}/`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                  {current?.mode === 'missing_sire' && current.sireName ? <span className="text-amber-800">父馬名: {current.sireName}（sireNetkeibaId=none）</span> : null}
+                  {(current && current.mode !== 'missing_sire') || (mode === 'edit_horse' && editTarget && subject.id) ? <span className="font-mono">id: {current?.id || subject.id}</span> : null}
+                  {(current?.netkeibaId && current.mode !== 'missing_sire') || (mode === 'edit_horse' && editTarget && subject.netkeibaId) ? (
+                    <a className="text-sky-700 underline" href={`https://db.netkeiba.com/horse/ped/${current?.netkeibaId || subject.netkeibaId}/`} target="_blank" rel="noreferrer">
                       netkeiba 血統
                     </a>
                   ) : null}
-                  {(mode !== 'edit_horse' || editTarget) &&
-                  (recordedParents.sire || recordedParents.dam) ? (
+                  {(mode !== 'edit_horse' || editTarget) && (recordedParents.sire || recordedParents.dam) ? (
                     <span>
                       {recordedParents.sire ? <>父: {recordedParents.sire}</> : null}
-                      {recordedParents.sire && recordedParents.dam ? (
-                        <span className="mx-1.5 text-stone-400">/</span>
-                      ) : null}
+                      {recordedParents.sire && recordedParents.dam ? <span className="mx-1.5 text-stone-400">/</span> : null}
                       {recordedParents.dam ? <>母: {recordedParents.dam}</> : null}
                     </span>
                   ) : null}
-                  {mode === 'edit_horse' &&
-                  editTarget &&
-                  (payload?.filename || editTarget?.filename) ? (
-                    <span className="font-mono">
-                      {payload?.filename || editTarget?.filename}
-                    </span>
-                  ) : null}
-                  {mode === 'edit_horse' &&
-                  editTarget &&
-                  (payload?.familyHref || editTarget?.familyHref) ? (
-                    <a
-                      className="text-sky-700 underline"
-                      href={payload?.familyHref || editTarget?.familyHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                  {mode === 'edit_horse' && editTarget && (payload?.filename || editTarget?.filename) ? <span className="font-mono">{payload?.filename || editTarget?.filename}</span> : null}
+                  {mode === 'edit_horse' && editTarget && (payload?.familyHref || editTarget?.familyHref) ? (
+                    <a className="text-sky-700 underline" href={payload?.familyHref || editTarget?.familyHref} target="_blank" rel="noreferrer">
                       牝系ページ
                     </a>
                   ) : null}
@@ -1336,12 +1190,8 @@ export default function SirePedigreeEditor() {
                 {current ? (
                   <div className="mt-1 text-[11px] text-stone-500">
                     reason: {current.reason || '?'}
-                    {current.missingBreeder ||
-                    current.reason === 'missing_breeder'
-                      ? ' / 生産者なし'
-                      : ''}{' '}
-                    / 欠け: {current.ancestryMissing ?? '?'} / 既存:{' '}
-                    {current.ancestryPresent ?? '?'} / 入力済み名: {filledCount}/30
+                    {current.missingBreeder || current.reason === 'missing_breeder' ? ' / 生産者なし' : ''} / 欠け: {current.ancestryMissing ?? '?'} / 既存: {current.ancestryPresent ?? '?'} /
+                    入力済み名: {filledCount}/30
                     {payload?.isNew ? ' / 新規作成' : ''}
                   </div>
                 ) : idConflict ? (
@@ -1353,52 +1203,32 @@ export default function SirePedigreeEditor() {
                   <div className="text-stone-500">
                     産駒
                     {(current.relatedChildrenTotal || 0) > 0
-                      ? (current.relatedChildrenTotal || 0) >
-                        (current.relatedChildren || []).length
+                      ? (current.relatedChildrenTotal || 0) > (current.relatedChildren || []).length
                         ? `（${current.relatedChildren?.length}/${current.relatedChildrenTotal}）`
                         : `（${current.relatedChildrenTotal}頭）`
                       : ''}
                   </div>
                   {(current.relatedChildren || []).length === 0 ? (
-                    <div className="mt-0.5 text-stone-400">
-                      在来データに産駒なし
-                    </div>
+                    <div className="mt-0.5 text-stone-400">在来データに産駒なし</div>
                   ) : (
                     <ul className="mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-stone-800">
                       {(current.relatedChildren || []).map((c) => (
                         <li key={`${c.filename}:${c.id}`}>
                           <span className="font-medium">{c.name}</span>
                           {c.netkeibaId ? (
-                            <a
-                              className="ml-1 text-sky-700 underline"
-                              href={`https://db.netkeiba.com/horse/${c.netkeibaId}/`}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
+                            <a className="ml-1 text-sky-700 underline" href={`https://db.netkeiba.com/horse/${c.netkeibaId}/`} target="_blank" rel="noreferrer">
                               nk
                             </a>
                           ) : null}
                           {c.familyHref ? (
-                            <a
-                              className="ml-1 text-stone-500 underline"
-                              href={c.familyHref}
-                              target="_blank"
-                              rel="noreferrer"
-                              title={c.filename}
-                            >
+                            <a className="ml-1 text-stone-500 underline" href={c.familyHref} target="_blank" rel="noreferrer" title={c.filename}>
                               牝系
                             </a>
                           ) : null}
                         </li>
                       ))}
-                      {(current.relatedChildrenTotal || 0) >
-                      (current.relatedChildren || []).length ? (
-                        <li className="text-stone-400">
-                          ほか{' '}
-                          {(current.relatedChildrenTotal || 0) -
-                            (current.relatedChildren || []).length}
-                          頭
-                        </li>
+                      {(current.relatedChildrenTotal || 0) > (current.relatedChildren || []).length ? (
+                        <li className="text-stone-400">ほか {(current.relatedChildrenTotal || 0) - (current.relatedChildren || []).length}頭</li>
                       ) : null}
                     </ul>
                   )}
@@ -1407,9 +1237,7 @@ export default function SirePedigreeEditor() {
             </div>
             {mode === 'edit_horse' && (
               <div className="mb-3 rounded border border-sky-200 bg-sky-50/80 px-3 py-2">
-                <div className="text-xs font-medium text-sky-900">
-                  編集する馬を検索
-                </div>
+                <div className="text-xs font-medium text-sky-900">編集する馬を検索</div>
                 <div className="mt-1 flex gap-2">
                   <input
                     className="min-w-0 flex-1 rounded border border-stone-300 bg-white px-2 py-1 font-mono text-sm"
@@ -1432,19 +1260,15 @@ export default function SirePedigreeEditor() {
                     {editSearching ? '検索中…' : '検索'}
                   </button>
                 </div>
-                {!payload && (
-                  <p className="mt-2 text-xs text-stone-600">
-                    馬を選ぶと、コメントと重賞成績を編集できる。
-                  </p>
-                )}
+                {!payload && <p className="mt-2 text-xs text-stone-600">馬を選ぶと、コメントと重賞成績を編集できる。牝祖と種牡馬は四代血統表も出る。</p>}
                 {editHits.length > 0 && (
                   <ul className="mt-2 max-h-48 space-y-1 overflow-y-auto">
                     {editHits.map((hit) => (
-                      <li key={`edit:${hit.filename}:${hit.id}`}>
+                      <li key={`edit:${hit.store || 'traditional'}:${hit.filename}:${hit.id}`}>
                         <button
                           type="button"
                           className={
-                            editTarget?.id === hit.id
+                            sameEditHit(editTarget, hit)
                               ? 'w-full rounded border border-sky-400 bg-sky-100 px-2 py-1 text-left'
                               : 'w-full rounded border border-sky-100 bg-white px-2 py-1 text-left hover:bg-sky-100'
                           }
@@ -1454,17 +1278,10 @@ export default function SirePedigreeEditor() {
                           }}
                         >
                           <span className="font-medium">{hit.name}</span>
-                          {hit.englishName ? (
-                            <span className="ml-2 text-xs text-stone-500">
-                              {hit.englishName}
-                            </span>
-                          ) : null}
-                          {hit.horsePedigreeName &&
-                          hit.horsePedigreeName !== hit.name &&
-                          hit.horsePedigreeName !== hit.englishName ? (
-                            <span className="ml-2 text-xs text-stone-500">
-                              {hit.horsePedigreeName}
-                            </span>
+                          <span className="ml-2 text-[11px] text-violet-800">{editHitKind(hit)}</span>
+                          {hit.englishName ? <span className="ml-2 text-xs text-stone-500">{hit.englishName}</span> : null}
+                          {hit.horsePedigreeName && hit.horsePedigreeName !== hit.name && hit.horsePedigreeName !== hit.englishName ? (
+                            <span className="ml-2 text-xs text-stone-500">{hit.horsePedigreeName}</span>
                           ) : null}
                           <span className="ml-2 font-mono text-[11px] text-stone-500">
                             {hit.id}
@@ -1481,51 +1298,24 @@ export default function SirePedigreeEditor() {
               </div>
             )}
             {(mode !== 'edit_horse' || Boolean(editTarget)) && (
-            <SubjectFields
-              subject={subject}
-              onChange={setSubject}
-              fetching={fetching}
-              onFetch={(site) => fetchFromPedigreeOnline(site)}
-              nameLabel={
-                current?.mode === 'missing_sire'
-                  ? '父馬名'
-                  : mode === 'new_family'
-                    ? '牝祖名'
-                    : '馬名'
-              }
-              idEditable={
-                current?.mode === 'missing_sire' ||
-                mode === 'new_family' ||
-                mode === 'new_horse'
-              }
-              idWarning={idConflict}
-              showSex={
-                mode === 'new_horse' || mode === 'edit_horse'
-                  ? 'select'
-                  : mode === 'new_family'
-                    ? 'female'
-                    : current?.mode === 'missing_sire' || current?.mode === 'sire'
-                      ? 'male'
-                      : 'hidden'
-              }
-              extrasDefaultOpen={
-                mode === 'new_family' ||
-                mode === 'new_horse' ||
-                mode === 'edit_horse'
-              }
-              breederRequired={
-                current?.mode === 'sire' &&
-                (current.missingBreeder || current.reason === 'missing_breeder')
-              }
-            />
+              <SubjectFields
+                subject={subject}
+                onChange={setSubject}
+                fetching={fetching}
+                onFetch={(site) => fetchFromPedigreeOnline(site)}
+                nameLabel={current?.mode === 'missing_sire' ? '父馬名' : mode === 'new_family' ? '牝祖名' : '馬名'}
+                idEditable={current?.mode === 'missing_sire' || mode === 'new_family' || mode === 'new_horse'}
+                idWarning={idConflict}
+                showSex={mode === 'new_horse' || mode === 'edit_horse' ? 'select' : mode === 'new_family' ? 'female' : current?.mode === 'missing_sire' || current?.mode === 'sire' ? 'male' : 'hidden'}
+                extrasDefaultOpen={mode === 'new_family' || mode === 'new_horse' || mode === 'edit_horse'}
+                breederRequired={current?.mode === 'sire' && (current.missingBreeder || current.reason === 'missing_breeder')}
+              />
             )}
           </section>
 
           {(current?.mode === 'sire' || mode === 'new_horse') && (
             <section className="mb-4 rounded border border-violet-200 bg-violet-50/80 px-4 py-3 text-sm">
-              <div className="text-xs font-medium text-violet-900">
-                {mode === 'new_horse' ? '両親' : '在来牝系へ保存'}
-              </div>
+              <div className="text-xs font-medium text-violet-900">{mode === 'new_horse' ? '両親' : '在来牝系へ保存'}</div>
               <div className="mt-3 grid gap-3 md:grid-cols-2">
                 <div>
                   <div className="text-xs text-stone-500">母馬*</div>
@@ -1533,35 +1323,20 @@ export default function SirePedigreeEditor() {
                     <div className="mt-1 rounded border border-violet-200 bg-white px-2 py-1.5">
                       <div className="font-medium">
                         {tradDam.name}
-                        {tradDam.englishName ? (
-                          <span className="ml-2 text-xs font-normal text-stone-500">
-                            {tradDam.englishName}
-                          </span>
-                        ) : null}
+                        {tradDam.englishName ? <span className="ml-2 text-xs font-normal text-stone-500">{tradDam.englishName}</span> : null}
                       </div>
                       <div className="font-mono text-[11px] text-stone-500">
                         id={tradDam.id}
-                        {tradDam.foaledYear != null
-                          ? ` / ${tradDam.foaledYear}`
-                          : ''}
+                        {tradDam.foaledYear != null ? ` / ${tradDam.foaledYear}` : ''}
                         {' / '}
                         {tradDam.filename}
                       </div>
                       {tradDam.familyHref ? (
-                        <a
-                          className="text-xs text-sky-700 underline"
-                          href={tradDam.familyHref}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
+                        <a className="text-xs text-sky-700 underline" href={tradDam.familyHref} target="_blank" rel="noreferrer">
                           牝系ページ
                         </a>
                       ) : null}
-                      <button
-                        type="button"
-                        className="ml-2 text-xs text-stone-500 underline"
-                        onClick={() => setTradDam(null)}
-                      >
+                      <button type="button" className="ml-2 text-xs text-stone-500 underline" onClick={() => setTradDam(null)}>
                         選び直す
                       </button>
                     </div>
@@ -1582,9 +1357,7 @@ export default function SirePedigreeEditor() {
                         <button
                           type="button"
                           className="rounded border border-stone-400 bg-white px-2 py-1 text-xs disabled:opacity-50"
-                          disabled={
-                            tradSearching === 'dam' || !tradDamQuery.trim()
-                          }
+                          disabled={tradSearching === 'dam' || !tradDamQuery.trim()}
                           onClick={() => searchTraditionalHorse('dam')}
                         >
                           {tradSearching === 'dam' ? '検索中…' : '検索'}
@@ -1594,23 +1367,12 @@ export default function SirePedigreeEditor() {
                         <ul className="mt-1 max-h-40 space-y-1 overflow-y-auto">
                           {tradDamHits.map((hit) => (
                             <li key={`dam:${hit.filename}:${hit.id}`}>
-                              <button
-                                type="button"
-                                className="w-full rounded border border-violet-100 bg-white px-2 py-1 text-left hover:bg-violet-100"
-                                onClick={() => setTradDam(hit)}
-                              >
+                              <button type="button" className="w-full rounded border border-violet-100 bg-white px-2 py-1 text-left hover:bg-violet-100" onClick={() => setTradDam(hit)}>
                                 <span className="font-medium">{hit.name}</span>
-                                {hit.horsePedigreeName &&
-                                hit.horsePedigreeName !== hit.name ? (
-                                  <span className="ml-2 text-xs text-stone-500">
-                                    {hit.horsePedigreeName}
-                                  </span>
-                                ) : null}
+                                {hit.horsePedigreeName && hit.horsePedigreeName !== hit.name ? <span className="ml-2 text-xs text-stone-500">{hit.horsePedigreeName}</span> : null}
                                 <span className="ml-2 font-mono text-[11px] text-stone-500">
                                   {hit.id}
-                                  {hit.foaledYear != null
-                                    ? ` / ${hit.foaledYear}`
-                                    : ''}
+                                  {hit.foaledYear != null ? ` / ${hit.foaledYear}` : ''}
                                   {' / '}
                                   {hit.filename}
                                 </span>
@@ -1628,50 +1390,30 @@ export default function SirePedigreeEditor() {
                     <div className="mt-1 rounded border border-violet-200 bg-white px-2 py-1.5">
                       <div className="font-medium">
                         {tradSire.name}
-                        <span className="ml-2 text-xs font-normal text-violet-800">
-                          {tradSire.store === 'sire'
-                            ? '種牡馬JSON'
-                            : '在来 id あり'}
-                        </span>
+                        <span className="ml-2 text-xs font-normal text-violet-800">{tradSire.store === 'sire' ? '種牡馬JSON' : '在来 id あり'}</span>
                       </div>
                       <div className="font-mono text-[11px] text-stone-500">
                         id={tradSire.id}
-                        {tradSire.netkeibaId
-                          ? ` / nk=${tradSire.netkeibaId}`
-                          : ''}
+                        {tradSire.netkeibaId ? ` / nk=${tradSire.netkeibaId}` : ''}
                         {' / '}
                         {tradSire.filename}
                       </div>
-                      <button
-                        type="button"
-                        className="text-xs text-stone-500 underline"
-                        onClick={() => setTradSire(null)}
-                      >
+                      <button type="button" className="text-xs text-stone-500 underline" onClick={() => setTradSire(null)}>
                         紐づけを外す（馬名+IDだけにする）
                       </button>
                     </div>
                   ) : (
                     <>
                       <label className="mt-1 block">
-                        <span className="text-[11px] text-stone-500">
-                          父馬名
-                        </span>
-                        <input
-                          className="w-full rounded border border-stone-300 px-2 py-1"
-                          value={externalSireName}
-                          onChange={(e) => setExternalSireName(e.target.value)}
-                        />
+                        <span className="text-[11px] text-stone-500">父馬名</span>
+                        <input className="w-full rounded border border-stone-300 px-2 py-1" value={externalSireName} onChange={(e) => setExternalSireName(e.target.value)} />
                       </label>
                       <label className="mt-1 block">
-                        <span className="text-[11px] text-stone-500">
-                          sireNetkeibaId
-                        </span>
+                        <span className="text-[11px] text-stone-500">sireNetkeibaId</span>
                         <input
                           className="w-full rounded border border-stone-300 px-2 py-1 font-mono text-sm"
                           value={externalSireNetkeibaId}
-                          onChange={(e) =>
-                            setExternalSireNetkeibaId(e.target.value)
-                          }
+                          onChange={(e) => setExternalSireNetkeibaId(e.target.value)}
                         />
                       </label>
                       <div className="mt-2 flex gap-2">
@@ -1689,9 +1431,7 @@ export default function SirePedigreeEditor() {
                         <button
                           type="button"
                           className="rounded border border-stone-400 bg-white px-2 py-1 text-xs disabled:opacity-50"
-                          disabled={
-                            tradSearching === 'sire' || !tradSireQuery.trim()
-                          }
+                          disabled={tradSearching === 'sire' || !tradSireQuery.trim()}
                           onClick={() => searchTraditionalHorse('sire')}
                         >
                           {tradSearching === 'sire' ? '検索中…' : '検索'}
@@ -1711,20 +1451,11 @@ export default function SirePedigreeEditor() {
                                 }}
                               >
                                 <span className="font-medium">{hit.name}</span>
-                                {hit.horsePedigreeName &&
-                                hit.horsePedigreeName !== hit.name ? (
-                                  <span className="ml-2 text-xs text-stone-500">
-                                    {hit.horsePedigreeName}
-                                  </span>
-                                ) : null}
-                                <span className="ml-1 text-[11px] text-violet-800">
-                                  {hit.store === 'sire' ? '種牡馬' : '在来'}
-                                </span>
+                                {hit.horsePedigreeName && hit.horsePedigreeName !== hit.name ? <span className="ml-2 text-xs text-stone-500">{hit.horsePedigreeName}</span> : null}
+                                <span className="ml-1 text-[11px] text-violet-800">{hit.store === 'sire' ? '種牡馬' : '在来'}</span>
                                 <span className="ml-2 font-mono text-[11px] text-stone-500">
                                   {hit.id}
-                                  {hit.netkeibaId
-                                    ? ` / ${hit.netkeibaId}`
-                                    : ''}
+                                  {hit.netkeibaId ? ` / ${hit.netkeibaId}` : ''}
                                   {' / '}
                                   {hit.filename}
                                 </span>
@@ -1741,32 +1472,18 @@ export default function SirePedigreeEditor() {
                 type="button"
                 className="mt-3 rounded bg-violet-800 px-3 py-1.5 text-sm text-white disabled:opacity-50"
                 disabled={
-                  savingTraditional ||
-                  saving ||
-                  !tradDam ||
-                  !(tradSire || externalSireName.trim()) ||
-                  !subjectHasIdSource(subject) ||
-                  (mode === 'new_horse' && !subject.sex) ||
-                  Boolean(idConflict)
+                  savingTraditional || saving || !tradDam || !(tradSire || externalSireName.trim()) || !subjectHasIdSource(subject) || (mode === 'new_horse' && !subject.sex) || Boolean(idConflict)
                 }
-                onClick={() =>
-                  mode === 'new_horse' ? saveNewHorse() : saveToTraditional()
-                }
+                onClick={() => (mode === 'new_horse' ? saveNewHorse() : saveToTraditional())}
               >
-                {savingTraditional || (saving && mode === 'new_horse')
-                  ? '保存中…'
-                  : mode === 'new_horse'
-                    ? '在来牝系に追加'
-                    : '在来牝系に保存（母の牝系へ）'}
+                {savingTraditional || (saving && mode === 'new_horse') ? '保存中…' : mode === 'new_horse' ? '在来牝系に追加' : '在来牝系に保存（母の牝系へ）'}
               </button>
             </section>
           )}
 
           {current?.mode === 'missing_sire' && (
             <section className="mb-4 rounded border border-emerald-200 bg-emerald-50/80 px-4 py-3 text-sm">
-              <div className="text-xs font-medium text-emerald-900">
-                netkeiba登録済み
-              </div>
+              <div className="text-xs font-medium text-emerald-900">netkeiba登録済み</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 <input
                   className="min-w-[12rem] flex-1 rounded border border-stone-300 px-2 py-1 font-mono text-sm"
@@ -1782,17 +1499,10 @@ export default function SirePedigreeEditor() {
                 <button
                   type="button"
                   className="rounded bg-emerald-800 px-3 py-1 text-sm text-white disabled:opacity-50"
-                  disabled={
-                    settingNetkeibaOnly ||
-                    linkingExisting ||
-                    saving ||
-                    !netkeibaOnlyId.trim()
-                  }
+                  disabled={settingNetkeibaOnly || linkingExisting || saving || !netkeibaOnlyId.trim()}
                   onClick={() => applyNetkeibaIdOnly()}
                 >
-                  {settingNetkeibaOnly
-                    ? '設定中…'
-                    : 'netkeiba登録済みとして設定'}
+                  {settingNetkeibaOnly ? '設定中…' : 'netkeiba登録済みとして設定'}
                 </button>
               </div>
             </section>
@@ -1800,9 +1510,7 @@ export default function SirePedigreeEditor() {
 
           {current?.mode === 'missing_sire' && (
             <section className="mb-4 rounded border border-sky-200 bg-sky-50/80 px-4 py-3 text-sm">
-              <div className="text-xs font-medium text-sky-900">
-                登録済み種牡馬
-              </div>
+              <div className="text-xs font-medium text-sky-900">登録済み種牡馬</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 <input
                   className="min-w-[12rem] flex-1 rounded border border-stone-300 px-2 py-1"
@@ -1826,38 +1534,20 @@ export default function SirePedigreeEditor() {
               </div>
               {(catalogSuggestions.length > 0 || catalogResults.length > 0) && (
                 <ul className="mt-2 max-h-56 space-y-1 overflow-y-auto">
-                  {(catalogSuggestions.length
-                    ? catalogSuggestions
-                    : catalogResults
-                  ).map((entry) => (
-                    <li
-                      key={`${entry.store}:${entry.id}`}
-                      className="flex flex-wrap items-center justify-between gap-2 rounded border border-sky-100 bg-white px-2 py-1.5"
-                    >
+                  {(catalogSuggestions.length ? catalogSuggestions : catalogResults).map((entry) => (
+                    <li key={`${entry.store}:${entry.id}`} className="flex flex-wrap items-center justify-between gap-2 rounded border border-sky-100 bg-white px-2 py-1.5">
                       <div className="min-w-0">
                         <div className="font-medium text-stone-900">
                           {entry.name}
-                          {entry.englishName ? (
-                            <span className="ml-2 text-xs font-normal text-stone-500">
-                              {entry.englishName}
-                            </span>
-                          ) : null}
-                          {entry.pedigreeName &&
-                          entry.pedigreeName !== entry.name &&
-                          entry.pedigreeName !== entry.englishName ? (
-                            <span className="ml-2 text-xs font-normal text-stone-500">
-                              {entry.pedigreeName}
-                            </span>
+                          {entry.englishName ? <span className="ml-2 text-xs font-normal text-stone-500">{entry.englishName}</span> : null}
+                          {entry.pedigreeName && entry.pedigreeName !== entry.name && entry.pedigreeName !== entry.englishName ? (
+                            <span className="ml-2 text-xs font-normal text-stone-500">{entry.pedigreeName}</span>
                           ) : null}
                         </div>
                         <div className="font-mono text-[11px] text-stone-500">
                           id={entry.id}
-                          {entry.foaledYear != null
-                            ? ` / ${entry.foaledYear}`
-                            : ''}
-                          {entry.netkeibaId
-                            ? ` / nk=${entry.netkeibaId}`
-                            : ''}
+                          {entry.foaledYear != null ? ` / ${entry.foaledYear}` : ''}
+                          {entry.netkeibaId ? ` / nk=${entry.netkeibaId}` : ''}
                           {' / '}
                           {entry.store === 'sire' ? 'pedigree-sires' : '在来'}
                           {' / '}
@@ -1876,117 +1566,85 @@ export default function SirePedigreeEditor() {
                   ))}
                 </ul>
               )}
-              {catalogSuggestions.length > 0 &&
-                catalogResults.length > catalogSuggestions.length && (
-                  <button
-                    type="button"
-                    className="mt-2 text-xs text-sky-800 underline"
-                    onClick={() => setCatalogSuggestions([])}
-                  >
-                    検索結果をすべて表示（{catalogResults.length}）
-                  </button>
-                )}
+              {catalogSuggestions.length > 0 && catalogResults.length > catalogSuggestions.length && (
+                <button type="button" className="mt-2 text-xs text-sky-800 underline" onClick={() => setCatalogSuggestions([])}>
+                  検索結果をすべて表示（{catalogResults.length}）
+                </button>
+              )}
             </section>
           )}
 
-          {(current?.mode === 'missing_sire' || current?.mode === 'root') &&
-            ((current.relatedChildren?.length || 0) > 0 ||
-              (current.familyPages?.length || 0) > 0) && (
-              <section className="mb-4 rounded border border-amber-200 bg-amber-50/80 px-4 py-3 text-sm">
-                {current?.mode === 'missing_sire' &&
-                  (current.relatedChildren?.length || 0) > 0 && (
-                    <>
-                      <div className="text-xs font-medium text-amber-900">
-                        関連（この種牡馬が父になっている馬）
-                      </div>
-                      <ul className="mt-1 space-y-0.5 text-stone-800">
-                        {(current.relatedChildren || []).map((c) => (
-                          <li key={`${c.filename}:${c.id}`}>
-                            <span className="font-medium">{c.name}</span>
-                            <span className="text-stone-600">の父馬</span>
-                            <span className="ml-1 font-mono text-xs text-stone-500">
-                              ({c.filename})
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  )}
-                {current?.mode === 'root' && (
-                  <div className="text-xs font-medium text-amber-900">
-                    対象牝祖の4代血統（父はここに含める・種牡馬単独登録しない）
-                    {current.skipScrapeReason ? (
-                      <span className="ml-2 font-mono text-[10px] font-normal text-stone-500">
-                        ({current.skipScrapeReason})
-                      </span>
-                    ) : null}
-                  </div>
-                )}
-                {(current.familyPages?.length || 0) > 0 && (
-                  <>
-                    <div
-                      className={
-                        current?.mode === 'missing_sire'
-                          ? 'mt-2 text-xs font-medium text-amber-900'
-                          : 'mt-1 text-xs font-medium text-amber-900'
-                      }
-                    >
-                      牝系ページ（新タブ）
-                    </div>
-                    <ul className="mt-1 flex flex-wrap gap-2">
-                      {(current.familyPages || []).map((p) =>
-                        p.familyHref ? (
-                          <li key={`${p.filename}:${p.rootHorseId}`}>
-                            <a
-                              className="inline-flex items-center rounded border border-amber-300 bg-white px-2 py-0.5 text-sky-800 underline-offset-2 hover:bg-amber-100 hover:underline"
-                              href={p.familyHref}
-                              target="_blank"
-                              rel="noreferrer"
-                              title={p.filename}
-                            >
-                              {p.pedigreeName || p.rootHorseId}
-                              <span className="ml-1 font-mono text-[10px] text-stone-500">
-                                {p.filename}
-                              </span>
-                            </a>
-                          </li>
-                        ) : (
-                          <li
-                            key={`${p.filename}:nofamily`}
-                            className="font-mono text-xs text-stone-600"
+          {(current?.mode === 'missing_sire' || current?.mode === 'root') && ((current.relatedChildren?.length || 0) > 0 || (current.familyPages?.length || 0) > 0) && (
+            <section className="mb-4 rounded border border-amber-200 bg-amber-50/80 px-4 py-3 text-sm">
+              {current?.mode === 'missing_sire' && (current.relatedChildren?.length || 0) > 0 && (
+                <>
+                  <div className="text-xs font-medium text-amber-900">関連（この種牡馬が父になっている馬）</div>
+                  <ul className="mt-1 space-y-0.5 text-stone-800">
+                    {(current.relatedChildren || []).map((c) => (
+                      <li key={`${c.filename}:${c.id}`}>
+                        <span className="font-medium">{c.name}</span>
+                        <span className="text-stone-600">の父馬</span>
+                        <span className="ml-1 font-mono text-xs text-stone-500">({c.filename})</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {current?.mode === 'root' && (
+                <div className="text-xs font-medium text-amber-900">
+                  対象牝祖の4代血統（父はここに含める・種牡馬単独登録しない）
+                  {current.skipScrapeReason ? <span className="ml-2 font-mono text-[10px] font-normal text-stone-500">({current.skipScrapeReason})</span> : null}
+                </div>
+              )}
+              {(current.familyPages?.length || 0) > 0 && (
+                <>
+                  <div className={current?.mode === 'missing_sire' ? 'mt-2 text-xs font-medium text-amber-900' : 'mt-1 text-xs font-medium text-amber-900'}>牝系ページ（新タブ）</div>
+                  <ul className="mt-1 flex flex-wrap gap-2">
+                    {(current.familyPages || []).map((p) =>
+                      p.familyHref ? (
+                        <li key={`${p.filename}:${p.rootHorseId}`}>
+                          <a
+                            className="inline-flex items-center rounded border border-amber-300 bg-white px-2 py-0.5 text-sky-800 underline-offset-2 hover:bg-amber-100 hover:underline"
+                            href={p.familyHref}
+                            target="_blank"
+                            rel="noreferrer"
+                            title={p.filename}
                           >
-                            {p.filename}
-                          </li>
-                        )
-                      )}
-                    </ul>
-                  </>
-                )}
-              </section>
-            )}
-
-          {payload?.filename && mode !== 'edit_horse' && (
-            <p className="mb-2 font-mono text-xs text-stone-500">
-              {payload.filename}
-            </p>
-          )}
-          {payload?.isNew && (
-            <p className="mb-2 text-xs text-amber-800">
-              既存の pedigree-sires に同名なし → 保存時に新規ファイル作成
-            </p>
+                            {p.pedigreeName || p.rootHorseId}
+                            <span className="ml-1 font-mono text-[10px] text-stone-500">{p.filename}</span>
+                          </a>
+                        </li>
+                      ) : (
+                        <li key={`${p.filename}:nofamily`} className="font-mono text-xs text-stone-600">
+                          {p.filename}
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </>
+              )}
+            </section>
           )}
 
-          {mode !== 'new_horse' && mode !== 'edit_horse' && (
-          <BloodTableEditor
-            key={`${mode}:${current?.id ?? 'new'}:${cursor}`}
-            value={ancestryInput}
-            onChange={setAncestryInput}
-            onFetchCell={(path, site, id) =>
-              fetchFromPedigreeOnline(site, { branch: path, id })
-            }
-            fetchingPath={cellPathFromFetchKey(fetching)}
-            fetchDisabled={!!fetching}
-          />
+          {payload?.filename && mode !== 'edit_horse' && <p className="mb-2 font-mono text-xs text-stone-500">{payload.filename}</p>}
+          {payload?.isNew && <p className="mb-2 text-xs text-amber-800">既存の pedigree-sires に同名なし → 保存時に新規ファイル作成</p>}
+
+          {mode !== 'new_horse' && (mode !== 'edit_horse' || (Boolean(payload) && editHasFourGen(editTarget))) && (
+            <>
+              {mode === 'edit_horse' && (
+                <p className="mb-2 text-xs text-stone-600">
+                  四代血統（{editTarget?.store === 'sire' ? '種牡馬' : '牝祖'}） / 入力済み名: {filledCount}/30。空欄はそのまま残す。
+                </p>
+              )}
+              <BloodTableEditor
+                key={`${mode}:${current?.id ?? editTarget?.id ?? 'new'}:${editTarget?.store || ''}:${cursor}`}
+                value={ancestryInput}
+                onChange={setAncestryInput}
+                onFetchCell={(path, site, id) => fetchFromPedigreeOnline(site, { branch: path, id })}
+                fetchingPath={cellPathFromFetchKey(fetching)}
+                fetchDisabled={!!fetching}
+              />
+            </>
           )}
 
           <div className="sticky bottom-0 mt-6 flex flex-wrap gap-3 border-t border-stone-300 bg-white/95 py-3 backdrop-blur">
@@ -2012,14 +1670,7 @@ export default function SirePedigreeEditor() {
             ) : mode === 'new_horse' ? (
               <button
                 type="button"
-                disabled={
-                  saving ||
-                  Boolean(idConflict) ||
-                  !tradDam ||
-                  !(tradSire || externalSireName.trim()) ||
-                  !subjectHasIdSource(subject) ||
-                  !subject.sex
-                }
+                disabled={saving || Boolean(idConflict) || !tradDam || !(tradSire || externalSireName.trim()) || !subjectHasIdSource(subject) || !subject.sex}
                 className="rounded bg-stone-900 px-4 py-2 text-sm text-white disabled:opacity-50"
                 onClick={() => saveNewHorse()}
               >
@@ -2027,12 +1678,7 @@ export default function SirePedigreeEditor() {
               </button>
             ) : mode === 'edit_horse' ? (
               <>
-                <button
-                  type="button"
-                  disabled={saving || !payload || !subject.id}
-                  className="rounded bg-stone-900 px-4 py-2 text-sm text-white disabled:opacity-50"
-                  onClick={() => saveEditHorse()}
-                >
+                <button type="button" disabled={saving || !payload || !subject.id} className="rounded bg-stone-900 px-4 py-2 text-sm text-white disabled:opacity-50" onClick={() => saveEditHorse()}>
                   {saving ? '保存中…' : '更新を保存'}
                 </button>
                 <button
@@ -2048,41 +1694,31 @@ export default function SirePedigreeEditor() {
               </>
             ) : (
               <>
-            <button
-              type="button"
-              disabled={saving}
-              className="rounded bg-stone-900 px-4 py-2 text-sm text-white disabled:opacity-50"
-              onClick={() => save(true)}
-            >
-              {saving ? '保存中…' : '保存して次へ'}
-            </button>
-            <button
-              type="button"
-              disabled={saving}
-              className="rounded border border-stone-400 px-4 py-2 text-sm disabled:opacity-50"
-              onClick={() => save(false)}
-            >
-              保存のみ
-            </button>
-            <button
-              type="button"
-              disabled={saving}
-              className="rounded border border-amber-500 bg-amber-50 px-4 py-2 text-sm text-amber-950 disabled:opacity-50"
-              onClick={() => save(false, true)}
-              title="空欄は埋めず、キューにも残したまま保存します"
-            >
-              一時保存
-            </button>
-            <button
-              type="button"
-              className="rounded border border-stone-400 px-4 py-2 text-sm"
-              onClick={() => {
-                if (!current) return
-                loadTarget(current)
-              }}
-            >
-              再読込（破棄）
-            </button>
+                <button type="button" disabled={saving} className="rounded bg-stone-900 px-4 py-2 text-sm text-white disabled:opacity-50" onClick={() => save(true)}>
+                  {saving ? '保存中…' : '保存して次へ'}
+                </button>
+                <button type="button" disabled={saving} className="rounded border border-stone-400 px-4 py-2 text-sm disabled:opacity-50" onClick={() => save(false)}>
+                  保存のみ
+                </button>
+                <button
+                  type="button"
+                  disabled={saving}
+                  className="rounded border border-amber-500 bg-amber-50 px-4 py-2 text-sm text-amber-950 disabled:opacity-50"
+                  onClick={() => save(false, true)}
+                  title="空欄は埋めず、キューにも残したまま保存します"
+                >
+                  一時保存
+                </button>
+                <button
+                  type="button"
+                  className="rounded border border-stone-400 px-4 py-2 text-sm"
+                  onClick={() => {
+                    if (!current) return
+                    loadTarget(current)
+                  }}
+                >
+                  再読込（破棄）
+                </button>
               </>
             )}
           </div>

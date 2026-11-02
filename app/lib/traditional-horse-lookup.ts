@@ -59,12 +59,7 @@ function scoreHit(hit: TradHorseHit, q: string): number {
   if (!nq && !raw) return 0
   if (hit.id === raw) return 100
   if (hit.netkeibaId && hit.netkeibaId === raw) return 95
-  const keys = [
-    normalizeSearchKey(hit.name),
-    normalizeSearchKey(hit.englishName || ''),
-    normalizeSearchKey(hit.id),
-    normalizeSearchKey(hit.horsePedigreeName || ''),
-  ].filter(Boolean)
+  const keys = [normalizeSearchKey(hit.name), normalizeSearchKey(hit.englishName || ''), normalizeSearchKey(hit.id), normalizeSearchKey(hit.horsePedigreeName || '')].filter(Boolean)
   if (keys.some((k) => k === nq)) return 90
   if (keys.some((k) => k.startsWith(nq))) return 70
   if (keys.some((k) => k.includes(nq))) return 50
@@ -73,9 +68,7 @@ function scoreHit(hit: TradHorseHit, q: string): number {
 
 let cache: { at: number; horses: TradHorseHit[] } | null = null
 
-export async function loadTraditionalHorses(
-  force = false
-): Promise<TradHorseHit[]> {
+export async function loadTraditionalHorses(force = false): Promise<TradHorseHit[]> {
   const now = Date.now()
   if (!force && cache && now - cache.at < CACHE_MS) return cache.horses
 
@@ -96,8 +89,7 @@ export async function loadTraditionalHorses(
       continue
     }
     const rootHorseId = String(data.metadata?.rootHorseId || '')
-    const pedigreeName =
-      String(data.metadata?.pedigreeName || filename.replace(/\.json$/, ''))
+    const pedigreeName = String(data.metadata?.pedigreeName || filename.replace(/\.json$/, ''))
     const rel = repoRelative(filepath)
     for (const horse of data.horses || []) {
       const id = String(horse.id || '').trim()
@@ -126,10 +118,7 @@ export async function loadTraditionalHorses(
   return horses
 }
 
-export async function searchTraditionalHorses(
-  q: string,
-  limit = 20
-): Promise<TradHorseHit[]> {
+export async function searchTraditionalHorses(q: string, limit = 20): Promise<TradHorseHit[]> {
   const query = (q || '').trim()
   if (!query) return []
   const horses = await loadTraditionalHorses()
@@ -137,26 +126,17 @@ export async function searchTraditionalHorses(
   return horses
     .map((h) => ({ h, score: scoreHit(h, query) }))
     .filter((x) => x.score > 0)
-    .sort(
-      (a, b) =>
-        b.score - a.score || a.h.name.localeCompare(b.h.name, 'ja')
-    )
+    .sort((a, b) => b.score - a.score || a.h.name.localeCompare(b.h.name, 'ja'))
     .slice(0, cap)
     .map((x) => x.h)
 }
 
 /** 父馬候補: 在来 + pedigree-sires。同一 id は在来を優先 */
-export async function searchFatherHorses(
-  q: string,
-  limit = 20
-): Promise<TradHorseHit[]> {
+export async function searchFatherHorses(q: string, limit = 20): Promise<TradHorseHit[]> {
   const query = (q || '').trim()
   if (!query) return []
   const cap = Math.min(Math.max(limit, 1), 40)
-  const [trad, catalog] = await Promise.all([
-    searchTraditionalHorses(query, cap),
-    searchSireCatalog({ q: query, limit: cap }),
-  ])
+  const [trad, catalog] = await Promise.all([searchTraditionalHorses(query, cap), searchSireCatalog({ q: query, limit: cap })])
   const seen = new Set<string>()
   const merged: TradHorseHit[] = []
   for (const h of trad) {
@@ -185,17 +165,50 @@ export async function searchFatherHorses(
   return merged
     .map((h) => ({ h, score: scoreHit(h, query) }))
     .filter((x) => x.score > 0)
-    .sort(
-      (a, b) =>
-        b.score - a.score || a.h.name.localeCompare(b.h.name, 'ja')
-    )
+    .sort((a, b) => b.score - a.score || a.h.name.localeCompare(b.h.name, 'ja'))
     .slice(0, cap)
     .map((x) => x.h)
 }
 
-export async function findTraditionalHorseById(
-  id: string
-): Promise<TradHorseHit | null> {
+/**
+ * 既存馬編集用。在来（牝祖を含む）と pedigree-sires を両方返す。
+ * 同じ id が両方にあっても、編集先が違うので落とさない。
+ */
+export async function searchHorsesForEdit(q: string, limit = 20): Promise<TradHorseHit[]> {
+  const query = (q || '').trim()
+  if (!query) return []
+  const cap = Math.min(Math.max(limit, 1), 40)
+  const [trad, catalog] = await Promise.all([searchTraditionalHorses(query, cap), searchSireCatalog({ q: query, limit: cap })])
+  const hits: TradHorseHit[] = trad.map((h) => ({
+    ...h,
+    store: 'traditional',
+  }))
+  for (const e of catalog.items) {
+    if (e.store !== 'sire') continue
+    hits.push({
+      id: e.id,
+      name: e.name,
+      englishName: e.englishName || '',
+      foaledYear: e.foaledYear ?? null,
+      netkeibaId: e.netkeibaId || '',
+      filename: e.filename,
+      filepath: e.filepath,
+      rootHorseId: '',
+      pedigreeName: e.pedigreeName || '',
+      horsePedigreeName: e.pedigreeName || '',
+      familyHref: '',
+      store: 'sire',
+    })
+  }
+  return hits
+    .map((h) => ({ h, score: scoreHit(h, query) }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || a.h.name.localeCompare(b.h.name, 'ja'))
+    .slice(0, cap * 2)
+    .map((x) => x.h)
+}
+
+export async function findTraditionalHorseById(id: string): Promise<TradHorseHit | null> {
   const target = (id || '').trim()
   if (!target) return null
   const horses = await loadTraditionalHorses()
@@ -275,27 +288,14 @@ export function invalidateTraditionalHorseCache() {
   cache = null
 }
 
-function assignIfPresent(
-  target: Record<string, unknown>,
-  key: string,
-  value: string | undefined
-) {
+function assignIfPresent(target: Record<string, unknown>, key: string, value: string | undefined) {
   const t = (value || '').trim()
   if (t) target[key] = t
 }
 
-export function applyFoaledFromInput(
-  prev: unknown,
-  horse: Pick<
-    TraditionalOffspringInput,
-    'foaledYear' | 'foaledMonth' | 'foaledDay'
-  >
-): Record<string, number> {
+export function applyFoaledFromInput(prev: unknown, horse: Pick<TraditionalOffspringInput, 'foaledYear' | 'foaledMonth' | 'foaledDay'>): Record<string, number> {
   const base = {
-    ...((prev && typeof prev === 'object' ? prev : {}) as Record<
-      string,
-      number
-    >),
+    ...((prev && typeof prev === 'object' ? prev : {}) as Record<string, number>),
   }
   const next: Record<string, number> = {}
   const year = horse.foaledYear ?? base.year
@@ -307,10 +307,7 @@ export function applyFoaledFromInput(
   return next
 }
 
-export function applyOptionalHorseFields(
-  target: Record<string, unknown>,
-  horse: TraditionalOffspringInput
-) {
+export function applyOptionalHorseFields(target: Record<string, unknown>, horse: TraditionalOffspringInput) {
   assignIfPresent(target, 'englishName', horse.englishName)
   assignIfPresent(target, 'pedigreeName', horse.pedigreeName)
   assignIfPresent(target, 'formerName', horse.formerName)
@@ -335,11 +332,7 @@ export function applyOptionalHorseFields(
         runs: horse.raceStatsRuns ?? prevTotal?.runs ?? null,
         wins: horse.raceStatsWins ?? prevTotal?.wins ?? null,
       },
-      divisions: Array.isArray(
-        (target.raceStats as { divisions?: unknown })?.divisions
-      )
-        ? (target.raceStats as { divisions: unknown[] }).divisions
-        : [],
+      divisions: Array.isArray((target.raceStats as { divisions?: unknown })?.divisions) ? (target.raceStats as { divisions: unknown[] }).divisions : [],
     }
   }
   if (horse.raceResults && horse.raceResults.length > 0) {
@@ -347,11 +340,7 @@ export function applyOptionalHorseFields(
   }
 }
 
-function assignOrDelete(
-  target: Record<string, unknown>,
-  key: string,
-  value: string | undefined
-) {
+function assignOrDelete(target: Record<string, unknown>, key: string, value: string | undefined) {
   if (value === undefined) return
   const t = value.trim()
   if (t) target[key] = t
@@ -380,13 +369,9 @@ const EDITABLE_STRING_KEYS = [
 
 /**
  * 既存馬の属性を上書きする（空文字はキー削除）。
- * 母・父・id・ancestryByPath は触らない。
+ * 母・父の id と ancestryByPath は触らない。
  */
-export function applyEditableHorseFields(
-  target: Record<string, unknown>,
-  horse: TraditionalOffspringInput,
-  options?: { replaceRaceResults?: boolean }
-) {
+export function applyEditableHorseFields(target: Record<string, unknown>, horse: TraditionalOffspringInput, options?: { replaceRaceResults?: boolean }) {
   for (const key of EDITABLE_STRING_KEYS) {
     assignOrDelete(target, key, horse[key])
   }
@@ -397,11 +382,7 @@ export function applyEditableHorseFields(
         runs: horse.raceStatsRuns ?? prevTotal?.runs ?? null,
         wins: horse.raceStatsWins ?? prevTotal?.wins ?? null,
       },
-      divisions: Array.isArray(
-        (target.raceStats as { divisions?: unknown })?.divisions
-      )
-        ? (target.raceStats as { divisions: unknown[] }).divisions
-        : [],
+      divisions: Array.isArray((target.raceStats as { divisions?: unknown })?.divisions) ? (target.raceStats as { divisions: unknown[] }).divisions : [],
     }
   }
   if (options?.replaceRaceResults && horse.raceResults !== undefined) {
@@ -413,13 +394,10 @@ export function applyEditableHorseFields(
 
 /**
  * 在来牝系 JSON 内の既存馬を、同じファイル・同じ位置で更新する。
- * 母・父の付け替えはしない。
+ * damId / sireId は変えない。
+ * ancestryByPath を渡したときだけ四代を上書きし、父母の表示名を表に合わせる。
  */
-export async function updateTraditionalHorseInPlace(options: {
-  horseId: string
-  horse: TraditionalOffspringInput
-  replaceRaceResults?: boolean
-}): Promise<{
+export async function updateTraditionalHorseInPlace(options: { horseId: string; horse: TraditionalOffspringInput; replaceRaceResults?: boolean; ancestryByPath?: Record<string, unknown> }): Promise<{
   filepath: string
   filename: string
   horseId: string
@@ -459,6 +437,22 @@ export async function updateTraditionalHorseInPlace(options: {
   }
   delete next.comments
   next.foaled = applyFoaledFromInput(prev.foaled, options.horse)
+  if (options.ancestryByPath) {
+    const ancestry = options.ancestryByPath
+    if (Object.keys(ancestry).length) {
+      next.ancestryByPath = ancestry
+      const sireName = String((ancestry.s as { name?: string } | undefined)?.name || '').trim()
+      const damName = String((ancestry.d as { name?: string } | undefined)?.name || '').trim()
+      if (sireName) next.sire = sireName
+      if (damName) next.dam = damName
+    } else {
+      delete next.ancestryByPath
+    }
+    data.metadata = {
+      ...(data.metadata || {}),
+      rootAncestrySource: 'manual_correction',
+    }
+  }
 
   horses[idx] = orderTraditionalHorseKeys(next)
   data.horses = horses
@@ -517,9 +511,7 @@ const TRADITIONAL_HORSE_KEY_ORDER = [
   'sireNetkeibaId',
 ] as const
 
-export function orderTraditionalHorseKeys(
-  horse: Record<string, unknown>
-): Record<string, unknown> {
+export function orderTraditionalHorseKeys(horse: Record<string, unknown>): Record<string, unknown> {
   const out: Record<string, unknown> = {}
   for (const key of TRADITIONAL_HORSE_KEY_ORDER) {
     if (key in horse && horse[key] !== undefined) out[key] = horse[key]
@@ -581,14 +573,10 @@ export async function upsertHorseIntoDamFamily(options: {
 
   const existing = await findTraditionalHorseById(horseId)
   if (existing && options.createOnly) {
-    throw new Error(
-      `id=${horseId} は既に ${existing.filename} にあります。別の id を指定してください。`
-    )
+    throw new Error(`id=${horseId} は既に ${existing.filename} にあります。別の id を指定してください。`)
   }
   if (existing && existing.filepath !== dam.filepath) {
-    throw new Error(
-      `id=${horseId} は別の在来ファイルにあります: ${existing.filename}`
-    )
+    throw new Error(`id=${horseId} は別の在来ファイルにあります: ${existing.filename}`)
   }
 
   const abs = path.join(process.cwd(), dam.filepath)
