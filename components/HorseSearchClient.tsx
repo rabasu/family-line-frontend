@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { HorseSearchEntry } from '@/types/HorseSearchEntry'
 import HorseSearchCard from './HorseSearchCard'
 import {
@@ -153,14 +153,14 @@ function FacetSuggestField({
           }
         }}
         placeholder={placeholder}
-        className="w-full rounded-md border border-theme bg-white px-3 py-1.5 text-sm text-heading placeholder:text-muted focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 dark:bg-gray-800"
+        className="border-theme text-heading placeholder:text-muted w-full rounded-md border bg-white px-3 py-1.5 text-sm focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 dark:bg-gray-800"
       />
       {showList && (
         <ul
           ref={listRef}
           id="horse-search-facet-list"
           role="listbox"
-          className="absolute left-0 right-0 top-full z-50 mt-1 max-h-60 overflow-y-auto rounded-md border border-theme bg-white py-1 shadow-lg dark:bg-gray-800"
+          className="border-theme absolute left-0 right-0 top-full z-50 mt-1 max-h-60 overflow-y-auto rounded-md border bg-white py-1 shadow-lg dark:bg-gray-800"
         >
           {suggestions.map((option, index) => (
             <li key={option} role="presentation">
@@ -169,7 +169,7 @@ function FacetSuggestField({
                 id={`horse-search-facet-option-${index}`}
                 role="option"
                 aria-selected={index === highlight}
-                className={`block w-full px-3 py-1.5 text-left text-sm text-heading ${index === highlight ? 'bg-label' : 'hover:bg-label'}`}
+                className={`text-heading block w-full px-3 py-1.5 text-left text-sm ${index === highlight ? 'bg-label' : 'hover:bg-label'}`}
                 onMouseEnter={() => setHighlight(index)}
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => commit(option)}
@@ -190,7 +190,6 @@ interface Props {
 
 export default function HorseSearchClient({ data }: Props) {
   const searchParams = useSearchParams()
-  const router = useRouter()
   const pathname = usePathname()
   const urlQs = searchParams.toString()
   const urlQuery = useMemo(() => parseHorseSearchQuery(new URLSearchParams(urlQs)), [urlQs])
@@ -218,10 +217,10 @@ export default function HorseSearchClient({ data }: Props) {
     const href = qs ? `${pathname}?${qs}` : pathname
     skipUrlSyncRef.current = true
     setQuery(next)
-    if (typeof window !== 'undefined') {
-      window.history.replaceState(window.history.state, '', href)
-    }
-    router.replace(href, { scroll: false })
+    // router.replace は静的書き出しで /search.txt を取りにいく。
+    // 空の state で replaceState すると、Next のパッチが useSearchParams だけ追従させ、RSC は取りにいかない。
+    // __NA 付きの history.state を渡すと、そのパッチが素通りする。
+    window.history.replaceState({}, '', href)
   }
 
   useEffect(() => {
@@ -286,10 +285,7 @@ export default function HorseSearchClient({ data }: Props) {
   const addFacetValue = (raw: string) => {
     const trimmed = raw.trim()
     if (!trimmed) return
-    const value =
-      facetKey === 'family'
-        ? resolveFamilyValue(familyNames, trimmed)
-        : resolveFacetOption(facetOptions[facetKey], trimmed)
+    const value = facetKey === 'family' ? resolveFamilyValue(familyNames, trimmed) : resolveFacetOption(facetOptions[facetKey], trimmed)
     replaceQuery(withSearchFacet(query, facetKey, value))
     setFacetInput('')
   }
@@ -302,7 +298,7 @@ export default function HorseSearchClient({ data }: Props) {
           value={nameInput}
           onChange={(e) => setNameInput(e.target.value)}
           placeholder="馬名（競走名・血統名・英語名など）を入力"
-          className="w-full rounded-md border border-theme bg-white px-4 py-2 text-sm text-heading shadow-sm placeholder:text-muted focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 dark:bg-gray-800"
+          className="border-theme text-heading placeholder:text-muted w-full rounded-md border bg-white px-4 py-2 text-sm shadow-sm focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600 dark:bg-gray-800"
         />
       </div>
 
@@ -317,7 +313,7 @@ export default function HorseSearchClient({ data }: Props) {
             setFacetKey(e.target.value as SearchFacetKey)
             setFacetInput('')
           }}
-          className="rounded-md border border-theme bg-white px-2 py-1.5 text-sm text-heading dark:bg-gray-800"
+          className="border-theme text-heading rounded-md border bg-white px-2 py-1.5 text-sm dark:bg-gray-800"
         >
           {SEARCH_FACETS.map((facet) => (
             <option key={facet.key} value={facet.key}>
@@ -325,13 +321,7 @@ export default function HorseSearchClient({ data }: Props) {
             </option>
           ))}
         </select>
-        <FacetSuggestField
-          value={facetInput}
-          onChange={setFacetInput}
-          onCommit={addFacetValue}
-          suggestions={suggestions}
-          placeholder={`${searchFacetLabel(facetKey)}で絞り込む`}
-        />
+        <FacetSuggestField value={facetInput} onChange={setFacetInput} onCommit={addFacetValue} suggestions={suggestions} placeholder={`${searchFacetLabel(facetKey)}で絞り込む`} />
       </div>
 
       {facets.length > 0 && (
@@ -339,10 +329,7 @@ export default function HorseSearchClient({ data }: Props) {
           {facets.map((facet) => {
             const display = facet.key === 'family' ? familyDisplayName(familyNames, facet.value) : facet.value
             return (
-              <span
-                key={facet.key}
-                className="inline-flex items-center gap-1 rounded-full border border-theme bg-label px-2.5 py-0.5 text-xs text-heading"
-              >
+              <span key={facet.key} className="border-theme bg-label text-heading inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs">
                 <span className="text-muted">{searchFacetLabel(facet.key)}</span>
                 <span>{display}</span>
                 <button
@@ -381,7 +368,7 @@ export default function HorseSearchClient({ data }: Props) {
       </div>
 
       {active && (
-        <p className="text-sm text-muted">
+        <p className="text-muted text-sm">
           {showNameQuery ? `「${query.q}」の検索結果：` : '絞り込み結果：'}
           {totalCount} 件
         </p>
@@ -390,7 +377,7 @@ export default function HorseSearchClient({ data }: Props) {
       <div className="space-y-1">
         {results.exact.length > 0 && (
           <>
-            {showNameQuery && <p className="pt-1 text-xs font-semibold uppercase tracking-wide text-muted">完全一致</p>}
+            {showNameQuery && <p className="text-muted pt-1 text-xs font-semibold uppercase tracking-wide">完全一致</p>}
             {results.exact.map((entry) => (
               <HorseSearchCard key={`${entry.family}-${entry.id}`} entry={entry} />
             ))}
@@ -399,20 +386,16 @@ export default function HorseSearchClient({ data }: Props) {
 
         {results.partial.length > 0 && (
           <>
-            {showNameQuery && results.exact.length > 0 && (
-              <p className="pt-2 text-xs font-semibold uppercase tracking-wide text-muted">部分一致</p>
-            )}
+            {showNameQuery && results.exact.length > 0 && <p className="text-muted pt-2 text-xs font-semibold uppercase tracking-wide">部分一致</p>}
             {results.partial.map((entry) => (
               <HorseSearchCard key={`${entry.family}-${entry.id}`} entry={entry} />
             ))}
           </>
         )}
 
-        {active && totalCount === 0 && <p className="py-8 text-center text-sm text-muted">該当する馬が見つかりませんでした。</p>}
+        {active && totalCount === 0 && <p className="text-muted py-8 text-center text-sm">該当する馬が見つかりませんでした。</p>}
 
-        {!active && (
-          <p className="py-8 text-center text-sm text-muted">馬名を入力するか、属性・成績で絞り込んでください。</p>
-        )}
+        {!active && <p className="text-muted py-8 text-center text-sm">馬名を入力するか、属性・成績で絞り込んでください。</p>}
       </div>
     </div>
   )

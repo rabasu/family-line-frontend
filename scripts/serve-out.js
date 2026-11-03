@@ -6,6 +6,7 @@
  * python -m http.server は /florries-cup を florries-cup.html に結び付けない。
  * Cloudflare Workers の静的アセットはデフォルトでその変換をするので、
  * 本番と同じ URL（拡張子なし）で確認できるようにしている。
+ * クライアント遷移用の .txt は postbuild で捨てる。リンクは <a> のフルロード。
  */
 
 const http = require('http')

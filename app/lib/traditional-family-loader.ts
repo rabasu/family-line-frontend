@@ -184,7 +184,7 @@ export function findHorseById(horseId: string): HorseLookup | null {
 let horseLinkMap: Map<string, HorseLinkData> | null = null
 
 /**
- * MDX 本文中の馬名からリンク先を引くためのマップ。
+ * 解説の [[馬名]] や、id を持たない父・母・祖先を引くためのマップ。
  * 1MB あるので import せず fs で読み、クライアントバンドルに載せない。
  */
 function getHorseLinkMap(): Map<string, HorseLinkData> {
@@ -196,10 +196,7 @@ function getHorseLinkMap(): Map<string, HorseLinkData> {
 }
 
 /** 馬名（linkName / linkPedigreeName を含む）からリンク情報を引く */
-export function findHorseLinkByName(
-  horseName: string,
-  options?: { quiet?: boolean; year?: number }
-): HorseLinkData | null {
+export function findHorseLinkByName(horseName: string, options?: { quiet?: boolean; year?: number }): HorseLinkData | null {
   if (!horseName) return null
 
   const map = getHorseLinkMap()

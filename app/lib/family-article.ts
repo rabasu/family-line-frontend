@@ -2,7 +2,7 @@
  * 根馬の系統解説ローダ。
  * data/family 配下の Markdown / MDX を gray-matter で読む。
  *
- * 表・系統図はページ側のスロット。本文は HorseMarkdown（太字 → 馬リンク）。
+ * 表・系統図はページ側のスロット。本文は HorseMarkdown（[[馬名]] → 馬リンク）。
  */
 import fs from 'fs'
 import path from 'path'
@@ -23,7 +23,7 @@ export function normalizeFamilyMarkdown(source: string): string {
   return source
     .replace(/<ProfileTable\b[^>]*\/?>/g, '')
     .replace(/<FamilyTree\b[^>]*\/?>/g, '')
-    .replace(/<HL\s+name=['"]([^'"]+)['"]\s*\/>/g, '**$1**')
+    .replace(/<HL\s+name=['"]([^'"]+)['"]\s*\/>/g, '[[$1]]')
     .replace(/<(?:GlossaryLink|GL)\b[^>]*\/?>/g, '')
     .replace(/^\s*## 概要\s*\n+/, '')
     .replace(/\n{3,}/g, '\n\n')
@@ -49,4 +49,3 @@ export function loadFamilyArticle(slug: string): FamilyArticle | null {
   if (!filePath) return null
   return articleFromFile(slug, filePath)
 }
-

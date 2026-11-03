@@ -8,29 +8,31 @@ type Props = {
   horseId: string
   displayName: string
   className?: string
+  /** name: 一覧・図の見出し。inline: 本文中の参照 */
+  tone?: 'name' | 'inline'
 }
 
+const TONE_CLASS = {
+  name: 'cursor-pointer font-bold text-heading hover:text-primary-600 hover:underline dark:hover:text-primary-400',
+  inline: 'link-inline',
+} as const
+
 /**
- * 馬名。クローラと「新しいタブで開く」のために実体は <a href> で、
- * 通常の左クリックだけ横取りしてモーダルを開く。
+ * 馬個人へのリンク。実体は <a href="/{id}">。
+ * 左クリックは共有モーダル、修飾キー・中クリック・新しいタブはブラウザのページ遷移。
  *
- * 牝系ページには数百の馬名が並ぶので、ここではダイアログを持たない。
+ * 牝系図には数百の馬名が並ぶので、ダイアログはここには持たない。
  * モーダル本体はレイアウトに1つだけ置いてある。
  */
-export default function HorseNameWithPedigree({ horseId, displayName, className }: Props) {
+export default function HorseNameWithPedigree({ horseId, displayName, className, tone = 'name' }: Props) {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    // 修飾キー付きクリックや中クリックは、ブラウザ本来の挙動に任せる
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
     e.preventDefault()
     openHorseModal(horseId, displayName)
   }
 
   return (
-    <a
-      href={horseHref(horseId)}
-      onClick={handleClick}
-      className={`cursor-pointer font-bold text-heading hover:text-primary-600 hover:underline dark:hover:text-primary-400${className ? ` ${className}` : ''}`}
-    >
+    <a href={horseHref(horseId)} onClick={handleClick} className={[TONE_CLASS[tone], className].filter(Boolean).join(' ')}>
       {displayName}
     </a>
   )

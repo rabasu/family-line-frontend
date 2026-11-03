@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { horseHref } from '@/lib/horse-id'
 import { tv } from 'tailwind-variants'
 import type { Horse } from '@/types/Horse'
@@ -35,20 +34,18 @@ export default function StallionOffspringCard({ horse, familyName, familyRootId 
     <div data-grade-win={gradeWin ? 'true' : 'false'} className={summary({ sex: horse.sex })}>
       <div className="flex flex-wrap items-baseline gap-x-1.5">
         <HorseNameWithPedigree horseId={horse.id} displayName={displayHorseName(horse)} />
-        {breedMark && <span className="text-xs font-medium text-muted">{breedMark}</span>}
+        {breedMark && <span className="text-muted text-xs font-medium">{breedMark}</span>}
         <span className="text-sm">（{horse.foaled.year}）</span>
         <span>
           {raceStatsSummary(horse.raceStats)} {prizeMoneySummary(horse.prizeMoney)}
         </span>
       </div>
-      <div className="mt-0.5 flex flex-wrap items-baseline gap-x-1.5 text-sm text-label">
-        <span>
-          母 {horse.dam ? <HorseLink name={horse.dam} /> : '不詳'}
-        </span>
+      <div className="text-label mt-0.5 flex flex-wrap items-baseline gap-x-1.5 text-sm">
+        <span>母 {horse.dam ? <HorseLink name={horse.dam} /> : '不詳'}</span>
         <span className="text-subtle">·</span>
-        <Link href={horseHref(familyRootId)} className="link-inline">
+        <a href={horseHref(familyRootId)} className="link-inline">
           {familyName}系
-        </Link>
+        </a>
       </div>
       {summarized.length > 0 && <RecordsSummary records={summarized} />}
     </div>

@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import AttributeSearchLink from '@/components/AttributeSearchLink'
 import Comments from '@/components/Comments'
@@ -8,6 +7,7 @@ import FamilyTreeView from '@/components/FamilyTreeView'
 import FiveGenPedigreeTable, { hasKnownAncestor } from '@/components/FiveGenPedigreeTable'
 import HorseFamilyTree from '@/components/HorseFamilyTree'
 import HorseLink from '@/components/HorseLink'
+import HorseNameWithPedigree from '@/components/HorseNameWithPedigree'
 import HorseMarkdown from '@/components/HorseMarkdown'
 import RaceCareerSummary from '@/components/RaceCareerSummary'
 import RaceResultsTable from '@/components/RaceResultsTable'
@@ -90,10 +90,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   const article = commentaryFor(horse.id, isRoot)
   const title = isRoot ? familyArticle?.title || `${family.pedigreeName}系` : name
   const description =
-    article?.summary ||
-    horse.summary ||
-    familyArticle?.summary ||
-    `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。父${horse.sire || '不詳'}、母${horse.dam || '不詳'}。`
+    article?.summary || horse.summary || familyArticle?.summary || `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。父${horse.sire || '不詳'}、母${horse.dam || '不詳'}。`
   const url = `${siteMetadata.siteUrl}${horseHref(params.id)}`
 
   return {
@@ -121,15 +118,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   }
 }
 
-function ProfileRows({
-  horse,
-  familyName,
-  familyRootId,
-}: {
-  horse: Horse
-  familyName: string
-  familyRootId: string
-}) {
+function ProfileRows({ horse, familyName, familyRootId, damId }: { horse: Horse; familyName: string; familyRootId: string; damId?: string }) {
   const rows: Array<{ label: string; value: ReactNode }> = []
   const nameLabel = horse.pedigreeName ? '競走名' : '馬名'
 
@@ -150,11 +139,7 @@ function ProfileRows({
       label: '父',
       value: (
         <AttributeSearchLink facet="sire" value={horse.sire}>
-          <HorseLink
-            name={horse.sire}
-            horseId={horse.sireId}
-            displayName={formatSireDisplayName(horse.sire, horse.sireId)}
-          />
+          <HorseLink name={horse.sire} horseId={horse.sireId} displayName={formatSireDisplayName(horse.sire, horse.sireId)} />
         </AttributeSearchLink>
       ),
     })
@@ -164,7 +149,7 @@ function ProfileRows({
       label: '母',
       value: (
         <AttributeSearchLink facet="dam" value={horse.dam}>
-          <HorseLink name={horse.dam} />
+          <HorseLink name={horse.dam} horseId={damId} />
         </AttributeSearchLink>
       ),
     })
@@ -182,9 +167,9 @@ function ProfileRows({
     rows.push({
       label: '牝系',
       value: (
-        <Link href={horseHref(familyRootId)} className="link-inline">
+        <a href={horseHref(familyRootId)} className="link-inline">
           {familyName}
-        </Link>
+        </a>
       ),
     })
   }
@@ -194,9 +179,7 @@ function ProfileRows({
       <tbody>
         {rows.map((row) => (
           <tr key={row.label}>
-            <th className="w-36 bg-label px-3 py-1.5 text-left font-medium whitespace-nowrap text-label">
-              {row.label}
-            </th>
+            <th className="bg-label text-label w-36 whitespace-nowrap px-3 py-1.5 text-left font-medium">{row.label}</th>
             <td className="px-3 py-1.5">{row.value}</td>
           </tr>
         ))}
@@ -211,18 +194,13 @@ function HorseRef({ horse, currentId }: { horse: Horse; currentId: string }) {
   const year = born ? `（${born}）` : ''
   if (horse.id === currentId) {
     return (
-      <span className="font-bold text-heading">
+      <span className="text-heading font-bold">
         {label}
         {year}
       </span>
     )
   }
-  return (
-    <Link href={horseHref(horse.id)} className="link-inline">
-      {label}
-      {year}
-    </Link>
-  )
+  return <HorseNameWithPedigree horseId={horse.id} displayName={`${label}${year}`} tone="inline" />
 }
 
 /** 直接の産駒だけ残し、孫以降の枝を切る（元オブジェクトは改変しない） */
@@ -254,8 +232,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   const details = typeof horse.details === 'string' ? horse.details.trim() : ''
   const pageUrl = `${siteMetadata.siteUrl}${horseHref(horse.id)}`
   const summary = article?.summary || horse.summary || familyArticle?.summary
-  const description =
-    summary || `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。`
+  const description = summary || `${name}（${subtitleOf(horse)}）の血統・戦績・産駒。${family.pedigreeName}系。`
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -268,21 +245,21 @@ export default async function Page({ params }: { params: { id: string } }) {
   return (
     // data-horse-detail はモーダルが本文だけを抜き出すための目印。
     // 静的エクスポートでは API が使えないため、モーダルはこのページの HTML を取得して描画する。
-    <div className="min-w-0 divide-y divide-theme" data-horse-detail={horse.id}>
+    <div className="divide-theme min-w-0 divide-y" data-horse-detail={horse.id}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <header className="space-y-2 pt-6 pb-6">
-        <nav className="text-sm text-muted">
-          <Link href="/" className="hover:underline">
+      <header className="space-y-2 pb-6 pt-6">
+        <nav className="text-muted text-sm">
+          <a href="/" className="hover:underline">
             牝系一覧
-          </Link>
+          </a>
           <span className="mx-1.5">/</span>
           {isRoot ? (
             <span>{family.pedigreeName}</span>
           ) : (
             <>
-              <Link href={horseHref(family.rootHorseId)} className="hover:underline">
+              <a href={horseHref(family.rootHorseId)} className="hover:underline">
                 {family.pedigreeName}
-              </Link>
+              </a>
               <span className="mx-1.5">·</span>
               <a href={horseHref(family.rootHorseId, horse.id)} className="link-inline" data-full-page>
                 牝系図に戻る
@@ -290,33 +267,31 @@ export default async function Page({ params }: { params: { id: string } }) {
             </>
           )}
         </nav>
-        <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-heading sm:text-4xl">
-          {name}
-        </h1>
+        <h1 className="text-heading text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">{name}</h1>
         <p className="text-muted">{subtitleOf(horse)}</p>
         {isRoot && <p className="text-muted">{familyTitle}</p>}
         {summary && <p className="text-muted">{summary}</p>}
       </header>
 
       <section className="py-6">
-        <h2 className="mb-3 text-xl font-bold text-heading">基本情報</h2>
-        <ProfileRows horse={horse} familyName={family.pedigreeName} familyRootId={family.rootHorseId} />
+        <h2 className="text-heading mb-3 text-xl font-bold">基本情報</h2>
+        <ProfileRows horse={horse} familyName={family.pedigreeName} familyRootId={family.rootHorseId} damId={family.damIdOf.get(horse.id)} />
       </section>
 
       {pedigree && hasKnownAncestor(pedigree.ancestryByPath) && (
         <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-heading">5代血統表</h2>
+          <h2 className="text-heading mb-3 text-xl font-bold">5代血統表</h2>
           <FiveGenPedigreeTable ancestryByPath={pedigree.ancestryByPath} />
         </section>
       )}
 
       {hasRaceCareerInfo(horse.raceStats, horse.prizeMoney, horse.raceResults?.length ?? 0) && (
         <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-heading">競走成績</h2>
+          <h2 className="text-heading mb-3 text-xl font-bold">競走成績</h2>
           <RaceCareerSummary raceStats={horse.raceStats} prizeMoney={horse.prizeMoney} />
           {horse.raceResults && horse.raceResults.length > 0 && (
             <>
-              <h3 className="mb-3 text-lg font-bold text-heading">重賞戦績</h3>
+              <h3 className="text-heading mb-3 text-lg font-bold">重賞戦績</h3>
               <RaceResultsTable results={horse.raceResults} />
             </>
           )}
@@ -325,20 +300,16 @@ export default async function Page({ params }: { params: { id: string } }) {
 
       {(details || article) && (
         // data-horse-modal-clip: モーダルでは冒頭だけ残して「続きを読む」へ誘導する
-        <section id="article" className="prose dark:prose-invert max-w-none py-6" data-horse-modal-clip>
-          <h2 className="text-xl font-bold text-heading">解説</h2>
-          {article ? (
-            <HorseMarkdown markdown={article.markdown} />
-          ) : (
-            details && <HorseMarkdown markdown={details} />
-          )}
+        <section id="article" className="prose max-w-none py-6 dark:prose-invert" data-horse-modal-clip>
+          <h2 className="text-heading text-xl font-bold">解説</h2>
+          {article ? <HorseMarkdown markdown={article.markdown} /> : details && <HorseMarkdown markdown={details} />}
         </section>
       )}
 
       {!isRoot && damLine.length > 1 && (
         <section className="py-6">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
-            <h2 className="text-xl font-bold text-heading">牝系内の位置</h2>
+            <h2 className="text-heading text-xl font-bold">牝系内の位置</h2>
             <a href={horseHref(family.rootHorseId, horse.id)} className="link-inline text-sm" data-full-page>
               牝系図に戻る
             </a>
@@ -346,7 +317,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           <ol className="space-y-1 text-sm">
             {damLine.map((ancestor, depth) => (
               <li key={ancestor.id} style={{ paddingLeft: `${depth * 1.25}rem` }}>
-                <span className="mr-1.5 text-subtle">{depth === 0 ? '牝祖' : `${depth}代下`}</span>
+                <span className="text-subtle mr-1.5">{depth === 0 ? '牝祖' : `${depth}代下`}</span>
                 <HorseRef horse={ancestor} currentId={horse.id} />
               </li>
             ))}
@@ -366,37 +337,22 @@ export default async function Page({ params }: { params: { id: string } }) {
         >
           <StallionProgeny gradeWinnerCount={gradeWinnerCount} totalCount={sireOffspring.length}>
             {sireOffspring.map((item) => (
-              <StallionOffspringCard
-                key={item.horse.id}
-                horse={item.horse}
-                familyName={item.familyName}
-                familyRootId={item.familyRootId}
-              />
+              <StallionOffspringCard key={item.horse.id} horse={item.horse} familyName={item.familyName} familyRootId={item.familyRootId} />
             ))}
           </StallionProgeny>
         </section>
       )}
 
       {offspring.length > 0 && (
-        <section
-          id="family-tree"
-          className="min-w-0 py-6"
-          data-horse-modal-tease
-          data-tease-title="牝系図"
-          data-tease-summary="産駒・子孫の系統図"
-          data-tease-href="#family-tree"
-        >
-          <HorseFamilyTree
-            fullTree={<FamilyTreeView horse={horse} />}
-            directTree={<FamilyTreeView horse={withDirectOffspringOnly(horse)} />}
-          />
+        <section id="family-tree" className="min-w-0 py-6" data-horse-modal-tease data-tease-title="牝系図" data-tease-summary="産駒・子孫の系統図" data-tease-href="#family-tree">
+          <HorseFamilyTree fullTree={<FamilyTreeView horse={horse} />} directTree={<FamilyTreeView horse={withDirectOffspringOnly(horse)} />} />
         </section>
       )}
 
       {horse.citation && horse.citation.length > 0 && (
         <section className="py-6">
-          <h2 className="mb-3 text-xl font-bold text-heading">参考文献</h2>
-          <ul className="list-inside list-disc space-y-1 text-sm text-label">
+          <h2 className="text-heading mb-3 text-xl font-bold">参考文献</h2>
+          <ul className="text-label list-inside list-disc space-y-1 text-sm">
             {horse.citation.map((source) => (
               <li key={source}>{source}</li>
             ))}

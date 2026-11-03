@@ -1,6 +1,4 @@
-import React from 'react'
-import NextLink from 'next/link'
-import { horseHref } from '@/lib/horse-id'
+import HorseNameWithPedigree from './HorseNameWithPedigree'
 import { findHorseLinkByName, getHorsePageIndex } from 'app/lib/traditional-family-loader'
 
 interface LinkProps {
@@ -15,23 +13,20 @@ interface LinkProps {
   quiet?: boolean
 }
 
-const HorseLink: React.FC<LinkProps> = ({ name, horseId, displayName, year, quiet }) => {
+/**
+ * ビルド時に馬名を id へ解決し、HorseNameWithPedigree を出す。
+ * 公開後は名前地図を引かない。解決できない馬名はリンクにしない。
+ */
+const HorseLink = ({ name, horseId, displayName, year, quiet }: LinkProps) => {
   const publishedId = horseId && getHorsePageIndex().horses[horseId] ? horseId : undefined
-  const result = publishedId
-    ? { link: publishedId, name }
-    : findHorseLinkByName(name, { quiet, year })
+  const result = publishedId ? { link: publishedId, name } : findHorseLinkByName(name, { quiet, year })
   const label = displayName ?? result?.name ?? name
 
   if (!result) {
     return <span className="font-medium">{label}</span>
   }
 
-  // 個別ページが恒久URL（ルート直 /{id}）。
-  return (
-    <NextLink href={horseHref(result.link)} className="link-inline">
-      {label}
-    </NextLink>
-  )
+  return <HorseNameWithPedigree horseId={result.link} displayName={label} tone="inline" />
 }
 
 export default HorseLink
